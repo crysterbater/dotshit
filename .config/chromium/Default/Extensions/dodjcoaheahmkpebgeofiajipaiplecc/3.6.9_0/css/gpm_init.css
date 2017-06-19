@@ -1,0 +1,14 @@
+/*--- Hidden Ellements ---*/
+
+#player .flat-button[data-id="show-miniplayer"],
+button[data-id="upload-music"],
+button[data-id="show-miniplayer"],
+button[data-id="download"],
+.goog-menuitem[id=":7"],
+.goog-menuitem[id=":n"],
+.goog-menuitem[id=":45"],
+.goog-menuitem[id=":2b"],
+.upload-dialog,
+#gbwa {
+  display: none!important;
+}

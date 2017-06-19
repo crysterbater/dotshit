@@ -1,0 +1,18 @@
+<template><style>:host {
+      box-sizing: border-box;
+      display: block;
+      margin: 0 var(--standardSize);
+      overflow-y: overlay;
+      overflow: hidden;
+      padding: 0 0 var(--smallerSize) 0;
+      position: relative;
+    }
+    :host::before {
+      border-top: 1px solid var(--lighterColor);
+      content: "";
+      display: block;
+      height: 0;
+      margin-bottom: var(--smallerSize);
+      top: 0;
+      width: 100%;
+    }</style><div class="rd-card-content-separator"></div><content></content></template>

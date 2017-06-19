@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 294 + Rectangle 294 Copy + Rectangle 294 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.418854733 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="iPhone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" filter="url(#filter-1)">
+        <g id="Menu-iPhone-6" transform="translate(-253.000000, -35.000000)" fill="#FFFFFF">
+            <g id="Content" transform="translate(251.000000, 30.000000)">
+                <g id="Rectangle-294-+-Rectangle-294-Copy-+-Rectangle-294-Copy-2" transform="translate(10.325333, 13.146727)">
+                    <path d="M7.51492903,5.39273804 L2.56504242,0.442851439 C1.97261789,-0.149573093 1.0270151,-0.145038619 0.44098824,0.44098824 C-0.149124291,1.03110077 -0.144204437,1.97798655 0.442851439,2.56504242 L5.39273804,7.51492903 L0.442851439,12.4648156 C-0.149573093,13.0572402 -0.145038619,14.002843 0.44098824,14.5888698 C1.03110077,15.1789823 1.97798655,15.1740625 2.56504242,14.5870066 L7.51492903,9.63712001 L12.4590697,14.5812607 C13.0514942,15.1736852 13.997097,15.1691507 14.5831239,14.5831239 C15.1732364,13.9930113 15.1683165,13.0461256 14.5812607,12.4590697 L9.63712001,7.51492903 L14.5812607,2.57078837 C15.1736852,1.97836384 15.1691507,1.03276105 14.5831239,0.446734187 C13.9930113,-0.143378344 13.0461256,-0.138458489 12.4590697,0.448597386 L7.51492903,5.39273804 Z" id="Rectangle-294"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

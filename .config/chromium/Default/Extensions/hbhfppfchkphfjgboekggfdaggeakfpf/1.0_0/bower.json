@@ -1,0 +1,30 @@
+{
+  "name": "flatun",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "dependencies"  : {
+    "underscore"  : ">=1.8.3"
+  },
+  "devDependencies": {
+    "backbone": "1.2.3",
+    "jquery": "1.11.3",
+    "jquery-ui": "1.11.4",
+    "slick-carousel": "1.5.9",
+    "perfect-scrollbar": "0.6.10",
+    "jquery.scrollTo": "2.1.2",
+    "masonry-layout": "1.0.4",
+    "jquery-bridget": "2.0.0",
+    "urijs": "1.17.0",
+    "jquery.cookie": "1.4.1",
+    "text": "2.0.14",
+    "fileapi": "2.0.20",
+    "select2": "4.0.1",
+    "gifffer": "1.0.0",
+    "moment": "2.13.0",
+    "fastclick": "1.0.6",
+    "jqueryui-touch-punch": "",
+    "flickity": "1.2.1",
+    "smart-app-banner": ""
+  }
+}

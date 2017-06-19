@@ -1,0 +1,267 @@
+{
+   "already_uploading": {
+      "message": "파일 업로드 중입니다. 잠시 후에 다시 시도해주세요."
+   },
+   "app_desc": {
+      "message": "쉽고 빠른 무제한 파일 전송 서비스 Send Anywhere"
+   },
+   "app_name": {
+      "message": "Send Anywhere (파일 전송)"
+   },
+   "cancel": {
+      "message": "취소"
+   },
+   "cancelled": {
+      "message": "취소됨"
+   },
+   "complete": {
+      "message": "완료"
+   },
+   "conf_profile_name": {
+      "message": "프로필 변경"
+   },
+   "copy_key": {
+      "message": "키 복사"
+   },
+   "copy_url": {
+      "message": "URL 복사"
+   },
+   "delete": {
+      "message": "삭제"
+   },
+   "device": {
+      "message": "클릭해서 푸시 보내기"
+   },
+   "drop_files": {
+      "message": "여기를 클릭하거나 파일 또는 폴더를 끌어다 놓으세요"
+   },
+   "edit": {
+      "message": "수정"
+   },
+   "error": {
+      "message": "에러"
+   },
+   "exp": {
+      "message": "만료일:"
+   },
+   "exp_format": {
+      "message": "$1 $2일"
+   },
+   "expiration": {
+      "message": "만료 일시"
+   },
+   "extension_install": {
+      "message": "확장 프로그램 설치하기"
+   },
+   "filelist_more_desc": {
+      "message": "…  외 $1개 파일"
+   },
+   "gcm_push_desc": {
+      "message": "클릭하여 전송 대기 중인 파일을 확인하세요!"
+   },
+   "gcm_push_title": {
+      "message": "새로운 파일"
+   },
+   "go_list": {
+      "message": "보관함으로 가기"
+   },
+   "go_main": {
+      "message": "메인으로 가기"
+   },
+   "help_desc01": {
+      "message": "전송받을 디바이스 \"받기\" 메뉴에 여섯 자리 숫자키를 입력하면 전송이 시작됩니다."
+   },
+   "help_desc02": {
+      "message": "아래와 같은 방법으로도 파일을 전송할 수 있습니다."
+   },
+   "help_list01": {
+      "message": "QR 코드 공유"
+   },
+   "help_list03": {
+      "message": "디바이스를 선택하여 푸시 보내기"
+   },
+   "input_key": {
+      "message": "키 입력"
+   },
+   "invalid_key": {
+      "message": "만료되거나 유효하지 않은 키입니다."
+   },
+   "key": {
+      "message": "키"
+   },
+   "key_title": {
+      "message": "전송 대기 중"
+   },
+   "length_exceed_desc": {
+      "message": "\u003Cp>크롬 앱 제한을 초과했습니다.\u003C/p>\u003Cp>크롬 확장 프로그램을 이용하면 제한 없이 파일을 전송할 수 있습니다. Gmail과 Slack에서도 손쉽게 대용량 파일을 첨부할 수 있는 확장 프로그램을 이용해보세요!\u003C/p>"
+   },
+   "list_tab": {
+      "message": "보관함"
+   },
+   "list_title": {
+      "message": "업로드 파일 보관함"
+   },
+   "main_title": {
+      "message": "Send Anywhere"
+   },
+   "modal_ok": {
+      "message": "확인"
+   },
+   "month_1": {
+      "message": "1월"
+   },
+   "month_10": {
+      "message": "10월"
+   },
+   "month_11": {
+      "message": "11월"
+   },
+   "month_12": {
+      "message": "12월"
+   },
+   "month_2": {
+      "message": "2월"
+   },
+   "month_3": {
+      "message": "3월"
+   },
+   "month_4": {
+      "message": "4월"
+   },
+   "month_5": {
+      "message": "5월"
+   },
+   "month_6": {
+      "message": "6월"
+   },
+   "month_7": {
+      "message": "7월"
+   },
+   "month_8": {
+      "message": "8월"
+   },
+   "month_9": {
+      "message": "9월"
+   },
+   "name": {
+      "message": "이름"
+   },
+   "nearby_devices": {
+      "message": "주변 기기"
+   },
+   "no": {
+      "message": "아니오"
+   },
+   "no_files": {
+      "message": "파일이 없습니다"
+   },
+   "not_supported_browser": {
+      "message": "지원하지 않는 브라우저 일 수 있습니다."
+   },
+   "noti_copy": {
+      "message": "클립보드에 복사되었습니다."
+   },
+   "noti_delete": {
+      "message": "업로드된 파일이 삭제됩니다. 정말 삭제하시겠습니까?"
+   },
+   "noti_download_done": {
+      "message": "받기 완료"
+   },
+   "noti_save_done": {
+      "message": "업로드 완료"
+   },
+   "noti_send_done": {
+      "message": "보내기 완료"
+   },
+   "profile": {
+      "message": "프로필"
+   },
+   "push_comment": {
+      "message": "Send Anywhere에서 파일을 전송했습니다. 파일을 받으시겠습니까?"
+   },
+   "qr_desc": {
+      "message": "센드애니웨어 앱의 QR 코드 스캐너로 스캔하세요."
+   },
+   "receiving": {
+      "message": "받는 중..."
+   },
+   "recent_devices": {
+      "message": "최근 공유 기기"
+   },
+   "recv_file": {
+      "message": "받기"
+   },
+   "recv_tab": {
+      "message": "받  기"
+   },
+   "recv_title": {
+      "message": "파일 받기"
+   },
+   "reset": {
+      "message": "초기화"
+   },
+   "save_files": {
+      "message": "링크 공유"
+   },
+   "send_files": {
+      "message": "바로 보내기"
+   },
+   "send_tab": {
+      "message": "보내기"
+   },
+   "send_title": {
+      "message": "파일 목록"
+   },
+   "sending": {
+      "message": "보내는 중..."
+   },
+   "server_error": {
+      "message": "서버에 오류가 발생하였습니다!"
+   },
+   "share_device": {
+      "message": "기기로 전송"
+   },
+   "share_qrcode": {
+      "message": "QR 코드"
+   },
+   "size": {
+      "message": "크기"
+   },
+   "size_exceed": {
+      "message": "용량 초과"
+   },
+   "size_exceed_desc": {
+      "message": "\u003Cp>크롬 앱은 1회 최대 2GB의 파일을 업로드할 수 있습니다.\u003C/p> \u003Cp>크롬 확장 프로그램을 이용하면 1회 최대 10GB의 파일을 업로드할 수 있습니다. Gmail과 Slack에서도 손쉽게 대용량 파일을 첨부할 수 있는 확장 프로그램을 이용해보세요!\u003C/p>"
+   },
+   "to_extension": {
+      "message": "\u003Ch4>크롬 앱 서비스 안내\u003C/h4>\u003Cp>센드애니웨어 크롬 앱은 \u003Ca href=\"$2\" target=\"_blank\">구글에서 공식 지원하는 2018년 까지\u003C/a>만 서비스 됩니다.\u003C/p>\u003Cp>앞으로도 센드애니웨어의 강력한 파일전송 서비스를 즐기고 싶다면 \u003Ca href='$store_link$' target='_blank'>크롬 확장프로그램\u003C/a>을 이용해보세요! 1회 최대 10GB의 파일을 전송할 수 있고 Gmail과 Slack에서도 손쉽게 대용량 파일을 첨부할 수 있습니다.\u003C/p>",
+      "placeholders": {
+         "store_link": {
+            "content": "$1"
+         }
+      }
+   },
+   "upload_title": {
+      "message": "업로드"
+   },
+   "url": {
+      "message": "URL"
+   },
+   "wait_notice": {
+      "message": "'$profile_name$ ($device_name$)' 님이 파일을 전송했습니다. 파일을 받으시겠습니까?",
+      "placeholders": {
+         "device_name": {
+            "content": "$2"
+         },
+         "profile_name": {
+            "content": "$1"
+         }
+      }
+   },
+   "will_expire": {
+      "message": "6자리 보안키는 ($1) 후에 만료됩니다."
+   },
+   "yes": {
+      "message": "네"
+   }
+}

@@ -1,0 +1,32 @@
+{
+   "description": "Clean Minimalist Light Theme with Light Background",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj7Ksw3THO3QX8SN/3rut8ypvPrNc9nJmJnRsjqKlcGlfwsWV7JIm3B1MWX6ueJ3toux1cljQqYtoKcCrFF8XoPtVxjogmkn17hKlhrm5xFbvMLe3rPV13czQdyHw9HpssvhgijO1U63I41yK9bSEYjtHpzXDOof48TzNqE1b2FVdZxeidI7khWVs8ZsGjLwKcvL9cm+1I7kUau9wOLwTAMe5xV9zR6NYMYFzQIhbXprWQb0SmQaADIj/Lu9onV9C91fOU3HVFw+4iZ1DU16fi839Zb+NCHY2PbHjGyDz+bDMCIokzHvBTt98b/H/eQLAE5HCr9lu4vvEgYrR8B5HNQIDAQAB",
+   "manifest_version": 2,
+   "name": "Minimal, Clean & Simple - Light Theme",
+   "theme": {
+      "colors": {
+         "bookmark_text": [ 82, 82, 82 ],
+         "button_background": [ 204, 204, 204, 1 ],
+         "frame": [ 204, 204, 204 ],
+         "ntp_background": [ 242, 242, 242 ],
+         "ntp_text": [ 22, 22, 22 ],
+         "tab_background_text": [ 82, 82, 82 ],
+         "tab_text": [ 32, 32, 32 ],
+         "toolbar": [ 204, 204, 204 ]
+      },
+      "images": {
+         "theme_frame": "images/theme_frame.png",
+         "theme_tab_background": "images/theme_tab_background.png",
+         "theme_toolbar": "images/theme_toolbar.png"
+      },
+      "properties": {
+         "ntp_background_alignment": "bottom",
+         "ntp_background_repeat": "no-repeat"
+      },
+      "tints": {
+         "buttons": [ 0, 0, 0.13 ]
+      }
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2"
+}

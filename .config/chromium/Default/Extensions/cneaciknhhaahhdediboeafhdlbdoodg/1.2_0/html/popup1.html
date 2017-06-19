@@ -1,0 +1,55 @@
+        <div id="mmWindow" class="ui-draggable">
+            <div id="mmBusy" style="display: none; opacity: 0.85;"><i class="ion-load-d"></i></div>
+            <div id="mmTopBar" data-loaded="true" class="section ui-draggable-handle">
+                <!-- title-bar -->
+                <div id="title-bar">
+                    <div id="mmLogo">
+                        <a class="route" data-controller="mmWindow" data-action="openMammothWebSite">
+                            <h4>
+                                <img src="chrome-extension://mnodmjdgoadhalodifblaaikgcfgchfb/./images/38_white.png">
+                                Mammoth
+                            </h4>
+                        </a>
+                    </div>
+                    <div class="mmClose">
+                        <a class="route" href="#" data-controller="mmWindow" data-action="closeButtonClicked">
+                            <i class="ion-ios-close-empty"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mmContent"><div id="mmWelcomeScreen" class="mmView">
+
+                    <h3>
+                        Mini Mammoth
+                        <small>your research companion</small>
+                    </h3>
+
+                    <br>
+
+                    <p>
+                        Your boards on any webpage. 
+                        <br>Save pictures, links, text. 
+                        <br>Write messages and get notifications. 
+                    </p>
+
+                    <br>
+                    <br>
+
+                    <p>
+                        <button class="route btn btn-blue" data-controller="welcome" data-action="signUp">
+                            Sign Up on Mammoth
+                            <i class="ion-log-in"></i>
+                        </button>
+                    </p>
+                    <p>
+                        Already have an account? 
+                        <a href="#" class="route" data-controller="welcome" data-action="signIn">Sign In</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>

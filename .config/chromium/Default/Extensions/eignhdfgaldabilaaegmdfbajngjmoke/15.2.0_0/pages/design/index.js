@@ -1,0 +1,1 @@
+cjModules.define(function(){"use strict";return function(e){bmBasics.toggleLoading("on",e);var n=bmElements.createElement("iframe",{src:"https://design.google.com/",noLoading:!0});n.iframeElement.addEventListener("load",function(){bmBasics.toggleLoading("off",e)}),e.appendChild(n)}});

@@ -1,0 +1,413 @@
+<html>
+	<head>
+		<style type="text/css">
+			html {
+				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			}
+			a:hover {
+				cursor: pointer;
+			}
+			body {
+				margin: 0;
+				font-family: Arial, Helvetica, sans-serif;
+				background: rgb(34,34,34);
+				color:#eee;
+				font-size:100% !important;
+			}
+			#topPart {
+				/*border-bottom: 3px solid #ccc;*/
+				/*background: #fff;*/
+				color: #eee;
+			}
+			#mainContainer {
+				/*background: #f0f0f0;*/
+				/*height: 100%;*/
+				padding-top:20px;
+				padding-bottom:60px;
+				background-size: auto;
+				background-repeat: repeat;*/
+			}
+			.talkingPoint {
+				padding: 40px;
+				padding-top: 0;
+				line-height: 1.4em;
+				display: inline-block;
+				padding-bottom: 0;
+			}
+			.talkingPoint > span {
+				color:rgb(237,94,104);
+			}
+			.tightText {
+				width: 300px;
+			}
+			.highImage {
+				vertical-align: top;
+			}
+			.highImage img {
+				padding:10px;
+				border-left: 2px solid #ddd;
+  			margin-bottom: 40px;
+  			padding-top:0;
+  			padding-bottom: 0;
+  			border-radius: 5px;
+  			max-width: 340px;
+			}
+			.footer{
+			  background: rgb(54,54,54);
+			  border-top: 1px solid #000;
+			  color: #ddd;
+			  position: fixed;
+			  bottom: 0;
+			  width: 100%;
+			  text-align: center;
+			  -webkit-font-smoothing: antialiased;
+			}
+			.footer a {
+				color: #ddd;
+				text-decoration: none;
+				font-weight: 700;
+			}
+			.footer a:hover {
+				text-decoration: underline;
+			}
+			.bigButtons{
+				background: #555;
+				color: #fff; 
+				border-radius:7px;
+				width:200px;
+				padding:20px;
+				margin:auto;
+				line-height:1.4em;
+				border:2px solid #222;
+				font-family: monospace;
+				font-size: 20px;
+				letter-spacing: -1px;
+			}
+			.bigButtons:hover {
+				background: #666;
+				/*border-bottom:3px solid #8580b2;*/
+				cursor: pointer;
+			}
+			#firstTimeSection {
+				display: none;
+				transition: opacity .5s ease-in-out;
+		   	-moz-transition: opacity .5s ease-in-out;
+		   	-webkit-transition: opacity .5s ease-in-out;
+			}
+			#faqSection {
+				/*display: none;*/
+				transition: opacity .5s ease-in-out;
+		   	-moz-transition: opacity .5s ease-in-out;
+		   	-webkit-transition: opacity .5s ease-in-out;
+			}
+			#updatesSection {
+				display: none;
+				transition: opacity .5s ease-in-out;
+		   	-moz-transition: opacity .5s ease-in-out;
+		   	-webkit-transition: opacity .5s ease-in-out;
+			}
+			.upgradeBtn {
+				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			  background: rgb(237,94,104);
+			  color: #FFF;
+			  font-size: 15px;
+			  line-height: 1.5em;
+			  padding-top: 12px;
+			  padding-bottom: 12px;
+			  padding-left: 30px;
+			  padding-right: 30px;
+			  display: inline-block;
+			  margin-bottom: 30px;
+			  border-radius: 5px;
+			  font-weight: 700;
+			  -webkit-font-smoothing:auto;
+			  margin-top: 30px;
+			}
+			.upgradeBtn:hover {
+				background: rgb(252,109,119);
+  			cursor: pointer;
+			}
+			.updateInfoClass {
+				padding: 10px;
+			  background-color: #000;
+			  margin-bottom: 10px;
+			}
+			ul > li {
+		    line-height: 1.5em !important;
+			}
+			li > span {
+				padding: 3px;
+			}
+			.qCard {
+				border: 3px solid rgb(54,54,54);
+				border-radius: 7px;
+				overflow: hidden;
+				margin-bottom: 40px;
+			}
+			.qText {
+				background: rgb(54,54,54);
+				padding: 20px;
+				font-weight: 700;
+				color: #fff;
+				font-size: 18px;
+				line-height: 1.5em;
+			}
+			.aText {
+				background: rgb(24,24,24);
+				padding: 20px;
+				color: #ddd;
+				font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        font-size: 15px;
+        line-height: 1.5em;
+			}
+			.aText span {
+				/*background-color: cornflowerblue;*/
+				/*padding: 5px;*/
+				font-weight: 700;
+				color: rgb(237,94,104);
+			}
+		</style>
+		<script type="text/javascript" src="scripts/jquery-2.1.1.min.js"></script>
+	</head>
+	<body>
+		<div id="topPart"><div style="text-align:center;line-height:80px;padding-top:60px;vertical-align:middle;font-size:60px;font-family: monospace;letter-spacing: -3px;color: #fff;"><b>hacker vision</b></div><div style="text-align:center;line-height:1.4em;">The #1 Accessibility app in the Chrome Web Store.<div style="font-size:13px; color:#ccc; margin-top:5px;">(your eyes are already saying thank you)</div></div></div>
+		<div id="mainContainer">
+				<div>
+					<div style="padding:20px;text-align:center;">
+						<div style="margin-right:60px; text-align:center;display:inline-block;">
+							<a href="#firstTimeSection" style="text-decoration:none;"><div class="bigButtons" id="firstTimeBtn">Take The Tour</div></a>
+						</div>
+						<div style="text-align:center; display:inline-block;">
+							<div class="bigButtons" id="oldTimerBtn">See What's New</div>
+						</div>
+					</div>
+					<div style="width:60%;margin:auto;padding:20px;"><hr></div>
+				</div>
+			<div style="width:620px;margin:auto;" id="updatesSection">
+				<div style="padding:40px; padding-bottom:0;padding-top:0;line-height:1.3em;">
+					<h1>Latest updates:</h1>
+					<div class="updateInfoClass">
+					-- Update -- 12/28/2016 -- 2.51 -- Major update! Chrome 54+ compatible, tons of bug fixes and improvements.</div>
+					<div class="updateInfoClass">
+					-- Update -- 09/04/2015 -- 2.41 -- Fixed for Chrome 45+, smarter backgrounds, better contrast.</div>
+					<div class="updateInfoClass">
+					-- Update -- 04/11/2015 -- 2.30 -- Completely NEW Algorithm – with over 85% better image detection than v2.25. Almost ZERO pictures get messed up now. And a big Thank You to everyone who stuck with me through the update.</div>
+					<div class="updateInfoClass">
+					-- Update -- 04/09/2015 -- 2.25 -- All previous bugs associated with the update are now FIXED. Thanks for being patient.</div>
+					<div class="updateInfoClass">
+					-- Update -- 04/04/2015 -- 2.00 -- MAJOR Release- Tons of updates, fixed white page bottoms, more site fixes, retina bugs, Reddit share button added, new options page, added BETA right-click "fix this", HV now FREE for the first 6 months and only $2.99/yr.</div>
+					<div class="updateInfoClass">
+					-- Update -- 02/06/2015 -- 1.34 -- Youtube has been FIXED, embedded vid previews fixed, thanks for your feedback. Remember to Donate!
+					</div>
+					<div class="updateInfoClass">
+					-- Update -- 01/29/2015 -- 1.32 -- Fix equations on wikipedia (+big update coming soon)
+					</div>
+					<div class="updateInfoClass">
+					-- Update -- 09/06/2014 -- 1.31 -- Macbook Retina screen fix! + Vimeo fix!
+					</div>
+					<div class="updateInfoClass">
+					-- Update -- 08/08/2014 -- 1.30 -- Fixed YOUTUBE FULLSCREEN + now accepting donations!
+					</div>
+					<div class="updateInfoClass">
+					-- Update -- 05/26/2014 -- 1.28 -- No more white flash between screens! (or significantly reduced)
+					</div>
+					<div class="updateInfoClass">
+					-- Update -- 05/25/2014 -- 1.27 -- Fixed Wikipedia equations now display properly!
+					</div>
+					<div class="updateInfoClass">
+					-- Update -- 02/05/2014 -- 1.25 -- Updated to work better with newest version of Chrome(32), restored contrast on sites
+					</div>
+					<div class="updateInfoClass">
+					-- Update -- 12/09/2013 -- 1.24 -- Merry Christmas everyone! Fixed Youtube!! + Vimeo fix. Help support Hacker Vision by donating Bitcoins: 178WvhB5SPSwMe4pyng6rbKMhkzb3jpL88</div>
+					<div class="updateInfoClass">
+					-- Update -- 06/28/2013 -- 1.20 -- Fixed imgs! Temporarily removed ads.
+					</div>
+					<div class="updateInfoClass">
+					-- Update -- 03/26/2013 -- 1.17 -- BEST VERSION EVER! Fixed major bug with Chrome 26. Updated to preserve images and videos as they were intended! Fixed Facebook bug with Chrome 26(tested OSX)! Google Maps is now easier to read! Requires Chrome 26 or higher. Improved 64px imgs.
+					</div>
+					<div class="updateInfoClass">
+					-- Update -- 01/13/2012 -- 1.10 -- Much Faster loading time! Added ability to share by email. Bug fixes.
+					</div>
+					<div class="updateInfoClass">
+					-- Update -- 12/05/2012 -- 1.00 -- OFFICIAL RELEASE! Bug fixes + better rendering!
+					</div>
+					<div class="updateInfoClass">
+					-- Update -- 11/30/2012 -- 0.99 -- It's now easier than ever to tell your friends with Facebook, Twitter and G+ share buttons!</div>
+					<div class="updateInfoClass">
+					-- Update -- 11/22/2012 -- 0.98 -- Video playback is now FIXED on 95% of websites!! Happy Thanksgiving everyone!
+					</div>
+					<div class="updateInfoClass">
+					-- Update -- 11/17/2012 -- 0.95 -- Added Pause/Resume button so you can easily turn Hacker Vision off during the day and on at night + Inverted photos fix on some websites + Performance improvements!
+					</div>
+					<div style="width:100%;margin:auto;padding-top:20px;"><hr></div>
+				</div>
+			</div>
+			<div style="width:880px;margin:auto;" id="firstTimeSection">
+				<div>
+					<div class="talkingPoint tightText" style="padding-right:20px;">
+						<h1 style="line-height:1.3em;">Thanks for using Hacker Vision!</h1>
+						Read this quick guide to learn how to use Hacker Vision and toggle it on and off for different websites.
+						<br><br><br><br>
+						Let's get started:
+						<br><br>
+						Visit your favorite website and click the <b style="font-family: monospace;font-size: 26px;background:#000;padding-left:5px;padding-right:5px;">h</b> icon near the top of your screen to open the main menu. <br><br><br><br>The popup will launch and you will see <span>the slider at the top that toggles HV on/off for all websites</span>.<br><br>Below that you will see the URL of the current website you are looking at. <span>Simply choose either "Dark" or "Normal" and HV will remember your settings for that site forever.</span><br><br>To set HV to be Dark or Normal by default, open HV on a new tab page and it will prompt you to "Set Global Default".
+						<br>
+						<!-- <div style="margin-top:220px;">Now select <span style="background:#000;padding-left: 10px; padding-right: 10px;"><b>Hacker Vision</b></span> again and feel your eyes <i>relax</i>.
+						<br><br><br>
+						<div style="padding:10px;background:#000;border:2px solid deeppink;font-weight:700;">HV will remember your settings for every page. You only need to set them once.</div></div> -->
+					</div>
+					<div class="talkingPoint highImage">
+						<div style="padding-top:285px;"><img src="images/hvIcon.png"/></div>
+						<div style="margin-top:30px;"><img src="images/mainMenuPic.png"/></div>
+					</div>
+				</div>
+				<!-- <div class="talkingPoint">Show them how to turn it on and off</div> -->
+				<div>
+					<div class="talkingPoint tightText" style="padding-top:0;margin-top:40px;">
+						There's also a handy slider to temporarily <span>Disable</span> HV on <b><i>all</i></b> sites.<br><br>
+						It's super useful if you're outside or in a bright room (think of it as a Daytime Mode).
+						<br><br>
+					</div>
+					<div class="talkingPoint highImage" style="padding-top:40px; padding-left:20px;">
+						<div><img src="images/resumePic.png" style="margin-bottom: 40px;"/></div>
+						<div><img src="images/pausePic.png"/></div>
+					</div>
+				</div>
+				<div>
+					<div class="talkingPoint tightText" style="padding-top:0;margin-top:40px;">I work hard keeping Hacker Vision up to date and <span>if you love using it, please remember to spread the word using the share buttons</span>.</div>
+					<div class="talkingPoint highImage" style="padding-top:0; padding-left:20px;margin-top: 40px;">
+						<div><img src="images/shareButtonsPic.png"/></div>
+					</div>
+					<br>
+					<div class="talkingPoint tightText" style="padding-top:0;">That's all there is! If you have any questions, please visit the <a href="#faqSection">Frequently Asked Questions</a> section.</div>
+					<br><br>
+				</div>
+				<!-- <div>
+					<div class="talkingPoint tightText" style="padding-top:0">
+						Use Hacker Vision to:<br>
+						<ul>
+							<li>Relax your eyes</li>
+							<li>Browse at night</li>
+							<li>Increase battery life</li>
+							<li>Make the internet feel new</li>
+							<li>Play pranks on your friends</li>
+						</ul>
+						<br>
+				</div> -->
+				<div style="width:40%;margin:auto;padding:40px;"><hr></div>
+						</div>
+				<div style="max-width:600px; margin:auto;" id="faqSection">
+					<div style="padding-top:20px; text-align: center; margin-bottom: 40px;">
+						<h1>Frequently Asked Questions</h1>
+					</div>
+					<div>
+						<div class="qCard">
+							<div class="qText">I paid for Hacker Vision but it still says my trial is up?</div>
+							<div class="aText">
+								<span>This is actually a bug with the Google Chrome Web Store</span> – they only allow so many people to connect per day.<br>
+								<br>
+								It will update automatically if given enough time -- OR -- you can use this trick to force it to update:<br>
+								<br>
+								Right-click the <b style="font-family: monospace;font-size: 26px;background:#000;padding-left:5px;padding-right:5px;">h</b> icon in your browser bar, and click "Remove from Chrome" and remove it.<br>
+								<br>
+								<a href="https://chrome.google.com/webstore/detail/hacker-vision/fommidcneendjonelhhhkmoekeicedej?hl=en-US">Then click here and re-install it</a><br>
+								<br>
+								It will detect that you've paid and will upgrade to the Full Version. After this you should be good-to-go forever!<br>
+							</div>
+						</div>
+
+						<div class="qCard">
+							<div class="qText">Why doesn't HV work on this page or the Chrome Web Store, or New Tab?</div>
+							<div class="aText"><span>For security purposes Google prevents <b>all</b> extensions from running on any url that begins with "chrome://" (including this page).</span> <br><br>If you want to test this, the New Tab page actually has a url of "<b>chrome://newtab</b>", and if you type that in the URL bar, it will open a new tab. <br><br>If you want proof that it's working, just click <a href="http://www.google.com" target="_blank">here</a> and the <b style="font-family: monospace;font-size: 26px;background:#000;padding-left:5px;padding-right:5px;">h</b> icon in your browser bar to make sure it's turned on.
+							</div>
+						</div>
+						
+						<div id="upgradeToPaid">
+							<div class="qCard">
+								<div class="qText">How much does Hacker Vision cost?</div>
+								<div class="aText">Hacker Vision is a labor of love for me— I built this because I have eye troubles and this drastically helps me to use the internet. <br>
+								<br>
+								I spend <u>a lot</u> of time working to answer questions and keeping it up to date as the #1 Accessibility app in the Chrome Web Store, so to help cover the hours I spend maintaining it, I had to add a small fee.<br><br> <span>Hacker Vision is completely FREE for the first 6 months and if you love it, pay only $2.99 per year.</span> That is cheaper than buying me a cup of Starbucks coffee once a year. You can upgrade to the paid version at any time and get a nice, clean interface. <br><div style="text-align: center;"><a target="_blank" href="https://chrome.google.com/webstore/detail/hacker-vision/fommidcneendjonelhhhkmoekeicedej" style="text-decoration:none;color:#fff;"><div class="upgradeBtn">Upgrade Now</div></a></div>All payment processing is securely handled once per year by <br>Google Payments, and Hacker Vision never has access to any of your payment information at any time.<br><br> If you have been using HV, the 6 month free trial will start from the date you install. <u>Once your trial period is over you will no longer be able to access the main menu until you upgrade.</u><br><br>To thank everyone who has previously donated to help support the project, you will receive HV <u>free for life</u>.</li>
+								</div>
+							</div>
+						</div>
+
+						<div class="qCard">
+							<div class="qText">Does Hacker Vision have any hotkeys or keyboard shortcuts?</div>
+							<div class="aText">
+								Yes it does— the keyboard shortcuts are:
+								<br><br>
+								1. Toggle current page between Normal and Hacker Vision: <div style="margin-top:10px;"><span><b>CMD+SHIFT+FN+F12 (MAC)</b></span> or <span><b>SHIFT+F12 (PC)</b></span></div>
+								<br><br>
+								2. Pause & Resume Hacker Vision (daytime mode): <div style="margin-top:10px;"><span><b>CMD+SHIFT+FN+F11 (MAC)</b></span> or <span><b>SHIFT+F11 (PC)</b></span></div>
+							</div>
+						</div>
+						
+						<div id="chromeWebStorePopup">
+							<div class="qCard">
+							<div class="qText">Why do I need to accept the 'Chrome Web Store' popup?</div>
+							<div class="aText"><span>So we can connect to the Chrome Web Store and verify if you have paid for the full version or not.</span> This is required by Google, and you only have to see it and press 'Accept' once. We apologize for any inconvenience and hope Google changes this policy in the future. Note: Hacker Vision is completely free for the first 6 months starting from 4/6/2015 for existing users, or the day you install it. After that it is only $2.99 per year.
+							</div>
+						</div>
+
+						<div class="qCard">
+						
+						<div class="qText">Sometimes I see images that look inverted, why is this?</div>
+							<div class="aText">
+								<span>This happens when a website sets a picture as a <i>background-image</i> instead of an image.</span> Much like how the wallpaper on your desktop is a background image. <br><br>Because these are usually reserved as the background for the entire page, HV does its job and inverts it. <br><br>However sometimes sites will do this for thumbnails, and while it may not look pretty, it is not possible for HV to be perfect for 100% of pages on the internet. A human touch is still needed. <br><br>There is a brand new BETA feature in the works to fix these inverted images so stay tuned!
+							</div>
+						</div>
+
+						<div class="qCard">
+							<div class="qText">Can you detect if the website is bright and only apply HV to those pages?</div>
+							<div class="aText">
+								Yes, I have tried this, and it works. But there are performance issues.<br><br>The issue is that HV cannot process the page to determine if it is bright or dark until <i>after</i> it has finished loading. Which means <span>there is a very noticable lag time and a much longer white flash before the dark page displays.</span> <br><br>I am currently working on refining this algorithm. If you have any suggestions, please email below.</li>
+							</div>
+						</div>
+						
+						<div class="qCard">
+							<div class="qText">Why is there sometimes a white flash before a page loads?</div>
+							<div class="aText">
+								<span>This is a known Google Chrome bug. It is caused because Google decided all websites would be "painted" on a white canvas.</span> There is no way to bypass this. <br><br>However I have done a few tricks to help minimize it. However you may still experience it more on older or slower computers. <br><br>If you hate this as much as I do, please email or tweet at the Google Chrome team and tell them to change the default canvas to BLACK or DARK GREY.
+							</div>
+						</div>
+
+						<div class="qCard">
+							<div class="qText">Sometimes a video on Youtube is inverted full-screen but not vice-versa(or vice-versa)</div>
+							<div class="aText">
+								<span>Youtube is constantly changing their code and it is completely dependant upon your machine, operating system, and current login status.</span><br><br> I am <u>constantly</u> fixing this but hopefully it will settle down soon. <br><br>That being said, I am on Mac OSX and I never encounter this. If you do notice it, please email me a link to the page, and a copy of the page source code (right-click, 'View page source').
+							</div>
+						</div>
+
+						<div class="qCard">
+							<div class="qText">Is Hacker Vision open source? Is there a Firefox version?</div>
+							<div class="aText">
+								<span>Yes, Hacker Vision will be open source on GitHub SOON.</span> If you use Firefox, there is no official version of Hacker Vision right now, but an older version of HV was ported to work with it by a user and you can find the code <a href="https://github.com/sdqali/hackervision" target="_blank">here</a>.
+							</div>
+						</div>
+						
+						<div class="qCard">
+							<div class="qText">How can I contact you?</div>
+							<div class="aText">
+								<span>Just press the 'Email Us' button at the very bottom of this page.</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="footer">
+			<div style="padding:15px;">
+				<div style="float:left; margin-left: 40px;">
+					<a href="#faqSection">FAQ</a> 
+				</div>
+				<div style="display:inline-block;">Questions? Comments? Bugs? <a href="mailto:schoolishteam@gmail.com">Email Us</a></div>
+				<div style="font-size: 12px; float: right; margin-top: 3px;">© 2016 Hacker Vision</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="scripts/optionsToggle.js"></script>
+	</body>
+</html>

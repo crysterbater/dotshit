@@ -1,0 +1,34 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_popup": "popup.html",
+      "default_title": "Display Menu"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "content-id.js" ],
+      "matches": [ "https://*/*", "http://*/*" ],
+      "run_at": "document_idle"
+   }, {
+      "all_frames": true,
+      "js": [ "content-st.js" ],
+      "matches": [ "https://*/*", "http://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Customize New Tab Page & More!",
+   "homepage_url": "http://sermak.ca/PTHelp.pdf",
+   "icons": {
+      "128": "newlogo.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkdpv6zsNJOnjMBoqGWgyMJCPyEXLUYfqYXaGlvF5YC4NV4X/ARcX5wR/JKpaXtpwoLfFRxAGiuH/BYMQeRCEVNvDzFyAp2Py+UossbtwHNdlF8hyPQUCqm2RIomB/1+CQFAqbj0jibzhkYCsrx2maLftnfxas/hLjoZdS/zAGRM4keUoRdkc7eAfnfwCATRlKR9AChx/pgld3gLoUWuGjH0PfKt0u94zdaKVJvMd1eAZbGVLcZwzgehm3v3DxhU9UTrK7PiccXxpCt9uuDUOKo0xzpIRivkr1bVDm3YVaYCeCr2TDgjj6gkMUIbJ3KFBZWTvAIZCJlqExUq5Sv37rwIDAQAB",
+   "manifest_version": 2,
+   "name": "New Tab Start Page Pro",
+   "options_page": "options.html",
+   "permissions": [ "webRequest", "webRequestBlocking", "webNavigation", "tabs", "contextMenus", "storage", "https://*/*", "http://*/*" ],
+   "short_name": "Tab/Start Pro",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "14.2"
+}

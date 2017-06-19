@@ -1,0 +1,43 @@
+{
+   "background": {
+      "scripts": [ "common.js", "background.js", "scripts/app.js" ]
+   },
+   "browser_action": {
+      "default_icon": "hackerVision-19.png",
+      "default_popup": "popup.html",
+      "default_title": "Hacker Vision (Shift+F12 or CMD+Shift+F12)"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "hackerVision.css" ],
+      "js": [ "nowhiteflash.js", "scripts/jquery-2.1.1.min.js", "hackerVision.js", "sweepDOM.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' https://connect.facebook.net; object-src 'self'",
+   "description": "Night-mode for the internet. Apply a highly-visible dark theme to all webpages.",
+   "icons": {
+      "128": "hackerVision-128.png",
+      "16": "hackerVision-16.png",
+      "48": "hackerVision-48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDi+ckVeUlNTqG0WVpUlZQZpAh/FjT/5/rA9U2aI8HgE4cqHDwPoyUGUF4HMq4GUMRoJxV/r7xNtjF6gNoZe7kmcU1Z0Q2DtwSUMHNjDRxTD88oEnSYaqMw6003G+aIFWdHFnEFO1BuIsNm3b+zlPFuSSSSHyw8SFBiCRePVWciswIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "26",
+   "name": "Hacker Vision",
+   "oauth2": {
+      "client_id": "644723761530-f23u2slnc0u0caoiaen28l43cfsi9105.apps.googleusercontent.com",
+      "openid.realm": "urn:ietf:wg:oauth:2.0:oob",
+      "scopes": [ "https://www.googleapis.com/auth/chromewebstore.readonly" ]
+   },
+   "options_page": "firstLaunch.html",
+   "options_ui": {
+      "chrome_style": false,
+      "open_in_tab": true,
+      "page": "firstLaunch.html"
+   },
+   "permissions": [ "\u003Call_urls>", "tabs", "identity", "storage", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.53",
+   "web_accessible_resources": [ "firstLaunch.html" ]
+}

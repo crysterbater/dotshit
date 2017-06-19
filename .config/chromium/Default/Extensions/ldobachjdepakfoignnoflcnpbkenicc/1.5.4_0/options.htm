@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>nexos</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="options.css" />
+	<script src="class/util.js"></script>
+	<!-- temporary data storage -->
+	<script src="class/Form.class.js"></script>
+	<!-- libraries -->
+	<script src="lib/HTTPStatus.enum.js"></script>
+	<script src="lib/chrome_ex_oauth.js"></script>
+	<script src="lib/chrome_ex_oauthsimple.js"></script>
+	<script src="lib/ChromeExOAuth2.js"></script>
+	<!-- helpers -->
+	<script src="class/formbuilders/options.js"></script>
+	<!-- data access -->
+	<script src="dal/SourceData.class.js"></script>
+	<script src="dal/ISource.prototype.js"></script>
+	<script src="dal/OAuth.class.js"></script>
+	<script src="dal/OAuth2.class.js"></script>
+	<script src="dal/Registration.class.js"></script>
+	<!-- sources -->
+	<script src="dal/sources/Chrome.class.js"></script>
+	<script src="dal/sources/Core.class.js"></script>
+	<script src="dal/sources/DeviantArt.class.js"></script>
+	<!--<script src="dal/sources/Dropbox.class.js"></script>-->
+	<script src="dal/sources/Facebook.class.js"></script>
+	<script src="dal/sources/Flickr.class.js"></script>
+	<script src="dal/sources/Foursquare.class.js"></script>
+	<script src="dal/sources/GitHub.class.js"></script>
+	<script src="dal/sources/Gmail.class.js"></script>
+	<script src="dal/sources/GoogleDrive.class.js"></script>
+	<script src="dal/sources/GooglePlus.class.js"></script>
+	<script src="dal/sources/Instagram.class.js"></script>
+	<script src="dal/sources/SoundCloud.class.js"></script>
+	<script src="dal/sources/Springpad.class.js"></script>
+	<script src="dal/sources/Tumblr.class.js"></script>
+	<script src="dal/sources/Vimeo.class.js"></script>
+	<script src="dal/sources/YouTube.class.js"></script>
+	<script src="dal/sources/ExternalSource.class.js"></script>
+	<!-- key elements -->
+	<script src="class/Configuration.class.js"></script>
+	<script src="class/Option.class.js"></script>
+	<!-- gui elements -->
+	<script src="class/Notifications.class.js"></script>
+</head>
+<body>
+
+<div id="sidebar">
+	<div id="general">
+		<button id="promobtn" class="mostly"></button>
+		<br>
+		<br>
+		<a id="follow-button" href="https://twitter.com/ThomasGreiner" class="twitter-follow-button"></a>
+		<br>
+		<br>
+		<g:plusone href="https://chrome.google.com/webstore/detail/ldobachjdepakfoignnoflcnpbkenicc" size="tall"></g:plusone>
+		<br>
+		<br>
+		<a href="https://twitter.com/share" class="twitter-share-button"
+			data-url="https://chrome.google.com/webstore/detail/ldobachjdepakfoignnoflcnpbkenicc"
+			data-text="organize your data from all over the web with this app"
+			data-count="vertical"
+			data-via="ThomasGreiner">
+		</a>
+		<br>
+		<br>
+		<span id="facebook-like-button"></span>
+	</div>
+</div>
+
+<div id="header">
+	<img id="headerLogo" src="img/logo64.png" />
+	<img id="headerName" src="img/nexos.png" />
+	<div id="headerBtns">
+		<a href="main.htm"><img id="settings" src="img/logo64.png" /></a>
+		<a href="https://chrome.google.com/webstore/support/ldobachjdepakfoignnoflcnpbkenicc"><img id="feedback" src="img/feedback.png" /></a>
+		<!--<a href="http://www.greinr.com/webapps/translate/nexos"><img id="translate" src="img/i18n.png" /></a>-->
+		<span id="notifications"></span>
+	</div>
+	<div id="navigation"></div>
+</div>
+
+<div id="content"></div>
+
+<div id="dialogue">
+	<div id="box"></div>
+</div>
+
+</body>
+</html>

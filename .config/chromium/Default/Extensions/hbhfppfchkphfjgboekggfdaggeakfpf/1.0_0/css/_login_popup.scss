@@ -1,0 +1,157 @@
+@import "globals";
+
+.login-popup {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 556px;
+  margin: 16px auto;
+  padding: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.5);
+  @include linear-gradient(to bottom, #202124, #353A53);
+
+  @include for-mobile {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 5px;
+  }
+
+  &-close {
+    position: absolute;
+    top: 0;
+    right: -35px - 20px;
+
+    @include for-mobile {
+      display: none;
+    }
+  }
+
+  &-logo {
+    display: inline-block;
+    width: 364px;
+    height: 359px;
+    background: url("../images/login-popup-logo.png");
+    background-size: 364px 359px;
+
+    @include for-retina {
+      background-image: url("../images/login-popup-logo@2x.png");
+    }
+
+    @include for-mobile {
+      width: 100%;
+      height: auto;
+      padding-top: 97.8%;
+      background-size: 100%;
+    }
+
+    &-wrapper {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      max-width: 280px;
+      max-height: 274px;
+    }
+  }
+
+  &-title {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 300;
+  }
+
+  &-subtitle {
+    margin-top: 10px;
+    color: #686F7F;
+    font-size: 14px;
+  }
+
+  &-buttons {
+    margin-top: 46px;
+    text-align: center;
+  }
+
+  &-button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 48px;
+    margin-left: 25px;
+    border-radius: 25px;
+    vertical-align: middle;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+    @include transition(transform 0.3s, color 0.3s, box-shadow 0.3s);
+
+    @include for-mobile {
+      margin-left: 8px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover, &:focus {
+      border-color: transparent;
+    }
+
+    &-icon {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &.dribble &-icon {
+      background: url("../images/share_dribble.svg");
+      width: 20px;
+      height: 19px;
+      background-size: 20px 19px;
+    }
+
+    &.dribble:hover, &.dribble:focus {
+      background: #EA4C89;
+      box-shadow: 0 10px 15px 0 transparentize(#EA4C89, 0.5);
+    }
+
+    &.facebook &-icon {
+      background: url("../images/share_facebook.svg");
+      width: 10px;
+      height: 20px;
+      background-size: 10px 20px;
+    }
+
+    &.facebook:hover, &.facebook:focus {
+      background: #4F71B9;
+      box-shadow: 0 10px 15px 0 transparentize(#4F71B9, 0.5);
+    }
+
+    &.google-plus &-icon {
+      background: url("../images/share_google_plus.svg");
+      width: 28px;
+      height: 18px;
+      background-size: 28px 18px;
+    }
+
+    &.google-plus:hover, &.google-plus:focus {
+      background: #DC4E41;
+      box-shadow: 0 10px 15px 0 transparentize(#DC4E41, 0.5);
+    }
+
+    &.twitter &-icon {
+      background: url("../images/share_twitter.svg");
+      width: 17px;
+      height: 14px;
+      background-size: 17px 14px;
+    }
+
+    &.twitter:hover, &.twitter:focus {
+      background: #55ACEE;
+      box-shadow: 0 5px 10px 0 transparentize(#55ACEE, 0.5);
+    }
+  }
+}

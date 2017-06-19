@@ -1,0 +1,284 @@
+@import "globals";
+
+.top-sites {
+  &-items {
+    display: inline-block;
+  }
+
+  &-item {
+    &, &:visited {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      border-radius: 18px;
+      margin: 0 7px;
+      opacity: 0.6;
+      overflow: hidden;
+      box-sizing: border-box;
+      @include transition(background-color 0.3s, opacity 0.3s, box-shadow 0.3s);
+    }
+
+    &:hover {
+      opacity: 1;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
+    }
+
+    &-image {
+      display: inline-block;
+      background: #fff no-repeat center center;
+      background-size: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-user-links {
+    display: none;
+    position: absolute;
+    top: 36px + 8px;
+    right: 0 - 250px / 2 + (36px + 7px * 2) / 2;
+    background: #fff;
+    color: #59606A;
+    border-radius: 3px;
+    box-shadow: 0 0 20px 0 transparentize(#2F343C, 0.46);
+    width: 250px;
+    text-align: left;
+    z-index: 1;
+
+    &-wrapper {
+      display: inline-block;
+      position: relative;
+    }
+
+    &-wrapper:hover & {
+      display: block;
+    }
+
+    &-triangle {
+      width: 17px;
+      height: 7px;
+      display: inline-block;
+      position: absolute;
+      top: -3px;
+      left: 50%;
+      margin-left: -8px;
+      background: url("../images/triangle.svg");
+    }
+
+    &-show {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      border-radius: 18px;
+      margin: 0 7px;
+      overflow: hidden;
+      box-sizing: border-box;
+      border: 1px solid #37393D;
+      @include transition(background-color 0.3s, box-shadow 0.3s);
+
+      &-icon {
+        display: inline-block;
+        background: url("../images/external-color.svg") no-repeat center center;
+        width: 100%;
+        height: 100%;
+        background-size: 14px 14px;
+      }
+    }
+
+    &-wrapper:hover &-show {
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
+      background: #fff;
+    }
+
+    &-header {
+      color: #A6B6C9;
+      font-size: 14px;
+      text-transform: uppercase;
+      padding: 16px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    &-add-button {
+      &, &:visited, &:hover {
+        float: right;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background: #548cff linear-gradient(45deg, #9170DB 0%, #8972E4 10%, #7277FF 40%, #689AFF 100%);
+        margin-top: 6px;
+      }
+
+      &-icon {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background: url("../images/plus-hover.svg") no-repeat center center;
+      }
+    }
+
+    &.adding &-add-button {
+      &, &:visited, &:hover {
+        display: none;
+      }
+    }
+
+    &-add-close-button {
+      &, &:visited {
+        float: right;
+        display: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        margin-top: 6px;
+        background: #fff;
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        font-size: 0;
+      }
+
+      &:hover {
+        background: #59606A;
+        border: 0;
+      }
+
+      &-icon {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background: url("../images/cross-small-quiet.svg") no-repeat center center;
+        background-size: 6px 6px;
+      }
+
+      &:hover &-icon {
+        background-image: url("../images/cross-small.svg");
+      }
+    }
+
+    &.adding &-add-close-button {
+      &, &:visited, &:hover {
+        display: inline-block;
+      }
+    }
+
+    &-add-form {
+      display: none;
+      background: #FAF9F9;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 16px;
+
+      &-input {
+        display: block;
+        width: 100%;
+        background: #fff;
+        color: #59606A;
+        height: 35px;
+        line-height: 33px;
+        padding: 0 10px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        box-sizing: border-box;
+        outline: 0;
+        margin-bottom: 10px;
+        @include transition(border-color 0.3s);
+
+        &:focus {
+          border-color: #6C8CFF;
+        }
+      }
+
+      &-submit {
+        display: inline-block;
+        background: #6C8CFF;
+        color: #fff;
+        padding: 7px 20px;
+        border: 0;
+        border-radius: 3px;
+        box-sizing: border-box;
+        outline: 0;
+        font-size: 10px;
+        text-transform: uppercase;
+        @include transition(background-color 0.3s);
+
+        &[disabled] {
+          background: #B6C3D3;
+        }
+      }
+    }
+
+    &.adding &-add-form {
+      display: block;
+    }
+
+    &-content {
+      max-height: 600px;
+      overflow: auto;
+    }
+
+    &-item {
+      &, &:visited {
+        display: block;
+        color: #59606A;
+        font-size: 14px;
+        padding: 20px 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        @include transition(color 0.3s, background-color 0.3s);
+      }
+
+      &:hover {
+        color: #6B8BFE;
+        background: #FAF9F9;
+      }
+
+      &-icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background: #fff no-repeat center center;
+        background-size: contain;
+        margin-right: 18px;
+        vertical-align: middle;
+      }
+
+      &-wrapper {
+        position: relative;
+      }
+
+      &-remove {
+        &, &:visited {
+          position: absolute;
+          top: 24px;
+          right: 14px;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border-radius: 10px;
+          background: #fff;
+          border: 1px solid #E5E5E5;
+          box-sizing: border-box;
+          font-size: 0;
+        }
+
+        &:hover {
+          background: #548cff linear-gradient(45deg, #9170DB 0%, #8972E4 10%, #7277FF 40%, #689AFF 100%);
+          border: 0;
+        }
+
+        &-icon {
+          display: inline-block;
+          background: url("../images/cross-small-quiet.svg") no-repeat center center;
+          width: 100%;
+          height: 100%;
+          background-size: 6px 6px;
+        }
+
+        &:hover &-icon {
+          background-image: url("../images/cross-small.svg");
+        }
+      }
+    }
+  }
+}

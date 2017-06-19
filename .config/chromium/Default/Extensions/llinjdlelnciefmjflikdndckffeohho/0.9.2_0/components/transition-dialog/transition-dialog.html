@@ -1,0 +1,15 @@
+
+<link rel="import" href="../core-meta/core-meta.html">
+
+<polymer-element name="transition-dialog" extends="core-transition">
+    <script>
+        go: function(node, state) {
+            if (state.opened !== undefined) {
+                node.style.transition = 'opacity 1s ease-out';
+                node.style.opacity = 0;
+            }
+        }
+    </script>
+</polymer-element>
+
+<my-transition id="transition-dialog-flip"></my-transition>

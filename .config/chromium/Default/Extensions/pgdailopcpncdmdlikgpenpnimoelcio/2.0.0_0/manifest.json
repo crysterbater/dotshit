@@ -1,0 +1,20 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "main.js" ]
+      }
+   },
+   "description": "Weather app with a touch of material design",
+   "icons": {
+      "128": "img/icon.png",
+      "16": "img/icon.png",
+      "64": "img/icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoTEayJcOh177OA5AiE9VG84mnhR08U9wWDXLNBn5af0j/qD4qWe9wQm0cU3/ovpf30VzeZT2+1dSMd2iNbqFiXG/SqlpYlX4kLqD2o3iC6k86Plfx7hXcwDGvxCaom0isuuPxsctlBCek7wJ25k13jkOp0m7lSP+4X0NW8Klf3KfDQaftocJVO0MtyyWy771rhhD8WAxEQg2vP9vPXDF4/sODWViCondNACBmat0O/JHJdyopxD+iK8NQibDz7JK1+Kb5lE/V19dOalwABAkgC5GcchZh1LZ03+TZyRuYCyZHvCtF4V7grErfQ1i3IYy0Drlwm77qI8AmKBScEY3lwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "23",
+   "name": "Clima",
+   "permissions": [ "geolocation", "storage", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.0"
+}

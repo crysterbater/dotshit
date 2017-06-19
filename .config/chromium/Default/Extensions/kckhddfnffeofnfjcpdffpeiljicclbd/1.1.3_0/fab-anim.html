@@ -1,0 +1,22 @@
+<html><head>
+<meta charset="UTF-8"></head><body><polymer-element name="fab-anim" assetpath="../src/">
+    <template>
+        <style>
+            :host {
+                position: fixed;
+                width: 56px;
+                height: 56px;
+                background: #d23f31;
+                border-radius: 50%;
+                z-index: 9;
+                transition: transform 350ms ease-in-out;
+            }
+
+            :host(.active) {
+                transform:scale3d({{scale}}, {{scale}}, 1)
+            }
+        </style>
+
+    </template>
+    
+</polymer-element><script charset="utf-8" src="fab-anim.js"></script></body></html>

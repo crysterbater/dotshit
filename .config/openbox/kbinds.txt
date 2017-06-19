@@ -1,0 +1,104 @@
+x C-S-BackSpace   	openbox --reconfigure
+o W-KP_1          	UnmaximizeFull
+o W-KP_2          	UnmaximizeFull
+o W-KP_3          	UnmaximizeFull
+o W-KP_4          	UnmaximizeFull
+o W-KP_5          	MaximizeFull
+o W-KP_6          	UnmaximizeFull
+o W-KP_7          	UnmaximizeFull
+o W-KP_8          	UnmaximizeFull
+o W-KP_9          	UnmaximizeFull
+o C-A-Right       	DesktopRight
+o C-A-Left        	GoToDesktop
+o C-A-Up          	GoToDesktop
+o C-A-Down        	GoToDesktop
+o A-Tab           	NextWindow
+o A-S-Tab         	PreviousWindow
+o W-S-Right       	DirectionalCycleWindows
+o W-S-Left        	DirectionalCycleWindows
+o W-S-Up          	DirectionalCycleWindows
+o W-S-Down        	DirectionalCycleWindows
+o S-A-Left        	SendToDesktopLeft
+o S-A-Right       	SendToDesktopRight
+o S-A-Up          	SendToDesktopUp
+o S-A-Down        	SendToDesktopDown
+o A-Escape        	Lower
+o A-space         	client-menu
+x XF86AudioRaiseVolume	amixer -D pulse sset Master '5%+'
+x XF86AudioLowerVolume	amixer -D pulse sset Master '5%-'
+x XF86AudioMute   	amixer -D pulse set Master toggle
+x XF86AudioStop   	playerctl pause
+x XF86AudioPlay   	playerctl play-pause
+x XF86AudioPrev   	playerctl previous
+x XF86AudioNext   	playerctl next
+x XF86MonBrightnessUp	xbacklight +10
+x XF86MonBrightnessDown	xbacklight -10
+x Print           	scrot '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/Pictures/ ; gpicview ~/Pictures/$f'
+x A-Print         	scrot -d 5 '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/Pictures/ ; gpicview ~/Pictures/$f'
+x C-Print         	xfce4-screenshooter
+x A-F2            	gmrun
+x A-F3            	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+x W-S-d           	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+o A-F4            	Close
+o A-F5            	Iconify
+o A-F6            	ToggleMaximize
+o A-F8            	ToggleDecorations
+o W-d             	ToggleShowDesktop
+o W-b             	ToggleDecorations
+x W-f             	thunar
+x W-t             	termite
+x W-w             	firefox
+x W-l             	slimlock
+x W-e             	geany
+x W-m             	audacious
+x W-h             	urxvt -T 'htop task manager' -e htop
+x W-v             	pavucontrol
+x W-x             	oblogout
+x W-Escape        	xkill
+o W-Tab           	client-list-combined-menu
+o W-space         	root-menu
+o W-Right         	UnmaximizeFull
+o W-Left          	UnmaximizeFull
+o W-Up            	MaximizeFull
+o W-Down          	UnmaximizeFull
+o W-A-Left        	UnmaximizeFull
+o W-A-Right       	UnmaximizeFull
+o A-r             	Resize
+o A-m             	Move
+x A-t             	variety -t
+x A-f             	variety -f
+x A-p             	variety -p
+x A-Left          	variety -p
+x A-n             	variety -n
+x A-Right         	variety -n
+x A-Down          	variety --resume
+x A-Up            	variety --pause
+x W-Pause         	oblogout
+o S-W-q           	Close
+x W-Return        	xfce4-terminal
+x S-W-Return      	thunar
+x W-F1            	vivaldi-snapshot
+x W-F2            	atom
+x                 	inkscape
+x W-F4            	gimp
+x                 	rofi
+x W-F6            	vlc
+x W-F7            	virtualbox
+x W-F8            	thunar
+x                 	evolution
+x                 	spotify
+x C-S-Escape      	xfce4-taskmanager
+o C-A-q           	root-menu
+x C-A-m           	xfce4-settings-manager
+x C-A-k           	obkey
+x C-A-a           	xfce4-appfinder
+x C-A-T           	termite
+o C-A-d           	ToggleShowDesktop
+x C-A-V           	vivaldi-snapshot
+x C-A-B           	thunar
+x C-A-W           	subl3
+x C-A-S           	spotify
+x C-A-C           	catfish
+x C-A-i           	nitrogen
+x C-A-u           	obconf
+x W-F3            	rofi

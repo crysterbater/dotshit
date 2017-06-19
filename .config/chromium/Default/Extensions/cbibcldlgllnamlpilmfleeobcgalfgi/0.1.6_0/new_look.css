@@ -1,0 +1,315 @@
+/*
+ * Tweak Gmail New Look (2012)
+ */
+
+/* Overall styling and coloring {{{ */
+
+/* Add borders and shadow to the scrolling right panel. */
+.aeF {
+  border-left: 1px solid #CCC !important;
+  border-right: 1px solid #CCC !important;
+  border-bottom: 1px solid #CCC !important;
+  -webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.1);
+  -moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.1);
+  -box-shadow: 0 2px 2px -1px rgba(0,0,0,.1);
+}
+
+/* Adjust footer and content size */
+.aeF {
+  min-height: 0 !important;
+}
+.l2 {
+  margin: 4px;
+  padding-bottom: 0 !important;
+}
+
+/* Change background color */
+.aeJ {
+  background-color: transparent !important;
+}
+
+/* Make buttons more slim */
+.T-I {
+  line-height: 22px !important;
+  height: 22px !important;
+}
+
+/* Adjust padding inside menus */
+.J-M {
+  padding: 4px !important;
+}
+/* }}} */
+
+/* Email threads {{{ */
+
+/* Adjust margins of the thread title */
+h1.ha {
+  margin: 0;
+  padding: 10px;
+}
+
+/* Add a border between the thread and the right sidebar */
+.Bu .if {
+  /* border-right: 1px solid #D8D8D8; */
+  margin-right: 4px !important;
+}
+
+/* Adjust margins and borders closed mails in the thread */
+.kv, .kx, .kQ {
+  margin: 0 4px;
+}
+.kQ .G2 {
+  border-top: 1px dotted #D8D8D8 !important;
+}
+.kv .G2 {
+  border-top: 1px solid #D8D8D8 !important;
+  border-left: 1px solid #D8D8D8 !important;
+  border-right: 1px solid #D8D8D8 !important;
+}
+
+/* Make opened mails in the thread smiler as old look with round corners */
+.h7 {
+  margin: 4px;
+}
+.h7 .G2 {
+  border: 1px solid #CCC !important;
+  -webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.1);
+  -moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.1);
+  -box-shadow: 0 2px 2px -1px rgba(0,0,0,.1);
+}
+
+/* Make reply field smaller, add extra padding */
+.hx .h7 .gA {
+  background-color: whiteSmoke !important;
+}
+.gB {
+  padding: 0 !important;
+}
+.amn {
+  height: 32px !important;
+}
+/* For original composer */
+.hx .h7 .ac5 .gB {
+  padding: 8px !important;
+}
+.ac5 .adB {
+  padding: 0px !important;
+  background-color: white !important;
+}
+.ej .aay .dW {
+  background-color: white !important;
+}
+/* For new composer */
+.hx .ie .xu .iq {
+  margin: 0 !important;
+  padding: 8px !important;
+}
+.adB {
+  margin: 0 !important;
+  padding: 8px !important;
+}
+.aC3 {
+  background-color: whiteSmoke !important;
+}
+.aoY {
+  padding: 0 8px 1px 1px !important;
+}
+
+/* Change colors of reply window */
+.ej .fN,
+.ej .eh .dW,
+.hx .h7 .mC {
+  background-color: white !important;
+}
+.ej .eJ .cf {
+  background-color: transparent !important;
+}
+
+/* Remove minimum height from the thread */
+.Bu .nH .no .nH.nn div {
+  height: auto !important;
+}
+
+/* Move star from right to left, make closed email slim */
+.lHQn1d, .zd {
+  position: absolute;
+  left: 6px;
+  top: 18px;
+}
+.aju {
+  margin: 0px 5px 0px 30px;
+  line-height: 0 !important;
+  padding: 7px 0 !important;
+}
+.h7 .aju {
+  margin-top: 3px !important;
+}
+.kv .lHQn1d,
+.kv .zd {
+  top: 11px;
+}
+.kv .aju {
+  padding: 3px 4px 3px 0 !important;
+}
+.kv .hI {
+  padding: 10px !important;
+}
+.aCi .aFg {
+  left: -30px !important;
+  width: 4px !important;
+}
+
+/* Web Ticker */
+.mq {
+  margin: 0 !important;
+  border: none !important;
+}
+
+/* }}} */
+
+/* Email body and header {{{ */
+
+/* Add a border and spaces to the email header */
+.h7 .gE {
+  padding: 10px 0 !important;
+  margin: 0 0 10px 0 !important;
+  border-bottom: 1px dotted #D8D8D8;
+}
+
+/* Adjust margins in the email */
+.h7 .gs {
+  margin: 0 10px 10px 30px !important;
+}
+.hx .ii {
+  margin: 0 !important;
+}
+.hx .adn, .hx .adu, .hx .adf {
+  margin-left: -5px !important;
+}
+
+/* Add background to the alert message in the mail */
+.B0, .acS, .bC, .gY, .adc, .gS, .ac7, .h9, .adI {
+  background-color: whiteSmoke !important;
+  margin: 0 -10px 10px -30px !important;
+  padding: 2px 10px 2px 30px !important;
+  border: none !important;
+}
+.tx78Ic .adI {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
+/* Add a frame to the profile picture */
+img.ajn {
+  background-color: white;
+  padding: 1px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* -webkit-border-radius: 2px; */
+}
+
+/* }}} */
+
+/* Composer {{{ */
+
+/* Hide scrollbar caused by borders, adjust spaces around composer. */
+.fN {
+  border: none !important;
+  padding: 10px !important;
+}
+
+/* Adjust composer button position */
+.ej .aay {
+  padding-top: 12px;
+}
+
+/* Popup composer */
+.mE {
+  margin: 0 15px;
+}
+.mE .mD {
+  float: left;
+  margin-bottom: -1px !important;
+}
+.mE .mC .mD {
+  border-color: #D8D8D8 !important;
+  background-color: whiteSmoke !important;
+}
+.G-as7-atb {
+  margin: 0 0 10px 0 !important;
+  padding: 0 !important;
+  border-top: 1px solid #D8D8D8 !important;
+  border-bottom: none !important;
+}
+.eh .dW {
+  padding: 8px !important;
+}
+.aaM .fN {
+  border: none !important;
+}
+
+/* }}} */
+
+/* Inbox {{{ */
+
+/* Adjust spaces around headers in Inbox */
+.Wg {
+  padding: 2px !important;
+}
+.PF {
+  width: 4px !important;
+}
+.Wm {
+  padding: 2px !important;
+}
+.Di {
+  padding: 0 !important;
+}
+
+/* }}} */
+
+/* Left side menu {{{ */
+
+/* Adjust spaces of each menu item */
+.TK .TO .TN {
+  padding: 2px 0 !important;
+}
+
+/* Remove additional spaces from the menu */
+.aeN .akc, .aj9 .oo {
+  margin: 0 !important;
+}
+
+/* Remove additional spaces from the chat list */
+.dI, .s .r, .uJ, .vH {
+  width: 142px !important;
+}
+
+/* Make Compose button large */
+.z0 .T-I {
+  min-width: 124px !important;
+}
+
+/* }}} */
+
+/* Settings {{{ */
+
+/* Add borders to the tabs */
+.fY {
+  border-bottom: 1px solid #D8D8D8;
+  background-color: transparent !important;
+}
+.fZ {
+  border-top: 1px solid #D8D8D8;
+  border-left: 1px solid #D8D8D8;
+  border-right: 1px solid #D8D8D8;
+  margin-bottom: -1px !important;
+}
+.f1 {
+  background-color: transparent !important;
+}
+.fZ, .f1 {
+  padding: 5px 10px !important;
+}
+/* }}} */
+
+/* vim:set foldmethod=marker: */

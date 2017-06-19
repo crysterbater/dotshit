@@ -1,0 +1,115 @@
+
+body {
+	min-width: 380px;
+	/* overflow-x: hidden; */
+}
+
+a {
+	display: block;
+	float: left;
+}
+
+.appIcon {
+	margin: 2px;
+	vertical-align: middle;
+	width: 64px;
+	height: 64px;
+}
+
+.appLink {
+	font-family: Verdana, Arial, sans-serif; 
+	margin: 1px;
+	padding:5px;
+	color: black;
+	text-decoration: none;
+	width: 80px;
+	height: 80px;
+	font-size: .7em;
+}
+
+.appLink:hover {
+	background-color: #eee;
+	-webkit-border-radius: 7px;
+}
+
+.webstore {
+	margin: 4px;
+	float: right;
+}
+
+#content {
+	text-align: center;
+}
+
+#footer {
+	margin: 5px;
+	clear: both;
+	margin-bottom: 5px;
+	padding: 5px;
+	height: 25px;
+}
+
+#noApps {
+	font-size: 1.3em;
+	color: #777;
+	text-align: center;
+	margin: 7px;
+	margin-top: 14px;
+}
+
+#noApps img {
+	float: left;
+}
+
+#noApps a {
+	clear: both;
+	display: block;
+	text-decoration: none;
+	color: white;
+	background-color: green;
+	padding: 5px;
+	margin: 7px;
+	-webkit-border-radius: 7px;
+	float: right;
+}
+
+#goWebStore {
+	float: right;
+}
+
+#editButton {
+/*	float: left;*/
+	font-size: 1em;
+	padding: 2px 5px;
+	margin: 5px;
+	margin-bottom: 7px;
+	border: 1px solid #93B4D9;
+	background-color: #CADEF4;
+	text-decoration: none;
+	color: #000;
+	display: block;
+}
+
+#apps {
+	font-family: Verdana, Arial, sans-serif; 
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	width: 375px;
+	font-size: .7em;
+}
+
+#apps li {
+	cursor: move;
+	position: relative;
+	float: left;
+	text-align: center;
+	padding-top: 5px;
+	margin: 1px;
+	padding:5px;
+	color: black;
+	background-color: #eee;
+	-webkit-border-radius: 7px;
+	width: 80px;
+	height: 80px;
+}

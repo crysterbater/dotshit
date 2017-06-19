@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html ng-app="sp-app" ng-csp ng-controller="appCtrl" ng-cloak>
+<head>
+    <title>Player</title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/primary.css" rel="stylesheet" ng-if="settings.theme == 'primary.css'">
+    <link href="css/secondary.css" rel="stylesheet" ng-if="settings.theme == 'secondary.css'">
+    <link href="css/ironman.css" rel="stylesheet" ng-if="settings.theme == 'ironman.css'">
+    <link href="css/strawberry.css" rel="stylesheet" ng-if="settings.theme == 'strawberry.css'">
+    <link href="css/vendor.css" rel="stylesheet">       
+    
+</head>
+
+<body ng-keydown="globalKeyDown($event)" ng-keyup="globalKeyUp($event)" ng-click="globalClick($event)" ng-show="initialized">
+    <!--<button id="load">LOADDDD</button>-->
+
+    <div class="content " drag-drop id="content"  ng-class="{open: navigator.openMainMenu, 'open_source': navigator.openMediaSource, 'open_settings': navigator.openSettings, playing: isPlaying(), listen: navigator.queueOpen, 'open_album': navigator.openAlbum, 'open_artist': navigator.openArtist, 'open_cloud': navigator.openCloud, 'open_playlist': navigator.openPlaylist}">
+        <div class="drag-area"></div>   
+            <div class="actions"> 
+                <div class="button" ng-click="closeApp()">
+                    <span class="icon close" id="close-app"></span>
+                </div> 
+
+                <div class="button min" ng-click="minimizeApp()">
+                    <span class="icon mini" id="mini-app"></span>
+                </div>
+
+                <div class="button max" ng-click="restoreApp()">
+                    <span class="icon mini" id="restore-app"></span>
+                </div>
+            </div> 
+            <div class="actions left settings_close" ng-click="closeSettings()">
+                <div class="button" id="closeSettings"></div>
+            </div>
+
+            <div class="actions left source_close" ng-click="closeMediaSources()">
+                <div class="button" id="closeSources"></div>
+            </div>
+
+            <div class="actions left playlist_close" ng-click="closePlaylist()">
+                <div class="button" id="closePlaylist"></div>
+            </div>
+
+            <div class="actions left details_close" ng-click="closeAlbumArtist()">
+                <div class="button" id="closeAlbum"></div>
+            </div>
+
+            <div class="actions left cloud_close" ng-click="closeCloud()">
+                <div class="button" id="closeCloud"></div>
+            </div> 
+            <div class="actions left">
+                <div class="button" id="menu" ng-click="$event.stopPropagation();toggleMainMenu();$closeDialog()">
+                    <span class="menu_icon"></span>
+                </div>
+            </div>  
+
+        <div class="drop_zone" id="drop_zone">
+           
+           <div class="drop_zone_wrapper">
+<div class="drop_zone_action">
+
+<div class="drop_circle_cont">
+    
+    <svg class="logo" x="0px" y="0px" width="128px" height="128px" viewBox="0 0 128 128">
+
+<path fill="#fff" fill-opacity=".5" d="M103.9,68.8l-71.6,41.3c-4.1,2.3-9.3-0.6-9.3-5.3V22.2c0-4.7,5.2-7.7,9.3-5.3L56,30.5v12.7c-1-0.1-2-0.2-3-0.2c-11.6,0-21,9.4-21,21c0,11.6,9.4,21,21,21c11.6,0,21-9.4,21-21c0,4.6,0-12,0-12h0.1c0.5-3.4,3.4-6,6.9-6c1.1,0,2.1,0.3,3,0.7l0,0l19.8,11.5C108,60.5,108,66.5,103.9,68.8z"/>
+<path fill="#fff"  d="M62,34l15,8.8c-4.1-2.3-8,0.4-8,5.2v16c0,8.3-7.9,15-16.1,15S38,72.3,38,64s6.7-15,14.9-15c3.4,0,6.6,1.1,9.1,3L62,34z M52.9,55c-4.9,0-8.9,4-8.9,9s4,9,8.9,9s8.9-4,8.9-9S57.8,55,52.9,55z"/>
+
+</svg>
+
+<svg class="drop_circle"><circle r="100" cx="50%" cy="50%""></circle></svg>
+
+</div>
+                <h4>Drop Music Here</h4>
+                <p>Files will be added to the queue list.</br>To have this files in library add folder in media sources.</p>
+
+            
+</div>
+</div>
+
+            <div class="overlay"></div>
+        </div>
+          
+        <div class="preloader">
+            <div></div>
+            <span><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg></span>
+
+        </div>
+
+        <ng-include src="'app/views/menu/menu.html'"></ng-include>
+        
+       
+        <div class="head">
+           
+            <ng-include src="'app/views/tab/tab.html'"></ng-include>
+
+            <div class="search_cont">
+                <input ng-show="navigator.currentView === 'allsongs'" ng-model="search.songsSearch" placeholder="Search here" type="search" searchbox>
+                <input ng-show="navigator.currentView === 'allalbums'"  ng-model="search.albumsSearch"  placeholder="Search here" type="search" searchbox>
+                <input ng-show="navigator.currentView === 'allartists'"  ng-model="search.artistsSearch"  placeholder="Search here" type="search" searchbox>
+                <input ng-show="navigator.currentView === 'allplaylists'"  ng-model="search.playlistsSearch"  placeholder="Search here" type="search" searchbox>
+                <input ng-show="navigator.currentView === 'allclouds'"  ng-model="search.cloudsSearch"  placeholder="Search here" type="search" searchbox>
+                <span><svg><circle r="0" cx="25" cy="25" fill="rgba(255,255,255,.3)"></circle></svg></span>
+            </div>
+
+            <div class="head_art" ng-style="getArtStyles()"></div>
+            
+        </div>
+
+        <div class="listen_now suggest_save">
+           <ng-include src="'app/views/now_playing/nowPlaying.html'"></ng-include>            
+
+          <ng-include src="'app/views/queue/queue.html'" ng-controller="queueCtrl"></ng-include>
+        </div>
+       
+        <ng-include src="'app/views/playlists/playlist.html'" ng-if="navigator.openPlaylist"></ng-include>    
+        <ng-include src="'app/views/artists/artist.html'" ng-if="navigator.openArtist"></ng-include>       
+        
+        <ng-include src="'app/views/albums/album.html'" ng-if="navigator.openAlbum"></ng-include>
+        <ng-include src="'app/views/clouds/cloud.html'" ng-if="navigator.openCloud"></ng-include>              
+       
+        <ng-include src="'app/views/settings/settings.html'"></ng-include>
+       
+        <ng-include src="'app/views/mediaSources/mediaSources.html'"></ng-include>
+        
+       
+
+
+        <div class=" library_loader"><div class="toast"><span><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg></span> Updating your Library, Please wait ...</div></div>
+       <div class="wrapper" id="list-wrapper" scrollbar-root>
+            <div  ng-controller="songsCtrl" ng-include="'app/views/songs/songs.html'" ng-if="navigator.currentView === 'allsongs'" class="list_view open">
+                
+            </div>
+            <div ng-controller="albumsCtrl"   ng-include="'app/views/albums/albums.html'" ng-if="navigator.currentView === 'allalbums'" class="grid_view open album_grid_view"></div>
+            <div ng-controller="artistsCtrl"   ng-include="'app/views/artists/artists.html'" ng-if="navigator.currentView === 'allartists'" class="grid_view open  artist_grid_view"></div>
+            <div ng-controller="playlistsCtrl"    ng-include="'app/views/playlists/playlists.html'" ng-if="navigator.currentView === 'allplaylists'" class="grid_view open  playlist_grid_view" ></div>
+            <div ng-controller="cloudsCtrl"    ng-include="'app/views/clouds/clouds.html'" ng-if="navigator.currentView === 'allclouds'" class="grid_view open cloud_grid_view"></div>
+            <div ng-controller="searchCtrl" ng-include="'app/views/search/search.html'" ng-if="navigator.currentView === 'search'"  class="list_view open"></div>
+            <ng-include src="'app/views/quickActions/quickActions.html'"  ng-if="isLibraryEmpty()"></ng-include>
+        </div>         
+        <ng-include src="'app/views/playback/playback.html'"></ng-include>
+    </div>
+   
+
+
+    <script src="js/vendor.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

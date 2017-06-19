@@ -1,0 +1,181 @@
+div.flickrdownloader_spinnerWrapper {
+	z-index: 10;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	display: block;
+}
+div.flickrdownloader_spinnerWrapper .flickrdownloader_bg {
+	z-index: 20;
+	position: absolute;
+	top: 0px; left: 0px; right: 0px; bottom: 0px; width: 100%; height: 100%;
+	background-color: #000;
+	opacity: 0.15;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+div.flickrdownloader_spinner {
+	box-sizing: border-box;
+	z-index: 30;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	border-radius: 50%;
+	border: dashed 3px #000;
+	-webkit-animation-name: loader-spin;
+	animation-name: loader-spin;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+div.flickrdownloader_spinner.large {
+	width: 43px;
+	height: 43px;
+	border-width: 3px;
+}
+div.flickrdownloader_spinner.small {
+	width: 20px;
+	height: 20px;
+}
+@-webkit-keyframes loader-spin {
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.flickrdownloader_wrapper { z-index: 9999; position: absolute; top: 0px; left: 0px; height: 40px; font-family: 'Segoe UI', Tahoma, sans-serif; }
+.flickrdownloader_wrapper .flickrdownloader_btn {
+	background-position: 50% 50%;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	/*opacity: 0.15;*/
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	cursor: pointer;
+	font-size: 13px;
+	line-height: 13px;
+	background: url('chrome-extension://__MSG_@@extension_id__/img/icon38.png') 50% 50% no-repeat;
+	background-size: 30px 30px;
+}
+
+
+#flickrdownloaderPopup {
+	position: fixed; z-index: 9999; top: 0px; left: 0px; bottom: 0px; right: 0px; width: 100%; height: 100%; display: none; font-size: 13px;
+	text-align: left; font-family: 'Segoe UI', Tahoma, sans-serif; line-height: normal;
+}
+
+#flickrdownloaderPopup .flickrdownloaderPopupBg {
+	position: absolute; z-index: 1; top: 0px; left: 0px; bottom: 0px; right: 0px; width: 100%; height: 100%;
+	background-color: #000; opacity: 0.9;
+}
+
+#flickrdownloaderPopupContentWrap {
+	background-color: #fff; position: absolute; z-index: 2; top: 50%; left: 50%; width: 550px; height: 430px; margin-top: -215px; margin-left: -275px;
+	border-radius: 10px;
+	padding: 15px;
+}
+#flickrdownloaderPopupContent {
+	height: 320px;
+	font-size: 14px;
+	line-height: 1.4em;
+	position: relative;
+}
+#flickrdownloaderPopupContent .flickrdownloaderTextWrap {
+	height: 100%;
+	overflow-y: auto;
+}
+#flickrdownloaderPopupContent .flickrdownloaderText {
+}
+
+#flickrdownloaderPopupHeader {
+	font-size: 1.2em; font-weight: bold; border-bottom: 1px solid #ccc; padding: 0; height: 30px; line-height: 30px; margin: 0;
+}
+#flickrdownloaderPopupContent h2 {
+	font-size: 1.1em; font-weight: bold; padding: 0;
+}
+#flickrdownloaderPopupContent a {
+	color: inherit;
+	text-decoration: underline;
+}
+#flickrdownloaderPopupContent a:hover {
+	text-decoration: none;
+}
+#flickrdownloaderPopupContent p {
+	margin-bottom: 5px;
+}
+#flickrdownloaderPopupContent strong {
+	font-weight: bold;
+}
+
+#flickrdownloaderPopupControls {
+	text-align: right; height: 28px; position: relative; width: 100%; margin-top: 4px;
+}
+
+#flickrdownloaderPopupControls .cancel {
+	float: left;
+}
+#flickrdownloaderPopupControls .success {
+	float: right;
+}
+
+#flickrdownloaderPopupContent ul {
+	list-style: initial; margin: initial; padding: 0 0 0 30px;
+}
+
+#flickrdownloaderPopupContent li {
+	display: list-item; list-style: circle; position: relative; font-size: inherit;
+}
+
+#flickrdownloaderPopupContent .flickrdownloader_loadedSizesWrap ul, #flickrdownloaderPopupContent .flickrdownloader_loadedSizesWrap li {
+	list-style: none; margin: 0; padding: 0 0 0 0px;
+}
+#flickrdownloaderPopupContent .flickrdownloader_loadedSizesWrap ul, #flickrdownloaderPopupContent .flickrdownloader_loadedSizesWrap li {
+	display: block; line-height: 1.8em; text-align: right; position: relative;
+}
+
+#flickrdownloaderPopup .flickrdownloaderClosePopup {
+	width: 25px; height: 25px; top: 15px; right: 15px; position: absolute; opacity: 0.5; cursor: pointer;
+	background: url('chrome-extension://__MSG_@@extension_id__/img/ic_close.png') 50% 50% no-repeat;
+}
+
+#flickrdownloader_downloadImage { width: 100%; height: 100%; }
+#flickrdownloader_downloadImage .flickrdownloader_spinnerWrapper { position: absolute; width: 43px; height: 43px; top: 139px; left: 254px; }
+
+
+#flickrdownloader_downloadImage .flickrdownloader_loadedImageWrap { width: 320px; float: left; height: 320px; text-align: center; }
+#flickrdownloader_downloadImage .flickrdownloader_loadedSizesWrap { width: 220px; float: left; height: 320px; overflow-y: auto; margin-left: 10px; }
+
+#flickrdownloader_downloadImage .flickrdownloader_loadedSizesWrap i { margin-left: 5px; cursor: pointer; position: relative; }
+#flickrdownloader_downloadImage .flickrdownloader_loadedSizesWrap .size { margin-right: 15px; }
+#flickrdownloader_downloadImage .flickrdownloader_loadedSizesWrap i img { width: 20px; height: 20px; display: inline-block; }
+#flickrdownloader_downloadImage .flickrdownloader_spinnerWrapper.small { display: none; width: 20px; height: 20px; margin-left: 5px;}
+#flickrdownloader_downloadImage img { vertical-align: middle; }
+
+#downloadCounter { margin-top: 5px; text-align: right; }
+#aboutBox .textRed, #aboutBox a, #aboutBox a:visited, .textRed { color: #990000; font-weight: bold; }
+#aboutBox a { font-weight: bold; }
+#aboutBox a:hover { background: none; text-decoration: underline; }
+#aboutBox { margin-top: 2px; text-align: right; font-size: 0.9em; }
+#aboutBox .disclaimer { display: block; font-size: 0.9em; }
+
+.onlyNoPro, .onlyPro {
+	display: none;
+}
+
+
+/* doplneni stylu na strance flickru */
+#tc_photos_grid .tc_photos { position: relative; }
+.search-photos-collection-view section { margin-top: 50px !important; }

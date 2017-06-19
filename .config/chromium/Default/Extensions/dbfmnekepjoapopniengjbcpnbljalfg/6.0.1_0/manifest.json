@@ -1,0 +1,29 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "chrome_url_overrides": {
+      "newtab": "index.html"
+   },
+   "content_security_policy": "script-src 'self' https://hm.baidu.com/ https://apis.google.com/ chrome-extension://dbfmnekepjoapopniengjbcpnbljalfg/js/analytics.js 'unsafe-eval' ; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_extdesc__",
+   "icons": {
+      "128": "img/ico128.png",
+      "16": "img/ico16.png",
+      "48": "img/ico48.png",
+      "96": "img/ico96.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmQpG4qhzmLueAHZ7qFWVfW7/g9SWI66+ALaiVXUpJiBMohJEa1fSe4SNfv0/Rvm+24Xhot2nKyhxMU1kuTVxL80ExTOhrNreBjURBwa66ph/n312euYtFPOeXKc6X4GDXTZrHftWqEWp7TjKRA4wqxG4DCDqASDmqBYjDiZM80w61t7XhEXsE3kR3DC87WSzPiP6Dplg/1BvCmYg7B+qOli3aJApFdrzMgtIvE9+EqISjH7FPMhtytQ7a2TVGKELQxDsy2P9baIj1kDF+/rgbO/E+4u5ACVV8wMB/DYQAxhGfJSMLE2CnbeUkl+RyVNS3J69IFfHlEd3CIEZZxQBfwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_extname__",
+   "offline_enabled": true,
+   "page_action": {
+      "default_icon": "img/ico48.png",
+      "default_popup": "popup.html",
+      "default_title": "Add to infinity"
+   },
+   "permissions": [ "background", "geolocation", "management", "topSites", "bookmarks", "unlimitedStorage", "topSites", "identity", "http://*/", "https://*/", "chrome://favicon/", "history", "alarms", "notifications", "tabs", "storage", "activeTab", "declarativeContent", "webNavigation", "webRequest", "webRequestBlocking", "cookies" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "6.0.1"
+}

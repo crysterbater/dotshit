@@ -1,0 +1,10 @@
+{
+   "extDescription": {
+      "description": "Extension description.",
+      "message": "This extension allows you to download photos on flickr.com."
+   },
+   "extName": {
+      "description": "Extension name.",
+      "message": "Flickr Photos Download"
+   }
+}

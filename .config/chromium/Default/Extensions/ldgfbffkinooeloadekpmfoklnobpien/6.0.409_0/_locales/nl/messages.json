@@ -1,0 +1,150 @@
+{
+   "alreadyInCollection": {
+      "description": "Al in de verzameling",
+      "message": "Al in de verzameling"
+   },
+   "appDesc": {
+      "description": "\"Save Button\" for Web",
+      "message": "\"Save Button\" for Web"
+   },
+   "appName": {
+      "description": "Raindrop.io: \"Save Button\" for Web",
+      "message": "Raindrop.io: \"Save Button\" for Web"
+   },
+   "articleRemovedPermament": {
+      "description": "Artikel verwijderd",
+      "message": "Artikel verwijderd"
+   },
+   "articleSaved": {
+      "description": "Artikel opgeslagen",
+      "message": "Artikel opgeslagen"
+   },
+   "edit": {
+      "description": "Bewerken",
+      "message": "Bewerken"
+   },
+   "error": {
+      "description": "Onbekende fout. Probeer opnieuw!",
+      "message": "Onbekende fout. Probeer opnieuw!"
+   },
+   "findBookmark": {
+      "description": "Bladwijzer vinden",
+      "message": "Bladwijzer vinden"
+   },
+   "hotkey": {
+      "description": "Hotkey",
+      "message": "Hotkey"
+   },
+   "imageRemovedPermament": {
+      "description": "Foto verwijderd",
+      "message": "Foto verwijderd"
+   },
+   "imageSaved": {
+      "description": "Foto opgeslagen",
+      "message": "Foto opgeslagen"
+   },
+   "inCollection": {
+      "description": "In verzameling",
+      "message": "In verzameling"
+   },
+   "linkRemovedPermament": {
+      "description": "Link verwijderd",
+      "message": "Link verwijderd"
+   },
+   "linkSaved": {
+      "description": "Link opgeslagen",
+      "message": "Link opgeslagen"
+   },
+   "loading": {
+      "description": "Laden",
+      "message": "Laden"
+   },
+   "logOut": {
+      "description": "Uitloggen",
+      "message": "Uitloggen"
+   },
+   "myBookmarks": {
+      "description": "Mijn bladwijzers",
+      "message": "Mijn bladwijzers"
+   },
+   "myBookmarksRaindrop": {
+      "description": "Mijn bladwijzers (Raindrop.io)",
+      "message": "Mijn bladwijzers (Raindrop.io)"
+   },
+   "open": {
+      "description": "Open",
+      "message": "Open"
+   },
+   "pleaseLogin": {
+      "description": "Log in om te beginnen aub!",
+      "message": "Log in om te beginnen aub!"
+   },
+   "remove": {
+      "description": "Verwijderen",
+      "message": "Verwijderen"
+   },
+   "restore": {
+      "description": "Restore",
+      "message": "Restore"
+   },
+   "save": {
+      "description": "Opslaan",
+      "message": "Opslaan"
+   },
+   "saveError": {
+      "description": "Error tijdens opslaan!",
+      "message": "Error tijdens opslaan!"
+   },
+   "saveImage": {
+      "description": "Afbeelding opslaan naar Raindrop.io",
+      "message": "Afbeelding opslaan naar Raindrop.io"
+   },
+   "saveLink": {
+      "description": "Sla pagina op naar Raindrop.io",
+      "message": "Sla pagina op naar Raindrop.io"
+   },
+   "savePage": {
+      "description": "Sla pagina op naar Raindrop.io",
+      "message": "Sla pagina op naar Raindrop.io"
+   },
+   "saveToRaindrop": {
+      "description": "Opslaan naar Raindrop.io",
+      "message": "Opslaan naar Raindrop.io"
+   },
+   "settings": {
+      "description": "Instellingen",
+      "message": "Instellingen"
+   },
+   "signIn": {
+      "description": "Aanmelden",
+      "message": "Aanmelden"
+   },
+   "signUp": {
+      "description": "Registreren",
+      "message": "Registreren"
+   },
+   "supportOnlyUrls": {
+      "description": "U kunt alleen koppelingen opslaan met http en https protocol!",
+      "message": "U kunt alleen koppelingen opslaan met http en https protocol!"
+   },
+   "toRaindrop": {
+      "description": "naar Raindrop.io",
+      "message": "naar Raindrop.io"
+   },
+   "tryAgain": {
+      "description": "Probeer opnieuw",
+      "message": "Probeer opnieuw"
+   },
+   "unsorted": {
+      "description": "Postvak in",
+      "message": "Postvak in"
+   },
+   "videoRemovedPermament": {
+      "description": "Inhoud verwijderd",
+      "message": "Inhoud verwijderd"
+   },
+   "videoSaved": {
+      "description": "Inhoud opgeslagen",
+      "message": "Inhoud opgeslagen"
+   }
+}

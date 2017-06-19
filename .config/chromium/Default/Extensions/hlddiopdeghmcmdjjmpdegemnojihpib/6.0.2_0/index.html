@@ -1,0 +1,598 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="preload" as="image" href="assets/icon-128.png">
+    <link rel="preload" as="image" href="assets/loading/load-load.gif">
+    <link type="text/css" rel="stylesheet" href="assets/libs/quill/quill.bubble.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+
+    <div class="gdoc-loading-container"></div>
+
+    <div class="sidebar-toggle"></div>
+    <div class="dumbass-indicator">
+        <div class="material-icons">keyboard_arrow_right</div>
+    </div>
+
+    <div class="save-dialogue">
+        <div class="save-title">Close File?</div>
+        <div class="save-text">
+            <span>untitled</span> has unsaved changes. Progress will be lost.
+        </div>
+        <div class="save-buttons">
+            <div class="delete-confirm">Close</div>
+            <div class="delete-cancel">Cancel</div>
+        </div>
+    </div>
+
+    <div class="tutorial-container">
+        <div class="tutorial-close">
+            <div class="material-icons">close</div>
+        </div>
+        <div class="tutorial-text">
+            This is your workspace. Just start typing and Writer will automatically save your documents.
+        </div>
+    </div>
+
+    <div class="tutorial-container-two">
+        <div class="tutorial-close">
+            <div class="material-icons">close</div>
+        </div>
+        <div class="tutorial-text">
+            Click here to open your files and settings, enjoy!
+        </div>
+    </div>
+
+    <div class="navigation-container">
+        <div class="nav-buttons">
+            <div class="close-window">
+                <div class="close-window-line"></div>
+                <div class="close-window-line"></div>
+            </div>
+            <div class="maximize-window">
+                <div class="maximize-square"></div>
+            </div>
+            <div class="minimize-window">
+                <div class="minimize-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-bar"></div>
+
+    <div class="loading-screen">
+        <div class="loading-icon"></div>
+        <div class="loading-gif"></div>
+        <div class="loading-footer">v.6.0.2<span class="loading-online"></span></div>
+    </div>
+
+    <div class="install-screen">
+        <div class="install-bg">
+        </div>
+        <div class="install-content">
+            <div class="install-screen-button-container">
+                <div class="signin-button install-screen-button">Sign In With
+                    <div class="google-icon"></div>
+                </div>
+                <div class="continue-button install-screen-button">Continue</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="statistics-bar">
+        <label>Words</label>
+        <div class="words">0</div>
+        <label>Chars</label>
+        <div class="chars">0</div>
+    </div>
+
+    <div class="goal-snackbar">
+        <span>Goal Completed!</span>
+    </div>
+
+    <div class="snackbar">
+        <div class="snackbar-doc-title"></div>
+        <span></span>
+    </div>
+
+    <div class="main-container"></div>
+
+    <div class="details-container modal">
+        <div class="modal-title-container">
+            <div class="modal-title">Details</div>
+            <div class="modal-close">
+                <div class="material-icons">close</div>
+            </div>
+        </div>
+        <div class="details-content modal-content">
+            <div class="details-file-name">
+                <div class="details-title">Name</div>
+                <div class="details-amount file-name-details">untitled</div>
+            </div>
+            <div class="est-time-count">
+                <div class="details-title">Est. Reading Time</div>
+                <div class="details-amount est-time-amount">0 Min</div>
+            </div>
+            <div class="paragraph-count">
+                <div class="details-title">Paragraphs</div>
+                <div class="details-amount paragraph-amount">0</div>
+            </div>
+            <div class="word-count">
+                <div class="details-title">Words</div>
+                <div class="details-amount word-amount">0</div>
+            </div>
+            <div class="character-count">
+                <div class="details-title">Characters</div>
+                <div class="details-amount character-amount">0</div>
+            </div>
+            <div class="character-without-spaces-count">
+                <div class="details-title">Characters excluding spaces</div>
+                <div class="details-amount characters-without-spaces-amount">0</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="help-container modal">
+        <div class="modal-title-container">
+            <div class="modal-title">Help</div>
+            <div class="modal-close">
+                <div class="material-icons">close</div>
+            </div>
+        </div>
+        <div class="help-content modal-content">
+            <div class="command-container">
+                <div class="command-title">Shortcuts Help</div>
+                <div class="command">&#8984; + ? / CTRL + ?</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Document List</div>
+                <div class="command">&#8984; + D / CTRL + D</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Bold</div>
+                <div class="command">&#8984; + B / CTRL + B</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Italics</div>
+                <div class="command">&#8984; + I / CTRL + I</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Underline</div>
+                <div class="command">&#8984; + U / CTRL + U</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Heading</div>
+                <div class="command">&#8984; + ALT + 1 / CTRL + ALT + 1</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Subheading</div>
+                <div class="command">&#8984; + ALT + 2 / CTRL + ALT + 2</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Quote</div>
+                <div class="command">&#8984; + ALT + 5 / CTRL + ALT + 5</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Numbered List</div>
+                <div class="command">1. + SPACE</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Bulleted List</div>
+                <div class="command">- + SPACE</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Indent Paragraph</div>
+                <div class="command">SHIFT + ]</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Outdent Paragraph</div>
+                <div class="command">SHIFT + [</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Indent List</div>
+                <div class="command">TAB</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Outdent List</div>
+                <div class="command">BACKSPACE</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Code Block</div>
+                <div class="command">&#8984; + ALT + 6 / CTRL + ALT + 6</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Align Left</div>
+                <div class="command">&#8984; + W / CTRL + W</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Align Center</div>
+                <div class="command">&#8984; + E / CTRL + E</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Align Right</div>
+                <div class="command">&#8984; + R / CTRL + R</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">New</div>
+                <div class="command">&#8984; + N / CTRL + N</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Open</div>
+                <div class="command">&#8984; + O / CTRL + O</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Save</div>
+                <div class="command">&#8984; + S / CTRL + S</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Save As</div>
+                <div class="command">&#8984; + SHIFT + S / CTRL + SHIFT + S</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Print</div>
+                <div class="command">&#8984; + P / CTRL + P</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Coffee</div>
+                <div class="command">&#8984; + SHIFT + C / CTRL + SHIFT + C</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Night</div>
+                <div class="command">&#8984; + SHIFT + N / CTRL + SHIFT + N</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Statistics</div>
+                <div class="command">&#8984; + ALT + S / CTRL + ALT + S</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Focus</div>
+                <div class="command">&#8984; + SHIFT + F / CTRL + SHIFT + F</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Typewriter</div>
+                <div class="command">&#8984; + T / CTRL + T</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Close Document</div>
+                <div class="command">&#8984; + ALT + Q / CTRL + ALT + Q</div>
+            </div>
+            <div class="command-container">
+                <div class="command-title">Close Writer</div>
+                <div class="command">ESC</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback-container modal">
+        <div class="modal-title-container">
+            <div class="modal-title">Feedback</div>
+            <div class="modal-close">
+                <div class="material-icons">close</div>
+            </div>
+        </div>
+        <div class="feedback-content modal-content">
+            <form>
+
+                <div class="group">
+                    <input class="feedback-email" type="email" required name="email">
+                    <span class="bar"></span>
+                    <label>Email</label>
+                </div>
+
+                <div class="group">
+                    <input class="feedback-subject" type="text" required name="subject">
+                    <span class="bar"></span>
+                    <label>Subject</label>
+                </div>
+
+                <div class="group">
+                    <textarea class="feedback-message" required></textarea name="message">
+                    <span class="bar"></span>
+                    <label>Message</label>
+                </div>
+
+                <div class="group">
+                    <button class="submit-button">Submit</button>
+                </div>
+
+                <a href="https://chrome.google.com/webstore/detail/writer/hlddiopdeghmcmdjjmpdegemnojihpib/reviews?hl=en-US" target="_blank">or write a review.</a>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="document-container modal">
+        <div class="modal-title-container">
+            <div class="modal-title">Documents</div>
+            <div class="modal-close">
+                <div class="material-icons">close</div>
+            </div>
+        </div>
+        <div class="document-list modal-content"></div>
+    </div>
+
+    <div class="gdocument-container modal">
+        <div class="modal-title-container">
+            <div class="modal-title">Drive</div>
+            <div class="modal-close">
+                <div class="material-icons">close</div>
+            </div>
+        </div>
+        <div class="gdocument-list modal-content"></div>
+    </div>
+
+    <div class="file-container modal">
+        <div class="modal-title-container">
+            <div class="modal-title">File</div>
+            <div class="modal-close">
+                <div class="material-icons">close</div>
+            </div>
+        </div>
+        <div class="file-options modal-content">
+            <div class="file-option new">
+                <div class="material-icons">add</div>
+                <div class="option-title">New</div>
+            </div>
+            <div class="file-option open">
+                <div class="material-icons">folder</div>
+                <div class="option-title">Open</div>
+            </div>
+            <div class="file-option save">
+                <div class="material-icons">save</div>
+                <div class="option-title">Save</div>
+            </div>
+            <div class="file-option save-as">
+                <div class="material-icons">file_download</div>
+                <div class="option-title">Save As</div>
+            </div>
+            <div class="file-option print">
+                <div class="material-icons">print</div>
+                <div class="option-title">Print</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="templates-container modal">
+        <div class="modal-title-container">
+            <div class="modal-title">Templates</div>
+            <div class="modal-close">
+                <div class="material-icons">close</div>
+            </div>
+        </div>
+        <div class="templates-options modal-content">
+            <div class="templates-option letter">
+                <div class="material-icons">subject</div>
+                <div class="option-title">Letter</div>
+            </div>
+            <div class="templates-option newsletter">
+                <div class="material-icons">subject</div>
+                <div class="option-title">Newsletter</div>
+            </div>
+            <div class="templates-option notes">
+                <div class="material-icons">subject</div>
+                <div class="option-title">Class Notes</div>
+            </div>
+            <div class="templates-option MLA-essay">
+                <div class="material-icons">subject</div>
+                <div class="option-title">MLA Essay</div>
+            </div>
+            <div class="templates-option APA-essay">
+                <div class="material-icons">subject</div>
+                <div class="option-title">APA Essay</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="settings-container modal">
+        <div class="modal-title-container">
+            <div class="modal-title">Settings</div>
+            <div class="modal-close">
+                <div class="material-icons">close</div>
+            </div>
+        </div>
+        <div class="settings-list modal-content">
+            <div class="settings-option hasToggle">
+                <div class="settings-title">Coffee Mode</div>
+                <div class="toggle toggle-inactive coffee" name="coffee">
+                    <div class="toggle-circle"></div>
+                </div>
+            </div>
+            <div class="settings-option hasToggle">
+                <div class="settings-title">Fullscreen Mode</div>
+                <div class="toggle toggle-inactive full" name="full">
+                    <div class="toggle-circle"></div>
+                </div>
+            </div>
+            <div class="settings-option hasToggle">
+                <div class="settings-title">Night Mode</div>
+                <div class="toggle toggle-inactive night" name="night">
+                    <div class="toggle-circle"></div>
+                </div>
+            </div>
+            <div class="settings-option hasToggle">
+                <div class="settings-title">Autoscroll</div>
+                <div class="toggle toggle-inactive editorscroll" name="editorscroll">
+                    <div class="toggle-circle"></div>
+                </div>
+            </div>
+            <div class="settings-option hasToggle">
+                <div class="settings-title">Statistics</div>
+                <div class="toggle toggle-inactive statistics" name="statistics">
+                    <div class="toggle-circle"></div>
+                </div>
+            </div>
+            <div class="settings-option hasToggle">
+                <div class="settings-title">Focus</div>
+                <div class="toggle toggle-inactive focus" name="focus">
+                    <div class="toggle-circle"></div>
+                </div>
+            </div>
+            <div class="settings-option hasToggle">
+                <div class="settings-title">Typewriter Sounds</div>
+                <div class="toggle toggle-inactive type" name="type">
+                    <div class="toggle-circle"></div>
+                </div>
+            </div>
+            <div class="settings-option noToggle">
+                <div class="settings-title-second">Theme</div>
+                <div class="settings-description">Choose a theme.</div>
+                <div class="option theme-options">
+                    <div class="theme-option default-theme active">Default</div>
+                    <div class="theme-option dark-theme">Dark</div>
+                    <div class="theme-option turquoise-theme">Turquoise</div>
+                </div>
+            </div>
+            <div class="settings-option noToggle">
+                <div class="settings-title-second">Font</div>
+                <div class="settings-description">Choose the default font.</div>
+                <div class="option font-options">
+                    <div class="font-option charter">Charter</div>
+                    <div class="font-option droid active">Droid Serif</div>
+                    <div class="font-option courier">Courier</div>
+                    <div class="font-option georgia">Georgia</div>
+                    <div class="font-option monospace">Monospace</div>
+                    <div class="font-option roboto">Roboto</div>
+                    <div class="font-option times-new">Times New Roman</div>
+                </div>
+            </div>
+            <div class="settings-option noToggle">
+                <div class="settings-title-second">Font Size</div>
+                <div class="settings-description">Choose the default font size.</div>
+                <div class="option font-size-options">
+                    <div class="font-size-option 12px">12px</div>
+                    <div class="font-size-option 14px active">14px</div>
+                    <div class="font-size-option 16px">16px</div>
+                    <div class="font-size-option 18px">18px</div>
+                    <div class="font-size-option 24px">24px</div>
+                    <div class="font-size-option 30px">30px</div>
+                </div>
+            </div>
+            <div class="settings-option noToggle">
+                <div class="settings-title-second">Line Height</div>
+                <div class="settings-description">Choose the default line height.</div>
+                <div class="option line-options">
+                    <div class="line-option single-line">Single</div>
+                    <div class="line-option second-line">1.15</div>
+                    <div class="line-option third-line">1.5</div>
+                    <div class="line-option double-line active">Double</div>
+                </div>
+            </div>
+            <div class="settings-option noToggle">
+                <div class="settings-title-second">Margin</div>
+                <div class="settings-description">Choose the default margin size.</div>
+                <div class="option margin-options">
+                    <div class="small-margin">Small</div>
+                    <div class="medium-margin active">Medium</div>
+                    <div class="larg-margin">Large</div>
+                </div>
+            </div>
+            <div class="reset-button noToggle">
+                <div class="settings-title-second">Reset</div>
+                <div class="settings-description">Set Writer back to defaults.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="goal-container modal">
+        <div class="modal-title-container">
+            <div class="modal-title">Writing Goals</div>
+            <div class="modal-close">
+                <div class="material-icons">close</div>
+            </div>
+        </div>
+        <div class="goal-options modal-content">
+            <div class="goal-options-checkmark material-icons">check</div>
+            <div class="goal-options-bg"></div>
+            <div id="goal-progress"></div>
+            <div class="disclaimer">*Results are based on the document from which you started the goal on.</div>
+            <div class="set-goal">
+                <span>Words to complete today:</span>
+                <input class="words-to-complete" type="number" placeholder="500"/>
+            </div>
+            <div class="set-goal-button">Set New Goal</div>
+            <div class="reset-goal-button">Reset Goal</div>            
+        </div>
+    </div>
+
+    <div class="sidebar modal">
+        <div class="user-profile">
+            <div class="user-profile-bg"></div>
+            <div class="fallback-signin">Sign In With
+                <div class="google-icon"></div>
+            </div>
+            <div class="user-profile-body">
+                <div class="user-image-container">
+                    <div class="user-image"></div>
+                </div>
+                <div class="user-info">
+                    <div class="user-name"></div>
+                    <div class="user-email"></div>
+                    <div class="arrow-down">
+                        <div class="material-icons">arrow_drop_down</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-option sign-out">
+            <div class="material-icons">exit_to_app</div>
+            <div class="option-title">Sign Out</div>
+        </div>
+        <div class="sidebar-option open-file">
+            <div class="material-icons">insert_drive_file</div>
+            <div class="option-title">File</div>
+        </div>
+        <div class="sidebar-option open-gdocuments">
+            <div class="material-icons">account_box</div>
+            <div class="option-title">Drive</div>
+        </div>
+        <div class="sidebar-option open-templates">
+            <div class="material-icons">attachment</div>
+            <div class="option-title">Templates</div>
+        </div>
+        <div class="sidebar-option open-documents">
+            <div class="material-icons">library_books</div>
+            <div class="option-title">Documents</div>
+        </div>
+        <div class="sidebar-option open-details">
+            <div class="material-icons">info</div>
+            <div class="option-title">Details</div>
+        </div>
+        <div class="sidebar-option open-goals">
+            <div class="material-icons">today</div>
+            <div class="option-title">Writing Goals</div>
+        </div>
+        <div class="divider"></div>
+        <div class="sidebar-option open-settings">
+            <div class="material-icons">settings</div>
+            <div class="option-title">Settings</div>
+        </div>
+        <div class="sidebar-option open-feedback">
+            <div class="material-icons">feedback</div>
+            <div class="option-title">Send Feedback</div>
+        </div>
+        <div class="sidebar-option open-help">
+            <div class="material-icons">help</div>
+            <div class="option-title">Help</div>
+        </div>
+    </div>
+
+    <div class="bg"></div>
+
+    <script type="text/javascript" src="assets/libs/minified/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/libs/minified/marked.min.js"></script>
+    <script type="text/javascript" src="assets/libs/minified/to-markdown.min.js"></script>
+    <script type="text/javascript" src="assets/libs/minified/html-docx.min.js"></script>
+    <script type="text/javascript" src="assets/libs/minified/mammoth.browser.min.js"></script>
+    <script type="text/javascript" src="assets/libs/minified/jquery.bez.min.js"></script>
+    <script type="text/javascript" src="assets/libs/quill/quill.min.js"></script>
+    <script type="text/javascript" src="assets/libs/minified/vibrant.min.js"></script>
+    <script type="text/javascript" src="assets/libs/minified/progressbar.min.js"></script>    
+    <script type="text/javascript" src="assets/js/google-analytics-bundle.js"></script>
+    <script type="text/javascript" src="assets/libs/minified/require.min.js"></script>
+    <script type="text/javascript" src="assets/js/app.min.js"></script>
+</body>
+
+</html>

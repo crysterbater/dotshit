@@ -1,0 +1,150 @@
+{
+   "alreadyInCollection": {
+      "description": "Sudah ada dalam koleksi",
+      "message": "Sudah ada dalam koleksi"
+   },
+   "appDesc": {
+      "description": "\"Save Button\" for Web",
+      "message": "\"Save Button\" for Web"
+   },
+   "appName": {
+      "description": "Raindrop.io: \"Save Button\" for Web",
+      "message": "Raindrop.io: \"Save Button\" for Web"
+   },
+   "articleRemovedPermament": {
+      "description": "Artikel dihapus",
+      "message": "Artikel dihapus"
+   },
+   "articleSaved": {
+      "description": "Artikel tersimpan",
+      "message": "Artikel tersimpan"
+   },
+   "edit": {
+      "description": "Sunting",
+      "message": "Sunting"
+   },
+   "error": {
+      "description": "Kesalahan tidak dikenal. Coba lagi!",
+      "message": "Kesalahan tidak dikenal. Coba lagi!"
+   },
+   "findBookmark": {
+      "description": "Cari bookmark",
+      "message": "Cari bookmark"
+   },
+   "hotkey": {
+      "description": "Tombol pintas",
+      "message": "Tombol pintas"
+   },
+   "imageRemovedPermament": {
+      "description": "Foto dihapus",
+      "message": "Foto dihapus"
+   },
+   "imageSaved": {
+      "description": "Foto tersimpan",
+      "message": "Foto tersimpan"
+   },
+   "inCollection": {
+      "description": "Dalam koleksi",
+      "message": "Dalam koleksi"
+   },
+   "linkRemovedPermament": {
+      "description": "Tautan dihapus",
+      "message": "Tautan dihapus"
+   },
+   "linkSaved": {
+      "description": "Tautan tersimpan",
+      "message": "Tautan tersimpan"
+   },
+   "loading": {
+      "description": "Memuat",
+      "message": "Memuat"
+   },
+   "logOut": {
+      "description": "Keluar",
+      "message": "Keluar"
+   },
+   "myBookmarks": {
+      "description": "bookmark saya",
+      "message": "bookmark saya"
+   },
+   "myBookmarksRaindrop": {
+      "description": "bookmark saya (Raindrop.io)",
+      "message": "bookmark saya (Raindrop.io)"
+   },
+   "open": {
+      "description": "Open",
+      "message": "Open"
+   },
+   "pleaseLogin": {
+      "description": "Silakan login untuk memulai!",
+      "message": "Silakan login untuk memulai!"
+   },
+   "remove": {
+      "description": "Hapus",
+      "message": "Hapus"
+   },
+   "restore": {
+      "description": "Restore",
+      "message": "Restore"
+   },
+   "save": {
+      "description": "Simpan",
+      "message": "Simpan"
+   },
+   "saveError": {
+      "description": "Simpan galat!",
+      "message": "Simpan galat!"
+   },
+   "saveImage": {
+      "description": "Simpan gambar ke Raindrop.io",
+      "message": "Simpan gambar ke Raindrop.io"
+   },
+   "saveLink": {
+      "description": "Menyimpan halaman ke Raindrop.io",
+      "message": "Menyimpan halaman ke Raindrop.io"
+   },
+   "savePage": {
+      "description": "Menyimpan halaman ke Raindrop.io",
+      "message": "Menyimpan halaman ke Raindrop.io"
+   },
+   "saveToRaindrop": {
+      "description": "Simpan untuk Raindrop.io",
+      "message": "Simpan untuk Raindrop.io"
+   },
+   "settings": {
+      "description": "Pengaturan",
+      "message": "Pengaturan"
+   },
+   "signIn": {
+      "description": "Masuk",
+      "message": "Masuk"
+   },
+   "signUp": {
+      "description": "Daftar",
+      "message": "Daftar"
+   },
+   "supportOnlyUrls": {
+      "description": "Anda hanya dapat menyimpan tautan dengan protokol http dan https!",
+      "message": "Anda hanya dapat menyimpan tautan dengan protokol http dan https!"
+   },
+   "toRaindrop": {
+      "description": "untuk Raindrop.io",
+      "message": "untuk Raindrop.io"
+   },
+   "tryAgain": {
+      "description": "Coba lagi",
+      "message": "Coba lagi"
+   },
+   "unsorted": {
+      "description": "Kotak masuk",
+      "message": "Kotak masuk"
+   },
+   "videoRemovedPermament": {
+      "description": "Konten dihapus",
+      "message": "Konten dihapus"
+   },
+   "videoSaved": {
+      "description": "Konten tersimpan",
+      "message": "Konten tersimpan"
+   }
+}

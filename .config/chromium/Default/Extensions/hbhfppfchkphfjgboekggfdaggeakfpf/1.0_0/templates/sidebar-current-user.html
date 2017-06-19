@@ -1,0 +1,42 @@
+<div class="sidebar-current-user<% if (currentUser.authorized()) { %> authorized<% } %>">
+    <div class="sidebar-current-user-row login<% if (currentUser.authorized()) { %> authorized<% } %>">
+        <% if (currentUser.authorized()) { %>
+            <div class="sidebar-current-user-right">
+                <a href="#logout" class="sidebar-current-user-button logout menu-depended" title="Logout">
+                    <span class="sidebar-current-user-button-icon"></span>
+                </a>
+            </div>
+            <span class="sidebar-current-user-link">
+                <% if (currentUser.get('photo_small')) { %>
+                    <img class="sidebar-current-user-photo" src="<%= currentUser.escape('photo_small') %>">
+                <% } %>
+            </span>
+            <a href="#liked" class="sidebar-current-user-button likes menu-depended" title="My likes">
+                <span class="sidebar-current-user-button-icon"></span>
+                <span class="sidebar-current-user-button-label"><%= currentUser.escape('likes_count') %></span>
+            </a>
+            <a href="#boards" class="sidebar-current-user-button boards menu-depended" title="My flats">
+                <span class="sidebar-current-user-button-icon"></span>
+                <span class="sidebar-current-user-button-label"><%= currentUser.escape('boards_count') %></span>
+            </a>
+            <!--<a href="#" class="sidebar-current-user-button settings menu-depended open-settings" title="Settings">-->
+                <!--<span class="sidebar-current-user-button-icon"></span>-->
+            <!--</a>-->
+        <% } else { %>
+            <span class="sidebar-current-user-login-button menu-depended"></span>
+            <span class="sidebar-current-user-label menu-depended">Sign in:</span>
+            <a href="#login/dribbble" class="sidebar-current-user-button dribble menu-depended" title="Login with Dribbble">
+                <span class="sidebar-current-user-button-icon"></span>
+            </a>
+            <a href="#login/facebook" class="sidebar-current-user-button facebook menu-depended" title="Login with Facebook">
+                <span class="sidebar-current-user-button-icon"></span>
+            </a>
+            <a href="#login/google-oauth2" class="sidebar-current-user-button google-plus menu-depended" title="Login with Google Plus">
+                <span class="sidebar-current-user-button-icon"></span>
+            </a>
+            <a href="#login/twitter" class="sidebar-current-user-button twitter menu-depended" title="Login with Twitter">
+                <span class="sidebar-current-user-button-icon"></span>
+            </a>
+        <% } %>
+    </div>
+</div>

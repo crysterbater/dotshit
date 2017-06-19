@@ -1,0 +1,1 @@
+"use strict";angular.module("app.directives",[]).directive("ngTabs",function(){return{restrict:"A",link:function(scope,elm,attrs){var jqueryElm=$(elm[0]);$(jqueryElm).tabs()}}});

@@ -1,0 +1,39 @@
+2017/06/18-07:16:04.920 27851 Reusing MANIFEST /home/pringled/.config/vivaldi-snapshot/Default/Extension State/MANIFEST-000001
+2017/06/18-07:16:04.920 27851 Recovering log #327
+2017/06/18-07:16:04.924 27851 Reusing old log /home/pringled/.config/vivaldi-snapshot/Default/Extension State/000327.log 
+2017/06/18-08:16:52.204 1339 Level-0 table #331: started
+2017/06/18-08:16:52.336 1339 Level-0 table #331: 979471 bytes OK
+2017/06/18-08:16:52.473 1339 Delete type=0 #327
+2017/06/18-08:16:52.477 1339 Compacting 4@0 + 1@1 files
+2017/06/18-08:16:52.637 1339 Generated table #332@0: 16 keys, 6113 bytes
+2017/06/18-08:16:52.637 1339 Compacted 4@0 + 1@1 files => 6113 bytes
+2017/06/18-08:16:52.782 1339 compacted to: files[ 0 1 1 0 0 0 0 ]
+2017/06/18-08:16:52.782 1339 Delete type=2 #328
+2017/06/18-08:16:52.782 1339 Delete type=2 #325
+2017/06/18-08:16:52.782 1339 Delete type=2 #331
+2017/06/18-08:16:52.783 1339 Delete type=2 #323
+2017/06/18-08:16:52.783 1339 Delete type=2 #321
+2017/06/18-08:55:16.794 1339 Level-0 table #334: started
+2017/06/18-08:55:16.947 1339 Level-0 table #334: 974756 bytes OK
+2017/06/18-08:55:17.071 1339 Delete type=0 #330
+2017/06/18-10:08:28.920 1339 Level-0 table #336: started
+2017/06/18-10:08:29.248 1339 Level-0 table #336: 990581 bytes OK
+2017/06/18-10:08:29.434 1339 Delete type=0 #333
+2017/06/18-11:38:19.097 1339 Level-0 table #338: started
+2017/06/18-11:38:19.348 1339 Level-0 table #338: 1015493 bytes OK
+2017/06/18-11:38:19.462 1339 Delete type=0 #335
+2017/06/18-15:54:25.305 1339 Level-0 table #340: started
+2017/06/18-15:54:26.178 1339 Level-0 table #340: 1077223 bytes OK
+2017/06/18-15:54:27.937 1339 Delete type=0 #337
+2017/06/18-15:54:30.203 1339 Compacting 4@0 + 1@1 files
+2017/06/18-15:54:31.461 1339 Generated table #341@0: 16 keys, 6113 bytes
+2017/06/18-15:54:31.461 1339 Compacted 4@0 + 1@1 files => 6113 bytes
+2017/06/18-15:54:31.919 1339 compacted to: files[ 0 1 1 0 0 0 0 ]
+2017/06/18-15:54:31.919 1339 Delete type=2 #336
+2017/06/18-15:54:32.061 1339 Delete type=2 #340
+2017/06/18-15:54:32.062 1339 Delete type=2 #334
+2017/06/18-15:54:32.072 1339 Delete type=2 #338
+2017/06/18-15:54:32.098 1339 Delete type=2 #332
+2017/06/18-16:59:07.091 1339 Level-0 table #343: started
+2017/06/18-16:59:07.245 1339 Level-0 table #343: 970028 bytes OK
+2017/06/18-16:59:07.416 1339 Delete type=0 #339

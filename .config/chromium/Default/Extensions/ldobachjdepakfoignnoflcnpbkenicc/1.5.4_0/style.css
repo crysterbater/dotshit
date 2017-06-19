@@ -1,0 +1,630 @@
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: 0px 1px 1px #FFF;
+	color: #555;
+}
+
+body {
+	min-width: 500px;
+	min-height: 500px;
+}
+
+hr {
+	border: 1px solid #CCC;
+}
+
+input {
+	border: 1px solid #AAA;
+	border-bottom: 0px;
+	border-right: 0px;
+	padding: 5px;
+	width: 140px;
+	height: 24px;
+}
+
+a:link, a:visited {
+	color: #444;
+}
+a:hover {
+	color: #888;
+}
+
+.smallText {
+	font-size: 12px;
+}
+
+.warning {
+	color: #D00;
+}
+
+.full {
+	width: 100%;
+}
+.mostly {
+	width: 75%;
+}
+.half {
+	width: 46%;
+}
+.fourty {
+	width: 44%;
+}
+.third {
+	width: 33%;
+}
+
+#header {
+	z-index: 10;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(230, 230, 230,1)), to(rgba(255, 255, 255,0.5)));
+}
+
+#promobtn {
+	cursor: pointer;
+	background: #EEE;
+	font-size: 10px;
+}
+#promobtn:hover {
+	background: #F7ED8C;
+}
+
+#header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 50px;
+}
+	#headerLogo {
+		cursor: pointer;
+		float: left;
+	}
+
+	#headerName {
+		cursor: pointer;
+		margin-top: 10px;
+		margin-left:-10px;
+	}
+	
+	#navigation {
+		position: absolute;
+		top: 0px;
+		left: 300px;
+		right: 38px;
+		height: 100%;
+	}
+	
+#headerBtns {
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(255,255,255,0)), to(rgba(230,230,230,1)));
+	z-index: 11;
+}
+#headerBtns a {
+	display: block;
+}
+#headerBtns a>img {
+	cursor: pointer;
+	width: 32px;
+	padding: 2px;
+	margin: -1px 0px;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+#headerBtns a>img:hover {
+	border-top: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+	background: -webkit-gradient(linear, 0% 0%, 120% 0%, from(rgba(255, 255, 255,0)), to(rgba(200, 200, 200,1)));
+}
+
+#sidebar {
+	position: fixed;
+	top: 50px;
+	left: 0px;
+	bottom: 0px;
+	width: 300px;
+}
+	#general {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 50%;
+		height: 100%;
+		padding-left: 10px;
+	}
+	
+	#specific {
+		display: none;
+		position: absolute;
+		top: 10px;
+		right: 0px;
+		width: 128px;
+		/*height: 100%;*/
+		padding: 5px;
+		border: 1px solid #CCC;
+		border-radius: 10px;
+		-webkit-box-shadow: -2px 0px #CCC;
+	}
+	
+	#chapterOptions {
+		display: none;
+	}
+	
+	#pasteButton {
+		display: none;
+		width: 90%;
+	}
+	
+	.menu {
+		display: none;
+		position: absolute;
+		padding: 5px;
+		margin-top: -6px;
+		margin-left: -147px;
+		width: 130px;
+		border-radius: 10px 0px 10px 10px;
+		border: 1px solid #CCC;
+		-webkit-box-shadow: -2px 0px #CCC;
+	}
+	#content.showmenu .book:hover.small .menu {
+		display: block;
+	}
+	b, .subchapter /*.menu b, #specific b, #general b*/ {
+		font-size: 14px;
+		color: #AAA;
+	}
+
+#content {
+	position: absolute;
+	top: 50px;
+	left: 300px;
+	right: 32px;
+	/*right: 145px;*/
+	padding: 10px;
+	padding-bottom: 	120px;
+}
+
+#dropzone {
+	position: fixed;
+	top: 50px;
+	bottom: 5px;
+	right: 5px;
+	width: 120px;
+	padding: 10px;
+	padding-right: 0px;
+	border: 5px dashed #CCC;
+	overflow-y: visible;
+	overflow-x: hidden;
+}
+#dropzone.empty {
+	
+}
+#dropzone.ready {
+	
+}
+
+#dialogue {
+	display: none;
+	position: fixed;
+	top: 50px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,0.5)), to(rgba(0,0,0,0.5)));
+}
+	#dialogue #box {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		padding: 10px 20px 10px 20px;
+		background:white;
+		border: 1px solid #AAA;
+		border-radius: 10px;
+		-webkit-box-shadow: 5px 5px 10px #555;
+		z-index: 10;
+	}
+	#dialogue #box input, #dialogue #box select {
+		width: 100%;
+	}
+	#dialogue #box img {
+		width: 50%;
+	}
+	#dialogue.add.bookmark #box, #dialogue.edit.bookmark #box {
+		margin-top:-170px;
+		margin-left:-215px;
+		width: 400px;
+		height: 260px;
+	}
+	#dialogue.add.folder #box, #dialogue.edit.folder #box {
+		margin-top:-135px;
+		margin-left:-215px;
+		width: 400px;
+		height: 200px;
+	}
+	#dialogue.remove #box {
+		margin-top:-110px;
+		margin-left:-115px;
+		width: 200px;
+		height: 100px;
+	}
+	#dialogue.info #box,
+	#dialogue.news #box,
+	#dialogue.welcome #box,
+	#dialogue.notification #box {
+		margin-top:-160px;
+		margin-left:-265px;
+		width: 500px;
+		height: 300px;
+	}
+	#dialogue.notification #box img {
+		width: 16px;
+		height: 16px;
+	}
+	#dialogue.notification #box li {
+		margin: 20px 10px;
+	}
+
+.tutorial {
+	cursor: default;
+	position: absolute;
+	margin: 4px;
+	padding: 4px;
+	border-radius: 4px;
+	background: rgb(254,243,147);
+	white-space: nowrap;
+	z-index: 11;
+}
+
+.book, button {
+	position: relative;
+	cursor: default;
+	padding: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	font-size: 13px;
+	border: 1px solid #CCC;
+	-webkit-box-shadow: 1px 1px #CCC;
+	background: #FAFAFA;
+	/*-webkit-transition: all 200ms;*/
+}
+
+	.book:hover, button:hover {
+		background: #F3F3F3;
+		border: 1px solid #AAA;
+	}
+	
+	.book.icon {
+		display: inline-block;
+		border-radius: 5px;
+		width: 16px;
+		height: 16px;
+	}
+	.book.icon:hover {
+		/* ... */
+	}
+	
+	.book.tiny {
+		display: inline-block;
+		border-radius: 5px;
+		height: 17px;
+	}
+	.book.tiny:hover {
+		/* ... */
+	}
+	
+	.book.small, button {
+		border-radius: 5px;
+	}
+	.book.small {
+		height: 17px;
+	}
+	.book.small:hover {
+		margin-left: -6px;
+	}
+	.book.small a {
+		margin-left: 4px;
+	}
+	.book.small.mark img {
+		width: 16px;
+		height: 16px;
+	}
+	.book.small.mark .select {
+		display: none;
+		cursor: pointer;
+		float: right;
+		margin-top: -5px;
+		margin-right: -5px;
+		width: 100px;
+		height: 25px;
+		padding: 2px;
+		line-height: 24px;
+		text-align: center;
+		font-weight: bold;
+		background: rgba(0,0,0,0.1);
+		border-radius: 0px 5px 5px 0px;
+	}
+	.book.small.mark .select button {
+		display: none;
+		padding: 2px;
+	}
+	.book.small.mark:hover .select {
+		display: inline-block;
+	}
+	.book.small.mark .select:hover {
+		width: 300px;
+		/*background: rgba(255,255,255,0.5);
+		border-left: 1px solid #CCC;*/
+	}
+	.book.small.mark .select:hover button {
+		display: inline-block;
+	}
+	
+	#content.showmenu .book.small:hover {
+		border-radius: 0px 5px 5px 0px;
+	}
+
+	.book.large, .book.image {
+		cursor: pointer;
+		display: inline-block;
+		width: 100px;
+		height: 100px;
+		border-radius: 10px;
+		float: left;
+		background-repeat: no-repeat;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		font-weight: bold;
+		text-shadow:
+			1px 1px 0 #FAFAFA,
+			-1px -1px 0 #FAFAFA,
+			1px -1px 0 #FAFAFA,
+			-1px 1px 0 #FAFAFA,
+			1px 1px 0 #FAFAFA;
+	}
+	.book.large {
+		background-position: 42px 42px;
+		background-size: 64px 64px;
+	}
+	.book.image {
+		background-position: 50% 49%; /* not 50% because of white bar above image */
+		background-size: cover;
+	}
+	.book.large:hover, .book.image:hover {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		text-shadow:
+			1px 1px 0 #F3F3F3,
+			-1px -1px 0 #F3F3F3,
+			1px -1px 0 #F3F3F3,
+			-1px 1px 0 #F3F3F3,
+			1px 1px 0 #F3F3F3;
+	}
+	.book.large.disabled {
+		background-color: #E5E5E5;
+	}
+	
+	.book.app {
+		cursor: default;
+	}
+	.book.app:hover a {
+		display: none;
+	}
+	.book.app .back, .book.image .back {
+		display: none;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		border-radius: 5px;
+	}
+	.book.app:hover .back {
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.book.image:hover .back {
+		display: inline-block;
+		width: 90%;
+		height: 90%;
+		padding: 5%;
+		background: rgba(255, 255, 255, 0.8);
+	}
+	
+	.book.mark {
+		/* ... */
+	}
+	
+	.book.chapter {
+		background: rgb(254,243,147);
+	}
+	.book.chapter:hover {
+		background: rgb(247,237,140);
+	}
+	
+	.book.mark.selected {
+		background: #CCC;
+		color: white;
+		text-shadow: 1px 1px 1px #AAA;
+	}
+	
+	.book.chapter.selected {
+		background: rgb(254,200,104);
+	}
+	
+	.book .badge {
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		text-shadow: none;
+		background: #D00;
+		color: white;
+		max-width: 100px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 7px;
+		padding-right: 5px;
+		border-top-right-radius: 5px;
+		border-bottom-left-radius: 10px;
+	}
+
+.book.tiny a,
+.book.small a {
+	vertical-align: top;
+}
+
+.subchapter {
+	display: inline-block;
+	width: 100%;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom:5px;
+}
+	.subchapter img {
+		width: 14px;
+		height: 14px;
+		margin-right: 5px;
+	}
+	
+	.subchapter a {
+		margin-left: 5px;
+		font-size: 12px;
+		color: #AAA;
+	}
+
+.breadcrumb {
+	cursor: pointer;
+	display: inline-block;
+	padding: 5px;
+	margin-top: 10px;
+	margin-left: 5px;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(230, 230, 230)), to(rgb(255, 255, 255)));
+}
+	.breadcrumb:hover, .breadcrumb.selected {
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(206, 206, 206)), to(rgb(240, 240, 240)));
+	}
+
+.cut {
+	border-style: dashed;
+}
+.cut:hover {
+	border-style: dashed;
+}
+
+.column {
+	float: left;
+	width: 155px;
+	height: 240px;
+	padding: 5px;
+}
+
+.scrollable {
+	overflow-y: auto;
+}
+
+.nofloat {
+	float: none;
+}
+
+.invalid {
+	background: rgb(255,188,188);
+}
+
+.center {
+	text-align: center;
+}
+
+
+
+/* drag-specific */
+.book.drag {
+	border-style: dashed;
+}
+
+.drag-before, .drag-here, .drag-after {
+	display: none;
+	position: absolute;
+}
+#content.showdrag .book:hover .drag-before, #content.showdrag .book:hover .drag-here, #content.showdrag .book:hover .drag-after {
+	display: block;
+}
+
+.book.small .drag-before {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 35%;
+	background: red;
+}
+.book.small .drag-here {
+	top: 35%;
+	left: 0px;
+	width: 100%;
+	height: 30%;
+	background: blue;
+}
+.book.small .drag-after {
+	top: 65%;
+	left: 0px;
+	width: 100%;
+	height: 35%;
+	background: green;
+}
+
+.book.large .drag-before {
+	top: 0px;
+	left: 0px;
+	width: 35%;
+	height: 100%;
+	background: red;
+}
+.book.large .drag-here {
+	top: 0px;
+	left: 35%;
+	width: 30%;
+	height: 100%;
+	background: blue;
+}
+.book.large .drag-after {
+	top: 0px;
+	left: 65%;
+	width: 35%;
+	height: 100%;
+	background: green;
+}
+
+.profile-name {
+	display: inline-block;
+	width: 118px;
+	vertical-align: middle;
+}
+
+.profile-image {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-right: 5px;
+	vertical-align: middle;
+	border-radius: 3px;
+	background-image: url(/img/loading_circle.gif);
+	background-size: cover;
+}
+
+.profile-name a {
+	display: block;
+	width: 118px;
+	font-weight: bold;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.list-item::before {
+	content: "- ";
+}

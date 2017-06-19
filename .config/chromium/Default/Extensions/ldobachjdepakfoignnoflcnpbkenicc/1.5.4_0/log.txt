@@ -1,0 +1,91 @@
+30/01/2011	0.1	first release
+09/06/2011	0.1.1	options added
+			german added
+09/06/2011	0.1.1.1	corrected an error in the extension description
+27/06/2011	1.0	added Google Docs integration
+			added Gmail integration
+			added badges for Books
+			added welcome-popup
+19/09/2011	1.1	added Facebook integration
+			added Google+ integration
+			added more advanced closure to classes
+			optimized loading time of options page
+			made search non-blocking
+			added note if Chapter does not contain any Books
+			added Google Analytics event tracking
+20/09/2011	1.1.0.1	added Google Analytics tracking to options page
+			made Google Analytics tracking https only
+05/12/2011	1.1.0.2	bug fixed: connecting to Facebook failed
+14/01/2012	1.2	added Flickr integration
+			added YouTube integration
+			implemented interitance by using prototypes
+			prepared data access layer for integrating external sources
+			added loading indicator
+			marks are now actual links
+			updated Google+ logo
+			updated info page
+			updated translations
+20/01/2012	1.2.0.1	bug fixed: unable to select items
+22/01/2012	1.2.0.2	bug fixed: cut&paste did not work
+23/01/2012	1.3	finished separation of sources
+			added Vimeo integration
+			added GitHub integration
+			added OAuth2 authentication
+			updated extension description
+			added Google Analytics version number tracking
+13/02/2012	1.4	renamed to nexos
+			prepared book classes for drag&drop integration
+			improved image presentation
+			improved app/extension permissions presentation
+			improved welcome-popup
+22/02/2012	1.4.1	added option to show/hide entry points on homescreen
+			added caching
+			added categories (images, videos)
+			images from Google+ no longer are linked to Picasa
+			improved image chapter presentation
+			improved image title presentation
+			made logo clickable
+04/04/2012	1.4.1.1	bug fixed: YouTube appeared offline even though it wasn't
+29/04/2012	1.5	added SoundCloud integration
+			added audio category
+			added loading indicator to categories
+			improved offline detection
+			implemented Content Security Policy
+			replaced Google Docs with Google Drive
+			bug fixed: showed only public YouTube uploads from authenticated user
+01/05/2012	1.5.0.1	reverted to 1.4.1.1 due to serious bug affecting OAuth and OAuth2
+01/05/2012	1.5.0.2 bug fixed: OAuth and OAuth2 authentication did not work due to Content Security Policy
+27/08/2012	1.5.1	added feedback button
+			added translations for newly added extension permissions
+			added contents list to source info dialog on options page
+			changed default page opening behavior
+			updated info tab on options page
+			updated settings icon
+08/09/2012	1.5.1.1	added thumbnail images to Facebook photo albums
+			submit forms by pressing ENTER
+			bug fixed: updates to books were not immediately visible
+07/11/2012	1.5.2	added profile info to source info dialog
+			added contents list to source info dialog on main page
+			bug fixed: not able to connect to Facebook over http
+			bug fixed: load social widgets when offline
+			bug fixed: options button for disabled extensions fails to open options page
+09/02/2013	1.5.3	added Instagram integration
+			added Foursquare integration
+			added deviantART integration
+			added token refresh process
+			added groups to chromeApps
+			added audio content to Chrome bookmarks
+			added tiny book size
+			added version number to app info dialog
+			started working on notifications
+			changed header buttons direction from horizontal to vertical
+			updated translations
+			updated the default Twitter tweet text
+			bug fixed: no token refresh for Facebook
+			bug fixed: error in Gmail listing when an email has no subject
+			bug fixed: some extensions were shown under apps in chromeApps
+26/02/2013	1.5.3.1	bug fixed: error in welcome dialog
+12/04/2013	1.5.4	added Springpad integration
+			added Tumblr integration
+			increased resolution of category images for images and videos
+			bug fixed: ChromeExOAuth couldn't handle anchors in URL

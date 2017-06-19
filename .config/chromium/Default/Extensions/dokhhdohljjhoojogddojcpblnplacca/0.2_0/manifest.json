@@ -1,0 +1,20 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "js/foam.js", "js/cab.js", "config.js", "background_main.js" ]
+      }
+   },
+   "default_locale": "en",
+   "icons": {
+      "128": "img/128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA03OyINRu5LI9B6np0SAHjsvsNDDEZ21/8RWUIDuTul+o/RjDU5Po0RE9ErqNROAdaxUcJmZvMWl+wlVv3f8PxEH9GsRRs0nVAu5QA8jKaiWJUrEanisAmZkCuuGZLHeLJH/ZJ4c9J/s14QvNBUzB94LIT4M1HGOk811h54Xgwk+jpVLBIKqLjXRKTw1vMw21g9btawq83Ieq3xIEYOSu0wx5fhapPXpexEusZF2xEE0O3mEzFO+UEIon4Q7QGyb3MPm/qzF/pluqJt+Jj/qRndC7Gmbty7RVuf31TyImAwvbiFc35Pq63cHh1J0vx5k1gYBuHSEWtfz7tX35LENXnwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "37.0.0.0",
+   "name": "Wikipedia",
+   "permissions": [ "webview", "power", "storage", "videoCapture", "geolocation", "pointerLock", "system.display", {
+      "fileSystem": [ "write", "retainEntries", "directory" ]
+   }, "accessibilityFeatures.read", "accessibilityFeatures.modify" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.2"
+}

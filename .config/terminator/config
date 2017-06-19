@@ -1,0 +1,31 @@
+[global_config]
+  title_transmit_fg_color = "#888a8c"
+  title_transmit_bg_color = "#1e2021"
+  title_inactive_fg_color = "#888a8c"
+  title_inactive_bg_color = "#1e2021"
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      parent = ""
+      type = Window
+      size = 560, 300
+[plugins]
+[profiles]
+  [[default]]
+    palette = "#1e2021:#bf6382:#25ae9c:#fdbd93:#6b85c2:#b399ff:#5c9d88:#e3e3e3:#1e2021:#eaaec2:#aed49b:#d4c3a0:#afc4e9:#d2b1e2:#a4d0c1:#d0d0d0"
+    background_color = "#ffffff"
+    background_darkness = 0.8
+    background_type = solid
+    cursor_color = "#888a8c"
+    font = Monospace 12
+    foreground_color = "#888a8c"
+    icon_bell = False
+    scrollback_lines = 15000
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False

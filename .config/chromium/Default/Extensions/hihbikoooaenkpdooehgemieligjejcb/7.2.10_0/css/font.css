@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+/*Noto Sans KR*/
+@font-face {
+  font-family: 'notokr';
+  src: url('../fonts/NotoSansKR-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'notokr';
+  src: url('../fonts/NotoSansKR-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+/*Spoqa Han Sans JP*/
+@font-face {
+  font-family: 'Spoqa Han Sans JP';
+  src: url('../fonts/SpoqaHanSansJP-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Spoqa Han Sans JP';
+  src: url('../fonts/SpoqaHanSansJP-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/MaterialIcons-Regular.woff') format('woff');
+}
+*:not(.material-icons) {
+  font-family: 'Roboto', 'notokr', 'Spoqa Han Sans JP', sans-serif !important
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+}

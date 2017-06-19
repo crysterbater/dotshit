@@ -1,0 +1,22 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "main.js" ]
+      }
+   },
+   "author": "Akmal Razali",
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnbFEf5wCI7elSS7zL9pC7FN/lFs6tIl/EOggmR/a5D0WQTn5sC7Iy+26f5LCbPGJHc42bXAFkCOpybxwFjYgmAgYkcoM+odHiem5Q5thk0nLgnGmy2j70HGr6Tp00pyByfkcrRSlPOhNbLIt8jrI82F322pLHeMSb7NrbOvRyeupAoebDH982Q6ATf/ycIwZZpy3VIj/H2htSxbgQO+gh4cbX/LwgPlg8oGq81YqT8UBjcH+FL8EOrhN0T/1ow70zL5IxXwwt2yQPTQCz9ZL7faNoX9Pj6c9oK/OQPU9wa0UgL2+jdY6BGO+BPIz2Jk2R7y6qZI2CTyg8e3WMe69eQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "36.0",
+   "name": "Play Music Launcher",
+   "permissions": [ "audio", "notifications", "webview", "tabs", "storage" ],
+   "short_name": "Music",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3"
+}

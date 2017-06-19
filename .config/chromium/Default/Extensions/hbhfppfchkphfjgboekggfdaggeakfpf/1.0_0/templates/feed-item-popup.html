@@ -1,0 +1,106 @@
+<div class="feed-popup" data-feed-item-id="<%= item.escape('id') %>">
+    <div class="feed-popup-foreground"></div>
+    <div class="feed-popup-top">
+        <div class="feed-popup-top-date"><%= item.formatPublished() %></div>
+        <div class="feed-popup-top-source">
+            <% if (item.get('provider_author_avatar')) { %>
+                <span class="feed-popup-top-source-image-wrapper">
+                    <img class="feed-popup-top-source-image" src="<%= item.escape('provider_author_avatar') %>">
+                    <img class="feed-popup-top-source-sub-image" src="<%= _.escape(item.get('provider').image) %>">
+                </span>
+            <% } else { %>
+                <span class="feed-popup-top-source-image-wrapper">
+                    <img class="feed-popup-top-source-image" src="<%= _.escape(item.get('provider').image) %>">
+                </span>
+            <% } %>
+            <% if (item.get('provider_author_name')) { %>
+                <span class="feed-popup-top-source-label-wrapper">
+                    <span class="feed-popup-top-source-label"><%= _.escape(item.get('provider').name) %></span>
+                    <span class="feed-popup-top-source-sub-label">
+                        By
+                        <% if (item.get('provider_author_url')) { %><a href="<%= item.escape('provider_author_url') %>" title="Go to profile" target="_blank"><% } %>
+                            <%= item.escape('provider_author_name') %>
+                        <% if (item.get('provider_author_url')) { %></a><% } %>
+                    </span>
+                </span>
+            <% } else { %>
+                <span class="feed-popup-top-source-label-wrapper">
+                    <span class="feed-popup-source-label"><%= _.escape(item.get('provider').name) %></span>
+                </span>
+            <% } %>
+        </div>
+    </div>
+    <div class="feed-popup-title"><%= item.escape('title') %></div>
+    <div class="feed-popup-buttons">
+        <a class="feed-popup-buttons-item external hoverable" href="<%= item.escape('link') %>" target="_blank">
+            <span class="feed-popup-buttons-item-icon"></span>
+        </a>
+        <span class="feed-popup-buttons-item-wrapper">
+            <a class="feed-popup-buttons-item share hoverable" href="#">
+                <span class="feed-popup-buttons-item-icon"></span>
+            </a>
+            <span class="feed-popup-buttons-item-popup">
+                <a class="feed-popup-buttons-item facebook active" href="<%= item.escape('facebook_share_link') %>" target="_blank" title="Share to Facebook">
+                    <span class="feed-popup-buttons-item-icon"></span>
+                </a>
+                <a class="feed-popup-buttons-item google-plus active" href="<%= item.escape('google_plus_share_link') %>" target="_blank" title="Share to Google Plus">
+                    <span class="feed-popup-buttons-item-icon"></span>
+                </a>
+                <a class="feed-popup-buttons-item twitter active" href="<%= item.escape('twitter_share_link') %>" target="_blank" title="Share to Twitter">
+                    <span class="feed-popup-buttons-item-icon"></span>
+                </a>
+            </span>
+        </span>
+        <a class="feed-popup-buttons-item like toggle-like hoverable<% if (item.get('liked')) { %> active<% } %>" href="#" title="Like">
+            <span class="feed-popup-buttons-item-icon"></span>
+            <span class="feed-popup-buttons-item-label likes-count"><%= item.getTotalLikesShort() %></span>
+        </a>
+        <a class="feed-popup-buttons-item folder add-to-board hoverable<% if (item.get('is_boarded')) { %> active<% } %>" href="#" title="Add to flat">
+            <span class="feed-popup-buttons-item-icon"></span>
+            <span class="feed-popup-buttons-item-label boards-count"><%= item.getTotalBoardsShort() %></span>
+        </a>
+        <a class="feed-popup-buttons-item facebook hoverable" href="<%= item.escape('facebook_share_link') %>" target="_blank" title="Share to Facebook">
+            <span class="feed-popup-buttons-item-icon"></span>
+        </a>
+        <a class="feed-popup-buttons-item google-plus hoverable" href="<%= item.escape('google_plus_share_link') %>" target="_blank" title="Share to Google Plus">
+            <span class="feed-popup-buttons-item-icon"></span>
+        </a>
+        <a class="feed-popup-buttons-item twitter hoverable" href="<%= item.escape('twitter_share_link') %>" target="_blank" title="Share to Twitter">
+            <span class="feed-popup-buttons-item-icon"></span>
+        </a>
+    </div>
+
+    <% if (item.get('images').length == 1) { %>
+        <% img = item.get('images')[0] %>
+        <div class="feed-popup-image-border">
+            <div class="feed-popup-image-container" style="padding-top: <%= (100 * img.height / img.width) %>%;">
+                <img class="feed-popup-image" src="<%= _.escape(img.image) %>">
+                <a href="#" class="feed-popup-expand-image">
+                    <span class="feed-popup-expand-image-icon"></span>
+                </a>
+            </div>
+        </div>
+    <% } else if (item.get('images').length > 1) { %>
+        <div class="feed-popup-images-container">
+            <div class="feed-popup-images">
+                <% _.forEach(item.get('images'), function(img) { %>
+                    <div class="feed-popup-images-item-container" style="width: <%= (437 * _.escape(img.width) / _.escape(img.height)) %>px;">
+                        <div class="feed-popup-images-item-height-container" style="padding-top: <%= (100 * _.escape(img.height) / _.escape(img.width)) %>%;">
+                            <img class="feed-popup-images-item" src="<%= _.escape(img.image) %>">
+                        </div>
+                        <a href="#" class="feed-popup-expand-image">
+                            <span class="feed-popup-expand-image-icon"></span>
+                        </a>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+        <div class="feed-popup-images-space" style="height: 437px"></div>
+    <% } %>
+
+    <% if (!_.isEmpty(item.get('text'))) { %>
+        <div class="feed-popup-text">
+            <%= item.get('text') %>
+        </div>
+    <% } %>
+</div>

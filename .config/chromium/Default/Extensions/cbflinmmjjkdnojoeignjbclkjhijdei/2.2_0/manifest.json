@@ -1,0 +1,18 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "Monitor your system, CPU, and display information!",
+   "icons": {
+      "128": "logo.png",
+      "16": "logo.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwZX8YAJQy5V0+f4+WBSLkc/l+5L4QN9NJOILNHrRy3J1UdOlWMggSlHgiD8r6Jl7jc1Gd1a6V5nz+j6VtIcdyoFhAHysDBLX7Cs0WJbFRsb/CO9CJ0G59BwhdrlhG5nBlRnYQ3dtapKQS31V6g2JhMPSnN6jRJpJvG83mfRMTToTSjt9IhRU++sKN5RzMarIJnYDUnUf9vHE1fHlQTpb/I79ab7OAtTqWA1b+9MPZDoV9tMWDUbNtabhTb8oYPHrULJfMdNVZodhYrvsiTJowLLvM0/dIHeffnb5yP43yC6Uyv5EAkYheWEYGjh2wpNOymgRn0mcxusASGwBPndtLQIDAQAB",
+   "manifest_version": 2,
+   "name": "SysInfo",
+   "permissions": [ "http://*/", "https://*/", "system.cpu", "system.memory", "system.storage", "system.display", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.2"
+}

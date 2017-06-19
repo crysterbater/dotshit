@@ -1,0 +1,150 @@
+{
+   "alreadyInCollection": {
+      "description": "Уже в коллекции",
+      "message": "Уже в коллекции"
+   },
+   "appDesc": {
+      "description": "Кнопка \"Сохранить\" для интернета",
+      "message": "Кнопка \"Сохранить\" для интернета"
+   },
+   "appName": {
+      "description": "Raindrop.io: Кнопка \"Сохранить\" для интернета",
+      "message": "Raindrop.io: Кнопка \"Сохранить\" для интернета"
+   },
+   "articleRemovedPermament": {
+      "description": "Статья удалена",
+      "message": "Статья удалена"
+   },
+   "articleSaved": {
+      "description": "Статья сохранена",
+      "message": "Статья сохранена"
+   },
+   "edit": {
+      "description": "Редактировать",
+      "message": "Редактировать"
+   },
+   "error": {
+      "description": "Неизвестная ошибка. Попробуйте еще раз!",
+      "message": "Неизвестная ошибка. Попробуйте еще раз!"
+   },
+   "findBookmark": {
+      "description": "Найти закладку",
+      "message": "Найти закладку"
+   },
+   "hotkey": {
+      "description": "Горячие клавиши",
+      "message": "Горячие клавиши"
+   },
+   "imageRemovedPermament": {
+      "description": "Картинка удалена",
+      "message": "Картинка удалена"
+   },
+   "imageSaved": {
+      "description": "Картинка сохранена",
+      "message": "Картинка сохранена"
+   },
+   "inCollection": {
+      "description": "В коллекции",
+      "message": "В коллекции"
+   },
+   "linkRemovedPermament": {
+      "description": "Ссылка удалена",
+      "message": "Ссылка удалена"
+   },
+   "linkSaved": {
+      "description": "Ссылка сохранена",
+      "message": "Ссылка сохранена"
+   },
+   "loading": {
+      "description": "Идет загрузка",
+      "message": "Идет загрузка"
+   },
+   "logOut": {
+      "description": "Сменить аккаунт",
+      "message": "Сменить аккаунт"
+   },
+   "myBookmarks": {
+      "description": "Мои закладки",
+      "message": "Мои закладки"
+   },
+   "myBookmarksRaindrop": {
+      "description": "Мои закладки (Raindrop.io)",
+      "message": "Мои закладки (Raindrop.io)"
+   },
+   "open": {
+      "description": "Открыть",
+      "message": "Открыть"
+   },
+   "pleaseLogin": {
+      "description": "Пожалуйста, войдите, чтобы начать сохранять закладки",
+      "message": "Пожалуйста, войдите, чтобы начать сохранять закладки"
+   },
+   "remove": {
+      "description": "Удалить",
+      "message": "Удалить"
+   },
+   "restore": {
+      "description": "Восстановить",
+      "message": "Восстановить"
+   },
+   "save": {
+      "description": "Сохранить",
+      "message": "Сохранить"
+   },
+   "saveError": {
+      "description": "Произошла ошибка при сохранении!",
+      "message": "Произошла ошибка при сохранении!"
+   },
+   "saveImage": {
+      "description": "Сохранить изображение в коллекцию",
+      "message": "Сохранить изображение в коллекцию"
+   },
+   "saveLink": {
+      "description": "Сохранить страницу в коллекцию",
+      "message": "Сохранить страницу в коллекцию"
+   },
+   "savePage": {
+      "description": "Сохранить страницу в коллекцию",
+      "message": "Сохранить страницу в коллекцию"
+   },
+   "saveToRaindrop": {
+      "description": "Сохранить на Raindrop.io",
+      "message": "Сохранить на Raindrop.io"
+   },
+   "settings": {
+      "description": "Настройки",
+      "message": "Настройки"
+   },
+   "signIn": {
+      "description": "Войти",
+      "message": "Войти"
+   },
+   "signUp": {
+      "description": "Регистрация",
+      "message": "Регистрация"
+   },
+   "supportOnlyUrls": {
+      "description": "К сожалению мы не можем сохранить данную страницу!",
+      "message": "К сожалению мы не можем сохранить данную страницу!"
+   },
+   "toRaindrop": {
+      "description": "на Raindrop.io",
+      "message": "на Raindrop.io"
+   },
+   "tryAgain": {
+      "description": "Попробовать еще",
+      "message": "Попробовать еще"
+   },
+   "unsorted": {
+      "description": "Несортированные",
+      "message": "Несортированные"
+   },
+   "videoRemovedPermament": {
+      "description": "Контент удален",
+      "message": "Контент удален"
+   },
+   "videoSaved": {
+      "description": "Контент сохранён",
+      "message": "Контент сохранён"
+   }
+}

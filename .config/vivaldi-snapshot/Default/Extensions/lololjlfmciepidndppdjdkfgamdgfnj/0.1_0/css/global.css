@@ -1,0 +1,87 @@
+.mono { font-family: monospace; font-weight: bold; }
+.clear { clear: both; }
+.bind { cursor: pointer; }
+.hidden { display: none; }
+
+
+
+
+.pxdownloaderButton {
+	text-decoration: none;
+	font-size: 12px;
+	display: inline-block;
+	width: auto;
+	height: 32px;
+	line-height: 30px;
+	padding: 0px 15px;
+	color: white;
+	font-weight: normal;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: all 0.15s ease-out;
+	-webkit-transition-delay: 0s;
+	-webkit-transition: all 0.15s ease-out 0s;
+	transition: all 0.15s ease-out 0s;
+	-webkit-appearance: none;
+	white-space: nowrap;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+.pxdownloaderButton.success {
+	font-size: 15px;
+	background: #34bf49;
+	border: 1px solid #2fab41;
+	-webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.2);
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.2);
+}
+
+.pxdownloaderButton.success:hover {
+	background: #41cb56;
+	cursor: pointer;
+}
+
+.pxdownloaderButton.success:hover {
+	background: #41cb56;
+	cursor: pointer;
+}
+
+.pxdownloaderButton.cancel {
+	background: #e3e4e5;
+	color: #71767a;
+	border: 1px solid #d6d7d9;
+	-webkit-transition: all 0.15s ease-out;
+	-webkit-transition-delay: 0s;
+	-webkit-transition: all 0.15s ease-out 0s;
+	transition: all 0.15s ease-out 0s;
+	-webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.6);
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.6);
+}
+
+.pxdownloaderButton.cancel:hover {
+	background: #d6d7d9;
+	cursor: pointer;
+}
+
+.pxdownloaderButton.btn-info {
+	background: #3490bf;
+	border: 1px solid #2f89ab;
+	-webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.2);
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.2);
+}
+
+.pxdownloaderButton.btn-info:hover {
+	background: #41a9cb;
+	cursor: pointer;
+}
+
+.pxdownloaderButton.small {
+	height: 25px;
+	line-height: 23px;
+}
+
+.pxdownloaderButton.hidden { display: none; }

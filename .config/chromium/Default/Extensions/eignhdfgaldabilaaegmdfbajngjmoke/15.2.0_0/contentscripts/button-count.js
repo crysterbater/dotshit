@@ -1,0 +1,1 @@
+!function(){"use strict";function t(){document.documentElement?document.documentElement.dataset.toolbarButtonCount=o:setTimeout(t,50)}var o=location.search.split("bm_toolbar_button_count=")[1];o&&(o=o.split("&")[0]),t()}();

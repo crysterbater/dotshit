@@ -1,0 +1,33 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "icons/icon-16.png",
+         "38": "icons/icon-38.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "SoundCloud Enhancer"
+   },
+   "content_scripts": [ {
+      "css": [ "css/vex.css", "css/vex-theme-top.css", "css/insignia.min.css", "css/style.css" ],
+      "js": [ "js/jquery.min.js", "js/vex.combined.min.js", "js/insignia.min.js", "js/enhancer.js" ],
+      "matches": [ "https://soundcloud.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "This extension gives you tools, that will make your SoundCloud more customizable.",
+   "homepage_url": "http://benjaminbachjensen.com",
+   "icons": {
+      "128": "icons/icon-128.png",
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhdbp0yIO2GZWwM2SNtdGKVy+YsEAZKtdMGD5tTLmDWYxxyts4iDPg6FO0d5EurM6w0haRw/dSMhuOHcz5TFQAgyBBMJoxZfDRkzES+2z2toDjYhZFWokt9RNvvYPEr4+vd5HE8yB2MwpIoB5N1URruQLg/Djz3wJmXYEICfQNc7OPHFJGiTXpA0OpGPHHK8XirK+dJLDZXPVk+2+UP5RgY7r6a+VjbvrSB5buS6sxZhkjeR6jl9o1NmustfiD+wRH3UQoKHK5zHUj5boAWVn0kF+84xcuYVn4BPH5WrJWDX+vlgXaYf0OjVxHhLPks5juVaSTm4HVquA3b3vN3BkKwIDAQAB",
+   "manifest_version": 2,
+   "name": "SoundCloud Enhancer",
+   "permissions": [ "storage", "https://soundcloud.com/" ],
+   "short_name": "SCE",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1"
+}

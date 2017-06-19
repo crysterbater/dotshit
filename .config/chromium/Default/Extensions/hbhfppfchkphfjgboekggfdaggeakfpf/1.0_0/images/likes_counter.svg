@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="11px" viewBox="0 0 12 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="12" height="11"></rect>
+    </defs>
+    <g id="Ui-kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Elements" sketch:type="MSArtboardGroup" transform="translate(-997.000000, -1114.000000)">
+            <g id="hover-active" sketch:type="MSLayerGroup" transform="translate(731.000000, 760.000000)">
+                <g id="Bitmap">
+                    <g id="dribbble-ball-dnld-9887db49a749236ed542c4c553c4f27f-copy-+-Dribbble-Copy" transform="translate(18.000000, 350.000000)">
+                        <g id="Group-3" transform="translate(148.000000, 4.000000)">
+                            <g id="likes" transform="translate(100.000000, 0.000000)">
+                                <g id="icon">
+                                    <mask id="mask-2" sketch:name="Mask" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <use id="Mask" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                                    <image sketch:type="MSBitmapLayer" mask="url(#mask-2)" x="0" y="0" width="12" height="45" xlink:href="data:image/png;base64,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"></image>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

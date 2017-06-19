@@ -1,0 +1,20 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://portal.pushbullet.com"
+      }
+   },
+   "description": "Portal makes getting pictures, videos, and other files from your computer onto your phone as easy as drag and drop.",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png",
+      "48": "icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk1MLYgK49e7txrNz5gqQ58zWBzA3hfenYmjSrX6xxk4pNq3TRB7dLDwngBbL/juNHSprEA0q0FLvs1abXsFLKClF/0iLflujPxB6gozOYFEgj65PYmnNTyiFwyK7PWlCU1AL2bzY3HLZP23MvDNVwKMTT1luUEo0M06SnsOQnDQKITE8Ff/WR1yzLK9MwRE/rIkZJThyZTnwaiZTlh0MYMKC+iPLtJOSZrJJEUWe0mYkliBioRsl/HFcavLReQKvocJKbE0JguWrIrHcHh898PzFkZy0sbz3IFSaEwHIz9B5xUrpzxQwAhV6Oj0rVY/6OZLG0AC704J+ZjIXOm0WBwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "31",
+   "name": "Portal - WiFi file transfers",
+   "short_name": "Portal",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1"
+}

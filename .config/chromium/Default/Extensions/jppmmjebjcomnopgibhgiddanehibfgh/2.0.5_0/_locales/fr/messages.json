@@ -1,0 +1,44 @@
+{
+   "addition_aCancel": {
+      "message": "Quitter le formulaire"
+   },
+   "addition_buttonAddUrl": {
+      "message": "ajouter une autre url"
+   },
+   "addition_buttonApply": {
+      "message": "appliquer"
+   },
+   "addition_labelLaunchAtStart": {
+      "message": "lancer au démarrage"
+   },
+   "addition_placeholderName": {
+      "message": "nom du nouveau lanceur"
+   },
+   "addition_placeholderUrl": {
+      "message": "nouvelle url"
+   },
+   "app_description": {
+      "message": "Enregistrez vos onglets préférés et ouvrez-les en 1 seul click !"
+   },
+   "app_title": {
+      "message": "quick launch'em"
+   },
+   "edition_aAdd": {
+      "message": "Ajouter un nouveau Quick Launch"
+   },
+   "edition_aBack": {
+      "message": "Retour aux Quick Launches"
+   },
+   "option_aClose": {
+      "message": "Fermer les options"
+   },
+   "option_labelSync": {
+      "message": "Activer la synchronisation"
+   },
+   "shortcuts_aModify": {
+      "message": "Modifier les Quick Launches"
+   },
+   "shortcuts_aOptions": {
+      "message": "Voir les options"
+   }
+}

@@ -1,0 +1,494 @@
+
+/* RESET */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;}
+input,button,output,select,legend,textarea {-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;-webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 0;-webkit-appearance: none;-moz-appearance: none;appearance: none;-webkit-border: none;-moz-border: none;border: none;outline: none;float: left;margin: 0;}
+
+
+/* FONTS */
+
+@font-face {
+  font-family: 'open_sanslight';
+  src: url('fonts/opensans/OpenSans-Light-webfont.eot');
+  src: url('fonts/opensans/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/opensans/OpenSans-Light-webfont.woff') format('woff'),
+       url('fonts/opensans/OpenSans-Light-webfont.ttf') format('truetype'),
+       url('fonts/opensans/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url('fonts/opensans/OpenSans-Semibold-webfont.eot');
+  src: url('fonts/opensans/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/opensans/OpenSans-Semibold-webfont.woff') format('woff'),
+       url('fonts/opensans/OpenSans-Semibold-webfont.ttf') format('truetype'),
+       url('fonts/opensans/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* STYLES */
+
+body {
+  font-family: 'open_sanslight';
+  font-size: 1em;
+  color: #FFF;
+  background-color: #e1e4f2;
+  background: -webkit-gradient(linear, 0 100%, 0 0%, from(#b4b6c2), to(#e1e4f2));
+  padding: 40px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.tr_2,
+.tr_2 * {
+  -webkit-transition: all 200ms ease-out;
+     -moz-transition: all 200ms ease-out;
+       -o-transition: all 200ms ease-out;
+          transition: all 200ms ease-out;
+}
+
+.tr_spe {
+  -webkit-transition: all 1000ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+     -moz-transition: all 1000ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+       -o-transition: all 1000ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+          transition: all 1000ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+.icns {
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background-image: url( ../sprites/sprites.png);
+  background-repeat: no-repeat;
+}
+
+a.icns {
+  opacity: .4;
+}
+
+a.icns:hover,
+a.icns.active {
+  opacity: 1;
+}
+
+.icon-cancel  { background-position:    0px   0px; }
+.icon-options { background-position:  -30px   0px; }
+.icon-ok      { background-position:  -60px   0px; }
+.icon-left    { background-position:  -90px   0px; }
+.icon-edit    { background-position: -120px   0px; }
+.icon-drag    { background-position: -150px   0px; }
+.icon-cancelw { background-position: -180px   0px; }
+.icon-up      { background-position: -210px   0px; }
+.icon-delete  { background-position: -150px -30px; }
+.icon-plusw   { background-position:    0px -30px; }
+.icon-plus    { background-position:  -30px -30px; }
+.icon-search  { background-position:  -60px -30px; }
+.icon-right   { background-position:  -90px -30px; }
+.icon-valid   { background-position: -120px -30px; }
+.icon-down    { background-position: -210px -30px; }
+
+h1 {
+  font-family: 'open_sanssemibold';
+  font-size: 1.9em;
+  padding-top: 5px;
+  text-indent: 40px;
+}
+
+h1 span {
+  font-family: 'open_sanslight';
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+header {
+  color: #555;
+  width: 100%;
+  height: 70px;
+  position: relative;
+  background-image: url( ../sprites/tab.png);
+  background-repeat: no-repeat;
+}
+
+header .menu {
+  right: 10px;
+  width: 60px;
+  height: 30px;
+  bottom: 2px;
+  position: absolute;
+}
+
+header .menu a {
+  float: right;
+}
+
+body > section > a {
+  position: absolute;
+  bottom: -30px;
+  left: 10px;
+  color: #FFF;
+}
+
+#form > a.icns,
+#launcher > a.icns {
+  color: #555;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  z-index: 100;
+}
+
+.back,
+.front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.front {
+  z-index: 50;
+}
+
+.front.bottom {
+  top: 530px;
+}
+
+.front.hidden {
+  top: 600px;
+}
+
+#shortcuts a {
+  bottom: 0px;
+}
+
+#interface,
+#launcher,
+#form {
+  width: 400px;
+  height: 600px;
+}
+
+#launcher,
+#form {
+  overflow: hidden;
+}
+
+#interface {
+  background-color: transparent;
+}
+
+#form form,
+#options form,
+#edition section,
+#shortcuts section {
+  width: 100%;
+  height: 530px;
+  background-color: #007281;
+  border-radius: 0px 0px 3px 3px;
+}
+
+#edition section,
+#addition form {
+  background-color: #E74C3C;
+}
+
+#edition article,
+#addition article,
+#shortcuts article {
+  background-color: transparent;
+}
+
+#edition section,
+#shortcuts section {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.back section,
+.front section {
+  float: left;
+}
+
+article {
+  z-index: 10;
+  margin-top: 1px;
+  width: 100%;
+  height: 60px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  background-color: #e74c3c;
+  overflow: hidden;
+}
+
+article div {
+  float: left;
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  background-color: rgba( 255, 255, 255, .1);
+}
+
+article div.autolaunch {
+  background-color: rgba( 255, 255, 255, .2);
+}
+
+article div:hover {
+  background-color: rgba( 255, 255, 255, .3);
+}
+
+article div i {
+  float: left;
+  opacity: 0;
+  margin: 5px -20px 5px 10px;
+}
+
+article div:hover i {
+  opacity: 1;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+article > button {
+  height: 60px;
+  padding: 0 10px;
+  opacity: .4;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba( 255, 255, 255, .1);
+}
+
+article > button.halfHeight {
+  height: 30px;
+}
+
+.hideButtons article button,
+article:last-child > button.down,
+article:first-child > button.up {
+  display: none;
+}
+
+article > button.down,
+article > button.up {
+  right: 51px;
+}
+
+article > button.halfHeight:last-child {
+  top: 30px;
+}
+
+article > button:hover {
+  opacity: 1;
+}
+
+article h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+article h4 {
+  font-size: .6em;
+  text-transform: uppercase;
+}
+
+#form form {
+  position: relative;
+}
+
+#form form #urls {
+  overflow: hidden;
+  overflow-y: auto;
+  margin-top: 1px;
+  max-height: 285px;
+}
+
+#form fieldset#buttons {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+#edition article > div h2 {
+  width: 269px;
+}
+
+label,
+form button,
+input[type="text"] {
+  color: #FFF;
+  font-size: 1.5em;
+  font-family: 'open_sanslight';
+}
+
+label,
+form button,
+.inputUrl {
+  margin-top: 1px;
+}
+
+form > #urls article:first-child {
+  margin-top: 0px;
+}
+
+input[type="text"]:focus {
+  background-color: rgba(255,255,255,.1);
+}
+
+.input,
+input[type="text"] {
+  width: 279px;
+  height: 60px;
+  padding: 0px 101px 0 20px;
+  line-height: 30px;
+  background-color: rgba(255,255,255,.2);
+  text-overflow: ellipsis;
+}
+
+.input {
+  float: left;
+  position: relative;
+  margin-top: 1px;
+  background-color: transparent;
+}
+
+input[name="name"] {
+  margin-top: 1px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 20px 20px 0 0;
+  background-color: rgba(255,255,255,.4);
+}
+
+input[type="checkbox"]:checked {
+  background-image: url(../sprites/check.png);
+  background-repeat: no-repeat;
+}
+
+label {
+  cursor: pointer;
+  line-height: 60px;
+}
+
+label,
+article > button * {
+  opacity: .6;
+}
+
+label:hover,
+article > button:hover * {
+  opacity: 1;
+}
+
+button,
+article > button:hover {
+  background-color: transparent;
+}
+
+form button.left i {
+  float: left;
+  margin: 0 10px 0 15px;
+}
+
+form button.left span {
+  float: left;
+  text-align: left;
+  line-height: 28px;
+}
+
+form button.right i {
+  float: right;
+  margin: 0 15px 0 10px;
+}
+
+form button.right span {
+  float: right;
+  text-align: right;
+  line-height: 26px;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(255,255,255,.3);
+  line-height: 30px;
+}
+
+input:hover::-webkit-input-placeholder,
+input:focus::-webkit-input-placeholder {
+  color: rgba(255,255,255,.6);
+}
+
+article.hidden {
+  height: 0px;
+}
+
+#buttons button {
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+  background-color: rgba(255,255,255,.1);
+}
+
+#buttons button:hover {
+  background-color: rgba(255,255,255,.3);
+}
+
+
+/* FLIP TRANSITION */
+
+#interface {
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  margin: 50px auto;
+  position: relative;
+}
+
+#flipper {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+}
+
+#launcher, #form {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+}
+
+#launcher {
+  z-index: 2;
+}
+
+#form {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#interface #flipper.return {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}

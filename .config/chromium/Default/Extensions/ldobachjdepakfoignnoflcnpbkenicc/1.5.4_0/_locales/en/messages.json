@@ -1,0 +1,605 @@
+{
+   "access": {
+      "message": "access"
+   },
+   "add": {
+      "message": "add"
+   },
+   "addBookmark": {
+      "message": "add Bookmark"
+   },
+   "addConnections": {
+      "message": "add more connections"
+   },
+   "addEntryPoints": {
+      "message": "add entry points to homescreen"
+   },
+   "addFolder": {
+      "message": "add Folder"
+   },
+   "after": {
+      "message": "after"
+   },
+   "all": {
+      "message": "all"
+   },
+   "and": {
+      "message": "and"
+   },
+   "apps": {
+      "message": "apps"
+   },
+   "apps_uc": {
+      "message": "Apps"
+   },
+   "atTheBeginning": {
+      "message": "at the beginning"
+   },
+   "atTheEnd": {
+      "message": "at the end"
+   },
+   "audio": {
+      "message": "music"
+   },
+   "author": {
+      "message": "by Thomas Greiner"
+   },
+   "back": {
+      "message": "back"
+   },
+   "backToMainPage": {
+      "message": "back to nexos"
+   },
+   "badge": {
+      "message": "badge"
+   },
+   "bookmark": {
+      "message": "bookmark"
+   },
+   "bookmark_uc": {
+      "message": "Bookmark"
+   },
+   "bookmarks": {
+      "message": "bookmarks"
+   },
+   "bookmarksBar": {
+      "message": "Bookmarks Bar"
+   },
+   "bookmarks_uc": {
+      "message": "Bookmarks"
+   },
+   "cancel": {
+      "message": "cancel"
+   },
+   "chromeApps_groupBackground": {
+      "message": "background apps"
+   },
+   "chromeApps_groupBookmark": {
+      "message": "access bookmarks"
+   },
+   "chromeApps_groupHistory": {
+      "message": "access history"
+   },
+   "chromeApps_groupManagement": {
+      "message": "manage apps/extensions"
+   },
+   "chromeApps_groupOffline": {
+      "message": "offline apps"
+   },
+   "chromeApps_groupOffline_webstore": {
+      "message": "discover more offline apps"
+   },
+   "chromeApps_groupRequest": {
+      "message": "modify/block requests"
+   },
+   "chromeBookmarks_uc": {
+      "message": "Chrome Bookmarks"
+   },
+   "chromeHistory_uc": {
+      "message": "Chrome History"
+   },
+   "connect": {
+      "message": "connect"
+   },
+   "connectedAs": {
+      "message": "connected as"
+   },
+   "contents": {
+      "message": "contents"
+   },
+   "continue": {
+      "message": "continue"
+   },
+   "create": {
+      "message": "create"
+   },
+   "cut": {
+      "message": "cut"
+   },
+   "developer_uc": {
+      "message": "Developer"
+   },
+   "deviantart_favorites": {
+      "message": "Favorites"
+   },
+   "deviantart_popular": {
+      "message": "Most Popular"
+   },
+   "deviantart_uploads": {
+      "message": "My Deviations"
+   },
+   "disable": {
+      "message": "disable"
+   },
+   "disconnect": {
+      "message": "disconnect"
+   },
+   "dismiss": {
+      "message": "dismiss"
+   },
+   "edit": {
+      "message": "edit"
+   },
+   "editBookmark": {
+      "message": "edit Bookmark"
+   },
+   "editConnection": {
+      "message": "edit connection"
+   },
+   "editFolder": {
+      "message": "edit Folder"
+   },
+   "emailSubjects": {
+      "message": "email subjects"
+   },
+   "emails": {
+      "message": "emails"
+   },
+   "enable": {
+      "message": "enable"
+   },
+   "enableForOptions": {
+      "message": "Extension is disabled.\nEnable and open options page?"
+   },
+   "entryPoints_uc": {
+      "message": "Entry Points"
+   },
+   "extDescr": {
+      "message": "Organize your bookmarks, apps, extensions and all your content from Facebook, Gmail, Google+, YouTube, Google Drive, and more."
+   },
+   "extName": {
+      "message": "nexos"
+   },
+   "extensions_uc": {
+      "message": "Extensions"
+   },
+   "facebook_albums": {
+      "message": "Photo Albums"
+   },
+   "facebook_videos": {
+      "message": "Videos"
+   },
+   "features": {
+      "message": "features"
+   },
+   "feedback": {
+      "message": "feedback"
+   },
+   "files": {
+      "message": "files"
+   },
+   "flickr_favorites": {
+      "message": "Favorites"
+   },
+   "flickr_galleries": {
+      "message": "Galleries"
+   },
+   "flickr_photosets": {
+      "message": "Photosets"
+   },
+   "folder": {
+      "message": "folder"
+   },
+   "folder_uc": {
+      "message": "Folder"
+   },
+   "gdocs_collections": {
+      "message": "Collections"
+   },
+   "gdocs_documents": {
+      "message": "Documents"
+   },
+   "gdocs_drawings": {
+      "message": "Drawings"
+   },
+   "gdocs_presentations": {
+      "message": "Presentations"
+   },
+   "gdocs_spreadsheets": {
+      "message": "Spreadsheets"
+   },
+   "gdocs_starred": {
+      "message": "Starred Items"
+   },
+   "gmail_inbox": {
+      "message": "Gmail Inbox"
+   },
+   "history": {
+      "message": "history"
+   },
+   "history_uc": {
+      "message": "History"
+   },
+   "images": {
+      "message": "images"
+   },
+   "instagram_likes": {
+      "message": "Liked"
+   },
+   "instagram_popular": {
+      "message": "Most Popular"
+   },
+   "instagram_uploads": {
+      "message": "My Photos"
+   },
+   "intentPickUrlTitle": {
+      "message": "Pick bookmark / web content with nexos"
+   },
+   "items": {
+      "message": "items"
+   },
+   "launch": {
+      "message": "launch!"
+   },
+   "list": {
+      "message": "list"
+   },
+   "loading": {
+      "message": "loading"
+   },
+   "moreInfo": {
+      "message": "more info"
+   },
+   "name": {
+      "message": "name..."
+   },
+   "no": {
+      "message": "no"
+   },
+   "noConnection": {
+      "message": "no connection to source"
+   },
+   "noEntryPoints": {
+      "message": "no entry points"
+   },
+   "noItems": {
+      "message": "no items found"
+   },
+   "noTitle": {
+      "message": "no title"
+   },
+   "none": {
+      "message": "none"
+   },
+   "oauthRedirectPageTitle": {
+      "message": "OAuth Redirect Page"
+   },
+   "openAllIn": {
+      "message": "open \u003Cspan id='all_selection'>all\u003C/span> in"
+   },
+   "openIn": {
+      "message": "open in"
+   },
+   "options": {
+      "message": "options"
+   },
+   "optionsTabConnections": {
+      "message": "Connections"
+   },
+   "optionsTabGeneral": {
+      "message": "General"
+   },
+   "optionsTabHomescreen": {
+      "message": "Homescreen"
+   },
+   "optionsTabInfo": {
+      "message": "Info"
+   },
+   "optionsTabSearch": {
+      "message": "Search"
+   },
+   "optionsTitle": {
+      "message": "nexos options"
+   },
+   "otherBookmarks": {
+      "message": "Other Bookmarks"
+   },
+   "otherExtensions_uc": {
+      "message": "Other Extensions"
+   },
+   "paste": {
+      "message": "paste"
+   },
+   "permission_accessWebsite": {
+      "message": "access to a website"
+   },
+   "permission_accessWebsites": {
+      "message": "access to $COUNT$ websites",
+      "placeholders": {
+         "count": {
+            "content": "$1"
+         }
+      }
+   },
+   "permission_allurls": {
+      "message": "access to all websites"
+   },
+   "permission_background": {
+      "message": "background"
+   },
+   "permission_bookmarks": {
+      "message": "bookmarks"
+   },
+   "permission_clipboardRead": {
+      "message": "paste from clipboard"
+   },
+   "permission_clipboardWrite": {
+      "message": "copy to clipboard"
+   },
+   "permission_contentSettings": {
+      "message": "content settings"
+   },
+   "permission_contextMenus": {
+      "message": "context menu"
+   },
+   "permission_cookies": {
+      "message": "cookies"
+   },
+   "permission_devtools": {
+      "message": "developer tools"
+   },
+   "permission_experimental": {
+      "message": "experimental"
+   },
+   "permission_fileBrowserHandler": {
+      "message": "file extensions"
+   },
+   "permission_geolocation": {
+      "message": "location"
+   },
+   "permission_history": {
+      "message": "history"
+   },
+   "permission_idle": {
+      "message": "browser state"
+   },
+   "permission_management": {
+      "message": "apps & extensions"
+   },
+   "permission_notifications": {
+      "message": "notification"
+   },
+   "permission_plugin": {
+      "message": "unrestricted access"
+   },
+   "permission_privacy": {
+      "message": "privacy settings"
+   },
+   "permission_proxy": {
+      "message": "proxy settings"
+   },
+   "permission_storage": {
+      "message": "syncing settings"
+   },
+   "permission_tabs": {
+      "message": "tabs"
+   },
+   "permission_tts": {
+      "message": "text-to-speech"
+   },
+   "permission_unlimitedStorage": {
+      "message": "unlimited storage"
+   },
+   "permission_webNavigation": {
+      "message": "browsing behavior"
+   },
+   "permission_webRequest": {
+      "message": "modifying content"
+   },
+   "permission_webRequestBlocking": {
+      "message": "blocking content"
+   },
+   "permissions": {
+      "message": "permissions"
+   },
+   "reconnect": {
+      "message": "reconnect"
+   },
+   "redirecting": {
+      "message": "redirecting"
+   },
+   "remove": {
+      "message": "remove"
+   },
+   "removeFolder": {
+      "message": "remove Folder"
+   },
+   "removeSelection": {
+      "message": "remove Selection"
+   },
+   "repositories": {
+      "message": "repositories"
+   },
+   "requestAccess": {
+      "message": "Access your $SERVICE$ $ITEMS$ with nexos.",
+      "placeholders": {
+         "items": {
+            "content": "$1"
+         },
+         "service": {
+            "content": "$2"
+         }
+      }
+   },
+   "rootNameAppsExtensions": {
+      "message": "Apps & Extensions"
+   },
+   "save": {
+      "message": "save"
+   },
+   "search": {
+      "message": "search"
+   },
+   "searchIn_uc": {
+      "message": "Search in..."
+   },
+   "search_verb": {
+      "message": "search"
+   },
+   "selectionClear": {
+      "message": "clear selection"
+   },
+   "selection_uc": {
+      "message": "Selection"
+   },
+   "settings": {
+      "message": "settings"
+   },
+   "soundcloud_favorites": {
+      "message": "Favorites"
+   },
+   "soundcloud_groups": {
+      "message": "Groups"
+   },
+   "soundcloud_sets": {
+      "message": "Sets"
+   },
+   "soundcloud_tracks": {
+      "message": "Tracks"
+   },
+   "sourceNameApps": {
+      "message": "Apps"
+   },
+   "sourceNameArchive": {
+      "message": "Archive"
+   },
+   "sourceNameAudio": {
+      "message": "Music"
+   },
+   "sourceNameBookmarks": {
+      "message": "Bookmarks"
+   },
+   "sourceNameHistory": {
+      "message": "Browser History"
+   },
+   "sourceNameImages": {
+      "message": "Images"
+   },
+   "sourceNameVideos": {
+      "message": "Videos"
+   },
+   "specialThanks_uc": {
+      "message": "Special Thanks to..."
+   },
+   "tumblr_audio": {
+      "message": "Audio"
+   },
+   "tumblr_photo": {
+      "message": "Photos"
+   },
+   "tumblr_video": {
+      "message": "Videos"
+   },
+   "tutorial_navigation": {
+      "message": "navigate back and forth"
+   },
+   "tutorial_searchbox": {
+      "message": "search all your content"
+   },
+   "tutorial_settings": {
+      "message": "connect nexos to more sources + more settings"
+   },
+   "uninstall": {
+      "message": "uninstall"
+   },
+   "videos": {
+      "message": "videos"
+   },
+   "vimeo_albums": {
+      "message": "Albums"
+   },
+   "vimeo_channels": {
+      "message": "Channels"
+   },
+   "vimeo_groups": {
+      "message": "Groups"
+   },
+   "vimeo_likes": {
+      "message": "Liked Videos"
+   },
+   "vimeo_subscriptions": {
+      "message": "Subscriptions"
+   },
+   "vimeo_uploads": {
+      "message": "Uploads"
+   },
+   "visitOnWebstore": {
+      "message": "visit it on the Chrome Webstore"
+   },
+   "warningAllBookmarks": {
+      "message": "and all bookmarks in it"
+   },
+   "warningConnectionExpired": {
+      "message": "Connection to this source has expired.\n\nPlease reconnect."
+   },
+   "warningDropboxLimitations": {
+      "message": "due to limitations of Dropbox and Google Chrome it is not yet possible to view or download a file from Dropbox"
+   },
+   "warningOpenTabs": {
+      "message": "Do you reallly want to open $TAB_COUNT$ tabs?",
+      "placeholders": {
+         "tab_count": {
+            "content": "$1"
+         }
+      }
+   },
+   "webstoreName": {
+      "message": "Google Chrome Webstore"
+   },
+   "welcome": {
+      "message": "Welcome to nexos!"
+   },
+   "where": {
+      "message": "where..."
+   },
+   "windowCurrent": {
+      "message": "current window"
+   },
+   "windowIncognito": {
+      "message": "new incognito window"
+   },
+   "windowNew": {
+      "message": "new window"
+   },
+   "yes": {
+      "message": "yes"
+   },
+   "youtube_favorites": {
+      "message": "Favorites"
+   },
+   "youtube_playlists": {
+      "message": "Playlists"
+   },
+   "youtube_recommendations": {
+      "message": "Recommendations"
+   },
+   "youtube_subscriptions": {
+      "message": "Subscriptions"
+   },
+   "youtube_uploads": {
+      "message": "Uploads"
+   },
+   "youtube_watchLater": {
+      "message": "Watch Later"
+   }
+}

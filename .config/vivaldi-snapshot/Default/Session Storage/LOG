@@ -1,0 +1,27 @@
+2017/06/18-20:14:01.195 1674 Reusing MANIFEST /home/pringled/.config/vivaldi-snapshot/Default/Session Storage/MANIFEST-000001
+2017/06/18-20:14:01.198 1674 Recovering log #2545
+2017/06/18-20:14:01.322 1674 Reusing old log /home/pringled/.config/vivaldi-snapshot/Default/Session Storage/002545.log 
+2017/06/18-20:14:29.126 2083 Level-0 table #2549: started
+2017/06/18-20:14:29.299 2083 Level-0 table #2549: 194379 bytes OK
+2017/06/18-20:14:29.546 2083 Delete type=0 #2545
+2017/06/18-20:22:35.222 2083 Level-0 table #2551: started
+2017/06/18-20:22:35.486 2083 Level-0 table #2551: 65718 bytes OK
+2017/06/18-20:22:35.564 2083 Delete type=0 #2548
+2017/06/18-20:22:35.564 2083 Compacting 4@0 + 1@1 files
+2017/06/18-20:22:35.742 2083 Generated table #2552@0: 4766 keys, 1255521 bytes
+2017/06/18-20:22:35.742 2083 Compacted 4@0 + 1@1 files => 1255521 bytes
+2017/06/18-20:22:35.820 2083 compacted to: files[ 0 1 1 0 0 0 0 ]
+2017/06/18-20:22:35.820 2083 Delete type=2 #2549
+2017/06/18-20:22:35.821 2083 Delete type=2 #2542
+2017/06/18-20:22:35.821 2083 Delete type=2 #2551
+2017/06/18-20:22:35.821 2083 Delete type=2 #2546
+2017/06/18-20:22:35.821 2083 Delete type=2 #2544
+2017/06/18-20:26:35.612 2083 Level-0 table #2554: started
+2017/06/18-20:26:35.748 2083 Level-0 table #2554: 66449 bytes OK
+2017/06/18-20:26:35.872 2083 Delete type=0 #2550
+2017/06/18-20:27:31.177 2083 Level-0 table #2556: started
+2017/06/18-20:27:31.332 2083 Level-0 table #2556: 34023 bytes OK
+2017/06/18-20:27:31.410 2083 Delete type=0 #2553
+2017/06/18-20:28:25.798 2083 Level-0 table #2558: started
+2017/06/18-20:28:25.923 2083 Level-0 table #2558: 107157 bytes OK
+2017/06/18-20:28:26.046 2083 Delete type=0 #2555

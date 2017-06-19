@@ -1,0 +1,231 @@
+/*html[hv="a1"] {*/
+  /* Experimental force full height */
+  /*min-height: 100%;*/
+  /* Fix DuckDuckGo & others - inherit value messes up? This is a bug in Chrome */
+  /*height:100%;*/
+  /*transition: -webkit-filter 0.5s ease;*/
+  /*background:#FFF !important;*/
+  /*background-color:#FFF !important;*/
+  /*-webkit-filter: invert() contrast(80%) brightness(120%) contrast(85%) invert();*/
+  /*-webkit-transform: translateZ(0); /* thanks JK */
+/*}*/
+
+/* fix webkit bug for blurry text on retina displays */
+/* improve later and remove wildcard */
+/*html[hv="a1"], html[hv="a3"] *{*/
+  /* 4/1/15 Removed for github bug. */
+  /*-webkit-backface-visibility: hidden;*/
+/*}*/
+
+/*html[hv="a1"] img[src*="jpg"],
+html[hv="a1"] img[src*="jpeg"],
+html[hv="b1"] img[src*="jpg"],
+html[hv="b1"] img[src*="jpeg"] {
+  -webkit-filter: brightness(100%) contrast(100%);
+}
+html[hv="a2"] {
+  -webkit-filter: grayscale();
+}*/
+html[hv="a3"] {
+  /* Experimental force full height */
+  /*min-height:100%;
+  height:inherit;*/
+  /*transition: -webkit-filter 0.5s ease;*/
+  /*background:#FFF !important;*/
+  /*background-color:#FFF !important;*/
+  -webkit-filter: invert() contrast(87%);
+  background: rgb(29,29,29) !important;
+  /*-webkit-transform: translateZ(0); /* thanks JK */
+}
+html[hv="a3"] img,
+html[hv="b3"] img {
+  -webkit-filter: invert() brightness(105%);
+}
+
+/* General Videos Fix */
+html[hv="a3"] video:not(.flideo),
+html[hv="b3"] video:not(.flideo) {
+  -webkit-filter: invert() brightness(105%);
+}
+
+/* Vimeo Fix */
+html[hv="a3"] .flideo,
+html[hv="b3"] .flideo {
+  -webkit-filter: invert();
+}
+html[hv="a3"] .video-wrapper,
+html[hv="b3"] .video-wrapper {
+  -webkit-filter: invert();
+}
+
+/*Fix VK chat*/
+html[hv="a3"] #apps_test_id,
+html[hv="b3"] #apps_test_id {
+-webkit-filter: invert();
+}
+
+/* Flash Videos Fix */
+html[hv="a3"] object[type="application/x-shockwave-flash"],
+html[hv="b3"] object[type="application/x-shockwave-flash"]{
+  -webkit-filter: invert();
+}
+/* General Videos Fix */
+html[hv="a3"] embed[type="application/x-shockwave-flash"],
+html[hv="b3"] embed[type="application/x-shockwave-flash"] {
+  -webkit-filter: invert();
+}
+/* Youtube Fix */
+html[hv="a3"] .watch-stage-mode, 
+html[hv="b3"] .watch-stage-mode, 
+html[hv="a3"] #theater-background,
+html[hv="b3"] #theater-background {
+  background: #eee !important;
+}
+
+/*html[hv="a3"] video,
+html[hv="b3"] video {
+  -webkit-filter: invert();
+}*/
+
+html[hv="a3"] .html5-video-controls,
+html[hv="b3"] .html5-video-controls,
+html[hv="a3"] .videowall-endscreen,
+html[hv="b3"] .videowall-endscreen,
+html[hv="a3"] .ideal-aspect,
+html[hv="b3"] .ideal-aspect,
+html[hv="a3"] .ytp-thumbnail,
+html[hv="b3"] .ytp-thumbnail
+/*html[hv="a3"] #player-api,
+html[hv="b3"] #player-api*/ {
+  -webkit-filter: invert();
+}
+
+html[hv="a3"] .html5-video-container,
+html[hv="b3"] .html5-video-container {
+  background: #fff;
+}
+
+/* Netflix Fix */
+html[hv="a3"] #SLPlayer,
+html[hv="b3"] #SLPlayer {
+  -webkit-filter: invert();
+}
+/* Amazon Thumbnails Fix */
+html[hv="a3"] .swatchImageOverlay,
+html[hv="b3"] .swatchImageOverlay {
+  -webkit-filter: invert();
+}
+/* Youtube Embedded Fix 
+html[hv="a3"] .youtube-player,
+html[hv="b3"] .youtube-player {
+  -webkit-filter: invert();
+}*/
+/* iFrame Videos Fix */
+html[hv="a3"] iframe:not(.youtube-player, #d),
+html[hv="b3"] iframe:not(.youtube-player, #d) {
+  -webkit-filter: invert();
+}
+
+/* instagram iframe fix */ 
+html[hv="a3"] iframe[src*="instagram"] { 
+  -webkit-filter: invert();
+}
+
+/* older? youtube embedded video fix (not tested w/ https)*/
+html[hv="a3"] iframe:-webkit-full-screen { 
+  -webkit-filter: inherit !important; 
+}
+
+html[hv="a3"] .spookyFull {
+  -webkit-filter: invert() !important;
+}
+
+/* youTube html5 videos fix 12/9/13 */
+/*html[hv="a3"] body[data-player-size=fullscreen] .html5-video-container,
+html[hv="b3"] body[data-player-size=fullscreen] .html5-video-container {
+  -webkit-filter: invert();
+  background-color: #EEE;
+}*/
+
+/* Google Images Fix */
+html[hv="a3"] #irc_cc,
+html[hv="b3"] #irc_cc {
+  background-color: #FFF;
+}
+
+/* Facebook Photos Fix */
+html[hv="a3"] .fbStarGrid,
+html[hv="b3"] .fbStarGrid,
+html[hv="a3"] .fbPhotosGrid,
+html[hv="b3"] .fbPhotosGrid {
+  -webkit-filter: invert();
+}
+
+/* fix facebook emoticons */
+html[hv="a3"] .conversation .emoticon,
+html[hv="b3"] .conversation .emoticon {
+  -webkit-filter: invert();
+}
+
+/* Vimeo Videos Fix 
+html[hv="a3"] #cols[itemprop="video"],
+html[hv="b3"] #cols[itemprop="video"] {
+  -webkit-filter: invert();
+}*/
+
+/* Feedly fix */
+html[hv="a3"] .u14Entry .visual,
+html[hv="b3"] .u14Entry .visual {
+  -webkit-filter: invert();
+}
+
+/*Wikipedia Math Equations Fix*/
+html[hv="a3"] .mwe-math-fallback-png-inline,
+html[hv="b3"] .mwe-math-fallback-png-inline {
+  -webkit-filter: invert(0.1) !important;
+  /*background: #fff;
+  padding: 10px;*/
+}
+html[hv="a3"] .mwe-math-fallback-image-inline,
+html[hv="b3"] .mwe-math-fallback-image-inline {
+  -webkit-filter: invert(0.1) !important;
+  /*background: #fff;
+  padding: 10px;*/
+}
+
+/* Fix for doxygen */
+html[hv="a3"] .contents > .dyncontent,
+html[hv="b3"] .contents > .dyncontent {
+  -webkit-filter: invert();
+}
+
+/*html[hv="a4"] {*/
+  /*-webkit-filter: invert() contrast(80%) brightness(117%) contrast(200%) grayscale();*/
+  /*-webkit-transform: translateZ(0); /* thanks JK */
+/*}*/
+
+/*html[hv="a4"] img[src*="jpg"],
+html[hv="a4"] img[src*="jpeg"],
+html[hv="b4"] img[src*="jpg"],
+html[hv="b4"] img[src*="jpeg"] {
+  -webkit-filter: invert();
+}*/
+
+/* Google Images Fix BETA*/
+#irc_cl :not(#irc_mi){
+  background-color: rgb(171, 171, 171);
+}
+
+/* Google Maps & Profile Pic Fix */
+html[hv="a3"] .widget-scene > canvas,
+html[hv="b3"] .widget-scene > canvas,
+html[hv="a3"] .gb_da,
+html[hv="b3"] .gb_da,
+html[hv="a3"] .gb_fa,
+html[hv="b3"] .gb_fa,
+html[hv="a3"] .irc_pt,
+html[hv="b3"] .irc_pt,
+html[hv="a3"] #content-container > #scene,
+html[hv="b3"] #content-container > #scene {
+  -webkit-filter: invert();
+}

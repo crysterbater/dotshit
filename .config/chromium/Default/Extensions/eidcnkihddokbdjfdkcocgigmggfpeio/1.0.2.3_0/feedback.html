@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/feedback.css" rel="stylesheet">    
+</head>
+
+<body>
+    <div class="content">
+        <div class="preloader" id="preloader">
+            <div></div>
+            <span><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg></span>
+
+        </div>
+        <div class="drag-area">
+            <div class="title">
+                Tell Us What Is Happening
+            </div>
+        </div>
+
+        <div class="actions">
+            <div class="button">
+                <span class="icon close" id="close_btn"></span>
+            </div>
+        </div>
+
+        <div class="form_contianer">
+            <textarea id="message_txt" maxlength="5000" placeholder="message" pattern=".*\S+.*" required=""></textarea> <input class="new-project-text" id="email_txt" maxlength="100" placeholder="E-mail (optional)" type="text">
+
+            
+
+            <div class="help_tip">
+                <h1>We want to hear from you</h1>
+
+                <p>
+                    Send us what you think about Salmon Player, how can we improve it, what needs to be changed and overall how is your experience  with it!
+                    Our small team has worked hard on it and we value every feedback that you can give us!
+                </p>
+            </div>
+
+            <div class="command_panel">
+                <button id="send_btn" class="primary">Send Feedback</button> <button class="white" id="cancel_btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/feedback.js"></script>
+</body>
+</html>

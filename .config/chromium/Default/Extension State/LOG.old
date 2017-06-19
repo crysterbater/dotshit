@@ -1,0 +1,54 @@
+2017/06/06-20:22:08.910 834 Reusing MANIFEST /home/pringled/.config/chromium/Default/Extension State/MANIFEST-000001
+2017/06/06-20:22:08.910 834 Recovering log #3
+2017/06/06-20:22:08.910 834 Reusing old log /home/pringled/.config/chromium/Default/Extension State/000003.log 
+2017/06/06-23:38:03.189 2747 Level-0 table #5: started
+2017/06/06-23:38:03.388 2747 Level-0 table #5: 459351 bytes OK
+2017/06/06-23:38:03.497 2747 Delete type=0 #3
+2017/06/07-01:13:18.655 2747 Level-0 table #7: started
+2017/06/07-01:13:18.906 2747 Level-0 table #7: 373545 bytes OK
+2017/06/07-01:13:19.041 2747 Delete type=0 #4
+2017/06/07-02:48:41.152 2747 Level-0 table #9: started
+2017/06/07-02:48:41.405 2747 Level-0 table #9: 373400 bytes OK
+2017/06/07-02:48:41.582 2747 Delete type=0 #6
+2017/06/07-04:23:57.939 2747 Level-0 table #11: started
+2017/06/07-04:23:58.354 2747 Level-0 table #11: 373186 bytes OK
+2017/06/07-04:23:58.584 2747 Delete type=0 #8
+2017/06/07-05:59:13.800 2747 Level-0 table #13: started
+2017/06/07-05:59:13.980 2747 Level-0 table #13: 381044 bytes OK
+2017/06/07-05:59:14.257 2747 Delete type=0 #10
+2017/06/07-07:34:32.934 2747 Level-0 table #15: started
+2017/06/07-07:34:33.157 2747 Level-0 table #15: 385028 bytes OK
+2017/06/07-07:34:33.295 2747 Delete type=0 #12
+2017/06/07-07:34:33.381 2747 Compacting 4@0 + 1@1 files
+2017/06/07-07:34:33.663 2747 Generated table #16@0: 5 keys, 676 bytes
+2017/06/07-07:34:33.663 2747 Compacted 4@0 + 1@1 files => 676 bytes
+2017/06/07-07:34:33.737 2747 compacted to: files[ 0 1 1 0 0 0 0 ]
+2017/06/07-07:34:33.737 2747 Delete type=2 #11
+2017/06/07-07:34:33.786 2747 Delete type=2 #9
+2017/06/07-07:34:33.816 2747 Delete type=2 #13
+2017/06/07-07:34:33.816 2747 Delete type=2 #15
+2017/06/07-07:34:33.817 2747 Delete type=2 #7
+2017/06/07-09:09:52.164 2747 Level-0 table #18: started
+2017/06/07-09:09:52.515 2747 Level-0 table #18: 385278 bytes OK
+2017/06/07-09:09:52.662 2747 Delete type=0 #14
+2017/06/07-10:45:08.632 2747 Level-0 table #20: started
+2017/06/07-10:45:09.064 2747 Level-0 table #20: 385285 bytes OK
+2017/06/07-10:45:09.573 2747 Delete type=0 #17
+2017/06/07-12:20:28.897 2747 Level-0 table #22: started
+2017/06/07-12:20:29.102 2747 Level-0 table #22: 385056 bytes OK
+2017/06/07-12:20:29.239 2747 Delete type=0 #19
+2017/06/07-13:55:53.999 2747 Level-0 table #24: started
+2017/06/07-13:55:54.221 2747 Level-0 table #24: 385057 bytes OK
+2017/06/07-13:55:54.367 2747 Delete type=0 #21
+2017/06/07-13:55:54.398 2747 Compacting 4@0 + 1@1 files
+2017/06/07-13:55:54.711 2747 Generated table #25@0: 5 keys, 671 bytes
+2017/06/07-13:55:54.711 2747 Compacted 4@0 + 1@1 files => 671 bytes
+2017/06/07-13:55:54.811 2747 compacted to: files[ 0 1 1 0 0 0 0 ]
+2017/06/07-13:55:54.812 2747 Delete type=2 #24
+2017/06/07-13:55:54.814 2747 Delete type=2 #20
+2017/06/07-13:55:54.858 2747 Delete type=2 #22
+2017/06/07-13:55:54.858 2747 Delete type=2 #18
+2017/06/07-13:55:54.918 2747 Delete type=2 #16
+2017/06/07-15:31:08.660 2747 Level-0 table #27: started
+2017/06/07-15:31:08.879 2747 Level-0 table #27: 385321 bytes OK
+2017/06/07-15:31:08.998 2747 Delete type=0 #23

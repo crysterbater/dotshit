@@ -1,0 +1,150 @@
+{
+   "alreadyInCollection": {
+      "description": "Bereits in der Sammlung",
+      "message": "Bereits in der Sammlung"
+   },
+   "appDesc": {
+      "description": "\"Save Button\" for Web",
+      "message": "\"Save Button\" for Web"
+   },
+   "appName": {
+      "description": "Raindrop.io: \"Save Button\" for Web",
+      "message": "Raindrop.io: \"Save Button\" for Web"
+   },
+   "articleRemovedPermament": {
+      "description": "Artikel entfernt",
+      "message": "Artikel entfernt"
+   },
+   "articleSaved": {
+      "description": "Artikel gespeichert",
+      "message": "Artikel gespeichert"
+   },
+   "edit": {
+      "description": "Bearbeiten",
+      "message": "Bearbeiten"
+   },
+   "error": {
+      "description": "Unbekannter Fehler. Versuch's erneut!",
+      "message": "Unbekannter Fehler. Versuch's erneut!"
+   },
+   "findBookmark": {
+      "description": "Finde Lesezeichen",
+      "message": "Finde Lesezeichen"
+   },
+   "hotkey": {
+      "description": "Hotkey",
+      "message": "Hotkey"
+   },
+   "imageRemovedPermament": {
+      "description": "Foto entfernt",
+      "message": "Foto entfernt"
+   },
+   "imageSaved": {
+      "description": "Foto gespeichert",
+      "message": "Foto gespeichert"
+   },
+   "inCollection": {
+      "description": "In sammlung",
+      "message": "In sammlung"
+   },
+   "linkRemovedPermament": {
+      "description": "Link entfernt",
+      "message": "Link entfernt"
+   },
+   "linkSaved": {
+      "description": "Link gespeichert",
+      "message": "Link gespeichert"
+   },
+   "loading": {
+      "description": "Lade",
+      "message": "Lade"
+   },
+   "logOut": {
+      "description": "Abmelden",
+      "message": "Abmelden"
+   },
+   "myBookmarks": {
+      "description": "Meine Lesezeichen",
+      "message": "Meine Lesezeichen"
+   },
+   "myBookmarksRaindrop": {
+      "description": "Meine Lesezeichen (Raindrop.io)",
+      "message": "Meine Lesezeichen (Raindrop.io)"
+   },
+   "open": {
+      "description": "Open",
+      "message": "Open"
+   },
+   "pleaseLogin": {
+      "description": "Zum starten, einloggen!",
+      "message": "Zum starten, einloggen!"
+   },
+   "remove": {
+      "description": "Entfernen",
+      "message": "Entfernen"
+   },
+   "restore": {
+      "description": "Restore",
+      "message": "Restore"
+   },
+   "save": {
+      "description": "Speichern",
+      "message": "Speichern"
+   },
+   "saveError": {
+      "description": "Fehler beim Speichern!",
+      "message": "Fehler beim Speichern!"
+   },
+   "saveImage": {
+      "description": "Bild in Raindrop.io speichern",
+      "message": "Bild in Raindrop.io speichern"
+   },
+   "saveLink": {
+      "description": "Seite in Raindrop.io speichern",
+      "message": "Seite in Raindrop.io speichern"
+   },
+   "savePage": {
+      "description": "Seite in Raindrop.io speichern",
+      "message": "Seite in Raindrop.io speichern"
+   },
+   "saveToRaindrop": {
+      "description": "Speichern zu Raindrop.io",
+      "message": "Speichern zu Raindrop.io"
+   },
+   "settings": {
+      "description": "Einstellungen",
+      "message": "Einstellungen"
+   },
+   "signIn": {
+      "description": "Anmelden",
+      "message": "Anmelden"
+   },
+   "signUp": {
+      "description": "Registrieren",
+      "message": "Registrieren"
+   },
+   "supportOnlyUrls": {
+      "description": "Du kannst nur Links mit http und https Protokoll speichern!",
+      "message": "Du kannst nur Links mit http und https Protokoll speichern!"
+   },
+   "toRaindrop": {
+      "description": "zu Raindrop.io",
+      "message": "zu Raindrop.io"
+   },
+   "tryAgain": {
+      "description": "Erneut versuchen",
+      "message": "Erneut versuchen"
+   },
+   "unsorted": {
+      "description": "Inbox",
+      "message": "Inbox"
+   },
+   "videoRemovedPermament": {
+      "description": "Inhalt entfernen",
+      "message": "Inhalt entfernen"
+   },
+   "videoSaved": {
+      "description": "Inhalt gespeichert",
+      "message": "Inhalt gespeichert"
+   }
+}

@@ -1,0 +1,32 @@
+{
+   "author": "Ansel Santosa",
+   "background": {
+      "persistent": true,
+      "scripts": [ "node_modules/lodash/lodash.min.js", "data/master.js", "lib/util.js", "lib/Module.js", "lib/Database.js", "lib/Updater.js", "lib/Runtime.js", "background/script.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icons/19.png",
+      "default_popup": "action/index.html",
+      "default_title": "Minimalist"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "runtime/injector.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "description": "You live in webapps. Make them yours.",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "48": "icons/48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBFIYcaIkxVtihzEh66bNx3hCu2qNe0QNq/lkwQm0ntItFlSQgkgfHgHdvpthXn61pj60+53Vcj9m+M9MvYJT2p8eqYvVKy8fE5MvrnCwiDccvkSzxK4GcUFXfxR9nAa4hSXNoMgmyWOu8LZARdaAEfCcP4aEoJyFPu5Obzsa5fQIDAQAB",
+   "manifest_version": 2,
+   "name": "Minimalist for Everything",
+   "options_page": "options/index.html",
+   "permissions": [ "\u003Call_urls>", "clipboardWrite", "notifications", "tabs", "storage", "unlimitedStorage" ],
+   "short_name": "Minimalist",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.7.0"
+}

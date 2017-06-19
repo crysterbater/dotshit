@@ -1,0 +1,150 @@
+{
+   "alreadyInCollection": {
+      "description": "Allerede i samlingen",
+      "message": "Allerede i samlingen"
+   },
+   "appDesc": {
+      "description": "\"Save Button\" for Web",
+      "message": "\"Save Button\" for Web"
+   },
+   "appName": {
+      "description": "Raindrop.io: \"Save Button\" for Web",
+      "message": "Raindrop.io: \"Save Button\" for Web"
+   },
+   "articleRemovedPermament": {
+      "description": "Artikel slettet",
+      "message": "Artikel slettet"
+   },
+   "articleSaved": {
+      "description": "Artikel gemt",
+      "message": "Artikel gemt"
+   },
+   "edit": {
+      "description": "Rediger",
+      "message": "Rediger"
+   },
+   "error": {
+      "description": "Ukendt fejl. Prøv igen!",
+      "message": "Ukendt fejl. Prøv igen!"
+   },
+   "findBookmark": {
+      "description": "Find bogmærke",
+      "message": "Find bogmærke"
+   },
+   "hotkey": {
+      "description": "Genvejstast",
+      "message": "Genvejstast"
+   },
+   "imageRemovedPermament": {
+      "description": "Billede slettet",
+      "message": "Billede slettet"
+   },
+   "imageSaved": {
+      "description": "Billede gemt",
+      "message": "Billede gemt"
+   },
+   "inCollection": {
+      "description": "I samling",
+      "message": "I samling"
+   },
+   "linkRemovedPermament": {
+      "description": "Link slettet",
+      "message": "Link slettet"
+   },
+   "linkSaved": {
+      "description": "Link gemt",
+      "message": "Link gemt"
+   },
+   "loading": {
+      "description": "Henter",
+      "message": "Henter"
+   },
+   "logOut": {
+      "description": "Log ud",
+      "message": "Log ud"
+   },
+   "myBookmarks": {
+      "description": "Mine bogmærker",
+      "message": "Mine bogmærker"
+   },
+   "myBookmarksRaindrop": {
+      "description": "Mine bogmærker (Raindrop.io)",
+      "message": "Mine bogmærker (Raindrop.io)"
+   },
+   "open": {
+      "description": "Open",
+      "message": "Open"
+   },
+   "pleaseLogin": {
+      "description": "Log venligst ind for at starte!",
+      "message": "Log venligst ind for at starte!"
+   },
+   "remove": {
+      "description": "Fjern",
+      "message": "Fjern"
+   },
+   "restore": {
+      "description": "Restore",
+      "message": "Restore"
+   },
+   "save": {
+      "description": "Gem",
+      "message": "Gem"
+   },
+   "saveError": {
+      "description": "Fejl ved gemning!",
+      "message": "Fejl ved gemning!"
+   },
+   "saveImage": {
+      "description": "Gem billede til Raindrop.io",
+      "message": "Gem billede til Raindrop.io"
+   },
+   "saveLink": {
+      "description": "Gem siden på Raindrop.io",
+      "message": "Gem siden på Raindrop.io"
+   },
+   "savePage": {
+      "description": "Gem siden på Raindrop.io",
+      "message": "Gem siden på Raindrop.io"
+   },
+   "saveToRaindrop": {
+      "description": "Gem til Raindrop.io",
+      "message": "Gem til Raindrop.io"
+   },
+   "settings": {
+      "description": "Indstillinger",
+      "message": "Indstillinger"
+   },
+   "signIn": {
+      "description": "Log på",
+      "message": "Log på"
+   },
+   "signUp": {
+      "description": "Tilmeld dig",
+      "message": "Tilmeld dig"
+   },
+   "supportOnlyUrls": {
+      "description": "Du kan kun gemme links med http og https protokollen!",
+      "message": "Du kan kun gemme links med http og https protokollen!"
+   },
+   "toRaindrop": {
+      "description": "til Raindrop.io",
+      "message": "til Raindrop.io"
+   },
+   "tryAgain": {
+      "description": "Prøv igen",
+      "message": "Prøv igen"
+   },
+   "unsorted": {
+      "description": "Indbakke",
+      "message": "Indbakke"
+   },
+   "videoRemovedPermament": {
+      "description": "Indhold slettet",
+      "message": "Indhold slettet"
+   },
+   "videoSaved": {
+      "description": "Indhold gemt",
+      "message": "Indhold gemt"
+   }
+}

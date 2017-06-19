@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>Pixels to me</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">	
+	<style>
+		.center {
+			 float: none;
+			 margin-left: auto;
+			 margin-right: auto;
+		}
+		.spacer {
+			margin-top: 40px; 
+		}
+		select {
+			width: 300px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+		}
+	</style>
+</head>
+
+<body>
+
+<div>
+<div class="container">
+	<div class="row">
+		<div class="span7 center spacer">
+			<form>
+			  <fieldset>
+				<legend>Pixels to me</legend>
+
+				<span class="help-block">
+					Hey! I hope you like my first chrome extension. If you find it useful, i will appreciate any donation (for my future family ^^)
+				</span>
+				<span class="help-block">
+					<u>Instructions:</u> Just go to the page of the picture you want and press on PixelToMe (if you are browsing on a collection, it will show you the link to the thumbnails too)
+				</span>
+				<br/>
+				<span class="help-block">
+					<a href="http://bit.ly/2gN5TOD" target="_blank"> Suggestions or Bugs? </a> Report them here
+				</span>
+				
+			  </fieldset>
+			</form>
+			<br/>
+			
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<table>
+			<tr><td><input type="hidden" name="on0" value="Donations">Donations</td></tr><tr><td><select name="os0">
+				<option value="Thank you! Take a chocolate">Thank you! Take a chocolate &euro;2,50 EUR</option>
+				<option value="Hey! This round's on me">Hey! This round's on me &euro;5,50 EUR</option>
+				<option value="It helped me a lot! Take this">It helped me a lot! Take this &euro;12,00 EUR</option>
+				<option value="I love you! It's amazing">I love you! It's amazing &euro;25,00 EUR</option>
+			</select> </td></tr>
+			</table>
+			<input type="hidden" name="currency_code" value="EUR">
+			<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+			">
+			<input type="image" src="https://www.paypalobjects.com/en_US/ES/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+			</form>
+
+
+			<div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+			<div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+	  </div>
+	</div>
+</div>
+
+<script src="js/lib/jquery-2.0.0.min.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+<script src="js/options.js"></script>
+
+
+
+</html>

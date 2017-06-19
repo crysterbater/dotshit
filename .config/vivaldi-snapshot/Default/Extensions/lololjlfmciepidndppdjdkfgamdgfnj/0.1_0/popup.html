@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Getting Started Extension's Popup</title>
+
+		<link rel="stylesheet" href="css/global.css" type="text/css" />
+		<link rel="stylesheet" href="css/popup.css" type="text/css" />
+
+		<script src="js/variables.js"></script>
+		<script src="js/global.js"></script>
+		<script src="js/popup.js"></script>
+	</head>
+	<body>
+		<div id="popupWrapper">
+			<div id="downloadImage">
+				<div class="loadedImageWrap">
+					<img id="loadedImg" src="" alt=""/>
+				</div>
+				<div class="loadedSizesWrap">
+					<h1>Available sizes</h1>
+					<div class="loadedSizesList">
+
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div id="multipleImagesDownload">
+				<div id="imagesWrapper"></div>
+			</div>
+
+			<div id="cantDownload">
+				It's unable to download any photo here. Please visit detail of the photo you want to download and then click to this icon again.
+			</div>
+
+			<div id="controls">
+				<button id="okBtn" class="pxdownloaderButton success hidden">Ok</button>
+				<!--<button id="download" class="pxdownloaderButton success hidden" data-l10n="download">Download</button>-->
+				<button id="cancel" class="pxdownloaderButton cancel hidden" data-l10n="close">Close</button>
+			</div>
+			<div class="clear"></div>
+
+			<div id="downloadCounter"><span data-l10n="todayDownloaded">Today downloaded photos</span> <strong class="textRed" id="downloadedToday">0</strong><span id="downloadLimit" title="Your daily limit is 100 downloaded photos">/100</span></div>
+
+			<div id="aboutBox">
+				<span data-l10n="contact">Contact</span>:&nbsp;flickrdownload@gmail.com |
+				<span class="onlyNoPro">
+					<a href="https://chrome.google.com/webstore/detail/500px-photos-download-pro/ilakdbednomgjaddhljmpggllipaikea" target="_blank" class="highlight"><span data-l10n="tryAMoreFeaturedVersion">Try a more featured version Pro</span></a> | </span>
+				<span class="version"><span data-l10n="version">Version</span>: <span id="versionNumber"></span></span>
+				<span class="disclaimer">Please, don't use this extension to download photos that you don't have permission to.</span>
+			</div>
+
+			<div id="donateBox" class="onlyNoPro">
+				<!--<button id="btnDonate" class="pxdownloaderButton btn-info small" data-l10n="supportMe">Support me</button>-->
+				<!--<button id="btnHideDonate" class="pxdownloaderButton cancel small" data-l10n="hideSupport">Hide support</button>-->
+				<div class="clear"></div>
+				<div id="paypalBtn">
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="get" target="_blank">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="42BD7UL6F7556">
+						<input id="donateButton" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						<label data-l10n="doYouLikeThisExtension" for="donateButton">Do you like this extension?</label>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+

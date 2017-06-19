@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="enabled" mtime="1494831539" type="bool" value="true"/>
+	<entry name="needs_terminal" mtime="1494831538" type="bool" value="false"/>
+	<entry name="command" mtime="1494831538" type="string">
+		<stringvalue>/home/pringled/.local/share/TelegramDesktop/Telegram -- %s</stringvalue>
+	</entry>
+</gconf>

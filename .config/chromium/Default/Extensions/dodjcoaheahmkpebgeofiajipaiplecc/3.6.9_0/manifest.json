@@ -1,0 +1,45 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "app.js" ]
+      }
+   },
+   "author": "Radu F",
+   "commands": {
+      "next-track": {
+         "description": "next track",
+         "global": true,
+         "suggested_key": {
+            "default": "MediaNextTrack"
+         }
+      },
+      "play-pause": {
+         "description": "play/pause",
+         "global": true,
+         "suggested_key": {
+            "default": "MediaPlayPause"
+         }
+      },
+      "previous-track": {
+         "description": "previous track",
+         "global": true,
+         "suggested_key": {
+            "default": "MediaPrevTrack"
+         }
+      }
+   },
+   "description": "gMusic is an app that enhances the listening experience for Google Music and SoundCloud",
+   "icons": {
+      "128": "/images/icon_128.png",
+      "16": "/images/icon_16.png",
+      "48": "/images/icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm4DG68OXScml5QULKwQFQF+xdP0Tal8QBUtf/gQm6AoELuew/3ki45BKD2ZkwdLViCpyn25inCYV60QO+kOc41r4nR1QqoLYO9DvDGC9ZMb4nCuZi93RL1kPTnGtaWQr2XP5u/fpGseAzDoAdmhCNjYm+XgLe3xoNFaSSdGU2Uf+S1n/eyHBBp2ERPyVIAn4989i79KlXg8PvPK5NE12xIkUjj45+aeeLIS5i+g7KuQrGPPHxdA/cnUnABLW9zX5UsKslkpqYwj+wZuljCItxtB7lTsK2cBPhv0Smufk4tKndJDu/BL+HbkH7e765e0WVJnKfLDXLcMK44ggyXcYGQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "38",
+   "name": "gMusic",
+   "permissions": [ "webview", "storage", "https://*.google.com/", "https://*.googleapis.com/", "https://*.googleusercontent.com/", "https://*.google-analytics.com/", "https://soundcloud.com/stream" ],
+   "short_name": "gMusic",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.6.9"
+}

@@ -1,0 +1,150 @@
+{
+   "alreadyInCollection": {
+      "description": "Ya en la colección",
+      "message": "Ya en la colección"
+   },
+   "appDesc": {
+      "description": "\"Save Button\" for Web",
+      "message": "\"Save Button\" for Web"
+   },
+   "appName": {
+      "description": "Raindrop.io: \"Save Button\" for Web",
+      "message": "Raindrop.io: \"Save Button\" for Web"
+   },
+   "articleRemovedPermament": {
+      "description": "Artículo eliminado",
+      "message": "Artículo eliminado"
+   },
+   "articleSaved": {
+      "description": "Artículo guardado",
+      "message": "Artículo guardado"
+   },
+   "edit": {
+      "description": "Editar",
+      "message": "Editar"
+   },
+   "error": {
+      "description": "Error desconocido. ¡Vuelve a intentarlo!",
+      "message": "Error desconocido. ¡Vuelve a intentarlo!"
+   },
+   "findBookmark": {
+      "description": "Encontrar el marcador",
+      "message": "Encontrar el marcador"
+   },
+   "hotkey": {
+      "description": "Teclas de acceso rápido",
+      "message": "Teclas de acceso rápido"
+   },
+   "imageRemovedPermament": {
+      "description": "Foto eliminada",
+      "message": "Foto eliminada"
+   },
+   "imageSaved": {
+      "description": "Foto guardada",
+      "message": "Foto guardada"
+   },
+   "inCollection": {
+      "description": "Dentro de la colección",
+      "message": "Dentro de la colección"
+   },
+   "linkRemovedPermament": {
+      "description": "Enlace eliminado",
+      "message": "Enlace eliminado"
+   },
+   "linkSaved": {
+      "description": "Enlace guardado",
+      "message": "Enlace guardado"
+   },
+   "loading": {
+      "description": "Cargando",
+      "message": "Cargando"
+   },
+   "logOut": {
+      "description": "Salir",
+      "message": "Salir"
+   },
+   "myBookmarks": {
+      "description": "Mis colecciones",
+      "message": "Mis colecciones"
+   },
+   "myBookmarksRaindrop": {
+      "description": "Mis colecciones (Raindrop.io)",
+      "message": "Mis colecciones (Raindrop.io)"
+   },
+   "open": {
+      "description": "Open",
+      "message": "Open"
+   },
+   "pleaseLogin": {
+      "description": "Inicia sesión para empezar!",
+      "message": "Inicia sesión para empezar!"
+   },
+   "remove": {
+      "description": "Quitar",
+      "message": "Quitar"
+   },
+   "restore": {
+      "description": "Restore",
+      "message": "Restore"
+   },
+   "save": {
+      "description": "Guardar",
+      "message": "Guardar"
+   },
+   "saveError": {
+      "description": "Error al guardar!",
+      "message": "Error al guardar!"
+   },
+   "saveImage": {
+      "description": "Guardar imagen en Raindrop.io",
+      "message": "Guardar imagen en Raindrop.io"
+   },
+   "saveLink": {
+      "description": "Guardar página en Raindrop.io",
+      "message": "Guardar página en Raindrop.io"
+   },
+   "savePage": {
+      "description": "Guardar página en Raindrop.io",
+      "message": "Guardar página en Raindrop.io"
+   },
+   "saveToRaindrop": {
+      "description": "Guardar a Raindrop.io",
+      "message": "Guardar a Raindrop.io"
+   },
+   "settings": {
+      "description": "Configuración",
+      "message": "Configuración"
+   },
+   "signIn": {
+      "description": "Inicia sesión",
+      "message": "Inicia sesión"
+   },
+   "signUp": {
+      "description": "Registrarse",
+      "message": "Registrarse"
+   },
+   "supportOnlyUrls": {
+      "description": "Puede guardar enlaces sólo con protocolo http y https.",
+      "message": "Puede guardar enlaces sólo con protocolo http y https."
+   },
+   "toRaindrop": {
+      "description": "a Raindrop.io",
+      "message": "a Raindrop.io"
+   },
+   "tryAgain": {
+      "description": "Vuelve a intentarlo",
+      "message": "Vuelve a intentarlo"
+   },
+   "unsorted": {
+      "description": "Bandeja de entrada",
+      "message": "Bandeja de entrada"
+   },
+   "videoRemovedPermament": {
+      "description": "Contenido eliminado",
+      "message": "Contenido eliminado"
+   },
+   "videoSaved": {
+      "description": "Contenido guardado",
+      "message": "Contenido guardado"
+   }
+}

@@ -1,0 +1,13 @@
+{
+   "chrome_url_overrides": {
+      "newtab": "blank.html"
+   },
+   "description": "Enjoy a beautiful, flowing rainbow new tab page with clock.",
+   "incognito": "split",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi/KvBDpgS/bPXVF+fpWrXIkEktYlKJ6Vjz6gnxo4+UdITo/erTQNqLY/zNGjckYdh87aGRKmN+vdwe9EIAfQniosZsLGz0ckQZ/7vbn+ALnBNcd7LFdR1S5EMH/kOHdcS9dUqP9lXp4x2ceS61tWkMd5tQOkYexkKFK2ODzE2tp2uTDagp34zDaaKkAqHJq/3l9eLUhIGPfrbPynl3HPim5GcH5TmXaiiPeZV+Cle1SE+4MrZSc6B2J9klE6oqP8R1KOS/0+OSxAIgwY4EDciwfpmZ5o9RPaPmcCD67DK61Z/f2JmViy3QrBxvlvJqAnlkMMD7BCzaj+IEehFOtXtQIDAQAB",
+   "manifest_version": 2,
+   "name": "Flow: Rainbow New Tab (with clock)",
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.50"
+}

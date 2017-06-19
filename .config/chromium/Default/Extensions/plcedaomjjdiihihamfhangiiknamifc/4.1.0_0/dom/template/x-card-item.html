@@ -1,0 +1,153 @@
+<template><style>:host {
+      display: block;
+    }
+    .rd-card-item {
+      align-items: center;
+      box-sizing: border-box;
+      color: inherit;
+      display: flex;
+      font-size: 14px;
+      overflow: hidden;
+      padding: 8px 0;
+      text-decoration: none;
+      text-overflow: ellipsis;
+      transition: width 0.2s;
+      width: 318px;
+    }
+    .rd-card-item--has-action {
+      width: 350px;
+    }
+    .rd-card-item--has-action:hover {
+      width: 318px;
+    }
+    .rd-card-item--has-two-action {
+      width: 382px;
+    }
+    .rd-card-item--has-two-action:hover {
+      width: 318px;
+    }
+    .rd-card-item__image-small {
+      fill: #707070;
+      height: 16px;
+      padding-right: 16px;
+      width: 16px;
+    }
+    .rd-card-item__image-medium {
+      border-radius: 14px;
+      fill: #707070;
+      height: 28px;
+      margin-right: 16px;
+      width: 28px;
+      text-align: center;
+      line-height: 28px;
+    }
+    .rd-card-item__image-large {
+      border-radius: 20px;
+      fill: #707070;
+      max-height: 40px;
+      margin-right: 16px;
+      max-width: 40px;
+    }
+    .rd-card-item__image-placeholder {
+      background-color: #AAAAAA;
+    }
+    .rd-card-item__image-icon {
+      float: left;
+      margin-top: 15px;
+      margin-left: 15px;
+    }
+    .rd-card-item__text {
+      box-sizing: border-box;
+      cursor: pointer;
+      flex-grow: 1;
+      overflow: hidden;
+    }
+    .rd-card-item--has-action .rd-card-item__text {
+      padding-right: 16px;
+      width: calc(100% - 32px);
+    }
+    .rd-card-item--has-two-action .rd-card-item__text {
+      padding-right: 16px;
+      width: calc(100% - 64px);
+    }
+    .rd-card-item__image-small + .rd-card-item__text {
+      width: calc(100% - 32px);
+    }
+    .rd-card-item--has-action .rd-card-item__image-small + .rd-card-item__text {
+      width: calc(100% - 64px);
+    }
+    .rd-card-item--has-two-action .rd-card-item__image-small + .rd-card-item__text {
+      width: calc(100% - 96px);
+    }
+    .rd-card-item__image-medium + .rd-card-item__text {
+      width: calc(100% - 40px);
+    }
+    .rd-card-item--has-action .rd-card-item__image-medium + .rd-card-item__text {
+      width: calc(100% - 72px);
+    }
+    .rd-card-item--has-two-action .rd-card-item__image-medium + .rd-card-item__text {
+      width: calc(100% - 104px);
+    }
+    .rd-card-item__image-large + .rd-card-item__text {
+      width: calc(100% - 56px);
+    }
+    .rd-card-item--has-action .rd-card-item__image-large + .rd-card-item__text {
+      width: calc(100% - 86px);
+    }
+    .rd-card-item--has-two-action .rd-card-item__image-large + .rd-card-item__text {
+      width: calc(100% - 118px);
+    }
+    .rd-card-item__title {
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      display: -webkit-box;
+      overflow: hidden;
+      font-size: 14px;
+    }
+    .rd-card-item:hover .rd-card-item__title {
+      color: #27cc80;
+    }
+    .rd-card-item__title--has-two-lines {
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      overflow: hidden;
+    }
+    .rd-card-item__subtitle {
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      display: -webkit-box;
+      overflow: hidden;
+      color: #E5E5E5;
+      font-size: 12px;
+      transition: color 0.2s;
+      word-wrap: break-word;
+    }
+    .rd-card-item:hover .rd-card-item__subtitle {
+      color: #AAAAAA;
+    }
+    .rd-card-item__action {
+      border-radius: 16px;
+      box-sizing: border-box;
+      padding: 8px;
+      cursor: pointer;
+      height: 32px;
+      transition: background-color 0.2s;
+      width: 32px;
+    }
+    .rd-card-item__action:hover {
+      background-color: #E5E5E5;
+    }
+    .rd-card-item__action-image {
+      fill: #707070;
+      height: 16px;
+      width: 16px;
+    }
+    .rd-card-item__tag {
+      border-radius: 3px;
+      color: var(--contentColor);
+      display: inline-block;
+      font-size: 11px;
+      line-height: 11px;
+      margin-right: 10px;
+    }</style><a class="rd-card-item"><content select=".cnt-card-item__image"><img class="rd-card-item__image"></content><div class="rd-card-item__text"><div class="rd-card-item__title"></div><div class="rd-card-item__subtitle"></div></div><content select="x-card-item-icon"></content></a></template>

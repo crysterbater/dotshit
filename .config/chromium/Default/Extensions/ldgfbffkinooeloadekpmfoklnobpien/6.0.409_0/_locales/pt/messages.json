@@ -1,0 +1,150 @@
+{
+   "alreadyInCollection": {
+      "description": "Já na coleção",
+      "message": "Já na coleção"
+   },
+   "appDesc": {
+      "description": "\"Save Button\" for Web",
+      "message": "\"Save Button\" for Web"
+   },
+   "appName": {
+      "description": "Raindrop.io: \"Save Button\" for Web",
+      "message": "Raindrop.io: \"Save Button\" for Web"
+   },
+   "articleRemovedPermament": {
+      "description": "Artigo removido",
+      "message": "Artigo removido"
+   },
+   "articleSaved": {
+      "description": "Artigo Salvo",
+      "message": "Artigo Salvo"
+   },
+   "edit": {
+      "description": "Editar",
+      "message": "Editar"
+   },
+   "error": {
+      "description": "Erro desconhecido. Por favor, tente novamente!",
+      "message": "Erro desconhecido. Por favor, tente novamente!"
+   },
+   "findBookmark": {
+      "description": "Procurar favorito",
+      "message": "Procurar favorito"
+   },
+   "hotkey": {
+      "description": "Tecla de atalho",
+      "message": "Tecla de atalho"
+   },
+   "imageRemovedPermament": {
+      "description": "Foto removido",
+      "message": "Foto removido"
+   },
+   "imageSaved": {
+      "description": "Foto salva",
+      "message": "Foto salva"
+   },
+   "inCollection": {
+      "description": "Na coleção",
+      "message": "Na coleção"
+   },
+   "linkRemovedPermament": {
+      "description": "Link removido",
+      "message": "Link removido"
+   },
+   "linkSaved": {
+      "description": "Link salvo",
+      "message": "Link salvo"
+   },
+   "loading": {
+      "description": "Carregando",
+      "message": "Carregando"
+   },
+   "logOut": {
+      "description": "Sair",
+      "message": "Sair"
+   },
+   "myBookmarks": {
+      "description": "Meus favoritos",
+      "message": "Meus favoritos"
+   },
+   "myBookmarksRaindrop": {
+      "description": "Meus favoritos (Raindrop.io)",
+      "message": "Meus favoritos (Raindrop.io)"
+   },
+   "open": {
+      "description": "Open",
+      "message": "Open"
+   },
+   "pleaseLogin": {
+      "description": "Efetue o login para começar!",
+      "message": "Efetue o login para começar!"
+   },
+   "remove": {
+      "description": "Remover",
+      "message": "Remover"
+   },
+   "restore": {
+      "description": "Restore",
+      "message": "Restore"
+   },
+   "save": {
+      "description": "Salvar",
+      "message": "Salvar"
+   },
+   "saveError": {
+      "description": "Salvar erro!",
+      "message": "Salvar erro!"
+   },
+   "saveImage": {
+      "description": "Salvar imagem no Raindrop.io",
+      "message": "Salvar imagem no Raindrop.io"
+   },
+   "saveLink": {
+      "description": "Salvar página no Raindrop.io",
+      "message": "Salvar página no Raindrop.io"
+   },
+   "savePage": {
+      "description": "Salvar página no Raindrop.io",
+      "message": "Salvar página no Raindrop.io"
+   },
+   "saveToRaindrop": {
+      "description": "Salvar para Raindrop.io",
+      "message": "Salvar para Raindrop.io"
+   },
+   "settings": {
+      "description": "Configurações",
+      "message": "Configurações"
+   },
+   "signIn": {
+      "description": "Entre",
+      "message": "Entre"
+   },
+   "signUp": {
+      "description": "Cadastrar",
+      "message": "Cadastrar"
+   },
+   "supportOnlyUrls": {
+      "description": "Você só pode salvar links com protocolo http ou https!",
+      "message": "Você só pode salvar links com protocolo http ou https!"
+   },
+   "toRaindrop": {
+      "description": "para Raindrop.io",
+      "message": "para Raindrop.io"
+   },
+   "tryAgain": {
+      "description": "Tente novamente",
+      "message": "Tente novamente"
+   },
+   "unsorted": {
+      "description": "Caixa de entrada",
+      "message": "Caixa de entrada"
+   },
+   "videoRemovedPermament": {
+      "description": "Conteúdo removido",
+      "message": "Conteúdo removido"
+   },
+   "videoSaved": {
+      "description": "Conteúdo salvo",
+      "message": "Conteúdo salvo"
+   }
+}

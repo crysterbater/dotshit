@@ -1,0 +1,35 @@
+
+
+.drag-area { background: var(--back-color);}
+.content { padding: 50px 20px 0 20px; background: var(--back-color); height: 100%;}
+.logo { margin:auto; width: 128px; height: 128px; position: relative;}
+.logo .water{fill:var(--primary-color)}
+.logo .logo_play{fill:rgba(255,255,255,.1);}
+.logo .logo_note{fill:#fff}
+
+
+
+.help_tip { color: #fff; padding:20px 0; width: 100%}
+.help_tip p { text-align: center;}
+.help_tip p a{color:#fff; text-decoration: none}
+.help_tip p a:hover{opacity: .5}
+.version { color: #fff;text-align: center; float: left; width: 100%; font-weight: 600; text-transform: uppercase; margin: 20px 0}
+.version b{font-weight: 700; color:var(--primary-color);}
+.credits { float: left; width: 100%;display: flex; align-content: center;justify-content: center;}
+.credits a {color: rgba(255,255,255,.7); text-shadow: 0 2px rgba(0,0,0,.1); line-height: 30px;height: 30px; font-weight: 700; text-transform: uppercase; padding: 0 5px; text-decoration: none; cursor: pointer; color:var(--primary-color);}
+.credits a:hover { color: #fff; transform: translateY(-1px); }
+.credits a:active { color: #fff; transform: translateY(0); }
+
+
+
+.social_link{float: left; width: 100%; padding: 20px;  display: flex; align-content: center;justify-content: center;}
+.social_link icon {margin:0 10px;}
+.social_link icon:hover{transform: translateY(-1px);}
+.social_link icon:activw{transform: translateY(0); }
+
+
+@keyframes water{from{ x:-272}to{x:-1472}}
+
+.water-fill{animation: water 6s infinite linear }
+
+/*# sourceMappingURL=about.css.map*/

@@ -1,0 +1,30 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "icon.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "default_locale": "en",
+   "description": "A Material Design of Chrome Download Manager.",
+   "icons": {
+      "128": "icon.png",
+      "16": "icon16.png",
+      "24": "icon24.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "64": "icon64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn8q1z4tlgRPIrUVn8rrPnLCov15gdfXhzCX4YAY6RnmMZYq5o9oWD5dAzkC+O4KsCma637pxRu5JkHJLSyWjyZDIkdqZ26nE1yPxS4ujQy71cY2l6QYd4bmqLITfD9tdG1vaH224w0BOL9vmna1NBMTo9NNYMGtRNO+yA8rzRQrHToV9BMGo3o+EnocDaDrm6N79PyjVuLIsiaoqhe4P7E1cPZ6UmHOeosuHlgRvDoTGDSwX8o/ygNNtX/agmLnkDGF8c7qHKn+x1eUCaCAVWqYGxLQZORdQOEvFeoXg1qpdr/xivzMvEXyNK4VdY5HhUgDzFwUIJOQn9rVlr5XGcQIDAQAB",
+   "manifest_version": 2,
+   "name": "Material Design Download Manager",
+   "offline_enabled": true,
+   "optional_permissions": [ "management" ],
+   "permissions": [ "downloads", "downloads.open", "downloads.shelf", "clipboardWrite", "clipboardRead", "notifications", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.7"
+}

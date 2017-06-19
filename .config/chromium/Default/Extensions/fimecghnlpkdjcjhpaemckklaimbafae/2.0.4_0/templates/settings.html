@@ -1,0 +1,398 @@
+<div class="container settingsBody fadeIn">
+
+    <div class="settingsTitle">
+        <div class="container hundredContainer">
+            <h1>Settings</h1>  
+        </div>
+    </div>
+
+
+    <div class="materialCard settingsCard animated fadeInUp">
+        <div class="settingsHeader"><h2>Time, Date, and Weather</h2></div>
+
+        <div class="container hundredContainer">
+            <div class="row">
+
+                <div class="col-md-4 col-xs-6 settingsContent">
+                    <h3>Time Settings</h3>
+                    <h4 class="settingsOption">Select Time Format</h4>
+
+                    <div class="checkbox-group"> 
+                        <input ng-model="user.timePref.isTwentyFour" type="checkbox" id="twentyFour" ng-click="saveTimePref()"> 
+                        <label for="twentyFour">
+                            <span class="check"></span>
+                            <span class="box"></span>
+                             Enable 24 Hour Clock
+                         </label>
+                    </div>
+
+                    <div class="checkbox-group" ng-class="{ngFadeDisabled: user.timePref.isTwentyFour, ngFadeIn: !user.timePref.isTwentyFour}"> 
+                        <input ng-model="user.timePref.showAMPM" type="checkbox" id="showAMPM" ng-click="saveTimePref()" ng-disabled="user.timePref.isTwentyFour"> 
+                        <label for="showAMPM">
+                            <span class="check"></span>
+                            <span class="box"></span>
+                             Show AM/PM
+                         </label>
+                    </div>
+
+                    <div class="checkbox-group"> 
+                        <input ng-model="user.timePref.showSeconds" type="checkbox" id="showSeconds" ng-click="saveTimePref()"> 
+                        <label for="showSeconds">
+                            <span class="check"></span>
+                            <span class="box"></span>
+                             Show Seconds
+                         </label>
+                    </div>
+                    
+                    <br>
+                    <h4 class="settingsOption">Reset Clock Position</h4>                  
+                    <div class="checkbox-group"> 
+                        <input ng-model="clockResetBox" type="checkbox" id="resetClock" ng-click="resetCardPosition()"> 
+                        <label for="resetClock">
+                            <span class="check"></span>
+                            <span class="box"></span>
+                             {{resetText}}
+                         </label>
+                    </div>
+                    
+                </div>
+
+
+                <div class="col-md-4 col-xs-6 settingsContent">
+                    <h3>Date Settings</h3>
+                    <h4 class="settingsOption">Select Date Format</h4>
+                    <select ng-model="user.datePref" ng-change="saveDatePref()">
+                        <option value="EEEE, MMMM d, yyyy">Sunday, October 25, 2015</option>
+                        <option value="MMMM d, y">October 25, 2015</option>
+                        <option value="MMM d, y">Oct 25, 2015</option>
+                        <option value="M/d/yyyy">10/25/2015</option>
+                        <option value="d/M/yyyy">25/10/2015</option>
+                        <option value="M/d/yy">10/25/15</option>
+                        <option value="d/M/yy">25/10/15</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4 col-xs-6 settingsContent">
+                    <h3>Weather Settings</h3>
+
+                    <h4 class="settingsOption">Set Temperature Unit</h4>
+                    <label class="radioLabel" for="celsius">
+                        <input type="radio" id="celsius" ng-value="false" ng-model="user.fahrenPref" ng-click="saveFahrenPref()"> 
+                        <span>Celsius</span>
+                    </label>
+
+                    <label class="radioLabel" for="fahrenheit">
+                        <input type="radio" id="fahrenheit" ng-value="true" ng-model="user.fahrenPref" ng-click="saveFahrenPref()">
+                        <span>Fahrenheit</span>
+                    </label>
+                    <br><br>
+
+                    <h4 class="settingsOption">Temperature Decimal Places</h4>
+                    <div class="checkbox-group"> 
+                        <input ng-model="user.decimalPref" type="checkbox" id="showDecimal" ng-click="saveDecimalPref()"> 
+                        <label for="showDecimal">
+                            <span class="check"></span>
+                            <span class="box"></span>
+                             Show Decimal Places
+                         </label>
+                    </div>
+
+                    <br>
+                    <h4 class="settingsOption">Set Weather Location</h4>
+                    <input type="text" ng-model="newLocation" placeholder="{{ locationPlaceholder }}" class="materialInput settingsInput" ng-class="{highlightInput: user.location.citySearchPref === undefined }" ng-disabled="user.location.citySearchPref === undefined" ng-keyup="$event.keyCode == 13 && saveLoc()">
+                    <br>
+                    <label class="radioLabel" for="cityName">
+                        <input type="radio" id="cityName" value="cityName" ng-model="user.location.citySearchPref" ng-change="saveCitySearchPref()">
+                        <span>By City Name</span>
+                    </label>
+
+                    <label class="radioLabel" for="zipCode">
+                        <input type="radio" id="zipCode" value="zipCode" ng-model="user.location.citySearchPref" ng-change="saveCitySearchPref()">
+                        <span>By ZIP Code (US Only)</span>
+                    </label>
+
+                    <label class="radioLabel" for="cityID">
+                        <input type="radio" id="cityID" value="cityCode" ng-model="user.location.citySearchPref" ng-change="saveCitySearchPref()">
+                        <span>By City ID</span>
+                    </label>
+<!--                    {{ user.location.citySearchPref }}-->
+                    <br>
+                    <strong>Current City</strong>: {{ user.location.name }}, {{ user.location.country }} ({{ user.location.id }})  
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-xs-12 settingsContent">
+                    <p class="settingsFootnote">
+                        If you are having trouble finding your city, try searching by city id. You can find your city id by searching for your city at <a href="http://openweathermap.org/find?q=" target="_blank"><strong>openweathermap.org</strong></a>. Your city id will be the number at the end of the url for your city (e.g. http://openweathermap.org/city/<strong>6167865</strong>).
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="materialCard settingsCard animated fadeInUp">
+        <div class="settingsHeader"><h2>Background Image</h2></div>
+
+        <div class="container hundredContainer">
+            <div class="row">
+
+                <div class="col-xs-6 settingsContent">
+                    <h3>Image Source Settings</h3>
+                    <h4 class="settingsOption">Set Image Source</h4>
+                    <input type="text" ng-model="newBackground" placeholder="{{ imagePlaceholder }}" class="materialInput settingsInput" ng-class="{highlightInput: user.backgroundPref.source === undefined }" ng-disabled="user.backgroundPref.source === undefined" ng-keyup="$event.keyCode == 13 && saveBG(newBackground)">
+                    <br>
+                    <label class="radioLabel" for="imageURL">
+                        <input type="radio" id="imageURL" value="custom" ng-model="user.backgroundPref.source" ng-change="saveBackgroundPref()"> 
+                        <span>Image URL</span>
+                    </label>
+
+                    <label class="radioLabel" for="subreddit">
+                        <input type="radio" id="subreddit" value="reddit" ng-model="user.backgroundPref.source" ng-change="saveBackgroundPref()"> 
+                        <span>Subreddit</span>
+                    </label>
+                    <br>
+                    <span class="forceWordWrap"><strong>Current Background URL</strong>: {{ user.background }}</span>
+                    <br>
+                    <span class="forceWordWrap" ng-class="{ngFadeIn: user.backgroundPref.source === 'reddit', ngFadeOut: user.backgroundPref.source !== 'reddit'}"><strong>Current Subreddit</strong>: {{ user.backgroundPref.redditSettings.subreddit }}</span>
+<!--                    {{ user.backgroundPref.source || "This shouldn't be showing up" }}-->
+                </div>
+
+                <div class="col-xs-6 settingsContent" ng-class="{ngFadeIn: user.backgroundPref.source === 'reddit', ngFadeDisabled: user.backgroundPref.source !== 'reddit'}">
+                    <h3>Reddit Fetch Settings</h3>
+
+                    <h4 class="settingsOption" ng-class="{helpCursor: user.backgroundPref.source === 'reddit'}"><span title="How popular should the images be?">Set Image Filter Method</span></h4>
+                    <select ng-model="user.backgroundPref.redditSettings.filterMode" ng-change="saveBackgroundPref()" ng-disabled="user.backgroundPref.source !== 'reddit'">
+                        <option value="top">Top</option>
+                        <option value="hot">Hot</option>
+                        <option value="new">New</option>
+                    </select>
+
+                    <br><br>
+                    <h4 class="settingsOption" ng-class="{helpCursor: user.backgroundPref.source === 'reddit'}"><span title="How many posts should be cycled through?">Set Image Fetch Limit</span></h4>
+                    <select ng-model="user.backgroundPref.redditSettings.resLimit" ng-change="saveBackgroundPref()" ng-disabled="user.backgroundPref.source !== 'reddit'">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="75">75</option>
+                        <option value="100">100</option>
+                    </select>
+
+                    <br><br>
+                    <h4 class="settingsOption" ng-class="{helpCursor: user.backgroundPref.source === 'reddit'}"><span title="How recently should the image have been posted?">Set Maximum Image Age</span></h4>
+                    <select ng-model="user.backgroundPref.redditSettings.maxPeriod" ng-change="saveBackgroundPref()" ng-disabled="user.backgroundPref.source !== 'reddit'">
+                        <option value="hour">Past Hour</option>
+                        <option value="day">Past Day</option>
+                        <option value="week">Past Week</option>
+                        <option value="month">Past Month</option>
+                        <option value="year">Past Year</option>
+                        <option value="all">All Time</option>
+                    </select>
+
+                    <br><br>
+                    <h4 class="settingsOption" ng-class="{helpCursor: user.backgroundPref.source === 'reddit'}"><span title="Display images that may be inappropriate?">Show NSFW Images</span></h4>
+                    <div class="checkbox-group"> 
+                        <input ng-model="user.backgroundPref.redditSettings.showNSFW" type="checkbox" id="allowNSFW" ng-click="saveBackgroundPref()" ng-disabled="user.backgroundPref.source !== 'reddit'"> 
+                        <label for="allowNSFW">
+                            <span class="check"></span>
+                            <span class="box"></span>
+                             Allow NSFW Images
+                         </label>
+                    </div>
+                
+                    <br>
+                    <h4 class="settingsOption marginTopMinus5" ng-class="{helpCursor: user.backgroundPref.source === 'reddit'}"><span title="How often would you like your image to be updated?">Set Image Update Rate</span></h4>
+                    <input type="text" ng-model="updateRate.reddit" placeholder="Enter a Rate in Minutes (e.g. 15)" class="materialInput settingsInput" ng-keyup="$event.keyCode == 13 && saveUpdateRate()">
+                    <br>
+
+                    <strong>Current Update Rate</strong>: {{ user.updateRate.reddit }} minutes
+                </div>
+
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-xs-12 settingsContent">
+                    <p class="settingsFootnote">
+                        Image URLs must end with one of .jpg, .jpeg, .png, or .gif. Other URL endings will result in a blank image displaying. 
+                        <br>
+                        To use a subreddit, simply enter the name of the subreddit (e.g. /r/wallpapers). 
+                        <br>
+                        To use a public multireddit, enter the everything that follows "reddit.com" (e.g. /user/sacara/m/wallmulti).
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="materialCard settingsCard animated fadeInUp">
+        <div class="settingsHeader"><h2>Main Card Theme Settings</h2></div>
+
+            <div class="container hundredContainer">
+                <div class="row">
+
+                    <div class="col-xs-4 settingsContent">
+                        <h3>Card Style Options</h3>
+
+                        <h4 class="settingsOption">Time/Date Text Colour</h4>
+                        <div class="row">
+                            <div class="col-xs-10 noPaddingRight">
+                                <input colorpicker="rgba" colorpicker-position="bottom" class="materialInput previewInput" ng-model="user.mainCardStyle.timeDateFontColour" type="text" ng-style="{'color': user.mainCardStyle.timeDateFontColour}" placeholder="Enter a colour in rbga format">
+                            </div>
+                            <div class="col-xs-2 noPaddingLeft">
+                                <div colorpicker="rgba" colorpicker-position="bottom" class="previewColourRectangle" ng-model="user.mainCardStyle.timeDateFontColour" ng-style="{'background': user.mainCardStyle.timeDateFontColour}"></div>
+                            </div>
+                        </div>
+                            
+                        <h4 class="settingsOption">Time/Date Background Colour</h4>
+                        <div class="row">
+                            <div class="col-xs-10 noPaddingRight">
+                                <input colorpicker="rgba" colorpicker-position="bottom" class="materialInput previewInput" ng-model="user.mainCardStyle.timeDateBGColour" type="text" ng-style="{'color': user.mainCardStyle.timeDateBGColour}" placeholder="Enter a colour in rbga format">
+                            </div>
+                            <div class="col-xs-2 noPaddingLeft">
+                                <div colorpicker="rgba" colorpicker-position="bottom" class="previewColourRectangle" ng-model="user.mainCardStyle.timeDateBGColour" ng-style="{'background': user.mainCardStyle.timeDateBGColour}"></div>
+                            </div>
+                        </div>
+
+                        <h4 class="settingsOption">Weather Text/Icon Colour</h4>
+                        <div class="row">
+                            <div class="col-xs-10 noPaddingRight">
+                                <input colorpicker="rgba" colorpicker-position="bottom" class="materialInput previewInput" ng-model="user.mainCardStyle.weatherFontColour" type="text" ng-style="{'color': user.mainCardStyle.weatherFontColour}" placeholder="Enter a colour in rbga format">
+                            </div>
+                            <div class="col-xs-2 noPaddingLeft">
+                                <div colorpicker="rgba" colorpicker-position="bottom" class="previewColourRectangle" ng-model="user.mainCardStyle.weatherFontColour" ng-style="{'background': user.mainCardStyle.weatherFontColour}"></div>
+                            </div>
+                        </div> 
+
+                        <h4 class="settingsOption">Weather Background Colour</h4>
+                        <div class="row">
+                            <div class="col-xs-10 noPaddingRight">
+                                <input colorpicker="rgba" colorpicker-position="bottom" class="materialInput previewInput" ng-model="user.mainCardStyle.weatherBGColour" type="text" ng-style="{'color': user.mainCardStyle.weatherBGColour}" placeholder="Enter a colour in rbga format">
+                            </div>
+                            <div class="col-xs-2 noPaddingLeft">
+                                <div colorpicker="rgba" colorpicker-position="bottom" class="previewColourRectangle" ng-model="user.mainCardStyle.weatherBGColour" ng-style="{'background': user.mainCardStyle.weatherBGColour}"></div>
+                            </div>
+                        </div>
+                        
+                        <h4 class="settingsOption">Show Card Shadow</h4>
+                        <div class="checkbox-group"> 
+                        <input ng-model="user.mainCardStyle.showBoxShadow" type="checkbox" id="showBoxShadow" ng-click="saveMainCardStyle()"> 
+                        <label for="showBoxShadow">
+                            <span class="check"></span>
+                            <span class="box"></span>
+                             Show Shadow Behind Main Card
+                         </label>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-8 settingsContent">
+                        <h3>Card Preview</h3>
+
+                        <div id="mainCardPreview" class="text-center" ng-style="{'background-image': 'url('+user.background+')'}">
+                            <div class="previewContainer" ng-class="{boxShadowTrans: user.mainCardStyle.showBoxShadow, noBoxShadowTrans: !user.mainCardStyle.showBoxShadow}">
+                                <div id="timeDateHalf" ng-style="{'color': user.mainCardStyle.timeDateFontColour, 'background': user.mainCardStyle.timeDateBGColour}">
+                                    <div><h1>10:25</h1></div>
+                                    <div><h2>October 25th, 2015</h2></div>
+                                </div>
+
+                                <div class="weatherBar" ng-style="{'color': user.mainCardStyle.weatherFontColour, 'fill': user.mainCardStyle.weatherFontColour, 'background': user.mainCardStyle.weatherBGColour}">
+                                    <div class="row vertical-align">
+                                         <div class="col-xs-5">
+                                                <div class="pull-right">
+                                                    <strong>Toronto, CA</strong>
+                                                    <p class="previewWeatherDesc">Sunny</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-2">
+                                                <div class="previewWeatherIcon" ng-include="'/img/weathericons/01d.svg'"></div> 
+                                            </div>
+
+                                            <div class="col-xs-5">
+                                                <div class="pull-left">
+                                                    <div class="text-left"><strong>7&#xb0;C</strong></div>
+                                                    <p class="previewWeatherDesc">0&#xb0;C/15&#xb0;C</p>
+                                                </div>  
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                
+                <div class="row">
+                    <div class="col-xs-12 settingsContent" id="setCardTheme">
+                        <h4 class="settingsOption">Set Card Theme</h4>
+                        <label class="radioLabel" for="defaultCardTheme">
+                            <input type="radio" id="defaultCardTheme" ng-value="0" ng-model="user.mainCardStyle.themePref" ng-change="setMainCardTheme()"> 
+                            <span>Light (Default)</span>
+                        </label>
+
+                        <label class="radioLabel" for="darkCardTheme">
+                            <input type="radio" id="darkCardTheme" ng-value="1" ng-model="user.mainCardStyle.themePref" ng-change="setMainCardTheme()"> 
+                            <span>Dark</span>
+                        </label>
+                        
+                        <label class="radioLabel" for="transparentCardTheme">
+                            <input type="radio" id="transparentCardTheme" ng-value="3" ng-model="user.mainCardStyle.themePref" ng-change="setMainCardTheme()"> 
+                            <span>Transparent</span>
+                        </label>
+                        
+                        <label class="radioLabel" for="transparentDarkCardTheme">
+                            <input type="radio" id="transparentDarkCardTheme" ng-value="4" ng-model="user.mainCardStyle.themePref" ng-change="setMainCardTheme()"> 
+                            <span>Transparent (Dark)</span>
+                        </label>
+
+                        <label class="radioLabel" for="customCardTheme">
+                            <input type="radio" id="customCardTheme" ng-value="2" ng-model="user.mainCardStyle.themePref" ng-change="setMainCardTheme()"> 
+                            <span>Custom</span>
+                        </label>
+                    </div>
+
+                </div>
+
+
+                <hr>
+                <div class="row">
+                    <div class="col-xs-12 settingsContent">
+                        <p class="settingsFootnote">
+                            Card position, scale, and display settings are not reflected in the preview.
+                            <br>
+                            You can convert colours from hex to rgba using this <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool"><strong>colour picking tool</strong></a>.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="bottomButtonBar">
+            <div class="container hundredContainer">
+                <a href="#/" class="pull-right animated fadeInUp"><button type="button" class="btn btn-grey">Home</button></a> 
+                <span ng-click="saveAllInputsInline()" class="pull-right animated fadeInUp"><button type="button" class="btn btn-success">{{saveText}}</button></span> 
+            </div>
+        </div>
+</div>
+
+<div id="saveConfirmationBox" ng-class="checkmarkStyle">
+    <ul class="list-inline" id="saveConfirmationRow">
+        <li><span class="navIcon"><i class="fa fa-check fa-lg"></i></span></li>
+    </ul>
+</div>
+
+<div id="bottomActionBar">
+    <ul class="list-inline" id="bottomIconRow">
+        <li><span ng-click="saveAllInputsSide()" class="navIcon"><i class="fa fa-floppy-o fa-lg"></i></span></li>
+        <li><span>|</span></li>
+        <li><a href="#!/"><span class="navIcon"><i class="fa fa-home fa-lg"></i></span></a></li>
+    </ul>
+</div>
+

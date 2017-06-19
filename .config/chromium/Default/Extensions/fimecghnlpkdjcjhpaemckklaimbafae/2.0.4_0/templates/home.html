@@ -1,0 +1,117 @@
+<div ng-controller="MainCtrl" ng-style="{'background-image': 'url('+user.background+')'}" class="backgroundFill fadeIn">
+ 
+        <div id="trapezoidBanner"></div>
+                
+        <div id="topActionBar">
+            <ul class="list-inline" id="topIconRow">
+                <li><div class="popunderWrapper pointerCursor" ng-click="openOverlaySearch()">
+                    <span class="navText">Search</span> 
+                    <div class="popunderBox searchPopunderBox">
+                        <span>Click or Press Ctrl/<span class="smallCmd">⌘</span> + F</span> 
+                    </div>
+                </div></li>
+                <li><span>|</span></li>
+                <li ng-click="openApps()"><span class="navText">Apps</span></li>
+                <li><span>|</span></li>
+                <li ng-click="toggleTodo()"><span class="navText">Todo</span></li>
+            </ul>
+        </div>
+            
+        <div id="mainTodo" ng-class="{ngFadeIn: user.showHomeTodo, ngFadeOut: !user.showHomeTodo}">
+            <div id="mainTodoCard">
+                <div class="todoContent">
+                    
+                    <div class="text-center">
+                        <input type="text" ng-model="newTodo" placeholder="Enter a task" id="todoInput" ng-keyup="$event.keyCode == 13 && addTodo(newTodo)" class="materialInput">
+                    </div>
+                    
+                    <div ng-sortable="todoConfig">
+                        <div ng-repeat="todo in todoList track by $index" ng-dblclick="startEditingTodo(todo);" class="todoItems">
+                            <div class="row">
+                                <div class="col-xs-1">
+                                    <input ng-model="todo.isDone" type="checkbox" ng-click="toggleCompleted()">
+                                </div>
+                            
+                                <div class="col-xs-9">
+                                    <span ng-hide="todo.editing" class="doneTodo-{{todo.isDone}}">{{todo.taskName}}</span>
+                                    <input ng-keyup="$event.keyCode == 13 && doneEditingTodo(todo)" ng-show="todo.editing" ng-model="todo.taskName" ng-blur="doneEditingTodo(todo)" ng-focus="todo == editedTodo" class="materialInput materialEditingInput noBottomMargin">
+                                </div>
+
+                                <div class="col-xs-1">
+                                    <i class="fa fa-sort pull-right"></i>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="todoSummary">{{ todoList.length }} | {{ numActiveTodos }} | {{ numCompletedTodos }}
+                        <div class="popoverWrapper pull-right">
+                            <span id="clearTasks" ng-click="removeCompleted($event)">Clear</span>
+                            <div class="popoverBox todoPopoverBox">
+                                <span>Shift-Click to Clear All!</span>
+                            </div>
+                        </div>
+                    
+                    
+                    </div>
+                </div>
+            </div>
+        
+        </div>    
+        <div id="card-container">
+            <div class="materialCard transparentCard noHighlight moveCursor" draggable position="mainCardPosition" ng-class="{noBoxShadow: !user.mainCardStyle.showBoxShadow, bigTimeSeconds: user.timePref.showSeconds, bigTime: !user.timePref.showSeconds}">
+                
+                <div id="timeDateHalf" ng-style="{'color': user.mainCardStyle.timeDateFontColour, 'background': user.mainCardStyle.timeDateBGColour}">
+                    <div><h1>{{ formattedTime }}<span ng-if="user.timePref.showAMPM" class="ampm">{{ date.raw | date: 'a' }}</span></h1></div>
+                    <div class="bigDate"><h2>{{ formattedDate }}</h2></div>
+                </div>
+                
+                <div class="weatherBar" ng-style="{'color': user.mainCardStyle.weatherFontColour, 'fill': user.mainCardStyle.weatherFontColour, 'background': user.mainCardStyle.weatherBGColour}">
+                    <div class="row vertical-align">
+
+                        <div class="col-xs-5">
+                            <div class="pull-right">
+                                <p class="cityName">{{ weather.location.name }}, {{ weather.location.country }} </p>
+                                <p class="weatherDesc">{{ weather.condition.description }}</p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-2">
+                            <div class="popoverWrapper">
+                            <div class="weatherIcon" ng-include="'/img/weathericons/'+weather.condition.icon+'.svg'" ng-click="forceRefreshWeather()"></div> 
+                                <div class="popoverBox weatherPopoverBox pointerCursor">
+                                    <span class="textCursor">Click to Refresh Weather!</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-5">
+
+                            <div ng-if="!user.fahrenPref" class="pull-left">
+                                <p class="weatherTempCurr">{{ weather.temp.current | tempc:decimals }}</p>
+                                <p class="weatherHighLow">{{ weather.temp.min | tempc:decimals }} / {{ weather.temp.max | tempc:decimals }}</p>
+                            </div>  
+
+                            <div ng-if="user.fahrenPref" class="pull-left">
+                                <p class="weatherTempCurr">{{ weather.temp.current | tempf:decimals }}</p>
+                                <p class="weatherHighLow">{{ weather.temp.min | tempf:decimals }} / {{ weather.temp.max | tempf:decimals }}</p>
+                            </div> 
+
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    <div id="bottomActionBar">
+        <ul class="list-inline" id="bottomIconRow">
+            <li ng-if="user.backgroundPref.source === 'reddit'"><span ng-click="forceRefreshRedditBG()" class="redditBGIcon"><i class="fa fa-refresh fa-lg"></i></span></li>
+            <li ng-if="user.backgroundPref.source === 'reddit'"><a ng-href="{{ redditData.sourceThread }}"><span class="redditBGIcon"><i class="fa fa-link fa-lg"></i></span></a></li>
+            <li><a href="#!/settings"><span class="navIcon"><i class="fa fa-cog fa-lg"></i></span></a></li>
+        </ul>
+    </div>
+
+</div>

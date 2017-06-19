@@ -1,0 +1,150 @@
+{
+   "alreadyInCollection": {
+      "description": "Finns redan i samlingen",
+      "message": "Finns redan i samlingen"
+   },
+   "appDesc": {
+      "description": "\"Save Button\" for Web",
+      "message": "\"Save Button\" for Web"
+   },
+   "appName": {
+      "description": "Raindrop.io: \"Save Button\" for Web",
+      "message": "Raindrop.io: \"Save Button\" for Web"
+   },
+   "articleRemovedPermament": {
+      "description": "Artikeln har tagits bort",
+      "message": "Artikeln har tagits bort"
+   },
+   "articleSaved": {
+      "description": "Artikel sparad",
+      "message": "Artikel sparad"
+   },
+   "edit": {
+      "description": "Redigera",
+      "message": "Redigera"
+   },
+   "error": {
+      "description": "Okänt fel. Pröva igen!",
+      "message": "Okänt fel. Pröva igen!"
+   },
+   "findBookmark": {
+      "description": "Hitta bokmärke",
+      "message": "Hitta bokmärke"
+   },
+   "hotkey": {
+      "description": "Snabbtangent",
+      "message": "Snabbtangent"
+   },
+   "imageRemovedPermament": {
+      "description": "Fotot har tagits bort",
+      "message": "Fotot har tagits bort"
+   },
+   "imageSaved": {
+      "description": "Bild sparad",
+      "message": "Bild sparad"
+   },
+   "inCollection": {
+      "description": "I samling",
+      "message": "I samling"
+   },
+   "linkRemovedPermament": {
+      "description": "Länken har tagits bort",
+      "message": "Länken har tagits bort"
+   },
+   "linkSaved": {
+      "description": "Länk sparad",
+      "message": "Länk sparad"
+   },
+   "loading": {
+      "description": "Laddar",
+      "message": "Laddar"
+   },
+   "logOut": {
+      "description": "Logga ut",
+      "message": "Logga ut"
+   },
+   "myBookmarks": {
+      "description": "Mina bokmärken",
+      "message": "Mina bokmärken"
+   },
+   "myBookmarksRaindrop": {
+      "description": "Mina bokmärken (Raindrop.io)",
+      "message": "Mina bokmärken (Raindrop.io)"
+   },
+   "open": {
+      "description": "Open",
+      "message": "Open"
+   },
+   "pleaseLogin": {
+      "description": "Var god logga in för att börja!",
+      "message": "Var god logga in för att börja!"
+   },
+   "remove": {
+      "description": "Radera",
+      "message": "Radera"
+   },
+   "restore": {
+      "description": "Restore",
+      "message": "Restore"
+   },
+   "save": {
+      "description": "Spara",
+      "message": "Spara"
+   },
+   "saveError": {
+      "description": "Det gick inte att spara!",
+      "message": "Det gick inte att spara!"
+   },
+   "saveImage": {
+      "description": "Spara fotot  till Raindrop.io",
+      "message": "Spara fotot  till Raindrop.io"
+   },
+   "saveLink": {
+      "description": "Spara sidan till Raindrop.io",
+      "message": "Spara sidan till Raindrop.io"
+   },
+   "savePage": {
+      "description": "Spara sidan till Raindrop.io",
+      "message": "Spara sidan till Raindrop.io"
+   },
+   "saveToRaindrop": {
+      "description": "Spara till Raindrop.io",
+      "message": "Spara till Raindrop.io"
+   },
+   "settings": {
+      "description": "Inställningar",
+      "message": "Inställningar"
+   },
+   "signIn": {
+      "description": "Logga in",
+      "message": "Logga in"
+   },
+   "signUp": {
+      "description": "Registrera dig",
+      "message": "Registrera dig"
+   },
+   "supportOnlyUrls": {
+      "description": "Du kan bara spara länkar med http- eller https-protokoll!",
+      "message": "Du kan bara spara länkar med http- eller https-protokoll!"
+   },
+   "toRaindrop": {
+      "description": "till Raindrop.io",
+      "message": "till Raindrop.io"
+   },
+   "tryAgain": {
+      "description": "Försök igen",
+      "message": "Försök igen"
+   },
+   "unsorted": {
+      "description": "Inkorg",
+      "message": "Inkorg"
+   },
+   "videoRemovedPermament": {
+      "description": "Innehållet har tagits bort",
+      "message": "Innehållet har tagits bort"
+   },
+   "videoSaved": {
+      "description": "Innehållet sparat",
+      "message": "Innehållet sparat"
+   }
+}

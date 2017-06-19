@@ -1,0 +1,38 @@
+{
+   "background": {
+      "scripts": [ "js/background.js" ]
+   },
+   "commands": {
+      "quick-find-search-all": {
+         "description": "Search all text",
+         "suggested_key": {
+            "default": "Ctrl+Shift+F",
+            "mac": "MacCtrl+Shift+F"
+         }
+      },
+      "quick-find-search-links": {
+         "description": "Search all links"
+      }
+   },
+   "content_scripts": [ {
+      "css": [ "css/styles.css" ],
+      "js": [ "js/lib/jquery-2.1.1.min.js", "js/utility.js", "js/text-search.js" ],
+      "matches": [ "http://*/*", "https://*/*", "ftp://*/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+   "description": "Port of Firefox Quick Find features + awesome new ones. Search results in one location. Navigate to links in just a few keystrokes.",
+   "icons": {
+      "128": "images/icons/icon128.png",
+      "16": "images/icons/icon16.png",
+      "48": "images/icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlsAav2k/US96SSR76jy112ugFEdgYittjEP1tNiATmIYT8QPGlrvNglNFtXbSysXuGaXgwtzZOjarULBpCyYuPxOiYmbzI2PEn0VGmNU4qtxKAF3ZWh6PYLqLG+d+VFF3uRBTh/6GlAqZggsYM0ClO7PdfGH9DYuuA8rcNJwvU+tABy6KcdgYNUiBrVH5CHL6lNTtYqcTpSqllFyLmLaE/wHe0ecKHsyBJkfVcxljVPLjJH1iFQqYIL0SZQ+/cEFpNhN9tAuguImQzEarociyfUO/OGx57NeXAwWTbiPeHVf5T29LN5i/x6SVqNWE9n2Fo1Qs2qzX5mNa9q8nL99zwIDAQAB",
+   "manifest_version": 2,
+   "name": "Quick Find for Google Chrome™",
+   "offline_enabled": true,
+   "options_page": "options.html",
+   "short_name": "Quick Find",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.12",
+   "web_accessible_resources": [ "fonts/*", "images/sprites*" ]
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flatun</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="css/popup/base.css" rel="stylesheet" />
+    <script src="vendor/jquery/jquery-1.11.3.min.js"></script>
+    <script src="vendor/handlebars/handlebars.min-v4.0.3.js"></script>
+    <script src="vendor/handlebars-intl/handlebars-intl.min.js"></script>
+    <script src="js/popup.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <ul class="sidebar-menu">
+            <script class="template" type="text/x-handlebars-template">
+                <li class="sidebar-menu-item" data-provider-id="{{provider.id}}">
+                    <a href="#" class="sidebar-menu-item-link open-feed" data-provider-id="{{provider.id}}">
+                        <span class="sidebar-menu-item-thumb"></span>
+                        {{#if provider.all}}
+                            <span class="sidebar-menu-item-image all-providers"></span>
+                        {{else}}
+                            <img class="sidebar-menu-item-image" src="{{provider.image}}">
+                        {{/if}}
+                    </a>
+                </li>
+            </script>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="tile-container">
+                <div class="tile-items feed">
+                    <script class="template" type="text/x-handlebars-template">
+                        <div class="tile feed-item open-feed-item" data-provider-id="{{provider_id}}" data-feed-item-id="{{item.id}}">
+                              <div class="tile-content">
+                                  {{#if item.images.length}}
+                                    <div class="tile-image-container" style="padding-top: {{item.images.0.paddingTop}};">
+                                        <img class="tile-image" src="{{item.images.0.image}}">
+                                    </div>
+                                  {{/if}}
+                                  <div class="tile-section">
+                                      <div class="tile-title">{{item.title}}</div>
+                                      {{#if item.text}}
+                                          <div class="tile-description">{{item.text}}</div>
+                                      {{/if}}
+                                      <div class="tile-date">
+                                          {{formatDate item.published day="numeric" month="long" year="numeric"}}
+                                      </div>
+                                  </div>
+                                  {{#if show_provider}}
+                                      <div class="tile-section">
+                                          <div class="tile-source">
+                                              <img class="tile-source-image" src="{{item.provider.image}}">
+                                              {{item.provider.name}}
+                                          </div>
+                                      </div>
+                                  {{/if}}
+                              </div>
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loading-spinner">
+        <svg class="spinner" viewBox="0 0 64 64"><g stroke-width="7" stroke-linecap="round"><line x1="10" x2="10" y2="42.4567" y1="21.5433"><animate attributeName="y1" dur="750ms" values="16;18;28;18;16;16" repeatCount="indefinite"></animate><animate attributeName="y2" dur="750ms" values="48;46;36;44;48;48" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" dur="750ms" values="1;.4;.5;.8;1;1" repeatCount="indefinite"></animate></line><line x1="24" x2="24" y2="47.2913" y1="16.7087"><animate attributeName="y1" dur="750ms" values="16;16;18;28;18;16" repeatCount="indefinite"></animate><animate attributeName="y2" dur="750ms" values="48;48;46;36;44;48" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" dur="750ms" values="1;1;.4;.5;.8;1" repeatCount="indefinite"></animate></line><line x1="38" x2="38" y2="48" y1="16"><animate attributeName="y1" dur="750ms" values="18;16;16;18;28;18" repeatCount="indefinite"></animate><animate attributeName="y2" dur="750ms" values="44;48;48;46;36;44" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" dur="750ms" values=".8;1;1;.4;.5;.8" repeatCount="indefinite"></animate></line><line x1="52" x2="52" y2="45.4173" y1="17.2913"><animate attributeName="y1" dur="750ms" values="28;18;16;16;18;28" repeatCount="indefinite"></animate><animate attributeName="y2" dur="750ms" values="36;44;48;48;46;36" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" dur="750ms" values=".5;.8;1;1;.4;.5" repeatCount="indefinite"></animate></line></g></svg>
+    </div>
+</body>
+</html>
+

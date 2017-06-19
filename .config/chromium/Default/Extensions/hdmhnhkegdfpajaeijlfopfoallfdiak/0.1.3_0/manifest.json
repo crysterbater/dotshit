@@ -1,0 +1,27 @@
+{
+   "author": "Richard Neomy",
+   "background": {
+      "scripts": [ "main.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "data/icons/16.png",
+         "32": "data/icons/32.png"
+      },
+      "default_popup": "data/popup/index.html"
+   },
+   "description": "A panel to access all your installed applications and their settings",
+   "homepage_url": "http://add0n.com/apps-launcher.html",
+   "icons": {
+      "128": "data/icons/128.png",
+      "16": "data/icons/16.png",
+      "48": "data/icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAybyfCGPeE7XwpWfNLAxSdqe7cihk7Py94zNoca9Z+sHCAgEKyODNayJbtYzJXRy2jG6hVDoz+OWZmJJrMfGbdR5k0JbC+atiaiZjUwYAnt6kVcQyfg/178ffx9o7PpHMmS9luIS5BPAErkI8z98154xAaYxqLB1WvDg025KV1U5gGHLyfZJZC5nXlG01G2ui0+vJd99zFpG7n+6jamLL86KnK3itcxLN06aRfeY1HaRgwj/M3q1RKGgORPXDo2nypoat+6lV41t3oNTIShURIOFeAuap35p11RFetOi2RpvUSjuWi/IJvNgX3lw3KpHmhJNb1aYqVKhgIV2VniWfdQIDAQAB",
+   "manifest_version": 2,
+   "name": "Apps Launcher for Chrome",
+   "permissions": [ "storage", "tabs", "management", "notifications", "contextMenus", "chrome://favicon/" ],
+   "short_name": "ialfchrome",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.3"
+}

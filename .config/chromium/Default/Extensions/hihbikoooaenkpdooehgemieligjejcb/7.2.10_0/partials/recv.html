@@ -1,0 +1,45 @@
+<div id="/recv" class="window" ng-controller='RecvCtrl'>
+  <div class="box type_02" id="recv_box" ng-show="view() == 'recv'">
+    <h4 class="title">{{getMessage("recv_title")}}</h4>
+    <div class="receive-box text-left">
+      <form class="profile-form">
+        <label for="profile-name">{{getMessage("profile")}} : </label>
+        <input class="profile-name" id="profile-name" ng-model="profile_name" style="cursor: pointer" ng-click="updateProfileName()" readonly>
+        <i class="material-icons" style="cursor: pointer" ng-click="updateProfileName()">edit</i>
+      </form>
+      <div class="text-center">
+        <span ng-class="{'has-error': errmsg}">
+          <input type="text" id="recv_key" class="input_02 input-key" ng-model="key" placeholder="{{getMessage('input_key')}}">
+        </span>
+        <p id="err-msg" class="text-left" ng-show="errmsg">* {{getMessage("invalid_key")}}</p>
+        <div class="button-group">
+          <button class="btn receive-btn primary-btn" ng-click="getRecvKey()" ng-disabled="isClicked"><i class="material-icons">file_download</i>{{getMessage("recv_file")}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="box type_04" id="transfer_box" ng-show="view() == 'tran'">
+      <div class="transfer-status text-center"> <span ng-show="!recv_status().mode && mode == 'recv'" class="recv">{{getMessage("receiving")}}</span> <span ng-show="recv_status().mode == 'cancel'"><strong>{{getMessage("cancelled")}}</strong></span> <span ng-show="recv_status().mode == 'error'">
+        <strong><span style='color:red'>{{getMessage("server_error")}}</span></strong>
+        <br/> <span style='color:gray'>{{getMessage("not_supported_browser")}}</span> </span> <span ng-show="recv_status().mode == 'wrong_key'"><strong>{{getMessage("invalid_key")}}</strong></span> <span ng-show="recv_status().mode == 'uploading'"><strong>{{getMessage("already_uploading")}}</strong></span>        <span ng-show="recv_status().mode == 'exceed_limit'">
+        <strong>{{getMessage("size_exceed")}}</strong><br>
+        <span style='style: gray'>{{getMessage("size_exceed_desc")}}</span> </span> <span ng-show="recv_num == 100"><strong>{{getMessage("complete")}}</strong></span> </div>
+      <!-- progress bar -->
+      <div class="file-info">
+        <div class="filename">{{filename}}</div>
+        <div class="filesize"> <span id="file_transfer">{{getFileSize(recv_status().loaded)}}</span> / <span id="file_length">{{getFileSize(recv_status().total)}}</span> </div>
+        <div style="clear:both;"></div>
+      </div>
+      <div class="progress" data-file-upload-progress="progress()">
+        <div class="progress-bar {{mode}}" role="progressbar" aria-valuenow="{{recv_num}}" aria-valuemin="0" aria-valuemax="100" style="width: {{recv_num}}%">
+          <p class="txt_03 text-muted">{{recv_num}}%</p>
+        </div>
+      </div>
+      <div class="button-group center">
+        <button class="btn button-tran cancel-btn default-btn" ng-show="getButtonType() == 'cancel'" ng-click="cancelTransfer();"> {{getMessage("cancel")}} </button>
+        <button class="btn button-tran go-main {{mode}} default-btn" ng-show="getButtonType() == 'main'" ng-click="init()"> {{getMessage("go_main")}} </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+[Hot Corners]
+top_left_corner_command = rofi -show run
+top_right_corner_command = 
+bottom_left_corner_command = xfce4-terminal
+bottom_right_corner_command = 

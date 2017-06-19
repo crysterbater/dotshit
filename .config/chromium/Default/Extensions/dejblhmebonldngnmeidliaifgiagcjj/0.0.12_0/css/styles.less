@@ -1,0 +1,239 @@
+@chrome-extension-path: "chrome-extension://__MSG_@@extension_id__";
+
+@icon-font-path:          "@{chrome-extension-path}/fonts/";
+@icon-font-name:          "NotoSans-regular-webfont";
+
+@sprite-path:  "@{chrome-extension-path}/images/sprites/";
+@closeIconUrl: "@{sprite-path}close.png";
+@closeIconUrlHover: "@{sprite-path}close_hover.png";
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('@{icon-font-path}@{icon-font-name}.woff') format('woff'),
+       url('@{icon-font-path}@{icon-font-name}.ttf') format('truetype');
+}
+
+#text-search-extension {
+	line-height: 1.4;
+	font-family: 'Noto Sans', sans-serif;
+
+	*, *::after, *::before {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+  div {
+    width: auto;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    background: none;
+    border-radius: 0px;
+  }
+
+	&.tse-no-results {
+		padding-bottom: 0px;
+
+		#tse-options {
+			border-bottom: 0px;
+		}
+
+		ul {
+			border-bottom: 0px;
+		}
+	}
+
+  u {
+    position: static;
+  }
+
+	position: fixed;
+	top: 0;
+	right: 15px;
+	width: 305px;
+	z-index: 2147483647;
+	overflow: hidden;
+	border-radius: 0px 0px 3px 3px;
+	background: rgb(236, 236, 236);
+	padding: 5px 0px 5px 0px !important;
+  margin: 0px !important;
+	border: 1px solid silver;
+	border-top: 0px;
+
+	&.tse-hide-text-search {
+		display: none;
+	}
+
+	#tse-search-wrap {
+		padding: 0px 0px 5px 5px;
+
+		#tse-search-wrap-inner {
+
+			display: inline-block;
+			position: relative;
+
+			input {
+				width: 276px;
+				height: 28px;
+				vertical-align: top;
+				font-size: 16px;
+				border-radius: 3px;
+				padding: 2px 55px 2px 7px;
+				margin: 0px;
+				border: 1px solid silver;
+				box-sizing: border-box;
+				font-family: 'Noto Sans', sans-serif;
+				color: black;
+				text-align: left;
+			}
+
+			#tse-search-index-wrap {
+				position: absolute;
+				top: 7px;
+				right: 0px;
+				margin: 0px 5px;
+				color: rgb(180, 180, 180);
+				font-size: 14px;
+				line-height: 14px;
+				font-family: 'Noto Sans', sans-serif;
+
+				#tse-search-index {
+					display: inline-block;
+					margin-right: 5px;
+				}
+
+				#tse-search-total {
+					display: inline-block;
+					margin-left: 5px;
+				}
+			}
+		}
+
+		i {
+			display: inline-block;
+			box-sizing: border-box;
+			vertical-align: top;
+			cursor: pointer;
+			background: url(@closeIconUrl) no-repeat;
+			width: 18px;
+			height: 18px;
+			position: relative;
+			top: 5px;
+			left: 3px;
+
+			&:hover, &:focus {
+				background: url(@closeIconUrlHover) no-repeat;
+			}
+		}
+	}
+
+	#tse-options {
+		padding-bottom: 5px;
+		border-bottom: 1px solid silver;
+
+		span {
+			cursor: pointer;
+			margin-left: 12px;
+			border: 1px solid transparent;
+			border-radius: 3px;
+			padding: 2px 4px;
+			display: inline-block;
+			font-size: 12px;
+			color: black;
+
+			&:hover {
+				border-color: grey;
+			}
+
+			&.tse-option-select {
+				border-color: grey;
+				background-color: silver;
+			}
+		}
+
+		#tse-rate-it {
+		    font-size: 12px;
+		    position: relative;
+		    left: 18px;
+		    top: 0px;
+		    color: black;
+		}
+	}
+
+	ul {
+		margin: 0px;
+		padding: 0px 10px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		max-height: 300px;
+		border-bottom: 1px solid silver;
+
+		li {
+			margin: 0;
+			padding: 10px;
+			cursor: pointer;
+			list-style-type: none;
+			background: white;
+			word-wrap: break-word;
+			border: 1px solid grey;
+			border-bottom: 0px;
+			font-family: 'Noto Sans', sans-serif;
+
+			&:first-child {
+				border-top: 0px;
+			}
+
+			span {
+				font-weight: bold;
+			}
+
+			.ts-ce-hl {
+				background: yellow !important;
+			}
+
+			&.tse-selected {
+				background: rgb(213, 245, 255);
+
+				a {
+					border: 1px solid grey;
+					border-radius: 3px;
+					background-color: white;
+				}
+			}
+
+			a {
+				display: block;
+				font-size: 12px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				width: 240px;
+				white-space: nowrap;
+				border: 1px solid transparent;
+				padding: 2px 4px;
+				margin-top: 4px;
+				color: #4472b9;
+				font-family: 'Noto Sans', sans-serif;
+			}
+
+			.tse-li-inner {
+				display: inline-block;
+				font-size: 15px;
+				color: black;
+				word-break: break-word;
+			}
+
+			&.tse-see-more-link {
+				text-align: center;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.ts-ce-hl {
+	background: yellow !important;
+	&.ts-ce-hl-sel {
+		background: orange !important;
+	}
+}

@@ -1,0 +1,170 @@
+.clear-list, .sidebar-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #202124;
+  background: -webkit-linear-gradient(top, #202124, #353A53);
+  background: linear-gradient(to bottom, #202124, #353A53);
+  background-color: #202124;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  width: 368px;
+  height: 600px;
+  overflow: hidden; }
+
+.container {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  .container::-webkit-scrollbar {
+    width: 0; }
+
+.content {
+  position: relative;
+  left: 0;
+  margin-right: 68px; }
+
+.loading-spinner {
+  display: none;
+  stroke: #548CFF;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  margin-top: -45px;
+  margin-left: -45px; }
+
+.clear-list, .sidebar-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.sidebar {
+  position: fixed;
+  right: 0;
+  width: 68px;
+  height: 100vh;
+  z-index: 1; }
+  .sidebar-menu {
+    color: #A6B6C9;
+    margin-top: 26px !important; }
+    .sidebar-menu a, .sidebar-menu a:visited, .sidebar-menu a:hover {
+      color: #A6B6C9;
+      text-decoration: none; }
+    .sidebar-menu a:hover {
+      color: #fff; }
+    .sidebar-menu-item {
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 20px;
+      height: 36px;
+      line-height: 36px;
+      white-space: nowrap;
+      text-align: center; }
+      .sidebar-menu-item:first-child {
+        margin-top: 0; }
+      .sidebar-menu-item.selected {
+        color: #fff; }
+      .sidebar-menu-item.selected .sidebar-menu-item-link, .sidebar-menu-item.selected .sidebar-menu-item-link:visited, .sidebar-menu-item.selected .sidebar-menu-item-link:hover {
+        color: #fff; }
+      .sidebar-menu-item-thumb {
+        float: right;
+        width: 3px;
+        height: 100%;
+        display: inline-block;
+        background: #548cff;
+        border-radius: 3px 0 0 3px;
+        vertical-align: middle;
+        visibility: hidden; }
+      .sidebar-menu-item.selected .sidebar-menu-item-thumb, .sidebar-menu-item-link:hover .sidebar-menu-item-thumb {
+        visibility: visible; }
+      .sidebar-menu-item-image {
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
+        vertical-align: middle;
+        margin-right: 10px; }
+        .sidebar-menu-item-image.all-providers {
+          display: inline-block;
+          border: 0;
+          background-image: url("../images/all-providers.png");
+          background-size: 36px 36px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .sidebar-menu-item-image.all-providers {
+              background-image: url("../images/all-providers@2x.png"); } }
+
+.clear-list, .sidebar-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.open-feed-item {
+  cursor: pointer; }
+
+.tile {
+  padding: 5px; }
+  .tile-container {
+    padding: 5px; }
+  .tile-content {
+    background-color: #fff;
+    border-radius: 3px;
+    color: #000;
+    overflow: hidden;
+    -webkit-transition: trans-prefix(box-shadow, 0.3s, webkit);
+    -moz-transition: trans-prefix(box-shadow, 0.3s, moz);
+    -o-transition: trans-prefix(box-shadow, 0.3s, o);
+    transition: box-shadow 0.3s; }
+    .tile-content:hover {
+      box-shadow: 0 0 25px rgba(84, 140, 255, 0.55); }
+  .tile-section {
+    padding: 14px 20px;
+    border-bottom: 1px solid #EDEDED; }
+    .tile-section:last-child {
+      border-bottom: 0; }
+  .tile-image {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 3px 3px 0 0; }
+    .tile-image-container {
+      position: relative; }
+  .tile-title {
+    margin-top: 8px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #23252D; }
+  .tile-content:hover .tile-title {
+    color: #548CFF; }
+  .tile-description {
+    font-family: 'Roboto', sans-serif;
+    color: #7F8694;
+    margin-top: 16px;
+    max-height: 100px;
+    line-height: 21px;
+    overflow: hidden; }
+  .tile-date {
+    font-family: 'Merriweather', serif;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: #8EABBC;
+    font-size: 12px; }
+  .tile-source {
+    font-family: 'Montserrat', sans-serif;
+    color: #7F8694; }
+    .tile-source-image {
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      vertical-align: middle;
+      margin-right: 14px; }
+
+/*# sourceMappingURL=base.css.map */

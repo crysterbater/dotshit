@@ -1,0 +1,71 @@
+<div class="tile feed-item">
+    <div class="tile-content">
+        <% img = _.first(item.get('images')) %>
+        <% if (img) { %>
+            <div class="tile-image-container" style="background: <%= _.escape(img.color) %>; padding-top: <%= (100 * _.escape(img.height) / _.escape(img.width)) %>%;">
+                <% if (item.isGif()) { %>
+                    <img class="tile-image" data-gifffer="<%= _.escape(img.image) %>">
+                <% } else { %>
+                    <img class="tile-image" src="<%= _.escape(img.image) %>">
+                <% } %>
+                <% if (item.get('provider')['tile_type'] == 'titled_photo') { %>
+                    <div class="tile-image-bottom-info<% if (_.isEmpty(item.escape('title'))) { %> no-title<% } %>">
+                        <div class="tile-image-bottom-info-subtitle"><%= item.formatPublishedDayAndMonth() %></div>
+                        <div class="tile-image-bottom-info-title"><%= item.escape('title') %></div>
+                    </div>
+                <% } %>
+                <% if (item.get('provider')['tile_type'] == 'square_photo') { %>
+                    <div class="tile-image-hover-info">
+                        <div class="tile-image-hover-info-title"><%= item.escape('title') %></div>
+                        <div class="tile-image-hover-info-text"><%= item.escape('short_text') %></div>
+                        <div class="tile-image-hover-info-date"><%= item.formatPublished() %></div>
+                    </div>
+                <% } %>
+            </div>
+        <% } %>
+        <% if (item.get('provider')['tile_type'] == 'default') { %>
+            <div class="tile-section">
+                <div class="tile-title"><%= item.escape('title') %></div>
+                <div class="tile-date"><%= item.formatPublished() %></div>
+            </div>
+        <% } %>
+        <div class="tile-section footer">
+            <div class="tile-counters">
+                <span class="tile-counters-item views">
+                    <span class="tile-counters-item-icon"></span>
+                    <span class="tile-counters-item-value"><%= item.getTotalViewsShort() %></span>
+                </span>
+                <a href="#" class="tile-counters-item hoverable likes toggle-like<% if (item.get('liked')) { %> active<% } %>" title="Like">
+                    <span class="tile-counters-item-icon"></span>
+                    <span class="tile-counters-item-value likes-count"><%= item.getTotalLikesShort() %></span>
+                </a>
+            </div>
+            <div class="tile-source">
+                <span class="tile-source-image-wrapper">
+                    <% if (item.get('provider_author_avatar') && !showProvider) { %>
+                        <img class="tile-source-image" src="<%= item.escape('provider_author_avatar') %>">
+                    <% } else { %>
+                        <img class="tile-source-image" src="<%= _.escape(item.get('provider').image) %>">
+                    <% } %>
+                </span>
+                <% if (item.get('provider_author_name') && !showProvider) { %>
+                    <% if (item.get('provider_author_url')) { %>
+                        <a class="tile-source-label link" href="<%= item.escape('provider_author_url') %>" title="Go to profile" target="_blank">
+                    <% } else { %>
+                        <span class="tile-source-label">
+                    <% } %>
+                        <%= item.escape('provider_author_name') %>
+                    <% if (item.get('provider_author_url')) { %>
+                        </span>
+                    <% } else { %>
+                        </a>
+                    <% } %>
+                <% } else { %>
+                    <a class="tile-source-label link" href="<%= item.escape('link') %>" target="_blank">
+                        <%= _.escape(item.get('provider').name) %>
+                    </a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,320 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: 'Roboto';
+  src: url("../font/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url("../font/RobotoSlab-Regular-webfont.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  background: #eeeeee;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.fabs {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 210px;
+  width: 80px;
+  z-index: 5;
+}
+.fabs .fab-add {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
+.fabs .fab-update-wrapper {
+  position: absolute;
+  right: 19px;
+  bottom: 211px;
+}
+.fabs .fab-update-wrapper .fab-update {
+  overflow: inherit;
+  background-color: #FFC107;
+}
+.fabs .fab-edit-wrapper {
+  position: absolute;
+  right: 19px;
+  bottom: 94px;
+}
+.fabs .fab-edit-wrapper .fab-edit {
+  overflow: inherit;
+  background-color: #8BC34A;
+}
+.fabs .fab-edit-wrapper .fab-edit.active {
+  opacity: 1 !important;
+  transform: translateZ(0) !important;
+  background-color: #558B2F;
+}
+.fabs .fab-about-wrapper {
+  position: absolute;
+  right: 19px;
+  bottom: 151px;
+}
+.fabs .fab-about-wrapper .fab-about {
+  overflow: inherit;
+  background-color: #2196F3;
+}
+
+.fab-anim-add {
+  right: 10px;
+  bottom: 20px;
+}
+
+.fab-anim-update {
+  right: 19px;
+  bottom: 211px;
+  background-color: #FFC107;
+  width: 40px;
+  height: 40px;
+}
+
+.fab-anim-about {
+  right: 19px;
+  bottom: 151px;
+  background-color: #2196F3;
+  width: 40px;
+  height: 40px;
+}
+
+.fab-edit /deep/ core-icon {
+  transition: transform 250ms;
+}
+.fab-edit.active /deep/ core-icon {
+  transform: rotate(360deg);
+}
+
+#about /deep/ .back-toolbar {
+  background-color: #2196F3;
+}
+
+#update /deep/ .back-toolbar {
+  background-color: #FFC107;
+}
+
+#searchdialog /deep/ .back-toolbar {
+  background-color: #EEEEEE;
+}
+
+#searchdialog /deep/ paper-icon-button {
+  color: #000;
+}
+
+#searchdialog /deep/ .card-bar .search-progress {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#searchdialog /deep/ .card-bar .search-bar {
+  width: 100%;
+}
+
+#searchdialog /deep/ .card .content {
+  padding: 0;
+}
+
+html /deep/ paper-button.primary {
+  background: #4285f4;
+  color: #fff;
+}
+html /deep/ paper-button[autofocus] {
+  color: #03a9f4;
+}
+
+.ghost {
+  background: #eee;
+}
+
+.column-holder {
+  width: calc(100% - 85px);
+  height: 100% !important;
+}
+.column-holder .grid-sizer {
+  position: absolute;
+  width: 25%;
+  min-width: 250px;
+  height: 50%;
+}
+
+.no-columns-container {
+  display: flex;
+  transition: 500ms opacity;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.no-columns-container div {
+  margin: auto;
+  color: #757575;
+  text-align: center;
+  width: 554px;
+  padding-top: 140px;
+  height: 355px;
+  background-image: url("../img/chrome.png");
+}
+
+#about .about {
+  /* NO FLEX, ZONE! */
+}
+#about .about h3 {
+  font-weight: lighter;
+  color: #424242;
+  font-size: 22px;
+  display: block;
+  margin: 0;
+}
+#about .about h3 core-icon {
+  margin-right: 10px;
+}
+#about .about h4 {
+  text-transform: uppercase;
+}
+#about .about p {
+  text-transform: uppercase;
+  color: #9E9E9E;
+}
+#about .about h5 {
+  color: #9e9e9e;
+  font-size: 14px;
+  font-weight: lighter;
+}
+#about .about paper-item /deep/ .button-content {
+  display: block;
+}
+#about .about .luv {
+  width: 14px;
+}
+#about .disclaimer h5 {
+  margin-bottom: 0;
+}
+#about .disclaimer .logo {
+  color: #9e9e9e;
+  float: right;
+  padding-left: 10px;
+  padding-top: 13px;
+}
+#about .disclaimer .logo core-icon {
+  width: 18px;
+  position: relative;
+  top: -2px;
+}
+
+.settings {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  transition: background 500ms, box-shadow 500ms, width 0ms 500ms;
+  border-bottom-left-radius: 3px;
+  padding: 5px 9px;
+  width: 65px;
+  height: 55px;
+  overflow: hidden;
+}
+.settings:hover, .settings.force {
+  width: 195px;
+  transition-delay: 0ms;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  background: #fff;
+}
+.settings:hover .app-drawer-button, .settings:hover .bookmarks-drawer-button, .settings:hover .top-drawer-button, .settings:hover .recently-drawer-button, .settings.force .app-drawer-button, .settings.force .bookmarks-drawer-button, .settings.force .top-drawer-button, .settings.force .recently-drawer-button {
+  opacity: 1;
+  -webkit-animation: enter 500ms;
+}
+.settings:hover .more, .settings.force .more {
+  opacity: 0;
+}
+.settings.force {
+  transition: width 300ms;
+  width: 400px;
+}
+.settings /deep/ core-icon {
+  color: #424242;
+  width: 28px;
+  height: 28px;
+}
+.settings .app-drawer-button, .settings .bookmarks-drawer-button, .settings .top-drawer-button, .settings .recently-drawer-button {
+  transition: opacity 500ms;
+  opacity: 0;
+  float: right;
+  -webkit-animation: leave 500ms;
+}
+.settings .more {
+  position: absolute;
+  right: 12px;
+  top: 5px;
+  transition-delay: 250ms;
+  transition: opacity 250ms;
+  opacity: 1;
+}
+
+@-webkit-keyframes enter {
+  0% {
+    transform: translateX(24px) rotate(180deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+@-webkit-keyframes leave {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateX(24px) rotate(180deg);
+  }
+}
+paper-tabs.blue::shadow #selectionBar {
+  background-color: #3F51B5;
+}
+
+paper-tabs.blue paper-tab::shadow #ink {
+  color: #3F51B5;
+}
+
+app-drawer.bookmarks core-animated-pages {
+  height: calc(100% - 48px);
+}
+app-drawer.bookmarks core-animated-pages div {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.resize-preview {
+  position: absolute;
+  z-index: 200;
+  border: 3px dotted #424242;
+  min-width: 250px;
+}
+
+html /deep/ paper-button.choice {
+  width: 50%;
+  height: 150px;
+  padding-top: 54px;
+  transition: background-color 500ms, color 500ms;
+}
+
+/*# sourceMappingURL=screen.css.map */

@@ -1,0 +1,150 @@
+{
+   "alreadyInCollection": {
+      "description": "On jo kokoelmassa",
+      "message": "On jo kokoelmassa"
+   },
+   "appDesc": {
+      "description": "\"Save Button\" for Web",
+      "message": "\"Save Button\" for Web"
+   },
+   "appName": {
+      "description": "Raindrop.io: \"Save Button\" for Web",
+      "message": "Raindrop.io: \"Save Button\" for Web"
+   },
+   "articleRemovedPermament": {
+      "description": "Artikkeli poistettu",
+      "message": "Artikkeli poistettu"
+   },
+   "articleSaved": {
+      "description": "Artikkeli tallennettu",
+      "message": "Artikkeli tallennettu"
+   },
+   "edit": {
+      "description": "Muokkaa",
+      "message": "Muokkaa"
+   },
+   "error": {
+      "description": "Tuntematon virhe. Yritä uudestaan!",
+      "message": "Tuntematon virhe. Yritä uudestaan!"
+   },
+   "findBookmark": {
+      "description": "Löydä kirjanmerkki",
+      "message": "Löydä kirjanmerkki"
+   },
+   "hotkey": {
+      "description": "Pikanäppäin",
+      "message": "Pikanäppäin"
+   },
+   "imageRemovedPermament": {
+      "description": "Kuva poistettu",
+      "message": "Kuva poistettu"
+   },
+   "imageSaved": {
+      "description": "Kuva tallennettu",
+      "message": "Kuva tallennettu"
+   },
+   "inCollection": {
+      "description": "Kokoelmassa",
+      "message": "Kokoelmassa"
+   },
+   "linkRemovedPermament": {
+      "description": "Linkki poistettu",
+      "message": "Linkki poistettu"
+   },
+   "linkSaved": {
+      "description": "Linkki tallennettu",
+      "message": "Linkki tallennettu"
+   },
+   "loading": {
+      "description": "Lataa",
+      "message": "Lataa"
+   },
+   "logOut": {
+      "description": "Kirjaudu ulos",
+      "message": "Kirjaudu ulos"
+   },
+   "myBookmarks": {
+      "description": "Omat kirjanmerkit",
+      "message": "Omat kirjanmerkit"
+   },
+   "myBookmarksRaindrop": {
+      "description": "Omat kirjanmerkit (Raindrop.io)",
+      "message": "Omat kirjanmerkit (Raindrop.io)"
+   },
+   "open": {
+      "description": "Open",
+      "message": "Open"
+   },
+   "pleaseLogin": {
+      "description": "Kirjaudu sisään aloittaaksesi!",
+      "message": "Kirjaudu sisään aloittaaksesi!"
+   },
+   "remove": {
+      "description": "Poista",
+      "message": "Poista"
+   },
+   "restore": {
+      "description": "Restore",
+      "message": "Restore"
+   },
+   "save": {
+      "description": "Tallenna",
+      "message": "Tallenna"
+   },
+   "saveError": {
+      "description": "Tallennusvirhe!",
+      "message": "Tallennusvirhe!"
+   },
+   "saveImage": {
+      "description": "Tallenna kuva Raindrop.io:oon",
+      "message": "Tallenna kuva Raindrop.io:oon"
+   },
+   "saveLink": {
+      "description": "Tallenna sivu Raindrop.io:oon",
+      "message": "Tallenna sivu Raindrop.io:oon"
+   },
+   "savePage": {
+      "description": "Tallenna sivu Raindrop.io:oon",
+      "message": "Tallenna sivu Raindrop.io:oon"
+   },
+   "saveToRaindrop": {
+      "description": "Tallenna Raindrop.io:oon",
+      "message": "Tallenna Raindrop.io:oon"
+   },
+   "settings": {
+      "description": "Asetukset",
+      "message": "Asetukset"
+   },
+   "signIn": {
+      "description": "Kirjaudu sisään",
+      "message": "Kirjaudu sisään"
+   },
+   "signUp": {
+      "description": "Rekisteröidy",
+      "message": "Rekisteröidy"
+   },
+   "supportOnlyUrls": {
+      "description": "Voit tallentaa ainoastaan http ja https -linkkejä!",
+      "message": "Voit tallentaa ainoastaan http ja https -linkkejä!"
+   },
+   "toRaindrop": {
+      "description": "Raindrop.io:oon",
+      "message": "Raindrop.io:oon"
+   },
+   "tryAgain": {
+      "description": "Yritä uudestaan",
+      "message": "Yritä uudestaan"
+   },
+   "unsorted": {
+      "description": "Saapuneet",
+      "message": "Saapuneet"
+   },
+   "videoRemovedPermament": {
+      "description": "Sisältö poistettu",
+      "message": "Sisältö poistettu"
+   },
+   "videoSaved": {
+      "description": "Sisältö tallennettu",
+      "message": "Sisältö tallennettu"
+   }
+}

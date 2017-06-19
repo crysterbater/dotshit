@@ -1,0 +1,794 @@
+{
+   "AddSearchEngine": {
+      "message": "添加搜索引擎"
+   },
+   "Added": {
+      "message": "已添加"
+   },
+   "AdditionalSearchEngine": {
+      "message": "附加搜索引擎"
+   },
+   "Amazon": {
+      "message": "京東商城"
+   },
+   "AmazonUrl": {
+      "message": "http://p.yiqifa.com/c?s=b20080c9&w=724125&c=254&i=160&l=0&e=miyu&t=http://www.jd.com/"
+   },
+   "Answers": {
+      "message": "問答"
+   },
+   "Apps": {
+      "message": "應用"
+   },
+   "AppsAndExtensions": {
+      "message": "應用與擴充功能"
+   },
+   "AutomaticallyChangeWallpaper": {
+      "message": "每日自動更換壁紙"
+   },
+   "Baidu": {
+      "message": "百&nbsp;&nbsp;度"
+   },
+   "BingBg": {
+      "message": "Bing壁紙"
+   },
+   "BlurWallpaper": {
+      "message": "對壁紙進行模糊處理"
+   },
+   "BookmarkChanged": {
+      "message": "*書籤轉變為了側邊欄"
+   },
+   "Bookmarks": {
+      "message": "書籤"
+   },
+   "Bookmarksbar": {
+      "message": "書籤欄"
+   },
+   "BrowsingHistoryHasBeenCleared": {
+      "message": "歷史記錄已清空"
+   },
+   "CanNotBeEmpty": {
+      "message": "搜索引擎名稱和URL不能為空"
+   },
+   "Cancel": {
+      "message": "取 消"
+   },
+   "CategoryAppTools": {
+      "message": "應用與工具"
+   },
+   "CategoryCareerEdu": {
+      "message": "教育與招聘"
+   },
+   "CategoryComputerTech": {
+      "message": "數碼與科技"
+   },
+   "CategoryFinanceBiz": {
+      "message": "金融財經"
+   },
+   "CategoryGames": {
+      "message": "遊戲與娛樂"
+   },
+   "CategoryLife": {
+      "message": "日常生活"
+   },
+   "CategoryMusicVideo": {
+      "message": "音樂與視頻"
+   },
+   "CategoryNews": {
+      "message": "新聞"
+   },
+   "CategoryOther": {
+      "message": "其他"
+   },
+   "CategoryPhoto": {
+      "message": "圖片與照片"
+   },
+   "CategoryPopular": {
+      "message": "受歡迎的"
+   },
+   "CategoryShopping": {
+      "message": "購物與團購"
+   },
+   "CategorySocialBlog": {
+      "message": "社交與博客"
+   },
+   "CategorySportsTravel": {
+      "message": "體育與旅行"
+   },
+   "Celsius": {
+      "message": "攝氏度"
+   },
+   "Change": {
+      "message": "修改"
+   },
+   "ChangePassword": {
+      "message": "修改密碼"
+   },
+   "ChromeStore": {
+      "message": "Chrome 商店"
+   },
+   "CityName": {
+      "message": "城市名"
+   },
+   "ClearAllBrowsingHistory": {
+      "message": "清空歷史記錄"
+   },
+   "ClearAllDones": {
+      "message": "除完成事項"
+   },
+   "CloudBackup": {
+      "message": "同步到雲端"
+   },
+   "ContactUs": {
+      "message": "聯繫我們"
+   },
+   "CurrentLocation": {
+      "message": "當前位置: "
+   },
+   "DefaultWallpaper": {
+      "message": "默認壁紙"
+   },
+   "Disable": {
+      "message": "禁用"
+   },
+   "Download": {
+      "message": "下載"
+   },
+   "DownloadWP": {
+      "message": "下載壁紙"
+   },
+   "DownloadWallpaper": {
+      "message": "下載當前壁紙"
+   },
+   "Edit": {
+      "message": "編輯"
+   },
+   "EmailToUs": {
+      "message": "發郵件給我們"
+   },
+   "Enable": {
+      "message": "啟用"
+   },
+   "EnableBookmarksBar": {
+      "message": "啟用書籤"
+   },
+   "EnableMostVisited": {
+      "message": "啟用最常訪問"
+   },
+   "EnableSearchBox": {
+      "message": "啟用搜索框"
+   },
+   "EnableSearchType": {
+      "message": "啟用搜索類別"
+   },
+   "Extensions": {
+      "message": "擴充功能"
+   },
+   "Fahrenheit": {
+      "message": "華氏度"
+   },
+   "Find": {
+      "message": "找回"
+   },
+   "FindYourAccount": {
+      "message": "找回賬號"
+   },
+   "Friday": {
+      "message": "星期五"
+   },
+   "Generate": {
+      "message": "生 成"
+   },
+   "GenerateBackupFile": {
+      "message": "生成備份文件"
+   },
+   "GmailNotifications": {
+      "message": "Gmail通知"
+   },
+   "HasBeenDeleted": {
+      "message": "已被删除"
+   },
+   "HasBeenDisabled": {
+      "message": "已被禁用"
+   },
+   "HasBeenEnabled": {
+      "message": "已被啟用"
+   },
+   "HasBeenUninstalled": {
+      "message": "已被卸载"
+   },
+   "HasBeenUpdated": {
+      "message": "已更新"
+   },
+   "History": {
+      "message": "歷史記錄"
+   },
+   "Humidity": {
+      "message": "濕度"
+   },
+   "IconFillet": {
+      "message": "圖標圓角度數"
+   },
+   "IconOpacity": {
+      "message": "圖標不透明度"
+   },
+   "ImageSizeLimit": {
+      "message": "圖片大小不能超過3MB"
+   },
+   "Images": {
+      "message": "圖片"
+   },
+   "InfinityBg": {
+      "message": "Inf​​inity(無限)壁紙"
+   },
+   "InfinityBgblur": {
+      "message": "Inf​​inity(無限)壁紙模糊版"
+   },
+   "LastBackupAt": {
+      "message": "上次備份於"
+   },
+   "LocalWallpaper": {
+      "message": "本地壁紙"
+   },
+   "Locating": {
+      "message": "正在定位..."
+   },
+   "LogOffConfirm": {
+      "message": "確定要退出嗎？"
+   },
+   "LoginMenuFontSize": {
+      "message": "20px"
+   },
+   "LoginSuccess": {
+      "message": "登錄成功"
+   },
+   "Logout": {
+      "message": "退出登錄"
+   },
+   "MainSearchEngine": {
+      "message": "主搜索引擎"
+   },
+   "Maps": {
+      "message": "地圖"
+   },
+   "Monday": {
+      "message": "星期一"
+   },
+   "MostVisitedMoved": {
+      "message": "*最常訪問移到了頂部"
+   },
+   "Musics": {
+      "message": "音樂"
+   },
+   "NETWORKERROR": {
+      "message": "網路好像有點問題哦"
+   },
+   "NewNote": {
+      "message": "新記事"
+   },
+   "NewPassword": {
+      "message": "新密碼"
+   },
+   "News": {
+      "message": "新聞"
+   },
+   "NoSpace": {
+      "message": "該頁沒有多餘空間"
+   },
+   "NotesAndIdeas": {
+      "message": "筆記與創意"
+   },
+   "Notfoundcity": {
+      "message": "未找到該城市"
+   },
+   "NotificationSound": {
+      "message": "通知鈴聲"
+   },
+   "NumberOfItems": {
+      "message": "項目數量"
+   },
+   "OFF": {
+      "message": "關"
+   },
+   "OFFleft": {
+      "message": "35px"
+   },
+   "ON": {
+      "message": "開"
+   },
+   "ONleft": {
+      "message": "31px"
+   },
+   "OldPassword": {
+      "message": "原密碼"
+   },
+   "OpenBookmarkIn": {
+      "message": "在新標籤頁中打開書籤"
+   },
+   "OpenLinksInNewtab": {
+      "message": "在新標籤頁中打開鏈接"
+   },
+   "OurOfficialWebsite": {
+      "message": "訪問我們的官方網站"
+   },
+   "Password": {
+      "message": "密碼"
+   },
+   "PleaseEnableIt": {
+      "message": "請先啟用此應用!"
+   },
+   "PressEnterToQuery": {
+      "message": "按下\"Enter\"查詢"
+   },
+   "Pressure": {
+      "message": "壓力"
+   },
+   "PrivacyPolicy": {
+      "message": "隱私政策"
+   },
+   "Query": {
+      "message": "查詢中..."
+   },
+   "Read": {
+      "message": "閱讀"
+   },
+   "Recovery": {
+      "message": "恢復"
+   },
+   "RecoveryDataFailed": {
+      "message": "數據恢復失敗"
+   },
+   "RecoveryDataSuccess": {
+      "message": "數據恢復成功"
+   },
+   "RecoveryFromCloud": {
+      "message": "從雲端恢復數據"
+   },
+   "RecoveryFromFile": {
+      "message": "從文件中恢復"
+   },
+   "Register": {
+      "message": "註冊"
+   },
+   "RegisterButton": {
+      "message": "注 冊"
+   },
+   "RegisterSuccessAndAutoLogin": {
+      "message": "註冊成功已為您自動登錄"
+   },
+   "RegistrationFailed": {
+      "message": "註冊失敗"
+   },
+   "RestoreWallpaper": {
+      "message": "恢復默認壁紙"
+   },
+   "Saturday": {
+      "message": "星期六"
+   },
+   "SearchInNewtab": {
+      "message": "在新標籤頁中搜索"
+   },
+   "SelectImageFontSize": {
+      "message": "18px"
+   },
+   "ShareIconToOther": {
+      "message": "同時分享圖標給其他人"
+   },
+   "ShareToYourFriends": {
+      "message": "分享給你的朋友"
+   },
+   "SignAndIn": {
+      "message": "登錄"
+   },
+   "SignIn": {
+      "message": "登錄"
+   },
+   "SignInOrRegister": {
+      "message": "登錄或註冊"
+   },
+   "SignInToUseTheFeature": {
+      "message": "登錄以使用此功能"
+   },
+   "Sogou": {
+      "message": "搜 狗"
+   },
+   "Sports": {
+      "message": "體育"
+   },
+   "StartAnimation": {
+      "message": "啟動動畫"
+   },
+   "Submit": {
+      "message": "提交"
+   },
+   "Sunday": {
+      "message": "星期日"
+   },
+   "TemperatureUnit": {
+      "message": "溫度單位"
+   },
+   "TermsOfUse": {
+      "message": "隱私權和使用條款"
+   },
+   "TermsofUse": {
+      "message": "使用條款"
+   },
+   "Thursday": {
+      "message": "星期四"
+   },
+   "Todo": {
+      "message": "待辦"
+   },
+   "Todos": {
+      "message": "待辦事項"
+   },
+   "TodotypeMarginLeft": {
+      "message": "92px"
+   },
+   "Tomorrow": {
+      "message": "明日"
+   },
+   "Tuesday": {
+      "message": "星期二"
+   },
+   "UploadLocalWallpaper": {
+      "message": "登陸後可上傳本地壁紙"
+   },
+   "UserName": {
+      "message": "郵箱"
+   },
+   "UsernameAlreadyExists": {
+      "message": "該郵箱已註冊過，請直接登錄或使用找回密碼"
+   },
+   "UsernameDoesNotExist": {
+      "message": "該郵箱未註冊過"
+   },
+   "UsernameOrPasswordWrong": {
+      "message": "賬號或密碼有誤"
+   },
+   "VerifyCode": {
+      "message": "驗證碼"
+   },
+   "VerifyCodeError": {
+      "message": "驗證碼錯誤"
+   },
+   "Videos": {
+      "message": "視頻"
+   },
+   "WeChat": {
+      "message": "微信"
+   },
+   "Weather": {
+      "message": "天氣"
+   },
+   "WeatherLocation": {
+      "message": "天氣位置"
+   },
+   "WeatherLocationHasBeenSettedTo": {
+      "message": "天氣位置已被更改為"
+   },
+   "Web": {
+      "message": "網頁"
+   },
+   "Website": {
+      "message": "網站: "
+   },
+   "Wednesday": {
+      "message": "星期三"
+   },
+   "Wind": {
+      "message": "風力"
+   },
+   "Yes": {
+      "message": "退出"
+   },
+   "adName": {
+      "message": "jd"
+   },
+   "addCustomItem": {
+      "message": "添加項目"
+   },
+   "addMenuMarginLeft": {
+      "message": "14px"
+   },
+   "addMenuSize": {
+      "message": "20px"
+   },
+   "addSearchName": {
+      "message": "搜索引擎名稱"
+   },
+   "addSearchUrl": {
+      "message": "用%s代替查詢參數"
+   },
+   "addTitle": {
+      "message": "名稱"
+   },
+   "addUrl": {
+      "message": "網址"
+   },
+   "addmenuPaddingLeft": {
+      "message": "40px"
+   },
+   "application": {
+      "message": "應用"
+   },
+   "background": {
+      "message": "主題"
+   },
+   "backupToCloud": {
+      "message": "手動備份到雲端"
+   },
+   "bingNot": {
+      "message": "Bing壁紙暫不支持模糊處理"
+   },
+   "bookmark_manage": {
+      "message": "書籤管理"
+   },
+   "buttonFontSize": {
+      "message": ""
+   },
+   "customItem": {
+      "message": "自定義"
+   },
+   "deSearch": {
+      "message": "Google"
+   },
+   "default": {
+      "message": "默認"
+   },
+   "defaultBottomSearch": {
+      "message": "http://www.sogou.com/sogou?pid=sogou-site-3b24156ad560a696&query="
+   },
+   "defaultSearchName": {
+      "message": "搜狗搜索"
+   },
+   "displayIntop": {
+      "message": "在頂部顯示"
+   },
+   "donate": {
+      "message": "捐 助"
+   },
+   "donateDesc": {
+      "message": "向我們捐助點小錢，幫助我們為您提供更穩定的服務並且開發更多功能,謝謝您！"
+   },
+   "donateShow": {
+      "message": "none"
+   },
+   "donateShowAlipay": {
+      "message": "block"
+   },
+   "emailCodenotEmpty": {
+      "message": "郵箱和驗證碼不能為空"
+   },
+   "emailError": {
+      "message": "郵箱格式不正確哦"
+   },
+   "emailInvalid": {
+      "message": "郵箱格式不正確"
+   },
+   "emailOrName": {
+      "message": "郵箱或暱稱，可不填"
+   },
+   "emp": {
+      "message": "空"
+   },
+   "extdesc": {
+      "message": "Infinity新增分頁，基於Chrome的雲應用服務，讓你更優雅、輕鬆地使用Chrome。"
+   },
+   "extensionItemAbleFontSize": {
+      "message": "16px"
+   },
+   "extensionItemAbleLineHeight": {
+      "message": "2.4"
+   },
+   "extname": {
+      "message": "Infinity新增分頁"
+   },
+   "feedback": {
+      "message": "反饋"
+   },
+   "feedbackOnline": {
+      "message": "在線反饋"
+   },
+   "fontColor": {
+      "message": "字體顏色"
+   },
+   "fontsize": {
+      "message": "14px"
+   },
+   "forgotPassword": {
+      "message": "找回密碼"
+   },
+   "general": {
+      "message": "常規"
+   },
+   "gplus": {
+      "message": "百度地圖"
+   },
+   "gplusIco": {
+      "message": "1"
+   },
+   "gplusUrl": {
+      "message": "http://map.baidu.com"
+   },
+   "help": {
+      "message": "幫助"
+   },
+   "help1": {
+      "message": "1.在你要添加的搜索引擎中搜索任意内容,\u003Cbr>例如在维基百科中搜索 \"infinity\",这样我们就能得到一个搜索url:\u003Cbr>\"https://en.wikipedia.org/wiki/\u003Cspan style=\"color:#1ABC9C;\">Infinity\u003C/span>"
+   },
+   "help2": {
+      "message": "2.用%s替换查询参数，得到url:\u003Cbr>\"https://en.wikipedia.org/wiki/\u003Cspan style=\"color:#1ABC9C\">%s\u003C/span>\""
+   },
+   "help3": {
+      "message": "3.输入替换好的url并点击 \"添加搜索引擎\":"
+   },
+   "help4": {
+      "message": "附加搜索引擎"
+   },
+   "help5": {
+      "message": "添加搜索引擎"
+   },
+   "help6": {
+      "message": "4.当你之后搜索任意内容时，附加搜索引擎出现，按下键选择:"
+   },
+   "hideAds": {
+      "message": "點擊可3天內不再顯示"
+   },
+   "howToAdd": {
+      "message": "如何添加附加搜索引擎？"
+   },
+   "howtodelete": {
+      "message": "幫助:如何刪除或編輯項目？"
+   },
+   "hpa": {
+      "message": "none"
+   },
+   "imageSize": {
+      "message": "圖片縮放"
+   },
+   "lang": {
+      "message": "zh"
+   },
+   "letterSpacing": {
+      "message": "0.3em"
+   },
+   "loginFailed": {
+      "message": "登錄失敗"
+   },
+   "loginNoNull": {
+      "message": "郵箱和密碼不能為空"
+   },
+   "menuItemFontSize": {
+      "message": "20px"
+   },
+   "menuItemMarginRight": {
+      "message": "30px"
+   },
+   "miniMode": {
+      "message": "極簡模式"
+   },
+   "mostVisited": {
+      "message": "最常訪問"
+   },
+   "newtworkError": {
+      "message": "網路錯誤"
+   },
+   "nextWallpaper": {
+      "message": "更改將對下一張壁紙生效"
+   },
+   "noTitle": {
+      "message": "無標題"
+   },
+   "orderBy": {
+      "message": "orderc"
+   },
+   "pointColor": {
+      "message": "rgba(231, 76, 60, 0.5)"
+   },
+   "qqqun": {
+      "message": "block"
+   },
+   "randomWallpaper": {
+      "message": "換張壁紙"
+   },
+   "recommended": {
+      "message": "推薦"
+   },
+   "registerNotNull": {
+      "message": "郵箱、密碼、驗證碼都不能為空"
+   },
+   "registrationInformationWrong": {
+      "message": "註冊信息有誤"
+   },
+   "removeImage": {
+      "message": "移除圖片"
+   },
+   "saySomething": {
+      "message": "說點什麼吧( ^_^ )"
+   },
+   "search": {
+      "message": "搜索"
+   },
+   "searchBookmarks": {
+      "message": "搜索書籤"
+   },
+   "searchBy": {
+      "message": "搜索自 "
+   },
+   "searchIni": {
+      "message": "百度"
+   },
+   "searchItem": {
+      "message": "搜索項目"
+   },
+   "searchOptionsMarginRight": {
+      "message": "48px"
+   },
+   "searchhistory": {
+      "message": "搜索歷史記錄"
+   },
+   "settingMenuFontSize": {
+      "message": "20px"
+   },
+   "settingMenuMarginRight": {
+      "message": "55px"
+   },
+   "settingMenuPaddingLeft": {
+      "message": "50px"
+   },
+   "settings": {
+      "message": "設定"
+   },
+   "shareIcon": {
+      "message": "分享圖標給小伙伴們"
+   },
+   "showPageAction": {
+      "message": "在地址欄顯示快速添加按鈕"
+   },
+   "signIn": {
+      "message": "賬號"
+   },
+   "simpleTheme": {
+      "message": "簡約"
+   },
+   "supportFile": {
+      "message": "兼容米魚、Halo、V +新標籤頁的備份文件"
+   },
+   "thankFeedback": {
+      "message": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;非常感謝!\u003Cbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们的产品经理已经收到您的反馈，如有必要我们会通过您留下的联系方式联系您！"
+   },
+   "todoDone": {
+      "message": "完成"
+   },
+   "topMenuFontSize": {
+      "message": "22px"
+   },
+   "tutorial": {
+      "message": "添加附加搜索引擎教程"
+   },
+   "uninstall": {
+      "message": "卸載"
+   },
+   "updateItem": {
+      "message": "更新項目"
+   },
+   "upload": {
+      "message": "選擇圖片"
+   },
+   "wallpaperIconFailed": {
+      "message": "當前無網路連接，您將不能同步數據或更換壁紙，此時清空瀏覽器緩存壁紙和圖標將無法使用"
+   },
+   "wallpaperLoadFailed": {
+      "message": "壁紙加載失敗"
+   },
+   "wallpaperUploadFailed": {
+      "message": "壁紙上傳失敗"
+   },
+   "whatNext": {
+      "message": "接下來做點什麼？"
+   },
+   "yourWallpaper": {
+      "message": "您的壁紙將會被同步到雲端"
+   }
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html ng-app="app" ng-csp ng-controller="AppCtrl">
+<head>
+  <meta charset="utf-8" />
+  <title>{{getMessage("main_title")}}</title>
+  <link rel="stylesheet" href="css/jquery-ui.min.css" />
+  <link rel="stylesheet" href="css/jquery.fileupload-ui.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel='stylesheet' href="css/font.css">
+</head>
+<body>
+  <div id="tabs">
+    <ul>
+      <li class="tab-logo"><img src="css/images/logo_chrome_app.png" alt="logo" width="138px;"/></li>
+      <li> <a href="#send" class="send-tab"><i class="material-icons">send</i>{{getMessage("send_tab")}}</a> </li>
+      <li> <a href="#recv" class="recv-tab"><i class="material-icons">file_download</i>{{getMessage("recv_tab")}}</a> </li>
+      <li> <a href="#list" class="list-tab" ng-click='listReload()'><i class="material-icons">inbox</i>{{getMessage("list_tab")}}</a> </li>
+    </ul>
+    <div id='send' ng-include='"/partials/send.html"'></div>
+    <div id='recv' ng-include='"/partials/recv.html"' style="display:none"></div>
+    <div id='list' ng-include='"/partials/list.html"' style="display:none"></div>
+    <webview id="webview" style="width:0;height:0" partition="persist:weblink" allowtransparency></webview>
+  </div>
+  <!-- scripts -->
+  <script src="lib/jquery-1.10.2.min.js"></script>
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-route.min.js"></script>
+  <script src="lib/jquery-ui.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <script src="lib/bootbox.min.js"></script>
+  <script src="lib/angular-sanitize.min.js"></script>
+  <script src="lib/load-image.min.js"></script>
+  <script src="lib/jquery.fileupload.js"></script>
+  <script src="lib/jquery.fileupload-process.js"></script>
+  <script src="lib/jquery.fileupload-image.js"></script>
+  <script src="lib/jquery.fileupload-validate.js"></script>
+  <script src="lib/jquery.fileupload-angular.js"></script>
+  <script src="lib/jquery.runner-min.js"></script>
+  <script src="lib/sprintf.min.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../styles/popup.css">
+</head>
+<body>
+
+    <a id="logo" class="logo" href="#" target="_blank"></a>
+
+    <ul>
+        <li>
+            <a href="#" id="pause">
+                <span data-message="ads">Ads</span>
+                <span class="state"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#" id="pause-annotations">
+                <span data-message="annotations">Annotations</span>
+                <span class="state"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#" id="pause-comprigo" style="display: none">
+                <span data-message="bestPrice">BestPrice</span>
+                <span class="state"></span>
+            </a>
+        </li>
+        <li class="divider"></li>
+        <li>
+            <a href="#" data-message="rate_this_extension" target="_blank" id="ratelink">
+                Rate this Extension
+            </a>
+        </li>
+        <li>
+            <a href="#" data-message="like_on_facebook" id="likebtn">
+                Like us on Facebook
+            </a>
+        </li>
+    </ul>
+
+    <div class="spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <iframe id="facebook-like-btn" style="display:none; margin-top: 10px;" height="100px" width="100%" src="#" frameborder="0"></iframe>
+
+    <script src="../scripts/popup.js"></script>
+</body>
+
+</html>

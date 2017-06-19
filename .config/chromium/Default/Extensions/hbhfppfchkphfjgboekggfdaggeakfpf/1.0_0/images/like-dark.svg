@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ui-kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu-left" transform="translate(-1122.000000, -198.000000)" fill="#5D6474">
+            <g id="left-open-nl.1.2" transform="translate(1035.000000, 95.000000)">
+                <g id="user" transform="translate(24.000000, 91.000000)">
+                    <g id="icons" transform="translate(53.000000, 2.000000)">
+                        <g id="#1">
+                            <path d="M17.8264936,10 C16.9073263,10 16.0795796,10.409225 15.5,11.0629532 C14.9204702,10.409225 14.0926737,10 13.1735064,10 C11.4208599,10 10,11.4873319 10,13.3221025 C10,13.8150717 10.0831959,14.2894726 10.2289008,14.7424889 C10.2289008,14.7424889 10.3610222,15.1512403 10.4780647,15.376253 C11.8157537,18.2531653 15.5,20.1187418 15.5,20.1187418 C15.5,20.1187418 19.1842463,18.2531404 20.5219353,15.376253 C20.5219353,15.376253 20.6945331,14.9929239 20.7710992,14.7424889 C20.9102242,14.287379 21,13.8150717 21,13.3221025 C21,11.4873319 19.5791401,10 17.8264936,10 L17.8264936,10 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

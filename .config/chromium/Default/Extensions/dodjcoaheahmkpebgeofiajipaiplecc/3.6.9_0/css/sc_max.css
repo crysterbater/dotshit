@@ -1,0 +1,58 @@
+
+html body{
+    overflow-y:scroll;
+}
+
+.header, .announcements,
+div.volume__sliderWrapper{
+  display: block;
+}
+
+#content {
+  visibility: visible;
+  opacity: 1;
+  position: static;
+  left: auto;
+}
+
+li.playControls__timeline {
+    display: list-item;
+}
+
+
+div.playControls {
+  bottom: 0;
+}
+
+ul.playControls__controls{
+  top: 0;
+}
+
+div.playControls__soundBadge {
+  left: initial;
+}
+
+div.playbackSoundBadge__actions {
+  position: relative;
+  top: 50%;
+  right: initial;
+}
+
+
+.playControls__wrapper .skipControl{
+  width: 12px;
+  margin: 0;
+}
+
+.playControls__wrapper .playControl{
+  width: 17px;
+  margin: 0 26px 0 30px;
+}
+
+.playControls__wrapper .playControls__playPauseSkip {
+  margin-right: 50px;
+}
+
+#gritter-notice-wrapper {
+  display: block;
+}

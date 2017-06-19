@@ -1,0 +1,35 @@
+{
+   "background": {
+      "page": "forge.html"
+   },
+   "browser_action": {
+      "default_icon": "src/icon/icon48-chrome.png",
+      "default_popup": "src/popup.html",
+      "default_title": "Grammarly"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "css": [ "src/css/js/lib/buttons/popup/index.css", "src/css/js/lib/elements/onboarding-dialog/onboarding-dialog.css", "src/css/js/lib/elements/onboarding/index.css", "src/css/js/lib/elements/onboarding/select.css", "src/css/js/lib/elements/signin-dialog/signin-dialog.css", "src/css/js/lib/elements/signin/button.css", "src/css/js/lib/elements/signin/fieldset.css", "src/css/js/lib/elements/signin/footer.css", "src/css/js/lib/elements/signin/form.css", "src/css/js/lib/elements/signin/input.css", "src/css/js/lib/elements/signin/login-success.css", "src/css/js/lib/elements/signin/welcome.css", "src/css/js/lib/inline-cards/index.css", "src/css/js/lib/inline-cards/replacement/index.css", "src/css/styl/btn-hover-menu-new.css", "src/css/styl/btn-hover-menu.css", "src/css/styl/cards/base-card.css", "src/css/styl/cards/dictionary-card.css", "src/css/styl/cards/grammar-card.css", "src/css/styl/cards/quick-card.css", "src/css/styl/checkbox.css", "src/css/styl/dialog.css", "src/css/styl/fonts.css", "src/css/styl/header-component.css", "src/css/styl/popup-dialect-line.css", "src/css/styl/popup-settings.css", "src/css/styl/popup-signin.css", "src/css/styl/premium-dialog/dialog.css", "src/css/styl/premium-dialog/features.css", "src/css/styl/premium-dialog/quotes.css", "src/css/styl/referral.css", "src/css/styl/selection-animator.css", "src/css/styl/signin.css", "src/css/styl/spinner.css", "src/css/styl/textarea-btn-new.css", "src/css/styl/textarea-btn.css", "src/css/styl/toolbar-signin.css", "src/css/styl/tooltip.css", "src/css/styl/underline.css" ],
+      "js": [ "src/js/_vendor.js", "src/js/bundle.js", "src/js/editor-popup.js", "src/js/styles.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self'; object-src 'self'",
+   "description": "Enhance your written communication everywhere you type!",
+   "externally_connectable": {
+      "matches": [ "*://*.grammarly.com/*" ]
+   },
+   "icons": {
+      "128": "src/icon/icon128.png",
+      "16": "src/icon/icon16.png",
+      "48": "src/icon/icon48-chrome.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDXGarzPXVb5UpkDTsw4cdApsrQvPTNTMXdz/7j9QVuQZoPm5R9l3o9ppfGYeae7sZRaJiueBEO/LA8s7KCuE9icPl72xSqdei3Jo0PTTUlmNQIysl9PZy6Xd520sS5wNFhPaxOy1ApHZ6+o+yMEXWmjx2fX0tHJd7dKTii47MTnQIDAQAB",
+   "manifest_version": 2,
+   "name": "Grammarly for Chrome",
+   "optional_permissions": [ "clipboardRead" ],
+   "permissions": [ "\u003Call_urls>", "tabs", "notifications", "cookies", "system.cpu", "clipboardWrite", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "14.769.981",
+   "web_accessible_resources": [  ]
+}

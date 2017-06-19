@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+
+<head> 
+	<link rel="stylesheet" href="../css/result.css"/> 
+</head>
+
+<body style= "background-color=#FFF;overflow-y:hidden">
+
+	<div class="offline-div">
+
+		<div class="offline-img" ></div>
+	  	
+	  	<h3 class="offline-title"> No internet connection. </h3>
+	    <p id="offline-msg" class="offline-msg">
+	      	Please check your internet connection, and try again.
+	    </p>
+
+	    <!-- <img class="close-btn" id="close-btn"> </img> -->
+
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<div class="popup-background close-popup">
+    <div class="create-resource-popup">
+        <div class="create-resource-popup-title">Create records for save</div>
+        <form class="create-resource-popup-form" action="" enctype="multipart/form-data">
+            <div class="create-resource-popup-form-row-item create-resource-popup-form-image-container">
+                <div class="create-resource-popup-form-image">
+                    <span class="create-resource-popup-form-image-icon"></span>
+                    <div class="create-resource-popup-form-image-label">Logo</div>
+                    <div class="create-resource-popup-form-image-preview"></div>
+                    <input class="create-resource-popup-form-image-input" name="image" type="file" />
+                </div>
+            </div>
+            <div class="create-resource-popup-form-row">
+                <div class="create-resource-popup-form-row-item half">
+                    <label class="create-resource-popup-form-row-label input" for="form_name">Site name</label>
+                    <input class="create-resource-popup-form-row-input" type="text" name="name" id="form_name">
+                </div>
+                <div class="create-resource-popup-form-row-item-separator"></div>
+                <div class="create-resource-popup-form-row-item half">
+                    <label class="create-resource-popup-form-row-label input" for="form_site_url">Site url</label>
+                    <input class="create-resource-popup-form-row-input" type="text" name="site_url" id="form_site_url">
+                </div>
+            </div>
+            <div class="create-resource-popup-form-row">
+                <div class="create-resource-popup-form-row-item">
+                    <label class="create-resource-popup-form-row-label input" for="form_description">Some words about the site</label>
+                    <input class="create-resource-popup-form-row-input" type="text" name="description" id="form_description">
+                </div>
+            </div>
+            <div>
+                <div class="create-resource-popup-form-row-item">
+                    <label class="create-resource-popup-form-row-label" for="form_language">Language</label>
+                    <select class="create-resource-popup-form-row-select" name="language" id="form_language">
+                        <option value="">---</option>
+                        <% languages.each(function(language) { %>
+                            <option value="<%= language.escape('id') %>"><%= language.escape('name') %></option>
+                        <% }); %>
+                    </select>
+                </div>
+            </div>
+            <div class="create-resource-popup-form-row no-border">
+                <div class="create-resource-popup-form-row-item">
+                    <label class="create-resource-popup-form-row-label">Tags</label>
+                    <% provider_tags.each(function(provider_tag) { %>
+                        <input class="create-resource-popup-form-row-checkbox" type="checkbox" name="tags" value="<%= provider_tag.escape('id') %>" id="form_tags_<%= provider_tag.escape('id') %>">
+                        <label for="form_tags_<%= provider_tag.escape('id') %>"><%= provider_tag.escape('name') %></label>
+                    <% }); %>
+                </div>
+            </div>
+        </form>
+        <div class="create-resource-popup-links">
+            <a href="#" class="create-resource-popup-links-item right create">Send to moderation</a>
+            <a href="#" class="create-resource-popup-links-item secondary left cancel">Cancel</a>
+        </div>
+    </div>
+</div>

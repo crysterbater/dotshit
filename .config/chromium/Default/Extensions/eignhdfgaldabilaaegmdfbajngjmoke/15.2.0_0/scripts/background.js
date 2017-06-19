@@ -1,0 +1,1 @@
+!function(){"use strict";chrome.runtime.getManifest().chrome_url_overrides&&(chrome.browserAction.onClicked.addListener(function(){chrome.tabs.create({url:chrome.runtime.getURL("app.html?newtab=1")})}),chrome.browserAction.setIcon({path:{19:"images/extension/newtab/icon-19.png",38:"images/extension/newtab/icon-38.png"}}))}();

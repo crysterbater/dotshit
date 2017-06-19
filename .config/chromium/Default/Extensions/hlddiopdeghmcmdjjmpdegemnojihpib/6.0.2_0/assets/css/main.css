@@ -1,0 +1,1436 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FBFBFB;
+}
+
+.gdoc-loading-container {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-image: url('../sidebar/gdoc-loader.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    position: absolute;
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+}
+
+.gdoc-icon {
+    width: 70px;
+    height: 60px;
+    background-image: url('../sidebar/gdoc.png');
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gdoc-date {
+    float: right !important;
+    margin-right: 40px;
+}
+
+.gdocument-list {
+    background-image: url('../sidebar/gdoc-loader.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+.dumbass-indicator {
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: -90px;
+    margin-top: -40px;
+    position: absolute;
+    z-index: 50;
+    background-color: #FFF;
+    box-shadow: -1px 2px 7px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all .3s ease;
+    border: 1px solid #EFEFEF;
+}
+
+.dumbass-indicator .material-icons {
+    width: 50px;
+    line-height: 80px;
+    text-align: center;
+    float: right;
+}
+
+.sidebar-toggle {
+    width: 60px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 50;
+}
+
+.sidebar-toggle:hover+.dumbass-indicator {
+    left: -40px;
+}
+
+.dumbass-indicator:hover {
+    left: -40px;
+}
+
+.save-dialogue {
+    width: 20%;
+    min-width: 200px;
+    max-width: 250px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 35px;
+    border-radius: 2px;
+    background-color: #FFF;
+    box-shadow: -1px 2px 7px 0px rgba(0, 0, 0, 0.1);
+    top: 55%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-49%, -50%);
+    position: absolute;
+    z-index: 9999999;
+    display: none;
+    transition-timing-function: ease;
+}
+
+.save-dialogue>div {
+    display: block;
+}
+
+.save-dialogue .save-title {
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.save-dialogue .save-text {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.save-dialogue .save-buttons {
+    margin-top: 10px;
+    float: right;
+}
+
+.save-dialogue .save-buttons>div {
+    float: right;
+    font-family: 'Roboto';
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1abc9c;
+    cursor: pointer;
+}
+
+.save-dialogue .save-buttons>div:nth-child(2) {
+    margin-right: 20px;
+}
+
+.tutorial-container,
+.tutorial-container-two {
+    width: 280px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    background-color: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    position: absolute;
+    box-shadow: -1px 2px 7px 0px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    display: none;
+}
+
+.tutorial-container {
+    top: calc(100% - 300px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tutorial-container-two {
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+}
+
+.tutorial-container:after,
+.tutorial-container:before {
+    left: 50%;
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.tutorial-container:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #FFF;
+    border-width: 14px;
+    margin-left: -12px;
+}
+
+.tutorial-container:before {
+    border-color: rgba(224, 224, 224, 0);
+    border-bottom-color: #e0e0e0;
+    border-width: 15px;
+    margin-left: -13px;
+}
+
+.tutorial-container-two:after,
+.tutorial-container-two:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.tutorial-container-two:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #FFF;
+    border-width: 14px;
+    margin-top: -12px;
+}
+
+.tutorial-container-two:before {
+    border-color: rgba(224, 224, 224, 0);
+    border-right-color: #e0e0e0;
+    border-width: 15px;
+    margin-top: -13px;
+}
+
+.tutorial-close {
+    margin-top: 10px;
+    float: right;
+}
+
+.tutorial-close .material-icons {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.tutorial-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: 'Roboto';
+    line-height: 1.5;
+    float: right;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.navigation-container {
+    width: 100%;
+    height: 30px;
+    background-color: #FFF;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 99999;
+    -webkit-app-region: drag;
+}
+
+.navigation-container .nav-buttons {
+    float: right;
+    -webkit-app-region: no-drag;
+}
+
+.navigation-container .nav-buttons>div {
+    width: 50px;
+    height: 30px;
+    float: right;
+    transition: all .2s ease;
+}
+
+.navigation-container .nav-buttons>div:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navigation-container .nav-buttons>div:first-child:hover {
+    background-color: #e84435;
+}
+
+.navigation-container .nav-buttons>div:hover .close-window-line {
+    background-color: #FFF;
+}
+
+.navigation-container .nav-buttons .close-window .close-window-line {
+    width: 1px;
+    height: 13px;
+    margin: 8px 24px;
+    position: absolute;
+    background-color: #000;
+}
+
+.navigation-container .nav-buttons .close-window .close-window-line:first-child {
+    transform: rotate(45deg);
+}
+
+.navigation-container .nav-buttons .close-window .close-window-line:last-child {
+    transform: rotate(-45deg);
+}
+
+.navigation-container .nav-buttons .maximize-window .maximize-square {
+    width: 8px;
+    height: 8px;
+    border: 1px solid #000;
+    margin: 10px auto;
+}
+
+.navigation-container .nav-buttons .minimize-window .minimize-line {
+    width: 12px;
+    height: 1px;
+    background-color: #000;
+    margin: 15px auto;
+}
+
+.user-profile {
+    width: 100%;
+    height: 170px;
+    background-image: url('../sidebar/fallback.png');
+    background-color: #324f58;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px -6px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.user-profile .user-profile-bg {
+    width: 100%;
+    height: 170px;
+    background-color: #000;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+.user-profile .user-profile-body {
+    width: 100%;
+    height: 170px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+    display: none;
+}
+
+.user-profile .user-image-container {
+    width: 100%;
+    height: calc(100% - 60px);
+    float: left;
+    padding-top: 30px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.user-profile .fallback-signin {
+    height: 50px;
+    font-family: 'Roboto Med';
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+    margin-top: 62px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: #404040;
+    background-color: #fbfbfb;
+    box-shadow: -1px 2px 7px 0px rgba(0, 0, 0, 0.2);
+    line-height: 50px;
+    z-index: 150;
+}
+
+.user-profile .user-profile-body .user-info .arrow-down {
+    float: right;
+    width: 88px;
+    height: 50px;
+    margin-top: -55px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+}
+
+.user-profile .user-image-container .user-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.user-profile .user-info {
+    width: 100%;
+    height: 60px;
+    float: right;
+}
+
+.user-profile .user-info>div {
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    font-size: 14px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.user-profile .user-info .user-name {
+    height: 20px;
+    line-height: 20px;
+    font-family: 'Roboto Med';
+    opacity: 1;
+}
+
+.user-profile .user-info .user-email {
+    height: 40px;
+    line-height: 20px;
+    font-family: 'Roboto';
+    opacity: 0.84;
+}
+
+.arrow-down .material-icons {
+    transition: all .2s ease;
+}
+
+.top-bar {
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    z-index: 600;
+    position: absolute;
+}
+
+.loading-screen {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 9999999;
+    background: linear-gradient(to bottom, #0b3640 0%, #14414c 100%);
+}
+
+.loading-screen .loading-icon {
+    width: 200px;
+    height: 200px;
+    background-image: url('../icon-128.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    margin-top: -40px;
+}
+
+.loading-screen .loading-gif {
+    width: 60px;
+    height: 60px;
+    background-image: url('../loading/load-load.gif');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.loading-screen .loading-footer {
+    bottom: 0;
+    margin-bottom: 60px;
+    font-family: 'Roboto';
+    font-size: 12px;
+    color: rgb(84, 150, 167);
+    position: absolute;
+}
+
+.install-screen {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #FFF;
+    background-image: url('../loading/wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 999999;
+    display: none;
+}
+
+.install-screen .install-bg {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #0c272f;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.install-screen .install-content {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+}
+
+.install-screen .install-content .install-screen-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.install-screen .install-screen-button {
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+    font-family: 'Roboto Med';
+    font-size: 14px;
+    line-height: 50px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: #404040;
+    background-color: #fbfbfb;
+    box-shadow: none;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.install-screen .install-screen-button:hover {
+    box-shadow: -1px 2px 7px 0px rgba(0, 0, 0, 0.4);
+}
+
+.google-icon {
+    width: 30px;
+    height: 50px;
+    float: right;
+    background-image: url('../loading/logo.png');
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.install-screen .install-screen-button:nth-child(1) {
+    width: 200px;
+}
+
+.install-screen .install-screen-button:nth-child(2) {
+    width: 80px;
+    margin-left: 40px;
+}
+
+.modal:not(.sidebar) {
+    width: 400px;
+    height: 100%;
+    top: 0;
+    left: -400px;
+    position: absolute;
+    z-index: 400;
+}
+
+.modal {
+    background-color: #F9F9F9;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: none;
+}
+
+.modal-title-container {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+    box-sizing: border-box;
+    position: absolute;
+    font-family: 'Roboto';
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.modal-title-container * {
+    line-height: 100px;
+}
+
+.modal-title {
+    height: 100%;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+}
+
+.modal-close {
+    height: 100%;
+    float: right;
+    text-align: center;
+}
+
+.modal-close .material-icons {
+    font-size: 18px;
+}
+
+.modal-content {
+    width: 100%;
+    height: calc(100% - 100px);
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-top: 100px;
+    overflow-x: hidden;
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 0px;
+}
+
+.document-container .document-list .document-item {
+    width: 100%;
+    height: 60px;
+    transition: all .2s ease;
+}
+
+.document-container .document-list .document-item:not(.doc-active):hover {
+    background-color: rgba(99, 99, 99, 0.05);
+}
+
+.doc-active {
+    background-color: #1ddb99;
+}
+
+.document-container .document-list .document-item>div:not(.overflow-menu),
+.document-container .document-list .document-item>input {
+    line-height: 60px;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.7);
+    vertical-align: middle;
+    height: 100%;
+}
+
+.document-container .document-list .document-item .document-title {
+    width: 36%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: default;
+}
+
+.document-item .material-icons,
+.document-size {
+    width: 20%;
+    text-align: center;
+}
+
+.document-item .doc-overflow {
+    float: right;
+}
+
+.document-item .doc-overflow .material-icons {
+    width: 80px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.document-item .overflow-menu {
+    right: 0;
+    margin-right: 20px;
+    margin-top: -40px;
+    width: 140px;
+    height: 0px;
+    position: absolute;
+    background-color: #FFF;
+    display: none;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.document-item .overflow-menu>div {
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+    font-family: 'Roboto';
+    padding-left: 20px;
+    box-sizing: border-box;
+    line-height: 60px;
+    display: block;
+    transition: all .2s ease;
+}
+
+.document-item .overflow-menu>div:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.document-list::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+.file-name-details {
+    width: 200px !important;
+}
+
+.details-container .details-content>div,
+.help-container .help-content>div {
+    width: 100%;
+    height: 60px;
+    display: block;
+    float: left;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.details-container .details-content>div>.details-title,
+.help-container .help-content>div>.command-title {
+    float: left;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.details-container .details-content>div>.details-amount,
+.help-container .help-content>div>.command {
+    height: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: right;
+    text-align: right;
+    color: #000;
+}
+
+.help-container {
+    width: 450px !important;
+}
+
+.feedback-container .feedback-content .group {
+    position: relative;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.feedback-container .feedback-content textarea {
+    height: 58px;
+}
+
+.feedback-container .feedback-content input,
+.feedback-container .feedback-content textarea {
+    font-size: 16px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    resize: none;
+    font-family: 'Roboto';
+}
+
+.feedback-container .feedback-content input:focus,
+.feedback-container .feedback-content textarea:focus {
+    outline: none;
+}
+
+.feedback-content form {
+    padding-left: 15px;
+}
+
+.feedback-container .feedback-content label {
+    color: #999;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0px;
+    top: 5px;
+    transition: 0.2s ease all;
+}
+
+
+/* active state */
+
+.feedback-container .feedback-content input:focus,
+.feedback-container .feedback-content input:valid,
+.feedback-container .feedback-content textarea:focus,
+.feedback-container .feedback-content textarea:valid {
+    border-bottom: 1px solid transparent;
+}
+
+.feedback-container .feedback-content input:focus~label,
+.feedback-container .feedback-content textarea:focus~label,
+.feedback-container .feedback-content textarea:valid~label,
+.feedback-container .feedback-content input:valid~label {
+    top: -18px;
+    font-size: 12px;
+    color: #1ddb99;
+}
+
+
+/* BOTTOM BARS ================================= */
+
+.feedback-container .feedback-content .bar {
+    position: relative;
+    display: block;
+    width: 300px;
+}
+
+.feedback-container .feedback-content .bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #1ddb99;
+    transition: 0.2s ease all;
+}
+
+.feedback-container .feedback-content .bar:before {
+    left: 50%;
+}
+
+.feedback-container .feedback-content .bar:after {
+    right: 50%;
+}
+
+
+/* active state */
+
+.feedback-container .feedback-content input:focus~.bar:before,
+.feedback-container .feedback-content input:focus~.bar:after,
+.feedback-container .feedback-content textarea:focus~.bar:before,
+.feedback-container .feedback-content textarea:focus~.bar:after {
+    width: 50%;
+}
+
+.feedback-content a {
+    margin-top: 20px;
+    height: 40px;
+    display: block;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #1ddb99;
+}
+
+.submit-button {
+    width: 300px;
+    height: 50px;
+    background-color: #1ddb99;
+    text-transform: uppercase;
+    font-family: 'Roboto Med';
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.7);
+    outline: none;
+}
+
+.settings-container .settings-list .settings-option,
+.reset-button {
+    width: 100%;
+    float: left;
+    display: block;
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+.settings-container .settings-list .hasToggle {
+    height: 70px;
+}
+
+.settings-container .settings-list .noToggle,
+.reset-button {
+    height: auto;
+    min-height: 80px;
+}
+
+.settings-container .settings-list .hasToggle .settings-title {
+    line-height: 70px;
+}
+
+.settings-container .settings-list>div .settings-title {
+    height: 100%;
+    padding-left: 60px;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.settings-container .settings-list>div .settings-title-second {
+    padding-left: 60px;
+    display: block;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 10px;
+}
+
+.settings-container .settings-list>div .settings-description {
+    display: block;
+    font-family: 'Roboto';
+    font-size: 12px;
+    color: #000;
+    opacity: 0.6;
+    margin-top: 12px;
+    margin-left: 60px;
+    padding-bottom: 20px;
+}
+
+.settings-list::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+.option {
+    width: 100%;
+    height: 0;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 10px;
+}
+
+.option>div {
+    height: 40px;
+    font-size: 14px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    line-height: 40px;
+    color: rgba(0, 0, 0, 0.7);
+    transition: all .2s ease;
+}
+
+.option>div:not(.active):hover {
+    background-color: rgb(53, 243, 177);
+}
+
+.option>.active {
+    background-color: #1ddb99;
+}
+
+.charter {
+    font-family: 'Charter';
+}
+
+.droid {
+    font-family: 'Droid Serif';
+}
+
+.courier {
+    font-family: 'Courier'
+}
+
+.georgia {
+    font-family: 'Georgia';
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.times-new {
+    font-family: 'Times New Roman';
+}
+
+.roboto {
+    font-family: 'Roboto';
+}
+
+.font-size-options>div {
+    font-family: 'Roboto';
+}
+
+.toggle {
+    width: 60px;
+    height: 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 25px;
+    cursor: pointer;
+    position: absolute;
+    left: 280px;
+    transition: all .3s ease;
+}
+
+.toggle-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-top: -2px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+    transition: all .3s ease;
+}
+
+.toggle-inactive {
+    background-color: #dadada;
+}
+
+.toggle-inactive .toggle-circle {
+    background-color: #a9a9a9;
+    margin-left: 0px;
+}
+
+.toggle-active {
+    background-color: #1ddb99;
+}
+
+.toggle-active .toggle-circle {
+    background-color: #238c67;
+    margin-left: 45px;
+}
+
+.sidebar {
+    width: 300px;
+    height: 100%;
+    top: 0;
+    left: -250px;
+    position: absolute;
+    background-color: #FFF;
+    z-index: 200;
+    overflow-x: hidden;
+}
+
+.sidebar .divider {
+    width: 86%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-option,
+.file-option,
+.templates-option,
+.gdoc {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    display: block;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.sidebar-option div,
+.file-option div,
+.templates-option div,
+.gdoc div {
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+}
+
+.sidebar-option .option-title,
+.file-option .option-title,
+.templates-option .option-title,
+.gdoc .gdoc-title {
+    font-family: 'Roboto Med';
+    max-width: 126px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sidebar-option .material-icons,
+.file-option .material-icons,
+.templates-option .material-icons,
+.gdoc .material-icons {
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #000;
+    opacity: 0.7;
+}
+
+.sidebar-option:hover,
+.file-option:hover,
+.templates-option:hover,
+.gdoc:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+#goal-progress {
+    width: 100%;
+    height: 290px;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+.goal-options-checkmark {
+    position: fixed;
+    z-index: 150;
+    color: #1ddb99;
+    font-size: 100px !important;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    display: none;
+}
+
+.goal-options-bg {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #FFF;
+    opacity: 0;
+    z-index: 100;
+    display: none;
+}
+
+.set-goal {
+    width: 100%;
+    height: 60px;
+    padding-left: 50px;
+    padding-right: 20px;
+    text-transform: capitalize;
+    line-height: 60px;
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+.set-goal-button {
+    width: 300px;
+    height: 50px;
+    background-color: #1ddb99;
+    text-transform: uppercase;
+    font-family: 'Roboto Med';
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 2px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.7);
+    margin: 10px auto;
+}
+
+.disclaimer {
+    width: 300px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: italic;
+    color: #929292;
+}
+
+.reset-goal-button {
+    width: 300px;
+    height: 50px;
+    background-color: #f25231;
+    text-transform: uppercase;
+    font-family: 'Roboto Med';
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 2px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.7);
+    margin: 10px auto 50px;
+}
+
+.words-to-complete {
+    width: 117px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid #1ddb99;
+    margin-left: 10px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    transition: all .2s ease-out;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    background-color: #000;
+    z-index: 100;
+    transition: all .2s ease;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+    transition: all .2s ease;
+}
+
+.main-container>div {
+    display: none;
+}
+
+.main-container .document-active {
+    display: block;
+}
+
+::selection {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.ql-container {
+    cursor: text;
+    box-sizing: border-box;
+}
+
+.ql-editor {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-family: 'Charter';
+    padding-top: 80px;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-bottom: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    cursor: default;
+    line-height: 2;
+    transition: all .2s ease;
+}
+
+.ql-editor * {
+    cursor: text;
+    transition: all .2s ease;
+}
+
+.ql-editor img {
+    background: url('/assets/settings/loading.gif') 50% no-repeat;
+    height: auto !important;
+    transition: none !important;
+}
+
+.ql-editor::-webkit-scrollbar {
+    width: 15px;
+    background-color: transparent;
+}
+
+.ql-editor::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: #EFEFEF;
+    border: 5px solid transparent;
+    background-clip: content-box;
+}
+
+.ql-align {
+    width: 26px !important;
+    padding-top: 1px;
+}
+
+.ql-editor p>*,
+.ql-editor pre>*,
+.ql-editor blockquote>*,
+.ql-editor h1>*,
+.ql-editor h2>*,
+.ql-editor h3>*,
+.ql-editor h4>*,
+.ql-editor h5>*,
+.ql-editor h6>*,
+.ql-editor strong>*,
+.ql-editor em>*,
+.ql-editor u>*,
+.ql-editor ol,
+.ql-editor ul,
+.ql-editor li>* {
+    opacity: 1 !important;
+}
+
+.ql-editor img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+.ql-editor a {
+    color: inherit;
+}
+
+.snackbar,
+.goal-snackbar {
+    width: auto;
+    height: 24px;
+    line-height: 24px;
+    padding: 18px 24px;
+    background-color: #313131;
+    border-radius: 4px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    bottom: -100%;
+    left: 0;
+    position: absolute;
+    z-index: 50;
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #FFF;
+}
+
+.snackbar .snackbar-doc-title {
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+    color: #21e8c1;
+}
+
+.statistics-bar {
+    width: auto;
+    height: 24px;
+    bottom: 0;
+    right: 0;
+    margin: 24px;
+    padding: 18px 24px;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 50;
+    background-color: #EFEFEF;
+    line-height: 24px;
+    font-family: 'Roboto Med';
+    text-transform: uppercase;
+}
+
+.statistics-bar * {
+    display: inline-block;
+}
+
+.statistics-bar label {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.statistics-bar label:nth-of-type(2) {
+    margin-left: 5px;
+}
+
+.statistics-bar div {
+    margin-left: 5px;
+}
+
+.margin-options {
+    margin-bottom: 0px !important;
+}
+
+#print {
+    display: none;
+}
+
+@media print {
+    html,
+    body {
+        background-color: #FFF;
+    }
+    body {
+        display: none;
+    }
+    #print {
+        display: block;
+        padding: 0 !important;
+    }
+    #print * {
+        opacity: 1 !important;
+        color: #000;
+    }
+}
+
+@page {
+    margin: 25mm;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    src: url('../fonts/roboto.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Med';
+    font-style: normal;
+    src: url('../fonts/roboto-med.ttf');
+}
+
+@font-face {
+    font-family: 'Charter';
+    font-style: normal;
+    src: url('../fonts/charter.ttf');
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    font-style: normal;
+    src: url('../fonts/droid.ttf');
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/material-icons.woff2') format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+}

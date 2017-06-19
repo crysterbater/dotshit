@@ -1,0 +1,18 @@
+{
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "index.html",
+      "default_title": "Simple Material Design Palette"
+   },
+   "description": "No-nonsense palette for Google's Material Design Colors",
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu/N1JKHxJLC5IHUzSIhXf1KIFdiEntXJ0j1SO9PHF3AbqETWTXvLJUp6QYv6G+p11+hlmwUaQl03tSE2u/OnZMufN3zlqMYzetbCoA0Hd+i1FWj7u4xbweGRMFJurnLQ2xQjiht7z7ZBsQFkDZJx3SYetgo5APUguNWVOjnnfHkGlO58JwPFjGhtyKU1iuNyV/ROykSEUGLq+zDVBb/Nlgl66doLJY4Y5/IBiF9LdrGu3Jtxv2Houh615+gvwxH2tSitLlgRcqnn/9UUlVVRFY8mNWKoCqinzK9uA0fJjjjyNr0MH+PVE2eqdf6/93tiks2sdnadcCVpiyr/bqoX3QIDAQAB",
+   "manifest_version": 2,
+   "name": "Simple Material Design Palette",
+   "offline_enabled": true,
+   "permissions": [ "activeTab", "https://ajax.googleapis.com/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.2"
+}

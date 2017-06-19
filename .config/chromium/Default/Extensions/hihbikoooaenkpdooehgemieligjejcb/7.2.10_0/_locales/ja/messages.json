@@ -1,0 +1,267 @@
+{
+   "already_uploading": {
+      "message": "ファイルをアップロード中です。しばらくしてからもう一度お試しください。"
+   },
+   "app_desc": {
+      "message": "簡単かつ迅速な無制限のファイル転送サービス、Send Anywhere"
+   },
+   "app_name": {
+      "message": "Send Anywhere (ファイル転送・送信)"
+   },
+   "cancel": {
+      "message": "キャンセル"
+   },
+   "cancelled": {
+      "message": "キャンセル"
+   },
+   "complete": {
+      "message": "転送完了"
+   },
+   "conf_profile_name": {
+      "message": "デバイスのプロフィール変更"
+   },
+   "copy_key": {
+      "message": "キーコピー"
+   },
+   "copy_url": {
+      "message": "リンクコピー"
+   },
+   "delete": {
+      "message": "削除"
+   },
+   "device": {
+      "message": "デバイスを選択してプッシュ通知を送信"
+   },
+   "drop_files": {
+      "message": "クリックまたはドラッグ＆ドロップしてファイル追加"
+   },
+   "edit": {
+      "message": "変更"
+   },
+   "error": {
+      "message": "エラー"
+   },
+   "exp": {
+      "message": "使用期限："
+   },
+   "exp_format": {
+      "message": "$1月$2日,"
+   },
+   "expiration": {
+      "message": "使用期限"
+   },
+   "extension_install": {
+      "message": "ブラウザに拡張機能を追加"
+   },
+   "filelist_more_desc": {
+      "message": "… 外 $1 ファイル"
+   },
+   "gcm_push_desc": {
+      "message": "詳細を確認するには、クリックしてください。"
+   },
+   "gcm_push_title": {
+      "message": "ファイルが届きました。"
+   },
+   "go_list": {
+      "message": "保管庫へ"
+   },
+   "go_main": {
+      "message": "メインに戻る"
+   },
+   "help_desc01": {
+      "message": "6桁のキーを受信者にお知らせます。受信者がSend Anywhereの受信のキー入力欄にキーを入力すると、転送が開始されます。"
+   },
+   "help_desc02": {
+      "message": "以下の方法でもファイルの転送が可能です。"
+   },
+   "help_list01": {
+      "message": "QRコードを共有"
+   },
+   "help_list03": {
+      "message": "機器に送信でデバイスを選択してプッシュ通知を送信"
+   },
+   "input_key": {
+      "message": "キー入力"
+   },
+   "invalid_key": {
+      "message": "無効なキーです。\n"
+   },
+   "key": {
+      "message": "キー"
+   },
+   "key_title": {
+      "message": "転送待ち中"
+   },
+   "length_exceed_desc": {
+      "message": "\u003Cp>Chromeアプリの制限を超えました。\u003C/p> \u003Cp>Send Anywhere Chrome拡張機能では制限なく府ファイルを転送することができます。GmailとSlackに手軽に大容量のファイルを添付することもできるChrome拡張機能をお試しください！\u003C/p>"
+   },
+   "list_tab": {
+      "message": "保存庫"
+   },
+   "list_title": {
+      "message": "アップロードしたファイル"
+   },
+   "main_title": {
+      "message": "Send Anywhere"
+   },
+   "modal_ok": {
+      "message": "OK"
+   },
+   "month_1": {
+      "message": "1"
+   },
+   "month_10": {
+      "message": "10"
+   },
+   "month_11": {
+      "message": "11"
+   },
+   "month_12": {
+      "message": "12"
+   },
+   "month_2": {
+      "message": "2"
+   },
+   "month_3": {
+      "message": "3"
+   },
+   "month_4": {
+      "message": "4"
+   },
+   "month_5": {
+      "message": "5"
+   },
+   "month_6": {
+      "message": "6"
+   },
+   "month_7": {
+      "message": "7"
+   },
+   "month_8": {
+      "message": "8"
+   },
+   "month_9": {
+      "message": "9"
+   },
+   "name": {
+      "message": "ファイル名"
+   },
+   "nearby_devices": {
+      "message": "周辺デバイス"
+   },
+   "no": {
+      "message": "いいえ"
+   },
+   "no_files": {
+      "message": "表示する項目がありません。"
+   },
+   "not_supported_browser": {
+      "message": "または、このブラウザは未対応です。"
+   },
+   "noti_copy": {
+      "message": "クリップボードにコピーされました。"
+   },
+   "noti_delete": {
+      "message": "アップロードしたファイルを削除しますか？削除する場合、削除したファイルはもう受信できません。"
+   },
+   "noti_download_done": {
+      "message": "受信完了"
+   },
+   "noti_save_done": {
+      "message": "アップロード完了"
+   },
+   "noti_send_done": {
+      "message": "送信完了"
+   },
+   "profile": {
+      "message": "プロフィール"
+   },
+   "push_comment": {
+      "message": "ファイルが送信されました。今すぐファイルを受信しますか？"
+   },
+   "qr_desc": {
+      "message": "Send AnywhereアプリのQRコードスキャナーで読み取ってください。"
+   },
+   "receiving": {
+      "message": "受信中…"
+   },
+   "recent_devices": {
+      "message": "最近転送したデバイス"
+   },
+   "recv_file": {
+      "message": "受信"
+   },
+   "recv_tab": {
+      "message": "受信"
+   },
+   "recv_title": {
+      "message": "ファイル受信"
+   },
+   "reset": {
+      "message": "リセット"
+   },
+   "save_files": {
+      "message": "リンク共有"
+   },
+   "send_files": {
+      "message": "今すぐ送信"
+   },
+   "send_tab": {
+      "message": "送信"
+   },
+   "send_title": {
+      "message": "ファイルリスト"
+   },
+   "sending": {
+      "message": "送信中…"
+   },
+   "server_error": {
+      "message": "ネットワークエラー"
+   },
+   "share_device": {
+      "message": "機器に送信"
+   },
+   "share_qrcode": {
+      "message": "QRコード"
+   },
+   "size": {
+      "message": "サイズ"
+   },
+   "size_exceed": {
+      "message": "容量制限"
+   },
+   "size_exceed_desc": {
+      "message": "\u003Cp>Chromeアプリでは一回最大2GBまでアップロード可能です。\u003C/p> \u003Cp>Send Anywhere Chrome拡張機能では一回最大10GBまでアップロードすることができます。GmailとSlackに手軽に大容量のファイルを添付することもできるChrome拡張機能をお試しください！\u003C/p>"
+   },
+   "to_extension": {
+      "message": "\u003Ch4>サービスに関するご案内\u003C/h4>\u003Cp>Send Anywhere Chromeアプリは\u003Ca href=\"$2\" target=\"_blank\">GoogleがChromeアプリの提供を終了する2018年の初め\u003C/a>にサービスの提供を終了いたします。\u003C/p>\u003Cbr>\u003Cp>今後、 \u003Ca href='$store_link$' target='_blank'>Chrome拡張機能\u003C/a>にてより進化したファイル転送サービスを引き続き提供いたしますので、ぜひお試しください！\u003C/p>",
+      "placeholders": {
+         "store_link": {
+            "content": "$1"
+         }
+      }
+   },
+   "upload_title": {
+      "message": "アップロード"
+   },
+   "url": {
+      "message": "リンク"
+   },
+   "wait_notice": {
+      "message": "'$profile_name$ ($device_name$)'  さんからファイルが届きました。受信を開始しますか？",
+      "placeholders": {
+         "device_name": {
+            "content": "$2"
+         },
+         "profile_name": {
+            "content": "$1"
+         }
+      }
+   },
+   "will_expire": {
+      "message": "($1) 後にキーの使用期限が切れます"
+   },
+   "yes": {
+      "message": "はい"
+   }
+}

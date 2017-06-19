@@ -1,0 +1,794 @@
+{
+   "AddSearchEngine": {
+      "message": "添加搜索引擎"
+   },
+   "Added": {
+      "message": "已添加"
+   },
+   "AdditionalSearchEngine": {
+      "message": "附加搜索引擎"
+   },
+   "Amazon": {
+      "message": "京东商城"
+   },
+   "AmazonUrl": {
+      "message": "http://p.yiqifa.com/c?s=b20080c9&w=724125&c=254&i=160&l=0&e=miyu&t=http://www.jd.com/"
+   },
+   "Answers": {
+      "message": "问答"
+   },
+   "Apps": {
+      "message": "应用"
+   },
+   "AppsAndExtensions": {
+      "message": "应用与扩展"
+   },
+   "AutomaticallyChangeWallpaper": {
+      "message": "每日自动更换壁纸"
+   },
+   "Baidu": {
+      "message": "百&nbsp;&nbsp;度"
+   },
+   "BingBg": {
+      "message": "Bing壁纸"
+   },
+   "BlurWallpaper": {
+      "message": "对壁纸进行模糊处理"
+   },
+   "BookmarkChanged": {
+      "message": "*书签转变为了侧边栏"
+   },
+   "Bookmarks": {
+      "message": "书签"
+   },
+   "Bookmarksbar": {
+      "message": "书签栏"
+   },
+   "BrowsingHistoryHasBeenCleared": {
+      "message": "历史记录已清空"
+   },
+   "CanNotBeEmpty": {
+      "message": "搜索引擎名称和URL不能为空"
+   },
+   "Cancel": {
+      "message": "取 消"
+   },
+   "CategoryAppTools": {
+      "message": "应用与工具"
+   },
+   "CategoryCareerEdu": {
+      "message": "教育与招聘"
+   },
+   "CategoryComputerTech": {
+      "message": "数码与科技"
+   },
+   "CategoryFinanceBiz": {
+      "message": "金融财经"
+   },
+   "CategoryGames": {
+      "message": "游戏与娱乐"
+   },
+   "CategoryLife": {
+      "message": "日常生活"
+   },
+   "CategoryMusicVideo": {
+      "message": "音乐与视频"
+   },
+   "CategoryNews": {
+      "message": "新闻"
+   },
+   "CategoryOther": {
+      "message": "其他"
+   },
+   "CategoryPhoto": {
+      "message": "图片与照片"
+   },
+   "CategoryPopular": {
+      "message": "受欢迎的"
+   },
+   "CategoryShopping": {
+      "message": "购物与团购"
+   },
+   "CategorySocialBlog": {
+      "message": "社交与博客"
+   },
+   "CategorySportsTravel": {
+      "message": "体育与旅行"
+   },
+   "Celsius": {
+      "message": "摄氏度"
+   },
+   "Change": {
+      "message": "修改"
+   },
+   "ChangePassword": {
+      "message": "修改密码"
+   },
+   "ChromeStore": {
+      "message": "Chrome 商店"
+   },
+   "CityName": {
+      "message": "城市名"
+   },
+   "ClearAllBrowsingHistory": {
+      "message": "清空历史记录"
+   },
+   "ClearAllDones": {
+      "message": "清除完成事项"
+   },
+   "CloudBackup": {
+      "message": "自动备份到云端"
+   },
+   "ContactUs": {
+      "message": "联系我们"
+   },
+   "CurrentLocation": {
+      "message": "当前位置: "
+   },
+   "DefaultWallpaper": {
+      "message": "默认壁纸"
+   },
+   "Disable": {
+      "message": "禁用"
+   },
+   "Download": {
+      "message": "下载"
+   },
+   "DownloadWP": {
+      "message": "下载壁纸"
+   },
+   "DownloadWallpaper": {
+      "message": "下载当前壁纸"
+   },
+   "Edit": {
+      "message": "编辑"
+   },
+   "EmailToUs": {
+      "message": "发邮件给我们"
+   },
+   "Enable": {
+      "message": "启用"
+   },
+   "EnableBookmarksBar": {
+      "message": "启用书签"
+   },
+   "EnableMostVisited": {
+      "message": "启用最常访问"
+   },
+   "EnableSearchBox": {
+      "message": "启用搜索框"
+   },
+   "EnableSearchType": {
+      "message": "启用搜索类别"
+   },
+   "Extensions": {
+      "message": "扩展"
+   },
+   "Fahrenheit": {
+      "message": "华氏度"
+   },
+   "Find": {
+      "message": "找回"
+   },
+   "FindYourAccount": {
+      "message": "找回账号"
+   },
+   "Friday": {
+      "message": "星期五"
+   },
+   "Generate": {
+      "message": "生 成"
+   },
+   "GenerateBackupFile": {
+      "message": "生成备份文件"
+   },
+   "GmailNotifications": {
+      "message": "Gmail通知"
+   },
+   "HasBeenDeleted": {
+      "message": "已被删除"
+   },
+   "HasBeenDisabled": {
+      "message": "已被禁用"
+   },
+   "HasBeenEnabled": {
+      "message": "已被启用"
+   },
+   "HasBeenUninstalled": {
+      "message": "已被卸载"
+   },
+   "HasBeenUpdated": {
+      "message": "已更新"
+   },
+   "History": {
+      "message": "历史记录"
+   },
+   "Humidity": {
+      "message": "湿度"
+   },
+   "IconFillet": {
+      "message": "图标圆角度数"
+   },
+   "IconOpacity": {
+      "message": "图标不透明度"
+   },
+   "ImageSizeLimit": {
+      "message": "图片大小不能超过3MB"
+   },
+   "Images": {
+      "message": "图片"
+   },
+   "InfinityBg": {
+      "message": "Infinity(无限)壁纸"
+   },
+   "InfinityBgblur": {
+      "message": "Infinity(无限)壁纸模糊版"
+   },
+   "LastBackupAt": {
+      "message": "上次备份于"
+   },
+   "LocalWallpaper": {
+      "message": "本地壁纸"
+   },
+   "Locating": {
+      "message": "正在定位..."
+   },
+   "LogOffConfirm": {
+      "message": "确定要退出吗？"
+   },
+   "LoginMenuFontSize": {
+      "message": "20px"
+   },
+   "LoginSuccess": {
+      "message": "登录成功"
+   },
+   "Logout": {
+      "message": "退出登录"
+   },
+   "MainSearchEngine": {
+      "message": "主搜索引擎"
+   },
+   "Maps": {
+      "message": "地图"
+   },
+   "Monday": {
+      "message": "星期一"
+   },
+   "MostVisitedMoved": {
+      "message": "*最常访问移到了顶部"
+   },
+   "Musics": {
+      "message": "音乐"
+   },
+   "NETWORKERROR": {
+      "message": "网络好像有点问题哦"
+   },
+   "NewNote": {
+      "message": "新记事"
+   },
+   "NewPassword": {
+      "message": "新密码"
+   },
+   "News": {
+      "message": "新闻"
+   },
+   "NoSpace": {
+      "message": "该页没有多余空间"
+   },
+   "NotesAndIdeas": {
+      "message": "笔记与创意"
+   },
+   "Notfoundcity": {
+      "message": "未找到该城市"
+   },
+   "NotificationSound": {
+      "message": "通知铃声"
+   },
+   "NumberOfItems": {
+      "message": "项目数量"
+   },
+   "OFF": {
+      "message": "关"
+   },
+   "OFFleft": {
+      "message": "35px"
+   },
+   "ON": {
+      "message": "开"
+   },
+   "ONleft": {
+      "message": "31px"
+   },
+   "OldPassword": {
+      "message": "原密码"
+   },
+   "OpenBookmarkIn": {
+      "message": "在新标签页中打开书签"
+   },
+   "OpenLinksInNewtab": {
+      "message": "在新标签页中打开链接"
+   },
+   "OurOfficialWebsite": {
+      "message": "访问我们的官方网站"
+   },
+   "Password": {
+      "message": "密码"
+   },
+   "PleaseEnableIt": {
+      "message": "请先启用此应用!"
+   },
+   "PressEnterToQuery": {
+      "message": "按下\"Enter\"查询"
+   },
+   "Pressure": {
+      "message": "压力"
+   },
+   "PrivacyPolicy": {
+      "message": "隐私政策"
+   },
+   "Query": {
+      "message": "查询中..."
+   },
+   "Read": {
+      "message": "阅读"
+   },
+   "Recovery": {
+      "message": "恢复"
+   },
+   "RecoveryDataFailed": {
+      "message": "数据恢复失败"
+   },
+   "RecoveryDataSuccess": {
+      "message": "数据恢复成功"
+   },
+   "RecoveryFromCloud": {
+      "message": "从云端恢复数据"
+   },
+   "RecoveryFromFile": {
+      "message": "从文件中恢复"
+   },
+   "Register": {
+      "message": "注册"
+   },
+   "RegisterButton": {
+      "message": "注   册"
+   },
+   "RegisterSuccessAndAutoLogin": {
+      "message": "注册成功已为您自动登录"
+   },
+   "RegistrationFailed": {
+      "message": "注册失败"
+   },
+   "RestoreWallpaper": {
+      "message": "恢复默认壁纸"
+   },
+   "Saturday": {
+      "message": "星期六"
+   },
+   "SearchInNewtab": {
+      "message": "在新标签页中搜索"
+   },
+   "SelectImageFontSize": {
+      "message": "18px"
+   },
+   "ShareIconToOther": {
+      "message": "同时分享图标给其他人"
+   },
+   "ShareToYourFriends": {
+      "message": "分享给你的朋友"
+   },
+   "SignAndIn": {
+      "message": "登录"
+   },
+   "SignIn": {
+      "message": "登录"
+   },
+   "SignInOrRegister": {
+      "message": "登录或注册"
+   },
+   "SignInToUseTheFeature": {
+      "message": "登录以使用此功能"
+   },
+   "Sogou": {
+      "message": "搜 狗"
+   },
+   "Sports": {
+      "message": "体育"
+   },
+   "StartAnimation": {
+      "message": "启动动画"
+   },
+   "Submit": {
+      "message": "提交"
+   },
+   "Sunday": {
+      "message": "星期日"
+   },
+   "TemperatureUnit": {
+      "message": "温度单位"
+   },
+   "TermsOfUse": {
+      "message": "隐私权和使用条款"
+   },
+   "TermsofUse": {
+      "message": "使用条款"
+   },
+   "Thursday": {
+      "message": "星期四"
+   },
+   "Todo": {
+      "message": "待办"
+   },
+   "Todos": {
+      "message": "待办事项"
+   },
+   "TodotypeMarginLeft": {
+      "message": "92px"
+   },
+   "Tomorrow": {
+      "message": "明日"
+   },
+   "Tuesday": {
+      "message": "星期二"
+   },
+   "UploadLocalWallpaper": {
+      "message": "登录后可上传本地壁纸到云端"
+   },
+   "UserName": {
+      "message": "邮箱"
+   },
+   "UsernameAlreadyExists": {
+      "message": "该邮箱已注册过，请直接登录或使用找回密码"
+   },
+   "UsernameDoesNotExist": {
+      "message": "该邮箱未注册过"
+   },
+   "UsernameOrPasswordWrong": {
+      "message": "账号或密码有误"
+   },
+   "VerifyCode": {
+      "message": "验证码"
+   },
+   "VerifyCodeError": {
+      "message": "验证码错误"
+   },
+   "Videos": {
+      "message": "视频"
+   },
+   "WeChat": {
+      "message": "微信"
+   },
+   "Weather": {
+      "message": "天气"
+   },
+   "WeatherLocation": {
+      "message": "天气位置"
+   },
+   "WeatherLocationHasBeenSettedTo": {
+      "message": "天气位置已被更改为"
+   },
+   "Web": {
+      "message": "网页"
+   },
+   "Website": {
+      "message": "网站: "
+   },
+   "Wednesday": {
+      "message": "星期三"
+   },
+   "Wind": {
+      "message": "风力"
+   },
+   "Yes": {
+      "message": "退出"
+   },
+   "adName": {
+      "message": "jd"
+   },
+   "addCustomItem": {
+      "message": "添加"
+   },
+   "addMenuMarginLeft": {
+      "message": "14px"
+   },
+   "addMenuSize": {
+      "message": "20px"
+   },
+   "addSearchName": {
+      "message": "搜索引擎名称"
+   },
+   "addSearchUrl": {
+      "message": "用%s代替查询参数"
+   },
+   "addTitle": {
+      "message": "名称"
+   },
+   "addUrl": {
+      "message": "网址"
+   },
+   "addmenuPaddingLeft": {
+      "message": "40px"
+   },
+   "application": {
+      "message": "应用"
+   },
+   "background": {
+      "message": "主题"
+   },
+   "backupToCloud": {
+      "message": "手动备份到云端"
+   },
+   "bingNot": {
+      "message": "Bing壁纸暂不支持模糊处理"
+   },
+   "bookmark_manage": {
+      "message": "书签管理"
+   },
+   "buttonFontSize": {
+      "message": ""
+   },
+   "customItem": {
+      "message": "自定义"
+   },
+   "deSearch": {
+      "message": "百度"
+   },
+   "default": {
+      "message": "默认"
+   },
+   "defaultBottomSearch": {
+      "message": "http://www.sogou.com/sogou?pid=sogou-site-3b24156ad560a696&query="
+   },
+   "defaultSearchName": {
+      "message": "搜狗搜索"
+   },
+   "displayIntop": {
+      "message": "在顶部显示"
+   },
+   "donate": {
+      "message": "捐 助"
+   },
+   "donateDesc": {
+      "message": "向我们捐助点小钱，帮助我们为您提供更稳定的服务并且开发更多功能,谢谢您！"
+   },
+   "donateShow": {
+      "message": "none"
+   },
+   "donateShowAlipay": {
+      "message": "block"
+   },
+   "emailCodenotEmpty": {
+      "message": "邮箱和验证码不能为空"
+   },
+   "emailError": {
+      "message": "邮箱格式不正确哦"
+   },
+   "emailInvalid": {
+      "message": "邮箱格式不正确"
+   },
+   "emailOrName": {
+      "message": "邮箱或昵称，可不填"
+   },
+   "emp": {
+      "message": "空"
+   },
+   "extdesc": {
+      "message": "Infinity新标签页，基于Chrome的云应用服务，让你更优雅、轻松地使用Chrome。"
+   },
+   "extensionItemAbleFontSize": {
+      "message": "16px"
+   },
+   "extensionItemAbleLineHeight": {
+      "message": "2.4"
+   },
+   "extname": {
+      "message": "Infinity新标签页"
+   },
+   "feedback": {
+      "message": "反馈"
+   },
+   "feedbackOnline": {
+      "message": "在线反馈"
+   },
+   "fontColor": {
+      "message": "字体颜色"
+   },
+   "fontsize": {
+      "message": "14px"
+   },
+   "forgotPassword": {
+      "message": "找回密码"
+   },
+   "general": {
+      "message": "常规"
+   },
+   "gplus": {
+      "message": "百度地图"
+   },
+   "gplusIco": {
+      "message": "1"
+   },
+   "gplusUrl": {
+      "message": "http://map.baidu.com"
+   },
+   "help": {
+      "message": "帮助"
+   },
+   "help1": {
+      "message": "1.在你要添加的搜索引擎中搜索任意内容,\u003Cbr>例如在维基百科中搜索 \"infinity\",这样我们就能得到一个搜索url:\u003Cbr>\"https://en.wikipedia.org/wiki/\u003Cspan style=\"color:#1ABC9C;\">Infinity\u003C/span>"
+   },
+   "help2": {
+      "message": "2.用%s替换查询参数，得到url:\u003Cbr>\"https://en.wikipedia.org/wiki/\u003Cspan style=\"color:#1ABC9C\">%s\u003C/span>\""
+   },
+   "help3": {
+      "message": "3.输入替换好的url并点击 \"添加搜索引擎\":"
+   },
+   "help4": {
+      "message": "附加搜索引擎"
+   },
+   "help5": {
+      "message": "添加搜索引擎"
+   },
+   "help6": {
+      "message": "4.当你之后搜索任意内容时，附加搜索引擎出现，按下键选择:"
+   },
+   "hideAds": {
+      "message": "点击可3天内不再显示"
+   },
+   "howToAdd": {
+      "message": "如何添加附加搜索引擎？"
+   },
+   "howtodelete": {
+      "message": "帮助:如何删除或编辑项目？"
+   },
+   "hpa": {
+      "message": "none"
+   },
+   "imageSize": {
+      "message": "图片缩放"
+   },
+   "lang": {
+      "message": "zh"
+   },
+   "letterSpacing": {
+      "message": "0.3em"
+   },
+   "loginFailed": {
+      "message": "登录失败"
+   },
+   "loginNoNull": {
+      "message": "邮箱和密码不能为空"
+   },
+   "menuItemFontSize": {
+      "message": "20px"
+   },
+   "menuItemMarginRight": {
+      "message": "30px"
+   },
+   "miniMode": {
+      "message": "极简模式"
+   },
+   "mostVisited": {
+      "message": "最常访问"
+   },
+   "newtworkError": {
+      "message": "网络错误"
+   },
+   "nextWallpaper": {
+      "message": "更改将对下一张壁纸生效"
+   },
+   "noTitle": {
+      "message": "无标题"
+   },
+   "orderBy": {
+      "message": "orderc"
+   },
+   "pointColor": {
+      "message": "rgba(231, 76, 60, 0.5)"
+   },
+   "qqqun": {
+      "message": "block"
+   },
+   "randomWallpaper": {
+      "message": "换张壁纸"
+   },
+   "recommended": {
+      "message": "推荐"
+   },
+   "registerNotNull": {
+      "message": "邮箱、密码、验证码都不能为空"
+   },
+   "registrationInformationWrong": {
+      "message": "注册信息有误"
+   },
+   "removeImage": {
+      "message": "移除图片"
+   },
+   "saySomething": {
+      "message": "说点什么吧( ^_^ )"
+   },
+   "search": {
+      "message": "搜索"
+   },
+   "searchBookmarks": {
+      "message": "搜索书签"
+   },
+   "searchBy": {
+      "message": "搜索自 "
+   },
+   "searchIni": {
+      "message": "百度"
+   },
+   "searchItem": {
+      "message": "搜索项目"
+   },
+   "searchOptionsMarginRight": {
+      "message": "48px"
+   },
+   "searchhistory": {
+      "message": "搜索历史记录"
+   },
+   "settingMenuFontSize": {
+      "message": "20px"
+   },
+   "settingMenuMarginRight": {
+      "message": "55px"
+   },
+   "settingMenuPaddingLeft": {
+      "message": "50px"
+   },
+   "settings": {
+      "message": "设置"
+   },
+   "shareIcon": {
+      "message": "分享图标给小伙伴们"
+   },
+   "showPageAction": {
+      "message": "在地址栏显示快速添加按钮"
+   },
+   "signIn": {
+      "message": "账号"
+   },
+   "simpleTheme": {
+      "message": "简约"
+   },
+   "supportFile": {
+      "message": "兼容米鱼、Halo、V +新标签页的备份文件"
+   },
+   "thankFeedback": {
+      "message": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;非常感谢!\u003Cbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们的产品经理已经收到您的反馈，如有必要我们会通过您留下的联系方式联系您！"
+   },
+   "todoDone": {
+      "message": "完成"
+   },
+   "topMenuFontSize": {
+      "message": "22px"
+   },
+   "tutorial": {
+      "message": "添加附加搜索引擎教程"
+   },
+   "uninstall": {
+      "message": "卸载"
+   },
+   "updateItem": {
+      "message": "更新项目"
+   },
+   "upload": {
+      "message": "选择图片"
+   },
+   "wallpaperIconFailed": {
+      "message": "当前无网络连接，您将不能同步数据或更换壁纸，此时清空浏览器缓存壁纸和图标将无法使用"
+   },
+   "wallpaperLoadFailed": {
+      "message": "壁纸加载失败"
+   },
+   "wallpaperUploadFailed": {
+      "message": "壁纸上传失败"
+   },
+   "whatNext": {
+      "message": "接下来做点什么？"
+   },
+   "yourWallpaper": {
+      "message": "您的壁纸将会被同步到云端"
+   }
+}

@@ -1,0 +1,46 @@
+input {
+	width:	auto;
+	height:	auto;
+}
+
+.group {
+	cursor:						default;
+	display:						inline-block;
+	margin:						5px;
+	background-color:		#FAFAFA;
+	background-position:	102px -8px;
+	background-size:		64px 64px;
+	background-repeat:	no-repeat;
+	border:						1px solid #CCC;
+	padding:					10px;
+	border-radius:			5px;
+	min-width:					135px;
+	vertical-align:			top;
+	font-size:					14px;
+}
+.group:hover {
+	background-color:		#F3F3F3;
+}
+.group.disabled, .group.disabled button {
+	background-color:		#F0F0F0;
+}
+	.group input {
+		max-width:	130px;
+	}
+
+.option-img {
+	height:			14px;
+	width:			14px;
+	margin-right:	5px;
+}
+
+.external-link {
+	margin-bottom:	5px;
+}
+
+.external-link img {
+	width:			14px;
+	height:			14px;
+	margin-right:	5px;
+	vertical-align: bottom;
+}

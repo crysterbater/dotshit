@@ -1,0 +1,192 @@
+<html>
+<head>
+  <script type="text/javascript" src="./jquery.min.js"></script>
+  <style>
+    html {
+      min-height:100%;
+    }
+
+    body {
+     padding: 0px;
+     margin: 0px;
+    }
+    ::selection {
+      background: rgba(255, 255, 212, 0.3);
+      color: #FFF;
+      font-weight: 500;
+    }
+
+    ::-webkit-input-placeholder {
+       color: #FFF;
+       opacity: 0.5;
+    }
+
+    #gradient {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    }
+    /*:before #gradient {
+      -webkit-filter: blur(5px);
+    }*/
+    #fluidBackground {
+      background-color:rgb(128, 128, 128);
+      background-color: #494B80;
+    }
+    #time {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 120px;
+      text-align:center;
+      display:block;
+      line-height:1.3em;
+      font-weight:100;
+      /*font-weight: 300;*/
+      /*color:#777;*/
+      color:#fff;
+      text-rendering: optimizeLegibility;
+      position: relative;
+      line-height: 1em;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      width: 340px;
+      margin:auto;
+      margin-top: 16%;
+      /*text-shadow: 0 0 10px #fff;*/
+    }
+    #time:hover {
+      cursor: pointer;
+    }
+    textarea, textarea:hover, textarea:focus {
+      outline: 0;
+      box-shadow: none;
+      border: none;
+    }
+    .todoList {
+      line-height: 1.5em;
+      background-color: rgba(250, 250, 250, .1);
+      /*background-color:transparent;*/
+      color: #fff;
+      /*border: 1px solid #fff;*/
+      border-radius: 5px;
+      width: 340px;
+      margin:auto;
+      text-align:left;
+      /*right: 10px;*/
+      margin-top: 5px;
+      max-height: 400px;
+      padding: 10px;
+      line-height: 1.4em;
+      position: relative;
+      z-index: 99999;
+      resize: none;
+      font-size: 13px;
+    }
+    .todoTitleContainer {
+      width: 360px;
+      color: #fff;
+      right: 20px;
+      position: absolute;
+      text-align: center;
+      font-size: 14px;
+      top: 20px;
+    }
+    .todoTitle {
+      font-weight: 300;
+      margin: auto;
+      opacity: .7;
+      text-align: right;
+      margin-right: 20px;
+      font-size: 36px;
+      line-height: 1em;
+      display: inline-block;
+      float:right;
+    }
+    .todoTitle:hover {
+      cursor: pointer;
+    }
+    
+    #glass {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      right: 0;
+      background: inherit;
+      background-attachment: fixed;
+    }
+    #glass::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      background-attachment: fixed;
+      -webkit-filter: blur(22px);
+      filter: blur(22px);
+    }
+    #month {      
+      /*text-align: center;*/
+      color: #fff;
+      z-index: 999999;
+      position: relative;
+      /*font-size: 35px;*/
+      font-size: 24px;
+      font-weight: 100;
+      letter-spacing: 1px;
+      line-height: 48px;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      display: inline-block;
+      margin-right: 20px;
+    }
+    #month:hover {
+      cursor: default;
+    }
+    #toggleTodo {
+      z-index: 9999;
+      position: relative;
+      opacity: 0.5;
+      display: inline-block;
+      line-height: 40px;
+      margin-bottom: 8px;
+      font-weight: 500;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-font-smoothing: antialiased;
+    }
+    #toggleTodo:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+  <body id="fluidBackground">
+    <div id="gradient">
+      <div id="glass">
+        <div class="todoTitleContainer">
+          <div style="text-align:right; height:48px;">
+            <div id="month" style="display:none;"></div>
+            <div class="todoTitle" id="toggleTodo">+</div>
+          </div>
+          <textarea spellcheck="false" class="todoList" rows="1" id="syncTodo"></textarea>
+        </div>
+        <div id="time" title="Click for date"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./grad.js"></script>
+ </body>
+</html>

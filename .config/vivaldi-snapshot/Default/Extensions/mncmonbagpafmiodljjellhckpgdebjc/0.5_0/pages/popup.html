@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html style=''>
+<head>
+<style>
+
+body{
+   width:700px;
+   height:60px;
+}
+
+a:hover + .box,.box:hover{
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+li {
+    float:left; 
+	margin-left:2px; 
+	margin-right :2px;
+	list-style-type: none;
+}
+.right {
+	float:right;
+    right: 0px;
+    border: 1px;
+    padding: 10px;
+}
+.L {
+    border-style: solid;
+    border-color: #c5f7da;
+    border-width: 1px;
+}
+.M {
+    border-style: solid;
+    border-color: #5389e0;
+    border-width: 1px;
+}
+.S {
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+}
+
+
+</style>
+	<script src='js/jquery-3.1.1.min.js'></script>
+	<script src='js/popup.js'></script>
+</head>
+<body>
+<div id='info' class="right"><a href="options.html"><img src="icons/settings_16.png"></a></div>
+<br>
+<div id='message'>Loading....</div>
+
+
+
+</body>
+</html>

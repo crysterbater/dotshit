@@ -1,0 +1,21 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "js/background.js" ]
+      }
+   },
+   "default_locale": "en",
+   "description": "__MSG_app_desc__",
+   "icons": {
+      "128": "/css/images/chromeapp_icon_128.png",
+      "16": "/css/images/chromeapp_icon_16.png",
+      "48": "/css/images/chromeapp_icon_48.png",
+      "96": "/css/images/chromeapp_icon_96.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCmFtnIZ900khONgdvOTTlj9IibVkOA0J77TqCCSCJiHz8ZKPrhplbdsrWdO3g5AsDZF+14CjJGmkK4KP5SUE66Wza/k2LEX/DdEJ36ix/rXDw0QDs1lkMqZNuDxf+vWvipsbXnfh2GwgZQ41KfhpoHLk4hJAAfjvydzFlNp7gnPwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_app_name__",
+   "permissions": [ "fileSystem", "fileSystem.write", "notifications", "storage", "unlimitedStorage", "clipboardRead", "geolocation", "http://*/", "https://*/", "https://chart.googleapis.com/", "identity", "identity.email", "gcm", "webview" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "7.2.10"
+}

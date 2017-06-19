@@ -1,0 +1,797 @@
+{
+   "AddSearchEngine": {
+      "message": "Ajouter le moteur de recherche"
+   },
+   "Added": {
+      "message": " a été ajouté"
+   },
+   "AdditionalSearchEngine": {
+      "message": "Moteur de recherche supplémentaire"
+   },
+   "Amazon": {
+      "message": "Amazon"
+   },
+   "AmazonUrl": {
+      "message": "http://www.amazon.com"
+   },
+   "Answers": {
+      "message": "réponses"
+   },
+   "Apps": {
+      "message": "Applications"
+   },
+   "AppsAndExtensions": {
+      "message": "Applications et extensions"
+   },
+   "AutomaticallyChangeWallpaper": {
+      "message": "Remplacement automatique quotidienne de fond d'écran"
+   },
+   "Baidu": {
+      "message": "Baidu"
+   },
+   "BingBg": {
+      "message": "Bing Fond D'Écran"
+   },
+   "BlurWallpaper": {
+      "message": "utiliser le fond d'écran flou"
+   },
+   "BookmarkChanged": {
+      "message": "*Barre de favoris a changé dans la barre latérale"
+   },
+   "Bookmarks": {
+      "message": "Favoris"
+   },
+   "Bookmarksbar": {
+      "message": "barre de favoris"
+   },
+   "BrowsingHistoryHasBeenCleared": {
+      "message": "L'histoire a été effacée"
+   },
+   "CanNotBeEmpty": {
+      "message": "le nom du moteur de recherche ou URL ne peut être pas vide"
+   },
+   "Cancel": {
+      "message": "annuler"
+   },
+   "CategoryAppTools": {
+      "message": "Apps & outils"
+   },
+   "CategoryCareerEdu": {
+      "message": "Emploi et Education"
+   },
+   "CategoryComputerTech": {
+      "message": "Technologie"
+   },
+   "CategoryFinanceBiz": {
+      "message": "Économie"
+   },
+   "CategoryGames": {
+      "message": "Jeux & Divertissement"
+   },
+   "CategoryLife": {
+      "message": "Philosophie"
+   },
+   "CategoryMusicVideo": {
+      "message": "Musique & Vidéos"
+   },
+   "CategoryNews": {
+      "message": "Actu"
+   },
+   "CategoryOther": {
+      "message": "Plus"
+   },
+   "CategoryPhoto": {
+      "message": "Images & Photos"
+   },
+   "CategoryPopular": {
+      "message": "Populaires"
+   },
+   "CategoryShopping": {
+      "message": "Shopping"
+   },
+   "CategorySocialBlog": {
+      "message": "Social & Blogs"
+   },
+   "CategorySportsTravel": {
+      "message": "sportif & A Durée"
+   },
+   "Celsius": {
+      "message": "Celsius"
+   },
+   "Change": {
+      "message": "Changer De"
+   },
+   "ChangePassword": {
+      "message": "Changer Le Mot De Passe"
+   },
+   "ChromeStore": {
+      "message": "Chrome Store"
+   },
+   "CityName": {
+      "message": "nom de ville"
+   },
+   "ClearAllBrowsingHistory": {
+      "message": "Supprimer l'historique"
+   },
+   "ClearAllDones": {
+      "message": "Effacer les tâches achevées"
+   },
+   "CloudBackup": {
+      "message": "Sauvegarde vers le cloud"
+   },
+   "ContactUs": {
+      "message": "Contact Us"
+   },
+   "CurrentLocation": {
+      "message": "position actuelle:  "
+   },
+   "DefaultWallpaper": {
+      "message": "Fond d'écran par défaut"
+   },
+   "Disable": {
+      "message": "désactiver"
+   },
+   "Download": {
+      "message": "télécharger"
+   },
+   "DownloadWP": {
+      "message": "télécharger Wallpaper"
+   },
+   "DownloadWallpaper": {
+      "message": "Télécharger le fond d'écran actuel"
+   },
+   "Edit": {
+      "message": "éditeur"
+   },
+   "EmailToUs": {
+      "message": "Écrivez-nous par E mail."
+   },
+   "Enable": {
+      "message": "activer"
+   },
+   "EnableBookmarksBar": {
+      "message": "activer signets"
+   },
+   "EnableMostVisited": {
+      "message": "activer les visites plus fréquentées"
+   },
+   "EnableSearchBox": {
+      "message": "Activer le cadre de recherche"
+   },
+   "EnableSearchType": {
+      "message": "Activer la catégorie de recherche"
+   },
+   "Extensions": {
+      "message": "étendre"
+   },
+   "Fahrenheit": {
+      "message": "Fahrenheit"
+   },
+   "Find": {
+      "message": "Se Trouver"
+   },
+   "FindYourAccount": {
+      "message": "Trouvez Votre Compte"
+   },
+   "Friday": {
+      "message": "vendredi"
+   },
+   "Generate": {
+      "message": "génération"
+   },
+   "GenerateBackupFile": {
+      "message": "créer un fichier de sauvegarde"
+   },
+   "GmailNotifications": {
+      "message": "Notifications de Gmail"
+   },
+   "HasBeenDeleted": {
+      "message": " A été supprimé"
+   },
+   "HasBeenDisabled": {
+      "message": "A été désactivé"
+   },
+   "HasBeenEnabled": {
+      "message": " A été activé"
+   },
+   "HasBeenUninstalled": {
+      "message": " A été désinstallé"
+   },
+   "HasBeenUpdated": {
+      "message": " Mise à jour"
+   },
+   "History": {
+      "message": "Historique"
+   },
+   "Humidity": {
+      "message": "humidité"
+   },
+   "IconFillet": {
+      "message": "Arrondis des icônes"
+   },
+   "IconOpacity": {
+      "message": "Transparence des icônes"
+   },
+   "ImageSizeLimit": {
+      "message": "Taille de l'image ne ​​peut pas dépasser 3MB"
+   },
+   "Images": {
+      "message": "Images"
+   },
+   "InfinityBg": {
+      "message": "Infinity Fond D'Écran"
+   },
+   "InfinityBgblur": {
+      "message": "Infinity Fond d'écran Blur style"
+   },
+   "LastBackupAt": {
+      "message": "Dernière sauvegarde"
+   },
+   "LocalWallpaper": {
+      "message": "fond d'écran local"
+   },
+   "Locating": {
+      "message": "localisation..."
+   },
+   "LogOffConfirm": {
+      "message": "Vous êtes sûr que vous voulez s'arrêter ?"
+   },
+   "LoginMenuFontSize": {
+      "message": "18px"
+   },
+   "LoginSuccess": {
+      "message": "Identification réussie"
+   },
+   "Logout": {
+      "message": "Se Déconnecter"
+   },
+   "MainSearchEngine": {
+      "message": "Moteur de recherche principal"
+   },
+   "Maps": {
+      "message": "carte"
+   },
+   "Monday": {
+      "message": "lundi"
+   },
+   "MostVisitedMoved": {
+      "message": "*Le plus visité a été déplacé vers le haut"
+   },
+   "Musics": {
+      "message": "musique"
+   },
+   "NETWORKERROR": {
+      "message": "Erreur réseau"
+   },
+   "NewNote": {
+      "message": "nouvelles notes"
+   },
+   "NewPassword": {
+      "message": "Nouveau Mot De Passe"
+   },
+   "News": {
+      "message": "Actualités"
+   },
+   "NoSpace": {
+      "message": "Cette page n'a pas l'espace supplémentaire"
+   },
+   "NotesAndIdeas": {
+      "message": "Notes et idées"
+   },
+   "Notfoundcity": {
+      "message": "La ville n'a pas été trouvée"
+   },
+   "NotificationSound": {
+      "message": "sonnerie de notification"
+   },
+   "NumberOfItems": {
+      "message": "Disposition"
+   },
+   "OFF": {
+      "message": "OFF"
+   },
+   "OFFleft": {
+      "message": "28px"
+   },
+   "ON": {
+      "message": "ON"
+   },
+   "ONleft": {
+      "message": "28px"
+   },
+   "OldPassword": {
+      "message": "Ancien Mot De Passe"
+   },
+   "OpenBookmarkIn": {
+      "message": "Signets ouverts dans un nouvel onglet"
+   },
+   "OpenLinksInNewtab": {
+      "message": "Ouvrir le lien dans un nouvel onglet"
+   },
+   "OurOfficialWebsite": {
+      "message": "Visitez notre site officiel"
+   },
+   "Password": {
+      "message": "mot de passe"
+   },
+   "PleaseEnableIt": {
+      "message": "S'il vous plaît activer cette application d'abord !"
+   },
+   "PressEnterToQuery": {
+      "message": "Appuyez sur \" Enter\" pour la requête"
+   },
+   "Pressure": {
+      "message": "la pression barométrique"
+   },
+   "PrivacyPolicy": {
+      "message": "Privacy Policy"
+   },
+   "Query": {
+      "message": "en requête..."
+   },
+   "Read": {
+      "message": "Lecture"
+   },
+   "Recovery": {
+      "message": "récupération"
+   },
+   "RecoveryDataFailed": {
+      "message": "La récupération de données échoue"
+   },
+   "RecoveryDataSuccess": {
+      "message": "La récupération réussie de données"
+   },
+   "RecoveryFromCloud": {
+      "message": "Restauration données du cloud"
+   },
+   "RecoveryFromFile": {
+      "message": "Récupération à partir d'un fichier"
+   },
+   "Register": {
+      "message": "Se enregistrer"
+   },
+   "RegisterButton": {
+      "message": "Se enregistrer"
+   },
+   "RegisterSuccessAndAutoLogin": {
+      "message": "Inscription réussi et vous êtes connecté"
+   },
+   "RegistrationFailed": {
+      "message": "Échec De L'Enregistrement"
+   },
+   "RestoreWallpaper": {
+      "message": "restaurer le fond d'écran par défaut"
+   },
+   "Saturday": {
+      "message": "samedi"
+   },
+   "SearchInNewtab": {
+      "message": "Rechercher dans un nouvel onglet"
+   },
+   "SelectImageFontSize": {
+      "message": "12px"
+   },
+   "ShareIconToOther": {
+      "message": "Partager icône pour d'autres"
+   },
+   "ShareToYourFriends": {
+      "message": "Partager icône pour les petits partenaires"
+   },
+   "SignAndIn": {
+      "message": "Sign In"
+   },
+   "SignIn": {
+      "message": "s'identifier"
+   },
+   "SignInOrRegister": {
+      "message": "Connecter ou S'inscrire"
+   },
+   "SignInToUseTheFeature": {
+      "message": "Connectez-vous pour utiliser cette fonctionnalité"
+   },
+   "Sogou": {
+      "message": "Sogou"
+   },
+   "Sports": {
+      "message": "sportif"
+   },
+   "StartAnimation": {
+      "message": "Lancer l'animation"
+   },
+   "Submit": {
+      "message": "soumettre"
+   },
+   "Sunday": {
+      "message": "dimanche"
+   },
+   "TemperatureUnit": {
+      "message": "Unité de température"
+   },
+   "TermsOfUse": {
+      "message": "Confidentialité et Conditions d'utilisation"
+   },
+   "TermsofUse": {
+      "message": "Terms of Use"
+   },
+   "Thursday": {
+      "message": "jeudi"
+   },
+   "Todo": {
+      "message": "à régler"
+   },
+   "Todos": {
+      "message": "Tâches"
+   },
+   "TodotypeMarginLeft": {
+      "message": "75px"
+   },
+   "Tomorrow": {
+      "message": "demain"
+   },
+   "Tuesday": {
+      "message": "mardi"
+   },
+   "UploadLocalWallpaper": {
+      "message": "Login requis pour télécharger le papier peint au cloud"
+   },
+   "UserName": {
+      "message": "Email"
+   },
+   "UsernameAlreadyExists": {
+      "message": "Cet e-mail déjà enregistré, se il vous plaît connecter ou utilisation \"mot de passe oublié\""
+   },
+   "UsernameDoesNotExist": {
+      "message": "Le courriel ne est pas encore inscrit"
+   },
+   "UsernameOrPasswordWrong": {
+      "message": "Nom d'utilisateur ou mot de passe Erreur"
+   },
+   "VerifyCode": {
+      "message": "code De Vérification"
+   },
+   "VerifyCodeError": {
+      "message": "Erreur Code de vérification"
+   },
+   "Videos": {
+      "message": "vidéos"
+   },
+   "WeChat": {
+      "message": "WeChat"
+   },
+   "Weather": {
+      "message": "Météo"
+   },
+   "WeatherLocation": {
+      "message": "position de Météo"
+   },
+   "WeatherLocationHasBeenSettedTo": {
+      "message": "Lieu de Météo a été modifié pour"
+   },
+   "Web": {
+      "message": "Web"
+   },
+   "Website": {
+      "message": "site Web: "
+   },
+   "Wednesday": {
+      "message": "mercredi"
+   },
+   "Wind": {
+      "message": "énergie éolienne"
+   },
+   "Yes": {
+      "message": "abandonner"
+   },
+   "adName": {
+      "message": "amazon"
+   },
+   "addCustomItem": {
+      "message": "Ajouter un raccourci"
+   },
+   "addMenuMarginLeft": {
+      "message": "-11px"
+   },
+   "addMenuSize": {
+      "message": "16px"
+   },
+   "addSearchName": {
+      "message": "Rechercher le nom de moteur de recherche"
+   },
+   "addSearchUrl": {
+      "message": "Les paramètres de requête seront  remplacés par % s"
+   },
+   "addTitle": {
+      "message": "nom"
+   },
+   "addUrl": {
+      "message": "site"
+   },
+   "addmenuPaddingLeft": {
+      "message": "20px"
+   },
+   "application": {
+      "message": "applications & Extensions"
+   },
+   "background": {
+      "message": "fond d'écran"
+   },
+   "backupToCloud": {
+      "message": "Sauvegarde manuelle vers le cloud"
+   },
+   "bingNot": {
+      "message": "Bing fond d'écran ne supporte pas le flou présente"
+   },
+   "bookmark_manage": {
+      "message": "management des signets"
+   },
+   "buttonFontSize": {
+      "message": "16px !important"
+   },
+   "customItem": {
+      "message": "Habitudes"
+   },
+   "deSearch": {
+      "message": "Google"
+   },
+   "default": {
+      "message": "Par défaut"
+   },
+   "defaultBottomSearch": {
+      "message": "http://en.wikipedia.org/wiki/"
+   },
+   "defaultSearchName": {
+      "message": "Wikipedia"
+   },
+   "displayIntop": {
+      "message": "Afficher en haut"
+   },
+   "donate": {
+      "message": "don"
+   },
+   "donateDesc": {
+      "message": "Donnez - nous un peu d'argent pour nous aider à vous fournir un service plus stable et de développer plus de fonctionnalités, je vous remercie !"
+   },
+   "donateShow": {
+      "message": "block"
+   },
+   "donateShowAlipay": {
+      "message": "none"
+   },
+   "emailCodenotEmpty": {
+      "message": "E-mail et code de vérification ne peuvent pas être null"
+   },
+   "emailError": {
+      "message": "Adresse e-mail valide"
+   },
+   "emailInvalid": {
+      "message": "Adresse e-mail valide"
+   },
+   "emailOrName": {
+      "message": "E -mail ou pseudo, pas obligatoire à remplir."
+   },
+   "emp": {
+      "message": "vide"
+   },
+   "extdesc": {
+      "message": "Infinity new tab nouvel onglet, les services d'application de cloud basés sur Google Chrome, vous rendre plus élégante et plus facile à utiliser Chrome."
+   },
+   "extensionItemAbleFontSize": {
+      "message": "16px"
+   },
+   "extensionItemAbleLineHeight": {
+      "message": "2.4"
+   },
+   "extname": {
+      "message": "Infinity New Tab"
+   },
+   "feedback": {
+      "message": "contact"
+   },
+   "feedbackOnline": {
+      "message": "réaction en ligne"
+   },
+   "fontColor": {
+      "message": "Couleur de police"
+   },
+   "fontsize": {
+      "message": "12px"
+   },
+   "forgotPassword": {
+      "message": "Mot De Passe Oublié?"
+   },
+   "general": {
+      "message": "Paramètres généraux"
+   },
+   "getLocalWallpaperMarginTop": {
+      "message": "10px"
+   },
+   "gplus": {
+      "message": "Google +"
+   },
+   "gplusIco": {
+      "message": "0"
+   },
+   "gplusUrl": {
+      "message": "https://plus.google.com"
+   },
+   "help": {
+      "message": "Aide"
+   },
+   "help1": {
+      "message": "1.Search for any word in the search engine,\u003Cbr>such as search \"infinity\" in Wikipedia,then we can get the search url:\u003Cbr>\"https://en.wikipedia.org/wiki/\u003Cspan style=\"color:#1ABC9C;\">Infinity\u003C/span>\""
+   },
+   "help2": {
+      "message": "2.Replace the search parameter with %s:\u003Cbr>\"https://en.wikipedia.org/wiki/\u003Cspan style=\"color:#1ABC9C\">%s\u003C/span>\""
+   },
+   "help3": {
+      "message": "3.Input the url and click \"Add Search Engine\":"
+   },
+   "help4": {
+      "message": "Additional Search Engine"
+   },
+   "help5": {
+      "message": "Add Search Engine"
+   },
+   "help6": {
+      "message": "4.When you search for something:"
+   },
+   "hideAds": {
+      "message": "Cliquez pour faire disparu trois jours"
+   },
+   "howToAdd": {
+      "message": "How to add additional search engines?"
+   },
+   "howtodelete": {
+      "message": "Aidez-Moi:Comment puis-je éditer ou supprimer article?"
+   },
+   "hpa": {
+      "message": "bloc"
+   },
+   "imageSize": {
+      "message": "Agrandir l'image"
+   },
+   "lang": {
+      "message": "fr"
+   },
+   "letterSpacing": {
+      "message": "aucun"
+   },
+   "loginFailed": {
+      "message": "échec de la connexion"
+   },
+   "loginNoNull": {
+      "message": "Email et Pssword ne peut être NULL"
+   },
+   "menuItemFontSize": {
+      "message": "14px"
+   },
+   "menuItemMarginRight": {
+      "message": "10px !important"
+   },
+   "miniMode": {
+      "message": "mode minimaliste"
+   },
+   "mostVisited": {
+      "message": "Topsites"
+   },
+   "newtworkError": {
+      "message": "erreur de réseau"
+   },
+   "nextWallpaper": {
+      "message": "Modification prendra effet pour la prochaine papier peint"
+   },
+   "noTitle": {
+      "message": "Pas De Titre"
+   },
+   "orderBy": {
+      "message": "ordere"
+   },
+   "pointColor": {
+      "message": "rgba(231, 76, 60, 0.5)"
+   },
+   "qqqun": {
+      "message": "none"
+   },
+   "randomWallpaper": {
+      "message": "Obtenez un fond d'écran aléatoire"
+   },
+   "recommended": {
+      "message": "Recommandations"
+   },
+   "registerNotNull": {
+      "message": "Email, Pssword et code de vérification ne peut être NULL"
+   },
+   "registrationInformationWrong": {
+      "message": "Mauvaise information du Registre"
+   },
+   "removeImage": {
+      "message": "Supprimer l'image"
+   },
+   "saySomething": {
+      "message": "Dis quelque chose  …( ^_^ )"
+   },
+   "search": {
+      "message": "Recherche"
+   },
+   "searchBookmarks": {
+      "message": "Rechercher un favori"
+   },
+   "searchBy": {
+      "message": "Recherche à partir de "
+   },
+   "searchIni": {
+      "message": "Google"
+   },
+   "searchItem": {
+      "message": "item de recherche"
+   },
+   "searchOptionsMarginRight": {
+      "message": "35px"
+   },
+   "searchhistory": {
+      "message": "Rechercher dans l'historique"
+   },
+   "settingMenuFontSize": {
+      "message": "12px"
+   },
+   "settingMenuMarginRight": {
+      "message": "25px"
+   },
+   "settingMenuPaddingLeft": {
+      "message": "28px"
+   },
+   "settings": {
+      "message": "Paramètres"
+   },
+   "shareIcon": {
+      "message": "Partager icône pour les autres"
+   },
+   "showPageAction": {
+      "message": "Affichage bouton Ajouter dans la barre d'adresse"
+   },
+   "signIn": {
+      "message": "compte"
+   },
+   "simpleTheme": {
+      "message": "Simple"
+   },
+   "supportFile": {
+      "message": "Le Soutien Infinity,Halo, Mifish and V + fichier de sauvegarde"
+   },
+   "thankFeedback": {
+      "message": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merci beaucoup ! \u003Cbr> Nos chefs de produits ont reçu vos commentaires, si nécessaire, nous allons vous contacter selon les coordonnées que vous avez laissé !"
+   },
+   "todoDone": {
+      "message": "Achevée"
+   },
+   "topMenuFontSize": {
+      "message": "16px"
+   },
+   "tutorial": {
+      "message": "Ajouter le manuel de moteur de recherche supplémentaire"
+   },
+   "uninstall": {
+      "message": "Désinstaller"
+   },
+   "updateItem": {
+      "message": "Mise à jour de l'article"
+   },
+   "upload": {
+      "message": "choisissez Image"
+   },
+   "wallpaperIconFailed": {
+      "message": "Aucune connexion réseau maintenant, vous ne serez pas en mesure de synchroniser les données ou de remplacer le fond d'écran, si vous désactivez le cache de votre navigateur, puis le papier peint et les icônes ne seront pas utilisés"
+   },
+   "wallpaperLoadFailed": {
+      "message": "Fond d'écran n'a pas réussi à charger"
+   },
+   "wallpaperUploadFailed": {
+      "message": "Fond d'écran téléchargement a échoué"
+   },
+   "whatNext": {
+      "message": "Ajouter une tâche?"
+   },
+   "yourWallpaper": {
+      "message": "Le papier peint sera synchronisé dans le nuage"
+   }
+}

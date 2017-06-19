@@ -1,0 +1,56 @@
+<template><style>:host {
+      display: block;
+    }
+    .rd-tabs__wrapper {
+      position: relative;
+      margin: 0 16px;
+    }
+    .rd-tabs {
+      display: flex;
+      height: 40px;
+      line-height: 38px;
+      overflow: hidden;
+      position: relative;
+    }
+    .rd-tabs--scrollable .rd-tabs {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .rd-tabs__active {
+      background: var(--highlightColor);
+      bottom: -1px;
+      height: 1px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      transform-origin: left center;
+      transition: all .18s cubic-bezier(0.0, 0.0, 0.2, 1);
+      z-index: 2;
+    }
+
+    .rd-tabs__icon {
+      border-radius: 16px;
+      cursor: pointer;
+      display: none;
+      fill: var(--highlightColor);
+      height: 24px;
+      padding: 2px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      transition: background-color 0.5s;
+      width: 24px;
+    }
+    .rd-tabs--scrollable .rd-tabs__icon {
+      display: block;
+    }
+    .rd-tabs__icon:hover {
+      background-color: var(--lighterColor);
+    }
+    .rd-tabs__icon-left {
+      left: -6px;
+    }
+    .rd-tabs__icon-right {
+      right: -6px;
+    }</style><div class="rd-tabs__wrapper"><svg class="rd-tabs__icon rd-tabs__icon-left"><path d="M15.41 16.58L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.42z"></path></svg><div class="rd-tabs"><content></content></div><div class="rd-tabs__active"></div><svg class="rd-tabs__icon rd-tabs__icon-right"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"></path></svg></div></template>

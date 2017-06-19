@@ -1,0 +1,26 @@
+{
+   "browser_action": {
+      "default_icon": {
+         "19": "images/browser_action19.png",
+         "38": "images/browser_action38.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "chrome_url_overrides": {
+      "newtab": "newtab.html"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'; font-src http://fonts.gstatic.com; style-src 'self' 'unsafe-inline' http://fonts.googleapis.com",
+   "description": "Flatun is your helper to track the latest designer trends, inspire the best designer shots and share your experience",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkpCKPOwAzI5Upf8v25mBFIogJsBc1R9BkvTjGPRB9QryQ/dnusJTX+RGQT71hrAZOFQll06MDLwZ3So4rStBNeyU2DuyZhE4+SFElntZrqPhUu1hd+zrVAgnYmk7B0rrTgaHHtUJazVpLjh4iEnZBSLDkY3jXpJL7tLO47X6iTvemYLcG6DfR3hMLJeikD31oC6gHiE+dMVSOA3VnVyGJJ2BiEMlJYkTbeYTxpL/HXU8CM88SZ9FvfEwj7CPKGllIB6s9YbwjKBUBhObjV44jp6exUfkjQlSAsPsHB69qt6wlaWx/7G25I0ZjHfew7lPAEbIRMCzVYPZH+6N7ep2WwIDAQAB",
+   "manifest_version": 2,
+   "name": "Flatun - Design inspirations",
+   "permissions": [ "topSites", "http://logo.clearbit.com/", "chrome://favicon/", "cookies", "http://*.flatun.com/*", "https://fonts.googleapis.com/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}

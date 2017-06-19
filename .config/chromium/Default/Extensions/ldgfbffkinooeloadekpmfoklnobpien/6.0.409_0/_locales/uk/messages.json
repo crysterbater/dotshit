@@ -1,0 +1,150 @@
+{
+   "alreadyInCollection": {
+      "description": "Вже в колекції",
+      "message": "Вже в колекції"
+   },
+   "appDesc": {
+      "description": "\"Save Button\" for Web",
+      "message": "\"Save Button\" for Web"
+   },
+   "appName": {
+      "description": "Raindrop.io: \"Save Button\" for Web",
+      "message": "Raindrop.io: \"Save Button\" for Web"
+   },
+   "articleRemovedPermament": {
+      "description": "Статтю видалено",
+      "message": "Статтю видалено"
+   },
+   "articleSaved": {
+      "description": "Статтю збережено",
+      "message": "Статтю збережено"
+   },
+   "edit": {
+      "description": "Редагувати",
+      "message": "Редагувати"
+   },
+   "error": {
+      "description": "Невідома помилка. Спробуй ще раз!",
+      "message": "Невідома помилка. Спробуй ще раз!"
+   },
+   "findBookmark": {
+      "description": "Знайти закладку",
+      "message": "Знайти закладку"
+   },
+   "hotkey": {
+      "description": "Поєднання клавіш",
+      "message": "Поєднання клавіш"
+   },
+   "imageRemovedPermament": {
+      "description": "Фото видалено",
+      "message": "Фото видалено"
+   },
+   "imageSaved": {
+      "description": "Фото збережено",
+      "message": "Фото збережено"
+   },
+   "inCollection": {
+      "description": "У колекцію",
+      "message": "У колекцію"
+   },
+   "linkRemovedPermament": {
+      "description": "Посилання видалено",
+      "message": "Посилання видалено"
+   },
+   "linkSaved": {
+      "description": "Посилання збережено",
+      "message": "Посилання збережено"
+   },
+   "loading": {
+      "description": "Завантаження",
+      "message": "Завантаження"
+   },
+   "logOut": {
+      "description": "Вийти",
+      "message": "Вийти"
+   },
+   "myBookmarks": {
+      "description": "Мої закладки",
+      "message": "Мої закладки"
+   },
+   "myBookmarksRaindrop": {
+      "description": "Мої закладки (Raindrop.io)",
+      "message": "Мої закладки (Raindrop.io)"
+   },
+   "open": {
+      "description": "Open",
+      "message": "Open"
+   },
+   "pleaseLogin": {
+      "description": "Будь ласка, увійдіть, щоб почати!",
+      "message": "Будь ласка, увійдіть, щоб почати!"
+   },
+   "remove": {
+      "description": "Видалити",
+      "message": "Видалити"
+   },
+   "restore": {
+      "description": "Restore",
+      "message": "Restore"
+   },
+   "save": {
+      "description": "Зберегти",
+      "message": "Зберегти"
+   },
+   "saveError": {
+      "description": "Помилка при збереженні!",
+      "message": "Помилка при збереженні!"
+   },
+   "saveImage": {
+      "description": "Зберегти зображення в Raindrop.io",
+      "message": "Зберегти зображення в Raindrop.io"
+   },
+   "saveLink": {
+      "description": "Зберегти сторінку до Raindrop.io",
+      "message": "Зберегти сторінку до Raindrop.io"
+   },
+   "savePage": {
+      "description": "Зберегти сторінку до Raindrop.io",
+      "message": "Зберегти сторінку до Raindrop.io"
+   },
+   "saveToRaindrop": {
+      "description": "Зберегти до Raindrop.io",
+      "message": "Зберегти до Raindrop.io"
+   },
+   "settings": {
+      "description": "Налаштування",
+      "message": "Налаштування"
+   },
+   "signIn": {
+      "description": "Ввійти",
+      "message": "Ввійти"
+   },
+   "signUp": {
+      "description": "Зареєструватися",
+      "message": "Зареєструватися"
+   },
+   "supportOnlyUrls": {
+      "description": "Підтримуються URL тільки з http та https протоколами!",
+      "message": "Підтримуються URL тільки з http та https протоколами!"
+   },
+   "toRaindrop": {
+      "description": "до Raindrop.io",
+      "message": "до Raindrop.io"
+   },
+   "tryAgain": {
+      "description": "Спробуйте ще раз",
+      "message": "Спробуйте ще раз"
+   },
+   "unsorted": {
+      "description": "Вхідні",
+      "message": "Вхідні"
+   },
+   "videoRemovedPermament": {
+      "description": "Контент видалено",
+      "message": "Контент видалено"
+   },
+   "videoSaved": {
+      "description": "Контент збережено",
+      "message": "Контент збережено"
+   }
+}

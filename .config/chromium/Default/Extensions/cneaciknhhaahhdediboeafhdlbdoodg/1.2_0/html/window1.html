@@ -1,0 +1,270 @@
+<div class="sidenav" id="mySidenav" style="">
+    <div id="blockingDiv"></div>
+	<div id="tophalf" style="background-color:#F4F6F5;">
+		<table class="logo" id="logoNotebookCX">
+            <tr>
+                <td>
+                    <div id="settingsContainer">
+                        <img src="chrome-extension://cfdcbcipacngnjmpmhkbkcfliooblkbi/images/icn-settings@2x.png" id="settingsIcon">
+                        <div id="settingsMenuDropDown" class="settings-bubble" style="display: none;">
+                            <table>
+                                <tbody><tr>
+                                    <td class="settingsMenu" id="settingsDownloadApp">
+                                        <span>Mobile App</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="settingsMenu" id="settingsFeedBack">
+                                        <span>Feedback</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="settingsMenu" id="settingsRateUs">
+                                        <span>Rate Us</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="settingsMenu" id="settingsTwwetUs">
+                                        <span>Tweet Us</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="settingsMenu" id="settingsSignout">
+                                        <span>Sign Out</span>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                    </div>
+                </td>
+                <td style="vertical-align: middle;text-align: center;">
+                    <img src="chrome-extension://cfdcbcipacngnjmpmhkbkcfliooblkbi/images/Icon-App-32x32@2x.png" id="logoImage" style="max-width: 35px;vertical-align: middle;text-align: center;display: initial;">
+                    <span class="logotitle">Notebook</span>
+                </td>
+            </tr>
+        </table>
+	    <div class="helpVideo" id='helpVideo'></div>
+        <table class="optionsTable" style="display:none;" id="optionsTable" align="center">
+            <tr style="cursor:pointer;" id="clipLinka" class="optionsLink">
+            	<td align="right" style="padding-right:5px;vertical-align: middle;" width="40%">
+                     <img src="" id="cliplink" style="max-width:24px;"/>
+                </td>
+                <td align="left" style="height:24px;vertical-align:middle;font-family: 'Source Sans Pro';font-size:17px;">Clean View</td>
+            </tr>
+            <tr style="cursor:pointer;" id="pagelinka" class="optionsLink">
+            	<td align="right" style="vertical-align: middle;">
+                    <img src="" id="pagelink" style="max-width:24px;"/>
+                </td>
+            	<td align="left" style="padding-left:5px;vertical-align:middle;height:24px;font-family: 'Source Sans Pro';font-size: 17px;">Page Link</td>
+            </tr>
+            <tr style="cursor:pointer;" id="screenshota" class="optionsLink">
+            	<td align="right" style="padding-right:5px;vertical-align: middle;">
+                    <img src="" id="screenshot" style="max-width:24px;"/>
+                </td>
+                <td align="left" style="vertical-align:middle;height:24px;font-family: 'Source Sans Pro';font-size: 17px;">Screenshot</td>
+                <td id="loadingsstd" style="display:none;"><img src="" id="loadingss" style="max-height: 15px;"/></td>
+            </tr>
+        </table>
+	</div>
+	<div id="errorMessage" class="errorMessage"></div>
+    
+    <div id="feedbackContainer" style="display:none">
+        <div id="feedbackTitleContainer">
+            <div class="feedbackTitle">Feedback</div>
+            <div id="closeFeedBack">
+                <img src="" id="closeFeedBackImage" style="max-width: 24px;vertical-align: bottom;"/>
+            </div>
+        </div>
+        <div class="feedbackField">
+            <div class="feedbackFieldTitle">Email</div>
+            <input type="text" class="feedbackFieldValue" id="feedbackEmail" value="" placeholder="Enter your email address"/>
+        </div>
+        <div class="feedbackField">
+            <div class="feedbackFieldTitle">URL</div>
+            <input type="text" class="feedbackFieldValue" id="feedbackCurrentUrl" />
+        </div>
+        <div class="feedbackField" id="feedbackCommentsField">
+            <div id="feedbackComments" contenteditable="true"></div>
+<!--
+            <textarea id="feedbackComments" placeholder="Comments"></textarea>
+            <div></div>
+-->
+        </div>
+        <div id="feedBackAttachmentContainer">
+            <div id="feedbackFileAttachment" >
+                <label for="feedbackAttachment">
+                    <img src="" id="feedbackAttachmentImage" style="width:24px; height:24px;"/>
+                </label>
+                <input type="file" id="feedbackAttachment" accept="image/*">
+            </div>
+            <div id="feedbackScreenshot">
+                <table>
+                    <tr>
+                        <td><img src="" id="feedbackScreenshotIcon"/></td>
+                        <td style="vertical-align:middle;"><div>Screenshot</div></td>
+                    </tr>
+                </table>
+                <img src="/" id="feedbackScreenshotImage" style="display:none;">
+            </div>
+            <div id="feedbackAttachmentNameContainer" style="display:none;">
+                <div id="feedbackAttachmentName"></div>
+                <img src="" id="feedbackAttachmentRemove"/>
+            </div>
+        </div>
+        <div id="feedbackSend">
+            <div>Send</div>
+        </div>
+    </div>
+    
+    <div id="downloadAppContainer" style="display:none;text-align:center">
+    <img src="" id="closeDownload" style="max-width: 24px;vertical-align: bottom;position:absolute;top:10px;right:10px;"/>
+        <div id="logoWrapper">
+			<img src="" id="notebookAppDownloadLogo" style="display:initial;">
+		</div>
+		<p id="appTitle">Download Notebook App</p>
+		<p id="notebookAppDownloadMessage" class="downloadAppMessages"></p>
+		<div id="storeContainer">
+			<div id="ituneLink">
+				<a id="appStoreLink" href="https://itunes.apple.com/app/id973801089" target="_blank">
+                    <img src="" id="notebookAppStoreImage">
+				</a>
+			</div>
+			<div id="androidLink">
+				<a id="playStoreLink" href="https://play.google.com/store/apps/details?id=com.zoho.notebook" target="_blank">
+                    <img src="" id="notebookPlayStoreImage" style="display:initial;">
+				</a>
+			</div>
+		</div>
+        <div style="text-align:center;margin:10px 0 5px 0px;font-size:16px">or</div>
+        <div style="margin:0 auto;"><img src="" id="notebookAppQRCode" style="width:120px;height:120px;display:initial;margin:0 auto;"/></div>
+        <div style="width:65%;margin:0 auto;font-size:14px;"><span style="color:#8f9193;text-align:center;font-family:'Source Sans Pro';">Scan QR code from your phone to download</span></div>
+        <br>
+        <hr style="color:#ccc;width:90%;margin:0 auto;">
+        <br>
+        <div id="MacLink">
+            <a id="MacStoreLink" href="https://itunes.apple.com/us/app/notebook-take-notes-sync-across/id1173152781?ls=1&mt=12" target="_blank">
+                    <img src="" id="notebookMacStoreImage" style="display:initial;max-height:35px;cursor:pointer;">
+            </a>
+        </div>
+
+    </div>
+
+    <div id="rateusContainer" style="text-align:center;font-family: 'Source Sans Pro';width:320px;height:550px;padding:10%;display: none;position:absolute;box-sizing: border-box;transition: all 0.3s linear">
+            <div id="closeRating" style="position: absolute;top: 15px;right: 15px;">
+                    <img src="" id="backtohome" style="max-width: 24px;vertical-align: bottom;width: 24px;
+                    height: 24px;cursor: pointer;"/>
+            </div>
+            <div  style="margin-top:15%;" >
+            <div id="logoWrapper_rate" style="padding:5% 0%;">
+                <img src="" id="notebookAppDownloadLogo_rate" style="display:initial;">
+            </div>
+            <span style="font-size:1.3em;margin:5% 0% 10% 0%;">How's it going?</span>
+            <p style="font-size:14px;">We would really appreciate if you take time to share your experiences.How is your experience with Notebook Web Clipper?</p>
+            <div style="margin: 0 auto;height: 150px;width: 200px;box-sizing:border-box;padding:10% 15%;">
+                    <img src="" style="width:50px;height:50px;border-radius:50%;float:left;" id="thumsup" class="thums" />
+                    <img src="" style="width:50px;height:50px;border-radius:50%;float:right;" id="thumsdown" class="thums" />
+            </div>
+            </div>
+        </div>
+
+	<div id="bottomhalf" style="">
+	    <div id="account" class="signinextn" style="display:none">
+            <div class="signinextn-message" id="signinextn-message"> Clip the web. Save to Notebook</div>
+            <div class="helpVideo" id='helpVideo1' style="margin-top:40px;"></div>
+            <div class="signinextn-button" id="signinextn-button"><a href="javascript:void(0)" id="signup-action"> Sign up </a></div>
+            <div class="extnbottom-message">
+                Already have a Zoho account?<br />
+                <a id="signin-action" style="cursor:pointer;"> Sign in </a>
+            </div>
+            <div id="clipLinka1" style="text-align: center;font-size: 17px;font-family: 'Source Sans Pro';cursor:pointer;padding: 8px;background-color: black;color: white;width: 100%;position:absolute;bottom:0px;height:24px;line-height:24px;-webkit-font-smoothing:antialiased;">
+	            <img src="" id="cliplink1" style="max-width:24px;vertical-align: middle;" class="invertColor"/>
+				&nbsp;Clean View
+	        </div>
+        </div>
+	</div>
+	<div class="loading" id="saveLoader" style="width:0px;display:none">
+	    <div class="w3-progress-container">
+	        <div style="text-align:left;margin:5px;font-family:'Source Sans Pro'" id="status">
+	            <span id="statusMessage"></span>
+	            <div style="float:right;cursor:pointer;font-family:'Source Sans Pro'" id="closeMessage">
+	                <img src="" id="closeExtnMessageImage" style="max-width: 15px;vertical-align: middle;">
+	            </div>
+	        </div>
+	        <!--<div class="separator">&nbsp;</div>-->
+	        <div class="w3-progressbar" style="width:0%;padding:5px;white-space: nowrap;" id="titleNameDisplay"></div>
+	    </div>
+	</div>
+	<div id="editorhalf" style="display:none;height:100%;">
+		<table class='title' id="titleTable" cellpadding="0">
+	        <tr>
+	            <td style="padding-left:10%;">
+	                <input id='title' type='text' placeholder='Title' class='titleText' style="text-align:center"/>
+	            </td>
+	            <td id="closeExtnMain" style="cursor:pointer;" align="left" width="10%">
+	                <img src="" id="closeExtnMainImage" style="max-width: 24px;vertical-align: bottom;display:none;"/>
+                    <img id="saveButton" src="" alt="Readable Version" style='max-width: 24px;cursor:pointer;display:none;'/>
+	            </td>
+	        </tr>
+	    </table>
+		<div id="clippedContent" class='textarea'>
+	        <div class="fileinputs" style="display:none" id="photoinput">
+	            <input type="file" class="file" accept="image/*" id="actualphoto" multiple/>
+	            <div style="text-align:center;" class="fakefile" id="fakefile">
+                    <table>
+                        <tr>
+                            <td style="width: 60%;padding-left: 45%;"><img id='addPhoto' alt="Add Photo" src="" style="max-width: 24px;cursor:pointer;transition:0.5s;vertical-align:middle;padding-right:10px;" class="whitescale"></td><td style="vertical-align:middle;">Add Photos</td>
+                        </tr>
+                    </table>
+                </div>
+	            <div class="draganddropdiv" id="draganddropdiv">Drag and drop photos from your desktop</div>
+	        </div>
+	        <div contenteditable="true" id='mainContent' class="mainContent"></div>
+	    </div>
+	    <div id="colorPalletes" class="colorPalletes"></div>
+	    <table class="colorPicker" id="colorPicker" cellpadding="0" cellspacing="0">
+	        <tr>
+	        	<td id="screenshotpage" width="50%" class="screenshotpage">
+                    <table style="margin-left:5px;">
+                        <tr>
+                            <td style="vertical-align:middle;height:40px;"><img id='snapshotwebpage' alt="Snapshot Web page" src="" style="max-width: 25px;cursor:pointer;transition:0.5s;vertical-align:middle;"></td>
+                            <td style="vertical-align:middle;height:40px;color:ghostwhite;font-weight:100;">Screenshot</td>
+    		                <td style="vertical-align:middle;height:40px;"><img src="" id="loadingss1" style="max-height: 15px;vertical-align:middle;display:none;padding-left:10px;"/> </td>
+                        </tr>
+                    </table>
+	        	</td>
+	            <td width="50%" align="left" id="colorComponent" style="vertical-align:middle;">
+	                <table cellpadding='0' cellspacing='0' border='0'>
+	                    <tr>
+	                        <td style="display:none">
+	                            <button id="color" style='cursor:pointer;width: 20px;height:20px;border-radius:10px;'></button>
+	                        </td>
+	                        <td>&nbsp;&nbsp;</td>
+	                        <td>
+	                            <img src="" id="colorPickerImage" style="max-width:25px;cursor:pointer;display:;vertical-align:middle;"/>
+	                        </td>
+	                    </tr>
+	                </table>
+	            </td>
+	            <td width="50%" id="dummytd"></td>
+	            <td id="notebooklistInner" style="white-space: nowrap;min-width:170px;vertical-align:middle;">
+                    <table style="border:1px solid;border-color:black;margin-right:10px;" id="selectedNotebookTable">
+                        <tr>
+                            <td id="selectedNotebook" class="dropdown" style="padding-left:5px;"><button class="dropbtn" style="width:140px;text-align:left;"><span id="notebookname" style="color:white;"></span>&nbsp;</td>
+                            <td style="vertical-align:middle;padding-right:10px;"><img src="" id="downarrow" style="max-width:10px;display:none;vertical-align:middle;margin-bottom: 2px;" class="invertColor"/></td>
+                            <div id="notebooks" class="dropdown-content" style="display:none;"></div>
+                        </tr>
+                    </table>
+	            	<!-- <div id="selectedNotebook" class="dropdown"><button class="dropbtn" style="width:160px;text-align:left;"><span id="notebookname" style="color:white;"></span>&nbsp;<div style="float:right;"><img src="" id="downarrow" style="max-width:10px;display:none;vertical-align:middle;margin-bottom: 2px;" class="invertColor"/></button><div id="notebooks" class="dropdown-content" style="display:none;"></div></div> -->
+	            </td>
+	        </tr>
+	    </table>
+	</div>
+	<table class='icondiv' id="icondiv" style="display:none">
+        <tr style="height:70%;vertical-align:bottom;">
+            <td width='33%' align='center' style="vertical-align:middle;"><img id='home' alt="Home" src="" style="max-width: 24px;cursor:pointer;transition:0.5s;" class="grayscale"><div style="height: 1px;background-color: green;width: 20%;" id="hometd">&nbsp;</div></td>
+            <td width='33%' align='center' style="vertical-align:middle;"><img id='textnote' alt="Text Note" src="" style="max-width: 24px;cursor:pointer;transition:0.5s;" class="grayscale"><div style="height: 1px;background-color: black;width: 20%;display:;" id="texttd">&nbsp;</div></td>
+            <td width='33%' align='center' style="vertical-align:middle;"><img id='photonote' alt="Photo Note" src="" style="max-width: 24px;cursor:pointer;transition:0.5s;" class="grayscale"><div style="height: 1px;background-color: black;width: 20%;display:;" id="phototd">&nbsp;</div></td>
+        </tr>
+    </table>
+</div>
+<div id="loginPage" class="loginPage" style="display:none"></div>

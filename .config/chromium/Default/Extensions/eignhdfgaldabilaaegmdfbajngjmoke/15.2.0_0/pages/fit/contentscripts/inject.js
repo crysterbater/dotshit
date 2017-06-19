@@ -1,0 +1,1 @@
+!function(){"use strict";function e(){document.documentElement?document.documentElement.insertBefore(t,document.documentElement.firstChild):setTimeout(e,.01)}var t=document.createElement("script");t.src=chrome.runtime.getURL("pages/fit/contentscripts/page.js"),e()}();

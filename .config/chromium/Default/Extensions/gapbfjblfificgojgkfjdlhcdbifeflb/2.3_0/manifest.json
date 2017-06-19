@@ -1,0 +1,26 @@
+{
+   "background": {
+      "scripts": [ "js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "images/icon16.png",
+      "default_popup": "pop.html",
+      "default_title": "Mini Hype Machine"
+   },
+   "content_scripts": [ {
+      "js": [ "js/jquery.min.js", "js/Parser.js", "js/hype-script.js" ],
+      "matches": [ "http://hypem.com/*" ]
+   } ],
+   "description": "Pause, skip, favorite, and read about each song on Hypem.com without ever having to find the tab!",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDF2qRqekDycx/9RlkA4ULT7Z4XVG8XIhYoxBDsMdDclxfG190PoYvKWSb265TqI+R6nGYm7rcfvKKUX8ISR/slz4xU9/NhNOQVbiZC+/kCgHLyJgW0zoFheNTfoGW6nNxkZ+jYnCOm+zURvC4KV7O6lSj51GOeIVZEuV537YYJUQIDAQAB",
+   "manifest_version": 2,
+   "name": "Mini Hype Machine",
+   "permissions": [ "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.3"
+}

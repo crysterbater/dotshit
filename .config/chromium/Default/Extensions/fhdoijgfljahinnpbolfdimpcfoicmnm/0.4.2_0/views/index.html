@@ -1,0 +1,216 @@
+<!doctype html>
+<html ng-app="chromeADB" ng-csp>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChromeADB">
+    <meta name="author" content="importre">
+
+    <title>ChromeADB</title>
+
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-route/angular-route.min.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+
+    <script src="../scripts/utils.js"></script>
+    <script src="../scripts/parser.js"></script>
+
+    <script src="../scripts/chromeadb.js"></script>
+    <script src="../scripts/services.js"></script>
+    <script src="../scripts/controllers.js"></script>
+
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bower_components/jqplot/jquery.jqplot.min.css" rel="stylesheet">
+    <link href="../styles/chromeadb.css" rel="stylesheet">
+</head>
+
+<body ng-controller="controller">
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" ng-click="loadDevices();">
+                <img src="../assets/ChromeADBLogo.png"/>
+            </a>
+        </div>
+        <div>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="host"
+                           placeholder="host (ex: 127.0.0.1)">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="port"
+                           placeholder="port (ex: 5037)">
+                </div>
+                <button type="submit" class="btn btn-success" ng-click="loadDevices();">
+                    Connect
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<!--end div.navbar-->
+
+<div class="container" ng-init="loadDevices();">
+    <div class="row">
+
+        <!--left side menu-->
+        <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Device List <span class="badge pull-right">{{ numOfDevices }}</span>
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="nav nav-pills nav-stacked" ng-model="devInfo">
+                        <li ng-class="{'active': deviceInfo == devInfo}"
+                            ng-repeat="deviceInfo in deviceInfoList">
+                            <a href="#" ng-click="loadDeviceInfo(deviceInfo.serial);">
+                                {{ deviceInfo.model }}
+                                <small>({{ deviceInfo.serial }})</small>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">Device Info</div>
+
+                <div class="panel-body" ng-show="devInfo">
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                        <tr class="active">
+                            <th style="width: 40%"></th>
+                            <th>INFO</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="active text-center">STATE</td>
+                            <td class="text-center">{{ devInfo.state }}</td>
+                        </tr>
+                        <tr>
+                            <td class="active text-center">USB</td>
+                            <td class="text-center">{{ devInfo.usb }}</td>
+                        </tr>
+                        <tr>
+                            <td class="active text-center">PRODUCT</td>
+                            <td class="text-center">{{ devInfo.product }}</td>
+                        </tr>
+                        <tr>
+                            <td class="active text-center">DEVICE</td>
+                            <td class="text-center">{{ devInfo.device }}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">Log Message</div>
+
+                <div class="panel-body">
+                    <p><b>{{ logMessage.cmd }}</b></p>
+
+                    <p>{{ logMessage.res }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!--right contents-->
+        <div class="col-md-9" ng-model="devInfo">
+
+            <!--tabs-->
+            <div>
+                <ul class="nav nav-pills nav-justified" id="mytab">
+                    <li>
+                        <a href="#packages" data-toggle="tab"
+                           ng-click="loadPackages(devInfo.serial);">Packages</a>
+                    </li>
+                    <li>
+                        <a href="#controller" data-toggle="tab"
+                           ng-click="initMousePad(devInfo.serial);">Controller</a>
+                    </li>
+                    <li>
+                        <a href="#processes" data-toggle="tab"
+                           ng-click="loadProcessList(devInfo.serial);">Process List</a>
+                    </li>
+                    <li>
+                        <a href="#meminfo" data-toggle="tab"
+                           ng-click="loadMemInfo(devInfo.serial);">App Memory Info</a>
+                    </li>
+                    <li>
+                        <a href="#diskspace" data-toggle="tab"
+                           ng-click="loadDiskSpace(devInfo.serial);">Disk Space</a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr/>
+
+            <!--tab contents-->
+            <div class="tab-content">
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+    <!--end div.row-->
+
+    <!--footer-->
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            <div class="navbar-right">
+                <div class="navbar-bottom-brand">
+                    <a href="http://bricksimple.com" target="_blank">
+                        <img src="../assets/BrickLogo2011.png" title="BrickSimple LLC"/>
+                    </a>
+                    <a href="https://github.com/importre/chromeadb" target="_blank">
+                        <img src="../assets/github.png" title="ChromeADB Github"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end div.container-->
+
+<!--alert dialog-->
+<div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="alertLabel"
+     aria-hidden="true" ng-model="tempPkgCmd">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="alertLabel">{{ tempPkgCmd.packageName }}</h4>
+            </div>
+            <div class="modal-body">Do you want to {{ tempPkgCmd.msg }} ?</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Cancel
+                </button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal"
+                        ng-click="tempPkgCmd.func(tempPkgCmd.serial, tempPkgCmd.packageName);">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../bower_components/jquery/jquery.min.js"></script>
+<script src="../bower_components/jqplot/jquery.jqplot.min.js"></script>
+<script src="../bower_components/jqplot/plugins/jqplot.canvasTextRenderer.min.js"></script>
+<script src="../bower_components/jqplot/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

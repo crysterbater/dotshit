@@ -1,0 +1,791 @@
+{
+   "AddSearchEngine": {
+      "message": "サーチエンジンを追加"
+   },
+   "Added": {
+      "message": "追加されました"
+   },
+   "AdditionalSearchEngine": {
+      "message": "付属のサーチエンジン"
+   },
+   "Amazon": {
+      "message": "Amazon"
+   },
+   "AmazonUrl": {
+      "message": "http://www.amazon.co.jp/"
+   },
+   "Answers": {
+      "message": "回答"
+   },
+   "Apps": {
+      "message": "アプリ"
+   },
+   "AppsAndExtensions": {
+      "message": "アプリと拡張機能"
+   },
+   "AutomaticallyChangeWallpaper": {
+      "message": "自動的に壁紙を変更"
+   },
+   "Baidu": {
+      "message": "百&nbsp;&nbsp;度"
+   },
+   "BingBg": {
+      "message": "Bingテーマ"
+   },
+   "BlurWallpaper": {
+      "message": "壁紙をぼかす"
+   },
+   "BookmarkChanged": {
+      "message": "*ブックマークが横側に移動されました"
+   },
+   "Bookmarks": {
+      "message": "ブックマーク"
+   },
+   "Bookmarksbar": {
+      "message": "ブックマークバー"
+   },
+   "BrowsingHistoryHasBeenCleared": {
+      "message": "履歴が削除されました"
+   },
+   "CanNotBeEmpty": {
+      "message": "サーチエンジンの名前とURLを入れてください"
+   },
+   "Cancel": {
+      "message": "キャンセル"
+   },
+   "CategoryAppTools": {
+      "message": "アプリ&ツール"
+   },
+   "CategoryCareerEdu": {
+      "message": "仕事&教育"
+   },
+   "CategoryComputerTech": {
+      "message": "コンピュータ&科学"
+   },
+   "CategoryFinanceBiz": {
+      "message": "経済&ビジネス"
+   },
+   "CategoryGames": {
+      "message": "ゲーム&エンターテイメント"
+   },
+   "CategoryLife": {
+      "message": "生活"
+   },
+   "CategoryMusicVideo": {
+      "message": "音楽&動画"
+   },
+   "CategoryNews": {
+      "message": "ニュース"
+   },
+   "CategoryOther": {
+      "message": "その他"
+   },
+   "CategoryPhoto": {
+      "message": "写真&画像"
+   },
+   "CategoryPopular": {
+      "message": "人気"
+   },
+   "CategoryShopping": {
+      "message": "ショッピング"
+   },
+   "CategorySocialBlog": {
+      "message": "SNS&ブログ"
+   },
+   "CategorySportsTravel": {
+      "message": "スポーツ&旅行"
+   },
+   "Celsius": {
+      "message": "摂氏"
+   },
+   "Change": {
+      "message": "変更"
+   },
+   "ChangePassword": {
+      "message": "パスワードを変更"
+   },
+   "ChromeStore": {
+      "message": "chromeストア"
+   },
+   "CityName": {
+      "message": "区市町村の名前"
+   },
+   "ClearAllBrowsingHistory": {
+      "message": "履歴を削除"
+   },
+   "ClearAllDones": {
+      "message": "完了したものを削除"
+   },
+   "CloudBackup": {
+      "message": "ネットに同期"
+   },
+   "ContactUs": {
+      "message": "お問い合わせ"
+   },
+   "CurrentLocation": {
+      "message": "現在の場所: "
+   },
+   "DefaultWallpaper": {
+      "message": "デフォルトの壁紙"
+   },
+   "Disable": {
+      "message": "無効"
+   },
+   "Download": {
+      "message": "ダウンロード"
+   },
+   "DownloadWP": {
+      "message": "壁紙をダウンロード"
+   },
+   "DownloadWallpaper": {
+      "message": "この壁紙をダウンロード"
+   },
+   "Edit": {
+      "message": "編集"
+   },
+   "EmailToUs": {
+      "message": "開発者にメール"
+   },
+   "Enable": {
+      "message": "有効"
+   },
+   "EnableBookmarksBar": {
+      "message": "ブックマークバー"
+   },
+   "EnableMostVisited": {
+      "message": "よく訪問するページ"
+   },
+   "EnableSearchBox": {
+      "message": "検索ボックス"
+   },
+   "EnableSearchType": {
+      "message": "検索種別"
+   },
+   "Extensions": {
+      "message": "拡張機能"
+   },
+   "Fahrenheit": {
+      "message": "華氏"
+   },
+   "Find": {
+      "message": "検索"
+   },
+   "FindYourAccount": {
+      "message": "アカウントを見つける"
+   },
+   "Friday": {
+      "message": "金曜日"
+   },
+   "Generate": {
+      "message": "作成"
+   },
+   "GenerateBackupFile": {
+      "message": "バックアップを作成"
+   },
+   "GmailNotifications": {
+      "message": "Gmail通知"
+   },
+   "HasBeenDeleted": {
+      "message": "削除されました"
+   },
+   "HasBeenDisabled": {
+      "message": "無効になりました"
+   },
+   "HasBeenEnabled": {
+      "message": "有効になりました"
+   },
+   "HasBeenUninstalled": {
+      "message": "アンインストールされています"
+   },
+   "HasBeenUpdated": {
+      "message": "アップデートしました"
+   },
+   "History": {
+      "message": "履歴"
+   },
+   "Humidity": {
+      "message": "湿度"
+   },
+   "IconFillet": {
+      "message": "アイコンの角の丸み"
+   },
+   "IconOpacity": {
+      "message": "アイコンの不透明度"
+   },
+   "ImageSizeLimit": {
+      "message": "画像は3M以内にしてください"
+   },
+   "Images": {
+      "message": "画像"
+   },
+   "InfinityBg": {
+      "message": "Infinity壁紙"
+   },
+   "InfinityBgblur": {
+      "message": "Infinity壁紙（ぼかし）"
+   },
+   "LastBackupAt": {
+      "message": "前回のバックアップ："
+   },
+   "LocalWallpaper": {
+      "message": "ローカルの壁紙"
+   },
+   "Locating": {
+      "message": "現在位置を取得中..."
+   },
+   "LogOffConfirm": {
+      "message": "ログアウトしてよろしいですか？"
+   },
+   "LoginMenuFontSize": {
+      "message": "15px; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif"
+   },
+   "LoginSuccess": {
+      "message": "ログインに成功しました"
+   },
+   "Logout": {
+      "message": "ログアウト"
+   },
+   "MainSearchEngine": {
+      "message": "メインサーチエンジン"
+   },
+   "Maps": {
+      "message": "地図"
+   },
+   "Monday": {
+      "message": "月曜日"
+   },
+   "MostVisitedMoved": {
+      "message": "*よく訪問するページは上部に移動されました"
+   },
+   "Musics": {
+      "message": "音楽"
+   },
+   "NETWORKERROR": {
+      "message": "ネットワークに問題がありそうです"
+   },
+   "NewNote": {
+      "message": "新しいメモ"
+   },
+   "NewPassword": {
+      "message": "新しいパスワード"
+   },
+   "News": {
+      "message": "ニュース"
+   },
+   "NoSpace": {
+      "message": "このページにスペースが有りません"
+   },
+   "NotesAndIdeas": {
+      "message": "メモとアイディア"
+   },
+   "Notfoundcity": {
+      "message": "場所情報が見つかりませんでした"
+   },
+   "NotificationSound": {
+      "message": "通知音"
+   },
+   "NumberOfItems": {
+      "message": "項目数"
+   },
+   "OFF": {
+      "message": "オフ"
+   },
+   "OFFleft": {
+      "message": "25px; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif"
+   },
+   "ON": {
+      "message": "オン"
+   },
+   "ONleft": {
+      "message": "31px; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif"
+   },
+   "OldPassword": {
+      "message": "古いパスワード"
+   },
+   "OpenBookmarkIn": {
+      "message": "新しいタブでブックマークを開く"
+   },
+   "OpenLinksInNewtab": {
+      "message": "新しいタブでリンクを開く"
+   },
+   "OurOfficialWebsite": {
+      "message": "ホームページを訪問"
+   },
+   "Password": {
+      "message": "パスワード"
+   },
+   "PleaseEnableIt": {
+      "message": "まずはこのアプリを有効にしてください"
+   },
+   "PressEnterToQuery": {
+      "message": "ENTERを押して検索"
+   },
+   "Pressure": {
+      "message": "気圧"
+   },
+   "PrivacyPolicy": {
+      "message": "個人情報保護方針"
+   },
+   "Query": {
+      "message": "検索中..."
+   },
+   "Read": {
+      "message": "閲覧"
+   },
+   "Recovery": {
+      "message": "復元"
+   },
+   "RecoveryDataFailed": {
+      "message": "データの復元に失敗しました"
+   },
+   "RecoveryDataSuccess": {
+      "message": "データの復元に成功しました"
+   },
+   "RecoveryFromCloud": {
+      "message": "ネットからデータを復元する"
+   },
+   "RecoveryFromFile": {
+      "message": "ファイルからデータを復元する"
+   },
+   "Register": {
+      "message": "登録"
+   },
+   "RegisterButton": {
+      "message": "登録"
+   },
+   "RegisterSuccessAndAutoLogin": {
+      "message": "登録に成功したので自動的にログインしました"
+   },
+   "RegistrationFailed": {
+      "message": "登録に失敗しました"
+   },
+   "RestoreWallpaper": {
+      "message": "設定された壁紙を復元します"
+   },
+   "Saturday": {
+      "message": "土曜日"
+   },
+   "SearchInNewtab": {
+      "message": "検索結果を新タブで表示"
+   },
+   "SelectImageFontSize": {
+      "message": "14px; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif"
+   },
+   "ShareIconToOther": {
+      "message": "同時的にアイコンを他の人に知らせます"
+   },
+   "ShareToYourFriends": {
+      "message": "お友達に知らせる"
+   },
+   "SignAndIn": {
+      "message": "ログイン"
+   },
+   "SignIn": {
+      "message": "ログイン"
+   },
+   "SignInOrRegister": {
+      "message": "ログインまたは登録"
+   },
+   "SignInToUseTheFeature": {
+      "message": "ログインして機能を使う"
+   },
+   "Sogou": {
+      "message": "Sogou"
+   },
+   "Sports": {
+      "message": "スポーツ"
+   },
+   "StartAnimation": {
+      "message": "開始時のアニメーション"
+   },
+   "Submit": {
+      "message": "確定"
+   },
+   "Sunday": {
+      "message": "日曜日"
+   },
+   "TemperatureUnit": {
+      "message": "温度の単位"
+   },
+   "TermsOfUse": {
+      "message": "プライバシーと利用条件"
+   },
+   "TermsofUse": {
+      "message": "利用規約"
+   },
+   "Thursday": {
+      "message": "木曜日"
+   },
+   "Todo": {
+      "message": "Todo"
+   },
+   "Todos": {
+      "message": "Todo"
+   },
+   "TodotypeMarginLeft": {
+      "message": "82px; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif"
+   },
+   "Tomorrow": {
+      "message": "明日"
+   },
+   "Tuesday": {
+      "message": "火曜日"
+   },
+   "UploadLocalWallpaper": {
+      "message": "壁紙のアップロードにはログインが必要です"
+   },
+   "UserName": {
+      "message": "メールアドレス"
+   },
+   "UsernameAlreadyExists": {
+      "message": "このメールアドレスは既に利用されています。ログインするか、「アカウントを探す」を利用してください。"
+   },
+   "UsernameDoesNotExist": {
+      "message": "このメールアドレスは登録されていません"
+   },
+   "UsernameOrPasswordWrong": {
+      "message": "ユーザーまたはパスワードが違います"
+   },
+   "VerifyCode": {
+      "message": "確認コード"
+   },
+   "VerifyCodeError": {
+      "message": "確認コードが違います"
+   },
+   "Videos": {
+      "message": "動画"
+   },
+   "WeChat": {
+      "message": "WeChat"
+   },
+   "Weather": {
+      "message": "天気"
+   },
+   "WeatherLocation": {
+      "message": "天気の場所"
+   },
+   "WeatherLocationHasBeenSettedTo": {
+      "message": "天気は次の場所に変更されました："
+   },
+   "Web": {
+      "message": "ホームページ"
+   },
+   "Website": {
+      "message": "ホームページ: "
+   },
+   "Wednesday": {
+      "message": "水曜日"
+   },
+   "Wind": {
+      "message": "風"
+   },
+   "Yes": {
+      "message": "ログアウト"
+   },
+   "adName": {
+      "message": "amazon"
+   },
+   "addCustomItem": {
+      "message": "項目を追加"
+   },
+   "addMenuMarginLeft": {
+      "message": "0px; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif"
+   },
+   "addMenuSize": {
+      "message": "16px; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif"
+   },
+   "addSearchName": {
+      "message": "サーチエンジン名"
+   },
+   "addSearchUrl": {
+      "message": "%sで検索パラメータを入れ替え"
+   },
+   "addTitle": {
+      "message": "名前"
+   },
+   "addUrl": {
+      "message": "URL"
+   },
+   "addmenuPaddingLeft": {
+      "message": "40px; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif"
+   },
+   "application": {
+      "message": "アプリ&拡張機能"
+   },
+   "background": {
+      "message": "テーマ"
+   },
+   "backupToCloud": {
+      "message": "クラウドへの手動バックアップ"
+   },
+   "bingNot": {
+      "message": "Bing壁紙はぼかしをサポートしていません"
+   },
+   "bookmark_manage": {
+      "message": "ブックマーク"
+   },
+   "buttonFontSize": {
+      "message": "15px !important; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif !important"
+   },
+   "customItem": {
+      "message": "カスタム"
+   },
+   "deSearch": {
+      "message": "Google"
+   },
+   "default": {
+      "message": "デフォルト"
+   },
+   "defaultBottomSearch": {
+      "message": "http://ja.wikipedia.org/wiki/"
+   },
+   "defaultSearchName": {
+      "message": "Wikipedia"
+   },
+   "displayIntop": {
+      "message": "上部に表示"
+   },
+   "donate": {
+      "message": "寄付"
+   },
+   "donateDesc": {
+      "message": "より安定したサービスとより多くの機能の為に寄付しませんか？"
+   },
+   "donateShow": {
+      "message": "none"
+   },
+   "donateShowAlipay": {
+      "message": "block"
+   },
+   "emailCodenotEmpty": {
+      "message": "メールアドレスと確認コードを入れてください"
+   },
+   "emailError": {
+      "message": "メールアドレスが間違っています"
+   },
+   "emailInvalid": {
+      "message": "メールアドレスが間違っています"
+   },
+   "emailOrName": {
+      "message": "メールアドレスまたはニックネーム（オプション）"
+   },
+   "emp": {
+      "message": "空き"
+   },
+   "extdesc": {
+      "message": "InfinityタブはChromeのクラウドアプリサービスです。もっと上品に、楽にChromeを楽しむことができます。"
+   },
+   "extensionItemAbleFontSize": {
+      "message": "16px; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif"
+   },
+   "extensionItemAbleLineHeight": {
+      "message": "2.4"
+   },
+   "extname": {
+      "message": "Infinityタブ"
+   },
+   "feedback": {
+      "message": "フィードバック"
+   },
+   "feedbackOnline": {
+      "message": "オンラインでフイードバック"
+   },
+   "fontColor": {
+      "message": "文字の色"
+   },
+   "fontsize": {
+      "message": "14px; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif"
+   },
+   "forgotPassword": {
+      "message": "パスワードを忘れましたか？"
+   },
+   "general": {
+      "message": "一般"
+   },
+   "gplus": {
+      "message": "Google +"
+   },
+   "gplusIco": {
+      "message": "0"
+   },
+   "gplusUrl": {
+      "message": "https://plus.google.com"
+   },
+   "help": {
+      "message": "ヘルプ"
+   },
+   "help1": {
+      "message": "1.何か検索語を入れてサーチエンジンで検索します。\u003Cbr>例えばWikipediaで\"infinity\"と入れて検索し、\u003Cbr>\"https://ja.wikipedia.org/wiki/\u003Cspan style=\"color:#1ABC9C;\">Infinity\u003C/span>\"というURLを得ます"
+   },
+   "help3": {
+      "message": "3.そのURLを入力し、\"サーチエンジンを追加\"をクリックします"
+   },
+   "help4": {
+      "message": "追加のサーチエンジン"
+   },
+   "help5": {
+      "message": "サーチエンジンを追加"
+   },
+   "help6": {
+      "message": "4.何か検索します"
+   },
+   "hideAds": {
+      "message": "クリックすると三日間表示しません"
+   },
+   "howToAdd": {
+      "message": "どうやって検索サーチエンジンを追加しますか？"
+   },
+   "howtodelete": {
+      "message": "ヘルプ:どのようにして編集したり、項目を削除したりしますか？"
+   },
+   "hpa": {
+      "message": "none"
+   },
+   "imageSize": {
+      "message": "画像の拡大と縮小"
+   },
+   "lang": {
+      "message": "ja"
+   },
+   "letterSpacing": {
+      "message": "0"
+   },
+   "loginFailed": {
+      "message": "ログインが失敗しました"
+   },
+   "loginNoNull": {
+      "message": "メールアドレルと確認コードを入れてください"
+   },
+   "menuItemFontSize": {
+      "message": "20px; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif"
+   },
+   "menuItemMarginRight": {
+      "message": "30px; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif"
+   },
+   "miniMode": {
+      "message": "シンプルモード"
+   },
+   "mostVisited": {
+      "message": "よく訪問するアドレス"
+   },
+   "newtworkError": {
+      "message": "ネットワークエラーです"
+   },
+   "nextWallpaper": {
+      "message": "この変更は次の壁紙から有効になります"
+   },
+   "noTitle": {
+      "message": "無題"
+   },
+   "orderBy": {
+      "message": "orderc"
+   },
+   "pointColor": {
+      "message": "rgba(231, 76, 60, 0.5)"
+   },
+   "qqqun": {
+      "message": "none"
+   },
+   "randomWallpaper": {
+      "message": "ランダムの壁紙"
+   },
+   "recommended": {
+      "message": "オススメ"
+   },
+   "registerNotNull": {
+      "message": "メールアドレスや確認コード、パスワードはいずれも記入する必要があります"
+   },
+   "registrationInformationWrong": {
+      "message": "登録情報に間違いがあります"
+   },
+   "removeImage": {
+      "message": "画像の削除"
+   },
+   "saySomething": {
+      "message": "何かを話してください( ^_^ )"
+   },
+   "search": {
+      "message": "検索"
+   },
+   "searchBookmarks": {
+      "message": "ブックマークを検索"
+   },
+   "searchBy": {
+      "message": "次から検索："
+   },
+   "searchIni": {
+      "message": "Google"
+   },
+   "searchItem": {
+      "message": "アイテムを検索"
+   },
+   "searchOptionsMarginRight": {
+      "message": "30px; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif"
+   },
+   "searchhistory": {
+      "message": "履歴を検索"
+   },
+   "settingMenuFontSize": {
+      "message": "20px; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif"
+   },
+   "settingMenuMarginRight": {
+      "message": "50px; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif"
+   },
+   "settingMenuPaddingLeft": {
+      "message": "50px; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif"
+   },
+   "settings": {
+      "message": "設定"
+   },
+   "shareIcon": {
+      "message": "アイコンを共有"
+   },
+   "showPageAction": {
+      "message": "アドレスバーに追加ボタンを表示"
+   },
+   "signIn": {
+      "message": "アカウント"
+   },
+   "simpleTheme": {
+      "message": "シンプル"
+   },
+   "supportFile": {
+      "message": ""
+   },
+   "thankFeedback": {
+      "message": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ありがとうございます！\u003Cbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;フィードバックを頂きました。頂いたメッセージご連絡先があった場合、もし必要があればご連絡させていただきます。"
+   },
+   "todoDone": {
+      "message": "完了"
+   },
+   "topMenuFontSize": {
+      "message": "22px; font-family: 'Hiragino Maru Gothic Pro' ,'ヒラギノ丸ゴ Pro W4','HG丸ゴシックM-PRO' , 'メイリオ', MS P Gothic ,verdana ,arial ,sans-serif"
+   },
+   "tutorial": {
+      "message": "検索エンジン追加の仕方"
+   },
+   "uninstall": {
+      "message": "アンインストール"
+   },
+   "updateItem": {
+      "message": "項目を更新"
+   },
+   "upload": {
+      "message": "画像を選択"
+   },
+   "wallpaperIconFailed": {
+      "message": "ネットワーク接続ができません。ブラウザのキャッシュを削除して壁紙やアイコンをオフにした場合、データの同期や壁紙を変更することができません"
+   },
+   "wallpaperLoadFailed": {
+      "message": "壁紙のロードに失敗しました"
+   },
+   "wallpaperUploadFailed": {
+      "message": "壁紙のアップロードに失敗しました"
+   },
+   "whatNext": {
+      "message": "これから何がしたいですか？"
+   },
+   "yourWallpaper": {
+      "message": "あなたの壁紙がクラウドに同期されます"
+   }
+}

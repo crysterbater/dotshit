@@ -1,0 +1,25 @@
+{
+   "chrome_url_overrides": {
+      "newtab": "tab.html"
+   },
+   "content_security_policy": "script-src 'self' https://apis.google.com/ https://accounts.google.com https://oauth.googleusercontent.com https://ssl.gstatic.com 'unsafe-eval'; object-src 'self'",
+   "description": "A material, customizable, and hackable new tab extension.",
+   "icons": {
+      "128": "img/icon_128.png",
+      "48": "img/icon_48.png",
+      "64": "img/icon_64.png"
+   },
+   "incognito": "split",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjIy/0Zb3rk8u4ac/Mt8gfu1pw3VJOU6+6AydGzQqb4C2dS3n9FSsldVlaQ8C5eBfLMKebo18on9XS+hdivEoktMPV2S3QjZMTB+c9OLNHQKLlabU9Wjl6zXxGwIVA7qOHCCOxGz6VU8ynbUGsCFP2v8K/6U0G3eeQBR+Pz5t/raPeZc2JhEXiEBAEL7DJfAeFcFqapRzFztaZkF3lEYW5JKHvOtiSORiIDaNNyxB1HvPD7cRYC/VM4LwNhWi01qTa6hkyVLwPby8nPhtgHSA8O11iJJnDH62GLb9FSYQraELRzVk7L6IV93pYcGHi6n013IHFtQ1gNt4G7bjkjEbLwIDAQAB",
+   "manifest_version": 2,
+   "name": "Tabbie - Material New Tab Page",
+   "oauth2": {
+      "client_id": "2445668283-ovnfq4m0m03tmvkhh4rmj4qtu02l5tic.apps.googleusercontent.com",
+      "scopes": [ "https://www.googleapis.com/auth/gmail.modify", "profile" ]
+   },
+   "optional_permissions": [ "http://*/", "https://*/", "https://www.reddit.com/", "https://oauth.reddit.com/", "https://api.producthunt.com/", "http://storage.googleapis.com/", "https://feedly.com/", "management", "bookmarks", "chrome://favicon/*", "topSites", "sessions", "tabs" ],
+   "permissions": [ "identity", "https://lobste.rs/*", "https://api.behance.net/*" ],
+   "short_name": "Tabbie",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.3"
+}

@@ -1,0 +1,1 @@
+!function(){"use strict";window.iframes={ready:function(i,n){n.onShowShareboxOnly()},iframer:{setNotificationText:function(){}}}}();

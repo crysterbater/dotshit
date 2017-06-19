@@ -1,0 +1,21 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "scripts/background.js" ]
+      }
+   },
+   "description": "External Frameless Window for Youtube",
+   "icons": {
+      "128": "assets/fl-icon-128.png",
+      "16": "assets/fl-icon-16.png",
+      "32": "assets/fl-icon-32.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvJ5Gy+uIxSW44RBz4T80jCcTzpNYN5oDa2zIgK4XUDk0/RXBX70N27eNV/IeFwue2PgSpRouSfQSsqngSurTleSGPW/1Qtoo6qzTHpUIrCAKWY0cjUCt8dK+DYdncI74IQeR13F+5So9LAeV72kI1SiTcPvweuuZfgkzwCeF24CxnKqDTjspvCv832GhZwoAmrWakBLJA4bPIXkjsQ0t3H8iUsM6X1/30fLXtAb9C9BwaTF8QFDhnLcbq1D5B33mgZe7WSiKpDlH+yIJSaHCAeuMfyQCKHMtiS7qX0+ouVofiUOl6A9V+kuC6D7Lm/73byAVoEcDVHnDlIBEIDaGzQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "40",
+   "name": "Frameless for Youtube",
+   "permissions": [ "webview", "alwaysOnTopWindows", "storage", "contextMenus", "notifications", "unlimitedStorage", "\u003Call_urls>", "browser", "fullscreen" ],
+   "short_name": "Frameless Youtube",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.2.1"
+}

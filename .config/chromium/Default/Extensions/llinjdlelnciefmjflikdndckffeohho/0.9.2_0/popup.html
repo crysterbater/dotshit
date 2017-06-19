@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+    <title>Box for tabs</title>
+    <script src="./components/webcomponentsjs/webcomponents.js"></script>
+    <link rel="import"
+          href="./components/font-roboto/roboto.html">
+    <link rel="import"
+          href="./components/core-header-panel/core-header-panel.html">
+    <link rel="import"
+          href="./components/core-toolbar/core-toolbar.html">
+    <link rel="import"
+          href="./components/paper-tabs/paper-tabs.html">
+
+    <link rel="import" href="components/core-icons/core-icons.html" />
+    <link rel="import" href="./components/core-animated-pages/core-animated-pages.html">
+    <link rel="import" href="./components/core-animated-pages/transitions/slide-from-right.html">
+    <link rel="import" href="./components/paper-input/paper-input.html">
+    <link rel="import" href="./components/paper-input/paper-input-decorator.html">
+    <link rel="import" href="./components/paper-button/paper-button.html" />
+    <link rel="import" href="./components/paper-fab/paper-fab.html" />
+    <link rel="import" href="./components/card-item/card-item.html" />
+    <link rel="import" href="./components/paper-ripple/paper-ripple.html" />
+
+    <script src="./js/util.js"></script>
+
+    <style>
+        html,body {
+            height: 250px;
+            margin: 0;
+            background-color: #E5E5E5;
+            font-family: 'RobotoDraft', sans-serif;
+            width: 400px;
+        }
+        core-header-panel {
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        core-toolbar {
+            background: #ff4080;
+            color: white;
+        }
+        #tabs {
+            width: 100%;
+            margin: 0;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            text-transform: uppercase;
+        }
+        .label {
+            background: #ccc;
+            color: #fff;
+            border-radius: 2px;
+            padding: 0 3px;
+            margin-right: 3px;
+        }
+        .card-container {
+            position: relative;
+        }
+
+    </style>
+</head>
+<body unresolved>
+    <template is="auto-binding" id="main">
+        <style>
+            core-animated-pages {
+                margin-top: 10px;
+            }
+            core-animated-pages section {
+                padding: 20px;
+            }
+            core-animated-pages section strong {
+                font-weight: 500;
+            }
+            paper-button {
+                font-size: 12px;
+                line-height: 1.2em;
+                background: #fff;
+            }
+            paper-button[raised].colored {
+                background: #ff4080;
+                color: #fff;
+                margin-left: 10px;
+            }
+            paper-input /deep/ .focused-underline {
+                background: #ff4080;
+            }
+            paper-fab {
+                background: #ff4080;
+                position: absolute;
+                right: 175px;
+                bottom: 20px;
+            }
+            card-item /deep/ div[layout] {
+                border-bottom: 1px solid #eee;
+            }
+        </style>
+        <core-header-panel>
+            <core-toolbar>
+                <paper-tabs id="tabs" selected="{{tabSelected}}" self-end>
+                    <paper-tab name="add">Add</paper-tab>
+                    <paper-tab name="open">Open</paper-tab>
+                </paper-tabs>
+            </core-toolbar>
+
+            <core-animated-pages selected="{{tabSelected}}" transitions="slide-from-right">
+                <section name="add" layout >
+                    <strong auto-vertical>Add all current tabs to a box:</strong><br/>
+                    <div layout horizontal>
+                        <paper-input flex label="{{defaultBoxName}}" id="box-name"></paper-input>
+                        <paper-button self-center raised class="colored" on-tap="{{addToBox}}">Done</paper-button>
+                    </div>
+                </section>
+                <section name="open" layout >
+                    <strong>Click to open a box:</strong><br /><br />
+                    <div>
+                        <template repeat="{{ item in boxes | filterKeys }}">
+                            <div class="card-container" on-tap="{{boxTapped}}">
+                                <card-item>
+                                    <core-icon class="icon" icon="folder"></core-icon>
+                                    <span class="title uppercase">{{boxes[item].name}}</span>
+                                    <span class="desc"><span class="label">Tabs</span> {{boxes[item].tabs.length}} <span class="updated"></span>
+                                </card-item>
+                                <paper-ripple fit></paper-ripple>
+                            </div>
+                        </template>
+                    </div>
+                </section>
+            </core-animated-pages>
+
+            <paper-fab mini icon="add" on-tap="{{openIndex}}"></paper-fab>
+        </core-header-panel>
+    </template>
+
+    <script>
+        var main = document.getElementById('main');
+        main.addEventListener('template-bound', function () {
+            this.tabSelected = 'add';
+
+            this.defaultBoxName = 'Unnamed box';
+
+            var tabs = document.getElementById('tabs');
+            tabs.addEventListener('core-select', function () {
+                if (tabs.selected === 'open') {
+                    document.body.style.height = '400px';
+                } else {
+                    document.body.style.height = '250px';
+                }
+            });
+        });
+        main.openIndex = function () {
+            window.open('index.build.html');
+        };
+        main.addToBox = function () {
+            var name = document.getElementById('box-name').value.trim().substr(0, 70);
+            if (!name) name = 'Unnamed ' + (new Date()).toLocaleDateString();
+
+            var _b;
+            try {
+                _b = box.get(name);
+            } catch (e) {
+                name = 'Unnamed ' + (new Date()).toLocaleDateString();
+                _b = box.get(name);
+            }
+            if (_b === null) {
+                box.add(name);
+            }
+
+            util.getCurrentTabs(function (tabs) {
+                box.appendTabs(name, tabs);
+                window.close();
+            });
+
+        };
+
+        chrome.runtime.getBackgroundPage(function (win) {
+            window.box = win.box;
+
+            main.boxes = box.getAll();
+        });
+
+        main.filterKeys = function (obj) {
+            if (!obj) return obj;
+            return Object.keys(obj);
+        };
+        main.boxTapped = function (ev, opt, target) {
+            var b;
+            try {
+                b = box.get(target.querySelector('card-item .title').innerHTML);
+            } catch (ex) {}
+            if (!b) return window.close();
+
+            /** wait for animation ends : ) */
+            setTimeout(function () {
+                chrome.runtime.getBackgroundPage(function (win) {
+                    win.openTabs(b.tabs);
+                });
+            }, 300);
+
+        };
+    </script>
+</body>
+</html>

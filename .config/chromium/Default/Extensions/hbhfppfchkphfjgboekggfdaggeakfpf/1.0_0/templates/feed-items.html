@@ -1,0 +1,44 @@
+<div class="mobile-header<% if (showFilters) { %> feed-items<% } %>">
+    <a href="javascript://" class="mobile-header-menu-button menu-depended"></a>
+    <div class="mobile-header-title feed-items-title"><%= title %></div>
+    <% if (showFilters) { %>
+        <div class="mobile-header-tabs cols-3">
+            <a href="#" class="mobile-header-tabs-item change-order active" data-order="new">New</a>
+            <a href="#" class="mobile-header-tabs-item change-order" data-order="best">Best</a>
+            <a href="#" class="mobile-header-tabs-item change-order" data-order="popular">Popular</a>
+        </div>
+    <% } %>
+</div>
+<div class="content-scrollable lazy<% if (showFilters) { %> header-tabs<% } else { %> header<% } %>">
+    <div class="tiles-container">
+        <div class="tiles-header cf">
+            <div class="tiles-header-right">
+                <% if (showFilters) { %>
+                    <div class="tiles-filters">
+                        <a href="#" class="tiles-filters-item change-order active" data-order="new">New</a>
+                        <a href="#" class="tiles-filters-item change-order" data-order="best">Best</a>
+                        <a href="#" class="tiles-filters-item change-order" data-order="popular">Popular</a>
+                    </div>
+                <% } %>
+                <% if (showBoardControls) { %>
+                    <a href="#" class="tiles-header-button board-delete trash" target="_blank" title="Delete board"><span class="tiles-header-button-icon"></span></a>
+                    <a href="#" class="tiles-header-button board-edit settings" target="_blank" title="Edit"><span class="tiles-header-button-icon"></span></a>
+                <% } %>
+            </div>
+            <span class="tiles-header-left">
+                <span class="tiles-header-title feed-items-title"><%= title %></span>
+                <span class="tiles-header-description feed-items-description"><%= description %></span>
+                <a href="#" class="tiles-header-external" target="_blank"><span class="tiles-header-external-icon"></span></a>
+            </span>
+            <div class="top-sites-container"></div>
+        </div>
+        <div class="tiles<% if (liked) { %> liked<% } %>"></div>
+        <div class="tiles-likes-empty">
+            <div class="tiles-likes-empty-image"></div>
+            <div class="tiles-likes-empty-label">You have no likes</div>
+        </div>
+    </div>
+</div>
+<a href="#" class="share-button">
+    <span class="share-button-icon"></span>
+</a>

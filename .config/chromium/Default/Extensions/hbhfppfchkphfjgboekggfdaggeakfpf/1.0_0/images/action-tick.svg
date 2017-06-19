@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="10px" viewBox="0 0 12 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ui-kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Blocks" transform="translate(-963.000000, -3527.000000)" fill="#8EABBC">
+            <g id="add" transform="translate(733.000000, 3230.000000)">
+                <g id="Group">
+                    <g id="Bitmap">
+                        <g id="done" transform="translate(230.000000, 297.000000)">
+                            <path d="M11.4096968,3.14534995 C11.4096968,3.14534995 5.96689701,8.58522761 5.95462398,8.59691622 C5.30181528,9.24972492 4.04879662,9.2456339 3.3147521,8.51158939 L0.590137828,5.78697511 C-0.162608458,5.03481326 -0.200012,3.85251067 0.505395428,3.14710324 C1.21080286,2.44111138 2.39252102,2.47909935 3.1452673,3.23184564 L4.67939696,4.7659753 L8.85515179,0.590220473 C9.60731364,-0.162525813 10.7902007,-0.199929355 11.4956081,0.504893642 C12.1998467,1.2108855 12.1624431,2.39260366 11.4096968,3.14534995 L11.4096968,3.14534995 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

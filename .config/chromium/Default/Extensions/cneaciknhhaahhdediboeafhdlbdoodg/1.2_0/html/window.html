@@ -1,0 +1,194 @@
+<div class="sidenav" id="mySidenav" style="width:0px;" draggable="true">
+    <table class="logo" id="logo">
+        <tr>
+            <td id="info" style="padding-left : 10px;cursor:pointer;" align="center">
+                <div style="height:12px;line-height: 12px;text-align: right">   
+                    <!--<img src="" id="closeExtnImage" style="max-width: 12px;vertical-align: bottom;display:none"/>-->
+                    <img id="infoButton" src="" alt="Readable Version" style='max-width: 15px;cursor:pointer'/>
+                </div>
+            </td>
+            <td width="100%">
+                <div style="height:35px;line-height: 35px;text-align: center">   
+                    <img src="" id="logoImage" style="max-width: 35px;vertical-align: top;"/>
+                    <span class="logotitle">Notebook 2</span>
+                </div>
+            </td>
+            <td id="closeExtn" style="padding-right : 10px;cursor:pointer;" align="right">
+                <div style="height:12px;line-height: 12px;text-align: right">   
+                    <!--<img src="" id="closeExtnImage" style="max-width: 12px;vertical-align: bottom;display:none"/>-->
+                    <img id="collapseMainButton" src="" alt="Readable Version" style='max-width: 15px;cursor:pointer'/>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table class='title' id="titleTable" style="display:none">
+        <tr>
+            <td width="70%">
+                <input id='title' type='text' placeholder='Title' class='titleText'/>
+            </td>
+            <!--<td align="center" style="width: 0.5px;background-color: lightgray"></td>-->
+            <td align="center" width="10%">
+                <div style="height:15px;line-height: 15px;text-align: center">  
+                    <img id="collapseButton" src="" alt="Readable Version" style='max-width: 15px;cursor:pointer'/>
+                </div>
+            </td>
+            <td id="closeExtnMain" style="cursor:pointer;display:none" align="center">
+                <div style="height:12px;line-height: 12px;text-align: center">   
+                    <img src="" id="closeExtnMainImage" style="max-width: 12px;vertical-align: bottom;"/>
+                </div>
+            </td>
+            <td align="center" width="10%" id="saveMain">
+                <div style="height:18px;line-height: 18px;text-align: center">  
+                    <img id="saveButton" src="" alt="Readable Version" style='max-width: 18px;cursor:pointer'/>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <!--<div class="separator" id="titleSeparator" style="display:none">&nbsp;</div>-->
+    <div id="clippedContent" class='textarea' style="display:none">
+        <div class="fileinputs" style="display:none" id="photoinput">
+            <input type="file" class="file" accept="image/*" id="actualphoto" multiple/>
+            <div class="fakefile">
+                Click <a href="javascript:void(0)">here</a> to select and add images
+            </div>
+            <div style="text-align:center">or</div>
+            <div class="draganddropdiv">Drag and drop the images here</div>
+        </div>
+        <div class="fileinputs" style="display:none" id="audioinput">
+            <input type="file" class="file" accept="audio/*" id="actualaudio"/>
+            <div class="fakefile" >
+                Click <a href="javascript:void(0)">here</a> to select and add an audio
+            </div>
+            <div style="text-align:center;">or</div>
+            <div class="draganddropdiv">Drag and drop an audio file here</div>
+        </div>
+        <div id="errorMessage" style="margin:10px;color:#DA6D6E;display:none;text-align:center;border: 1px solid lightgray;"></div>
+        <div contenteditable="true" id='mainContent' class="mainContent"></div>
+    </div>
+    <div id="accountsFrame" style="display:none"></div>
+    <div class="options" id="options">
+        <div id="topHalf">
+            <div style="margin-top : 10px;margin-left:10%;margin-bottom:10px;" id='helpVideo'>
+                <embed width="90%" height="200" src="https://www.youtube.com/embed/yyHPiBroUpI">
+            </div>
+            <table class="optionsTable" style="display:none" id="optionsTable" align="center">
+                <tr style="height:20px">
+                    <td width="10%" align="right" style="padding-right: 10px;">
+                        <div class="selectedDot" style="display:none" id="simpADot"></div>
+                    </td>
+                    <td align="left" id="simpAtd">
+                        <a href="javascript:void(0);" id="clipLinka" class="optionsLink">
+                            <!--<div style="height:15px;line-height: 15px;text-align: left">-->  
+                                <!--<img src="" id="cliplink" style="max-width:15px;vertical-align: bottom;"/>-->
+                                <span>&nbsp;&nbsp;</span>Simplified Article
+                            <!--</div>-->
+                        </a>
+                    </td>
+                </tr>
+                <tr style="height:10px;"><td colspan="2"></td></tr>
+                <tr style="height:20px">
+                     <td width="10%" align="right" style="padding-right: 10px;">
+                        <div class="selectedDot" style="display:none" id="entADot"></div>
+                    </td>
+                    <td align="left" id="entAtd">
+                        <div style="width:5px;height:5px;color:#9ACB91"></div>
+                        <a href="javascript:void(0);" id="webpagea" class="optionsLink">
+                            <!--<div style="height:15px;line-height: 15px;text-align: left;">-->  
+                                <!--<img src="" id="webpage" style="max-width:15px;vertical-align: bottom;"/>-->
+                                <span>&nbsp;&nbsp;</span>Entire Page
+                            <!--</div>-->
+                        </a>
+                    </td>
+                </tr>
+                <tr style="height:10px;"><td colspan="2"></td></tr>
+                <tr style="height:20px">
+                    <td width="10%" align="right" style="padding-right: 10px;">
+                        <div class="selectedDot" style="display:none" id="pageLDot"></div>
+                    </td>
+                    <td align="left">
+                        <a href="javascript:void(0);" id="pagelinka" class="optionsLink">
+                            <!--<div style="height:15px;line-height:15x;text-align: left;">-->  
+                                <!--<img src="" id="pagelink" style="max-width:15px;vertical-align: bottom;"/>-->
+                                <span>&nbsp;&nbsp;</span>Page Link
+                            <!--</div>-->
+                        </a>
+                    </td>
+                </tr>
+                <tr style="height:10px;"><td colspan="2"></td></tr>
+                <tr style="height:20px">
+                     <td width="10%" align="right" style="padding-right: 10px;">
+                        <div class="selectedDot" style="display:none" id="ssDot"></div>
+                    </td>
+                    <td align="left" id="sstd">
+                        <a href="javascript:void(0);" id="screenshota" class="optionsLink">
+                            <!--<div style="height:15px;line-height: 15px;text-align: left;">-->  
+                                <!--<img src="" id="screenshot" style="max-width:15px;vertical-align: bottom;"/>-->
+                                <span>&nbsp;&nbsp;</span>Screenshot
+                            <!--</div>-->
+                        </a>
+                    </td>
+                    <td id="loadingsstd" style="display:none;"><img src="" id="loadingss" style="max-height: 15px;"/></td>
+                </tr>
+            </table>
+        </div>
+        <div class="separator">&nbsp;</div>
+        <div id="bottomhalf">
+            <div id="selectedNotebook" class="notebookNameDisplay"><span id="notebookname"></span>&nbsp;&nbsp;<img src="" id="downarrow" style="max-width:10px;display:none"/></div>
+            <div id="notebooks" style="display:none" class="notebookList"></div>
+            <div style="height:38%;overflow-y:scroll;font-family: 'Open Sans';font-size:12px;line-height: 2;" id="notecardlist"></div>
+        </div>
+        <div id="account" class="signinextn" style="display:none">
+            <div class="signinextn-message"> Whether you're capturing a thought, creating a checklist, recording an idea, or snapping a moment, note-taking can be fun with Notebook</div>
+            <div style="padding-bottom: 20px;">
+                <p class="signinextn-message" id="login-page-save-msg">To Save content from web pages to Notebook, create your account in Zoho. </p>
+                <div class="signinextn-button"><a href="javascript:void(0)" id="signup-action"> Sign up </a></div>
+            </div>
+            <div class="extnbottom-message">
+                Already have a Zoho account?<br />
+                <a id="signin-action" href="javascript:void(0)"> Sign in </a>
+            </div>
+        </div>
+    </div>
+    <!--<div class="separator">&nbsp;</div>-->
+    <div id="colorPalletes" style="background-color: black;height:0px;overflow:hidden;transition:0.5s;position:absolute;bottom:90px;"></div>
+    <table class="colorPicker" id="colorPicker">
+        <tr>
+            <td width="50%" align="left" id="colorComponent">
+                <table cellpadding='0' cellspacing='0' border='0'>
+                    <tr>
+                        <td style="display:none">
+                            <button id="color" style='cursor:pointer;width: 20px;height:20px;border-radius:10px;'></button>
+                        </td>
+                        <td>&nbsp;&nbsp;</td>
+                        <td>
+                            <img src="" id="colorPickerImage" style="max-width:20px;cursor:pointer;display:none"/>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td id="notebooklistInner"></td>
+        </tr>
+    </table>
+    <!--<div class="separator">&nbsp;</div>-->
+    <table class='icondiv' id="icondiv" style="display:none">
+        <tr>
+            <td width='33%' align='center'><img id='home' alt="Home" src="" style="max-width: 25px;cursor:pointer;transition:0.5s;"></td>
+            <td width='33%' align='center'><img id='textnote' alt="Text Note" src="" style="max-width: 30px;cursor:pointer;transition:0.5s;"></td>
+            <td width='25%' align='center' style="display:none;"><img id='audionote' alt="Audio Note" src="" style="max-width: 30px;cursor:pointer;transition:0.5s;"></td>
+            <td width='33%' align='center'><img id='photonote' alt="Photo Note" src="" style="max-width: 30px;cursor:pointer;transition:0.5s;"></td>
+            <td width='25%' align='center' style="display:none;"><img id='checklist' alt="Checklist" src="" style="max-width: 30px;cursor:pointer;transition:0.5s;"></td>
+        </tr>
+    </table>
+</div>
+<div class="loading" id="saveLoader" style="width:0px;display:none">
+    <div class="w3-progress-container">
+        <div style="text-align:left;margin:5px;font-family:'Open Sans'" id="status">
+            <span id="statusMessage"></span>
+            <div style="float:right;cursor:pointer;font-family:'Open Sans'" id="closeMessage">
+                <img src="" id="closeExtnMessageImage" style="max-width: 15px;vertical-align: middle;">
+            </div>
+        </div>
+        <!--<div class="separator">&nbsp;</div>-->
+        <div class="w3-progressbar" style="width:0%;padding:5px;white-space: nowrap;" id="titleNameDisplay"></div>
+    </div>
+</div>

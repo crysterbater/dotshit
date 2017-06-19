@@ -1,0 +1,797 @@
+{
+   "AddSearchEngine": {
+      "message": "Добавить поисковую систему"
+   },
+   "Added": {
+      "message": "Добавлено"
+   },
+   "AdditionalSearchEngine": {
+      "message": "Дополнительная поисковая система"
+   },
+   "Amazon": {
+      "message": "Amazon"
+   },
+   "AmazonUrl": {
+      "message": "http://www.amazon.com/"
+   },
+   "Answers": {
+      "message": "Ответы"
+   },
+   "Apps": {
+      "message": "Приложения"
+   },
+   "AppsAndExtensions": {
+      "message": "Приложения и расширения"
+   },
+   "AutomaticallyChangeWallpaper": {
+      "message": "Автоматическая замена обоев"
+   },
+   "Baidu": {
+      "message": "Baidu"
+   },
+   "BingBg": {
+      "message": "Bing обои"
+   },
+   "BlurWallpaper": {
+      "message": "Резкость"
+   },
+   "BookmarkChanged": {
+      "message": "*Панель закладок изменилось в боковой панели"
+   },
+   "Bookmarks": {
+      "message": "З​акладки"
+   },
+   "Bookmarksbar": {
+      "message": "З​акладки"
+   },
+   "BrowsingHistoryHasBeenCleared": {
+      "message": "История просмотров уже очищена"
+   },
+   "CanNotBeEmpty": {
+      "message": "Наименование и URL не должны быть пустыми"
+   },
+   "Cancel": {
+      "message": "Отмена"
+   },
+   "CategoryAppTools": {
+      "message": "Приложения и инструменты"
+   },
+   "CategoryCareerEdu": {
+      "message": "Технологии"
+   },
+   "CategoryComputerTech": {
+      "message": " Экономика"
+   },
+   "CategoryFinanceBiz": {
+      "message": "Литература"
+   },
+   "CategoryGames": {
+      "message": "работа и образование"
+   },
+   "CategoryLife": {
+      "message": "Развлечения"
+   },
+   "CategoryMusicVideo": {
+      "message": "Музыка и видео"
+   },
+   "CategoryNews": {
+      "message": "Другое"
+   },
+   "CategoryOther": {
+      "message": "больше"
+   },
+   "CategoryPhoto": {
+      "message": "Фотографии"
+   },
+   "CategoryPopular": {
+      "message": "Популярные"
+   },
+   "CategoryShopping": {
+      "message": "Покупка товаров"
+   },
+   "CategorySocialBlog": {
+      "message": "Социальные сети и блоги"
+   },
+   "CategorySportsTravel": {
+      "message": "Спорт и путешествие. Жизнь"
+   },
+   "Celsius": {
+      "message": "Цельсий"
+   },
+   "Change": {
+      "message": "изменение"
+   },
+   "ChangePassword": {
+      "message": "Изменить Пароль"
+   },
+   "ChromeStore": {
+      "message": "Chrome Store"
+   },
+   "CityName": {
+      "message": "Наименование города"
+   },
+   "ClearAllBrowsingHistory": {
+      "message": "Очистить историю просмотров"
+   },
+   "ClearAllDones": {
+      "message": "Удалить законченные дела"
+   },
+   "CloudBackup": {
+      "message": "Облачное резервное копирование"
+   },
+   "ContactUs": {
+      "message": "Contact Us"
+   },
+   "CurrentLocation": {
+      "message": "Текущее местонахождение:"
+   },
+   "DefaultWallpaper": {
+      "message": "ПВосстановить значения по умолчанию"
+   },
+   "Disable": {
+      "message": "Отключить"
+   },
+   "Download": {
+      "message": "Скачать"
+   },
+   "DownloadWP": {
+      "message": "Скачать"
+   },
+   "DownloadWallpaper": {
+      "message": "Скачать текущие обои"
+   },
+   "Edit": {
+      "message": "Редактировать"
+   },
+   "EmailToUs": {
+      "message": "Отправить на Email"
+   },
+   "Enable": {
+      "message": "Включить"
+   },
+   "EnableBookmarksBar": {
+      "message": "Включить панель закладок"
+   },
+   "EnableMostVisited": {
+      "message": "Включить самые посещаемые"
+   },
+   "EnableSearchBox": {
+      "message": "Поисковое окно"
+   },
+   "EnableSearchType": {
+      "message": "Типы поиска"
+   },
+   "Extensions": {
+      "message": "Расширение"
+   },
+   "Fahrenheit": {
+      "message": "Фаренгейт"
+   },
+   "Find": {
+      "message": "находить"
+   },
+   "FindYourAccount": {
+      "message": "Найти Ваш Аккаунт"
+   },
+   "Friday": {
+      "message": "Пятница"
+   },
+   "Generate": {
+      "message": "Создать"
+   },
+   "GenerateBackupFile": {
+      "message": "Создать резервный файл"
+   },
+   "GmailNotifications": {
+      "message": "Уведомления Gmail"
+   },
+   "HasBeenDeleted": {
+      "message": " Был удален"
+   },
+   "HasBeenDisabled": {
+      "message": "Была отключена"
+   },
+   "HasBeenEnabled": {
+      "message": " Был включен"
+   },
+   "HasBeenUninstalled": {
+      "message": " Был удален"
+   },
+   "HasBeenUpdated": {
+      "message": " Был обновлен"
+   },
+   "History": {
+      "message": "История"
+   },
+   "Humidity": {
+      "message": "Влажность"
+   },
+   "IconFillet": {
+      "message": "Скругление"
+   },
+   "IconOpacity": {
+      "message": "Прозрачность значков"
+   },
+   "ImageSizeLimit": {
+      "message": "Размер изображения не должен больше 100кб 3MB"
+   },
+   "Images": {
+      "message": "Kартинки"
+   },
+   "InfinityBg": {
+      "message": "Infinity обои"
+   },
+   "InfinityBgblur": {
+      "message": "Infinity Обои Размытие Стиль"
+   },
+   "LastBackupAt": {
+      "message": "Последнее резервное копирование было"
+   },
+   "LocalWallpaper": {
+      "message": "Свои обои"
+   },
+   "Locating": {
+      "message": "Расположение..."
+   },
+   "LogOffConfirm": {
+      "message": "Подтверждаете выход?"
+   },
+   "LoginMenuFontSize": {
+      "message": "-20px"
+   },
+   "LoginSuccess": {
+      "message": "Удачный логин"
+   },
+   "Logout": {
+      "message": "Выйти"
+   },
+   "MainSearchEngine": {
+      "message": "Основная поисковая система"
+   },
+   "Maps": {
+      "message": "Карта"
+   },
+   "Monday": {
+      "message": "Понедельник"
+   },
+   "MostVisitedMoved": {
+      "message": "*Самые читаемые был перемещен в начало"
+   },
+   "Musics": {
+      "message": "Музыка"
+   },
+   "NETWORKERROR": {
+      "message": "Ошибка Сети"
+   },
+   "NewNote": {
+      "message": "Новая заметка"
+   },
+   "NewPassword": {
+      "message": "Новый Пароль"
+   },
+   "News": {
+      "message": "Новости"
+   },
+   "NoSpace": {
+      "message": "Нет пространства"
+   },
+   "NotesAndIdeas": {
+      "message": "Заметки и идеи"
+   },
+   "Notfoundcity": {
+      "message": "Не найден этот город"
+   },
+   "NotificationSound": {
+      "message": "Звук уведомления"
+   },
+   "NumberOfItems": {
+      "message": "Количество элементов"
+   },
+   "OFF": {
+      "message": "OFF"
+   },
+   "OFFleft": {
+      "message": "28px"
+   },
+   "ON": {
+      "message": "ON"
+   },
+   "ONleft": {
+      "message": "28px"
+   },
+   "OldPassword": {
+      "message": "Старый Пароль"
+   },
+   "OpenBookmarkIn": {
+      "message": "Открытые закладки в новой вкладке"
+   },
+   "OpenLinksInNewtab": {
+      "message": "Открыть ссылку в новой вкладке"
+   },
+   "OurOfficialWebsite": {
+      "message": "Наш официальный веб-сайт"
+   },
+   "Password": {
+      "message": "Пароль"
+   },
+   "PleaseEnableIt": {
+      "message": "Сначала включите это приложение"
+   },
+   "PressEnterToQuery": {
+      "message": "Нажать «Enter» для поиска"
+   },
+   "Pressure": {
+      "message": "Давление"
+   },
+   "PrivacyPolicy": {
+      "message": "Privacy Policy"
+   },
+   "Query": {
+      "message": "Запрашивается..."
+   },
+   "Read": {
+      "message": "читать"
+   },
+   "Recovery": {
+      "message": "Восстановить"
+   },
+   "RecoveryDataFailed": {
+      "message": "Неудача восстановления данных"
+   },
+   "RecoveryDataSuccess": {
+      "message": "Удача восстановления данных"
+   },
+   "RecoveryFromCloud": {
+      "message": "Восстановить из облака"
+   },
+   "RecoveryFromFile": {
+      "message": "Восстановление из файла"
+   },
+   "Register": {
+      "message": "Регистрация"
+   },
+   "RegisterButton": {
+      "message": "Регистрация"
+   },
+   "RegisterSuccessAndAutoLogin": {
+      "message": "Регистрация добиться успеха, и вы вошли в"
+   },
+   "RegistrationFailed": {
+      "message": "Регистрация Не Удалась"
+   },
+   "RestoreWallpaper": {
+      "message": "Восстановить"
+   },
+   "Saturday": {
+      "message": "Суббота"
+   },
+   "SearchInNewtab": {
+      "message": "Поиск в новой вкладке"
+   },
+   "SelectImageFontSize": {
+      "message": "14px"
+   },
+   "ShareIconToOther": {
+      "message": "Поделиться значок для других"
+   },
+   "ShareToYourFriends": {
+      "message": "Поделиться с вашими друзьями"
+   },
+   "SignAndIn": {
+      "message": "Логин"
+   },
+   "SignIn": {
+      "message": "Логин"
+   },
+   "SignInOrRegister": {
+      "message": "Вход или регистрация"
+   },
+   "SignInToUseTheFeature": {
+      "message": "Войдите, чтоб использовать эту функцию"
+   },
+   "Sogou": {
+      "message": "Sogou"
+   },
+   "Sports": {
+      "message": "спортивный"
+   },
+   "StartAnimation": {
+      "message": "открывать ссылку в новой вкладке"
+   },
+   "Submit": {
+      "message": "Отправить"
+   },
+   "Sunday": {
+      "message": "Воскресенье"
+   },
+   "TemperatureUnit": {
+      "message": "Единица температуры"
+   },
+   "TermsOfUse": {
+      "message": "Конфиденциальность и Условия использования"
+   },
+   "TermsofUse": {
+      "message": "Terms of Use"
+   },
+   "Thursday": {
+      "message": "Четверг"
+   },
+   "Todo": {
+      "message": "Текущие дела"
+   },
+   "Todos": {
+      "message": "Текущие дела"
+   },
+   "TodotypeMarginLeft": {
+      "message": "45px"
+   },
+   "Tomorrow": {
+      "message": "Завтра"
+   },
+   "Tuesday": {
+      "message": "Вторник"
+   },
+   "UploadLocalWallpaper": {
+      "message": "Требуется авторизация загрузить обои, чтобы облако"
+   },
+   "UserName": {
+      "message": "Email"
+   },
+   "UsernameAlreadyExists": {
+      "message": "Этот адрес электронной уже зарегистрированы, войдите или использование \"забыли пароль\""
+   },
+   "UsernameDoesNotExist": {
+      "message": "Email не зарегистрирован"
+   },
+   "UsernameOrPasswordWrong": {
+      "message": "Имя пользователя или пароль Ошибка"
+   },
+   "VerifyCode": {
+      "message": "Код Подтверждения"
+   },
+   "VerifyCodeError": {
+      "message": "Проверочный код ошибки"
+   },
+   "Videos": {
+      "message": "Видео"
+   },
+   "WeChat": {
+      "message": "WeChat"
+   },
+   "Weather": {
+      "message": "Погода"
+   },
+   "WeatherLocation": {
+      "message": "Местонахождение погоды"
+   },
+   "WeatherLocationHasBeenSettedTo": {
+      "message": "Местонахождение погоды было изменено на"
+   },
+   "Web": {
+      "message": "Полиck"
+   },
+   "Website": {
+      "message": "Веб-сайт:"
+   },
+   "Wednesday": {
+      "message": "Среда"
+   },
+   "Wind": {
+      "message": "Ветер"
+   },
+   "Yes": {
+      "message": "Выход"
+   },
+   "adName": {
+      "message": "amazon"
+   },
+   "addCustomItem": {
+      "message": "Добавить"
+   },
+   "addMenuMarginLeft": {
+      "message": "-14px"
+   },
+   "addMenuSize": {
+      "message": "16px"
+   },
+   "addSearchName": {
+      "message": "Название поисковой системы"
+   },
+   "addSearchUrl": {
+      "message": "Использовать %s вместо параметров поиска"
+   },
+   "addTitle": {
+      "message": "Заголовок"
+   },
+   "addUrl": {
+      "message": "Веб-адрес"
+   },
+   "addmenuPaddingLeft": {
+      "message": "20px"
+   },
+   "application": {
+      "message": "Приложение & расширения"
+   },
+   "background": {
+      "message": "Обои"
+   },
+   "backupToCloud": {
+      "message": "Создание резервной копии вручную в облако"
+   },
+   "bingNot": {
+      "message": "Bing обои браузер не поддерживает размытия подарок"
+   },
+   "bookmark_manage": {
+      "message": "Управление закладками"
+   },
+   "buttonFontSize": {
+      "message": "16px !important"
+   },
+   "customItem": {
+      "message": "Свой"
+   },
+   "deSearch": {
+      "message": "Google"
+   },
+   "default": {
+      "message": "дефолт"
+   },
+   "defaultBottomSearch": {
+      "message": "http://en.wikipedia.org/wiki/"
+   },
+   "defaultSearchName": {
+      "message": "Wikipedia"
+   },
+   "displayIntop": {
+      "message": "Своя строка"
+   },
+   "donate": {
+      "message": "Пожертвовать"
+   },
+   "donateDesc": {
+      "message": "Пожертвовать нам мелкие деньги для того, чтобы мы предлагали Вам более устойчивые услуги и разработали большие функции, благодарим Вас!"
+   },
+   "donateShow": {
+      "message": "block"
+   },
+   "donateShowAlipay": {
+      "message": "none"
+   },
+   "emailCodenotEmpty": {
+      "message": "Email и Проверочный код не может быть пустым"
+   },
+   "emailError": {
+      "message": "Неверный адрес электронной почты"
+   },
+   "emailInvalid": {
+      "message": "Неверный адрес электронной почты"
+   },
+   "emailOrName": {
+      "message": "Email или ник (можно не заполнять)"
+   },
+   "emp": {
+      "message": "Пусто"
+   },
+   "extdesc": {
+      "message": "Новая вкладка Infinity new tab основана на услугах по облачным приложениям Chrome, позволяет Вам более изящно, легко применять Chrome."
+   },
+   "extensionItemAbleFontSize": {
+      "message": "14px"
+   },
+   "extensionItemAbleLineHeight": {
+      "message": "2.6"
+   },
+   "extname": {
+      "message": "Infinity New Tab"
+   },
+   "feedback": {
+      "message": "Обратная связь"
+   },
+   "feedbackOnline": {
+      "message": "Оставить отзывы"
+   },
+   "fontColor": {
+      "message": "Цвет шрифта"
+   },
+   "fontsize": {
+      "message": "12px"
+   },
+   "forgotPassword": {
+      "message": "Забыли Пароль?"
+   },
+   "general": {
+      "message": "Общие"
+   },
+   "getLocalWallpaperMarginTop": {
+      "message": "10px"
+   },
+   "gplus": {
+      "message": "Google +"
+   },
+   "gplusIco": {
+      "message": "0"
+   },
+   "gplusUrl": {
+      "message": "https://plus.google.com"
+   },
+   "help": {
+      "message": "Справка"
+   },
+   "help1": {
+      "message": "1.Search for any word in the search engine,\u003Cbr>such as search \"infinity\" in Wikipedia,then we can get the search url:\u003Cbr>\"https://en.wikipedia.org/wiki/\u003Cspan style=\"color:#1ABC9C;\">Infinity\u003C/span>\""
+   },
+   "help2": {
+      "message": "2.Replace the search parameter with %s:\u003Cbr>\"https://en.wikipedia.org/wiki/\u003Cspan style=\"color:#1ABC9C\">%s\u003C/span>\""
+   },
+   "help3": {
+      "message": "3.Input the url and click \"Add Search Engine\":"
+   },
+   "help4": {
+      "message": "Additional Search Engine"
+   },
+   "help5": {
+      "message": "Add Search Engine"
+   },
+   "help6": {
+      "message": "4.When you search for something:"
+   },
+   "hideAds": {
+      "message": "Click to make it disappeared three days"
+   },
+   "howToAdd": {
+      "message": "Как добавить поисковую систему?"
+   },
+   "howtodelete": {
+      "message": "Как я могу улучшить свой проект?"
+   },
+   "hpa": {
+      "message": "block"
+   },
+   "imageSize": {
+      "message": "Размер изображения"
+   },
+   "lang": {
+      "message": "ru"
+   },
+   "letterSpacing": {
+      "message": "none"
+   },
+   "loginFailed": {
+      "message": "Войти не удалось"
+   },
+   "loginNoNull": {
+      "message": "Email и пароль не может быть пустым"
+   },
+   "menuItemFontSize": {
+      "message": "18px"
+   },
+   "menuItemMarginRight": {
+      "message": "25px"
+   },
+   "miniMode": {
+      "message": "Минималистский режим"
+   },
+   "mostVisited": {
+      "message": "Топсайты"
+   },
+   "newtworkError": {
+      "message": "Ошибка сети"
+   },
+   "nextWallpaper": {
+      "message": "Изменения вступят в силу на следующий обои"
+   },
+   "noTitle": {
+      "message": "Без Названия"
+   },
+   "orderBy": {
+      "message": "упорядоченный"
+   },
+   "pointColor": {
+      "message": "rgba(231, 76, 60, 0.5)"
+   },
+   "qqqun": {
+      "message": "none"
+   },
+   "randomWallpaper": {
+      "message": "Получить случайные обои"
+   },
+   "recommended": {
+      "message": "Рекомендуемые"
+   },
+   "registerNotNull": {
+      "message": "Электронная почта, пароль и проверочный код не может быть пустым"
+   },
+   "registrationInformationWrong": {
+      "message": "Неправильный информации из реестра"
+   },
+   "removeImage": {
+      "message": "Удалить изображение"
+   },
+   "saySomething": {
+      "message": "Сказать что-нибудь... ( ^_^ )"
+   },
+   "search": {
+      "message": "Поиск"
+   },
+   "searchBookmarks": {
+      "message": "Поиск закладки"
+   },
+   "searchBy": {
+      "message": "Поиск по "
+   },
+   "searchIni": {
+      "message": "Google"
+   },
+   "searchItem": {
+      "message": "Поиск"
+   },
+   "searchOptionsMarginRight": {
+      "message": "22px"
+   },
+   "searchhistory": {
+      "message": "История поиска"
+   },
+   "settingMenuFontSize": {
+      "message": "18px"
+   },
+   "settingMenuMarginRight": {
+      "message": "45px"
+   },
+   "settingMenuPaddingLeft": {
+      "message": "44px"
+   },
+   "settings": {
+      "message": "Настройки"
+   },
+   "shareIcon": {
+      "message": "Поделиться Иконка для Другие"
+   },
+   "showPageAction": {
+      "message": "Кнопка в адресной строке"
+   },
+   "signIn": {
+      "message": "Логин"
+   },
+   "simpleTheme": {
+      "message": "простой"
+   },
+   "supportFile": {
+      "message": "Поддерживать резервные файлы в новой вкладке v+, mifish newtab"
+   },
+   "thankFeedback": {
+      "message": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Большое спасибо! \u003Cbr> Наш менеджер по продукции уже получил Ваши отзывы, при необходимости мы связываемся с Вами по вашему контакту!"
+   },
+   "todoDone": {
+      "message": "Завершить"
+   },
+   "topMenuFontSize": {
+      "message": "22px"
+   },
+   "tutorial": {
+      "message": "Курс добавки дополнительных поисковых систем"
+   },
+   "uninstall": {
+      "message": "Удаление"
+   },
+   "updateItem": {
+      "message": "Обновить элемент"
+   },
+   "upload": {
+      "message": "Загрузить фото"
+   },
+   "wallpaperIconFailed": {
+      "message": "Нет подключения к сети теперь, вы не сможете синхронизировать данные или заменить обоев, если вы очистить кэш браузера, то не будет использоваться обои и иконки"
+   },
+   "wallpaperLoadFailed": {
+      "message": "Обои удалось загрузить"
+   },
+   "wallpaperUploadFailed": {
+      "message": "Обои удалось загрузить"
+   },
+   "whatNext": {
+      "message": "Что дальше?"
+   },
+   "yourWallpaper": {
+      "message": "Обои будут синхронизированы с облака"
+   }
+}

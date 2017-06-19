@@ -1,0 +1,52 @@
+<div class="sidebar menu-depended">
+    <div class="sidebar-logo-container">
+        <a href="/"><span class="sidebar-logo-mini menu-depended"></span></a>
+        <a href="/"><span class="sidebar-logo menu-depended"></span></a>
+        <a href="http://www.flatata.com/" target="_blank"><span class="sidebar-sublogo menu-depended"></span></a>
+    </div>
+    <div class="sidebar-dots top"></div>
+    <div class="sidebar-current-user-container"></div>
+    <!--<div class="sidebar-dots"></div>-->
+    <!--<div class="sidebar-resources">-->
+        <!--<div class="sidebar-resources-item">-->
+            <!--<a href="#" class="sidebar-resources-add menu-depended create-resource" title="Add resource">-->
+                <!--<span class="sidebar-resources-add-icon"></span>-->
+            <!--</a>-->
+            <!--<a href="#resources" class="sidebar-resources-item-link">-->
+                <!--<span class="sidebar-resources-item-icon-wrapper">-->
+                    <!--<span class="sidebar-resources-item-icon"></span>-->
+                <!--</span>-->
+                <!--<span class="sidebar-resources-item-label menu-depended">Resources</span>-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="sidebar-dots"></div>
+    <% if (currentUser.authorized()) { %>
+        <a href="#" class="sidebar-right-button list menu-depended open-provider-settings" title="Edit resources">
+            <span class="sidebar-right-button-icon"></span>
+        </a>
+    <% } %>
+    <ul class="sidebar-menu">
+        <% _.each(providers, function(provider) { %>
+            <li class="sidebar-menu-item<% if (provider.get('has_new')) { %> has-new<% } %><% if (provider.get('current')) { %> selected<% } %>" data-provider-id="<%= provider.id %>" data-provider-name="<%= provider.name %>"<% if (provider.site_url) { %> data-provider-site-url="<%= provider.escape('site_url') %>"<% } %>>
+                <% if (provider.get('site_url')) { %>
+                    <a href="<%= provider.escape('site_url') %>" class="sidebar-menu-item-external menu-depended" target="_blank" title="Go to <%= provider.escape('name') %> site"><span class="sidebar-menu-item-external-icon"></span></a>
+                <% } %>
+                <a href="#provider/<%= provider.escape('id') %>" class="sidebar-menu-item-link menu-depended">
+                    <span class="sidebar-menu-item-thumb"></span>
+                    <span class="sidebar-menu-item-image-container">
+                        <span class="sidebar-menu-item-image-wrapper">
+                            <% if (provider.get('id') == 0) { %>
+                                <span class="sidebar-menu-item-image all-providers"></span>
+                            <% } else { %>
+                                <img class="sidebar-menu-item-image" src="<%= provider.escape('image') %>">
+                            <% } %>
+                        </span>
+                        <span class="sidebar-menu-item-image-dot"></span>
+                    </span>
+                    <span class="sidebar-menu-item-label menu-depended"><%= provider.escape('name') %></span>
+                </a>
+            </li>
+        <% }); %>
+    </ul>
+</div>

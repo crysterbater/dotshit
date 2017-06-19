@@ -1,0 +1,37 @@
+<div class="mobile-header">
+    <a href="javascript://" class="mobile-header-menu-button menu-depended"></a>
+    <div class="mobile-header-title">Resources</div>
+</div>
+<div class="content-scrollable header">
+    <div class="resource-tiles-container">
+        <div class="resource-tiles-header">
+            <div class="resource-tiles-title">The most popular design of the resources in the world</div>
+            <div class="resource-tiles-description">Vote and add your resources. Let's help each other to choose the steepest in the world. When dostezheniyami average number of votes, the resource is added to the total feeds.</div>
+            <div class="resource-tiles-filters">
+                <span class="resource-tiles-filters-item">
+                    <a href="#" class="resource-tiles-filters-button create-resource">Add new resource</a>
+                </span>
+                <span class="resource-tiles-filters-item">
+                    <select name="language">
+                        <option value="">Language</option>
+                        <% languages.each(function(language) { %>
+                            <option value="<%= language.escape('id') %>"><%= language.escape('name') %></option>
+                        <% }); %>
+                    </select>
+                </span>
+                <span class="resource-tiles-filters-item">
+                    <select name="tags">
+                        <option value="">Tag</option>
+                        <% provider_tags.each(function(provider_tag) { %>
+                            <option value="<%= provider_tag.escape('id') %>"><%= provider_tag.escape('name') %></option>
+                        <% }); %>
+                    </select>
+                </span>
+                <span class="resource-tiles-filters-item">
+                    <a href="#" class="resource-tiles-filters-button"><span class="resource-tiles-filters-button-icon share"></span> 1 827</a>
+                </span>
+            </div>
+        </div>
+        <div class="resource-tiles"></div>
+    </div>
+</div>

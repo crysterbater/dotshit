@@ -1,0 +1,4 @@
+article.mobileApps,
+a.moreMenu__link[href='/mobile']{
+  display: none!important;
+}

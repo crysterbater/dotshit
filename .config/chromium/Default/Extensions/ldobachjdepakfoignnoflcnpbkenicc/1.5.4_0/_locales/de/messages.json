@@ -1,0 +1,569 @@
+{
+   "access": {
+      "message": "Zugriff auf"
+   },
+   "add": {
+      "message": "hinzufügen"
+   },
+   "addBookmark": {
+      "message": "Lesezeichen hinzufügen"
+   },
+   "addConnections": {
+      "message": "mehr Verbindungen hinzufügen"
+   },
+   "addEntryPoints": {
+      "message": "Einstiegspunkte zur Startseite hinzufügen"
+   },
+   "addFolder": {
+      "message": "Ordner hinzufügen"
+   },
+   "after": {
+      "message": "nach"
+   },
+   "all": {
+      "message": "alle"
+   },
+   "and": {
+      "message": "und"
+   },
+   "apps": {
+      "message": "Apps"
+   },
+   "atTheBeginning": {
+      "message": "am Beginn"
+   },
+   "atTheEnd": {
+      "message": "am Ende"
+   },
+   "audio": {
+      "message": "Musik"
+   },
+   "author": {
+      "message": "von Thomas Greiner"
+   },
+   "back": {
+      "message": "zurück"
+   },
+   "backToMainPage": {
+      "message": "zurück zu nexos"
+   },
+   "badge": {
+      "message": "Statusanzeige"
+   },
+   "bookmark": {
+      "message": "Lesezeichen"
+   },
+   "bookmark_uc": {
+      "message": "Lesezeichen"
+   },
+   "bookmarks": {
+      "message": "Lesezeichen"
+   },
+   "bookmarksBar": {
+      "message": "Lesezeichenleiste"
+   },
+   "bookmarks_uc": {
+      "message": "Lesezeichen"
+   },
+   "cancel": {
+      "message": "abbrechen"
+   },
+   "chromeApps_groupBackground": {
+      "message": "Hintergrund Apps"
+   },
+   "chromeApps_groupBookmark": {
+      "message": "auf Lesezeichen zugreifen"
+   },
+   "chromeApps_groupHistory": {
+      "message": "auf Verlauf zugreifen"
+   },
+   "chromeApps_groupManagement": {
+      "message": "Apps/Erweiterungen verwalten"
+   },
+   "chromeApps_groupOffline": {
+      "message": "Offline-Apps"
+   },
+   "chromeApps_groupOffline_webstore": {
+      "message": "mehr Offline-Apps entdecken"
+   },
+   "chromeApps_groupRequest": {
+      "message": "Anfragen verändern/blockieren"
+   },
+   "chromeBookmarks_uc": {
+      "message": "Chrome Lesezeichen"
+   },
+   "chromeHistory_uc": {
+      "message": "Chrome Verlauf"
+   },
+   "connect": {
+      "message": "verbinden"
+   },
+   "connectedAs": {
+      "message": "verbunden als"
+   },
+   "contents": {
+      "message": "Inhalte"
+   },
+   "continue": {
+      "message": "weiter"
+   },
+   "create": {
+      "message": "erstellen"
+   },
+   "cut": {
+      "message": "ausschneiden"
+   },
+   "developer_uc": {
+      "message": "Entwickler"
+   },
+   "deviantart_favorites": {
+      "message": "Favoriten"
+   },
+   "deviantart_popular": {
+      "message": "Beliebteste"
+   },
+   "deviantart_uploads": {
+      "message": "Meine Deviations"
+   },
+   "disable": {
+      "message": "deaktivieren"
+   },
+   "disconnect": {
+      "message": "trennen"
+   },
+   "dismiss": {
+      "message": "ausblenden"
+   },
+   "edit": {
+      "message": "bearbeiten"
+   },
+   "editBookmark": {
+      "message": "Lesezeichen bearbeiten"
+   },
+   "editConnection": {
+      "message": "bearbeiten"
+   },
+   "editFolder": {
+      "message": "Ordner bearbeiten"
+   },
+   "emailSubjects": {
+      "message": "Email Betreff"
+   },
+   "emails": {
+      "message": "Emails"
+   },
+   "enable": {
+      "message": "aktivieren"
+   },
+   "enableForOptions": {
+      "message": "Erweiterung ist deaktiviert.\nAktivieren und Optionsseite öffnen?"
+   },
+   "entryPoints_uc": {
+      "message": "Einstiegspunkte"
+   },
+   "extDescr": {
+      "message": "Organisieren Sie Ihre Lesezeichen, Erweiterungen, Apps und all ihre Inhalte von Facebook, Gmail, Google+, YouTube, Google Drive und mehr."
+   },
+   "extensions_uc": {
+      "message": "Erweiterungen"
+   },
+   "facebook_albums": {
+      "message": "Fotoalben"
+   },
+   "facebook_videos": {
+      "message": "Videos"
+   },
+   "features": {
+      "message": "Funktionalitäten"
+   },
+   "feedback": {
+      "message": "Feedback"
+   },
+   "files": {
+      "message": "Dateien"
+   },
+   "flickr_favorites": {
+      "message": "Favoriten"
+   },
+   "flickr_galleries": {
+      "message": "Gallerien"
+   },
+   "flickr_photosets": {
+      "message": "Fotosets"
+   },
+   "folder": {
+      "message": "Ordner"
+   },
+   "folder_uc": {
+      "message": "Ordner"
+   },
+   "gdocs_collections": {
+      "message": "Sammlungen"
+   },
+   "gdocs_documents": {
+      "message": "Dokumente"
+   },
+   "gdocs_drawings": {
+      "message": "Zeichnungen"
+   },
+   "gdocs_presentations": {
+      "message": "Präsentationen"
+   },
+   "gdocs_spreadsheets": {
+      "message": "Tabellen"
+   },
+   "gdocs_starred": {
+      "message": "Markierte Dokumente"
+   },
+   "gmail_inbox": {
+      "message": "Gmail Posteingang"
+   },
+   "history": {
+      "message": "Browser Verlauf"
+   },
+   "history_uc": {
+      "message": "Browser Verlauf"
+   },
+   "images": {
+      "message": "Bilder"
+   },
+   "instagram_likes": {
+      "message": "Gefällt mir"
+   },
+   "instagram_popular": {
+      "message": "Beliebteste"
+   },
+   "instagram_uploads": {
+      "message": "Meine Fotos"
+   },
+   "intentPickUrlTitle": {
+      "message": "Wähle Lesezeichen / Webinhalt mit nexos"
+   },
+   "items": {
+      "message": "Elemente"
+   },
+   "launch": {
+      "message": "starten!"
+   },
+   "list": {
+      "message": "Auflistung"
+   },
+   "loading": {
+      "message": "laden"
+   },
+   "moreInfo": {
+      "message": "mehr Infos"
+   },
+   "no": {
+      "message": "nein"
+   },
+   "noConnection": {
+      "message": "keine Verbindung zur Quelle"
+   },
+   "noEntryPoints": {
+      "message": "keine Einstiegspunkte vorhanden"
+   },
+   "noItems": {
+      "message": "keine Elemente vorhanden"
+   },
+   "noTitle": {
+      "message": "kein Titel"
+   },
+   "none": {
+      "message": "keine"
+   },
+   "oauthRedirectPageTitle": {
+      "message": "OAuth Umleitung"
+   },
+   "openAllIn": {
+      "message": "\u003Cspan id='all_selection'>alle\u003C/span> öffnen in"
+   },
+   "openIn": {
+      "message": "öffnen in"
+   },
+   "options": {
+      "message": "Optionen"
+   },
+   "optionsTabConnections": {
+      "message": "Verbindungen"
+   },
+   "optionsTabGeneral": {
+      "message": "Allgemein"
+   },
+   "optionsTabHomescreen": {
+      "message": "Startseite"
+   },
+   "optionsTabSearch": {
+      "message": "Suche"
+   },
+   "optionsTitle": {
+      "message": "nexos Optionen"
+   },
+   "otherBookmarks": {
+      "message": "Weitere Lesezeichen"
+   },
+   "otherExtensions_uc": {
+      "message": "Andere Erweiterungen"
+   },
+   "paste": {
+      "message": "einfügen"
+   },
+   "permission_accessWebsite": {
+      "message": "Zugriff auf eine Webseite"
+   },
+   "permission_accessWebsites": {
+      "message": "Zugriff auf $COUNT$ Webseiten",
+      "placeholders": {
+         "count": {
+            "content": "$1"
+         }
+      }
+   },
+   "permission_allurls": {
+      "message": "Zugriff auf alle Webseiten"
+   },
+   "permission_background": {
+      "message": "Hintergrund"
+   },
+   "permission_bookmarks": {
+      "message": "Lesezeichen"
+   },
+   "permission_clipboardRead": {
+      "message": "einfügen aus Zwischenablage"
+   },
+   "permission_clipboardWrite": {
+      "message": "kopieren zu Zwischenablage"
+   },
+   "permission_contentSettings": {
+      "message": "Inhaltseinstellungen"
+   },
+   "permission_contextMenus": {
+      "message": "Kontextmenü"
+   },
+   "permission_cookies": {
+      "message": "Cookies"
+   },
+   "permission_devtools": {
+      "message": "Entwicklungswerkzeuge"
+   },
+   "permission_experimental": {
+      "message": "experimentell"
+   },
+   "permission_fileBrowserHandler": {
+      "message": "Dateierweiterungen"
+   },
+   "permission_geolocation": {
+      "message": "Standort"
+   },
+   "permission_history": {
+      "message": "Browser Verlauf"
+   },
+   "permission_idle": {
+      "message": "Browser Zustand"
+   },
+   "permission_management": {
+      "message": "Apps & Erweiterungen"
+   },
+   "permission_notifications": {
+      "message": "Benachrichtigung"
+   },
+   "permission_plugin": {
+      "message": "uneingeschränkter Zugriff"
+   },
+   "permission_privacy": {
+      "message": "Privatsphäreneinstellungen"
+   },
+   "permission_proxy": {
+      "message": "Proxy Einstellungen"
+   },
+   "permission_storage": {
+      "message": "Einstellungen synchronisieren"
+   },
+   "permission_tabs": {
+      "message": "Tabs"
+   },
+   "permission_tts": {
+      "message": "Text-zu-Sprache"
+   },
+   "permission_unlimitedStorage": {
+      "message": "unbegrenzter Speicher"
+   },
+   "permission_webNavigation": {
+      "message": "Surfverhalten"
+   },
+   "permission_webRequest": {
+      "message": "Manipulierung von Inhalten"
+   },
+   "permission_webRequestBlocking": {
+      "message": "Blockierung von Inhalten"
+   },
+   "permissions": {
+      "message": "Erlaubnisse"
+   },
+   "reconnect": {
+      "message": "Verbindung wiederherstellen"
+   },
+   "redirecting": {
+      "message": "umleiten"
+   },
+   "remove": {
+      "message": "entfernen"
+   },
+   "removeFolder": {
+      "message": "Ordner entfernen"
+   },
+   "removeSelection": {
+      "message": "Auswahl entfernen"
+   },
+   "repositories": {
+      "message": "Repositories"
+   },
+   "requestAccess": {
+      "message": "Greifen Sie auf Ihre $SERVICE$ $ITEMS$ mit nexos zu.",
+      "placeholders": {
+         "items": {
+            "content": "$1"
+         },
+         "service": {
+            "content": "$2"
+         }
+      }
+   },
+   "rootNameAppsExtensions": {
+      "message": "Apps & Erweiterungen"
+   },
+   "save": {
+      "message": "speichern"
+   },
+   "search": {
+      "message": "Suche"
+   },
+   "searchIn_uc": {
+      "message": "Suchen in..."
+   },
+   "search_verb": {
+      "message": "suchen"
+   },
+   "selectionClear": {
+      "message": "Auswahl leeren"
+   },
+   "selection_uc": {
+      "message": "Auswahl"
+   },
+   "settings": {
+      "message": "Einstellungen"
+   },
+   "soundcloud_favorites": {
+      "message": "Favoriten"
+   },
+   "soundcloud_groups": {
+      "message": "Gruppen"
+   },
+   "sourceNameArchive": {
+      "message": "Archiv"
+   },
+   "sourceNameAudio": {
+      "message": "Musik"
+   },
+   "sourceNameBookmarks": {
+      "message": "Lesezeichen"
+   },
+   "sourceNameHistory": {
+      "message": "Browser Verlauf"
+   },
+   "sourceNameImages": {
+      "message": "Bilder"
+   },
+   "specialThanks_uc": {
+      "message": "Spezieller Dank an..."
+   },
+   "tumblr_photo": {
+      "message": "Fotos"
+   },
+   "tutorial_navigation": {
+      "message": "navigieren Sie vor und zurück"
+   },
+   "tutorial_searchbox": {
+      "message": "durchsuchen Sie all Ihre Inhalte"
+   },
+   "tutorial_settings": {
+      "message": "verbinden Sie mehr Quellen zu nexos + mehr Einstellungen"
+   },
+   "uninstall": {
+      "message": "deinstallieren"
+   },
+   "videos": {
+      "message": "Videos"
+   },
+   "vimeo_albums": {
+      "message": "Alben"
+   },
+   "vimeo_channels": {
+      "message": "Kanäle"
+   },
+   "vimeo_groups": {
+      "message": "Gruppen"
+   },
+   "vimeo_likes": {
+      "message": "Gefällt mir"
+   },
+   "vimeo_subscriptions": {
+      "message": "Abonnements"
+   },
+   "vimeo_uploads": {
+      "message": "Uploads"
+   },
+   "visitOnWebstore": {
+      "message": "im Chrome Webstore besuchen"
+   },
+   "warningAllBookmarks": {
+      "message": "und alle Lesezeichen darin"
+   },
+   "warningConnectionExpired": {
+      "message": "Die Verbindung zu dieser Quelle ist veraltet.\n\nBitte stellen Sie die Verbindung wieder her."
+   },
+   "warningDropboxLimitations": {
+      "message": "aufgrund von Limitationen von Dropbox und Google Chrome ist es derzeit nicht möglich, eine Datei von Dropbox anzusehen oder herunterzuladen"
+   },
+   "warningOpenTabs": {
+      "message": "Möchten Sie wirklich $TAB_COUNT$ Tabs öffnen?",
+      "placeholders": {
+         "tab_count": {
+            "content": "$1"
+         }
+      }
+   },
+   "welcome": {
+      "message": "Willkommen bei nexos!"
+   },
+   "where": {
+      "message": "wo..."
+   },
+   "windowCurrent": {
+      "message": "aktuellem Fenster"
+   },
+   "windowIncognito": {
+      "message": "Inkognito Fenster"
+   },
+   "windowNew": {
+      "message": "neuem Fenster"
+   },
+   "yes": {
+      "message": "ja"
+   },
+   "youtube_favorites": {
+      "message": "Favoriten"
+   },
+   "youtube_recommendations": {
+      "message": "Empfehlungen"
+   },
+   "youtube_subscriptions": {
+      "message": "Abonnements"
+   },
+   "youtube_uploads": {
+      "message": "Uploads"
+   },
+   "youtube_watchLater": {
+      "message": "Später ansehen"
+   }
+}

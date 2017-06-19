@@ -1,0 +1,20 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://materialcolorize.com/"
+      },
+      "urls": [ "http://materialcolorize.com/" ]
+   },
+   "description": " Color Tools for Material Design.",
+   "icons": {
+      "128": "material-colorize-128.png",
+      "16": "material-colorize-16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuc5cZqD39uKqgWkZTqe5ndAl+Jbimp65nroY9m+s/KOA3dQxv/2TOoZetB2tKcJuPggYHCvSqW3VMvUUInMnwiNBbSr5sj6ZrlVJrosZSt499/84HMW2F2K8VtcDyyzSAxrnDQ33IYnFMt4lI9rDiB+H7MmktNBg80qRiJvMK4Djsv/iOZJrS2Ndwy4gylYqBqXOlbtKJZEz5L4mGc34T1Uk/rVubZ2kXj75rAOhDrGXHJ38fgpaWs9t4BklJ5dXOFbTuhGz0HCvpACH6mXI7Q9ZTFJThSnzkGMZbBZWZZUyySrbZboM23uNnQSoBjWVElPAFdQPoh+lkQG6KBmnHQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "35",
+   "name": "Material Colorize",
+   "offline_enabled": false,
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}

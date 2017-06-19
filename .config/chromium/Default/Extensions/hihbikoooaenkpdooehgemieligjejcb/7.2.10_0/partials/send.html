@@ -1,0 +1,132 @@
+<div id="/send" class="window" ng-controller='SendCtrl'>
+  <div class="box type_01" id="send_box" ng-show="view() == 'send'">
+    <h4 class="title">{{getMessage("send_title")}}</h4>
+    <div class="reset-btn" ng-click="init()" ng-show="queue.length">{{getMessage("reset")}}</div>
+    <div class="total-info" ng-show="queue.length"> Total : {{getFileSize(totalFileSize)}} / {{totalFileNum}} Files </div>
+    <div style="clear:both"></div>
+    <form id="fileupload" action="#" method="POST" enctype="multipart/form-data" data-file-upload="options">
+      <!-- The container for the uploaded files -->
+      <div class="file-list" ng-click="fileInputClick()">
+        <div class="loading-bar" ng-show="loading"><img src='/css/images/loading.gif' width="20" height="20"></div>
+        <div ng-hide="loading">
+          <input id="file" class="file-input input_01 hidden" type="file" name="files[]" multiple />
+          <div class="dragndrop" ng-hide="queue.length">
+            <p class="drag-msg"><i class="material-icons">&#xE148;</i><span>{{getMessage("drop_files")}}</span></p>
+          </div>
+          <div class="file-table" ng-show="queue.length">
+            <table>
+              <tr ng-repeat="file in queue track by $index">
+                <td>
+                  <p class="name" ng-switch on="!!file.url"> <span ng-switch-default>{{file.name}}</span> </p>
+                  <div ng-show="file.error"> <span class="label label-important">{{getMessage("error")}}</span> {{file.error}} </div>
+                </td>
+                <td>
+                  <p class="size" ng-switch on="!!file.url" style="text-align:right"> <span ng-switch-default>{{getFileSize(file.size)}}</span> </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="button-group">
+        <button type="button" id="send" class="btn primary-btn" ng-click="getSendKey()" ng-disabled="queue.length == 0 || isClicked"><i class="material-icons">&#xE163;</i>{{getMessage("send_files")}}</button>
+        <button type="button" id="save" class="btn primary-btn" ng-click="getSendKey(true)" ng-disabled="queue.length == 0 || isClicked"><i class="material-icons">&#xE2C3;</i>{{getMessage("save_files")}}</button>
+      </div>
+    </form>
+  </div>
+  <div class="box type_03" id="wait_box" ng-show="view() == 'wait'">
+    <h4 class="title">{{getMessage("key_title")}}</h4><i class="help-btn material-icons" data-container="body" data-toggle="popover" data-placement="bottom">&#xE88E;</i>
+    <div style="clear:both"></div>
+    <div class="box-content">
+      <!-- QR POPUP -->
+      <div class="share-popup qr-popup text-center hidden">
+        <h5 class="qr-title text-center">{{getMessage("share_qrcode")}}</h5> <i class="material-icons close-btn" ng-click="hiddenPopup('.qr-popup')">close</i>
+        <div style="clear: both;"></div>
+        <hr/><img ng-src="{{qr_code}}" width="80" height="80" alt="80" style="margin: 10px 0" />
+        <p class="qr-desc">{{getMessage("qr_desc")}}</p>
+      </div>
+      <!-- Device POPUP -->
+      <div class="share-popup device-popup hidden">
+        <h5 class="device-title text-center">{{getMessage("device")}}</h5> <i class="material-icons close-btn" ng-click="hiddenPopup('.device-popup');stopSearch()">close</i>
+        <div style="clear: both"></div>
+        <hr/>
+        <div class="device-scroll">
+          <ul>
+            <li ng-if="recentDevices.length > 0" class="device-subtitle"> {{getMessage("recent_devices")}} </li>
+            <li ng-repeat="device in recentDevices track by $index" class="device">
+              <a ng-click="sendKey(device)">
+                <i class="material-icons">devices</i>
+                <span>{{device.profile_name}}</span>
+                <span class="device-name"> ({{device.device_name}})</span>
+              </a>
+            </li>
+            <li ng-if="nearbyDevices.length > 0" class="device-subtitle"> {{getMessage("nearby_devices")}} </li>
+            <li ng-show="nearbyDevices.length + recentDevices.length == 0" class="text-center"><img src="/css/images/loading.gif" width="16" height="16"  style="margin-top:55px"/>
+            </li>
+            <li ng-repeat="device in nearbyDevices track by $index" class="device">
+              <a ng-click="sendKey(device)">
+                <i class="material-icons">devices</i>
+                <span>{{device.profile_name}}</span>
+                <span class="device-name"> ({{device.device_name}})</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="key"><span ng-click="copyToClipboard(key)" title="{{getMessage('copy_key')}}">{{key}}</span></div>
+      <div class="share-menu">
+        <button type="button" class="btn qr-btn" ng-click="showPopup('.qr-popup')"><i class="icon-qr"></i>{{getMessage("share_qrcode")}}</button>
+        <button type="button" class="btn device-btn" ng-click="search()"><i class="material-icons">devices</i>{{getMessage("share_device")}}</button>
+      </div>
+      <div id="wait-progress" class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="{{wait_per}}" aria-valuemin="0" aria-valuemax="100" style="width: {{wait_per}}%;">
+          <p class="txt_03 text-muted"> <span id="wait_time"></span> </p>
+        </div>
+      </div>
+    </div>
+    <div class="button-group center">
+      <button type="button" class="btn cancel-btn default-btn" ng-click="cancelWait()">{{getMessage("cancel")}}</button>
+    </div>
+  </div>
+  <div>
+    <div class="box type_04" id="transfer_box" ng-show="view() == 'tran'">
+      <h4 ng-show="upload" class="title">{{getMessage("upload_title")}}</h4>
+      <!-- direct transfer -->
+      <div ng-show="!upload" class="transfer-status text-center"> <span ng-show="!send_status().mode" class="send">{{getMessage("sending")}}</span> <span ng-show="send_status().mode == 'cancel'"><strong>{{getMessage("cancelled")}}</strong></span> <span ng-show="send_status().mode == 'error'">
+        <strong><span style='color:red'>{{getMessage("server_error")}}</span></strong>
+        <br/> <span style='color:gray'>{{getMessage("not_supported_browser")}}</span> </span> <span ng-show="send_status().mode == 'wrong_key'"><strong>{{getMessage("invalid_key")}}</strong></span> <span ng-show="send_status().mode == 'uploading'"><strong>{{getMessage("already_uploading")}}</strong></span>        <span ng-show="send_status().mode == 'exceed_limit'">
+        <strong>{{getMessage("size_exceed")}}</strong><br>
+        <span style='style: gray'>{{getMessage("size_exceed_desc")}}</span> </span> <span ng-show="num == 100"><strong>{{getMessage("complete")}}</strong></span> </div>
+      <div ng-show="upload && !send_status().mode" class="upload-status text-center">
+        <div class="key"><span ng-click="copyToClipboard(key)" ng-bind-html="getKeyTag()" title="{{getMessage('copy_key')}}"></span></div>
+        <div class="url"> {{getMessage('url')}} : <span class="url-copy" ng-click="copyToClipboard(short_url)" title="{{getMessage('copy_url')}}">{{short_url}}</span> ({{getMessage("exp")}} {{exp_date}})</div>
+      </div>
+      <div ng-show="upload && send_status().mode && num < 100" class="transfer-status text-center"> <span ng-show="send_status().mode == 'cancel'"><strong>{{getMessage("cancelled")}}</strong></span> <span ng-show="send_status().mode == 'error'">
+        <strong><span style='color:red'>{{getMessage("server_error")}}</span></strong>
+        <br/> <span style='color:gray'>{{getMessage("not_supported_browser")}}</span> </span> <span ng-show="send_status().mode == 'wrong_key'"><strong>{{getMessage("invalid_key")}}"</strong></span> <span ng-show="send_status().mode == 'uploading'"><strong>{{getMessage("already_uploading")}}</strong></span>        <span ng-show="send_status().mode == 'exceed_limit'">
+        <strong>{{getMessage("size_exceed")}}</strong><br>
+        <span style='style: gray'>{{getMessage("size_exceed_desc")}}</span> </span>
+      </div>
+      <div ng-show="upload && send_status().mode && num == 100" class="upload-status text-center">
+        <div class="key"><span ng-click="copyToClipboard(key)" ng-bind-html="getKeyTag()" title="{{getMessage('copy_key')}}"></span></div>
+        <div class="url"> {{getMessage('url')}} : <span class="url-copy" ng-click="copyToClipboard(short_url)" title="{{getMessage('copy_url')}}">{{short_url}}</span> ({{getMessage("exp")}} {{exp_date}})</div>
+      </div>
+      <!-- The progress bar -->
+      <div class="file-info">
+        <div class="filename">{{filename}}</div>
+        <div class="filesize"> <span id="file_transfer">{{getFileSize(send_status().loaded)}}</span> / <span id="file_length">{{getFileSize(send_status().total)}}</span> </div>
+        <div style="clear:both;"></div>
+      </div>
+      <div class="progress" data-file-upload-progress="progress()">
+        <div class="progress-bar {{mode}}" role="progressbar" aria-valuenow="{{num}}" aria-valuemin="0" aria-valuemax="100" style="width: {{num}}%">
+          <p class="txt_03 text-muted">{{num}}%</p>
+        </div>
+      </div>
+      <div class="button-group" ng-class="(getButtonType() == 'list') ? '' : 'center'">
+        <button class="btn button-tran cancel-btn default-btn" ng-show="getButtonType() == 'cancel'" ng-click="cancelTransfer();">{{getMessage("cancel")}}</button>
+        <button class="btn button-tran go-main {{mode}} default-btn" ng-show="getButtonType() == 'main' || getButtonType() == 'list'" ng-click="init()">{{getMessage("go_main")}}</button>
+        <button class="btn button-tran go-list default-btn" ng-show="getButtonType() == 'list'" ng-click="goList()">{{getMessage("go_list")}}</button>
+      </div>
+    </div>
+  </div>
+</div>

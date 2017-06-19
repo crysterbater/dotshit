@@ -1,0 +1,24 @@
+{
+   "background": {
+      "page": "background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_popup": "popup.build.html"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "This extension saves tabs for someday you need them.",
+   "icons": {
+      "128": "imgs/logo.128.png",
+      "16": "imgs/logo.38.png",
+      "19": "imgs/logo.38.png",
+      "38": "imgs/logo.38.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhZA4YVu0QIP1/EBDlWhEh0IlQq8fSvnH2SdzofJZcDQfvUgOvmoJHYPamEu/7g64QcoAEd3xmB19fCyJ2HwSsnbPVwt295Ef9wh4yKWhZcyHLudaC1+DE1o2ylJJN90sQnwgaE8v5ZPNU2HqwhOs2HAycCo+7uXHHZiZoCnlmaBtX+vj7RvuBoD/4CSnyY5IJzmTQRJzd+L00Lj4RAjJYKQfvswsGWMt0fVSjh+RCjeVAHxT1E1oL2q4N9Pwm/g3/FFOiyL1vZkvQhu2laWzed93aNDIEqIcoIJCXeMauRiDNepX67FG0yVqyTehs+1unSQ/wlENVija/W/y9dwwzQIDAQAB",
+   "manifest_version": 2,
+   "name": "Box for tabs",
+   "options_page": "index.build.html",
+   "permissions": [ "tabs", "contextMenus", "unlimitedStorage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.9.2"
+}

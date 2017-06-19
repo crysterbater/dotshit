@@ -1,0 +1,18 @@
+{
+   "app": {
+      "launch": {
+         "local_path": "index.html"
+      }
+   },
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "Pick a color. Choose a shade. PROFIT.\nIf you are in dire need of a superb color picker, you’ve found it!",
+   "icons": {
+      "128": "chroma_128.png",
+      "16": "chroma_16.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC8GC7h3xjQuIEG9r+zzykLEj+X5e9CzqNZa0R6uFY3AohFIw35P8yt3BUDh3AoPqpVlpn9zqo1o6F334g10BEM6HhhphZNTGjMcQVjgEKpqwDPBJYYGr65XX48o4q5p1Ycxzx/nkrpA+yEXNWq2iSsKBiIHUkXGzpBK32QqobO1wIDAQAB",
+   "manifest_version": 2,
+   "name": "Chroma",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "2.0.7"
+}

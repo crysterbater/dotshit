@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="2px" height="42px" viewBox="0 0 2 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>bot line</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Notice-open" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Slider-post-img" sketch:type="MSArtboardGroup" transform="translate(-90.000000, -13.000000)" fill="#3C414B">
+            <path d="M71,35 C71.5522847,35 72,34.5522847 72,34 C72,33.4477153 71.5522847,33 71,33 C70.4477153,33 70,33.4477153 70,34 C70,34.5522847 70.4477153,35 71,35 Z M81,35 C81.5522847,35 82,34.5522847 82,34 C82,33.4477153 81.5522847,33 81,33 C80.4477153,33 80,33.4477153 80,34 C80,34.5522847 80.4477153,35 81,35 Z M91,35 C91.5522847,35 92,34.5522847 92,34 C92,33.4477153 91.5522847,33 91,33 C90.4477153,33 90,33.4477153 90,34 C90,34.5522847 90.4477153,35 91,35 Z M101,35 C101.552285,35 102,34.5522847 102,34 C102,33.4477153 101.552285,33 101,33 C100.447715,33 100,33.4477153 100,34 C100,34.5522847 100.447715,35 101,35 Z M111,35 C111.552285,35 112,34.5522847 112,34 C112,33.4477153 111.552285,33 111,33 C110.447715,33 110,33.4477153 110,34 C110,34.5522847 110.447715,35 111,35 Z" id="bot-line" sketch:type="MSShapeGroup" transform="translate(91.000000, 34.000000) rotate(-270.000000) translate(-91.000000, -34.000000) "></path>
+        </g>
+    </g>
+</svg>

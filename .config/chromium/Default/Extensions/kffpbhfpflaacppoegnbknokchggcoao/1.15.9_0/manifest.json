@@ -1,0 +1,28 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "16.png",
+      "default_popup": "menu.html"
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://ajax.googleapis.com https://api.bing.com https://www.google-analytics.com; object-src 'self'",
+   "description": "Help support your favorite free content publishers online.",
+   "icons": {
+      "128": "128.png",
+      "16": "16.png",
+      "48": "48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqO7D0tgvIl3Xy6tUP/mk2Baq8UkjCvoJUSWSbTOy/+acNlLkVMkEfIMwl6dBrntlq5wYi1Uj6EVEgkwoI+GU4rjwKFt2SkZF/GWmKW6BfwEFTwqx8ulnlOvgJAmfk0rU+Vw1sz8/dde7wW+JrQKFiYpSQXn4mab/5xyfal7Vu/swZlh6cJ4T1qVi21bd7e26Wx+OLJEFPGHqc26VH9BMLb8j69Jw4ip94/wL+GB7wiW9+dxLzLjPvD2Pj4EnpRQiSazhr+MXGqRcZIZdfjKerHSegNHKPdYcwXp6aDaACOii23wHg6e0XCkCmovZs/vrxcL0I9MEm9xOJHFTGRLHJQIDAQAB",
+   "manifest_version": 2,
+   "name": "Support Free Content",
+   "offline_enabled": false,
+   "permissions": [ "tabs", "http://*/*", "https://*/*", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.15.9"
+}

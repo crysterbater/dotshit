@@ -1,0 +1,44 @@
+{
+   "addition_aCancel": {
+      "message": "Exit the formulary"
+   },
+   "addition_buttonAddUrl": {
+      "message": "add an other url"
+   },
+   "addition_buttonApply": {
+      "message": "apply"
+   },
+   "addition_labelLaunchAtStart": {
+      "message": "launch at start"
+   },
+   "addition_placeholderName": {
+      "message": "name of the new launcher"
+   },
+   "addition_placeholderUrl": {
+      "message": "new url"
+   },
+   "app_description": {
+      "message": "Save your favorite shortcuts and open them in 1 click !"
+   },
+   "app_title": {
+      "message": "quick launch'em"
+   },
+   "edition_aAdd": {
+      "message": "Add a new Quick Launch"
+   },
+   "edition_aBack": {
+      "message": "Back to Quick Launches"
+   },
+   "option_aClose": {
+      "message": "Close options"
+   },
+   "option_labelSync": {
+      "message": "Activate sync"
+   },
+   "shortcuts_aModify": {
+      "message": "Modify Quick Launches"
+   },
+   "shortcuts_aOptions": {
+      "message": "Show options"
+   }
+}

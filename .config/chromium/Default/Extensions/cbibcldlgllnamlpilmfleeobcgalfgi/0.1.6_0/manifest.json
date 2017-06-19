@@ -1,0 +1,20 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "*://mail.google.com/mail/*" ]
+   } ],
+   "description": "Make default Gmail™ New Look (2012) more readable by tweaking contrast, margins and borders.",
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDiuZumRakbRpQjMtE3/W6N6cgoX5+sL0hBWFEB92ZCiuv90NiTWc/uI3DDqsrBy7RNc8TABiN2dYmi7gDgBNBd4/srA0sIa0R9kX8kbSe4G5GYb6mBOdubfi/kso3ezKMnwwra6ttR1RhGr0QdKbgCn4m03lvyIpcQQoH6sc3dXwIDAQAB",
+   "manifest_version": 2,
+   "name": "Contrast Theme for Gmail™",
+   "options_page": "options.html",
+   "permissions": [ "tabs", "*://mail.google.com/mail/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.6"
+}

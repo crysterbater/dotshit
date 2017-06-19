@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ui-kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Menu-left" sketch:type="MSArtboardGroup" transform="translate(-174.000000, -319.000000)">
+            <g id="left-close-sing-in" sketch:type="MSLayerGroup" transform="translate(151.000000, 229.000000)">
+                <g id="sing-in" transform="translate(20.000000, 64.000000)" sketch:type="MSShapeGroup">
+                    <circle id="Mask-Copy-2" stroke-opacity="0.1" stroke="#FFFFFF" cx="21.5" cy="44.5" r="17.5"></circle>
+                    <path d="M22.5714286,47.7142857 L22.5714286,45.8571429 L26.5714286,45.8571429 L26.5714286,43.5714286 L22.5714286,43.5714286 L22.5714286,41.7142857 L19.5714286,44.7142857 L22.5714286,47.7142857 L22.5714286,47.7142857 Z M23.2857143,39 C23.9168969,39 24.4285714,39.5116746 24.4285714,40.1428571 L24.4285714,42.4285714 L23.2857143,42.4285714 L23.2857143,40.1428571 L18.1428571,40.1428571 L18.1428571,49.2857143 L23.2857143,49.2857143 L23.2857143,47 L24.4285714,47 L24.4285714,49.2857143 C24.4285714,49.9168969 23.9168969,50.4285714 23.2857143,50.4285714 L18.1428571,50.4285714 C17.5116746,50.4285714 17,49.9168969 17,49.2857143 L17,40.1428571 C17,39.5116746 17.5116746,39 18.1428571,39 L23.2857143,39 L23.2857143,39 Z" id="Shape" fill="#5D6474"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

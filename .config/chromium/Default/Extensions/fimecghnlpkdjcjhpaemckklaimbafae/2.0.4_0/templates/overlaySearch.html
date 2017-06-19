@@ -1,0 +1,19 @@
+<div id="searchOverlay">
+    <h1>Ahoy!</h1>
+    <input id="searchBox" type="text" ng-model="searchString"
+ng-keyup="$event.keyCode == 13 && customSearch()" placeholder="Looking for something?">
+    
+    <div class="container text-left searchInstr">
+        <div class="row text-left">
+            <div class="col-xs-12 noPadding">
+                <p class="noMargin pointerCursor" slider-toggle="#searchInstr"><strong>How do I use this?</strong></p>
+                <div slider id="searchInstr">
+                <p>Type a keyword before your query to search that site instead of Google (e.g. "youtube trailers", "wolfram graph cosx")</p>            
+                        <p class="noMargin"><strong>Available Keywords:</strong></p>
+                        <p>bitbucket, duckduckgo <span class="lightSearchText">(ddg)</span>, facebook, gcalendar <span class="lightSearchText">(gcal)</span>, gdrive, gdocs, gforms, gkeep, gsheets, gslides, github, gmail, images, imdb, imgur, linkedin, maps, pinterest, quora, reddit, stackoverflow, tumblr, twitch, twitter, wikipedia <span class="lightSearchText">(wiki)</span>, wolframalpha <span class="lightSearchText">(wolfram)</span>, vimeo, vine, youtube</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

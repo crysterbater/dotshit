@@ -1,0 +1,22 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "main.js" ]
+      }
+   },
+   "author": "Akmal Razali",
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmRn/Qp2MgCOORmFtQqWiQATqlk9d3OV9TnakBbW+VBz0UkZGvHZ4lgKKJICTYZKe8x2snWgNDx686iARIoyN/kd64ag04Y6AvA1FNaT4i/3B+UMOUJ5J/3Cn85v1zvrOZWExJmKPv6OodEkREAQexwHTltyCyAYkZSbYNA1raM8mZAAmD0s0xLHS0707aqZyLz2BlVkaPMKPLlLc7NxC5fYTtTw56z4y7V0YwGpzNaKagZ4TPjlWpuMyTADIueMTvBoZPZ8WjyUBBKj2zrKbb8/E1KKHMeFfhjOEZAIW4ephY4tkn2nVmsYBsp5anm8/zTPJ1OxZrwJjNeTUvugL8QIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "36.0",
+   "name": "App Launcher for Inbox by Gmail App",
+   "permissions": [ "audio", "audioCapture", "notifications", "videoCapture", "webview", "storage", "notifications" ],
+   "short_name": "Inbox",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1"
+}

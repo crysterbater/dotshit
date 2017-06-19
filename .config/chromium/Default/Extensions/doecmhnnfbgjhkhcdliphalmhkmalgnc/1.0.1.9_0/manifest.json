@@ -1,0 +1,22 @@
+{
+   "api_console_project_id": "1081477985712",
+   "app": {
+      "launch": {
+         "container": "tab",
+         "web_url": "http://drivetoimgur.appzend.net/"
+      },
+      "urls": [ "http://drivetoimgur.appzend.net/" ]
+   },
+   "container": "GOOGLE_DRIVE",
+   "default_locale": "en_US",
+   "description": "__MSG_ext_description__",
+   "icons": {
+      "128": "icon128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnzuuXM499ljU5XRSUji/Wo+3gc8sycsRvqqjwX/URvbhcqxIdgFliU84qYmTPXDmfwvUpdO2YkSPpFaIN/+xHE5almCqmVcPQot/O81cJwnBaqsi/Rix5VwxTHM5OHJ4QLclnnMc1KMD6byCWunNPXq+MAYb7kLFZKFmMaDj3iQIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_ext_name__",
+   "permissions": [ "unlimitedStorage" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0.1.9"
+}

@@ -1,0 +1,152 @@
+<!-- Copyright (c) 2017 - Martin Sermak -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="newlogo.png">
+	<title>Options</title>
+	<style type="text/css">
+		@font-face { font-family:"Droid Sans"; src:url("droid.woff") format("woff"); font-weight:normal; font-style:normal; }
+		* { font-family:"Droid Sans"; -webkit-appearance:none; }
+		body { font-size:0.94em; color:#000; background:#EEE; white-space:nowrap; text-align:left; cursor:default; margin:0px; }
+		.back { position:fixed; top:0px; left:0px; width:100%; height:100%; z-index:-1; }
+		.back img { position:absolute; top:0px; left:0px; right:0px; bottom:0px; margin:auto; width:100%; height:100%; min-width:100%; min-height:100%; filter:invert(0); }
+		.main { position:relative; left:0px; right:0px; background:transparent; width:660px; margin:20px auto; border:6px solid; border-radius:14px; border-color:#DDD; padding:15px; }
+		.logo { background:url("newlogo.png") no-repeat; animation:spin 8s linear infinite; background-size:48px 48px; width:48px; height:48px; display:block; float:left; }
+		@keyframes spin { from { transform:rotate(0deg); } to { transform:rotate(359deg); } }
+		.title1 { font-size:1.34em; font-weight:bold; display:inline; padding-left:15px; }
+		.title2 { color:#888; display:inline; padding-left:20px; }
+		.blue { color:#14E; }
+		.example { color:#444; font-size:0.94em; margin:2px 0px; padding-left:5px; }
+		.input { font-size:1.00em; padding:4px 6px; width:642px; height:30px; box-sizing:border-box; border:1px solid #AAA; border-radius:5px; border-color:#AAA; outline:0px; }
+		.input:hover, .input:focus { box-shadow:0px 0px 5px #AAA; }
+		.agent { font-size:0.94em; padding:4px 6px; width:100%; height:26px; box-sizing:border-box; border:1px solid #AAA; border-radius:5px; border-color:#AAA; outline:0px; }
+		.agent:hover, .agent:focus { box-shadow:0px 0px 5px #AAA; }
+		.down { font-size:0.94em; padding:4px 6px; width:80px; height:26px; box-sizing:border-box; border:1px solid #AAA; border-radius:5px; border-color:#AAA; outline:0px; }
+		.down:hover, .down:focus { box-shadow:0px 0px 5px #AAA; }
+		.help { color:#888; font-size:0.86em; display:block; padding-top:2px; }
+		.drop { color:#888; font-size:0.86em; padding-right:3px; }
+		.table { width:100%; border-collapse:collapse; }
+		.table tr td { padding:3px; }
+		.table tr td:first-child { vertical-align:text-top; }
+		.table tr td:last-child { vertical-align:text-top; text-align:right; }
+		.urlbox { background:#EAEAEA; margin:0px auto; border:1px solid #AAA; border-radius:5px; border-color:#AAA; padding:8px; }
+		.url1 { color:#575; font-size:0.94em; float:left; font-weight:bold; padding-left:5px; }
+		.url2 { color:#B33; font-size:0.94em; float:right; font-weight:bold; padding-right:5px; cursor:pointer; }
+		.middle { color:#555; font-size:1.00em; width:440px; text-align:center; display:inline-block; }
+		.button { color:#FFF; font-size:1.48em; width:100px; background-color:#595; border:0px; border-radius:6px; outline:0px; padding:4px; cursor:pointer; }
+		.button:hover, .button:focus { background-color:#36F; }
+		.null { position:absolute; top:10px; left:10px; width:0px; height:0px; }
+	</style>
+</head>
+
+<body>
+	<div class="back">
+		<img src="abstract.svg" alt="">
+	</div>
+	<div class="main">
+		<p></p>
+		<span class="logo"></span>
+		<span class="title1"><span class="blue">New Tab</span> + <span class="blue">Start Page</span> Options</span>
+		<br>
+		<span class="title2">by Martin Sermak - Copyright &copy; 2017</span>
+		<p></p>
+		<br>
+		<div class="urlbox">
+		<div class="url1">New Tab & Start Page URL</div>
+		<div class="url2" id="reset">Reset URL</div>
+		<br>
+		<input id="url" spellcheck="false" class="input" type="text" maxlength="100" value="" autofocus />
+		<p></p>
+		<p class="example" id="ex1">Sample &nbsp;&raquo;&nbsp; </p>
+		<p class="example" id="ex2">Sample &nbsp;&raquo;&nbsp; </p>
+		<p class="example" id="ex3">Sample &nbsp;&raquo;&nbsp; file:///C:/Users/Admin/Desktop/Page.html</p>
+		<p class="example" id="ex4">Sample &nbsp;&raquo;&nbsp; https://www.google.com/?gws_rd=cr</p>
+		<p class="example" id="ex5">Sample &nbsp;&raquo;&nbsp; about:blank</p>
+		</div>
+		<br>
+		<table class="table"><tr>
+		<td>&#10004;</td>
+		<td><input id="agent" spellcheck="false" class="agent" type="text" maxlength="200" value="" />
+		<span class="help">Overrides the "User Agent" (Chromify works for Opera/Vivaldi)</span></td>
+		<td><select id="agselect" class="down"><option selected disabled>&rarrhk;</option>
+			<option disabled>&nbsp;</option><option>Reset to Default</option><option>Chromify Agent</option><option disabled>&nbsp;</option>
+			<option>iOS (iPad)</option><option>Android (Nexus)</option><option>Chrome (Windows)</option><option>Firefox (Windows)</option>
+			<option>Edge (Windows)</option><option>Chrome (macOS)</option><option>Firefox (macOS)</option><option>Safari (macOS)</option>
+			<option disabled>&nbsp;</option><option>Google (Bot)</option>
+		</select></td>
+		</tr><tr>
+		<td>&#10004;</td>
+		<td><span>Use the Custom Page above to Override "New Tab"</span>
+		<span class="help">Your Custom Page above will override default new tab behaviour</span></td>
+		<td><span class="drop">(default: Yes)</span>
+		<select id="newtab" class="down"><option>Yes</option><option>Disable</option></select></td>
+		</tr><tr>
+		<td>&#10004;</td>
+		<td><span>Also, Override the "Start Page" button (Opera only)</span>
+		<span class="help">In Chrome use the Settings to override the "Home Page" button</span></td>
+		<td><span class="drop">(def: Disable)</span>
+		<select id="icontab" class="down"><option>Disable</option><option>Yes</option></select></td>
+		</tr><tr>
+		<td>&#10004;</td>
+		<td><span>Enable History Navigation via Mouse (Chrome only)</span>
+		<span class="help">Right click mouse button while moving it left or right to activate</span></td>
+		<td><span class="drop">(def: Disable)</span>
+		<select id="navigation" class="down"><option>Disable</option><option>Yes</option></select></td>
+		</tr><tr>
+		<td>&#10004;</td>
+		<td><span>Double Click Non-Active URL Detection Routine</span>
+		<span class="help">Double clicking an otherwise inactive URL will Detect & Open it</span></td>
+		<td><span class="drop">(default: v2.0)</span>
+		<select id="detection" class="down"><option>v2.0</option><option>v1.0</option><option>Disable</option></select></td>
+		</tr><tr>
+		<td>&#10004;</td>
+		<td><span>Google Search URL Cleanup & Privacy Protection</span>
+		<span class="help">Disables Referral Pings from being sent on Google search pages</span></td>
+		<td><span class="drop">(default: Yes)</span>
+		<select id="protection" class="down"><option>Yes</option><option>Disable</option></select></td>
+		</tr><tr>
+		<td>&#10004;</td>
+		<td><span>Override YouTube Age Restriction Automatically</span>
+		<span class="help">Reload a restricted YouTube video using an "embed" option</span></td>
+		<td><span class="drop">(def: Disable)</span>
+		<select id="yourage" class="down"><option>Disable</option><option>Yes</option></select></td>
+		</tr><tr>
+		<td>&#10004;</td>
+		<td><span>Try increasing YouTube resolution to 720p/1080p</span>
+		<span class="help">Automatically switch playback to 1080p/720p when available</span></td>
+		<td><span class="drop">(def: Disable)</span>
+		<select id="quality" class="down"><option>Disable</option><option>Yes</option></select></td>
+		</tr><tr>
+		<td>&#10004;</td>
+		<td><span>Override Start Page when Browser is Launched</span>
+		<span class="help">Browser settings should be set to "Open New Tab / Start Page"</span></td>
+		<td><span class="drop">(def: Disable)</span>
+		<select id="override" class="down"><option>Disable</option><option>Yes</option></select></td>
+		</tr><tr>
+		<td>&#10004;</td>
+		<td><span>Language to be used for Web Page Translation</span>
+		<span class="help">Select some text on a website & press Shift+Ctrl to Translate</span></td>
+		<td><span class="drop">(def: English)</span>
+		<select id="language" class="down"><option value="off">Disable</option>
+			<option value="cs">Czech</option><option value="zh-CN">Chinese</option><option value="da">Danish</option><option value="nl">Dutch</option><option value="en">English</option>
+			<option value="fi">Finnish</option><option value="fr">French</option><option value="de">German</option><option value="el">Greek</option><option value="it">Italian</option>
+			<option value="ja">Japanese</option><option value="ko">Korean</option><option value="no">Norwegian</option><option value="pl">Polish</option><option value="pt">Portuguese</option>
+			<option value="ru">Russian</option><option value="es">Spanish</option><option value="sv">Swedish</option><option value="tr">Turkish</option><option value="uk">Ukrainian</option>
+		</select></td>
+		</tr></table>
+		<br>
+		<table class="table"><tr>
+		<td><input id="save" class="button" type="button" value="SAVE" /></td>
+		<td><span class="middle" id="infobox">&nbsp;</span></td>
+		<td><input id="pdf" class="button" type="button" value="HELP" /></td>
+		</tr></table>
+	</div>
+	<a class="null" href="#"></a>
+	<script type="text/javascript" src="options.js"></script>
+</body>
+
+</html>

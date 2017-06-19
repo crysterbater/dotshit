@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>gMusic</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="frame">
+      <div class="ec-controls">
+          <a href="#" id="window-expand" title="Expand"><img src="images/win-expanded-white.png"/></a
+          ><a href="#" id="window-compact" title="Compact"><img src="images/win-compact-white.png"/></a
+          ><a href="#" id="window-minimize" title="Minimize"><img src="images/win_min_white.png"/></a
+          ><a href="#" id="window-maximize" title="Maximize"><img src="images/win_max_grey.png"/></a
+          ><a href="#" id="window-restore" title="Restore"><img src="images/win_restore_grey.png"/></a
+          ><a href="#" id="window-close" title="Close"><img src="images/win_close_white.png"/></a>
+      </div>
+
+      <div class="main-menu">
+          <img id="btn_menu" src="images/option-vertical.png"/>
+          <ul>
+            <li id="m_gpm" data-player="gpm">Google Music</li>
+            <li id="m_sc" data-player="sc">SoundCloud</li>
+            <li id="m_eq">Equalizer</li>
+            <li id="m_dark">Night Mode</li>
+            <li id="m_default">Day Mode</li>
+            <li id="m_reload">Reload</li>
+            <li id="m_feedback">Do you like it?</li>
+          </ul>
+        </div>
+
+      <div class="ec-title">
+          <img id="logoImg" class="icon-small" src="images/blank.png"/>
+          gMusic <span id="title-text"></span>
+      </div>
+  </div>
+
+  <div class="eq-container">
+    <div class="flex-row">
+      <div class="options">
+
+        <div class="btn-group" id="eq-presets">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            Presets <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+          </ul>
+        </div>
+
+      </div>
+      <div class="sliders">
+        <div class="master">
+          <input id="ch-eq-slider-0" class="ch-eq-slider" eq="master" type="range" min="0" step="0.01" max="2" value="1">
+        <div class="ch-eq-label">Preamp</div></div><div>
+          <input id="ch-eq-slider-1" class="ch-eq-slider" eq="32" type="range" min="-12" step="0.01" max="12" value="0">
+        <div class="ch-eq-label">32</div></div><div>
+          <input id="ch-eq-slider-2" class="ch-eq-slider" eq="64" type="range" min="-12" step="0.01" max="12" value="0">
+        <div class="ch-eq-label">64</div></div><div>
+          <input id="ch-eq-slider-3" class="ch-eq-slider" eq="125" type="range" min="-12" step="0.01" max="12" value="0">
+        <div class="ch-eq-label">125</div></div><div>
+          <input id="ch-eq-slider-4" class="ch-eq-slider" eq="250" type="range" min="-12" step="0.01" max="12" value="0">
+        <div class="ch-eq-label">250</div></div><div>
+          <input id="ch-eq-slider-5" class="ch-eq-slider" eq="500" type="range" min="-12" step="0.01" max="12" value="0">
+        <div class="ch-eq-label">500</div></div><div>
+          <input id="ch-eq-slider-6" class="ch-eq-slider" eq="1000" type="range" min="-12" step="0.01" max="12" value="0">
+        <div class="ch-eq-label">1k</div></div><div>
+          <input id="ch-eq-slider-7" class="ch-eq-slider" eq="2000" type="range" min="-12" step="0.01" max="12" value="0">
+        <div class="ch-eq-label">2k</div></div><div>
+          <input id="ch-eq-slider-8" class="ch-eq-slider" eq="4000" type="range" min="-12" step="0.01" max="12" value="0">
+        <div class="ch-eq-label">4k</div></div><div>
+          <input id="ch-eq-slider-9" class="ch-eq-slider" eq="8000" type="range" min="-12" step="0.01" max="12" value="0">
+        <div class="ch-eq-label">8k</div></div><div>
+          <input id="ch-eq-slider-10" class="ch-eq-slider" eq="16000" type="range" min="-12" step="0.01" max="12" value="0">
+          <div class="ch-eq-label">16k</div></div>
+      </div>
+      <div class="eq-close"><img src="images/circle-remove.png"/></div>
+    </div>
+  </div>
+
+
+<div class="container">
+    <webview id="playMusicWV" partition="persist:googleplaymusic" src=""></webview>
+</div>
+
+</body>
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/const.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="eq/eq-main.js"></script>
+</html>

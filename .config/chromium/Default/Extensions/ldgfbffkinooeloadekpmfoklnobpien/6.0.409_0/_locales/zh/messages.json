@@ -1,0 +1,150 @@
+{
+   "alreadyInCollection": {
+      "description": "已經儲存在書籤資料夾中",
+      "message": "已經儲存在書籤資料夾中"
+   },
+   "appDesc": {
+      "description": "\"Save Button\" for Web",
+      "message": "\"Save Button\" for Web"
+   },
+   "appName": {
+      "description": "Raindrop.io: \"Save Button\" for Web",
+      "message": "Raindrop.io: \"Save Button\" for Web"
+   },
+   "articleRemovedPermament": {
+      "description": "文章已刪除",
+      "message": "文章已刪除"
+   },
+   "articleSaved": {
+      "description": "文章已儲存",
+      "message": "文章已儲存"
+   },
+   "edit": {
+      "description": "編輯",
+      "message": "編輯"
+   },
+   "error": {
+      "description": "糟糕出錯了！請再試一次～",
+      "message": "糟糕出錯了！請再試一次～"
+   },
+   "findBookmark": {
+      "description": "尋找書籤",
+      "message": "尋找書籤"
+   },
+   "hotkey": {
+      "description": "快捷鍵",
+      "message": "快捷鍵"
+   },
+   "imageRemovedPermament": {
+      "description": "圖片已刪除",
+      "message": "圖片已刪除"
+   },
+   "imageSaved": {
+      "description": "圖片已儲存",
+      "message": "圖片已儲存"
+   },
+   "inCollection": {
+      "description": "收藏集中",
+      "message": "收藏集中"
+   },
+   "linkRemovedPermament": {
+      "description": "連結已刪除",
+      "message": "連結已刪除"
+   },
+   "linkSaved": {
+      "description": "連結已儲存",
+      "message": "連結已儲存"
+   },
+   "loading": {
+      "description": "載入中",
+      "message": "載入中"
+   },
+   "logOut": {
+      "description": "登出",
+      "message": "登出"
+   },
+   "myBookmarks": {
+      "description": "我的書籤",
+      "message": "我的書籤"
+   },
+   "myBookmarksRaindrop": {
+      "description": "我的書籤 (Raindrop.io)",
+      "message": "我的書籤 (Raindrop.io)"
+   },
+   "open": {
+      "description": "Open",
+      "message": "Open"
+   },
+   "pleaseLogin": {
+      "description": "請登入並開始使用",
+      "message": "請登入並開始使用"
+   },
+   "remove": {
+      "description": "移除",
+      "message": "移除"
+   },
+   "restore": {
+      "description": "Restore",
+      "message": "Restore"
+   },
+   "save": {
+      "description": "儲存",
+      "message": "儲存"
+   },
+   "saveError": {
+      "description": "儲存失敗",
+      "message": "儲存失敗"
+   },
+   "saveImage": {
+      "description": "將圖像保存到 Raindrop.io",
+      "message": "將圖像保存到 Raindrop.io"
+   },
+   "saveLink": {
+      "description": "將網頁保存到 Raindrop.io",
+      "message": "將網頁保存到 Raindrop.io"
+   },
+   "savePage": {
+      "description": "將網頁保存到 Raindrop.io",
+      "message": "將網頁保存到 Raindrop.io"
+   },
+   "saveToRaindrop": {
+      "description": "儲存 對 Raindrop.io",
+      "message": "儲存 對 Raindrop.io"
+   },
+   "settings": {
+      "description": "設定",
+      "message": "設定"
+   },
+   "signIn": {
+      "description": "登入",
+      "message": "登入"
+   },
+   "signUp": {
+      "description": "註冊",
+      "message": "註冊"
+   },
+   "supportOnlyUrls": {
+      "description": "只能儲存使用 HTTP 或 HTTPs 協定的連結",
+      "message": "只能儲存使用 HTTP 或 HTTPs 協定的連結"
+   },
+   "toRaindrop": {
+      "description": "對 Raindrop.io",
+      "message": "對 Raindrop.io"
+   },
+   "tryAgain": {
+      "description": "再試一次",
+      "message": "再試一次"
+   },
+   "unsorted": {
+      "description": "收件箱",
+      "message": "收件箱"
+   },
+   "videoRemovedPermament": {
+      "description": "內容已刪除",
+      "message": "內容已刪除"
+   },
+   "videoSaved": {
+      "description": "內容已儲存",
+      "message": "內容已儲存"
+   }
+}

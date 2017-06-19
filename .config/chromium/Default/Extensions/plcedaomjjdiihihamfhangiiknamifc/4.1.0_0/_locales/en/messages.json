@@ -1,0 +1,1067 @@
+{
+   "actionCancel": {
+      "description": "The cancel button for dialogs",
+      "message": "Cancel"
+   },
+   "actionOk": {
+      "description": "The OK button for dialogs",
+      "message": "OK"
+   },
+   "add": {
+      "description": "Add a card to the list",
+      "message": "Add: "
+   },
+   "add_a_card": {
+      "description": "Add a card button",
+      "message": "Add a card"
+   },
+   "apps": {
+      "description": "Card name for apps list.",
+      "message": "Apps"
+   },
+   "appsEnabled": {
+      "description": "Message to enable/disable apps card",
+      "message": "Enable apps card"
+   },
+   "appsOrderReset": {
+      "description": "Message to remove apps sorting",
+      "message": "Reset apps sorting"
+   },
+   "automatic": {
+      "description": "Automatic value in the options.",
+      "message": "Auto"
+   },
+   "blocksOrderReset": {
+      "description": "Message for the reset of block sorting",
+      "message": "Reset blocks sorting"
+   },
+   "bookmark": {
+      "description": "Card name for apps list.",
+      "message": "Bookmarks"
+   },
+   "bookmarkEnabled": {
+      "description": "Message to enable/disable bookmark card",
+      "message": "Enable the bookmarks card"
+   },
+   "bookmarkInitial": {
+      "description": "Option title for choosing the initial bookmark tab",
+      "message": "Initial bookmark tab"
+   },
+   "calendar": {
+      "description": "Card name for calendar.",
+      "message": "Calendar"
+   },
+   "calendarEnabled": {
+      "description": "Message to activate calendar card",
+      "message": "Enable calendar card"
+   },
+   "calendarList": {
+      "description": "Card name for calendar.",
+      "message": "Choose between calendars"
+   },
+   "confirmReset": {
+      "description": "Reset confirmation method",
+      "message": "Please confirm before the reset"
+   },
+   "dark": {
+      "description": "Dark theme name",
+      "message": "Dark"
+   },
+   "datetime": {
+      "description": "Card name for date and time.",
+      "message": "Date & time"
+   },
+   "datetimeEnabled": {
+      "description": "Message to activate date & time card",
+      "message": "Enable datetime card"
+   },
+   "datetimeFormat": {
+      "description": "Message to pick one time format",
+      "message": "Choose time format"
+   },
+   "datetimeLanguage": {
+      "description": "legend of the language selection for date & time",
+      "message": "Choose the language for the date card"
+   },
+   "datetimePrependZeroHour": {
+      "description": "Message to enable/disable trailing zero for hours",
+      "message": "Add trailing zero for hours"
+   },
+   "datetimePrependZeroMinute": {
+      "description": "Message to enable/disable trailing zero for minutes",
+      "message": "Add trailing zero for minutes"
+   },
+   "days": {
+      "description": "XX days message",
+      "message": "days"
+   },
+   "disabled": {
+      "message": "Disabled"
+   },
+   "disabledTechnical": {
+      "description": "Message for disabled feature for technical reason",
+      "message": "Temporary disabled for technical reasons"
+   },
+   "download": {
+      "description": "Card name for downloads.",
+      "message": "Downloads"
+   },
+   "downloadEnabled": {
+      "description": "Message to enable/disable download card",
+      "message": "Enable Downloads card"
+   },
+   "drive": {
+      "description": "Card name for Google Drive",
+      "message": "Google Drive"
+   },
+   "driveEnabled": {
+      "description": "Message to enable/disable drive card",
+      "message": "Enable Google Drive card"
+   },
+   "enabled": {
+      "message": "Enabled"
+   },
+   "error_occurs": {
+      "description": "Message for an occuring error",
+      "message": "Oops something went wrong..."
+   },
+   "extDescription": {
+      "description": "Extension description.",
+      "message": "Empowering your new tabs"
+   },
+   "extName": {
+      "description": "Extension name.",
+      "message": "Rocket Dashboard"
+   },
+   "extShortname": {
+      "description": "Extension name.",
+      "message": "CNT"
+   },
+   "general": {
+      "description": "Name for the general options.",
+      "message": "General"
+   },
+   "generalAnalytics": {
+      "description": "Message for the analytics integration",
+      "message": "Help the extension development with anonymous usage stats"
+   },
+   "generalBackground": {
+      "description": "Message to change the background image",
+      "message": "Custom background image"
+   },
+   "generalHeaderType": {
+      "description": "Message to choose the type of header (disabled, small or normal)",
+      "message": "Header type"
+   },
+   "generalListSize": {
+      "description": "Message to choose the number of information shown in each blocks",
+      "message": "Lines to show in blocks"
+   },
+   "generalNewtab": {
+      "description": "Message to make links open in a new tab",
+      "message": "Open links in a new tab"
+   },
+   "generalOkGoogle": {
+      "description": "Message to disable OK Google detection",
+      "message": "Enable OK Google detection"
+   },
+   "generalShowSettingsStartup": {
+      "description": "Message to disable the settings button on every launch",
+      "message": "Show the parameters button at every startup"
+   },
+   "generalSuggest": {
+      "description": "Message to disable Google suggest",
+      "message": "Enable Google suggest"
+   },
+   "generalTheme": {
+      "description": "Message to change the theme",
+      "message": "Pick a theme"
+   },
+   "gmail": {
+      "description": "Gmail card name",
+      "message": "Gmail"
+   },
+   "gmailEnabled": {
+      "description": "Message to enable/disable gmail card",
+      "message": "Enable gmail card"
+   },
+   "help": {
+      "description": "Message to help users on a feature",
+      "message": "Help me!"
+   },
+   "label_all": {
+      "description": "Label for 'all'",
+      "message": "All"
+   },
+   "label_close": {
+      "description": "Label for 'close'",
+      "message": "close"
+   },
+   "label_recent": {
+      "description": "Label for 'recent'",
+      "message": "Recent"
+   },
+   "lang_af": {
+      "description": "Language name for Afrikaans",
+      "message": "Afrikaans"
+   },
+   "lang_am": {
+      "description": "Language name for Amharic",
+      "message": "Amharic"
+   },
+   "lang_ar": {
+      "description": "Language name for Arabic",
+      "message": "Arabic"
+   },
+   "lang_az": {
+      "description": "Language name for Azerbaijani",
+      "message": "Azerbaijani"
+   },
+   "lang_be": {
+      "description": "Language name for Belarusian",
+      "message": "Belarusian"
+   },
+   "lang_bg": {
+      "description": "Language name for Bulgarian",
+      "message": "Bulgarian"
+   },
+   "lang_bh": {
+      "description": "Language name for Bihari",
+      "message": "Bihari"
+   },
+   "lang_bn": {
+      "description": "Language name for Bengali",
+      "message": "Bengali"
+   },
+   "lang_bs": {
+      "description": "Language name for Bosnian",
+      "message": "Bosnian"
+   },
+   "lang_ca": {
+      "description": "Language name for Catalan",
+      "message": "Catalan"
+   },
+   "lang_cs": {
+      "description": "Language name for Czech",
+      "message": "Czech"
+   },
+   "lang_cy": {
+      "description": "Language name for Welsh",
+      "message": "Welsh"
+   },
+   "lang_da": {
+      "description": "Language name for Danish",
+      "message": "Danish"
+   },
+   "lang_de": {
+      "description": "Language name for German",
+      "message": "German"
+   },
+   "lang_el": {
+      "description": "Language name for Greek",
+      "message": "Greek"
+   },
+   "lang_en": {
+      "description": "Language name for English",
+      "message": "English"
+   },
+   "lang_eo": {
+      "description": "Language name for Esperanto",
+      "message": "Esperanto"
+   },
+   "lang_es": {
+      "description": "Language name for Spanish",
+      "message": "Spanish"
+   },
+   "lang_et": {
+      "description": "Language name for Estonian",
+      "message": "Estonian"
+   },
+   "lang_eu": {
+      "description": "Language name for Basque",
+      "message": "Basque"
+   },
+   "lang_fa": {
+      "description": "Language name for Persian",
+      "message": "Persian"
+   },
+   "lang_fi": {
+      "description": "Language name for Finnish",
+      "message": "Finnish"
+   },
+   "lang_fil": {
+      "description": "Language name for Filipino",
+      "message": "Filipino"
+   },
+   "lang_fo": {
+      "description": "Language name for Faroese",
+      "message": "Faroese"
+   },
+   "lang_fr": {
+      "description": "Language name for French",
+      "message": "French"
+   },
+   "lang_fy": {
+      "description": "Language name for Frisian",
+      "message": "Frisian"
+   },
+   "lang_ga": {
+      "description": "Language name for Irish",
+      "message": "Irish"
+   },
+   "lang_gd": {
+      "description": "Language name for Scots Gaelic",
+      "message": "Scots Gaelic"
+   },
+   "lang_gl": {
+      "description": "Language name for Galician",
+      "message": "Galician"
+   },
+   "lang_gu": {
+      "description": "Language name for Gujarati",
+      "message": "Gujarati"
+   },
+   "lang_he": {
+      "description": "Language name for Hebrew",
+      "message": "Hebrew"
+   },
+   "lang_hi": {
+      "description": "Language name for Hindi",
+      "message": "Hindi"
+   },
+   "lang_hr": {
+      "description": "Language name for Croatian",
+      "message": "Croatian"
+   },
+   "lang_hu": {
+      "description": "Language name for Hungarian",
+      "message": "Hungarian"
+   },
+   "lang_ia": {
+      "description": "Language name for Interlingua",
+      "message": "Interlingua"
+   },
+   "lang_id": {
+      "description": "Language name for Indonesian",
+      "message": "Indonesian"
+   },
+   "lang_is": {
+      "description": "Language name for Icelandic",
+      "message": "Icelandic"
+   },
+   "lang_it": {
+      "description": "Language name for Italian",
+      "message": "Italian"
+   },
+   "lang_iw": {
+      "description": "Language name for Hebrew",
+      "message": "Hebrew"
+   },
+   "lang_ja": {
+      "description": "Language name for Japanese",
+      "message": "Japanese"
+   },
+   "lang_jw": {
+      "description": "Language name for Javanese",
+      "message": "Javanese"
+   },
+   "lang_ka": {
+      "description": "Language name for Georgian",
+      "message": "Georgian"
+   },
+   "lang_kn": {
+      "description": "Language name for Kannada",
+      "message": "Kannada"
+   },
+   "lang_ko": {
+      "description": "Language name for Korean",
+      "message": "Korean"
+   },
+   "lang_la": {
+      "description": "Language name for Latin",
+      "message": "Latin"
+   },
+   "lang_lt": {
+      "description": "Language name for Lithuanian",
+      "message": "Lithuanian"
+   },
+   "lang_lv": {
+      "description": "Language name for Latvian",
+      "message": "Latvian"
+   },
+   "lang_mk": {
+      "description": "Language name for Macedonian",
+      "message": "Macedonian"
+   },
+   "lang_ml": {
+      "description": "Language name for Malayalam",
+      "message": "Malayalam"
+   },
+   "lang_mr": {
+      "description": "Language name for Marathi",
+      "message": "Marathi"
+   },
+   "lang_ms": {
+      "description": "Language name for Malay",
+      "message": "Malay"
+   },
+   "lang_mt": {
+      "description": "Language name for Maltese",
+      "message": "Maltese"
+   },
+   "lang_ne": {
+      "description": "Language name for Nepali",
+      "message": "Nepali"
+   },
+   "lang_nl": {
+      "description": "Language name for Dutch",
+      "message": "Dutch"
+   },
+   "lang_nn": {
+      "description": "Language name for Norwegian (Nynorsk)",
+      "message": "Norwegian (Nynorsk)"
+   },
+   "lang_no": {
+      "description": "Language name for Norwegian",
+      "message": "Norwegian"
+   },
+   "lang_oc": {
+      "description": "Language name for Occitan",
+      "message": "Occitan"
+   },
+   "lang_pa": {
+      "description": "Language name for Punjabi",
+      "message": "Punjabi"
+   },
+   "lang_pl": {
+      "description": "Language name for Polish",
+      "message": "Polish"
+   },
+   "lang_pt": {
+      "description": "Language name for Portuguese",
+      "message": "Portuguese"
+   },
+   "lang_pt_br": {
+      "description": "Language name for Portuguese (Brazil)",
+      "message": "Portuguese (Brazil)"
+   },
+   "lang_pt_pt": {
+      "description": "Language name for Portuguese (Portugal)",
+      "message": "Portuguese (Portugal)"
+   },
+   "lang_ro": {
+      "description": "Language name for Romanian",
+      "message": "Romanian"
+   },
+   "lang_ru": {
+      "description": "Language name for Russian",
+      "message": "Russian"
+   },
+   "lang_si": {
+      "description": "Language name for Sinhalese",
+      "message": "Sinhalese"
+   },
+   "lang_sk": {
+      "description": "Language name for Slovak",
+      "message": "Slovak"
+   },
+   "lang_sl": {
+      "description": "Language name for Slovenian",
+      "message": "Slovenian"
+   },
+   "lang_sm": {
+      "description": "Language name for Amharic",
+      "message": "Amharic"
+   },
+   "lang_sq": {
+      "description": "Language name for Albanian",
+      "message": "Albanian"
+   },
+   "lang_sr": {
+      "description": "Language name for Serbian",
+      "message": "Serbian"
+   },
+   "lang_su": {
+      "description": "Language name for Sudanese",
+      "message": "Sudanese"
+   },
+   "lang_sv": {
+      "description": "Language name for Swedish",
+      "message": "Swedish"
+   },
+   "lang_sw": {
+      "description": "Language name for Swahili",
+      "message": "Swahili"
+   },
+   "lang_ta": {
+      "description": "Language name for Tamil",
+      "message": "Tamil"
+   },
+   "lang_te": {
+      "description": "Language name for Telugu",
+      "message": "Telugu"
+   },
+   "lang_th": {
+      "description": "Language name for Thai",
+      "message": "Thai"
+   },
+   "lang_ti": {
+      "description": "Language name for Tigrinya",
+      "message": "Tigrinya"
+   },
+   "lang_tl": {
+      "description": "Language name for Tagalog",
+      "message": "Tagalog"
+   },
+   "lang_tr": {
+      "description": "Language name for Turkish",
+      "message": "Turkish"
+   },
+   "lang_uk": {
+      "description": "Language name for Ukrainian",
+      "message": "Ukrainian"
+   },
+   "lang_ur": {
+      "description": "Language name for Urdu",
+      "message": "Urdu"
+   },
+   "lang_uz": {
+      "description": "Language name for Uzbek",
+      "message": "Uzbek"
+   },
+   "lang_vi": {
+      "description": "Language name for Vietnamese",
+      "message": "Vietnamese"
+   },
+   "lang_xh": {
+      "description": "Language name for Xhosa",
+      "message": "Xhosa"
+   },
+   "lang_zh": {
+      "description": "Language name for Chinese",
+      "message": "Chinese"
+   },
+   "lang_zh_cn": {
+      "description": "Language name for Chinese (Simplified)",
+      "message": "Chinese (Simplified)"
+   },
+   "lang_zh_tw": {
+      "description": "Language name for Chinese (Traditional)",
+      "message": "Chinese (Traditional)"
+   },
+   "lang_zu": {
+      "description": "Language name for Zulu",
+      "message": "Zulu"
+   },
+   "language_ar_ae": {
+      "description": "Language name",
+      "message": "الإمارات (UAE)"
+   },
+   "language_ar_eg": {
+      "description": "Language name",
+      "message": "مصر (Egypt)"
+   },
+   "language_ar_lb": {
+      "description": "Language name",
+      "message": "لبنان (Lebanon)"
+   },
+   "language_ar_me": {
+      "description": "Language name",
+      "message": "العالم العربي (Arabic)"
+   },
+   "language_ar_sa": {
+      "description": "Language name",
+      "message": "السعودية (KSA)"
+   },
+   "language_au": {
+      "description": "Language name",
+      "message": "Australia"
+   },
+   "language_ca": {
+      "description": "Language name",
+      "message": "Canada English"
+   },
+   "language_cn": {
+      "description": "Language name",
+      "message": "中国 (China)"
+   },
+   "language_cs_cz": {
+      "description": "Language name",
+      "message": "Česká republika"
+   },
+   "language_de": {
+      "description": "Language name",
+      "message": "Deutschland"
+   },
+   "language_de_at": {
+      "description": "Language name",
+      "message": "Österreich"
+   },
+   "language_de_ch": {
+      "description": "Language name",
+      "message": "Schweiz"
+   },
+   "language_el_gr": {
+      "description": "Language name",
+      "message": "Ελλάδα (Greece)"
+   },
+   "language_en_bw": {
+      "description": "Language name",
+      "message": "Botswana"
+   },
+   "language_en_et": {
+      "description": "Language name",
+      "message": "Ethiopia"
+   },
+   "language_en_gh": {
+      "description": "Language name",
+      "message": "Ghana"
+   },
+   "language_en_ie": {
+      "description": "Language name",
+      "message": "Ireland"
+   },
+   "language_en_il": {
+      "description": "Language name",
+      "message": "Israel English"
+   },
+   "language_en_ke": {
+      "description": "Language name",
+      "message": "Kenya"
+   },
+   "language_en_my": {
+      "description": "Language name",
+      "message": "Malaysia"
+   },
+   "language_en_na": {
+      "description": "Language name",
+      "message": "Namibia"
+   },
+   "language_en_ng": {
+      "description": "Language name",
+      "message": "Nigeria"
+   },
+   "language_en_ph": {
+      "description": "Language name",
+      "message": "Philippines"
+   },
+   "language_en_pk": {
+      "description": "Language name",
+      "message": "Pakistan"
+   },
+   "language_en_sg": {
+      "description": "Language name",
+      "message": "Singapore"
+   },
+   "language_en_tz": {
+      "description": "Language name",
+      "message": "Tanzania"
+   },
+   "language_en_ug": {
+      "description": "Language name",
+      "message": "Uganda"
+   },
+   "language_en_za": {
+      "description": "Language name",
+      "message": "South Africa"
+   },
+   "language_en_zw": {
+      "description": "Language name",
+      "message": "Zimbabwe"
+   },
+   "language_es": {
+      "description": "Language name",
+      "message": "España"
+   },
+   "language_es_ar": {
+      "description": "Language name",
+      "message": "Argentina"
+   },
+   "language_es_cl": {
+      "description": "Language name",
+      "message": "Chile"
+   },
+   "language_es_co": {
+      "description": "Language name",
+      "message": "Colombia"
+   },
+   "language_es_cu": {
+      "description": "Language name",
+      "message": "Cuba"
+   },
+   "language_es_mx": {
+      "description": "Language name",
+      "message": "México"
+   },
+   "language_es_pe": {
+      "description": "Language name",
+      "message": "Perú"
+   },
+   "language_es_us": {
+      "description": "Language name",
+      "message": "Estados Unidos"
+   },
+   "language_es_ve": {
+      "description": "Language name",
+      "message": "Venezuela"
+   },
+   "language_fr": {
+      "description": "Language name",
+      "message": "France"
+   },
+   "language_fr_be": {
+      "description": "Language name",
+      "message": "Belgique"
+   },
+   "language_fr_ca": {
+      "description": "Language name",
+      "message": "Canada Français"
+   },
+   "language_fr_ch": {
+      "description": "Language name",
+      "message": "Suisse"
+   },
+   "language_fr_ma": {
+      "description": "Language name",
+      "message": "Maroc"
+   },
+   "language_fr_sn": {
+      "description": "Language name",
+      "message": "Sénégal"
+   },
+   "language_hi_in": {
+      "description": "Language name",
+      "message": "हिन्दी (India)"
+   },
+   "language_hk": {
+      "description": "Language name",
+      "message": "香港 (Hong Kong)"
+   },
+   "language_hu_hu": {
+      "description": "Language name",
+      "message": "Magyarország"
+   },
+   "language_in": {
+      "description": "Language name",
+      "message": "India"
+   },
+   "language_it": {
+      "description": "Language name",
+      "message": "Italia"
+   },
+   "language_iw_il": {
+      "description": "Language name",
+      "message": "ישראל (Israel)"
+   },
+   "language_jp": {
+      "description": "Language name",
+      "message": "日本 (Japan)"
+   },
+   "language_kr": {
+      "description": "Language name",
+      "message": "한국 (Korea)"
+   },
+   "language_ml_in": {
+      "description": "Language name",
+      "message": "മലയാളം (India)"
+   },
+   "language_nl_be": {
+      "description": "Language name",
+      "message": "België"
+   },
+   "language_nl_nl": {
+      "description": "Language name",
+      "message": "Nederland"
+   },
+   "language_no_no": {
+      "description": "Language name",
+      "message": "Norge"
+   },
+   "language_nz": {
+      "description": "Language name",
+      "message": "New Zealand"
+   },
+   "language_pl_pl": {
+      "description": "Language name",
+      "message": "Polska"
+   },
+   "language_pt_br_br": {
+      "description": "Language name",
+      "message": "Brasil"
+   },
+   "language_pt_pt_pt": {
+      "description": "Language name",
+      "message": "Portugal"
+   },
+   "language_ru_ru": {
+      "description": "Language name",
+      "message": "Россия (Russia)"
+   },
+   "language_ru_ua": {
+      "description": "Language name",
+      "message": "Украина / русский (Ukraine)"
+   },
+   "language_sr_rs": {
+      "description": "Language name",
+      "message": "Србија (Serbia)"
+   },
+   "language_sv_se": {
+      "description": "Language name",
+      "message": "Sverige"
+   },
+   "language_ta_in": {
+      "description": "Language name",
+      "message": "தமிழ்(India)"
+   },
+   "language_te_in": {
+      "description": "Language name",
+      "message": "తెలుగు (India)"
+   },
+   "language_tr_tr": {
+      "description": "Language name",
+      "message": "Türkiye"
+   },
+   "language_tw": {
+      "description": "Language name",
+      "message": "台灣 (Taiwan)"
+   },
+   "language_uk": {
+      "description": "Language name",
+      "message": "U.K."
+   },
+   "language_uk_ua": {
+      "description": "Language name",
+      "message": "Україна / українська (Ukraine)"
+   },
+   "language_us": {
+      "description": "Language name",
+      "message": "U.S."
+   },
+   "language_vi_vn": {
+      "description": "Language name",
+      "message": "Việt Nam (Vietnam)"
+   },
+   "latitude": {
+      "description": "Latitude placeholder",
+      "message": "Latitude"
+   },
+   "light": {
+      "description": "Light theme name",
+      "message": "Light"
+   },
+   "loading": {
+      "description": "Placeholder when a card is loading.",
+      "message": "Loading..."
+   },
+   "longitude": {
+      "description": "Longitude placholder",
+      "message": "Longitude"
+   },
+   "news": {
+      "description": "Card name for news.",
+      "message": "News"
+   },
+   "newsEnabled": {
+      "description": "Message to enable/disable news card",
+      "message": "Enable news card"
+   },
+   "newsLanguage": {
+      "description": "Language used on the Google News card",
+      "message": "Langue des actualités"
+   },
+   "noconnection": {
+      "description": "Notice message when no Internet connection is detected.",
+      "message": "No internet connection. Old data retrieved."
+   },
+   "nocontent": {
+      "description": "Message when no content is retrieved",
+      "message": "No available content"
+   },
+   "nogeolocation": {
+      "description": "Notice when the location cannot be found",
+      "message": "We can't find you... Try to set a location in the settings"
+   },
+   "normal": {
+      "description": "The normal string",
+      "message": "Normal"
+   },
+   "notificationBackgroundImage": {
+      "description": "",
+      "message": "You can now change your background through the general settings"
+   },
+   "notificationBookmarksBar": {
+      "description": "",
+      "message": "You can now add a bookmarks card through the general settings"
+   },
+   "notificationCalendarCard": {
+      "description": "",
+      "message": "There is a new Google Calendar card available in the menu"
+   },
+   "notificationChromeBug": {
+      "description": "",
+      "message": "A Chrome bug forces us to change the sorting method. We apologize for any inconvenience this may cause"
+   },
+   "notificationDarkTheme": {
+      "description": "",
+      "message": "There is now a dark theme available in the settings"
+   },
+   "notificationDownloadCard": {
+      "description": "",
+      "message": "There is a new download card that shows the downloaded items"
+   },
+   "overload_location": {
+      "description": "Legend for the weather overload section",
+      "message": "Overload location settings"
+   },
+   "paypal_buy_me_coffee": {
+      "description": "Donate button legend",
+      "message": "The extension is free and will always be free. however, you can support my job easily by buying me a coffee!"
+   },
+   "paypal_help_dev": {
+      "description": "Option value for doing a donation",
+      "message": "Help the developpement by making a donation"
+   },
+   "paypal_legend": {
+      "description": "Paypal button alternative test",
+      "message": "PayPal - The safer, easier way to pay online"
+   },
+   "paypal_make_a_donation": {
+      "description": "Option for doing a donation",
+      "message": "Make a donation"
+   },
+   "prettydate_daysago": {
+      "description": "Date message for xx days ago",
+      "message": "$1 days ago"
+   },
+   "prettydate_hourago": {
+      "description": "Date message for 1 hour ago",
+      "message": "1 hour ago"
+   },
+   "prettydate_hoursago": {
+      "description": "Date message for xx hours ago",
+      "message": "$1 hours ago"
+   },
+   "prettydate_justnow": {
+      "description": "Date message for just now",
+      "message": "just now"
+   },
+   "prettydate_longtimeago": {
+      "description": "Date message for long time ago",
+      "message": "long time ago"
+   },
+   "prettydate_minuteago": {
+      "description": "Date message for 1 minute ago",
+      "message": "1 minute ago"
+   },
+   "prettydate_minutesago": {
+      "description": "Date message for xx minutes ago",
+      "message": "$1 minutes ago"
+   },
+   "prettydate_monthago": {
+      "description": "Date message for 1 month ago",
+      "message": "1 month ago"
+   },
+   "prettydate_monthsago": {
+      "description": "Date message for xx months ago",
+      "message": "$1 months ago"
+   },
+   "prettydate_weekago": {
+      "description": "Date message for 1 week ago",
+      "message": "1 week ago"
+   },
+   "prettydate_weeksago": {
+      "description": "Date message for xx weeks ago",
+      "message": "$1 weeks ago"
+   },
+   "prettydate_yearago": {
+      "description": "Date message for 1 year ago",
+      "message": "1 year ago"
+   },
+   "prettydate_yesterday": {
+      "description": "Date message for yesterday",
+      "message": "Yesterday"
+   },
+   "recent": {
+      "description": "Card name for Recent tabs.",
+      "message": "Recent tabs"
+   },
+   "recentEnabled": {
+      "description": "Message to enable/disable recent tabs card",
+      "message": "Enable Recent tabs card"
+   },
+   "request_access": {
+      "description": "Message when Google account isn't connected",
+      "message": "Request access to activate the card"
+   },
+   "request_access_bookmarks": {
+      "description": "Message when bookmarks are not allowed",
+      "message": "Request access to activate the bookmarks bar"
+   },
+   "search": {
+      "description": "Placeholder on the search box",
+      "message": "Search"
+   },
+   "settings": {
+      "description": "Settings name",
+      "message": "Settings"
+   },
+   "small": {
+      "message": "Small"
+   },
+   "support": {
+      "description": "Card name for support.",
+      "message": "Support"
+   },
+   "temperature_c": {
+      "description": "Celsius unit for weather",
+      "message": "Celsius"
+   },
+   "temperature_f": {
+      "description": "Fahrenheit unit for weather",
+      "message": "Fahrenheit"
+   },
+   "time_12": {
+      "description": "12h format",
+      "message": "12h"
+   },
+   "time_24": {
+      "description": "24h format",
+      "message": "24h"
+   },
+   "topsites": {
+      "description": "Card name for the most visited websites.",
+      "message": "Top sites"
+   },
+   "topsitesEnabled": {
+      "description": "Message to enable/disable top sites card",
+      "message": "Enable top site card"
+   },
+   "topsitesExclusionReset": {
+      "description": "Message to remove topsites exclusions",
+      "message": "Reset exclusions"
+   },
+   "weather": {
+      "description": "Card name for weather.",
+      "message": "Weather"
+   },
+   "weatherEnabled": {
+      "descirption": "Message to enable/disable weather card",
+      "message": "Enable weather card"
+   },
+   "weatherLatitude": {
+      "description": "Latitude string",
+      "message": "Latitude"
+   },
+   "weatherLongitude": {
+      "description": "Longitude string",
+      "message": "Longitude"
+   },
+   "weatherSearchPlace": {
+      "description": "Place search placeholder on the options",
+      "message": "Search for a place"
+   },
+   "weatherUnit": {
+      "description": "legend for weather unit",
+      "message": "Choose the weather units"
+   }
+}

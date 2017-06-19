@@ -1,0 +1,17 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://mycloudplayers.com"
+      },
+      "urls": [ "http://mycloudplayers.com/" ]
+   },
+   "description": "Free online music player that enables you to search and listen music from SoundCloud.",
+   "icons": {
+      "128": "mcp.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCyvk7EF6x/gyD2sToA32ATg7UAP+NUNmo4azr8/6vQEyqZr8Q666j851wG6LKvmyN93ufYQNwDyOc95OYF8I1AoVqiMWON7jcqohqP5A5OJ90X+dkYZTQMVXljgSgTNLbtOH2qINEeltd/s8nFi649PbQpYUYONjy3anlWtgdzCQIDAQAB",
+   "manifest_version": 2,
+   "name": "My Cloud Player",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.22"
+}

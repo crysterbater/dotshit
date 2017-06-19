@@ -1,0 +1,1 @@
+Object.defineProperty(window,"open",{value:function(){throw document.write("<xmp style=display:none>"),"test"}});

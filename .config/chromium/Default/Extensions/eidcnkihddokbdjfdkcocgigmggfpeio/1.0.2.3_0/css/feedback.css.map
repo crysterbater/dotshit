@@ -1,0 +1,1 @@
+{"version":3,"sources":["app/css/feedback.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA","file":"build\\css\\feedback.css","sourcesContent":["/*feedback*/ \r\n\r\n.drag-area { background: var(--back-color); } \r\n.content { padding: 50px 20px 0 20px; background: #f6f6f6; height: 100%; }  "]}

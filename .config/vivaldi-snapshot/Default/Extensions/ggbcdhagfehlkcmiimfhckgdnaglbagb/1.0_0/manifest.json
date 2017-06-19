@@ -1,0 +1,15 @@
+{
+   "content_scripts": [ {
+      "exclude_globs": [  ],
+      "exclude_matches": [  ],
+      "include_globs": [ "http://wikipedia.org/*", "https://wikipedia.org/*", "http://*.wikipedia.org/*", "https://*.wikipedia.org/*" ],
+      "js": [ "script.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "converted_from_user_script": true,
+   "description": "\u003Cb>NEW Wikipedia minimalistic material dark theme\u003C/b>.",
+   "key": "u6/zmjoBAwZf+janhBvJMNFoj74+6ZGHeLN4yQ4V29Q=",
+   "name": "Wikipedia Minimalistic Dark Material Design",
+   "version": "1.0"
+}

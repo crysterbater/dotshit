@@ -1,0 +1,56 @@
+@import "variables";
+@import "mixins";
+
+$ps-theme-default: (
+  border-radius: $ps-border-radius,
+  rail-default-opacity: $ps-rail-default-opacity,
+  rail-container-hover-opacity: $ps-rail-container-hover-opacity,
+  rail-hover-opacity: $ps-rail-hover-opacity,
+  bar-bg: $ps-bar-bg,
+  bar-container-hover-bg: $ps-bar-container-hover-bg,
+  bar-hover-bg: $ps-bar-hover-bg,
+  rail-hover-bg: $ps-rail-hover-bg,
+  scrollbar-x-rail-bottom: $ps-scrollbar-x-rail-bottom,
+  scrollbar-x-rail-height: $ps-scrollbar-x-rail-height,
+  scrollbar-x-bottom: $ps-scrollbar-x-bottom,
+  scrollbar-x-height: $ps-scrollbar-x-height,
+  scrollbar-y-rail-right: $ps-scrollbar-y-rail-right,
+  scrollbar-y-rail-width: $ps-scrollbar-y-rail-width,
+  scrollbar-y-right: $ps-scrollbar-y-right,
+  scrollbar-y-width: $ps-scrollbar-y-width,
+);
+
+.ps-container {
+  @include ps-container($ps-theme-default);
+}
+
+.ps-theme-flatun {
+  @include ps-container(map-merge($ps-theme-default, (
+    bar-bg: transparent,
+    bar-container-hover-bg: #000,
+    bar-hover-bg: #fff,
+    rail-hover-bg: #999
+  )));
+}
+
+.ps-theme-flatun-compact {
+  @include ps-container(map-merge($ps-theme-default, (
+    bar-bg: transparent,
+    bar-container-hover-bg: #000,
+    bar-hover-bg: #000,
+    rail-hover-bg: transparent,
+    border-radius: 2px,
+    scrollbar-x-height: 3px,
+    scrollbar-y-width: 3px
+  )));
+}
+
+.ps-theme-flatun-invisible {
+  @include ps-container(map-merge($ps-theme-default, (
+    bar-bg: transparent,
+    bar-container-hover-bg: transparent,
+    bar-hover-bg: transparent,
+    rail-hover-bg: transparent
+  )));
+}
+

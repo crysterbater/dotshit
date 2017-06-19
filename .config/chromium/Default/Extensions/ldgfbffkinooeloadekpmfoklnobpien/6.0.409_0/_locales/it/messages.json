@@ -1,0 +1,150 @@
+{
+   "alreadyInCollection": {
+      "description": "Già nella collezione",
+      "message": "Già nella collezione"
+   },
+   "appDesc": {
+      "description": "\"Save Button\" for Web",
+      "message": "\"Save Button\" for Web"
+   },
+   "appName": {
+      "description": "Raindrop.io: \"Save Button\" for Web",
+      "message": "Raindrop.io: \"Save Button\" for Web"
+   },
+   "articleRemovedPermament": {
+      "description": "Articolo rimosso",
+      "message": "Articolo rimosso"
+   },
+   "articleSaved": {
+      "description": "Articolo salvato",
+      "message": "Articolo salvato"
+   },
+   "edit": {
+      "description": "Modifica",
+      "message": "Modifica"
+   },
+   "error": {
+      "description": "Errore sconosciuto. Riprova!",
+      "message": "Errore sconosciuto. Riprova!"
+   },
+   "findBookmark": {
+      "description": "Trova preferiti",
+      "message": "Trova preferiti"
+   },
+   "hotkey": {
+      "description": "Hotkey",
+      "message": "Hotkey"
+   },
+   "imageRemovedPermament": {
+      "description": "Foto rimossa",
+      "message": "Foto rimossa"
+   },
+   "imageSaved": {
+      "description": "Fotografia salvata",
+      "message": "Fotografia salvata"
+   },
+   "inCollection": {
+      "description": "Nella collezione",
+      "message": "Nella collezione"
+   },
+   "linkRemovedPermament": {
+      "description": "Link rimosso",
+      "message": "Link rimosso"
+   },
+   "linkSaved": {
+      "description": "Link salvato",
+      "message": "Link salvato"
+   },
+   "loading": {
+      "description": "Caricamento",
+      "message": "Caricamento"
+   },
+   "logOut": {
+      "description": "Esci",
+      "message": "Esci"
+   },
+   "myBookmarks": {
+      "description": "I miei segnalibri / preferiti",
+      "message": "I miei segnalibri / preferiti"
+   },
+   "myBookmarksRaindrop": {
+      "description": "I miei segnalibri / preferiti (Raindrop.io)",
+      "message": "I miei segnalibri / preferiti (Raindrop.io)"
+   },
+   "open": {
+      "description": "Open",
+      "message": "Open"
+   },
+   "pleaseLogin": {
+      "description": "Per favore, accedi per iniziare!",
+      "message": "Per favore, accedi per iniziare!"
+   },
+   "remove": {
+      "description": "Rimuovi",
+      "message": "Rimuovi"
+   },
+   "restore": {
+      "description": "Restore",
+      "message": "Restore"
+   },
+   "save": {
+      "description": "Salva",
+      "message": "Salva"
+   },
+   "saveError": {
+      "description": "Errore salvato!",
+      "message": "Errore salvato!"
+   },
+   "saveImage": {
+      "description": "Salva l'immagine su Raindrop.io",
+      "message": "Salva l'immagine su Raindrop.io"
+   },
+   "saveLink": {
+      "description": "Salva la pagina su Raindrop.io",
+      "message": "Salva la pagina su Raindrop.io"
+   },
+   "savePage": {
+      "description": "Salva la pagina su Raindrop.io",
+      "message": "Salva la pagina su Raindrop.io"
+   },
+   "saveToRaindrop": {
+      "description": "Salva vai a Raindrop.io",
+      "message": "Salva vai a Raindrop.io"
+   },
+   "settings": {
+      "description": "Impostazioni",
+      "message": "Impostazioni"
+   },
+   "signIn": {
+      "description": "Accedi",
+      "message": "Accedi"
+   },
+   "signUp": {
+      "description": "Registrati",
+      "message": "Registrati"
+   },
+   "supportOnlyUrls": {
+      "description": "È possibile salvare links solo con protocollo http e https!",
+      "message": "È possibile salvare links solo con protocollo http e https!"
+   },
+   "toRaindrop": {
+      "description": "vai a Raindrop.io",
+      "message": "vai a Raindrop.io"
+   },
+   "tryAgain": {
+      "description": "Riprova",
+      "message": "Riprova"
+   },
+   "unsorted": {
+      "description": "In arrivo",
+      "message": "In arrivo"
+   },
+   "videoRemovedPermament": {
+      "description": "Contenuto rimosso",
+      "message": "Contenuto rimosso"
+   },
+   "videoSaved": {
+      "description": "Contenuto Salvato",
+      "message": "Contenuto Salvato"
+   }
+}

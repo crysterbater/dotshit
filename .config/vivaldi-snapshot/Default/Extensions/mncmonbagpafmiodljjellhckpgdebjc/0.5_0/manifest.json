@@ -1,0 +1,22 @@
+{
+   "browser_action": {
+      "default_icon": {
+         "19": "icons/icon19.png",
+         "38": "icons/icon38.png"
+      },
+      "default_popup": "pages/popup.html",
+      "icons": {
+         "128": "icons/icon128.png",
+         "16": "icons/icon16.png",
+         "48": "icons/icon48.png"
+      }
+   },
+   "description": "Get images",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnWe+k8/NfSLHVyhleTCQ50JoakLCPjgJGvL2YzXb8z3VldpGzQETLZskCOVpuqXg1mS7yvKc1eW7+HPZce/7Hdz3tTC61NGfa7wAr6sEeAsIk/Atga2oneFhlweFcClkHaWuHdjMg0srN5LfDFvUPVWoSrc5SyliCkaEpO1qc+b0G3H2v9l7J5wf5QQCsRa5tiflU8jEGbaYsVg5iX7dqHnWCaYuSWEQpZl/ZKS9vCaKu8MHJnLlssBgpyU0xGYv1ayZHJrMh3Z7+F7Wkibd7AsHlp3S2q2N6C6bud+hakQnbMAFHFUYM/0iMivEpESXwIr+CPfFo0Rc11Z4JHLCBwIDAQAB",
+   "manifest_version": 2,
+   "name": "Pixels to me - 500px",
+   "options_page": "pages/options.html",
+   "permissions": [ "tabs", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.5"
+}

@@ -1,0 +1,22 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background/eventPage.min.js" ]
+   },
+   "chrome_url_overrides": {
+      "newtab": "tab.html"
+   },
+   "content_security_policy": "script-src 'self'; object-src 'self'",
+   "description": "Replace your new tab with the weather and a todolist displayed over a popular image from Reddit.",
+   "icons": {
+      "128": "img/icon/icon128.png",
+      "16": "img/icon/icon16.png",
+      "48": "img/icon/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkHjx/gJmgCjpsJ0Z/4E6j/iwqhDvAYEaSJlyQajeFEFsHU+Qri6J7FUSu8M2rHbee3kQV/OKKleINh7UH7tnrBBwIaIptiLm9HXyzdkYrv7mluhJlPUqOJoCHO+boRSpUhM7Baus2GgX/b7P0/3+JLL/pEU4sw3BYmVGNlBtG2KFJKXiyLgeCdlFCyCe7IEItGOXzNE8OaKwlHS90E7u9Zmgn4BBAP2wX8y6nXWKX8P6saecf1HHuxRyIZwlVwBBHw4YpGeU1EhjBhrOnfLa1ky4qJxktw488U4el1pl8wH5NifNgn13T7cRlcNjownAYW47CtXbJaIftRtUas4dmwIDAQAB",
+   "manifest_version": 2,
+   "name": "Surge - Material New Tab",
+   "permissions": [ "storage", "http://api.openweathermap.org/data/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.4"
+}

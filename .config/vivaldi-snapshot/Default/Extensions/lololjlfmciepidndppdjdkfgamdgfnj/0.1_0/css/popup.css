@@ -1,0 +1,137 @@
+body { width: auto; overflow-x: hidden; margin: 0; padding: 10px; }
+.clear { clear: both; }
+#popupWrapper { width: 480px; max-width: 480px; position: relative; overflow: hidden; background-color: #fff; }
+#downloadImage { width: 100%; }
+#downloadImage .loadedImageWrap { width: 320px; float: left; height: 320px; text-align: center; }
+#downloadImage .loadedSizesWrap { width: 150px; float: left; height: 320px; overflow-y: auto; margin-left: 10px; }
+#downloadImage:after { clear: both; }
+
+#downloadImage h1 { margin: 0; padding: 0; font-size: 1.1em; font-weight: bold; text-align: right; margin-bottom: 2px; }
+
+#loadedSizes i { margin-left: 5px; cursor: pointer; position: relative; }
+#loadedSizes i img { width: 20px; height: 20px; display: inline-block; }
+
+
+#multipleImagesDownload ul, #multipleImagesDownload li, #downloadImage ul, #downloadImage li {
+	list-style: none;
+	margin: 0; padding: 0 0 0 0px;
+}
+#multipleImagesDownload ul, #multipleImagesDownload li, #downloadImage li {
+	display: block;
+	line-height: 2em;
+	text-align: right;
+	position: relative;
+}
+
+#multipleImagesDownload { width: 100%; max-height: 320px; overflow-y: auto; }
+
+#multipleImagesDownload #imagesWrapper {
+	overflow: auto;
+}
+
+#multipleImagesDownload #imagesWrapper li {
+	float: left;
+	line-height: normal;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+#multipleImagesDownload #imagesWrapper li img {
+	height: 80px;
+	display: block;
+}
+
+#downloadImage img { margin: 0px; vertical-align: middle; /*max-width: 100%; max-height: 320px;*/ }
+
+.pxdownloaderButton {
+	float: right;
+	margin-left: 5px;
+}
+
+#cantDownload {
+	width: 100%;
+}
+
+#controls {
+	margin-top: 10px;
+}
+
+#cantDownload, #downloadImage, .onlyNoPro, .onlyPro {
+	display: none;
+}
+
+a.highlight {
+	color: #cc0000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.highlight:hover {
+	text-decoration: underline;
+}
+
+#aboutBox { margin-top: 10px; text-align: right; font-size: 0.9em; }
+#donateBox { margin-top: 5px; position: relative; width: 100%; background-color: #fff; font-size: 0.9em; }
+#paypalBtn { text-align: right; }
+#paypalBtn label { line-height: 27px; float: right; padding-right: 5px; }
+#donateButton { display: inline-block; float: right; }
+#btnHideDonate { display: none; }
+
+#downloadCounter { margin-top: 5px; text-align: right; }
+.textRed { color: #990000; }
+
+
+div.pxdownloader_spinnerWrapper {
+	margin-left: 5px;
+	z-index: 10;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	display: none;
+}
+div.pxdownloader_spinnerWrapper .pxdownloader_bg {
+	z-index: 20;
+	position: absolute;
+	top: 0px; left: 0px; right: 0px; bottom: 0px; width: 100%; height: 100%;
+	background-color: #000;
+	opacity: 0.3;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+div.pxdownloader_spinner {
+	box-sizing: border-box;
+	z-index: 30;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	border-radius: 50%;
+	border: dashed 3px #fff;
+	-webkit-animation-name: loader-spin;
+	animation-name: loader-spin;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+div.pxdownloader_spinner.large {
+	width: 43px;
+	height: 43px;
+	border-width: 3px;
+}
+@-webkit-keyframes loader-spin {
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.disclaimer { display: block; font-size: 0.9em; }

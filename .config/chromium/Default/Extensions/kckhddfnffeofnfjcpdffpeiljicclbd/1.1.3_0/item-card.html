@@ -1,0 +1,23 @@
+<html><head>
+<meta charset="UTF-8"></head><body><polymer-element name="item-card" attributes="description" assetpath="../src/">
+    <template>
+        <style>
+            :host {
+                width:100%;
+                margin-bottom:10px;
+                padding:5px;
+                border-radius: 2px;
+                box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+                background-color: rgb(255, 255, 255);
+                display:block;
+            }
+
+            h1 {
+                font-size:18px;
+            }
+        </style>
+        <h1>{{title}}</h1>
+        <p>{{description}}</p>
+    </template>
+    
+</polymer-element><script charset="utf-8" src="item-card.js"></script></body></html>

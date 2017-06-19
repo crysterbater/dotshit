@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Options - Gmail Contrast New Look</title>
+<script src="options.js"></script>
+<style>
+html, body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333;
+}
+.wrapper {
+  min-height: 100%;
+  height: 100%;
+  margin-bottom: -50px;
+}
+.footer_space {
+  height: 50px;
+}
+.footer {
+  height: 49px;
+  border-top: 1px solid #ddd;
+  color: #999;
+  background-color: #eee;
+}
+.content {
+  padding: 15px;
+}
+
+small {
+  font-size: 100%;
+  color: #999;
+}
+p {
+  margin: 10px 0;
+}
+
+h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+}
+h1 small {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+.control-group {
+  padding-top: 5px;
+}
+.control-group:after {
+  clear: both;
+}
+.control-label {
+  float: left;
+  width: 140px;
+  text-align: right;
+  font-weight: bold;
+}
+.controls {
+  margin-left: 160px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #999;
+  padding: 1px 4px 2px;
+  border-radius: 3px;
+}
+.label-important {
+  background-color: #B94A48;
+}
+</style>
+</head>
+
+<body onload="onload">
+  <div class="wrapper">
+    <div class="content">
+      <h1>
+        Options <small>Contrast Theme for Gmail</small>
+      </h1>
+
+      <fieldset>
+        <div class="control-group">
+          <div class="control-label">
+            Additional Styles
+          </div>
+
+          <div class="controls">
+            <label for="hide_ads">
+              <input id="hide_ads" type="checkbox">
+              Hide Ads as much as possible.
+            </label>
+
+            <label for="monospace_font">
+              <input id="monospace_font" type="checkbox">
+              Use monospace font for mail body and editor.
+            </label>
+
+            <label for="styled_quotation">
+              <input id="styled_quotation" type="checkbox">
+              Add a border to quotation like Mail.app.
+            </label>
+
+            <label for="light_gray_background">
+              <input id="light_gray_background" type="checkbox">
+              Use light gray for background color<br>
+              <small><span class="label">Note</span> This may conflict with non default themes.</small>
+            </label>
+
+            <label for="strong_side_menu">
+              <input id="strong_side_menu" type="checkbox">
+              Use red background color for selected item in side menu, like old look.<br>
+              <small><span class="label">Note</span> This may conflict with non default themes.</small>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <p><span class="label label-important">Note</span> After changing these options, you need to reload Gmail tabs.</p>
+    </div>
+
+    <div class="footer_space"></div>
+  </div>
+
+  <div class="footer">
+    <div class="content">
+      Copyright &copy; 2013 Yoshimasa Niwa
+    </div>
+  </div>
+</body>
+</html>

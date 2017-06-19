@@ -1,0 +1,20 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "main.js" ]
+      }
+   },
+   "description": "SoundCloud for Desktop",
+   "icons": {
+      "128": "assets/icon-128x128.png",
+      "16": "assets/icon-128x128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmFLzbfC42cP0J4ldPovjgqXxYw3eVF1fIIXa8vUXt7hoAUaRp9TDIBLF7Ae94Z1gw4DQdM+ODoOwJisRzIezzS6MQm6p36sAPjKk9IvH6aYIhjdOfPAZy7fgA8B3FhdoU98eF2lsis/qyxh3OZV9XlU+cb4Xtk3dQfVIXRHfdi/pvpAj3zrCwjpk4fYsHrogUyC+ttac57MO8mm0kKRkrnvdLThsNKSLUX0MSpgQFU+T2P1OMHbFcUVf1InaFWwyliWRon5Af5uWcFReO98Cp4I9KKC6OpWqcaJNss3NczpZXM0Rm+SuYcRTXx+RN5xXfOIKynCFqLhyqTfoH/u4HwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "23",
+   "name": "SoundCloud",
+   "offline_enabled": true,
+   "permissions": [ "storage", "webview", "https://soundcloud.com/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0"
+}

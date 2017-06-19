@@ -1,0 +1,12 @@
+2017/06/17-13:34:19.714 25659 Reusing MANIFEST /home/pringled/.config/chromium/Default/Extension State/MANIFEST-000001
+2017/06/17-13:34:19.716 25659 Recovering log #26
+2017/06/17-13:34:19.844 25659 Reusing old log /home/pringled/.config/chromium/Default/Extension State/000026.log 
+2017/06/17-13:34:19.929 26393 Compacting 1@0 + 1@1 files
+2017/06/17-13:34:20.239 26393 Generated table #29@0: 5 keys, 673 bytes
+2017/06/17-13:34:20.239 26393 Compacted 1@0 + 1@1 files => 673 bytes
+2017/06/17-13:34:20.635 26393 compacted to: files[ 0 1 1 0 0 0 0 ]
+2017/06/17-13:34:20.635 26393 Delete type=2 #25
+2017/06/17-13:34:20.738 26393 Delete type=2 #27
+2017/06/17-20:56:19.003 26393 Level-0 table #31: started
+2017/06/17-20:56:19.137 26393 Level-0 table #31: 448598 bytes OK
+2017/06/17-20:56:19.253 26393 Delete type=0 #26

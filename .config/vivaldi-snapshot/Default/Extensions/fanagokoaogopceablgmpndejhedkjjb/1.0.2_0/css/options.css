@@ -1,0 +1,72 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:arial,tahoma,verdana;
+}
+body{
+  font-size:12px;
+  color:#222;
+}
+h1{
+  font-size:20px;
+  font-weight: bold;
+  color:#000;
+  padding:5px 0 10px 0;
+}
+h2{
+  font-size:16px;
+  font-weight: bold;
+  color:#000;
+  padding:10px 0 7px 0;
+}
+input{
+  padding:2px 8px;
+}
+.clear{
+  display:block;
+  clear:both;
+  height:0;
+  line-height:0;
+  font-size:0;
+}
+#main{
+  padding:10px 15px;
+  text-align: left;
+  background-color:#bbb;
+}
+#list{
+  margin:12px 0 3px 0;
+  border-top:1px solid #ccc;
+}
+#list .flash{
+  line-height:20px;
+  padding:2px 0;
+  border-bottom:1px solid #ccc;
+}
+#list .flash .url{
+  display: inline-block;
+  font-weight: bold;
+  padding:0 3px;
+}
+#list .flash .url:hover, #list .flash .url.active{
+  cursor: pointer;
+  background-color:#eee;
+}
+#list .flash .url .play{
+  display: inline-block;
+  margin:0 3px -5px 0;
+}
+#list .flash .remove{
+  display: inline-block;
+  margin:0 3px -5px 8px;
+  cursor: pointer;
+}
+
+#settings{
+  margin:0 0 10px 0;
+}
+#settings input, #settings label{
+  cursor: pointer;
+  float:left;
+  margin-right:5px;
+}

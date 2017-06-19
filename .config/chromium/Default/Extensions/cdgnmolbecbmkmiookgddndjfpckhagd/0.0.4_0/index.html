@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="zode">
+<head>
+    <meta charset="UTF-8" />
+    <title>ZODE</title>
+    <link href='https://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="libs/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="libs/animate.css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.min.css" />
+</head>
+
+<body ng-controller="ZodeController">
+  <header>
+    <a href="http://www.zode.com.br" class="logo">
+      ZODE - Zode of designers
+    </a>
+
+    <div class="options">
+      <form class="options-search">
+        <input type="color" class="options-search-input" required>
+        <button type="submit" class="options-search-button">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+
+      <a class="options-square">
+        <i class="fa fa-dribbble"></i>
+      </a>
+    </div>
+    <ul class="color-group">
+        <li class="color" ng-repeat="hex in colors">
+          <button type="button" ng-click="getColor(hex)" ng-class="(hex==color) ? 'color-square active' : 'color-square'" style="background-color: #{{hex}};"><img src="imgs/spacer.png"></button>
+        </li>
+    </ul>
+  </header>
+
+  <ul masonry='{ "transitionDuration" : "0.4s", "itemSelector" : ".tile"}' class="dribbbles" style="max-width:1400px;margin-left:auto;margin-right:auto;">
+    <div masonry-tile ng-repeat="shot in shots" class="tile col-xs-12 col-sm-4" ng-if="$even">
+
+        <a ng-href="https://dribbble.com{{ shot.link }}" class="dribbbles-shot-box" target="_blank">
+
+          <span class="dribbbles-shot-photo">
+            <div class="placeholder" data-large="{{shot.img_large}}">
+              <img ng-src="https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?url={{shot.img_small}}&container=focus&resize_w=10&resize_h=8&refresh=2592000" class="img-small">
+              <span style="background-color: #{{ color }}" class="dribbbles-shot-overflow"></span>
+              <div style="padding-bottom: 75%;"></div>
+            </div>
+          </span>
+
+          <span class="dribbbles-shot-infos">
+            <span class="dribbbles-shot-user">
+              <img ng-src="{{ shot.user_photo}}" class="lazy"/>
+              <span style="background-color: #{{ color }}" class="dribbbles-shot-overflow"></span>
+            </span>
+            <span ng-bind="shot.user_name" class="dribbbles-shot-name"></span>
+            <span class="dribbbles-shot-stats">
+              <i class="fa fa-heart-o"></i> <span ng-bind="shot.fans" class="dribbbles-stats-name"></span>
+              <i class="fa fa-comment-o"></i> <span ng-bind="shot.comments" class="dribbbles-stats-name"></span>
+            </span>
+          </span>
+        </a>
+    </div>
+  </ul>
+
+  <div class="loading hidden">
+    <div class="ld clearfix">
+      <div class="square one"></div>
+      <div class="square two"></div>
+      <div class="square three"></div>
+    </div>
+
+    <div class="ld clearfix">
+      <div class="square eight"></div>
+      <div class="square nine"></div>
+      <div class="square four"></div>
+    </div>
+
+    <div class="ld clearfix">
+      <div class="square seven"></div>
+      <div class="square six"></div>
+      <div class="square five"></div>
+    </div>
+  </div>
+
+ <footer class="text-center">
+  Developed by <a href="" class="zode">Zone of Designers</a> with <a href="#" class="dribbble"> <i class="fa fa-heart"></i> dribbble </a>
+ </footer>
+
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="libs/masonry/dist/masonry.pkgd.min.js"></script>
+  <script src="libs/angular-masonry-directive/src/angular-masonry-directive.js"></script>
+	<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="libs/wow/dist/wow.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>

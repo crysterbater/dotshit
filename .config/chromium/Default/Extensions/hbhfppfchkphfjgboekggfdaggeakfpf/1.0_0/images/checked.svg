@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 538 + Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ui-kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Modals" sketch:type="MSArtboardGroup" transform="translate(-417.000000, -1143.000000)" fill="#FFFFFF">
+            <g id="SAVED-BOARD" sketch:type="MSLayerGroup" transform="translate(326.000000, 932.000000)">
+                <g id="Group-+-Group-+-Group" transform="translate(0.000000, 143.000000)" sketch:type="MSShapeGroup">
+                    <g id="Group" transform="translate(91.000000, 0.000000)">
+                        <g id="Oval-538-+-Shape" transform="translate(0.000000, 68.000000)">
+                            <path d="M30,60 C46.5685425,60 60,46.5685425 60,30 C60,13.4314575 46.5685425,0 30,0 C13.4314575,0 0,13.4314575 0,30 C0,46.5685425 13.4314575,60 30,60 Z M40.8193937,28.2906999 C40.8193937,28.2906999 29.933794,39.1704552 29.909248,39.1938324 C28.6036306,40.4994498 26.0975932,40.4912678 24.6295042,39.0231788 L19.1802757,33.5739502 C17.6747831,32.0696265 17.599976,29.7050213 19.0107909,28.2942065 C20.4216057,26.8822228 22.785042,26.9581987 24.2905346,28.4636913 L27.3587939,31.5319506 L35.7103036,23.1804409 C37.2146273,21.6749484 39.5804013,21.6001413 40.9912162,23.0097873 C42.3996933,24.421771 42.3248862,26.7852073 40.8193937,28.2906999 L40.8193937,28.2906999 Z" id="Oval-538"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

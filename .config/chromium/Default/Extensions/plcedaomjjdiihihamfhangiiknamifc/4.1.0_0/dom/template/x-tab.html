@@ -1,0 +1,41 @@
+<template><style>:host {
+      color: var(--contentColor);
+      position: relative;
+      overflow: hidden;
+    }
+    :host(:hover) {
+      color: var(--highlightColor);
+    }
+    :host([active]) {
+      color: var(--highlightColor);
+    }
+    .rd-tab {
+      box-sizing: border-box;
+      cursor: pointer;
+      font-size: 12px;
+      height: 100%;
+      height: 40px;
+      padding: 0 7px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 157px;
+      position: relative;
+    }
+    .rd-tab:hover {
+      font-weight: 500;
+    }
+
+    .rd-tab__icon {
+      fill: var(--contentColor);
+      padding: 9px 0;
+      height: 20px;
+      width: 20px;
+
+    }
+    .rd-tab__icon:hover {
+      fill: var(--highlightColor);
+    }
+
+    .rd-tab__parent {
+      width: 38px;
+    }</style><div class="rd-tab"><content></content></div></template>

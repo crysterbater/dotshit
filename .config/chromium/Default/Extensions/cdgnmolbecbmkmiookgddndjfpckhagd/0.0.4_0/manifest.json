@@ -1,0 +1,20 @@
+{
+   "chrome_url_overrides": {
+      "newtab": "index.html"
+   },
+   "content_security_policy": "default-src *; img-src *; connect-src *; unsafe-eval *; media-src *; object-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';",
+   "default_locale": "en",
+   "description": "Ours extension replaces your New Tab screen with a feed of the latest shots by colors of the Dribbble.",
+   "homepage_url": "http://zode.com.br",
+   "icons": {
+      "128": "imgs/icon128.png",
+      "16": "imgs/icon16.png",
+      "48": "imgs/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtMICRAVZ959vbdI/dpn7LkBqwaI/5ev8K/ilM/3Y0eeggkHQGgIGxHOmNRatdEZO3EodsXy0udt/dlhqBAlQRI35oq2viF5C2bpMfL6aCoWtGIa7/Vz9NYMlzN4wd02PrVWLomcCeLc7xWHOC9shc1ObHeYkR440qzXhv4PzaX1DuEh15BVZ3W/vU9BuVS3mk9LEs18mghvL46I6JjeKQFDNL6eVMrVqJ8+S2LrX30dYbwFFmwmdHEy1StUFId9f3r09NRD/vM88w8igGsfWcDg6MPacxquUIoiadBxw0X0I8D9C8x16itUldeitGAW4Dc6i8XjFIub+IUmb5pASgQIDAQAB",
+   "manifest_version": 2,
+   "name": "Dribble Inspiration Tab by ZODE",
+   "permissions": [ "http://www.zode.com.br:9999/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.4"
+}

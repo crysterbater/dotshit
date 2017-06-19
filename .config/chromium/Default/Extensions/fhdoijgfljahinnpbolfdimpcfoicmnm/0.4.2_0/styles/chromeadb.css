@@ -1,0 +1,84 @@
+html {
+    overflow-y: auto;
+}
+
+body {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.tab-pane input {
+    margin-bottom: 10px;
+}
+
+.tab-content {
+    margin-top: 10px;
+}
+
+.tab-pane .btn {
+    width: 80px;
+}
+
+.badge {
+    background-color: #d9544f;
+}
+
+tr > td.active {
+    font-weight: bold;
+}
+
+.install-package-button {
+    width: 150px !important;
+}
+
+div .search-packages {
+    float: right;
+    width: 80%;
+}
+
+div .install-package {
+    float: left;
+}
+
+.navbar-brand {
+    padding: 0 0 0 15px;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar-bottom-brand {
+    padding: 0;
+}
+
+.navbar-bottom-brand img {
+    height: 50px;
+}
+
+.navbar-bottom-brand a:hover {
+    text-decoration: none;
+}
+
+th {
+    text-align: center;
+}
+
+.navbar {
+    background-color: #000;
+}
+
+#mousepad {
+    color: white;
+    background-color: black;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.ng-hide {
+    display: block !important;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}

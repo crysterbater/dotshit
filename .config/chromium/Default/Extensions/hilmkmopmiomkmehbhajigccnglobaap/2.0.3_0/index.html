@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title>New Tab</title>
+
+	<link rel="stylesheet" href="cardboard.min.css">
+</head>
+<body ng-app="cardboard" ng-csp ng-strict-di ng-controller="RootCtrl">
+
+	<header class="blue-grey white-text" ng-style="{'background-image':'url('+backgroundImageUrl+')'}">
+		<div id="back" ng-show="route() == '/settings'"><a href="#/feed" ng-click="wipe()"><i class="mdi-navigation-arrow-back medium waves-effect waves-light white-text"></i></a></div>
+		<my-typer ng-if="route() == '/onboarding'" source="['Welcome to Cardboard']" start="route() == '/onboarding'" class="header-typer"></my-typer>
+		<div ng-show="route() == '/feed' && trends.enabled" my-ctrl-click url="searchTrend()" before-click="track('Trends','Searched')" class="header-typer trends">
+			<my-typer source="trends.data" start="trends.start" term="trendTerm"></my-typer>
+		</div>
+		<my-typer ng-show="route() == '/settings'" source="['Settings']" start="route() == '/settings'" class="header-typer"></my-typer>
+		<div id="more" ng-show="route() == '/feed'"><a href="#/settings" ng-click="wipe()"><i class="mdi-navigation-more-vert small waves-effect waves-light white-text"></i></a></div>
+	</header>
+	<div class="global progress" ng-class="{'loading':$root.loading}"><div class="indeterminate"></div></div>
+
+	<div class="wipe-ripple-wrapper">
+		<div ng-if="wipeRipple" class="wipe-ripple"></div>
+	</div>
+
+	<ng-view id="view"></ng-view>
+
+	<div id="toast-container"></div>
+
+<script src="google-analytics-bundle.js"></script>
+
+<script src="dependencies.min.js"></script>
+
+<script src="cardboard.min.js"></script>
+
+<!-- templates:js -->
+<script src="templates-2cabff61.js"></script>
+<!-- endinject -->
+
+</body>
+</html>

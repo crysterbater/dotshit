@@ -1,0 +1,329 @@
+@import "globals";
+
+.board-tiles {
+  &-container {
+    padding: $tile-spacing / 2;
+
+    @include for-mobile {
+      padding: $tile-spacing / 4;
+    }
+  }
+
+  &-empty {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -162px;
+    text-align: center;
+
+    &-image {
+      display: inline-block;
+      width: 226px;
+      height: 273px;
+      background: url("../images/boards-empty.png");
+      background-size: 226px 273px;
+
+      @include for-retina {
+        background-image: url("../images/boards-empty@2x.png");
+      }
+    }
+
+    &-label {
+      margin-top: 30px;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+
+  &.empty + &-empty {
+    display: block;
+  }
+}
+
+.board-tile {
+  position: relative;
+  display: block;
+  background: #fff;
+  border-radius: 3px;
+  margin: $tile-spacing / 2;
+  padding-bottom: 30px;
+  box-shadow: 0 0 15px 0 transparentize(#14151B, 0.5);
+  cursor: pointer;
+  @include transition(transform 0.3s);
+
+  &.edit {
+    cursor: default;
+  }
+
+  &-container.hover & {
+    @include transform(translateY(-10px));
+  }
+
+  @include for-mobile {
+    margin: $tile-spacing / 4;
+  }
+
+  &-container {
+    position: relative;
+    @include transition(box-shadow 0.3s);
+
+    /* 5 tiles */
+    width: 20%;
+    float: left;
+
+    @media only screen and (max-width: $minimum-1-tile-width) {
+      /* 1 tile */
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $minimum-2-tile-width - 1px) and (min-width: $minimum-1-tile-width) {
+      /* 1 tiles */
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $minimum-3-tile-width - 1px) and (min-width: $minimum-2-tile-width) {
+      /*  2 tiles */
+      width: 50%;
+    }
+
+    @media only screen and (max-width: $minimum-4-tile-width - 1px) and (min-width: $minimum-3-tile-width) {
+      /*  3 tiles */
+      width: 33.3%;
+    }
+
+    @media only screen and (max-width: $minimum-5-tile-width - 1px) and (min-width: $minimum-4-tile-width) {
+      /*  4 tiles */
+      width: 25%;
+    }
+  }
+
+  &-background {
+    position: absolute;
+    top: $tile-spacing / 2;
+    right: $tile-spacing / 2 + 10px;
+    bottom: $tile-spacing / 2 + 4px;
+    left: $tile-spacing / 2 + 10px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 0 transparentize(#14151B, 0.5);
+    @include transition(transform 0.3s, box-shadow 0.3s);
+
+    @include for-mobile {
+      top: $tile-spacing / 4;
+      right: $tile-spacing / 4 + 10px;
+      bottom: $tile-spacing / 4 - 6px;
+      left: $tile-spacing / 4 + 10px;
+    }
+  }
+
+  &-container.hover &-background {
+    box-shadow: 0 10px 20px 0 #000;
+  }
+
+  &-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 3px 3px 0 0;
+
+    &.no-logo {
+      background: #F4F4F4;
+    }
+
+    &.no-logo &-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: inline-block;
+      width: 161px;
+      height: 31px;
+      background: url("../images/logo-stamp.svg");
+      margin-top: -15px;
+      margin-left: -80px;
+    }
+
+    &-container {
+      position: relative;
+    }
+  }
+
+  &-images {
+    font-size: 0;
+    text-align: center;
+    top: -24px;
+    right: 0;
+    left: 0;
+    position: absolute;
+
+    &-container {
+      position: relative;
+      height: 40px;
+    }
+
+    &-item {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+
+      &-container {
+        display: inline-block;
+        width: 20%;
+        height: 64px;
+      }
+    }
+  }
+
+  &-controls {
+    &-wrapper {
+      position: relative;
+    }
+
+    &-edit {
+      display: none;
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      margin-left: -20px;
+      background: #fff;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      line-height: 40px;
+      text-align: center;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+
+      @include for-mobile {
+        display: inline-block;
+      }
+
+      &-icon {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url("../images/edit.svg");
+        vertical-align: middle;
+      }
+    }
+
+    &-save {
+      position: absolute;
+      top: -15px;
+      right: 20px + 30px + 20px;
+      margin-left: -20px;
+      display: inline-block;
+      background: #fff;
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      line-height: 30px;
+      text-align: center;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+
+      &-icon {
+        display: inline-block;
+        width: 12px;
+        height: 10px;
+        background: url("../images/action-tick.svg");
+        vertical-align: middle;
+      }
+
+      &:hover, &:focus {
+        background: #548cff linear-gradient(45deg, #9170DB 0%, #8972E4 10%, #7277FF 40%, #689AFF 100%);
+        box-shadow: 0 2px 4px 0 transparentize(#7E75F2, 0.5);
+      }
+
+      &:hover &-icon, &:focus &-icon {
+        width: 14px;
+        height: 12px;
+        background: url("../images/action-tick-hover.svg");
+      }
+    }
+
+    &-cancel {
+      position: absolute;
+      top: -15px;
+      right: 20px;
+      margin-left: -20px;
+      display: inline-block;
+      background: #fff;
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      line-height: 30px;
+      text-align: center;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+
+      &-icon {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: url("../images/action-cross.svg");
+        vertical-align: middle;
+      }
+
+      &:hover, &:focus {
+        background: #548cff linear-gradient(45deg, #9170DB 0%, #8972E4 10%, #7277FF 40%, #689AFF 100%);
+        box-shadow: 0 2px 4px 0 transparentize(#7E75F2, 0.5);
+      }
+
+      &:hover &-icon, &:focus &-icon {
+        background: url("../images/action-cross-hover.svg");
+      }
+    }
+  }
+
+  &.edit &-view {
+    display: none;
+  }
+
+  &-edit {
+    display: none;
+  }
+
+  &.edit &-edit {
+    display: block;
+  }
+
+  &-title {
+    padding-top: 26px;
+    font-size: 18px;
+    color: #23252D;
+    text-align: center;
+  }
+
+  &-subtitle {
+    color: #AEB6C2;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  &-label {
+    display: block;
+    color: #548CFF;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 24px;
+
+    &.error {
+      color: #FF4149;
+    }
+  }
+
+  &-input {
+    display: block;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    color: #000;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 6px;
+  }
+}

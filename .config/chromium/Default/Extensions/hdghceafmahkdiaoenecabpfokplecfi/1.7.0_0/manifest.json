@@ -1,0 +1,33 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "scripts/landing.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "images/icon-19.png",
+         "38": "images/icon-38.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "stylesheets/contentscript.css" ],
+      "js": [ "scripts/contentscript.js" ],
+      "matches": [ "http://*.m.wikibooks.org/w/*", "http://*.m.wikibooks.org/wiki/*", "http://*.m.wikinews.org/w/*", "http://*.m.wikinews.org/wiki/*", "http://*.m.wikipedia.org/w/*", "http://*.m.wikipedia.org/wiki/*", "http://*.m.wikiquote.org/w/*", "http://*.m.wikiquote.org/wiki/*", "http://*.m.wikisource.org/w/*", "http://*.m.wikisource.org/wiki/*", "http://*.m.wikiversity.org/w/*", "http://*.m.wikiversity.org/wiki/*", "http://*.m.wikivoyage.org/w/*", "http://*.m.wikivoyage.org/wiki/*", "http://*.m.wiktionary.org/w/*", "http://*.m.wiktionary.org/wiki/*", "http://commons.m.wikimedia.org/w/*", "http://commons.m.wikimedia.org/wiki/*", "http://meta.m.wikimedia.org/w/*", "http://meta.m.wikimedia.org/wiki/*", "http://species.m.wikimedia.org/w/*", "http://species.m.wikimedia.org/wiki/*", "https://*.m.wikibooks.org/w/*", "https://*.m.wikibooks.org/wiki/*", "https://*.m.wikinews.org/w/*", "https://*.m.wikinews.org/wiki/*", "https://*.m.wikipedia.org/w/*", "https://*.m.wikipedia.org/wiki/*", "https://*.m.wikiquote.org/w/*", "https://*.m.wikiquote.org/wiki/*", "https://*.m.wikisource.org/w/*", "https://*.m.wikisource.org/wiki/*", "https://*.m.wikiversity.org/w/*", "https://*.m.wikiversity.org/wiki/*", "https://*.m.wikivoyage.org/w/*", "https://*.m.wikivoyage.org/wiki/*", "https://*.m.wiktionary.org/w/*", "https://*.m.wiktionary.org/wiki/*", "https://commons.m.wikimedia.org/w/*", "https://commons.m.wikimedia.org/wiki/*", "https://meta.m.wikimedia.org/w/*", "https://meta.m.wikimedia.org/wiki/*", "https://species.m.wikimedia.org/w/*", "https://species.m.wikimedia.org/wiki/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Easy access to the Wikipedia Universe",
+   "icons": {
+      "128": "images/icon-128.png",
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png",
+      "48": "images/icon-48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCSSKD+kZcwHsi4NzfuOe9/gEjesKYxLiDgNxUtHgkdusNqObLytOSnjkIIXmLNjDRAEp98+eBZG9ljuAp8mSz3JGdgDrhmQbzG/7LVnkztiTMpiCBIGQp/hM+6aCw4t+YooL7HHUHIErCMhklpRv9D3jMiCQJRaSvHkb2AqW0G3wIDAQAB",
+   "manifest_version": 2,
+   "name": "Black Menu for Wikipedia",
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.7.0"
+}

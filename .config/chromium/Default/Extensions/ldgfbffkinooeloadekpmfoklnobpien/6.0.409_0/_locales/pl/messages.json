@@ -1,0 +1,150 @@
+{
+   "alreadyInCollection": {
+      "description": "Już w kolekcji",
+      "message": "Już w kolekcji"
+   },
+   "appDesc": {
+      "description": "\"Save Button\" for Web",
+      "message": "\"Save Button\" for Web"
+   },
+   "appName": {
+      "description": "Raindrop.io: \"Save Button\" for Web",
+      "message": "Raindrop.io: \"Save Button\" for Web"
+   },
+   "articleRemovedPermament": {
+      "description": "Artykuł został usunięty",
+      "message": "Artykuł został usunięty"
+   },
+   "articleSaved": {
+      "description": "Zapisano artykuł",
+      "message": "Zapisano artykuł"
+   },
+   "edit": {
+      "description": "Edytuj",
+      "message": "Edytuj"
+   },
+   "error": {
+      "description": "Nieznany błąd. Spróbuj ponownie!",
+      "message": "Nieznany błąd. Spróbuj ponownie!"
+   },
+   "findBookmark": {
+      "description": "Znajdź zakładkę",
+      "message": "Znajdź zakładkę"
+   },
+   "hotkey": {
+      "description": "Skrót klawiaturowy",
+      "message": "Skrót klawiaturowy"
+   },
+   "imageRemovedPermament": {
+      "description": "Zdjęcie zostało usunięte",
+      "message": "Zdjęcie zostało usunięte"
+   },
+   "imageSaved": {
+      "description": "Zapisano zdjęcie",
+      "message": "Zapisano zdjęcie"
+   },
+   "inCollection": {
+      "description": "W kolekcji",
+      "message": "W kolekcji"
+   },
+   "linkRemovedPermament": {
+      "description": "Link został usunięty",
+      "message": "Link został usunięty"
+   },
+   "linkSaved": {
+      "description": "Zapisano link",
+      "message": "Zapisano link"
+   },
+   "loading": {
+      "description": "Wczytywanie",
+      "message": "Wczytywanie"
+   },
+   "logOut": {
+      "description": "Wyloguj",
+      "message": "Wyloguj"
+   },
+   "myBookmarks": {
+      "description": "Moje zakładki",
+      "message": "Moje zakładki"
+   },
+   "myBookmarksRaindrop": {
+      "description": "Moje zakładki (Raindrop.io)",
+      "message": "Moje zakładki (Raindrop.io)"
+   },
+   "open": {
+      "description": "Open",
+      "message": "Open"
+   },
+   "pleaseLogin": {
+      "description": "Zaloguj się aby rozpocząć!",
+      "message": "Zaloguj się aby rozpocząć!"
+   },
+   "remove": {
+      "description": "Usuń",
+      "message": "Usuń"
+   },
+   "restore": {
+      "description": "Restore",
+      "message": "Restore"
+   },
+   "save": {
+      "description": "Zapisz",
+      "message": "Zapisz"
+   },
+   "saveError": {
+      "description": "Błąd zapisu!",
+      "message": "Błąd zapisu!"
+   },
+   "saveImage": {
+      "description": "Zapisz obraz do Raindrop.io",
+      "message": "Zapisz obraz do Raindrop.io"
+   },
+   "saveLink": {
+      "description": "Zapisz stronę do Raindrop.io",
+      "message": "Zapisz stronę do Raindrop.io"
+   },
+   "savePage": {
+      "description": "Zapisz stronę do Raindrop.io",
+      "message": "Zapisz stronę do Raindrop.io"
+   },
+   "saveToRaindrop": {
+      "description": "Zapisz do Raindrop.io",
+      "message": "Zapisz do Raindrop.io"
+   },
+   "settings": {
+      "description": "Ustawienia",
+      "message": "Ustawienia"
+   },
+   "signIn": {
+      "description": "Zaloguj się",
+      "message": "Zaloguj się"
+   },
+   "signUp": {
+      "description": "Zarejestruj się",
+      "message": "Zarejestruj się"
+   },
+   "supportOnlyUrls": {
+      "description": "Linki można zapisać jedynie z protokołem http lub https!",
+      "message": "Linki można zapisać jedynie z protokołem http lub https!"
+   },
+   "toRaindrop": {
+      "description": "do Raindrop.io",
+      "message": "do Raindrop.io"
+   },
+   "tryAgain": {
+      "description": "Spróbuj ponownie",
+      "message": "Spróbuj ponownie"
+   },
+   "unsorted": {
+      "description": "Skrzynka odbiorcza",
+      "message": "Skrzynka odbiorcza"
+   },
+   "videoRemovedPermament": {
+      "description": "Zawartość została usunięta",
+      "message": "Zawartość została usunięta"
+   },
+   "videoSaved": {
+      "description": "Zapisano zawartość",
+      "message": "Zapisano zawartość"
+   }
+}

@@ -1,0 +1,150 @@
+{
+   "alreadyInCollection": {
+      "description": "Zaten bir koleksyonda",
+      "message": "Zaten bir koleksyonda"
+   },
+   "appDesc": {
+      "description": "\"Save Button\" for Web",
+      "message": "\"Save Button\" for Web"
+   },
+   "appName": {
+      "description": "Raindrop.io: \"Save Button\" for Web",
+      "message": "Raindrop.io: \"Save Button\" for Web"
+   },
+   "articleRemovedPermament": {
+      "description": "Makale kaldırıldı",
+      "message": "Makale kaldırıldı"
+   },
+   "articleSaved": {
+      "description": "Makale kaydedildi",
+      "message": "Makale kaydedildi"
+   },
+   "edit": {
+      "description": "Düzenle",
+      "message": "Düzenle"
+   },
+   "error": {
+      "description": "Tanımlanamayan hata. Tekrar deneyin!",
+      "message": "Tanımlanamayan hata. Tekrar deneyin!"
+   },
+   "findBookmark": {
+      "description": "Yer imi ara",
+      "message": "Yer imi ara"
+   },
+   "hotkey": {
+      "description": "Kısayol",
+      "message": "Kısayol"
+   },
+   "imageRemovedPermament": {
+      "description": "Fotoğraf kaldırıldı",
+      "message": "Fotoğraf kaldırıldı"
+   },
+   "imageSaved": {
+      "description": "Fotoğraf kaydedildi",
+      "message": "Fotoğraf kaydedildi"
+   },
+   "inCollection": {
+      "description": "Koleksiyonda",
+      "message": "Koleksiyonda"
+   },
+   "linkRemovedPermament": {
+      "description": "Bağlantı kaldırıldı",
+      "message": "Bağlantı kaldırıldı"
+   },
+   "linkSaved": {
+      "description": "Bağlantı kaydedildi",
+      "message": "Bağlantı kaydedildi"
+   },
+   "loading": {
+      "description": "Yükleniyor",
+      "message": "Yükleniyor"
+   },
+   "logOut": {
+      "description": "Çıkış",
+      "message": "Çıkış"
+   },
+   "myBookmarks": {
+      "description": "Yer imlerim",
+      "message": "Yer imlerim"
+   },
+   "myBookmarksRaindrop": {
+      "description": "Yer imlerim (Raindrop.io)",
+      "message": "Yer imlerim (Raindrop.io)"
+   },
+   "open": {
+      "description": "Open",
+      "message": "Open"
+   },
+   "pleaseLogin": {
+      "description": "Başlamak için lütfen giriş yapın!",
+      "message": "Başlamak için lütfen giriş yapın!"
+   },
+   "remove": {
+      "description": "Sil",
+      "message": "Sil"
+   },
+   "restore": {
+      "description": "Restore",
+      "message": "Restore"
+   },
+   "save": {
+      "description": "Kaydet",
+      "message": "Kaydet"
+   },
+   "saveError": {
+      "description": "Kaydetme hatası!",
+      "message": "Kaydetme hatası!"
+   },
+   "saveImage": {
+      "description": "Görüntüyü Raindrop.io'ya kaydet",
+      "message": "Görüntüyü Raindrop.io'ya kaydet"
+   },
+   "saveLink": {
+      "description": "Sayfayı Raindrop.io'ya kaydet",
+      "message": "Sayfayı Raindrop.io'ya kaydet"
+   },
+   "savePage": {
+      "description": "Sayfayı Raindrop.io'ya kaydet",
+      "message": "Sayfayı Raindrop.io'ya kaydet"
+   },
+   "saveToRaindrop": {
+      "description": "Kaydet Raindrop.io'ya",
+      "message": "Kaydet Raindrop.io'ya"
+   },
+   "settings": {
+      "description": "Ayarlar",
+      "message": "Ayarlar"
+   },
+   "signIn": {
+      "description": "Giriş",
+      "message": "Giriş"
+   },
+   "signUp": {
+      "description": "Kayıt ol",
+      "message": "Kayıt ol"
+   },
+   "supportOnlyUrls": {
+      "description": "Sadece http ve https protokollü bağlantıları kaydedebilirsin!",
+      "message": "Sadece http ve https protokollü bağlantıları kaydedebilirsin!"
+   },
+   "toRaindrop": {
+      "description": "Raindrop.io'ya",
+      "message": "Raindrop.io'ya"
+   },
+   "tryAgain": {
+      "description": "Tekrar dene",
+      "message": "Tekrar dene"
+   },
+   "unsorted": {
+      "description": "Gelen kutusu",
+      "message": "Gelen kutusu"
+   },
+   "videoRemovedPermament": {
+      "description": "İçerik kaldırıldı",
+      "message": "İçerik kaldırıldı"
+   },
+   "videoSaved": {
+      "description": "İçerik kaydedildi",
+      "message": "İçerik kaydedildi"
+   }
+}

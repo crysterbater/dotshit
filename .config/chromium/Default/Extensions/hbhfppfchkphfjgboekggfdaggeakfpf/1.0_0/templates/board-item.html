@@ -1,0 +1,15 @@
+<a href="#" class="choose-board-boards-item<% if (feedItem.isInBoard(board)) { %> active <% } %>">
+    <div class="choose-board-boards-item-image-container">
+        <% image = _.first(board.get('images')) %>
+        <div class="choose-board-boards-item-image<% if (_.isUndefined(image)) { %> no-image<% } %>"<% if (!_.isUndefined(image)) { %> style="background-image: url('<%= _.escape(image['image']) %>');"<% } %>>
+            <div class="choose-board-boards-item-image-check"></div>
+            <span class="choose-board-boards-item-image-check-icon"></span>
+        </div>
+    </div>
+    <div class="choose-board-boards-item-title"><%= board.escape('title') %></div>
+    <div class="choose-board-boards-item-count"><%= board.escape('feed_items_count') %> carts</div>
+    <div class="choose-board-boards-item-submit">
+        <span class="normal">Save here</span>
+        <span class="saved">Added</span>
+    </div>
+</a>

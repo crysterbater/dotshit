@@ -1,0 +1,253 @@
+/***** colors *************************************************
+
+background 1.........#000000
+background 2.........#1a1a1a
+background 3.........#202020
+background 4.........#282828
+borders..............#323232
+font.................#ccc
+link.................#2f8cb7
+link.................#f50
+
+***************************************************************/
+
+body .sc-button-small.sc-button-addtoset:before,
+body .sc-button-small.sc-button-delete:before,
+body .sc-button-small.sc-button-download:before, 
+body .sc-button-small.sc-button-like:before,
+body .sc-button-small.sc-button-message:before,
+body .sc-button-small.sc-button-more:before,
+body .sc-button-small.sc-button-repost:before,
+body .sc-button-small.sc-button-share:before,
+body .sc-button-medium.sc-button-addtogroup:before, 
+body .sc-button-medium.sc-button-addtoset:before, 
+body .sc-button-medium.sc-button-delete:before, 
+body .sc-button-medium.sc-button-download:before, 
+body .sc-button-medium.sc-button-edit:before, 
+body .sc-button-medium.sc-button-instagram:before, 
+body .sc-button-medium.sc-button-like:before,
+body .sc-button-medium.sc-button-message:before, 
+body .sc-button-medium.sc-button-moderate:before, 
+body .sc-button-medium.sc-button-more:before,
+body .sc-button-medium.sc-button-pc:before, 
+body .sc-button-medium.sc-button-reply:before, 
+body .sc-button-medium.sc-button-repost:before, 
+body .sc-button-medium.sc-button-share:before,
+body .sc-ministats-large.sc-ministats-followers:before,
+body .sc-ministats-large.sc-ministats-sounds:before,
+body .playControls__playPauseSkip,
+body .playControls__repeat, 
+body .volume__iconWrapper,
+body .playbackTimeline__duration {
+  -webkit-filter: brightness(0);
+}
+
+body .mobileApps__dismiss {
+  -webkit-filter: invert(0%);
+}
+
+
+
+/***** backgrounds ***********************/
+
+body .sc-tag:hover {
+  background: #666;
+}
+
+body .sc-tag, 
+body .sc-tag:visited {
+  background: #999;
+}
+
+body .volume__sliderWrapper {
+  background-color: #f2f2f2;
+}
+
+
+body {
+  background-color: #f2f2f2 !important;
+}
+
+body #content,
+body .sound__soundActions,
+body .l-footer,
+body .readMoreBadge__countWrapper {
+  background-color: #fff;
+}
+
+
+body .sc-button {
+  background-color: #fff;
+}
+
+body .categoriesButton,
+body .exploreCategoryList,
+body .uploadMain__chooserContainer,
+body .uploadMain__foot,
+body .activeUpload__form {
+  background-color: #fff;
+}
+
+body .commentForm__input {
+  background: #fff;
+}
+  
+
+body .playControls__inner,
+body .announcement,
+body .commentForm,
+body .compactTrackListItem.clickToPlay.active, 
+body .compactTrackListItem.clickToPlay:hover, 
+body .compactTrackListItem.clickToPlay:focus,
+body .sc-background-light,
+body .compactTrackList__moreLink:hover, 
+body .compactTrackList__moreLink:focus,
+body .volume__sliderWrappe {
+  background-color: #f2f2f2;
+}
+
+
+body .soundBadge__additional,
+body .compactTrackListItem__additional,
+body .compactTrackListItem.clickToPlay.active .compactTrackListItem__additional, 
+body .compactTrackListItem.clickToPlay:hover .compactTrackListItem__additional, 
+body .compactTrackListItem.clickToPlay:focus .compactTrackListItem__additional {
+  background: linear-gradient(to right,rgba(255,255,255,.1),#fff 17px);
+}
+
+
+body .commentForm.m-active,
+body .sc-toggle {
+  background-color: #e5e5e5;
+}
+
+body .modal {
+  background-color: rgba(242,242,242,.9);
+}
+
+
+
+body .truncatedAudioInfo.m-overflow.m-collapsed .truncatedAudioInfo__wrapper::after {
+  background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.5)90%,#fff);
+}
+
+body .commentItem:hover .commentItem__controls {
+  background: linear-gradient(to right,rgba(255,255,255,.1),#fff 17px);
+}
+
+
+
+/***** borders ***********************/
+
+
+body .sc-tag:hover {
+  border-color: #666;
+}
+
+body .sc-tag, 
+body .sc-tag:visited {
+  border-color: #999;
+}
+
+body .sc-border-light,
+body .sc-border-light-bottom {
+  border-color: #f2f2f2;
+}
+
+body .sc-button,
+body .commentForm,
+body .dashbox__box,
+body .commentForm__input,
+body .sc-toggle {
+	border-color: #e5e5e5;
+}
+
+body .commentForm.m-active,
+body .volume.expanded .volume__sliderWrapper{
+	border-color: #ccc;
+}
+
+body .listenEngagement {
+  border-color: #fff;
+}
+
+body .g-tabs {
+  border-bottom-color: #f2f2f2;
+}
+
+body .sc-border-light-right,
+body .l-listen-wrapper .l-about-rows{
+  border-right-color: #f2f2f2;
+}
+
+body .sc-border-light-top {
+  border-top-color: #f2f2f2;
+}
+
+body .volume__sliderWrapper:after {
+  border-color: transparent transparent #f2f2f2 #f2f2f2;
+  
+}
+
+body .volume__sliderWrapper {
+  border: 1px solid transparent;
+}
+
+
+/***** font colors ***********************/
+html body,
+body .sc-button,
+body .sc-button:hover, 
+body .sc-button:focus, 
+body .sc-button-focus,
+body .sc-buylink, 
+body .sc-buylink:visited,
+body a.sc-link-dark,
+body .compactTrackListItem__number, 
+body .compactTrackListItem__trackTitle,
+body a.sc-ministats-large,
+body a.sc-ministats:hover,
+body a.sc-link-light:hover{
+  color: #333;
+}
+
+body .sc-buylink:hover,
+body a.sc-link-dark:hover, 
+body a.sc-link-medium:hover{
+  color: #000;
+}
+
+/*---------- MISC ----------*/
+
+
+body .listenEngagement {
+  box-shadow: 0 1px 0 0 #f2f2f2;
+}
+
+body .categoriesButton:focus {
+  box-shadow: 0 0 0 4px #e5e5e5;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background: #FFF;
+}
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, .05);
+}
+::-webkit-scrollbar-track:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+::-webkit-scrollbar-track:active {
+    background-color: rgba(0, 0, 0, .07);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .15);
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(0, 0, 0, .18);
+}

@@ -1,0 +1,21 @@
+{
+   "browser_action": {
+      "default_icon": "md128.png",
+      "default_popup": "popup.html"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "HEX value of Material colors and CSS of Material shadows at your fingertips.",
+   "icons": {
+      "128": "md128.png",
+      "16": "md16.png",
+      "24": "md24.png",
+      "32": "md32.png",
+      "48": "md48.png",
+      "64": "md64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAorzEVP2Zqo+LKwke+rTwjW26j0Z0NJ7axRvYnE7S1CVjtkmEitVeP65g6CJBnvUe13riF22Or5crAsgEJDODyqcVlUzQA/ofWv6KJn+GjsuVa00Iw2jyOO4h4AUsPF/UBkwIxlCprajb1S4NQoUZfpe1/RrhLJcnZb+SJbYLgUmBOyh7ERzPYIXGR+THlEeAehvBYrC/KGZkQBSa8msK5Wud6/zwHyB05k8TmCho3b1L6ldSPWSmXNpXYfIYKODBsPrmBQiBCd7DUnM5Z3JFhDu8h7wEpmxW7ANFJYEwVMQPW6Hf6jgBkdmNkbCvFozz/lR4rzhxjmckiOKQWSDdxQIDAQAB",
+   "manifest_version": 2,
+   "name": "Material Design Assistant",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.6"
+}

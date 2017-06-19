@@ -1,0 +1,797 @@
+{
+   "AddSearchEngine": {
+      "message": "Arama Motoru Ekle"
+   },
+   "Added": {
+      "message": " Eklendi"
+   },
+   "AdditionalSearchEngine": {
+      "message": "Ek Arama Motoru"
+   },
+   "Amazon": {
+      "message": "Amazon"
+   },
+   "AmazonUrl": {
+      "message": "http://www.amazon.com"
+   },
+   "Answers": {
+      "message": "Cevaplar"
+   },
+   "Apps": {
+      "message": "Uygulama"
+   },
+   "AppsAndExtensions": {
+      "message": "Uygulama ve Uzantı"
+   },
+   "AutomaticallyChangeWallpaper": {
+      "message": "Duvar kağıdı her gün otomatik değiştir"
+   },
+   "Baidu": {
+      "message": "Baidu"
+   },
+   "BingBg": {
+      "message": "Bing Duvar Kagidi"
+   },
+   "BlurWallpaper": {
+      "message": "Bulanık duvar kağıdı kullanın"
+   },
+   "BookmarkChanged": {
+      "message": "*Yer imleri Bar kenar çubuğuna değişti"
+   },
+   "Bookmarks": {
+      "message": "Yer imleri"
+   },
+   "Bookmarksbar": {
+      "message": "Yer imleri Bar"
+   },
+   "BrowsingHistoryHasBeenCleared": {
+      "message": "Geçmiş temizlendi"
+   },
+   "CanNotBeEmpty": {
+      "message": "Arama motoru adı ve URL boş olamaz"
+   },
+   "Cancel": {
+      "message": "İptal"
+   },
+   "CategoryAppTools": {
+      "message": "Uygulama & Araçlar"
+   },
+   "CategoryCareerEdu": {
+      "message": "kariyer & eğitim"
+   },
+   "CategoryComputerTech": {
+      "message": "bilgisayar & Teknik"
+   },
+   "CategoryFinanceBiz": {
+      "message": "maliye & Biz"
+   },
+   "CategoryGames": {
+      "message": "Oyunlar & Eğlenceler"
+   },
+   "CategoryLife": {
+      "message": "hayat"
+   },
+   "CategoryMusicVideo": {
+      "message": "müzik & Videolar"
+   },
+   "CategoryNews": {
+      "message": "haber"
+   },
+   "CategoryOther": {
+      "message": "daha Fazlası"
+   },
+   "CategoryPhoto": {
+      "message": "Fotoğraflar & Resimler"
+   },
+   "CategoryPopular": {
+      "message": "popüler"
+   },
+   "CategoryShopping": {
+      "message": "Alış Veriş & O2O"
+   },
+   "CategorySocialBlog": {
+      "message": "sosyal& Blog"
+   },
+   "CategorySportsTravel": {
+      "message": "spor & seyahat"
+   },
+   "Celsius": {
+      "message": "Derece Selsius"
+   },
+   "Change": {
+      "message": "Bozuk Para"
+   },
+   "ChangePassword": {
+      "message": "Şifre Değiştir"
+   },
+   "ChromeStore": {
+      "message": "Chrome Store"
+   },
+   "CityName": {
+      "message": "Şehir Adı"
+   },
+   "ClearAllBrowsingHistory": {
+      "message": "Geçmişi Sil"
+   },
+   "ClearAllDones": {
+      "message": "Tamamlanan Etkinlikleri Sil"
+   },
+   "CloudBackup": {
+      "message": "Bulut'a Yedekle"
+   },
+   "ContactUs": {
+      "message": "Contact Us"
+   },
+   "CurrentLocation": {
+      "message": "Mevcut Konum: "
+   },
+   "DefaultWallpaper": {
+      "message": "Default Wallpaper"
+   },
+   "Disable": {
+      "message": "kapat"
+   },
+   "Download": {
+      "message": "İndir"
+   },
+   "DownloadWP": {
+      "message": "Wallpaper indir"
+   },
+   "DownloadWallpaper": {
+      "message": "Mevcut duvar kağıdı indir"
+   },
+   "Edit": {
+      "message": "Editör"
+   },
+   "EmailToUs": {
+      "message": "Bize e-mail gönderin"
+   },
+   "Enable": {
+      "message": "Etkinleştir"
+   },
+   "EnableBookmarksBar": {
+      "message": "Yer işaretlerini etkinleştirin"
+   },
+   "EnableMostVisited": {
+      "message": "En Çok Ziyaret Edilen Özelliğini Etkinleştir"
+   },
+   "EnableSearchBox": {
+      "message": "Arama kutusunu etkinleştir"
+   },
+   "EnableSearchType": {
+      "message": "Kategoriye göre aramayi etkinleştirin"
+   },
+   "Extensions": {
+      "message": "Uzantı"
+   },
+   "Fahrenheit": {
+      "message": "Derece Fahrenhayt"
+   },
+   "Find": {
+      "message": "bulmak"
+   },
+   "FindYourAccount": {
+      "message": "Hesabınızı bul"
+   },
+   "Friday": {
+      "message": "Cuma"
+   },
+   "Generate": {
+      "message": "Oluştur"
+   },
+   "GenerateBackupFile": {
+      "message": "Yedekleme dosyası oluştur"
+   },
+   "GmailNotifications": {
+      "message": "Gmail Notifieri"
+   },
+   "HasBeenDeleted": {
+      "message": " Silinmiştir"
+   },
+   "HasBeenDisabled": {
+      "message": "Devre dışı bırakıldı"
+   },
+   "HasBeenEnabled": {
+      "message": " Etkinleştirilmiş"
+   },
+   "HasBeenUninstalled": {
+      "message": " Kaldırılmıştır"
+   },
+   "HasBeenUpdated": {
+      "message": "Güncellenmiştir"
+   },
+   "History": {
+      "message": "Geçmiş"
+   },
+   "Humidity": {
+      "message": "Nem"
+   },
+   "IconFillet": {
+      "message": "Simgenin Yuvarlatılmış Derecesi"
+   },
+   "IconOpacity": {
+      "message": "Simge Şeffaflığı"
+   },
+   "ImageSizeLimit": {
+      "message": "Resim boyutu 3MB'ı aşamaz"
+   },
+   "Images": {
+      "message": "Resim"
+   },
+   "InfinityBg": {
+      "message": "Infinity Duvar Kagidi"
+   },
+   "InfinityBgblur": {
+      "message": "Infinity Duvar Kağıdı Blur Stil"
+   },
+   "LastBackupAt": {
+      "message": "Son yedekleme"
+   },
+   "LocalWallpaper": {
+      "message": "Yerel Duvar Kağıdı"
+   },
+   "Locating": {
+      "message": "Yerini..."
+   },
+   "LogOffConfirm": {
+      "message": "Çıkmak istediğinizden emin misiniz?"
+   },
+   "LoginMenuFontSize": {
+      "message": "-20px"
+   },
+   "LoginSuccess": {
+      "message": "Başarıyla Giriş Yapıldı"
+   },
+   "Logout": {
+      "message": "Çıkış Yap"
+   },
+   "MainSearchEngine": {
+      "message": "Ana Arama Motoru"
+   },
+   "Maps": {
+      "message": "Harita"
+   },
+   "Monday": {
+      "message": "Pazartesi"
+   },
+   "MostVisitedMoved": {
+      "message": "*En üst taşındı ziyaret"
+   },
+   "Musics": {
+      "message": "Müzik"
+   },
+   "NETWORKERROR": {
+      "message": "ağ Hatası"
+   },
+   "NewNote": {
+      "message": "Yeni Notlar"
+   },
+   "NewPassword": {
+      "message": "yeni Şifre"
+   },
+   "News": {
+      "message": "Haber"
+   },
+   "NoSpace": {
+      "message": "Bu sayfada hiçbir ekstra boşluk yok"
+   },
+   "NotesAndIdeas": {
+      "message": "Notlar ve Fikirler"
+   },
+   "Notfoundcity": {
+      "message": "Aradığınız şehir bulunamadı"
+   },
+   "NotificationSound": {
+      "message": "Bildirim Zil Sesi"
+   },
+   "NumberOfItems": {
+      "message": "Öğe Sayısı"
+   },
+   "OFF": {
+      "message": "OFF"
+   },
+   "OFFleft": {
+      "message": "28px"
+   },
+   "ON": {
+      "message": "ON"
+   },
+   "ONleft": {
+      "message": "28px"
+   },
+   "OldPassword": {
+      "message": "eski Şifre"
+   },
+   "OpenBookmarkIn": {
+      "message": "Yeni Sekmede Aç Yer imleri"
+   },
+   "OpenLinksInNewtab": {
+      "message": "Yeni sekmede aç"
+   },
+   "OurOfficialWebsite": {
+      "message": "Resmi web sitemizi ziyaret edin"
+   },
+   "Password": {
+      "message": "Şifre"
+   },
+   "PleaseEnableIt": {
+      "message": "Bir an önce bu uygulamayı etkinleştirin Lütfen!"
+   },
+   "PressEnterToQuery": {
+      "message": "Soruşturmak için \"Enter\"ı tıklayın"
+   },
+   "Pressure": {
+      "message": "Barometre Basıncı"
+   },
+   "PrivacyPolicy": {
+      "message": "Privacy Policy"
+   },
+   "Query": {
+      "message": "Aranıyor..."
+   },
+   "Read": {
+      "message": "okumak"
+   },
+   "Recovery": {
+      "message": "Kurtarma"
+   },
+   "RecoveryDataFailed": {
+      "message": "Veri geri yükleme başarısız oldu"
+   },
+   "RecoveryDataSuccess": {
+      "message": "Veriler başarıyla geri yüklendi"
+   },
+   "RecoveryFromCloud": {
+      "message": "Bulut verilerinden geri yükle"
+   },
+   "RecoveryFromFile": {
+      "message": "Dosyadan geri yükle"
+   },
+   "Register": {
+      "message": "Kayıt Ol"
+   },
+   "RegisterButton": {
+      "message": "Kayıt Ol"
+   },
+   "RegisterSuccessAndAutoLogin": {
+      "message": "Başarılı Kayıt ve kaydedilir"
+   },
+   "RegistrationFailed": {
+      "message": "Kayıt Başarısız"
+   },
+   "RestoreWallpaper": {
+      "message": "Varsayılan duvar kağıdı geri yükle"
+   },
+   "Saturday": {
+      "message": "Cumartesi"
+   },
+   "SearchInNewtab": {
+      "message": "Yeni bir sekmede ara"
+   },
+   "SelectImageFontSize": {
+      "message": "14px"
+   },
+   "ShareIconToOther": {
+      "message": "Başkalarına Share simgesi"
+   },
+   "ShareToYourFriends": {
+      "message": "Arkadaşlarınla paylaş"
+   },
+   "SignAndIn": {
+      "message": "Giriş"
+   },
+   "SignIn": {
+      "message": "Giriş"
+   },
+   "SignInOrRegister": {
+      "message": "Giriş Yap ya da Kayıt Ol"
+   },
+   "SignInToUseTheFeature": {
+      "message": "Bu özelliği kullanmak için Giriş yapın"
+   },
+   "Sogou": {
+      "message": "Sogou"
+   },
+   "Sports": {
+      "message": "spor"
+   },
+   "StartAnimation": {
+      "message": "Animasyonu Başlat"
+   },
+   "Submit": {
+      "message": "Gönder"
+   },
+   "Sunday": {
+      "message": "Pazar"
+   },
+   "TemperatureUnit": {
+      "message": "Sıcaklık Birimi"
+   },
+   "TermsOfUse": {
+      "message": "Gizlilik ve Kullanım Şartları"
+   },
+   "TermsofUse": {
+      "message": "Terms of Use"
+   },
+   "Thursday": {
+      "message": "Perşembe"
+   },
+   "Todo": {
+      "message": "Yapılmak üzere olan"
+   },
+   "Todos": {
+      "message": "Yapılmak Üzere Olan Etkinlikler"
+   },
+   "TodotypeMarginLeft": {
+      "message": "32px"
+   },
+   "Tomorrow": {
+      "message": "Yarin"
+   },
+   "Tuesday": {
+      "message": "Salı"
+   },
+   "UploadLocalWallpaper": {
+      "message": "Bulut duvar kağıdı yüklemek için gerekli Girişi"
+   },
+   "UserName": {
+      "message": "Email"
+   },
+   "UsernameAlreadyExists": {
+      "message": "Bu e-posta zaten kayıtlı, giriş veya kullanım lütfen \"parolanızı mı unuttunuz\""
+   },
+   "UsernameDoesNotExist": {
+      "message": "E-posta Kayıtlı edilmedi"
+   },
+   "UsernameOrPasswordWrong": {
+      "message": "Kullanıcı adı veya Şifre Hatası"
+   },
+   "VerifyCode": {
+      "message": "Doğrulama Kodu"
+   },
+   "VerifyCodeError": {
+      "message": "Doğrulama Kodu hatası"
+   },
+   "Videos": {
+      "message": "Video"
+   },
+   "WeChat": {
+      "message": "WeChat"
+   },
+   "Weather": {
+      "message": "Hava Durumu"
+   },
+   "WeatherLocation": {
+      "message": "Hava Durum Konumu"
+   },
+   "WeatherLocationHasBeenSettedTo": {
+      "message": "Hava durumu konumu değiştirildi:"
+   },
+   "Web": {
+      "message": "Web"
+   },
+   "Website": {
+      "message": "Web Site: "
+   },
+   "Wednesday": {
+      "message": "Çarşamba"
+   },
+   "Wind": {
+      "message": "Rüzgar enerjisi"
+   },
+   "Yes": {
+      "message": "Çık"
+   },
+   "adName": {
+      "message": "amazon"
+   },
+   "addCustomItem": {
+      "message": "Öğe Ekle"
+   },
+   "addMenuMarginLeft": {
+      "message": "10px"
+   },
+   "addMenuSize": {
+      "message": "18px"
+   },
+   "addSearchName": {
+      "message": "Arama Motoru Adı"
+   },
+   "addSearchUrl": {
+      "message": "Sorgu parametreleri yerine %s kullanın"
+   },
+   "addTitle": {
+      "message": "İsim"
+   },
+   "addUrl": {
+      "message": "Web Sitesi"
+   },
+   "addmenuPaddingLeft": {
+      "message": "20px"
+   },
+   "application": {
+      "message": "Uygulamalar"
+   },
+   "background": {
+      "message": "Duvar Kağıdı"
+   },
+   "backupToCloud": {
+      "message": "Bulut Manuel yedekleme"
+   },
+   "bingNot": {
+      "message": "Bing duvar kağıdı bulanıklık mevcut desteklemiyor"
+   },
+   "bookmark_manage": {
+      "message": "Yer İşareti Yöneticisi"
+   },
+   "buttonFontSize": {
+      "message": "16px !important"
+   },
+   "customItem": {
+      "message": "Özel"
+   },
+   "deSearch": {
+      "message": "Google"
+   },
+   "default": {
+      "message": "Standart"
+   },
+   "defaultBottomSearch": {
+      "message": "http://en.wikipedia.org/wiki/"
+   },
+   "defaultSearchName": {
+      "message": "Wikipedia"
+   },
+   "displayIntop": {
+      "message": "Top az Ekran"
+   },
+   "donate": {
+      "message": "Bağışlama"
+   },
+   "donateDesc": {
+      "message": "Bize biraz para bağışlayarak size daha iyi hizmet sunmak ve daha istikrarlı işlevleri geliştirmemiz için yardımcı olunuz, teşekkür ederiz!"
+   },
+   "donateShow": {
+      "message": "block"
+   },
+   "donateShowAlipay": {
+      "message": "none"
+   },
+   "emailCodenotEmpty": {
+      "message": "E-posta ve Doğrulama Kodu boş olamaz"
+   },
+   "emailError": {
+      "message": "Geçersiz e-posta adresi"
+   },
+   "emailInvalid": {
+      "message": "Geçersiz e-posta adresi"
+   },
+   "emailOrName": {
+      "message": "E-posta veya takma ad boş kalabilir"
+   },
+   "emp": {
+      "message": "Blank"
+   },
+   "extdesc": {
+      "message": "Chrome'un bulut uygulama hizmetleri tabanlı Infinity new tab yeni sekme sayfası, Chrome kullanımını daha zarif ve kolay hale getirir."
+   },
+   "extensionItemAbleFontSize": {
+      "message": "16px"
+   },
+   "extensionItemAbleLineHeight": {
+      "message": "2.4"
+   },
+   "extname": {
+      "message": "Infinity New Tab Yeni Sekme Sayfası"
+   },
+   "feedback": {
+      "message": "Geribildirim"
+   },
+   "feedbackOnline": {
+      "message": "Çevrimiçi Geribildirim"
+   },
+   "fontColor": {
+      "message": "Yazı Rengi"
+   },
+   "fontsize": {
+      "message": "12px"
+   },
+   "forgotPassword": {
+      "message": "Parolanızı Mı Unuttunuz?"
+   },
+   "general": {
+      "message": "Rutin"
+   },
+   "getLocalWallpaperMarginTop": {
+      "message": "10px"
+   },
+   "gplus": {
+      "message": "Google +"
+   },
+   "gplusIco": {
+      "message": "0"
+   },
+   "gplusUrl": {
+      "message": "https://plus.google.com"
+   },
+   "help": {
+      "message": "Yardım"
+   },
+   "help1": {
+      "message": "1.Search for any word in the search engine,\u003Cbr>such as search \"infinity\" in Wikipedia,then we can get the search url:\u003Cbr>\"https://en.wikipedia.org/wiki/\u003Cspan style=\"color:#1ABC9C;\">Infinity\u003C/span>\""
+   },
+   "help2": {
+      "message": "2.Replace the search parameter with %s:\u003Cbr>\"https://en.wikipedia.org/wiki/\u003Cspan style=\"color:#1ABC9C\">%s\u003C/span>\""
+   },
+   "help3": {
+      "message": "3.Input the url and click \"Add Search Engine\":"
+   },
+   "help4": {
+      "message": "Additional Search Engine"
+   },
+   "help5": {
+      "message": "Add Search Engine"
+   },
+   "help6": {
+      "message": "4.When you search for something:"
+   },
+   "hideAds": {
+      "message": "Click to make it disappeared three days"
+   },
+   "howToAdd": {
+      "message": "How to add additional search engines?"
+   },
+   "howtodelete": {
+      "message": "Yardım: Nasıl silmek veya projeyi düzenlemek için?"
+   },
+   "hpa": {
+      "message": "block"
+   },
+   "imageSize": {
+      "message": "Zoom"
+   },
+   "lang": {
+      "message": "tr"
+   },
+   "letterSpacing": {
+      "message": "none"
+   },
+   "loginFailed": {
+      "message": "giriş başarısız oldu"
+   },
+   "loginNoNull": {
+      "message": "E-posta ve Şifre null Can not Be"
+   },
+   "menuItemFontSize": {
+      "message": "18px"
+   },
+   "menuItemMarginRight": {
+      "message": "25px"
+   },
+   "miniMode": {
+      "message": "minimalist Modu"
+   },
+   "mostVisited": {
+      "message": "Topsites"
+   },
+   "newtworkError": {
+      "message": "Ağ Hatası"
+   },
+   "nextWallpaper": {
+      "message": "Değişim sonraki duvar kağıdı için geçerli olacaktır"
+   },
+   "noTitle": {
+      "message": "Değişim Sonraki duvar kağıdı Click geçerli OLACAKTIR"
+   },
+   "orderBy": {
+      "message": "düzenli"
+   },
+   "pointColor": {
+      "message": "rgba(231, 76, 60, 0.5)"
+   },
+   "qqqun": {
+      "message": "none"
+   },
+   "randomWallpaper": {
+      "message": "Rastgele bir duvar kağıdı alın"
+   },
+   "recommended": {
+      "message": "Öneri"
+   },
+   "registerNotNull": {
+      "message": "E-posta, Şifre ve Doğrulama Kodu Boş Can not Be"
+   },
+   "registrationInformationWrong": {
+      "message": "Yanlış Kayıt Bilgileri"
+   },
+   "removeImage": {
+      "message": "Görüntüyü Kaldır"
+   },
+   "saySomething": {
+      "message": "Bir şeyler söyleyin …( ^_^ )"
+   },
+   "search": {
+      "message": "arama"
+   },
+   "searchBookmarks": {
+      "message": "Arama imleri"
+   },
+   "searchBy": {
+      "message": "Ara "
+   },
+   "searchIni": {
+      "message": "Google"
+   },
+   "searchItem": {
+      "message": "Arama Öğesi"
+   },
+   "searchOptionsMarginRight": {
+      "message": "30px"
+   },
+   "searchhistory": {
+      "message": "Arama Geçmişi"
+   },
+   "settingMenuFontSize": {
+      "message": "18px"
+   },
+   "settingMenuMarginRight": {
+      "message": "30px"
+   },
+   "settingMenuPaddingLeft": {
+      "message": "45px"
+   },
+   "settings": {
+      "message": "Ayarlar"
+   },
+   "shareIcon": {
+      "message": "Diğerleri Paylaş Simge"
+   },
+   "showPageAction": {
+      "message": "Ekran adres çubuğuna düğme eklemek"
+   },
+   "signIn": {
+      "message": "Hesap Numarası"
+   },
+   "simpleTheme": {
+      "message": "basit"
+   },
+   "supportFile": {
+      "message": "Destek Olmak Infinity,Halo, Mifish and V + Yedekleme Dosya"
+   },
+   "thankFeedback": {
+      "message": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Çok teşekkür ederiz! \u003Cbr> Ürün yöneticilerimiz geribildiriminize bakıyorlar. Gerektiğinde bize bıraktığınız iletişim bilgiler aracılığıyla sizinle irtibata geçeceğiz!"
+   },
+   "todoDone": {
+      "message": "Tamamla"
+   },
+   "topMenuFontSize": {
+      "message": "22px"
+   },
+   "tutorial": {
+      "message": "Ek Arama Motoru ekleme öğreticisi"
+   },
+   "uninstall": {
+      "message": "Kaldır"
+   },
+   "updateItem": {
+      "message": "Güncelleme Öğeleri"
+   },
+   "upload": {
+      "message": "Resim Seç"
+   },
+   "wallpaperIconFailed": {
+      "message": "Ağ bağlantısı yok artık, size daha sonra tarayıcınızın önbelleğini temizleyin eğer duvar kağıdı ve simgeler kullanılmayacak, duvar kağıdı verileri senkronize veya değiştirmek mümkün olmayacaktır"
+   },
+   "wallpaperLoadFailed": {
+      "message": "Duvar kağıdı yüklenemedi"
+   },
+   "wallpaperUploadFailed": {
+      "message": "Duvar Kağıdı Yükleme Başarısız"
+   },
+   "whatNext": {
+      "message": "Şimdi bu konuda ne yapılabilir peki?"
+   },
+   "yourWallpaper": {
+      "message": "Duvar kağıdı bulut ile senkronize olacak"
+   }
+}

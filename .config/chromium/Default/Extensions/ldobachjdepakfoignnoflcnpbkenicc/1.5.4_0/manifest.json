@@ -1,0 +1,26 @@
+{
+   "app": {
+      "launch": {
+         "local_path": "main.htm"
+      }
+   },
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com https://platform.twitter.com https://apis.google.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_extDescr__",
+   "icons": {
+      "128": "img/logo128.png",
+      "16": "img/logo16.png",
+      "32": "img/logo32.png",
+      "64": "img/logo64.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCyoF7DcFI7X0HD9kk5NUO3M6fwGf04S0ydBktMoeVFt/3PyEzER9KrAb9XRTxW6cpTUxbrepFVar99vpvOeQESo/4ogE5+AbglMACx0h6n558JFe1ZwxaauZ+tivxG/INBXemZnNfyUUNZoNlyIcNina2AvV2pjsGQJKXQfeEBuQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "18.0",
+   "name": "__MSG_extName__",
+   "offline_enabled": true,
+   "options_page": "options.htm",
+   "permissions": [ "https://*/*", "tabs", "bookmarks", "chrome://favicon/", "history", "management", "unlimitedStorage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5.4",
+   "web_accessible_resources": [ "chrome_ex_oauth.html", "oauth2.html" ]
+}

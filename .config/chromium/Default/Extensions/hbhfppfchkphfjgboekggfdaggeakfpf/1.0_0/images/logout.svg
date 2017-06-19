@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ui-kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Menu-left" sketch:type="MSArtboardGroup" transform="translate(-775.000000, -513.000000)" fill="#9EB6C9">
+            <g id="left-open-3" sketch:type="MSLayerGroup" transform="translate(738.000000, 188.000000)">
+                <g id="links" transform="translate(0.000000, 87.000000)" sketch:type="MSShapeGroup">
+                    <g id="user-link">
+                        <g id="name" transform="translate(24.000000, 4.000000)">
+                            <path d="M21.5714286,242.714286 L21.5714286,240.857143 L17.5714286,240.857143 L17.5714286,238.571429 L21.5714286,238.571429 L21.5714286,236.714286 L24.5714286,239.714286 L21.5714286,242.714286 L21.5714286,242.714286 Z M19.2857143,234 C19.9168969,234 20.4285714,234.511675 20.4285714,235.142857 L20.4285714,237.428571 L19.2857143,237.428571 L19.2857143,235.142857 L14.1428571,235.142857 L14.1428571,244.285714 L19.2857143,244.285714 L19.2857143,242 L20.4285714,242 L20.4285714,244.285714 C20.4285714,244.916897 19.9168969,245.428571 19.2857143,245.428571 L14.1428571,245.428571 C13.5116746,245.428571 13,244.916897 13,244.285714 L13,235.142857 C13,234.511675 13.5116746,234 14.1428571,234 L19.2857143,234 L19.2857143,234 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

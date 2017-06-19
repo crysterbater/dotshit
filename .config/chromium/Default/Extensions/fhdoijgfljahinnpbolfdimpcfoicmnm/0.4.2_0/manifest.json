@@ -1,0 +1,22 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "scripts/background.js" ]
+      }
+   },
+   "description": "Chrome ADB (Android Debug Bridge) Client",
+   "icons": {
+      "128": "assets/icon_128.png",
+      "16": "assets/icon_016.png",
+      "48": "assets/icon_048.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgOdBbdDQsjna/+BMT5xiobNqKpif0aNoUwUYlH5TVqWYtuw6PcIrctz3PogsU8tG2tnnmNjU3SBXZN/YBzUgq56QDBYUqKW2cUqUsv+o2+ANSHwgdbeNWF889rWGADG6yLrWjIo2ZxXyuB7ubrZjHbDAmOifILIyPs9NyzAmmmoXAXi6vAmKeYo3E9q64tMq36T7eWahIFPz4u6bVvMKwrt9NGSlZy3WliX9y10s30RZNw4LsCCgYTzHFJKrNZc0Bnfl1QPX253vTz9RS3+KitVjRZyuzB12UUzIk3QZ80WiVIiJWySEydSBBHs7SUQpWa0h9XfL2HOIiIi0Oo+MxQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "24",
+   "name": "ChromeADB",
+   "permissions": [ "fileSystem", {
+      "socket": [ "tcp-connect" ]
+   } ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.4.2"
+}

@@ -1,0 +1,67 @@
+{
+   "author": "Mussabekov Rustem",
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "assets/idle_16.png",
+         "19": "assets/idle_19.png",
+         "32": "assets/idle_32.png",
+         "38": "assets/idle_38.png",
+         "48": "assets/idle_48.png",
+         "64": "assets/idle_64.png"
+      },
+      "default_popup": "index.html",
+      "default_title": "__MSG_saveToRaindrop__"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "chromeos": "Ctrl+Shift+C",
+            "default": "Ctrl+Shift+C",
+            "linux": "Ctrl+Shift+C",
+            "mac": "Command+Shift+C",
+            "windows": "Ctrl+Shift+C"
+         }
+      },
+      "show-bookmarks": {
+         "description": "__MSG_myBookmarks__",
+         "suggested_key": {
+            "chromeos": "Ctrl+Shift+A",
+            "default": "Ctrl+Shift+A",
+            "linux": "Ctrl+Shift+A",
+            "mac": "Command+Shift+A",
+            "windows": "Ctrl+Shift+A"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "css": [ "inject.css" ],
+      "js": [ "inject.js" ],
+      "matches": [ "*://*/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "homepage_url": "https://raindrop.io",
+   "icons": {
+      "128": "assets/icon-128.png",
+      "16": "assets/icon-16.png",
+      "32": "assets/icon-32.png",
+      "48": "assets/icon-48.png",
+      "96": "assets/icon-96.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhcGaQeOT/1tYUGcFtjvmL5cl6hkjmRte1B/i6bmbr3Xn/E8DHLE79qnPxjGKAQ7DMGO3paXg+CGMlG/1NaVNW8XeGdSaGICb8tr9ubOQrHokrn7oYvf7x51GzYoXmRmlTeX/Kl/Wy9sWA45YiwqXTDTLQDAUSdLM3OGU2IWpAGxdvQ7YMRjs37IHIJCoob79Vjd69mXrX9HTcNFjwSDvhznabgBInqBdPpupbRevHByad0aFOgWlWFEnspZx6LXJ5wPDDo0DxB4jKjBlf7dKt1wNdVuCIkFlLafjrGsVOPC8tVll5A9REuBWWcWp84HsT112OhMF+HSKtqr/dFuRgwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "omnibox": {
+      "keyword": "r"
+   },
+   "permissions": [ "contextMenus", "notifications", "bookmarks", "tabs", "*://*/*", "\u003Call_urls>" ],
+   "short_name": "Raindrop.io",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "6.0.409",
+   "web_accessible_resources": [ "assets/*.png" ]
+}

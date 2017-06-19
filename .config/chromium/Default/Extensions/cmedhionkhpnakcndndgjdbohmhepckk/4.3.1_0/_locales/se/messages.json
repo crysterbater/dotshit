@@ -1,0 +1,44 @@
+{
+  "extension_name": {
+    "message": "Adblock für Youtube™"
+  },
+  "extension_short_name": {
+    "message": "VideoAdblock"
+  },
+  "extension_description": {
+    "message": "Beliebte Adblock für Youtube™ -Erweiterung : Entfernt die Video-Anzeigen von Youtube™ . "
+  },
+  "page_action_title": {
+    "message": "Die Anzeigen werden automatisch übersprungen"
+  },
+  "disabled": {
+    "message": "behindert"
+  },
+  "disable": {
+    "message": "Deaktivieren"
+  },
+  "enable": {
+    "message": "ermöglichen"
+  },
+  "rate_this_extension": {
+    "message": "Bewerten Sie uns auf Google"
+  },
+  "like_on_facebook": {
+    "message": "Bewerten Sie uns auf Facebook"
+  },
+  "branding": {
+    "message": "von Adblock für Youtube™ gereinigt"
+  },
+  "options": {
+    "message": "AdBlock für Youtube™-Einstellungen"
+  },
+  "options_short": {
+    "message": "Einstellungen"
+  },
+  "enable_video_ads": {
+    "message": "Aktivieren Video Ads"
+  },
+  "enable_non_video_ads": {
+    "message": "Aktivieren Sie Normale Werbung"
+  }
+}

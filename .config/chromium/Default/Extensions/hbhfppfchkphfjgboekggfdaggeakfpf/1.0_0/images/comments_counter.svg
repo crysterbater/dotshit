@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="11px" viewBox="0 0 12 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="12" height="11"></rect>
+    </defs>
+    <g id="Ui-kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Elements" sketch:type="MSArtboardGroup" transform="translate(-956.000000, -1114.000000)">
+            <g id="hover-active" sketch:type="MSLayerGroup" transform="translate(731.000000, 760.000000)">
+                <g id="Bitmap">
+                    <g id="dribbble-ball-dnld-9887db49a749236ed542c4c553c4f27f-copy-+-Dribbble-Copy" transform="translate(18.000000, 350.000000)">
+                        <g id="Group-3" transform="translate(148.000000, 4.000000)">
+                            <g id="comments" transform="translate(59.000000, 0.000000)">
+                                <g id="icon">
+                                    <mask id="mask-2" sketch:name="Mask" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <use id="Mask" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                                    <image sketch:type="MSBitmapLayer" mask="url(#mask-2)" x="0" y="0" width="12" height="59" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAB2CAYAAADSiVPSAAAABGdBTUEAA1teXP8meAAAB5ZJREFUaAXtWltMVEcYnpmzK5eSGqlrRZqoaUpSQ00oNg1YExOEFZ+aaig+GAlReDAmNFHATUGyIoi38KLB3QcefLBgSkjQlFulEgUtGkww1tAHiSVgxAsmdmFvZ/rNsXvB3XX37NntQ92TnD2zM/98//z/zPlnvplDyTuu3t7eDErpLtxbcWdzzg14rkCVBdyz+H9fluVh5HUZjcZHwaBosMyBgYEc5JsBUIzKUjCZt/JkyF11u93VUPTQv2yJgvb29uQ1a9a0Msb2Q4j5C0aYdkBJ/fbt21s88l4FnZ2dhuXLl/cC/EtPoYanpbCwsFLUVxT09PSkJiUlXYOZX2sAfbvqD1DSqijo7++3Anzf2xIa/y9iAGRJfX192XCLBWBed2kE9lTXYZDYREfuxR1Nh3qAQj7hlQI0nhlDSmgv2MhgxlrtOMERgO1mMGNZ8GLtucB+LHz/p3ao4AhQcJPhzfsleLHmXA6ENuGiNiQcmuECAax40caZiIJQ0hhYrilnErWrBYIy/l+8eNGEHr+kCdJXecLpdBag9a+8CkpKStzz8/N7oKQZmbJPVl0K9S++fPkyf8eOHdOemgHhAaGjFC+fKmsAfB23Ce4e8QB7njpPwvOUJAmyYgD4Lvy3o5/E+yIa5MT/aTTiHtJjSHcXFRX94ZNemlqiAMIUkbUSlb1SyJvCXQyQh3fu3NFv2rTJ6S2MILHERYODg3UAM/vV60DLD2zbtu25X56qpFcBfF8OsPOoPYPnEGK5BT69rQotIZzwQMID/1MPeENFMPuqqqoy9Hq9lx9AxoB7BeLVAsKJwg8QGIddLlfX6dOnHwXDCKqgtrZW4QeIRxHzA4BfhaLqM2fOhOYHZWVlyQaDQRM/gGX1J06cCOQHBw8eNKSkpPRCQDM/EJH41KlTlcJlCj2qqKhITUtL64M/vwrmR7V5aGRuXl7eq5GRkVtKHxw+fNgK8H1qgcLIL2J1kSWZTKZsCMaFH+h0OhuDlr1Q4JuEwzRLTTH64j/gB9CyVk2rVMq60bcsbvwAjYkvP0BIucngorjwA4BzrBLbBEeLCz8ArhUhY5yJKAiW06iy88KJT6JvFX6ghIrMzMyb2Kf4DK/4F+FqRlA+YbPZjGfPnp0TsoqCBw8ecCjpTk9P1yNvM+6gYVxUeNcFt1x8/fr1d+fOnXvmkQsAqqmpKUWhan4A600tLS3h+QFGFYf/PA1QnmiZHYllAKFIi+X7NJ73cI9hkulubW2NjB+gosBQ4riC/OZnCoOgWMxUCOt6i8USPT84dOhQHcaulx/Amg5ExAPNzc3a+QHm4XIAKvwApg/htmAIJ/iBX1cmkgkPvL8eCAjX/q6Y22LK4Ckf7kJw3coJzUYsBT+g4Ac4P6B8lnB6n3B52M1dXav76yLnB0+LzTlUTjJTRoqhMPz5AecyJ+wqlW3VK/sbQvODR+vKktOyNrRSJu9H4F46KfibFjLNHUTm9Sv7jgTyg9ktTQbdBxL4AdHMD+BCi6G3RplXlFbO5Fak6tNoTyzAhXHAqXhubKlS0uJnzthspTHmB5hPFpmsz5KeFB3PlsT5AeZKoSxWF+CwXeeyMT2R9kbXoRE0heP8AIPQGIFoVCJcIhuZHMfzA7yIboyi+J0fMMIfM0bjd34gE5wfcJnFhR8QTrDNa29jLm4HP8ArHuOLE2Jd9Uv9OBNRkLpie36AUDEpzXHf+UH6wPomtyyrWlGHMpgSPsEWSUH63Vrf+QElJe5VfZ/uQWxvhueiPj/AycNF98Lj/I9+q5n2NCAgPMwVHS+lkk6VNXDJddnhNH187cfw/IATPYeZnga8eXKi8APwHlHkRKumOZHvyYSNMRfpNgzWRMYPMLLoM3ZSieNeDTKfInyxWMxUnFzQU1IZPT94XthSx3XEyw9gR4fdMX/gk19jwA+eFp0sZ4yfh/kz6OchF/jB6n5Tgh94uzKRSHjgffZAQLj2d0au6eeMpCQZ5wdkK1bN2Vhv/8sP+ALkZhF272NPbtjhpF2/N5ZEzg/y6i7lSHqdGdG1GBE6LD/A2kpGS69iI6h6tGFXaH6wrqw9OXN9WiuA9+NrAmXl7W9RuDQUObAWqr9x9PtAfpBzpNOQkkTwfVEMzg8It4zUlyjzitLK3Iqe1NRk2hMLcGElI7Qiz3zZxw82mzuslMT4/AD8wO5wZ0n5DT/h/IBZxF5aOB+rKgc/YBK16Sj4AaBVd2gkytDiAkYZN0YiHI0M5nTBD8jaaCpHUgcW4PwA+6GRCEclo3xfFEd+gBdWnB/wuPAD+B97xG7wAxdtE694VC54RyW03jp6bPc4E1EQf2J6foCtkUn7337fF41+Tpuw9Fa1og7deD7hskkFd1tKfPyA4PuiGxs4vi8izSL0hq4cpkTG90VPSP7tkztD8wOEDnxfJKmyBo26ruNu03DD7vD8ANMABsDSC5bZwQyW4cWh6K83/IAT8AM6hpHSfauxNDJ+IIgnMV9W4rhHBXZNpjBTFY8exUx14YKeVKrjB0umwzy2oQ7BqdwDDtM7XIu6b2837vxLybtyRXX/eEP0Nw0d5Zyy89j4m4HpQ8zpstw4tlszP/gHbVIaak9DHX4AAAAASUVORK5CYII="></image>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

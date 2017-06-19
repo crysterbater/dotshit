@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/popup.css">
+</head>
+<body>
+
+    <ul class="menu">
+        <li>
+            <input type="radio" name="option" id="strict">
+            <label for="strict">Wadsworth (30%)</label>
+        </li>
+        <li>
+            <input type="radio" name="option" id="adaptive">
+            <label for="adaptive">Adaptive mode</label>
+        </li>
+        <li>
+            <input type="radio" name="option" id="off">
+            <label for="off">Off</label>
+        </li>
+        <li>
+            <input type="radio" name="option" id="user">
+            <label for="user">Custom</label>
+            <div class="user-input">
+                <div class="option">
+                    <span>Skip at beginning:</span>
+                    <div class="inputs">
+                        <input type="number" class="user-time start minutes" min="0" max="60">
+                        <span>:</span>
+                        <input type="number" class="user-time start seconds" min="0" max="60">
+                    </div></br>
+                </div>
+
+                <div class="option">
+                    <span>Skip at end:</span>
+                    <div class="inputs">
+                        <input type="number" class="user-time end minutes" min="0" max="60">
+                        <span>:</span>
+                        <input type="number" class="user-time end seconds" min="0" max="60">
+                    </div></br>
+                </div>
+
+                <div class="option">
+                    <span>Ignore videos shorter then:</span>
+                    <div class="inputs">
+                        <input type="number" class="user-time short minutes" min="0" max="60">
+                        <span>:</span>
+                        <input type="number" class="user-time short seconds" min="0" max="60">
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/popup.js"></script>
+</body>
+</html>

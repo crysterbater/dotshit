@@ -1,0 +1,14 @@
+{
+   "defaultTitle": {
+      "description": "Default title to display",
+      "message": "Flickr downloader"
+   },
+   "extDesc": {
+      "description": "Flickr downloader allow you to download all image on flickr",
+      "message": "Tải ảnh nhanh chóng từ flickr."
+   },
+   "extName": {
+      "description": "Flickr downloader allow you to download all image on flickr.",
+      "message": "Flickr downloader"
+   }
+}

@@ -1,0 +1,215 @@
+@import "globals";
+
+.resource-tiles {
+  margin-top: 70px;
+
+  &-container {
+    padding: $tile-spacing / 2;
+
+    @include for-mobile {
+      padding: $tile-spacing / 4;
+    }
+  }
+
+  &-header {
+    text-align: center;
+  }
+
+  &-title {
+    display: inline-block;
+    width: 800px;
+    color: #fff;
+    font-size: 42px;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  &-description {
+    display: inline-block;
+    width: 700px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 24px;
+    opacity: 0.4;
+  }
+
+  &-filters {
+    margin-top: 34px;
+
+    &-item {
+      display: inline-block;
+      margin-left: 24px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    &-button {
+      &, &:visited, &:hover, &:focus {
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 38px;
+        color: #fff;
+        font-size: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 25px;
+        @include transition(background-color 0.3s, box-shadow 0.3s, color 0.3s);
+      }
+
+      &:hover, &:focus {
+        border-color: transparent;
+        background: #548cff linear-gradient(-70deg, #9170DB 0%, #8972E4 10%, #7277FF 40%, #689AFF 100%);
+        box-shadow: 0 8px 26px 0 transparentize(#548CFF, 0.45);
+      }
+
+      &-icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 16px;
+
+        &.share {
+          width: 18px;
+          height: 20px;
+          background: url("../images/share-hover.svg");
+          background-size: 18px 20px;
+        }
+      }
+    }
+  }
+}
+
+.resource-tile {
+  position: relative;
+  display: block;
+  background: #fff;
+  border-radius: 3px;
+  margin: $tile-spacing / 2;
+  padding: 36px 0;
+
+  @include for-mobile {
+    margin: $tile-spacing / 4;
+  }
+
+  &-container {
+    display: inline-block;
+    position: relative;
+    @include transition(transform 0.3s, box-shadow 0.3s);
+
+    /* 5 tiles */
+    width: 20%;
+    float: left;
+
+    @media only screen and (max-width: $minimum-1-tile-width) {
+      /* 1 tile */
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $minimum-2-tile-width - 1px) and (min-width: $minimum-1-tile-width) {
+      /* 1 tiles */
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $minimum-3-tile-width - 1px) and (min-width: $minimum-2-tile-width) {
+      /*  2 tiles */
+      width: 50%;
+    }
+
+    @media only screen and (max-width: $minimum-4-tile-width - 1px) and (min-width: $minimum-3-tile-width) {
+      /*  3 tiles */
+      width: 33.3%;
+    }
+
+    @media only screen and (max-width: $minimum-5-tile-width - 1px) and (min-width: $minimum-4-tile-width) {
+      /*  4 tiles */
+      width: 25%;
+    }
+  }
+
+  &-image {
+    width: auto;
+    height: 100%;
+
+    &-container {
+      height: 150px;
+      text-align: center;
+    }
+  }
+
+  &-title {
+    padding: 26px 20px 0 20px;
+    font-size: 21px;
+    color: #202124;
+    text-align: center;
+  }
+
+  &-tags {
+    padding: 24px 20px 0 20px;
+    font-size: 14px;
+    color: #AEB6C2;
+    text-align: center;
+  }
+
+  &-description {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    line-height: 2;
+    padding: 24px 20px 0 20px;
+  }
+
+  &-actions {
+    text-align: center;
+  }
+
+  &-vote {
+    &, &:visited, &:hover, &:focus {
+      display: inline-block;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 25px;
+      border: 1px solid #AEB6C2;
+      color: #AEB6C2;
+      margin-top: 40px;
+      @include transition(background-color 0.3s, box-shadow 0.3s, color 0.3s);
+    }
+
+    &.active, &:hover, &:focus {
+      border-color: transparent;
+      color: #fff;
+      background: #548cff linear-gradient(-70deg, #9170DB 0%, #8972E4 10%, #7277FF 40%, #689AFF 100%);
+      box-shadow: 0 8px 26px 0 transparentize(#548CFF, 0.45);
+    }
+
+    &-label {
+      display: inline-block;
+      padding: 0 30px;
+
+      .voted {
+        display: none;
+      }
+    }
+
+    &.active &-label {
+      .normal {
+        display: none;
+      }
+
+      .voted {
+        display: inline;
+      }
+    }
+
+    &-counter {
+      display: inline-block;
+      border-left: 1px solid #AEB6C2;
+      padding: 0 24px;
+    }
+
+    &.active &-counter, &:hover &-counter, &:focus &-counter {
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+  }
+}

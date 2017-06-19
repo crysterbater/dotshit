@@ -1,0 +1,88 @@
+{
+   "abyt_has_been_installed": {
+      "message": "Adblock for Youtube&trade; installation successful"
+   },
+   "ads": {
+      "message": "Ads"
+   },
+   "ads_will_be_blocked_on_yt": {
+      "message": "Enjoy Youtube without ads!"
+   },
+   "annotations": {
+      "message": "Annotations"
+   },
+   "bestPrice": {
+      "message": "BestPrice"
+   },
+   "branding": {
+      "message": "cleaned by Adblock for Youtube™"
+   },
+   "disable": {
+      "message": "Disable"
+   },
+   "disabled": {
+      "message": "Disabled"
+   },
+   "enable": {
+      "message": "Enable"
+   },
+   "enable_non_video_ads": {
+      "message": "Enable Normal Ads"
+   },
+   "enable_video_ads": {
+      "message": "Enable Video Ads"
+   },
+   "extension_description": {
+      "message": "Popular Adblock for Youtube™ Extension: Removes the video ads from Youtube™. Thanks to all AdBlock supporters!"
+   },
+   "extension_name": {
+      "message": "Adblock for Youtube™"
+   },
+   "extension_short_name": {
+      "message": "VideoAdblock"
+   },
+   "installed": {
+      "description": "badge for install page",
+      "message": "Installed"
+   },
+   "installed_page_title": {
+      "message": "Installed Adblock for Youtube™"
+   },
+   "like_on_facebook": {
+      "message": "Rate us on Facebook"
+   },
+   "options": {
+      "message": "AdBlock for Youtube™ Settings"
+   },
+   "options_short": {
+      "message": "Settings"
+   },
+   "page_action_title": {
+      "message": "The ads are automatically skipped"
+   },
+   "pricescout_description": {
+      "message": "Automatic price comparison & coupon assistant for Google Chrome!"
+   },
+   "pricescout_title": {
+      "message": "Save Money with Pricescout for Google Chrome"
+   },
+   "rate_this_extension": {
+      "message": "Rate us on Google"
+   },
+   "read_more": {
+      "message": "read more"
+   },
+   "recommend": {
+      "message": "Tell your friends"
+   },
+   "share_text": {
+      "description": "This text will be shown on share links (e.g. Twitter)",
+      "message": "I enjoy Youtube without ads thanks to Adblock for Youtube™ "
+   },
+   "support_us": {
+      "message": "Support our project"
+   },
+   "try_something_new": {
+      "message": "Try something new?"
+   }
+}

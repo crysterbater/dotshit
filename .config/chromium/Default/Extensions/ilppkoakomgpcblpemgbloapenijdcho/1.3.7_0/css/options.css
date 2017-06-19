@@ -1,0 +1,53 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 14px;
+
+    padding: 0;
+    margin: 0;
+}
+body.loading {
+    visibility: hidden;
+}
+
+a {
+    color: rgb(17, 85, 204);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+label {
+    margin: 0.2em 0;
+    display: block;
+}
+
+label > input[type=checkbox] {
+    vertical-align: middle;
+}
+label > span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.wrapper {
+    padding: 10px;
+    width: 400px;
+}
+
+.ff .wrapper {
+    border: 1px solid #cacdd9;
+    border-radius: 3px;
+    margin: 12px auto;
+}
+
+.info {
+    text-align: right;
+}
+
+.info > a {
+    margin: 5px;
+    margin-bottom: 0;
+}

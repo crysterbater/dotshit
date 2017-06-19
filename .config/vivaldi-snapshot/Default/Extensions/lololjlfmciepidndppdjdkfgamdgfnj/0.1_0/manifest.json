@@ -1,0 +1,34 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "css": [ "css/global.css", "css/pagecontent.css" ],
+      "js": [ "js/variables.js", "js/global.js", "js/contentscript.js" ],
+      "matches": [ "http://*.flickr.com/*", "https://*.flickr.com/*", "http://*.staticflickr.com/*", "https://*.staticflickr.com/*" ],
+      "run_at": "document_idle"
+   } ],
+   "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_extDescription__",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "48": "img/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtQuaCODAy8xxUYaH9INLypCvMru7SHxAuBOrNlIVX1e8aPPg0XpiUTGEMTBAINWOCkdAJ2JSUO1qCpBSr86qxb5kN1u5s0t0xLtqLvXqiBNIoNJnwSDGnOFi3aSWCzNeZ2hVwYEaBTZdpJXJ9dnHbfrJtuElBytSS7uOToHvRyD2aQL4wN6AYA4ntr1ZrlY9n9ldyD/G150Cvc2YXi1h6ZmwfueF7Xpwkv0ZD/XADMmtLtqQeufjUCo+Qwto4SroQbT2BJdrLFcjfKPBkY8Mhvonl/dZm6UTECFmVuOeAESqe0J11lYH3pz9UZkZhABToFWIl8M3Z/yOOYok22BUtwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_extName__",
+   "page_action": {
+      "default_icon": {
+         "19": "img/icon19.png",
+         "38": "img/icon38.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "permissions": [ "http://*.staticflickr.com/", "https://*.staticflickr.com/", "http://*.flickr.com/", "https://*.flickr.com/", "tabs", "downloads", "storage", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1",
+   "web_accessible_resources": [ "js/fce.js", "js/analytics.js", "img/*.png", "img/ic_loading.gif", "_locales/*", "css/pagecontent.css" ]
+}

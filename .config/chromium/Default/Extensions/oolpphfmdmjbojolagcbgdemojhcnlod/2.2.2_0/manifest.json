@@ -1,0 +1,27 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "default_locale": "en",
+   "description": "__MSG_ext_description__",
+   "icons": {
+      "128": "assets/icon_128.png",
+      "16": "assets/icon_16.png",
+      "19": "assets/icon_19.png",
+      "256": "assets/icon_256.png",
+      "32": "assets/icon_32.png",
+      "38": "assets/icon_38.png",
+      "512": "assets/icon_512.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDGWcgyZAF1vTXLIe6GbYa4/BPEl0y3ICvS8dlujZ7KGvH0ZYxjEttfGXqqG47PpgcbGfJE2yS5CiuWs8UM7iYA1aCFKGtoAI5YIxI9eI9UOkTAM4PxN/xmKx3u8uVu7QJlhZwUnXoPQ1TVqF/mlya2spzFNomS4/gt3bejAtDG6QIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "45.0",
+   "name": "__MSG_ext_name__",
+   "options_ui": {
+      "chrome_style": true,
+      "page": "options.html"
+   },
+   "permissions": [ "clipboardWrite", "contextMenus", "storage", "tabs", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.2.2"
+}

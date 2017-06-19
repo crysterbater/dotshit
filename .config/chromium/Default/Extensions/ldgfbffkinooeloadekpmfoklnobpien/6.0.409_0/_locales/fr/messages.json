@@ -1,0 +1,150 @@
+{
+   "alreadyInCollection": {
+      "description": "Déjà ajouté dans une collection",
+      "message": "Déjà ajouté dans une collection"
+   },
+   "appDesc": {
+      "description": "\"Save Button\" for Web",
+      "message": "\"Save Button\" for Web"
+   },
+   "appName": {
+      "description": "Raindrop.io: \"Save Button\" for Web",
+      "message": "Raindrop.io: \"Save Button\" for Web"
+   },
+   "articleRemovedPermament": {
+      "description": "Article supprimé",
+      "message": "Article supprimé"
+   },
+   "articleSaved": {
+      "description": "Article sauvegardé",
+      "message": "Article sauvegardé"
+   },
+   "edit": {
+      "description": "Éditer",
+      "message": "Éditer"
+   },
+   "error": {
+      "description": "Erreur inconnue. Réessayez!",
+      "message": "Erreur inconnue. Réessayez!"
+   },
+   "findBookmark": {
+      "description": "Chercher un favoris",
+      "message": "Chercher un favoris"
+   },
+   "hotkey": {
+      "description": "Touche de raccourci",
+      "message": "Touche de raccourci"
+   },
+   "imageRemovedPermament": {
+      "description": "Photo supprimée",
+      "message": "Photo supprimée"
+   },
+   "imageSaved": {
+      "description": "Photo sauvegardé",
+      "message": "Photo sauvegardé"
+   },
+   "inCollection": {
+      "description": "Dans la collection",
+      "message": "Dans la collection"
+   },
+   "linkRemovedPermament": {
+      "description": "Lien supprimé",
+      "message": "Lien supprimé"
+   },
+   "linkSaved": {
+      "description": "Lien sauvegardé",
+      "message": "Lien sauvegardé"
+   },
+   "loading": {
+      "description": "Chargement",
+      "message": "Chargement"
+   },
+   "logOut": {
+      "description": "Se déconnecter",
+      "message": "Se déconnecter"
+   },
+   "myBookmarks": {
+      "description": "Mes bookmarks",
+      "message": "Mes bookmarks"
+   },
+   "myBookmarksRaindrop": {
+      "description": "Mes bookmarks (Raindrop.io)",
+      "message": "Mes bookmarks (Raindrop.io)"
+   },
+   "open": {
+      "description": "Open",
+      "message": "Open"
+   },
+   "pleaseLogin": {
+      "description": "Connectez-vous pour commencer !",
+      "message": "Connectez-vous pour commencer !"
+   },
+   "remove": {
+      "description": "Supprimer",
+      "message": "Supprimer"
+   },
+   "restore": {
+      "description": "Restore",
+      "message": "Restore"
+   },
+   "save": {
+      "description": "Sauvegarder",
+      "message": "Sauvegarder"
+   },
+   "saveError": {
+      "description": "Erreur lors de la sauvegarde !",
+      "message": "Erreur lors de la sauvegarde !"
+   },
+   "saveImage": {
+      "description": "Enregistrer l'image sur Raindrop.io",
+      "message": "Enregistrer l'image sur Raindrop.io"
+   },
+   "saveLink": {
+      "description": "Enregistrez la page sur Raindrop.io",
+      "message": "Enregistrez la page sur Raindrop.io"
+   },
+   "savePage": {
+      "description": "Enregistrez la page sur Raindrop.io",
+      "message": "Enregistrez la page sur Raindrop.io"
+   },
+   "saveToRaindrop": {
+      "description": "Sauvegarder sur Raindrop.io",
+      "message": "Sauvegarder sur Raindrop.io"
+   },
+   "settings": {
+      "description": "Paramètres",
+      "message": "Paramètres"
+   },
+   "signIn": {
+      "description": "Se connecter",
+      "message": "Se connecter"
+   },
+   "signUp": {
+      "description": "S'inscrire",
+      "message": "S'inscrire"
+   },
+   "supportOnlyUrls": {
+      "description": "Vous ne pouvez enregistrer que les liens avec les protocoles http et https !",
+      "message": "Vous ne pouvez enregistrer que les liens avec les protocoles http et https !"
+   },
+   "toRaindrop": {
+      "description": "sur Raindrop.io",
+      "message": "sur Raindrop.io"
+   },
+   "tryAgain": {
+      "description": "Réessayez",
+      "message": "Réessayez"
+   },
+   "unsorted": {
+      "description": "Boîte de réception",
+      "message": "Boîte de réception"
+   },
+   "videoRemovedPermament": {
+      "description": "Contenu supprimé",
+      "message": "Contenu supprimé"
+   },
+   "videoSaved": {
+      "description": "Contenu enregistré",
+      "message": "Contenu enregistré"
+   }
+}

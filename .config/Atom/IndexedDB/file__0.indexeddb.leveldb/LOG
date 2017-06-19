@@ -1,0 +1,24 @@
+2017/06/17-19:14:04.816 29441 Reusing MANIFEST /home/pringled/.config/Atom/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2017/06/17-19:14:04.816 29441 Recovering log #620
+2017/06/17-19:14:04.919 29441 Reusing old log /home/pringled/.config/Atom/IndexedDB/file__0.indexeddb.leveldb/000620.log 
+2017/06/17-19:20:57.004 30295 Level-0 table #624: started
+2017/06/17-19:20:57.209 30295 Level-0 table #624: 1734680 bytes OK
+2017/06/17-19:20:57.283 30295 Delete type=0 #620
+2017/06/17-19:24:55.611 30295 Level-0 table #626: started
+2017/06/17-19:24:55.862 30295 Level-0 table #626: 1731023 bytes OK
+2017/06/17-19:24:55.949 30295 Delete type=0 #623
+2017/06/17-19:26:58.508 30295 Compacting 3@0 + 1@1 files
+2017/06/17-19:26:58.951 30295 Generated table #627@0: 20 keys, 2115440 bytes
+2017/06/17-19:26:59.036 30295 Generated table #628@0: 33 keys, 2762 bytes
+2017/06/17-19:26:59.036 30295 Compacted 3@0 + 1@1 files => 2118202 bytes
+2017/06/17-19:26:59.114 30295 compacted to: files[ 0 2 1 0 0 0 0 ]
+2017/06/17-19:26:59.114 30295 Delete type=2 #626
+2017/06/17-19:26:59.116 30295 Delete type=2 #621
+2017/06/17-19:26:59.116 30295 Delete type=2 #624
+2017/06/17-19:26:59.118 30295 Delete type=2 #619
+2017/06/17-19:29:49.764 30295 Level-0 table #630: started
+2017/06/17-19:29:49.966 30295 Level-0 table #630: 1716156 bytes OK
+2017/06/17-19:29:50.041 30295 Delete type=0 #625
+2017/06/17-19:35:08.142 30295 Level-0 table #632: started
+2017/06/17-19:35:08.350 30295 Level-0 table #632: 1704143 bytes OK
+2017/06/17-19:35:08.471 30295 Delete type=0 #629

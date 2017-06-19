@@ -1,0 +1,44 @@
+{
+   "branding": {
+      "message": "очищены Adblock для Youtube™"
+   },
+   "disable": {
+      "message": "запрещать"
+   },
+   "disabled": {
+      "message": "инвалид"
+   },
+   "enable": {
+      "message": "Включить"
+   },
+   "enable_non_video_ads": {
+      "message": "Включить Normal Реклама"
+   },
+   "enable_video_ads": {
+      "message": "Включить видео Реклама"
+   },
+   "extension_description": {
+      "message": "Популярные Adblock для Youtube™ Extension : Удаляет видео объявления Youtube™. "
+   },
+   "extension_name": {
+      "message": "Adblock для Youtube™"
+   },
+   "extension_short_name": {
+      "message": "VideoAdblock"
+   },
+   "like_on_facebook": {
+      "message": "Оценить нами на Facebook"
+   },
+   "options": {
+      "message": "AdBlock для настройки Youtube™"
+   },
+   "options_short": {
+      "message": "настройки"
+   },
+   "page_action_title": {
+      "message": "Объявления автоматически пропускаются"
+   },
+   "rate_this_extension": {
+      "message": "Оценить к нам:"
+   }
+}

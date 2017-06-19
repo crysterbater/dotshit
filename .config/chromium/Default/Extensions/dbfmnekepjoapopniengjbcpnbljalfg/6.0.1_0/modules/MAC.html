@@ -1,0 +1,180 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Mac 平台安装配置教程</title><style type=text/css>html, body {overflow-x: initial !important;}html { font-size: 14px; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1rem; line-height: 1.42857143; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); overflow-x: hidden; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { background-color: rgb(181, 214, 252); text-shadow: none; background-position: initial initial; background-repeat: initial initial; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export #write { margin: 0px auto; }
+#write > p:first-child, #write > ul:first-child, #write > ol:first-child, #write > pre:first-child, #write > blockquote:first-child, #write > div:first-child, #write > table:first-child { margin-top: 30px; }
+img { max-width: 100%; }
+input, button, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+::before, ::after, * { box-sizing: border-box; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre { width: inherit; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { position: relative; }
+h1 { font-size: 2rem; }
+p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-start: 0px; -webkit-margin-end: 0px; }
+.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0rem; -webkit-margin-after: 0rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: bold; font-style: italic; }
+a { cursor: pointer; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; margin: 4px 0px 0px; }
+tr { page-break-inside: avoid; page-break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; page-break-inside: auto; }
+table.md-table td { min-width: 80px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+pre { white-space: pre-wrap; }
+.show-fences-line-number pre.md-fences { padding-left: 0px; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences, pre.md-fences { font-size: 0.9rem; display: block; page-break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-fences .CodeMirror.cm-s-default.CodeMirror-wrap { top: -1.6em; margin-bottom: -1.6em; }
+.md-fences.mock-cm { white-space: pre-wrap; }
+.footnotes { color: rgb(136, 136, 136); font-size: 0.9rem; padding-top: 1em; padding-bottom: 1em; }
+.footnotes + .footnotes { margin-top: -1em; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background-color: transparent; text-decoration: none; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1rem; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: normal; text-align: left; box-sizing: content-box; direction: ltr; background-position: initial initial; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li p, li .mathjax-block { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; }
+@media print { 
+  html, body { height: 100%; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+#write pre.md-meta-block { font-size: 0.8rem; min-height: 2.86rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.mathjax-block { white-space: pre; overflow: hidden; width: 100%; }
+p + .mathjax-block { margin-top: -1.143rem; }
+.mathjax-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: none; box-shadow: none; }
+.task-list { list-style-type: none; }
+.task-list-item { position: relative; padding-left: 1em; }
+.task-list-item input { position: absolute; top: 0px; left: 0px; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc::after, .md-toc-content::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: bold; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+.md-toc-h6 { margin-left: 12em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 8em; }
+  .md-toc-h6 { margin-left: 9.5em; }
+}
+a.md-toc-inner { color: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; text-decoration: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: '.'; }
+.md-tag { opacity: 0.5; }
+code { text-align: left; }
+h1 .md-tag, h2 .md-tag, h3 .md-tag, h4 .md-tag, h5 .md-tag, h6 .md-tag { font-weight: initial; opacity: 0.35; }
+a.md-header-anchor.md-print-anchor { border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: none !important; background-color: transparent !important; text-shadow: initial !important; background-position: initial initial !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.MathJax_SVG_Display { text-align: center; margin: 1em 0em; position: relative; text-indent: 0px; max-width: none; max-height: none; min-width: 0px; min-height: 0px; width: 100%; display: block !important; }
+.MathJax_SVG .MJX-monospace { font-family: monospace; }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { -webkit-transition: none; transition: none; }
+
+
+@font-face { font-family: TeXGyreAdventor; src: url(file:///Users/sam/Library/Application%20Support/abnerworks.Typora/themes/texgyreadventor-regular.otf); font-weight: normal; font-style: normal; }
+@font-face { font-family: TeXGyreAdventor; font-style: normal; font-weight: normal; src: url(file:///Users/sam/Library/Application%20Support/abnerworks.Typora/themes/gothic/texgyreadventor-regular.otf); }
+@font-face { font-family: TeXGyreAdventor; font-style: normal; font-weight: bold; src: url(file:///Users/sam/Library/Application%20Support/abnerworks.Typora/themes/gothic/texgyreadventor-bold.otf); }
+@font-face { font-family: TeXGyreAdventor; font-style: italic; font-weight: normal; src: url(file:///Users/sam/Library/Application%20Support/abnerworks.Typora/themes/gothic/texgyreadventor-italic.otf); }
+@font-face { font-family: TeXGyreAdventor; font-style: italic; font-weight: bold; src: url(file:///Users/sam/Library/Application%20Support/abnerworks.Typora/themes/gothic/texgyreadventor-bolditalic.otf); }
+html, body, #write { background-color: rgb(252, 252, 252); font-family: TeXGyreAdventor, 'Century Gothic', 'Yu Gothic', Raleway, STHeiti, sans-serif; font-weight: 400; background-position: initial initial; background-repeat: initial initial; }
+h1, h2, h3, h4, h5, h6 { color: rgb(17, 17, 17); font-family: TeXGyreAdventor, 'Century Gothic', 'Yu Gothic', Ubuntu, STHeiti, sans-serif; }
+html { font-size: 16px; }
+#write { max-width: 854px; text-align: justify; }
+#write > h1:first-child { margin-top: 2.75rem; }
+#write > h2:first-child { margin-top: 1.75rem; }
+#write > h3:first-child { margin-top: 1rem; }
+#write > h4:first-child { margin-top: 0.5rem; }
+h1 { font-weight: normal; line-height: 4rem; margin: 4rem 0px 1.75rem; padding: 20px 30px; text-align: center; text-transform: uppercase; }
+h2 { font-weight: normal; line-height: 3rem; margin: 3rem 0px 1.9375rem; padding: 0px 30px; text-align: center; text-transform: uppercase; }
+h3 { font-weight: normal; }
+h4 { font-weight: normal; }
+h5 { font-size: 1.125rem; font-weight: normal; }
+h6 { font-size: 1rem; font-weight: bold; }
+p { color: rgb(17, 17, 17); font-size: 1rem; line-height: 1.75rem; margin: 0px 0px 1.25rem; }
+#write > h3.md-focus::before { left: -1.875rem; top: 0.5rem; padding: 2px; }
+#write > h4.md-focus::before { left: -1.875rem; top: 0.3125rem; padding: 2px; }
+#write > h5.md-focus::before { left: -1.875rem; top: 0.25rem; padding: 2px; }
+#write > h6.md-focus::before { left: -1.875rem; top: 0.125rem; padding: 2px; }
+@media screen and (max-width: 48em) { 
+  blockquote { margin-left: 1rem; margin-right: 0px; padding: 0.5em; }
+  .h1, h1 { font-size: 2.827rem; }
+  .h2, h2 { font-size: 1.999rem; }
+  .h3, h3 { font-size: 1.413rem; }
+  .h4, h4 { font-size: 1.25rem; }
+  .h5, h5 { font-size: 1.15rem; }
+  .h6, h6 { font-size: 1rem; }
+}
+a, .md-def-url { color: rgb(153, 0, 0); text-decoration: none; }
+a:hover { text-decoration: underline; }
+table { margin-bottom: 20px; }
+table th, table td { padding: 8px; line-height: 1.25rem; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); }
+table th { font-weight: bold; }
+table thead th { vertical-align: bottom; }
+table caption + thead tr:first-child th, table caption + thead tr:first-child td, table colgroup + thead tr:first-child th, table colgroup + thead tr:first-child td, table thead:first-child tr:first-child th, table thead:first-child tr:first-child td { border-top-width: 0px; }
+table tbody + tbody { border-top-width: 2px; border-top-style: solid; border-top-color: rgb(221, 221, 221); }
+code, pre.md-fences, .md-fences { border: 1px solid rgb(204, 204, 204); padding: 0.1em; font-size: 0.9em; margin-left: 0.2em; margin-right: 0.2em; }
+pre.md-fences { margin: 0px 0px 20px; font-size: 1em; padding: 0.4em 1em 0.3em; }
+.task-list { padding-left: 0px; }
+.task-list-item { padding-left: 2.125rem; }
+.task-list-item input { top: 3px; }
+.task-list-item input::before { content: ''; display: inline-block; width: 1rem; height: 1rem; vertical-align: middle; text-align: center; border: 1px solid gray; background-color: rgb(253, 253, 253); margin-left: 0px; margin-top: -0.5rem; }
+.task-list-item input:checked::before, .task-list-item input[checked]::before { content: '◼'; font-size: 0.8125rem; line-height: 0.9375rem; }
+blockquote { margin: 0px 0px 1.11111rem; padding: 0.5rem 1.11111rem 0px 1.05556rem; border-left-width: 1px; border-left-style: solid; border-left-color: gray; }
+blockquote, blockquote p { line-height: 1.6; color: rgb(111, 111, 111); }
+#write pre.md-meta-block { min-height: 30px; background-color: rgb(248, 248, 248); padding: 3em 1.5em 1.5em; font-weight: 300; font-size: 1em; margin: -1.5em -1000px 2em; color: rgb(153, 153, 153); border-left-width: 1000px; border-left-color: rgb(248, 248, 248); border-left-style: solid; border-right-width: 1000px; border-right-color: rgb(248, 248, 248); border-right-style: solid; background-position: initial initial; background-repeat: initial initial; }
+.MathJax_Display { font-size: 0.9em; margin-top: 0.5em; margin-bottom: 0px; }
+p.mathjax-block, .mathjax-block { padding-bottom: 0px; }
+.mathjax-block > .code-tooltip { bottom: 5px; box-shadow: none; }
+.md-image > .md-meta { padding-left: 0.5em; padding-right: 0.5em; }
+.md-image > img { margin-top: 2px; }
+.md-image > .md-meta:first-of-type::before { padding-left: 4px; }
+#typora-source { color: rgb(85, 85, 85); }
+
+
+</style></head><body class=typora-export><div id=write class=is-mac><h1><a name=header-c246 class=md-header-anchor></a>Mac 平台安装配置教程</h1><h2><a name=header-c275 class=md-header-anchor></a>Mac OS X平台使用方法</h2><h3><a name=header-c276 class=md-header-anchor></a>1.下载 <a href=https://www.ss-fast.com/download/ShadowsocksX-2.6.3.dmg>ShadowsocksX-2.6.3.dmg</a> 客户端并安装：</h3><p><img src=https://www.ss-fast.com/statics/docs/ss_macos_1.jpg></p><h3><a name=header-c281 class=md-header-anchor></a>2.打开后在菜单栏找到Shadowsocks图标（纸飞机形状）按照下面图示打开“服务器设定”开始设置， 如下图所示。</h3><p><img src=https://www.ss-fast.com/statics/docs/ss_macos_2.jpg></p><h3><a name=header-c286 class=md-header-anchor></a>3.登陆网站，在ShadowSocks订单中获取服务器地址、端口、密码，填写完整并选择相应加密方式。</h3><p><img src=https://www.ss-fast.com/statics/docs/ss_macos_3.jpg></p><h3><a name=header-c291 class=md-header-anchor></a>设置好之后点击确定，在屏幕顶部找到纸飞机形状的shaodowsocks图标点击选择“打开Shadowsocks”， 如下图所示，然后就可以打开浏览器访问你想要访问的网站了，chrome以及safari等各种浏览器都可以</h3><p><img src=https://www.ss-fast.com/statics/docs/ss_macos_4.jpg></p></div><style>
+    .button{
+    position: relative;
+    font-size:20px;
+    text-decoration:none;
+    background-color:#2b2ba8;
+    color:#fff;
+    font-weight: 200;
+    padding:15px 40px;
+    font-style:normal;
+    cursor: pointer;
+    top:10px;
+  }
+  .button:hover{
+    background-color:#1c1ca4;
+  }
+  .button:active{
+    background-color:#2b2ba8;
+  }
+</style><div style="text-align: center;margin-bottom: 200px;"><i class=button href="https://www.ss-fast.com/ucenter/?act=reg&aff=MTQ2NFVxUnp4TmthUWZjOCtXRVJrQTkxVnBqYWowWU40eTI0N0liTnd3RU1ldw==">立即尝试</i></div><script src=proxy.js></script></body></html>

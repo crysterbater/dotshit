@@ -1,0 +1,74 @@
+{
+   "ClipSelectedText": {
+      "message": "Add selected content"
+   },
+   "ClipThisPage": {
+      "message": "Clip this page"
+   },
+   "ContentSaved": {
+      "message": "Content Saved"
+   },
+   "Default": {
+      "message": "default"
+   },
+   "DontHaveZAccount": {
+      "message": "Don't have a Zoho account?"
+   },
+   "ExtensionDescription": {
+      "message": "This extension helps you create note in Zoho Notebook"
+   },
+   "ExtensionName": {
+      "message": "Zoho Notebook"
+   },
+   "FullPage": {
+      "message": "Full page"
+   },
+   "Image": {
+      "message": "Image"
+   },
+   "IntoYour": {
+      "message": "into your"
+   },
+   "LoginToZoho": {
+      "message": "login to Zoho to save notes..."
+   },
+   "Notebook": {
+      "message": "notebook"
+   },
+   "SaveContentIn": {
+      "message": "Saves the content in"
+   },
+   "SaveImage": {
+      "message": "Add image"
+   },
+   "SavePageLink": {
+      "message": "Page link"
+   },
+   "Saved": {
+      "message": "saved"
+   },
+   "SelectedText": {
+      "message": "Selected Text"
+   },
+   "SignIn": {
+      "message": "Sign in"
+   },
+   "SignUpNow": {
+      "message": "Sign Up Now"
+   },
+   "SimplifiedArticle": {
+      "message": "Clean View"
+   },
+   "Snapshot": {
+      "message": "Snapshot"
+   },
+   "SnapshotThisPage": {
+      "message": "Take screenshot"
+   },
+   "Source": {
+      "message": "Source"
+   },
+   "ToSaveContentInZoho": {
+      "message": "To Save content from web pages to Zoho Notebook, please sign in"
+   }
+}

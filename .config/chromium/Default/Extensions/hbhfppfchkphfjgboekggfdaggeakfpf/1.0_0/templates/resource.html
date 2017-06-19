@@ -1,0 +1,23 @@
+<div class="resource-tile-container">
+    <div class="resource-tile">
+        <div class="resource-tile-image-container">
+            <img class="resource-tile-image" src="<%= provider.escape('image') %>">
+        </div>
+        <div class="resource-tile-title"><%= provider.escape('name') %></div>
+        <% if (provider.get('tags').length > 0) { %>
+            <div class="resource-tile-tags"><%= provider.formatTags() %></div>
+        <% } %>
+        <div class="resource-tile-description"><%= provider.escape('description') %></div>
+        <div class="resource-tile-actions">
+            <% if (currentUser.authorized()) { %>
+                <a href="#" class="resource-tile-vote<% if (provider.get('voted')) { %> active<% } %> vote-resource">
+                    <span class="resource-tile-vote-label">
+                        <span class="normal">I am using it</span>
+                        <span class="voted">I love it</span>
+                    </span>
+                    <span class="resource-tile-vote-counter"><%= provider.escape('votes_count') %></span>
+                </a>
+            <% } %>
+        </div>
+    </div>
+</div>

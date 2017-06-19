@@ -1,0 +1,73 @@
+html {
+  /*min-width: 940px;*/
+  min-width: 100px;
+}
+
+body{
+  /*width:100%;*/
+  width: 325px;
+}
+
+body #nav-container,
+body #content-container,
+body #volume,
+body #queue,
+body #player sj-icon-button[data-id="show-miniplayer"],
+body #playerSongInfo .image-wrapper .hover-overlay
+{
+  /*display: block;*/
+  display: none;
+}
+
+body #player.material {
+  /*height: 90px!important;*/
+  height: 140px!important;
+  /*flex-direction: row;*/
+  flex-direction: column;
+}
+
+body #player {
+  /*min-width: 850px;*/
+  min-width: 325px;
+}
+
+
+body #player.material #playerSongInfo .now-playing-info-wrapper .now-playing-actions,
+body #player.material #material-player-right-wrapper {
+  /*display: flex;*/
+  display: none;
+}
+
+body #player.material .player-progress-wrapper {
+  /*top: -15px;*/
+  top: 55px;
+  /*left: 90px;*/
+  left: 0px;
+  /*z-index: 600;*/
+  z-index: 602;
+}
+
+
+
+/*#player.material:hover #material-player-progress::shadow #sliderContainer:not(.disabled) #sliderBar::shadow #progressContainer {*/
+/*  background-color: #e6e6e6;*/
+/*}*/
+
+body #player.material #material-player-progress::shadow #sliderContainer:not(.disabled) #sliderBar::shadow #progressContainer {
+  /*background-color: #c8c8c8;*/
+  background-color: #e6e6e6;
+}
+body #player.material #material-player-left-wrapper,
+body #player.material .material-player-middle {
+  /*height: 86px;*/
+  height: 66px;
+}
+
+body #player.material #playerSongInfo .image-wrapper {
+  /*height: 90px;*/
+  height: 70px;
+  /*width: 90px;*/
+  width: 70px;
+}
+
+

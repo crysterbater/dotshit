@@ -1,0 +1,17 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "https://kaseta.co"
+      },
+      "urls": [ "http://kaseta.co/", "http://kaseta.co/views/", "http://kaseta.co/recommended", "http://kaseta.co/design", "http://kaseta.co/near", "http://kaseta.co/create", "http://kaseta.co/recent", "http://kaseta.co/top", "http://kaseta.co/tags", "http://kaseta.co/dropbox" ]
+   },
+   "description": "Create and share online mixtapes with YouTube videos, SoundCloud Tracks or Dropbox tracks. A new, old way, to playlist your music!",
+   "icons": {
+      "128": "kaseta_app_icon.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCvXWtE2CyA9nWatr9mYE4n91caUpMMNrO2dOC2nBjG6mRoIlS4nGK2yRONio1OtDTHb+NWV1IuPClqiR9/l/mVj3gv+I/ia0nIljcI10tDeNFbNT7n22PYoW7V+HQpDsvU81MYbZmOR7Dt1Ohc3/uNPLbfxMWDx1nhUX9rYp+s2QIDAQAB",
+   "manifest_version": 2,
+   "name": "kaseta.co",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "6.0.0.1"
+}

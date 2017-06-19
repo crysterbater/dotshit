@@ -1,0 +1,41 @@
+<div class="popup-background close-popup">
+    <div class="content-scrollable close-popup center-vertical">
+        <div class="create-board">
+            <a href="#" class="close-popup-button create-board-close close-popup" title="Close">
+                <span class="close-popup-button-icon close-popup"></span>
+            </a>
+            <div class="create-board-title">
+                <% if (board) { %>
+                    Edit your flat
+                <% } else { %>
+                    Create your flat for save
+                <% } %>
+            </div>
+            <% if (boardsCount) { %>
+                <div class="create-board-subtitle">You have <%= boardsCount %> flats</div>
+            <% } %>
+            <div class="create-board-form">
+                <div class="create-board-form-row">
+                    <div class="create-board-form-row-item">
+                        <label class="create-board-form-row-label input" for="form_title">Flat name</label>
+                        <input class="create-board-form-row-input" type="text" name="title" id="form_title"<% if (board) { %> value="<%= board.escape('title') %>"<% } %>>
+                    </div>
+                </div>
+                <div class="create-board-form-row">
+                    <div class="create-board-form-row-item">
+                        <label class="create-board-form-row-label input" for="form_description">Some words about flat</label>
+                        <input class="create-board-form-row-input" type="text" name="description" id="form_description"<% if (board) { %> value="<%= board.escape('description') %>"<% } %>>
+                    </div>
+                </div>
+            </div>
+            <div class="create-board-links">
+                <% if (board) { %>
+                    <a href="#" class="create-board-links-item right edit">Save changes</a>
+                <% } else { %>
+                    <a href="#" class="create-board-links-item right create">Create flat</a>
+                <% } %>
+                <a href="#" class="create-board-links-item secondary left cancel">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+html {
+  min-width: 940px;
+}
+
+body{
+  width:100%;
+}
+
+body #nav-container,
+body #content-container,
+body #volume,
+body #queue,
+body #player sj-icon-button[data-id="show-miniplayer"],
+body #playerSongInfo .image-wrapper .hover-overlay
+{
+  display: block;
+}
+
+body #player.material {
+  height: 90px!important;
+  flex-direction: row;
+}
+
+body #player {
+  min-width: 850px;
+}
+
+
+body #player.material #playerSongInfo .now-playing-info-wrapper .now-playing-actions,
+body #player.material #material-player-right-wrapper {
+  display: flex;
+}
+
+body #player.material .player-progress-wrapper {
+  top: -15px;
+  left: 90px;
+  z-index: 600;
+}
+
+
+
+body #player.material #material-player-progress::shadow #sliderContainer:not(.disabled) #sliderBar::shadow #progressContainer {
+  background-color: #c8c8c8;
+}
+body #player.material #material-player-left-wrapper,
+body #player.material .material-player-middle {
+  height: 86px;
+}
+
+body #player.material #playerSongInfo .image-wrapper {
+  height: 90px;
+  width: 90px;
+}

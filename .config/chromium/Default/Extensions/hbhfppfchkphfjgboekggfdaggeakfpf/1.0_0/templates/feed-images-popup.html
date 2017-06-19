@@ -1,0 +1,25 @@
+<div class="popup-background non-transparent">
+    <div class="feed-images-popup">
+        <div class="feed-images-popup-header">
+            <a href="#" class="feed-images-popup-header-close close-popup" title="Close">
+                <span class="feed-images-popup-header-close-icon close-popup"></span>
+            </a>
+            <div class="feed-images-popup-header-progress">
+                <div class="feed-images-popup-header-progress-bar-container">
+                    <div class="feed-images-popup-header-progress-bar"></div>
+                </div>
+                <div class="feed-images-popup-header-progress-text"><span class="current-slide-number">1</span> of <%= item.get('images').length %></div>
+            </div>
+            <span class="feed-images-popup-header-logo"></span>
+            <span class="feed-images-popup-header-dots"></span>
+            <span class="feed-images-popup-header-title"><%= item.escape('title') %></span>
+        </div>
+        <div class="feed-images-popup-images">
+            <% _.forEach(item.get('images'), function(img) { %>
+                <div class="feed-images-popup-images-item-container">
+                    <div class="feed-images-popup-images-item" style="background-image: url('<%= _.escape(img.image) %>');"></div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</div>

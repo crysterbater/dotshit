@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Box for tabs</title>
+    <script src="./components/webcomponentsjs/webcomponents.js"></script>
+    <link rel="import"
+          href="./components/font-roboto/roboto.html">
+    <link rel="import"
+          href="./components/core-header-panel/core-header-panel.html">
+    <link rel="import"
+          href="./components/core-toolbar/core-toolbar.html">
+    <link rel="import"
+          href="./components/paper-tabs/paper-tabs.html">
+
+    <link rel="import" href="components/core-icons/core-icons.html" />
+    <link rel="import" href="./components/core-animated-pages/core-animated-pages.html">
+    <link rel="import" href="./components/core-animated-pages/transitions/slide-from-right.html">
+    <link rel="import" href="./components/paper-input/paper-input.html">
+    <link rel="import" href="./components/paper-input/paper-input-decorator.html">
+    <link rel="import" href="./components/paper-button/paper-button.html" />
+    <link rel="import" href="./components/paper-fab/paper-fab.html" />
+    <link rel="import" href="./components/card-item/card-item.html" />
+    <link rel="import" href="./components/paper-shadow/paper-shadow.html" />
+    <link rel="import" href="./components/core-tooltip/core-tooltip.html" />
+    <link rel="import" href="./components/core-animation/core-animation.html" />
+    <link rel="import" href="./components/paper-checkbox/paper-checkbox.html" />
+    <link rel="import" href="./components/paper-dialog/paper-dialog.html" />
+    <link rel="import" href="./components/paper-dialog/paper-action-dialog.html" />
+    <link rel="import" href="./components/core-transition/core-transition-css.html" />
+    <link rel="import" href="./components/paper-toast/paper-toast.html" />
+    <link rel="import" href="./components/action-dialog/action-dialog.html" />
+
+    <script src="./js/aes.js"></script>
+
+    <style>
+        html,body {
+            height: 100%;
+            margin: 0;
+            background-color: #E5E5E5;
+            font-family: 'RobotoDraft', sans-serif;
+        }
+        core-header-panel {
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        core-toolbar {
+            background: #ff4081;
+            color: white;
+        }
+        #tabs {
+            width: 100%;
+            margin: 0;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body unresolved>
+<template is="auto-binding" id="main">
+    <style shim-shadowdom>
+        core-animated-pages {
+            margin-top: 10px;
+        }
+        core-animated-pages section {
+            padding: 20px;
+        }
+        core-animated-pages section strong {
+            font-weight: 500;
+        }
+        paper-button {
+            font-size: 13px;
+            background: #fff;
+        }
+        html /deep/ paper-button.colored {
+            color: #F50057;
+        }
+        paper-button[raised].colored {
+            background: #F50057;
+            color: #fff;
+            margin-left: 10px;
+        }
+        html /deep/ paper-checkbox::shadow #checkbox,
+        paper-checkbox::shadow #checkbox {
+            border-color: #F50057;
+        }
+        html /deep/ paper-checkbox::shadow #checkbox.checked,
+        paper-checkbox::shadow #checkbox.checked {
+            background-color: #F50057;
+            border-color: #F50057;
+        }
+        paper-fab {
+            background: #F50057;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+        core-toolbar paper-tabs {
+            position: relative;
+            z-index: 1;
+            background-color: #ff4081;
+        }
+        core-toolbar {
+            height: 54px;
+        }
+        core-toolbar div {
+            font-size: 16px;
+        }
+        core-toolbar::shadow .toolbar-tools {
+            height: 54px;
+            font-size: 25px;
+        }
+        #box-list,
+        #tabs-list {
+            width: 900px;
+            padding: 10px;
+            margin: 20px auto;
+            opacity: 0;
+            display: none;
+        }
+        #tabs-list .title {
+            cursor: pointer;
+            width: 250px !important;
+        }
+        #box-list paper-shadow div.list {
+            display: none;
+            padding-left: 20px;
+            background: #fff;
+            transform-origin: 50% 0;
+        }
+        #box-list paper-shadow div.wrapper {
+            opacity: 0;
+        }
+        #box-list paper-shadow:nth-of-type(1),
+        #tabs-list paper-shadow:nth-of-type(1) {
+            border-top-color: #E0DFDF;
+        }
+        #box-list paper-shadow,
+        #tabs-list paper-shadow {
+            transition: margin .2s ease;
+            border-top: 1px solid #eee;
+        }
+        #tabs-list paper-shadow.checked + paper-shadow {
+            border-top-color: #e2e2e2;
+        }
+        #tabs-list paper-shadow.checked {
+            border-top-color: #e2e2e2;
+        }
+        #box-list paper-shadow.expanded {
+            margin: 10px -10px 10px -10px;
+        }
+
+        #box-list paper-shadow.expanded div.list {
+            display: block;
+        }
+        #box-list .box-list-nav {
+            padding-left: 15px;
+            margin: -10px 0 10px 0;
+            color: #999;
+        }
+        #box-list /deep/ .icon {
+            opacity: 1 !important;
+        }
+        .desc {
+            font-size: 12px;
+        }
+        .updated {
+            margin-left: 50px;
+        }
+        .label {
+            background: #ccc;
+            color: #fff;
+            border-radius: 2px;
+            padding: 0 3px;
+            margin-right: 3px;
+        }
+        a {
+            transition: color .3s ease;
+            text-decoration: none;
+            color: #666;
+        }
+        a:hover {
+            color: #FF80AB;
+        }
+        #tabs {
+            width: 300px;
+        }
+
+        html /deep/ paper-action-dialog {
+            width: 400px;
+            border-radius: 4px;
+        }
+        html /deep/ .simple-item {
+            margin-bottom: 15px;
+        }
+        html /deep/ .simple-item .title {
+            font-weight: 500;
+        }
+        html /deep/ .simple-item paper-checkbox {
+            margin-right: 10px;
+        }
+        html /deep/ #addNew paper-input {
+            margin-left: 5px;
+        }
+        html /deep/ #addNew .list div {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        html /deep/ #addNew .list div span {
+            color: #999;
+            float: right;
+        }
+        html /deep/ paper-input-decorator /deep/ .focused-underline,
+        html /deep/ paper-input /deep/ .focused-underline {
+            background: #ff4080;
+        }
+        html /deep/ paper-input /deep/ #input {
+            padding: 0 5px;
+        }
+        html /deep/ paper-action-dialog [dismissive] {
+            color: #999;
+        }
+        html /deep/ paper-action-dialog [dismissive] paper-checkbox {
+            margin-right: 8px;
+        }
+
+        html /deep/ .action-dialog paper-input {
+            width: 155px;
+            margin-left: 10px;
+        }
+
+        html /deep/ .action-dialog .desc {
+            color: #999;
+        }
+        #logo {
+            cursor: pointer;
+        }
+        #logo core-icon {
+            top: -2px;
+        }
+        .light {
+            color: #999;
+        }
+        html /deep/ .light {
+            color: #999;
+        }
+        html /deep/ #feedbackDialog a {
+            color: #FF80AB;
+        }
+        html /deep/ #feedbackDialog core-icon {
+            height: 16px;
+            width: 16px;
+            top: -1px;
+        }
+        html /deep/ #feedbackDialog {
+            font-size: 13px;
+        }
+        html /deep/ #feedbackDialog .lighter {
+            float: right;
+            margin: 20px 10px 0 0;
+            font-size: 11px;
+        }
+        html /deep/ .lighter {
+            color: #bbb;
+        }
+
+
+    </style>
+
+    <core-animation id="scale-y-in" duration="200">
+        <core-animation-keyframe>
+            <core-animation-prop name="transform" value="scaleY(0)"></core-animation-prop>
+        </core-animation-keyframe>
+        <core-animation-keyframe>
+            <core-animation-prop name="transform" value="scaleY(1)"></core-animation-prop>
+        </core-animation-keyframe>
+    </core-animation>
+    <core-animation id="fade-in-delay" duration="200" delay="300" fill="both">
+        <core-animation-keyframe>
+            <core-animation-prop name="opacity" value="0"></core-animation-prop>
+        </core-animation-keyframe>
+        <core-animation-keyframe>
+            <core-animation-prop name="opacity" value="1"></core-animation-prop>
+        </core-animation-keyframe>
+    </core-animation>
+    <core-animation id="fade-in" duration="200" fill="both">
+        <core-animation-keyframe>
+            <core-animation-prop name="opacity" value="0"></core-animation-prop>
+        </core-animation-keyframe>
+        <core-animation-keyframe>
+            <core-animation-prop name="opacity" value="1"></core-animation-prop>
+        </core-animation-keyframe>
+    </core-animation>
+    <core-animation id="fade-out" duration="200" fill="both">
+        <core-animation-keyframe>
+            <core-animation-prop name="opacity" value="1"></core-animation-prop>
+        </core-animation-keyframe>
+        <core-animation-keyframe>
+            <core-animation-prop name="opacity" value="0"></core-animation-prop>
+        </core-animation-keyframe>
+    </core-animation>
+
+    <paper-toast text="" id="plainToast"></paper-toast>
+    <paper-action-dialog id="addNew" heading="Add to box" transition="core-transition-bottom" backdrop autoCloseDisabled>
+        <div>Add {{checkedTabs | tplTabsCount}} to <paper-input id="newBoxInput"></paper-input>
+            <br /><br />
+            <div>or to an existed box:</div><br />
+            <div class="list">
+                <template repeat="{{item, index in boxes | filterKeys }}">
+                    <div on-tap="{{submitAddTabsToBox}}"><b>{{boxes[item].name}}</b> <span>({{boxes[item].tabs.length | enUnitHandler('tab', 's')}})</span></div>
+                </template>
+            </div>
+        </div>
+
+        <template repeat="{{item in boxes}}">
+            <div class="simple-item" layout horizontal center>
+                <paper-checkbox></paper-checkbox>
+                <span class="title">{{item.title}}</span>
+            </div>
+        </template>
+        <div dismissive layout horizontal center><paper-checkbox></paper-checkbox>Also close those tabs.</div>
+        <paper-button affirmative>Cancel</paper-button>
+        <paper-button affirmative class="colored" on-tap="{{submitAddTabs}}">Done</paper-button>
+    </paper-action-dialog>
+
+
+    <paper-action-dialog id="actionConfirm" heading="Confirm your action" transition="core-transition-bottom" backdrop autoCloseDisabled >
+        <p>{{actionConfirmText}}</p>
+        <paper-button affirmative>No</paper-button>
+        <paper-button affirmative class="colored" on-tap="{{actionConfirmed}}">Yes</paper-button>
+    </paper-action-dialog>
+
+    <action-dialog id="customDialog" dialogClass="action-dialog" transition="core-transition-bottom" backdrop autoCloseDisabled>
+    </action-dialog>
+
+    <paper-action-dialog id="feedbackDialog" heading="Feedback" transition="core-transition-bottom" backdrop>
+        <p>Any suggestions or questions? Send me an email: <a href="javascript:void 0" on-tap="{{sendEmail}}"><core-icon icon="mail"></core-icon></a><br /><br /><div class="lighter">With ♥ by Sean</div></p>
+    </paper-action-dialog>
+
+
+    <core-header-panel mode="waterfall-tall" tallclass="medium-tall">
+        <core-toolbar class="medium-tall">
+            <span on-tap="{{feedback}}" id="logo" flex><b>B<core-icon icon="favorite-outline"></core-icon>FT</b></span>
+            <div>{{navMessage}}</div>
+            <paper-icon-button icon="history" on-tap="{{restoreBackup}}"></paper-icon-button>
+            <paper-icon-button on-tap="{{addTabsToBox}}" icon="add"></paper-icon-button>
+            <paper-tabs class="bottom" id="tabs" self-end>
+                <paper-tab name="current">Current</paper-tab>
+                <paper-tab name="boxes">Boxes</paper-tab>
+            </paper-tabs>
+        </core-toolbar>
+        <section id="tabs-list">
+
+                <template repeat="{{item, i in tabs}}">
+                    <paper-shadow animated z="0">
+                    <card-item>
+                        <paper-checkbox class="checkbox" on-core-change="{{tabChecked}}"></paper-checkbox>
+                        <img class="icon" src="{{item.icon}}" />
+                        <span data-tab-id="{{item.id}}" on-tap="{{selectTab}}" class="title">{{item.title}}</span>
+                        <span flex class="url"><a href="{{item.url}}" target="_blank">{{item.url}}</a></span>
+
+                    </card-item>
+                    </paper-shadow>
+                </template>
+
+        </section>
+        <section id="box-list">
+            <div class="box-list-nav" layout horizontal center>
+                <span flex>{{totalBoxes}} box(es).</span>
+                <paper-icon-button icon="file-download" on-tap="{{exportBoxes}}"></paper-icon-button>
+            </div>
+            <template repeat="{{item, index in boxes | filterKeys }}">
+                <paper-shadow animated z="0" on-tap="{{ paperTapped }}">
+                    <card-item on-delete="{{deleteBox}}">
+                        <core-icon class="icon" icon="folder"></core-icon>
+                        <span class="title uppercase">{{boxes[item].name}}</span>
+                        <span class="desc"><span class="label">Tabs</span> {{boxes[item].tabs.length}} <span class="updated"><span class="label">Last update</span> {{formatDate(boxes[item].updated)}}</span></span>
+                        <core-tooltip label="Rename">
+                            <paper-icon-button on-tap="{{renameBox}}" icon="create"></paper-icon-button>
+                        </core-tooltip>
+                        <core-tooltip label="Open all">
+                            <paper-icon-button icon="open-in-new"></paper-icon-button>
+                        </core-tooltip>
+                    </card-item>
+                    <div class="list">
+                        <div class="wrapper">
+                            <template repeat="{{it in boxes[item].tabs}}">
+                                <card-item on-delete="{{deleteTab}}" data-box="{{boxes[item].name}}">
+
+                                    <img class="icon no-opacity" src="{{it.icon}}" />
+                                    <span class="title">{{it.title}}</span>
+                                    <span flex class="url"><a href="{{it.url}}" target="_blank">{{it.url}}</a></span>
+                                </card-item>
+                            </template>
+                        </div>
+                    </div>
+                </paper-shadow>
+            </template>
+        </section>
+    </core-header-panel>
+</template>
+<script src="js/util.js"></script>
+<script src="js/index.js"></script>
+<script>
+
+    var main = document.getElementById('main');
+    main.checkedTabs = 0;
+    main.addEventListener('template-bound', function () {
+        if (!this.tabs) {
+            this.tabs = [{
+                title: 'Google',
+                url: 'https://www.google.com',
+                icon: 'https://www.google.com/favicon.ico'
+            },
+                {
+                    title: 'Google',
+                    url: 'https://www.google.com',
+                    icon: 'https://www.google.com/favicon.ico'
+                },
+                {
+                    title: 'Google',
+                    url: 'https://www.google.com',
+                    icon: 'https://www.google.com/favicon.ico'
+                }];
+        }
+
+        var tabs = document.querySelector('#tabs');
+        tabs.addEventListener('core-select', function () {
+            var fadeIn = document.getElementById('fade-in'),
+                fadeOut = document.getElementById('fade-out'),
+                tabList = document.querySelector('#tabs-list'),
+                boxList = document.querySelector('#box-list');
+            if (tabs.selected === 'current') {
+                fadeOut.target = boxList;
+                fadeOut.addEventListener('core-animation-finish', function fn() {
+                    boxList.style.display = 'none';
+                    fadeOut.removeEventListener('core-animation-finish', fn);
+                    fadeIn.target = tabList;
+                    tabList.style.display = 'block';
+                    fadeIn.play();
+                });
+            } else if (tabs.selected === 'boxes') {
+                fadeOut.target = tabList;
+                fadeOut.addEventListener('core-animation-finish', function fn() {
+                    tabList.style.display = 'none';
+                    fadeOut.removeEventListener('core-animation-finish', fn);
+                    fadeIn.target = boxList;
+                    boxList.style.display = 'block';
+                    fadeIn.play();
+                });
+            }
+            fadeOut.play();
+        });
+        tabs.selected = 'current';
+
+        addNew = document.querySelector('#addNew');
+        feedbackDialog = document.getElementById('feedbackDialog');
+        loadBoxes();
+    });
+    main.formatDate = function (date) {
+        date = new Date(date);
+        return date.toLocaleTimeString() + ' ' + date.toLocaleDateString();
+    };
+    main.tplTabsCount = function (tabs) {
+        if (tabs === 0) {
+            return 'all tabs';
+        } else {
+            return 'selected tabs(' + tabs + ')';
+        }
+    };
+    main.paperTapped = function (ev) {
+        if (ev.target.nodeName === 'A' || ev.target.nodeName === 'PAPER-ICON-BUTTON') return;
+        var target = ev.target;
+        while (target && target.nodeName !== 'PAPER-SHADOW') {
+            target = target.parentElement;
+        }
+        var expanded = target.z === 1;
+        target.setZ( expanded ? 0 : 1 );
+        if (expanded) target.classList.remove('expanded');
+        else target.classList.add('expanded');
+
+        var scaleYIn = document.getElementById('scale-y-in'),
+            list = target.querySelector('div');
+
+        var fadeIn = document.getElementById('fade-in-delay');
+        fadeIn.target = list.querySelector('.wrapper');
+        fadeIn.play();
+
+        scaleYIn.target = list;
+        scaleYIn.play();
+    };
+
+    main.selectTab = function (ev) {
+        util.selectTab(ev.target.dataset.tabId);
+    };
+
+    main.tabChecked = function (ev, obj, ele) {
+        if (ele.checked) {
+            main.checkedTabs++;
+            /**   card-item    paper-shadow */
+            ele.parentElement.parentElement.classList.add('checked');
+        } else {
+            main.checkedTabs--;
+            ele.parentElement.parentElement.classList.remove('checked');
+        }
+        if (main.checkedTabs > 0) {
+            if (main.checkedTabs === 1 && ele.checked) {
+                var fadeIn = document.getElementById('fade-in');
+                fadeIn.target = document.querySelector('core-toolbar div');
+                fadeIn.play();
+            }
+            main.navMessage = main.checkedTabs + ' tab' + (main.checkedTabs === 1 ? '' : 's') + ' selected';
+        } else {
+            main.navMessage = '';
+        }
+    };
+    main.enUnitHandler = function (value, str, unit) {
+        if (value === 1) {
+            return value + ' ' + str;
+        }
+        return value + ' ' + str + unit;
+    };
+    main.addTabsToBox = function () {
+        var dialog = document.querySelector('#addNew'),
+            input  = dialog.querySelector('paper-input');
+        input.label = 'Unnamed ' + (new Date()).toLocaleDateString();
+        dialog.open();
+    };
+    main.filterKeys = function (obj) {
+        if (!obj) return obj;
+        return Object.keys(obj);
+    };
+    main.deleteBox = function (ev, detail, ele) {
+        var confirm = document.querySelector('#actionConfirm'),
+            name = ele.querySelector('.title').innerHTML;
+        confirm.querySelector('p').innerHTML = 'Are you sure to delete this box named <b>' + name + '</b>?';
+        main.actionConfirmed = function () {
+            box.remove(name);
+            loadBoxes();
+        };
+        confirm.open();
+    };
+    var addNew;
+    main.submitAddTabsToBox = function (ev, data, ele) {
+        addNew.querySelector('paper-input').value = ele.templateInstance.model.item;
+        addNew.querySelector('paper-button.colored').fire('tap');
+    };
+    main.submitAddTabs = function (ev) {
+        var dialog = ev.target.parentElement,
+            input = dialog.querySelector('paper-input'),
+            closeTabs = dialog.querySelector('[dismissive] paper-checkbox').checked,
+            selectedTabs = document.querySelectorAll('#tabs-list .checked'),
+            plainToast = document.querySelector('#plainToast');
+
+        var tabs = [], toRemove = [];
+        [].forEach.call(selectedTabs, function (val, i) {
+            var item = val.templateInstance.model.item;
+            tabs.push({
+                icon: item.icon,
+                url: item.url,
+                title: item.title
+            });
+            closeTabs && toRemove.push(item.id);
+        });
+
+        var name = input.value.trim().substr(0, 80);
+        if (!name) {
+            name = input.label;
+        }
+        var _b;
+        try {
+            _b = box.get(name);
+        } catch (e) {
+            plainToast.text = 'Invalid box name: ' + name;
+            return plainToast.show();
+        }
+        if (_b === null) {
+            box.add(name);
+            loadBoxes();
+        }
+        box.appendTabs(name, tabs);
+        loadBoxes();
+        toRemove.length > 0 && util.closeTabs(toRemove);
+
+        /** un-select all checked tabs */
+        [].forEach.call(selectedTabs, function (val) {
+            val.classList.remove('checked');
+            val.querySelector('card-item').shadowRoot.querySelector('.checked').classList.remove('checked');
+            val.querySelector('paper-checkbox').checked = false;
+            if (closeTabs) {
+                val.parentElement.removeChild(val);
+            }
+        });
+
+        plainToast.text = 'Tabs added.';
+        plainToast.show();
+
+    };
+    main.renameBox = function (ev, opt, target) {
+        var oldName = target.parentNode.parentNode.querySelector('.title').innerHTML;
+
+        customDialog.heading = 'Rename box';
+        customDialog.contentHTML = 'Rename <b>' + oldName + '</b> to <paper-input></paper-input>';
+        customDialog.onDone = function () {
+            var newName = customDialog.$.content.querySelector('paper-input').value;
+            box.rename(oldName, newName);
+            loadBoxes();
+        };
+        customDialog.onCancel = function () {};
+        customDialog.open();
+
+    };
+    main.exportBoxes = function () {
+        if (Object.keys(this.boxes).length === 0) {
+            plainToast.text = 'Create an box first : )';
+            plainToast.show();
+            document.querySelector('#tabs').selected = 'current';
+            return;
+        }
+        customDialog.heading = 'Export boxes';
+        customDialog.contentHTML = 'Set an password to backup your data: <paper-input-decorator><input type="password" is="core-input" /></paper-input-decorator><br /><div class="desc">Please be sure that you have remembered your password for future decryption.</div>';
+        customDialog.resetCallbacks();
+        customDialog.onDone = function () {
+            var password = customDialog.$.content.querySelector('input').value;
+            var d = new Date;
+
+            var encrypted = CryptoJS.AES.encrypt(JSON.stringify(box.getAll()), password),
+                a = document.createElement('a'),
+                blob = new Blob([encrypted.toString()], {type: 'text/plain'}),
+                url = URL.createObjectURL(blob);
+            a.download = 'BoxForTabs - ' + (d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate()) + '.btb';
+            a.href = url;
+            a.click();
+        };
+        customDialog.open();
+    };
+    main.restoreBackup = function () {
+        customDialog.heading = 'Restore backup';
+        customDialog.contentHTML = 'Restore all your data from a backup file. <paper-input-decorator label="Password"><input is="core-input" placeholder="Password" type="password" id="input-password" label ="Password" /></paper-input-decorator><paper-input-decorator><input id="input-file" is="core-input" type="file" /></paper-input-decorator>';
+        customDialog.resetCallbacks();
+        customDialog.onDone = function () {
+
+            var file = customDialog.$.content.querySelector('#input-file').files,
+                password = customDialog.$.content.querySelector('#input-password').value;
+            if (!file || file.length === 0) return;
+            file = file[0];
+            if (file.name.lastIndexOf('.btb') !== file.name.length - 4) {
+                plainToast.text = 'The extension of backup file is supposed to be ".btb".';
+                var oriDuration = plainToast.duration;
+                plainToast.duration = 6000;
+                plainToast.show();
+                setTimeout(function () {
+                    plainToast.duration = oriDuration;
+                }, 6000);
+                return;
+            }
+            var fr = new FileReader;
+            fr.onload = function () {
+                var decrypted, obj;
+                try {
+                    decrypted = CryptoJS.AES.decrypt(fr.result, password).toString(CryptoJS.enc.Utf8);
+                } catch (e) {
+                    plainToast.text = 'Wrong password, please try again.'
+                    return plainToast.show();
+                }
+                if (!decrypted) {
+                    plainToast.text = 'Wrong password, please try again.'
+                } else {
+                    try {
+                        obj = JSON.parse(decrypted);
+                        plainToast.text = 'Restore success.';
+                    } catch(e) {
+                        plainToast.text = 'Invalid backup file.';
+                    }
+
+                }
+                plainToast.show();
+                localStorage['com.lrednight.com'] && localStorage.setItem('_' + box.STORAGE_KEY, localStorage['com.lrednight.com']);
+                localStorage.setItem(box.STORAGE_KEY, decrypted);
+                box.reload();
+                loadBoxes();
+
+                fr.onload = null;
+                fr = null;
+            };
+            fr.readAsText(file);
+        };
+        customDialog.open();
+    };
+    main.deleteTab = function (ev, data, ele) {
+        box.removeTab(ele.dataset.box, ele.templateInstance.model.it);
+        loadBoxes();
+    };
+    var feedbackDialog;
+    main.feedback = function () {
+        var icon = document.querySelector('#logo core-icon');
+        icon.icon = 'favorite';
+        feedbackDialog.open();
+    };
+    main.sendEmail = function () {
+        var win = window.open('mailto:o_o@lrednight.com?subject=BoxForTabs%20feedback',
+        'mail', 'height=400,width=450');
+        feedbackDialog.opened = false;
+        setTimeout(function () {
+            if (win.location.href.indexOf('mailto') === 0 || win.location.href === 'about:blank') {
+                win.close();
+            }
+        }, 1000);
+    };
+    main.totalBoxes = 0;
+    function loadBoxes() {
+        if (!window.box) return setTimeout(loadBoxes, 200);
+        main.boxes = util.copyObject(box.getAll());
+        main.totalBoxes = Object.keys(main.boxes).length || 0;
+    }
+</script>
+</body>
+</html>

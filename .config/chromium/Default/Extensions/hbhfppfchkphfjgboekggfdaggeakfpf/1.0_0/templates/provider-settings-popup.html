@@ -1,0 +1,39 @@
+<div class="popup-background close-popup">
+    <div class="content-scrollable close-popup center-vertical">
+        <a href="#" class="close-popup-button provider-settings-popup-close close-popup" title="Close">
+            <span class="close-popup-button-icon close-popup"></span>
+        </a>
+        <div class="provider-settings-popup">
+            <div class="provider-settings-popup-header">
+                <a href="#" class="provider-settings-popup-header-submit">Save</a>
+                <span class="provider-settings-popup-header-title">Add resources</span>
+            </div>
+            <ul class="provider-settings-popup-providers">
+                <% providers.each(function(provider) { %>
+                    <li class="provider-settings-popup-providers-item<% if (provider.get('id') != 0) { %> sortable<% } %>" data-provider-id="<%= provider.get('id') %>">
+                        <% if (provider.get('id') != 0) { %>
+                            <a href="#" class="provider-settings-popup-providers-item-switch switch<% if (provider.get('user_active')) { %> checked<% } %>">
+                                <span class="switch-track"></span>
+                                <span class="switch-knob"></span>
+                            </a>
+                        <% } %>
+
+                        <span class="provider-settings-popup-providers-item-image-wrapper">
+                            <% if (provider.get('id') == 0) { %>
+                                <span class="provider-settings-popup-providers-item-image all-providers"></span>
+                            <% } else { %>
+                                <img class="provider-settings-popup-providers-item-image" src="<%= provider.escape('image') %>">
+                            <% } %>
+                        </span>
+
+                        <span class="provider-settings-popup-providers-item-label"><%= provider.escape('name') %></span>
+
+                        <% if (provider.get('site_url')) { %>
+                            <a href="<%= provider.escape('site_url') %>" class="provider-settings-popup-providers-item-external" target="_blank"><span class="provider-settings-popup-providers-item-external-icon"></span></a>
+                        <% } %>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+    </div>
+</div>

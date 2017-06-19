@@ -1,0 +1,131 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../core-icon-button/core-icon-button.html">
+<link rel="import" href="../paper-icon-button/paper-icon-button.html" >
+
+<polymer-element name="card-item">
+    <template>
+        <style>
+
+            :host {
+                font-size: 13px;
+            }
+            div[layout] {
+                background: #FFF;
+                padding: 0 10px;
+                position: relative;
+                height: 40px;
+                transition: background .3s ease;
+            }
+            div[layout]:hover .right-actions,
+            div[layout]:hover ::content .checkbox,
+            div[layout].checked ::content .checkbox{
+                opacity: 1;
+            }
+
+            ::content .icon {
+                opacity: 1;
+            }
+            div[layout].checked {
+                background-color: #FCE4EC;
+            }
+            div[layout]:hover ::content .icon,
+            div[layout].checked ::content .icon {
+                opacity: 0;
+            }
+            ::content core-icon {
+                opacity: 1 !important;
+            }
+            ::content no-opacity {
+                opacity: 1 !important;
+            }
+            ::content img,
+            ::content .title,
+            ::content core-icon {
+                margin-right: 10px;
+                font-weight: 500;
+            }
+            ::content core-icon {
+                color: #B2B2B2;
+            }
+            ::content img {
+                width: 18px;
+                height: 18px;
+            }
+            ::content .url {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            ::content .title {
+                width: 200px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .right-actions {
+                position: absolute;
+                right: 6px;
+                top: 8px;
+                opacity: 0;
+                transition: all .2s ease;
+            }
+            paper-icon-button,
+            ::content paper-icon-button {
+                padding: 4px;
+                height: 16px;
+                width: 16px;
+                color: #B2B2B2;
+            }
+            paper-icon-button::shadow core-icon,
+            ::content paper-icon-button::shadow core-icon {
+                width: 100%;
+                height: 100%;
+            }
+            ::content .uppercase {
+                text-transform: uppercase;
+            }
+            ::content .desc {
+                color: #999;
+            }
+            ::content .url a:active {
+                background-color: #ddd;
+            }
+            ::content .checkbox {
+                position: absolute;
+                top: 11px;
+                left: 10px;
+                opacity: 0;
+            }
+        </style>
+
+        <div layout horizontal center>
+            <content select=".icon"></content>
+            <content select=".checkbox" on-core-change="{{checked}}"></content>
+            <content select=".title"></content>
+            <content select=".url"></content>
+            <content select=".desc"></content>
+            <div class="right-actions">
+                <content></content>
+                <paper-icon-button icon="backspace" on-tap="{{backspaceTapped}}"></paper-icon-button>
+            </div>
+
+        </div>
+
+    </template>
+    <script>
+        Polymer({
+            checked: function () {
+
+                if (arguments[0].target.checked) {
+                    this.shadowRoot.querySelector('div[layout]').classList.add('checked');
+                } else {
+                    this.shadowRoot.querySelector('div[layout]').classList.remove('checked');
+                }
+            },
+            backspaceTapped: function (ev) {
+                this.fire('delete');
+                ev.stopPropagation();
+            }
+        });
+    </script>
+</polymer-element>

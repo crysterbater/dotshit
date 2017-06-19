@@ -1,0 +1,812 @@
+/* line 3, ../src/scss/style.scss */
+body {
+  background-color: #f1f1f1;
+  font-family: 'Cabin', sans-serif;
+}
+
+/* line 8, ../src/scss/style.scss */
+a {
+  text-decoration: none;
+  color: #aaa;
+}
+/* line 11, ../src/scss/style.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 16, ../src/scss/style.scss */
+header {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  display: block;
+  float: none;
+  clear: both;
+  position: relative;
+}
+
+/* line 26, ../src/scss/style.scss */
+.logo {
+  width: 100px;
+  height: 60px;
+  margin: 15px 15px 15px 30px;
+  display: block;
+  background-image: url("../imgs/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px auto;
+  font-size: 0;
+  text-indent: -999999px;
+  float: left;
+}
+
+/* line 40, ../src/scss/style.scss */
+.color-group {
+  overflow: hidden;
+  display: block;
+  float: none;
+  clear: both;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+/* line 48, ../src/scss/style.scss */
+.color-group li {
+  list-style: none;
+}
+
+/* line 53, ../src/scss/style.scss */
+.color-square {
+  outline: none;
+  padding: 0;
+  border: 0;
+  width: 5.26%;
+  display: block;
+  float: left;
+  font-size: 0;
+  transition: all .1s linear;
+  cursor: pointer;
+  max-height: 30px;
+  overflow: hidden;
+}
+/* line 66, ../src/scss/style.scss */
+.color-square img {
+  width: 100%;
+}
+/* line 69, ../src/scss/style.scss */
+.color-square:hover, .color-square:focus, .color-square:active, .color-square.active {
+  box-shadow: inset 0 0 0 5px #fff;
+}
+
+/* line 74, ../src/scss/style.scss */
+.options {
+  float: right;
+  height: 50px;
+  margin: 20px 30px 20px 20px;
+}
+
+/* line 80, ../src/scss/style.scss */
+.options-square {
+  outline: none;
+  padding: 0;
+  border: 1px solid #666;
+  min-width: 50px;
+  display: block;
+  float: left;
+  cursor: pointer;
+  background-color: #000;
+  height: 50px;
+  line-height: 50px;
+  color: #666;
+  margin-right: 5px;
+  transition: all .1s linear;
+  font-size: 18px;
+  text-align: center;
+}
+/* line 97, ../src/scss/style.scss */
+.options-square:hover {
+  box-shadow: inset 0 0 0 3px #fff;
+  color: #fff;
+  font-size: 24px;
+}
+/* line 103, ../src/scss/style.scss */
+.options-square:focus, .options-square:active, .options-square.active {
+  border-color: #aaa;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* line 110, ../src/scss/style.scss */
+.options-search {
+  padding: 0;
+  border: 1px solid #666;
+  min-width: 50px;
+  display: block;
+  float: left;
+  cursor: pointer;
+  background-color: #000;
+  height: 50px;
+  color: #666;
+  margin-right: 5px;
+  transition: all .1s linear;
+  font-size: 18px;
+}
+/* line 124, ../src/scss/style.scss */
+.options-search .options-search-input {
+  background: transparent !important;
+  border: 0 !important;
+  -webkit-appearance: none !important;
+  outline: none;
+  height: 48px;
+  margin-left: 2px;
+  padding: 0;
+  width: 50px;
+  float: left;
+  cursor: url(../imgs/cursor.png), auto;
+}
+/* line 137, ../src/scss/style.scss */
+.options-search .options-search-button {
+  background: transparent !important;
+  border: none !important;
+  color: #fff;
+  outline: none;
+  height: 50px;
+  width: 50px;
+}
+
+/* line 147, ../src/scss/style.scss */
+.dribbbles-shot-overflow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  opacity: 0;
+  transition: all .1s linear;
+  z-index: 999;
+}
+
+/* line 159, ../src/scss/style.scss */
+.dribbbles {
+  margin: 35px 20px;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 165, ../src/scss/style.scss */
+.dribbbles-shot-box {
+  overflow: hidden;
+  border-radius: 5px;
+  display: block;
+  margin: 0 5px 40px;
+  background: #FFFFFF;
+  box-shadow: 8px 8px 25px 0px rgba(0, 0, 0, 0.05);
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+}
+/* line 175, ../src/scss/style.scss */
+.dribbbles-shot-box:hover {
+  text-decoration: none;
+  transform: scale(1.02);
+  box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.15) !important;
+}
+/* line 180, ../src/scss/style.scss */
+.dribbbles-shot-box:hover .dribbbles-shot-overflow {
+  opacity: .4 !important;
+}
+/* line 187, ../src/scss/style.scss */
+.dribbbles-shot-box .dribbbles-shot-photo {
+  vertical-align: middle;
+  display: block;
+  position: relative;
+}
+/* line 191, ../src/scss/style.scss */
+.dribbbles-shot-box .dribbbles-shot-photo img {
+  width: 100%;
+}
+/* line 196, ../src/scss/style.scss */
+.dribbbles-shot-box .dribbbles-shot-user {
+  vertical-align: middle;
+  display: block;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 100%;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+/* line 207, ../src/scss/style.scss */
+.dribbbles-shot-box .dribbbles-shot-user img {
+  width: 30px;
+  height: 30px;
+}
+/* line 211, ../src/scss/style.scss */
+.dribbbles-shot-box .dribbbles-shot-user .dribbbles-shot-overflow {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+/* line 217, ../src/scss/style.scss */
+.dribbbles-shot-box .dribbbles-shot-infos {
+  padding: 10px 20px;
+  display: block;
+  background-color: #f1f1f1;
+}
+/* line 222, ../src/scss/style.scss */
+.dribbbles-shot-box .dribbbles-shot-name {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #999;
+  margin-left: 5px;
+  max-width: 100px;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 30px;
+}
+/* line 234, ../src/scss/style.scss */
+.dribbbles-shot-box .dribbbles-shot-stats {
+  float: right;
+  display: inline-block;
+  line-height: 30px;
+  color: #ccc;
+}
+/* line 239, ../src/scss/style.scss */
+.dribbbles-shot-box .dribbbles-shot-stats .fa {
+  margin-left: 10px;
+}
+
+/* line 245, ../src/scss/style.scss */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #E9E9E9;
+  z-index: 99999;
+  font-size: 10px;
+  box-shadow: 8px -8px 35px 0px rgba(0, 0, 0, 0.05);
+}
+/* line 257, ../src/scss/style.scss */
+footer a {
+  text-transform: uppercase;
+}
+/* line 261, ../src/scss/style.scss */
+footer .dribbble {
+  color: #ea4c89;
+  font-weight: 300;
+}
+/* line 266, ../src/scss/style.scss */
+footer .fa {
+  animation: pulse 1s ease infinite;
+}
+/* line 270, ../src/scss/style.scss */
+footer .zode {
+  text-decoration: underline;
+  color: #000;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* line 293, ../src/scss/style.scss */
+.placeholder {
+  background-color: #f6f6f6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 301, ../src/scss/style.scss */
+.placeholder img {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 1s linear;
+}
+
+/* line 310, ../src/scss/style.scss */
+.placeholder img.loaded {
+  opacity: 1 !important;
+}
+
+/* line 314, ../src/scss/style.scss */
+.img-small {
+  filter: blur(50px);
+}
+
+@media (min-width: 1200px) {
+  /* line 322, ../src/scss/style.scss */
+  .col-md-4 {
+    width: 25% !important;
+  }
+}
+/* line 330, ../src/scss/style.scss */
+.loading {
+  position: fixed;
+  z-index: 999999999999999999;
+  bottom: 10px;
+  right: 10px;
+  display: block;
+  overflow: hidden;
+  height: 30px;
+  width: 30px;
+}
+/* line 340, ../src/scss/style.scss */
+.loading.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+/* line 345, ../src/scss/style.scss */
+.loading .ld .square {
+  float: left;
+  display: block;
+  overflow: hidden;
+  width: 7px;
+  height: 7px;
+  margin: 0px 2px 2px 0;
+  opacity: 0;
+  -webkit-animation-name: gotime;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+  animation-name: gotime;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+/* line 361, ../src/scss/style.scss */
+.loading .one {
+  -webkit-animation-duration: 5.5s;
+  -webkit-animation-delay: 0s;
+  animation-duration: 5.5s;
+  animation-delay: 0s;
+}
+/* line 370, ../src/scss/style.scss */
+.loading .two {
+  -webkit-animation-duration: 5.5s;
+  -webkit-animation-delay: 0.15s;
+  animation-duration: 5.5s;
+  animation-delay: 0.15s;
+}
+/* line 377, ../src/scss/style.scss */
+.loading .three {
+  -webkit-animation-duration: 5.5s;
+  -webkit-animation-delay: 0.25s;
+  animation-duration: 5.5s;
+  animation-delay: 0.25s;
+}
+/* line 384, ../src/scss/style.scss */
+.loading .four {
+  /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 5.5s;
+  -webkit-animation-delay: 0.25s;
+  animation-duration: 5.5s;
+  animation-delay: 0.25s;
+}
+/* line 392, ../src/scss/style.scss */
+.loading .five {
+  -webkit-animation-duration: 5.5s;
+  -webkit-animation-delay: .3s;
+  animation-duration: 5.5s;
+  animation-delay: .3s;
+}
+/* line 399, ../src/scss/style.scss */
+.loading .six {
+  -webkit-animation-duration: 5.5s;
+  -webkit-animation-delay: .35s;
+  animation-duration: 5.5s;
+  animation-delay: .35s;
+}
+/* line 406, ../src/scss/style.scss */
+.loading .seven {
+  -webkit-animation-duration: 5.5s;
+  -webkit-animation-delay: .4s;
+  animation-duration: 5.5s;
+  animation-delay: .4s;
+}
+/* line 413, ../src/scss/style.scss */
+.loading .eight {
+  -webkit-animation-duration: 5.5s;
+  -webkit-animation-delay: .45s;
+  animation-duration: 5.5s;
+  animation-delay: .45s;
+}
+/* line 420, ../src/scss/style.scss */
+.loading .nine {
+  -webkit-animation-duration: 5.5s;
+  -webkit-animation-delay: .5s;
+  animation-duration: 5.5s;
+  animation-delay: .5s;
+}
+
+@-webkit-keyframes gotime {
+  0% {
+    opacity: 0;
+  }
+  1.5% {
+    opacity: 1;
+  }
+  3% {
+    opacity: 0.9;
+  }
+  4.5% {
+    opacity: 0.8;
+  }
+  6% {
+    opacity: 0.7;
+  }
+  7.5% {
+    opacity: 0.6;
+  }
+  9% {
+    opacity: 0.5;
+  }
+  10.5% {
+    opacity: 0.4;
+  }
+  12% {
+    opacity: 0.3;
+  }
+  13.5% {
+    opacity: 0.2;
+  }
+  15% {
+    opacity: 0.1;
+  }
+  16.5% {
+    opacity: 1;
+  }
+  18% {
+    opacity: 0.9;
+  }
+  19.5% {
+    opacity: 0.8;
+  }
+  21% {
+    opacity: 0.7;
+  }
+  22.5% {
+    opacity: 0.6;
+  }
+  24% {
+    opacity: 0.5;
+  }
+  25.5% {
+    opacity: 0.4;
+  }
+  27% {
+    opacity: 0.3;
+  }
+  28.5% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.1;
+  }
+  31.5% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0.9;
+  }
+  34.5% {
+    opacity: 0.8;
+  }
+  36% {
+    opacity: 0.7;
+  }
+  37.5% {
+    opacity: 0.6;
+  }
+  39% {
+    opacity: 0.5;
+  }
+  40.5% {
+    opacity: 0.4;
+  }
+  42% {
+    opacity: 0.3;
+  }
+  43.5% {
+    opacity: 0.2;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46.5% {
+    opacity: 1;
+  }
+  48% {
+    opacity: 0.9;
+  }
+  49.5% {
+    opacity: 0.8;
+  }
+  51% {
+    opacity: 0.7;
+  }
+  52.5% {
+    opacity: 0.6;
+  }
+  54% {
+    opacity: 0.5;
+  }
+  55.5% {
+    opacity: 0.4;
+  }
+  57% {
+    opacity: 0.3;
+  }
+  58.5% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.1;
+  }
+  61.5% {
+    opacity: 1;
+  }
+  63% {
+    opacity: 0.9;
+  }
+  64.5% {
+    opacity: 0.8;
+  }
+  66% {
+    opacity: 0.7;
+  }
+  67.5% {
+    opacity: 0.6;
+  }
+  69% {
+    opacity: 0.5;
+  }
+  70.5% {
+    opacity: 0.4;
+  }
+  72% {
+    opacity: 0.3;
+  }
+  73.5% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.1;
+  }
+  76.5% {
+    opacity: 1;
+  }
+  78% {
+    opacity: 0.9;
+  }
+  79.5% {
+    opacity: 0.8;
+  }
+  81% {
+    opacity: 0.7;
+  }
+  82.5% {
+    opacity: 0.6;
+  }
+  84% {
+    opacity: 0.5;
+  }
+  85.5% {
+    opacity: 0.4;
+  }
+  87% {
+    opacity: 0.3;
+  }
+  88.5% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.0;
+  }
+}
+@keyframes gotime {
+  0% {
+    opacity: 0;
+  }
+  1.5% {
+    opacity: 1;
+  }
+  3% {
+    opacity: 0.9;
+  }
+  4.5% {
+    opacity: 0.8;
+  }
+  6% {
+    opacity: 0.7;
+  }
+  7.5% {
+    opacity: 0.6;
+  }
+  9% {
+    opacity: 0.5;
+  }
+  10.5% {
+    opacity: 0.4;
+  }
+  12% {
+    opacity: 0.3;
+  }
+  13.5% {
+    opacity: 0.2;
+  }
+  15% {
+    opacity: 0.1;
+  }
+  16.5% {
+    opacity: 1;
+  }
+  18% {
+    opacity: 0.9;
+  }
+  19.5% {
+    opacity: 0.8;
+  }
+  21% {
+    opacity: 0.7;
+  }
+  22.5% {
+    opacity: 0.6;
+  }
+  24% {
+    opacity: 0.5;
+  }
+  25.5% {
+    opacity: 0.4;
+  }
+  27% {
+    opacity: 0.3;
+  }
+  28.5% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.1;
+  }
+  31.5% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0.9;
+  }
+  34.5% {
+    opacity: 0.8;
+  }
+  36% {
+    opacity: 0.7;
+  }
+  37.5% {
+    opacity: 0.6;
+  }
+  39% {
+    opacity: 0.5;
+  }
+  40.5% {
+    opacity: 0.4;
+  }
+  42% {
+    opacity: 0.3;
+  }
+  43.5% {
+    opacity: 0.2;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46.5% {
+    opacity: 1;
+  }
+  48% {
+    opacity: 0.9;
+  }
+  49.5% {
+    opacity: 0.8;
+  }
+  51% {
+    opacity: 0.7;
+  }
+  52.5% {
+    opacity: 0.6;
+  }
+  54% {
+    opacity: 0.5;
+  }
+  55.5% {
+    opacity: 0.4;
+  }
+  57% {
+    opacity: 0.3;
+  }
+  58.5% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.1;
+  }
+  61.5% {
+    opacity: 1;
+  }
+  63% {
+    opacity: 0.9;
+  }
+  64.5% {
+    opacity: 0.8;
+  }
+  66% {
+    opacity: 0.7;
+  }
+  67.5% {
+    opacity: 0.6;
+  }
+  69% {
+    opacity: 0.5;
+  }
+  70.5% {
+    opacity: 0.4;
+  }
+  72% {
+    opacity: 0.3;
+  }
+  73.5% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.1;
+  }
+  76.5% {
+    opacity: 1;
+  }
+  78% {
+    opacity: 0.9;
+  }
+  79.5% {
+    opacity: 0.8;
+  }
+  81% {
+    opacity: 0.7;
+  }
+  82.5% {
+    opacity: 0.6;
+  }
+  84% {
+    opacity: 0.5;
+  }
+  85.5% {
+    opacity: 0.4;
+  }
+  87% {
+    opacity: 0.3;
+  }
+  88.5% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.0;
+  }
+}

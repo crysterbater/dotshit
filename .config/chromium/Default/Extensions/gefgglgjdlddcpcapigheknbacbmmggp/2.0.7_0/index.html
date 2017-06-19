@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Juan-Pablo Scaletti">
+<meta name="author" content="Germán Martínez">
+<meta name="copyright" content="Lúcuma labs (http://lucumalabs.com)">
+<title>Chroma, by Lúcuma labs</title>
+<link rel="stylesheet" href="chroma.min.css">
+</head>
+<body id="body">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1495972-17']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+<header>
+<div id="help_wheel" class="help"><img src="arrow.png" alt="arrow" /><span>Click on the input to open the color wheel.<br/>Type any #HEX or RGB color.</span></div>
+<div id="help_copy" class="help"><img src="arrow.png" alt="arrow" /><span>Click any color to copy the color to your clipboard.<br/>Also right click for options</span></div>
+<div id="help_saved_colors" class="help"><img src="arrow.png" alt="arrow" /><span>Select saved colors, right click on a color for options.</span></div>
+<div id="help_on_off" class="help"><img src="arrow.png" alt="arrow" /><span>Turn help on/off.<br/>Change color mode between RGB &amp; HEX</span></div>
+<div id="whatever">
+<div id="preferences" class="extra">
+<div id="donate">
+<span>Want to buy us some coffee?</span>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="MVT8U67NTH8EC" />
+<input type="image" src="btn_donate_SM.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+<img alt="" src="pixel.gif" width="1" height="1" />
+</form>
+</div>
+
+<h2>Preferences</h2>
+<a id="help">Turn help <span>on</span><span class="help_s">off</span></a>
+<p>Color mode: <a id="rgborhex_hex" class="selected">HEX</a> or <a id="rgborhex_rgb">RGB</a></p>
+</div>
+<div id="saved_colors" class="extra">
+<h2>Saved Colors (<span>0</span>) <a>Delete</a></h2>
+<!--label id="saved_colors_order"><input type="checkbox"> Order by color</label-->
+<ul>
+<li></li>
+</ul>
+</div>
+<a id="open" title="open preferences &amp; saved colors">&#9660;&#9650;</a>
+</div><!-- end of #whatever -->
+
+<h1>Chroma</h1>
+<form>
+<label></label><input type="text" class="color" value="#2868c7" /><button>&crarr;</button>
+</form>
+</header>
+<section>
+<ol><li style="display:none;"></li></ol>
+</section>
+
+<footer>by <a href="http://lucumalabs.com">Lúcuma</a> (aka <a href="http://twitter.com/jpscaletti">@jpscaletti</a> &amp; <a href="http://twitter.com/germanmartinez">@germanmartinez</a>).
+<div id="help_scroll" class="help"><img src="arrow.png" alt="arrow" /><span>Use the scrollbar, mouse wheel or &larr; &rarr; on your keyboard to scroll.</span></div>
+<div id="help_author" class="help"><img src="arrow.png" alt="arrow" /><span>The guys who built this.</span></div>
+</footer>
+<ul id="ctxmenu" class="main">
+<li id="ctxmenu_hex"><a>Copy <span>#FFAF2E</span></a></li>
+<li id="ctxmenu_rgb"><a>Copy <span>rgb(255,255,255)</span></a></li>
+<li id="ctxmenu_rgba"><a>Copy <span>rgba(255,255,255,1)</span></a></li>
+<li id="ctxmenu_mode"><a>HEX / RGB</a></li>
+<li id="ctxmenu_save"><a>Save</a></li>
+<li id="ctxmenu_del"><a>Delete</a></li>
+</ul>
+<script src="jquery1.7.1.min.js"></script>
+<script src="chroma.min.js"></script>
+</body>
+</html>

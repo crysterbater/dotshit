@@ -1,0 +1,35 @@
+<link rel="import"
+      href="../polymer/polymer.html">
+<link rel="import"
+      href="../paper-dialog/paper-action-dialog.html">
+<link rel="import"
+      href="../core-transition/core-transition-css.html" />
+
+<polymer-element name="action-dialog" attributes="heading content dialogClass">
+    <template>
+        <paper-action-dialog class="{{dialogClass}}" opened="{{opened}}" heading="{{heading}}" transition="core-transition-bottom" backdrop autoCloseDisabled>
+            <content></content>
+            <div id="content">{{content}}</div>
+            <paper-button on-tap="{{onCancel}}" affirmative>Cancel</paper-button>
+            <paper-button on-tap="{{onDone}}" affirmative class="colored">Done</paper-button>
+        </paper-action-dialog>
+    </template>
+    <script>
+        Polymer({
+            set contentHTML(val) {
+                this.$.content.innerHTML = val;
+            },
+            get contentHTML() {
+                return this.$.content.innerHTML;
+            },
+            open: function () {
+                this.opened = true;
+            },
+            resetCallbacks: function () {
+                this.onDone = this.doNothing;
+                this.onCancel = this.doNothing;
+            },
+            doNothing: function () {}
+        });
+    </script>
+</polymer-element>

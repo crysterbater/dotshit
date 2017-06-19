@@ -1,0 +1,12 @@
+[
+  {
+    "version": "1.5.3",
+    "category": "update",
+    "title": "New nexos Features!",
+    "content": [
+      "{{img deviantart.png}} {{a $options$ connect to deviantART}}",
+      "{{img foursquare.png}} {{a $options$ connect to Foursquare}}",
+      "{{img instagram.png}} {{a $options$ connect to Instagram}}"
+    ]
+  }
+]

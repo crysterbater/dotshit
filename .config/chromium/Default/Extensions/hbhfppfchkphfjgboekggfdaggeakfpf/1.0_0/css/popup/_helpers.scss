@@ -1,0 +1,37 @@
+@import "gradient_helper";
+
+.clear-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin for-retina {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content; }
+}
+
+@mixin transition-all($duration) {
+  -webkit-transition: all $duration;
+  -moz-transition: all $duration;
+  -o-transition: all $duration;
+  transition: all $duration;
+}
+
+@mixin transition($values...) {
+  $transitions: ();
+  @each $declaration in $values {
+    $prop: nth($declaration, 1);
+    $prop-opts: ();
+    $length: length($declaration);
+    @for $i from 2 through $length {
+      $prop-opts: append($prop-opts, nth($declaration, $i));
+    }
+    $trans: ($prop, $prop-opts);
+    $transitions: append($transitions, $trans, comma);
+  }
+
+  -webkit-transition: trans-prefix($transitions, webkit);
+  -moz-transition: trans-prefix($transitions, moz);
+  -o-transition: trans-prefix($transitions, o);
+  transition: $values;
+}

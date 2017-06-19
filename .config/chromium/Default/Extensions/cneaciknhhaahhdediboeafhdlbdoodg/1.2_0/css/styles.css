@@ -1,0 +1,968 @@
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);*/
+/*@import url(https://fonts.googleapis.com/css?family=Roboto);*/
+
+.content-text {
+    width: 100%;
+    resize: none;
+    border: none;
+    margin: 10px 0 0 0;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 0 3px 0;
+}
+
+.content-text:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 #F9F9F9;
+}
+
+.title-menu {
+    border-bottom: 1px solid #EBEBEB;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#saves-in {
+    font-size: 10.8px;
+    color: #9A9A9A;
+    margin-top: 0px;
+}
+.rateusContainer{
+    font-family: "Source Sans Pro";
+}
+.thums{
+    transition:all 0.3s linear;
+}
+.thums:hover{
+    transform: scale(1.1);
+}
+.signin-title {
+
+    background: url(../images/icon.png) no-repeat 14px 6px;
+    background-size: 19px 19px;
+    width: 206px;
+    padding:8px 0 10px 40px;
+    font-size: 13px;
+    background-color: #F9F9F9;
+    border-bottom: 1px solid #EBEBEB;
+    font-weight: 600;
+    color: #333333;
+    letter-spacing: .4px;
+
+}
+
+.signinextn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.signin-title span{
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
+
+.service-clipper {
+    padding: 0px 0px 10px 65px;
+    margin:-10px 0px 0px 0px;
+}
+
+.signinextn-message {
+    top: 50px;
+    position: absolute;
+    font-size: 15px;
+    padding: 10px;
+    font-family: "Source Sans Pro";
+    text-align: center;
+    width: 100%;
+}
+
+.signinextn-button {
+    background-color: #EA8100;
+    border: none;
+    color: white;
+    width: 70%;
+    margin-top: 300px;
+    padding: 7px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    font-size: 17px;
+}
+
+.extnbottom-message {
+    font-size:15px;
+    /*background-color:#F9F9F9;*/
+    padding: 12px 0px 12px 0px;
+    margin: 12px 20px 0px 20px;
+    /*border-bottom: 1px solid #E3E3E3;*/
+    font-family: "Source Sans Pro";
+    /*border-bottom: 1px solid #E3E3E3;*/
+    line-height: 1.4em;
+    text-align: center;
+}
+
+.extnbottom-message a {
+    color:#588BD7;
+}
+.extnbottom-message a:hover{
+    text-decoration: none;
+}
+
+.signinextn-button a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#cssmenu ul {
+    margin: 0;
+    padding:0;
+    list-style-type: none; 
+    color: #2196F3;
+}
+
+#cssmenu ul li:hover{
+    color: #212121;
+    /*opacity: 0.5;*/
+}
+#cssmenu ul li{
+    width: 100%;
+    border-bottom: 0px solid #ccc;
+    padding: 12px 0px 12px 20px;
+    text-align: left;
+    font-size: .7em;
+    cursor:pointer;
+}
+
+.content {
+    font-size: .7em;
+    padding:12px 0px 12px 0px;
+    margin : 6px 20px 0px 20px;
+    color : #8F8F8F;
+    border-bottom : 1px solid #E3E3E3;
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+    .signin-title {
+        background: url(../images/icon@2x.png) no-repeat 14px 6px;
+        background-size: 19px 19px;
+    }
+}
+
+.sidenav {
+    height: 525px;
+    width: 320px;
+    position: fixed;
+    z-index: 999999999999999;
+    top: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+    transition: 0.5s;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.25);
+    /*display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;*/
+    opacity: 0;
+}
+.loginPage {
+    height: 0px;
+    width: 0px;
+    position: fixed;
+    z-index: 999999999999999;
+    top: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    box-shadow: -25px 0px 30px -5px rgba(0, 0, 0, 0.1), -1px 0px 0px rgba(0, 0, 0, 0.01), 25px 0px 30px -5px rgba(0, 0, 0, 0.1), 1px 0px 0px rgba(0, 0, 0, 0.01);
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    /*overflow-y: auto;
+    overflow-x: hidden;*/
+    opacity: 1;
+}
+.sideExpandnav {
+    width: 0;
+    position: absolute;
+    z-index: 9999999;
+    top: 70px;
+    right: 0;
+    background-color: #FFFFFF;
+    box-shadow: -25px 0px 30px -5px rgba(0, 0, 0, 0.1), -1px 0px 0px rgba(0, 0, 0, 0.01), 25px 0px 30px -5px rgba(0, 0, 0, 0.1), 1px 0px 0px rgba(0, 0, 0, 0.01);
+    transition: 0.5s;
+}
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: darkgray;
+}
+.closebtn {
+    /*position: absolute;*/
+    font-size: 18px !important;
+    right: 5%;
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.logo {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    cursor: default;
+    width: 100%;
+}
+.logotitle {
+    color: black;
+    font-size: 20px !important;
+    padding-left: 5px;
+    font-family: "Source Sans Pro";
+    padding-top : 5px;
+    vertical-align: middle;
+}
+.logoimage {
+    width: 13%;
+    margin-left: 20px;
+    padding-left: 5px;
+}
+.icondiv {
+    width: 320px;
+    background-color: black;
+    height: 50px;
+    padding: 0px;
+    border-spacing: 0px;
+    position: absolute;
+    bottom: 0;
+}
+.textarea {
+    width: 100%;
+    height: 90%;
+    overflow:auto;
+}
+.colorPicker {
+    width: 100%;
+    background-color: #FFFFFE;
+    height: 40px;
+    position: absolute;
+    bottom: 50px;
+    /*padding: 10px;*/
+}
+.titleDiv {
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    padding: 0px;
+    border-spacing: 0px;
+}
+.savebtn {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.titlesave {
+    float: right;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+.titleText {
+    border: none;
+    width: 95%;
+    font-size: 17px;
+    padding-left: 5px;
+    font-family: "Source Sans Pro";
+    background-color: inherit;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-font-smoothing:auto;
+    font-weight: 600;
+}
+
+input.formInvalid::-webkit-input-placeholder {
+   color: rgba(0,0,0,0.2);
+}
+
+.separator {
+    height: 1px;
+    width: 80%;
+    background-color: lightgrey;
+    opacity: 0.6;
+    margin-left: 7.5%;
+}
+input:focus,
+select:focus,
+textarea:focus,
+div:focus,
+button:focus {
+    outline: none;
+}
+.options {
+    height: 100%;
+    font-size: 14px;
+    background-color: white;
+}
+.optionsTable {
+    width: 100%;
+    padding: 0px;
+    /*border-spacing: 25px;*/
+    /*margin-left: 10%;*/
+    /*margin-top: 20px;*/
+    line-height: 0.5;
+    height: 250px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 220px;
+}
+.optionsLink {
+    text-decoration: none;
+    color:black;
+    font-family: "Source Sans Pro";
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+}
+.mainContent {
+    font-size: 15px;
+    padding: 0px;
+    font-family: Charter;
+    /*height: inherit;*/
+    text-align: left;
+    line-height: 2em;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    top: 50px;
+    bottom: 90px;
+    width: 100%;
+    overflow: auto;
+}
+div.fileinputs {
+    position: relative;
+    margin: 10px;
+    font-family: "Source Sans Pro";
+    font-size: 17px;
+    margin-top: 50%;
+    height: 40px;
+    z-index: 99999999;
+}
+div.fakefile {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    /*color: #B5974C;*/
+    /*text-decoration: underline;*/
+    /*margin-top: 50%;*/
+}
+input.file {
+    position: relative;
+    text-align: right;
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 100%;
+}
+.loading {
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    box-shadow: -25px 0px 30px -5px rgba(0, 0, 0, 0.1), -1px 0px 0px rgba(0, 0, 0, 0.01), 25px 0px 30px -5px rgba(0, 0, 0, 0.1), 1px 0px 0px rgba(0, 0, 0, 0.01);
+    transition: 0.5s;
+    padding: 10px;
+    z-index: 9999999;
+}
+.titleNameDisplay {
+    height:auto;
+    padding:10px;
+    font-size: 16px;
+    line-height: 1.2;
+    /*margin-top:10px;*/
+}
+.hide{
+    transform:translateX(-9999px);
+}
+.w3-progressbar {
+    font-family: Charter;
+    font-size: 16px;
+    margin:5px;
+}
+.w3-progress-container {
+    width:100%;
+    position:relative;
+    overflow: hidden;
+    text-overflow: clip;
+}
+.draganddropdiv {
+    text-align: center;
+    margin-top: 20px;
+    color: #666666;
+    font-size: 15px;
+}
+.invertColor {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+input.whitetitleColor::-webkit-input-placeholder {
+    color: white !important;
+}
+input.blacktitleColor::-webkit-input-placeholder {
+    color: black !important;
+}
+.saveContent {
+    background-color: #9ACB91;
+    width: 20%;
+    text-align: center;
+    margin-left: 15%;
+    padding: 5px;
+    color: white;
+    font-family: Charter;
+    font-size: 14px;
+    margin-top : 40px;
+    float: left;
+    overflow: hidden;
+}
+.notebookNameDisplay {
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.notebookList {
+    text-align: center;
+    line-height: 2.5;
+    width: 60%;
+    margin-left: 20%;
+    /*border: 1px solid;*/
+    margin-top: 5px;
+    position: relative;
+    background-color: white;
+    overflow-y: auto;
+    height: 0px;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 999999;
+}
+
+.notebookList :hover {
+    color: darkgray;
+}
+.selectedDot {
+    width: 10px;
+    height: 10px;
+    background-color: #9ACB91;
+    border-radius: 50px;
+}
+.cancelContent {
+    background-color: #DA6D6E;
+    width: 20%;
+    text-align: center;
+    margin-right: 15%;
+    padding: 5px;
+    color: white;
+    font-family: Charter;
+    font-size: 14px;
+    margin-top : 40px;
+    float: right;
+}
+.grayscale {-webkit-filter: brightness(1); filter: brightness(1);}
+.whitescale {-webkit-filter: brightness(0.5); filter: brightness(0.5);}
+/* for dropbox */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Source Sans Pro";
+    /*-webkit-font-smoothing: auto;*/
+    height: 25px;
+    vertical-align: top;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    font-family: "Source Sans Pro";
+    /*border: 1px solid;*/
+    height: 25px;
+    width: 160px;
+    border-color: rgba(255,255,255,0.5);
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    width: 175px;
+    text-align: left;
+    font-family: "Source Sans Pro";
+    height: 180px;
+    overflow: auto;
+    font-size: 14px;
+    z-index: 999999999999;
+    bottom: -175px;
+    border: 1px solid;
+    border-color: lightgray;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #F5F4F4}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    /*display: block;*/
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/*.dropdown:hover .dropbtn {
+    color: darkgray ;
+}*/
+
+#notecardlist::-webkit-scrollbar {
+    display: none; 
+}
+
+.colorPalletes {
+    /*background-color: black;*/
+    height: 150px;
+    overflow: hidden;
+    transition: 0.5s;
+    position: absolute;
+    bottom: -85px;
+    width: 300px;
+    /*margin-left: 10px;*/
+    padding: 10px;
+    background-repeat: round;
+}
+
+#colorPalletes::-webkit-scrollbar {
+    display: none; 
+}
+
+#dropdown-content::-webkit-scrollbar {
+    display: none;
+}
+
+#mySidenav::-webkit-scrollbar {
+    display: none; 
+}
+.errorMessage {
+    position: absolute;
+    top: -50px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    color: white;
+    transition: 0.5s;
+    /*padding-top: 10px;*/
+    /*text-overflow: ellipsis;*/
+    overflow: hidden;
+    /*white-space: nowrap;*/
+    z-index: 99999999;
+    line-height: 40px;
+}
+.helpVideo {
+    /*margin-top: 20px;*/
+    margin-left: 10%;
+    margin-bottom: 20px;
+    margin-right: 10%;
+    width: 80%;
+    position: absolute;
+    top: 60px;
+}
+
+#mainContent::-webkit-scrollbar {
+    display: none;
+}
+.screenshotpage {
+    color: #999999; 
+    font-size: 15px; font-family: "Source Sans Pro"; 
+    height: 30px;
+    cursor: pointer; 
+    -webkit-font-smoothing: auto;
+}
+
+#settingsContainer {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    text-align: left;
+    z-index: 2;
+}
+
+#settingsIcon {
+    width: 20px;
+    height: 20px;
+}
+
+#settingsIcon:hover {
+    cursor: pointer;
+}
+
+.settings-bubble {
+    position: absolute;
+    top: 34px;
+    left: -8px;
+    background: #000000;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 4px;
+    
+    z-index: 4;
+}
+
+.settings-bubble:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 8px 12px;
+    border-color: #000000 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: -12px;
+    left: 10px;
+}
+
+.settingsMenu {
+    color: #FFFFFF;
+    white-space: nowrap;
+    font-size: 15px;
+    font-family: "Source Sans Pro";
+    padding: 5px 45px 5px 15px;
+    line-height: 25px;
+    background-color: black;
+}
+
+.settingsMenu:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.settingsMenu:active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.settingsMenu:active {
+    background-color: black;
+}
+
+#feedbackContainer {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    line-height: 1;
+}
+
+#feedbackTitleContainer {
+    text-align: center;
+    width: 100%;
+    
+    padding-bottom: 10px;
+    box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,0.10);
+}
+
+#feedbackTitleContainer .feedbackTitle {
+    margin-top: 10px;
+    font-family: "Source Sans Pro";
+}
+
+#closeFeedBack {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+#closeFeedBack img {
+    width: 24px;
+    height: 24px;
+}
+
+#closeFeedBack:hover {
+    cursor: pointer;
+}
+
+.feedbackField {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,0.10);
+    font-family: "Source Sans Pro";
+}
+
+.feedbackFieldTitle {
+    display: inline-block;
+    color: #9B9B9B;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    line-height: normal;
+}
+
+.feedbackFieldValue {
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    max-width: 60%;
+    right: 10px;
+    width: 200px;
+    border: 0;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Source Sans Pro";
+}
+
+#feedBackAttachmentContainer {
+    text-align: left;
+    font-family: "Source Sans Pro";
+    position: relative;
+    width: 100%;
+    
+}
+
+#feedbackSend {
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    padding: 0px;
+    border-spacing: 0px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    font-family: "Source Sans Pro";
+}
+
+#feedbackSend div {
+    font-size: 18px;
+    line-height: 50px;
+}
+
+#feedbackSend:hover {
+    cursor: pointer;
+}
+
+#feedbackComments {
+     width: 94%;
+     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+     box-sizing: border-box;         /* Opera/IE 8+ */
+    
+    font-size: 16px;
+    height: 292px;
+    border-style: none; 
+    border-color: Transparent; 
+    overflow: auto; 
+/*    resize: none;*/
+    font-family: "Source Sans Pro";
+/*
+    position: relative;
+    z-index: 1;
+*/
+}
+/*
+
+#feedbackCommentsField {
+    position: relative;
+}
+
+#feedbackCommentsField div {
+    position: absolute;
+    bottom: 10px;
+    right: 24px;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    z-index: 2;
+}
+*/
+
+#feedbackAttachment {
+    display: none;
+}
+
+#feedbackAttachmentImage {
+    position: absolute;
+}
+
+#feedbackAttachmentImage:hover {
+    cursor: pointer;
+}
+
+#feedbackAttachmentName {
+    font-size: 14px;
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "Source Sans Pro";
+    display: inline-block;
+}
+
+#feedbackAttachmentRemove {
+    display: inline-block;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+}
+
+#blockingDiv {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: transparent;
+}
+
+#feedbackScreenshot {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#feedbackScreenshot img {
+    display: inline-block;
+    width: 25px;
+}
+
+#feedbackScreenshot div {
+    display: inline-block;
+    font-family: "Source Sans Pro";
+    font-size: 15px;
+}
+
+#feedbackFileAttachment {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+}
+
+#feedbackAttachmentNameContainer {
+    position: absolute;
+    left: 10%;
+    width: 90%;
+    top: 15px;
+}
+
+/*Download app link page styles starts here*/
+
+#logoWrapper{
+	text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#appTitle{
+	font-size: 12pt;
+    color: #000000;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-family: "Source Sans Pro";
+}
+
+#logoWrapper img{
+	width: 60px;
+    height: 60px;
+}	
+
+#storeContainer{
+	position: relative;
+	margin: 25px auto 0 auto;
+	text-align: center;
+}
+
+#ituneLink{
+	position: relative;
+	display:inline-block;
+	text-align: right;
+    margin-left: 10px;
+    box-sizing: border-box;
+
+}
+
+#androidLink{
+	position: relative;
+	display:inline-block;
+	text-align: left;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+#macLink{
+    position: relative;
+    display:inline-block;
+    margin:0 auto;
+    margin-left: 10px;
+    box-sizing: border-box; 
+    max-height: 35px;
+    cursor: pointer;
+}
+#storeContainer img{
+    max-height: 35px;
+    cursor: pointer;
+}
+
+.downloadAppMessages {
+    color: black;
+    font-size: 13px;
+    font-family: "Source Sans Pro";
+    padding: 0 10px;
+}
+
+#closeDownloadPage {
+    width: 100%;
+    margin-top: 60px;
+}
+
+#closeDownloadPageText {
+    font-family: "Source Sans Pro";
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 13px;
+    color : #277B96;
+}
+
+#closeDownloadPageText:hover {
+    cursor: pointer;
+    color : #5F6263;
+}
+
+
+

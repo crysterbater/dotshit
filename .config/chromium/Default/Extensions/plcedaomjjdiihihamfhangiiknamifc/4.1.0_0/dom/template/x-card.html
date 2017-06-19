@@ -1,0 +1,85 @@
+<template id="rd-card"><style>:host {
+      display: block;
+      position: relative;
+    }
+
+    ::-webkit-scrollbar {
+      height: 10px;
+      width: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    ::-webkit-scrollbar-track:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: var(--radiusSize);
+      box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.10);
+      min-height: 28px;
+    }
+
+    .rd-card {
+      -webkit-user-select: none;
+      background: var(--cardColor);
+      border-radius: var(--radiusSize);
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+      box-sizing: border-box;
+      color: var(--contentColor);
+      display: inline-block;
+      flex-wrap: wrap;
+      font-size: var(--normalFontSize);
+      margin: var(--smallerSize) 0;
+      overflow: overlay;
+      position: relative;
+      text-align: left;
+      user-select: none;
+      vertical-align: top;
+      width: 350px;
+    }
+    .rd-card.resizable {
+      height: 300px;
+    }
+    .rd-card::-webkit-scrollbar {
+      display: none;
+    }
+    .rd-card:hover::-webkit-scrollbar {
+      display: initial;
+    }
+    .rd-card__resizer {
+      bottom: 8px;
+      cursor: s-resize;
+      height: var(--standardSize);
+      lfet: 7px;
+      position: absolute;
+      right: 7px;
+    }
+    .rd-card__resizer-icon {
+      bottom: 0;
+      fill: var(--lightColor);
+      height: 18px;
+      position: absolute;
+      right: 0;
+      width: 18px;
+    }
+    .sortable-bottom,
+    .sortable-top {
+      display: none;
+      position: absolute;
+    }
+    .sortable-top {
+      height: 50%;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+    .sortable-bottom {
+      bottom: 0;
+      height: 50%;
+      left: 0;
+      width: 100%;
+    }</style><div class="rd-card"><content></content></div><div class="rd-card__resizer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" enable-background="new 0 0 24 24" class="rd-card__resizer-icon"><path d="M22,22H20V20H22V22M22,18H20V16H22V18M18,22H16V20H18V22M18,18H16V16H18V18M14,22H12V20H14V22M22,14H20V12H22V14Z"/></svg></div></template>

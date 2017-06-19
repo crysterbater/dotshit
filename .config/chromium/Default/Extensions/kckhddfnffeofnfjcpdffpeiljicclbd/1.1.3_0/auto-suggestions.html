@@ -1,0 +1,150 @@
+<html><head>
+
+
+
+
+<meta charset="UTF-8"></head><body><div hidden=""><polymer-element name="paper-ripple" attributes="initialOpacity opacityDecayVelocity" assetpath="../bower_components/paper-ripple/">
+<template>
+
+  <style>
+
+    :host {
+      display: block;
+      position: relative;
+      border-radius: inherit;
+      overflow: hidden;
+    }
+
+    :host-context([noink]) {
+      pointer-events: none;
+    }
+
+    #bg, #waves, .wave-container, .wave {
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    #bg, .wave {
+      opacity: 0;
+    }
+
+    #waves, .wave {
+      overflow: hidden;
+    }
+
+    .wave-container, .wave {
+      border-radius: 50%;
+    }
+
+    :host(.circle) #bg,
+    :host(.circle) #waves {
+      border-radius: 50%;
+    }
+
+    :host(.circle) .wave-container {
+      overflow: hidden;
+    }
+
+  </style>
+
+  <div id="bg"></div>
+  <div id="waves">
+  </div>
+
+</template>
+
+</polymer-element>
+</div><polymer-element name="auto-suggestions" attributes="suggestions error" assetpath="../src/">
+    <template>
+        <style>
+            .item[highlighted] {
+                background-color: #E3F2FD;
+            }
+
+            .item {
+                padding:30px 20px;
+                width:100%;
+                box-sizing: border-box;
+                position: relative;
+                cursor:pointer;
+                transition:background 250ms;
+            }
+
+            .item img {
+                float:left;
+                margin-right:10px;
+                margin-top: 3px;
+                width:32px;
+                height:32px;
+            }
+
+            .item h4 {
+                margin:0;
+                overflow:hidden;
+                text-overflow: ellipsis;
+                position: relative;
+                white-space: nowrap;
+            }
+
+            .item .website {
+                font-size: 10px;
+                background-color: #a2bf72;
+                padding: 0.2em 0.7em;
+                float: right;
+                color:#fff;
+            }
+
+            .item h5 {
+                color:#424242;
+                margin:0;
+                font-size: 0.7em;
+                overflow:hidden;
+                text-overflow: ellipsis;
+                position: relative;
+                white-space: nowrap;
+            }
+
+            .error {
+                font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                text-align: center;
+                padding-top: 80px;
+                padding-bottom: 80px;
+                color:#646464;
+            }
+
+            .error p {
+                font-size: .9em;
+                margin: 0.2em 0 0;
+            }
+
+            .error core-icon {
+                width:64px;
+                height:64px;
+            }
+        </style>
+        <div vertical="" layout="" wrap="" class="list">
+            <template repeat="{{suggestion in suggestions}}">
+                <div highlighted?="{{suggestion == activeSuggestion}}" class="item" on-click="{{choose}}" on-mouseenter="{{highlightCurrent}}">
+                    <img src="{{suggestion.iconUrl ? suggestion.iconUrl : 'img/column-unknown.png'}}">
+                    <span style="background-color: {{suggestion.website | formatWebsite | color}}" class="website">{{suggestion.website | formatWebsite}}</span>
+                    <h4>{{suggestion.title}}</h4>
+                    <h5>{{suggestion.description}}</h5>
+                    <paper-ripple fit=""></paper-ripple>
+                </div>
+            </template>
+
+            <div class="error" hidden?="{{!error}}">
+                <core-icon icon="cloud-off"></core-icon>
+                <p>Unable to get your sites. Is your internet down?</p>
+            </div>
+
+            <!-- todo feedly shoutout -->
+        </div>
+
+    </template>
+    
+</polymer-element><script charset="utf-8" src="auto-suggestions.js"></script></body></html>

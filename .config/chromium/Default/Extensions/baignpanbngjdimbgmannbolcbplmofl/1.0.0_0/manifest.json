@@ -1,0 +1,17 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://scdownloader.net/?utm_source=chromeExtn&utm_medium=referral&utm_campaign=AddOn"
+      },
+      "urls": [ "http://scdownloader.net/" ]
+   },
+   "description": "Helps you download any SoundCloud tracks",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgE+I+5Jn42S84IToNePO/hLzeaPtsUP1IO64VbIe5NbPATq/c4nUobCucmwKtHvPQz96JUOVb+0DOPgqcy7eatJEJ1oz83AVoNSkOBe4bqJoo7gnIrdv9Pp7sc+riMWTrg7H83MMPbGzJJHaviCWb6ZVAj/RgdeYGnH+yBtPBwpxzTDR6L8b5dfn6X2YxcjjjQuWQPWTzV3H5rAVw1YQoJxB6Es3axcGKKrZG2zrALdPJka740kkspNBFKZp/5m07iufS5wTpEKb3cfnBNoH0eSRW6GsIfTOmZuNSWtN51/ePrl2yHoxam5e7N0yjuT0wANTsrIIFo1Wxi7gVzFwrwIDAQAB",
+   "manifest_version": 2,
+   "name": "SoundCloud Downloader",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0"
+}

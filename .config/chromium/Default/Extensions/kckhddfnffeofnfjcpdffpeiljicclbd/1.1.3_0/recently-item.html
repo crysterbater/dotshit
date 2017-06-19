@@ -1,0 +1,177 @@
+<html><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta charset="UTF-8"></head><body><div hidden=""><polymer-element name="paper-ripple" attributes="initialOpacity opacityDecayVelocity" assetpath="../bower_components/paper-ripple/">
+<template>
+
+  <style>
+
+    :host {
+      display: block;
+      position: relative;
+      border-radius: inherit;
+      overflow: hidden;
+    }
+
+    :host-context([noink]) {
+      pointer-events: none;
+    }
+
+    #bg, #waves, .wave-container, .wave {
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    #bg, .wave {
+      opacity: 0;
+    }
+
+    #waves, .wave {
+      overflow: hidden;
+    }
+
+    .wave-container, .wave {
+      border-radius: 50%;
+    }
+
+    :host(.circle) #bg,
+    :host(.circle) #waves {
+      border-radius: 50%;
+    }
+
+    :host(.circle) .wave-container {
+      overflow: hidden;
+    }
+
+  </style>
+
+  <div id="bg"></div>
+  <div id="waves">
+  </div>
+
+</template>
+
+</polymer-element>
+<polymer-element name="paper-button-base" tabindex="0" assetpath="../bower_components/paper-button/">
+
+
+</polymer-element>
+<polymer-element name="paper-item" extends="paper-button-base" assetpath="../bower_components/paper-item/">
+
+  <template>
+
+    <style>
+
+      :host {
+        display: block;
+        position: relative;
+        font-size: 16px;
+        box-sizing: border-box;
+        min-width: 7em;
+        outline: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        z-index: 0;
+      }
+
+      :host([disabled]) {
+        color: #a8a8a8;
+        cursor: auto;
+        pointer-events: none;
+      }
+
+      :host(.core-selected) {
+        background-color: #eaeaea;
+      }
+
+      #ripple {
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      .button-content {
+        padding: 0.9em 1em;
+      }
+
+      polyfill-next-selector { content: '.button-content > a'; }
+      ::content > a {
+        height: 100%;
+        /* flex */
+        -ms-flex: 1 1 0.000000001px;
+        -webkit-flex: 1;
+        flex: 1;
+        -webkit-flex-basis: 0.000000001px;
+        flex-basis: 0.000000001px;
+      }
+
+    </style>
+
+    <!-- this div is needed to position the ripple behind text content -->
+    <div class="button-content" relative="" layout="" horizontal="" center="">
+      <content></content>
+    </div>
+
+  </template>
+
+  
+</polymer-element>
+
+<polymer-element name="time-ago" attributes="datetime refresh delay epoch" assetpath="../src/">
+    <template>
+        <span id="timeago"></span>
+    </template>
+
+    
+</polymer-element></div><polymer-element name="recently-item" attributes="title url window tab-count" assetpath="../src/">
+    <template>
+        <style>
+            paper-item {
+                font-size:12px;
+            }
+            img, core-icon {
+                margin-right:10px;
+                float:left;
+                color:#616161;
+            }
+            img {
+                margin-right:18px;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            a {
+                color:#000;
+            }
+        </style>
+        <template if="{{!window}}">
+            <paper-item>
+                <p><img src="chrome://favicon/{{url}}"> {{title}}</p>
+            </paper-item>
+        </template>
+        <template if="{{window}}">
+            <paper-item>
+                <core-icon icon="tab"></core-icon> {{tab_count}} Tabs
+            </paper-item>
+        </template>
+    </template>
+</polymer-element><script charset="utf-8" src="recently-item.js"></script></body></html>

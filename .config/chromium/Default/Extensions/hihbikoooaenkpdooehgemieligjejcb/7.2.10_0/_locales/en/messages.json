@@ -1,0 +1,267 @@
+{
+   "already_uploading": {
+      "message": "The file is being uploaded. Please try again in a few minutes."
+   },
+   "app_desc": {
+      "message": "Send whatever you want, wherever you want"
+   },
+   "app_name": {
+      "message": "Send Anywhere (File Transfer)"
+   },
+   "cancel": {
+      "message": "Cancel"
+   },
+   "cancelled": {
+      "message": "Cancelled"
+   },
+   "complete": {
+      "message": "Complete"
+   },
+   "conf_profile_name": {
+      "message": "Device Name "
+   },
+   "copy_key": {
+      "message": "Copy a key"
+   },
+   "copy_url": {
+      "message": "Copy URL"
+   },
+   "delete": {
+      "message": "Delete"
+   },
+   "device": {
+      "message": "Receiving Device"
+   },
+   "drop_files": {
+      "message": "Click here or Drag & Drop to send files"
+   },
+   "edit": {
+      "message": "Edit"
+   },
+   "error": {
+      "message": "Error"
+   },
+   "exp": {
+      "message": "Exp."
+   },
+   "exp_format": {
+      "message": "$1 $2,"
+   },
+   "expiration": {
+      "message": "Expiration"
+   },
+   "extension_install": {
+      "message": "Install Chrome Extension"
+   },
+   "filelist_more_desc": {
+      "message": "… $1 more files"
+   },
+   "gcm_push_desc": {
+      "message": "Click to view my incoming files"
+   },
+   "gcm_push_title": {
+      "message": "Incoming file(s)"
+   },
+   "go_list": {
+      "message": "Go Storage"
+   },
+   "go_main": {
+      "message": "Go Main"
+   },
+   "help_desc01": {
+      "message": "Once the receiving device inputs the 6-digit key in the 'Receive' box, the transfer will start immediately."
+   },
+   "help_desc02": {
+      "message": "You can also share this 6-digit key by:"
+   },
+   "help_list01": {
+      "message": "Sharing the QR Code"
+   },
+   "help_list03": {
+      "message": "Sending a push-alert to the receiving device"
+   },
+   "input_key": {
+      "message": "Input Key"
+   },
+   "invalid_key": {
+      "message": "Invalid Key!"
+   },
+   "key": {
+      "message": "Key"
+   },
+   "key_title": {
+      "message": "Share the 6-Digit Key"
+   },
+   "length_exceed_desc": {
+      "message": "Chrome App limit exceeded. Try our Chrome extension to send up to 10GB!"
+   },
+   "list_tab": {
+      "message": "Storage"
+   },
+   "list_title": {
+      "message": "Upload History"
+   },
+   "main_title": {
+      "message": "Send Anywhere"
+   },
+   "modal_ok": {
+      "message": "OK"
+   },
+   "month_1": {
+      "message": "Jan"
+   },
+   "month_10": {
+      "message": "Oct"
+   },
+   "month_11": {
+      "message": "Nov"
+   },
+   "month_12": {
+      "message": "Dec"
+   },
+   "month_2": {
+      "message": "Feb"
+   },
+   "month_3": {
+      "message": "Mar"
+   },
+   "month_4": {
+      "message": "Apr"
+   },
+   "month_5": {
+      "message": "May"
+   },
+   "month_6": {
+      "message": "Jun"
+   },
+   "month_7": {
+      "message": "Jul"
+   },
+   "month_8": {
+      "message": "Aug"
+   },
+   "month_9": {
+      "message": "Sep"
+   },
+   "name": {
+      "message": "Name"
+   },
+   "nearby_devices": {
+      "message": "Nearby Devices"
+   },
+   "no": {
+      "message": "NO"
+   },
+   "no_files": {
+      "message": "No Files"
+   },
+   "not_supported_browser": {
+      "message": "Or your browser is not supported."
+   },
+   "noti_copy": {
+      "message": "It's copied to clipboard!"
+   },
+   "noti_delete": {
+      "message": "This file(s) will be deleted. Are you sure?"
+   },
+   "noti_download_done": {
+      "message": "Download complete"
+   },
+   "noti_save_done": {
+      "message": "Upload complete"
+   },
+   "noti_send_done": {
+      "message": "Send complete"
+   },
+   "profile": {
+      "message": "Profile"
+   },
+   "push_comment": {
+      "message": "Shared instantly from Send Anywhere. Accept now before it expires!"
+   },
+   "qr_desc": {
+      "message": "Scan QR Code to Receive Files"
+   },
+   "receiving": {
+      "message": "Receiving..."
+   },
+   "recent_devices": {
+      "message": "Recent devices"
+   },
+   "recv_file": {
+      "message": "Receive"
+   },
+   "recv_tab": {
+      "message": "Receive"
+   },
+   "recv_title": {
+      "message": "Receive Files"
+   },
+   "reset": {
+      "message": "Reset"
+   },
+   "save_files": {
+      "message": "Share Link"
+   },
+   "send_files": {
+      "message": "Send Directly"
+   },
+   "send_tab": {
+      "message": "Send"
+   },
+   "send_title": {
+      "message": "Send Your Files"
+   },
+   "sending": {
+      "message": "Sending..."
+   },
+   "server_error": {
+      "message": "Sorry, Internal server error!"
+   },
+   "share_device": {
+      "message": "Device"
+   },
+   "share_qrcode": {
+      "message": "QR Code"
+   },
+   "size": {
+      "message": "Size"
+   },
+   "size_exceed": {
+      "message": "size exceeded"
+   },
+   "size_exceed_desc": {
+      "message": "\u003CP> You can only upload up to 2GB at a time. \u003C/ P> \u003Cp> Try our Chrome extension to send up to 10GB! \u003C/ P>"
+   },
+   "to_extension": {
+      "message": "\u003CH4> Chrome App Service Announcment \u003C/ h4> \u003Cp> Send Anywhere Chrome App is only available until 2018, \u003Ca href=\"$2\" target=\"_blank\"> officially supported by Google \u003C/a>. \u003C/ P> \u003Cp> If you would like to continue to use Send Anywhere's powerful file-transfer service in the future, try our \u003Ca href='$store_link$' target='_blank'> Chrome extensions \u003C/a>! You can transfer files up to 10GB at a time and easily attach large files to Gmail and Slack. \u003C/ P>",
+      "placeholders": {
+         "store_link": {
+            "content": "$1"
+         }
+      }
+   },
+   "upload_title": {
+      "message": "Upload"
+   },
+   "url": {
+      "message": "URL"
+   },
+   "wait_notice": {
+      "message": "'$profile_name$ ($device_name$)' wants to send a file to you. Do you receive?",
+      "placeholders": {
+         "device_name": {
+            "content": "$2"
+         },
+         "profile_name": {
+            "content": "$1"
+         }
+      }
+   },
+   "will_expire": {
+      "message": "This key expires in ($1)"
+   },
+   "yes": {
+      "message": "YES"
+   }
+}

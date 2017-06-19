@@ -1,0 +1,1 @@
+Polymer('app-item');

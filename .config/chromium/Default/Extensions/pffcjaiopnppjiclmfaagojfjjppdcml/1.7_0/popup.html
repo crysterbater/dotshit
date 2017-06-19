@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title></title>
+ 
+<script src="jquery.js"></script>
+<script src="jquery.contextMenu.js"></script>
+ <script src="popup.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/popup.css">
+  <link rel="stylesheet" href="css/material-design-iconic-font.css"> 
+  <link rel="stylesheet" href="css/jquery.contextMenu.css"> 
+</head>
+<body>
+<div id="outer" >
+
+  <div id="head">
+    <a id="bad-chrome-version" hidden
+        href="https://www.google.com/intl/en/chrome/browser/beta.html"></a>
+    
+    <div id="q-outer">
+	   <div class="search_icon">
+			<img src="img/ic_search_24px.svg" class="md-icon md-search">
+		</div>
+		<div class="search_bar" class="dev-test">
+			<input type="search" class="search" id="q" placeholder="Search" incremental="" ><br>&nbsp;
+		</div>
+	</div>
+
+    <div class="top_option">
+<!--<a href="downloads.html#tr" id="translation" target="_blank" >
+  <i class="fa fa-exclamation-triangle fa-lg options_icon"></i>
+</a>-->
+<a href="chrome://downloads/" id="all-downloads" target="_blank" >
+ 
+  <img src="img/ic_launch_24px.svg" class="md-icon">
+</a>
+
+<!--<a href="#" id="open-folder">
+  <i class="md  md-file-download md-icon"></i>
+
+</a>-->
+
+<a href="#" id="clear-all">
+
+  <img src="img/ic_sweep_24px.svg" class="md-icon">
+</a>
+      
+<div class="tooltip1">Open in a new tab</div>          
+<div class="tooltip2">Clear all downloads</div>
+
+<!--
+
+<a href="#" id="clear-completed">
+   <img src="img/ic_sweep_24px.svg" class="md-icon">
+</a>
+
+
+<a href="#" id="options-open">
+  <i class="fa fa-bars fa-lg options_icon"></i>
+</a>-->
+	</div>
+<span id="empty" hidden>All clear!</span>
+  </div>
+
+  <div id="searching" hidden></div>
+  <div id="search-zero" hidden></div>
+  <div id="items"></div>
+  <div id="empty-state" hidden>Couldn't find any results...</div>
+  <div class="older mybtn" id="older">Show older</div>
+  <span id="loading-older" hidden></span>
+  <div id="request-management-permission" hidden><div
+      id="management-permission-info"></div>
+    <a href="#" id="grant-management-permission"></a>
+  </div>
+</div>
+
+<div class="item" draggable="true" hidden>
+  <div class="wrapper_top">
+  <img class="icon" src="icon32.png">
+
+  <div class="more" hidden>
+    <span class="more-left">
+      <div class="start-time1"></div>
+      <div class="complete-size1"></div>
+    </span>    
+    <a href="#" class="by-ext"><img /></a>
+  </div>
+  
+ 
+
+<div class="wrapper"> 
+  <span class="file-url">
+    <div class="file-url-head">
+      <span class="removed"></span>
+      <a href="#" class="open-filename"></a>
+	  
+    </div>
+
+	<div class="second">
+	<span id="size" class="complete-size"></span>
+	<span class="dash"> &nbsp;&nbsp;    </span>
+	<span class="ref"></span>
+	<span class="dash">  </span>
+	<span id="time" class="start-time"></span>
+	
+      
+      <span class="in-progress">
+        <span class="myprogress"></span>
+		<span class="speed"></span>
+		<span class="dash">  &nbsp;  </span>
+        <span class="time-left"></span>
+      </span>
+    
+	</div>
+
+  </span>
+   <div class="info" >  
+   <div class="r_info" hidden>
+  <a href="#" class="referrer btn"></a>
+  <a href="#" class="show-folder btn"></a>
+  <span class="remove-file "></span>
+  <span class="erase "></span>
+  <span class="url " download=""></span>
+  </div>
+</div>  
+  </div>
+  </div>
+ <div class="progress1">
+       <div class="meter"><span /></div>
+		<div class="pro">
+			<a href="#" class="pause"><i class="fa fa-pause"></i></a>
+			<a href="#" class="resume"><i class="fa fa-play"></i></a>
+			<a href="#" class="cancel"><i class="fa fa-times"></i></a>
+			
+	
+		</div>
+    </div>
+	
+</div>
+
+<span id="text-width-probe"></span>
+</body>
+</html>

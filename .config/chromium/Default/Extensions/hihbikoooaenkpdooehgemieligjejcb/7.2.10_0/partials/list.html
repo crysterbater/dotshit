@@ -1,0 +1,53 @@
+<div id="/list" class="window" ng-controller='ListCtrl'>
+  <div class="type_05">
+    <h4 class="title">{{getMessage("list_title")}}</h4>
+    <div class="list-box">
+      <div class="detail-box" ng-show="filenames.length > 0">
+        <span class="arrow"></span>
+        <div ng-click="closeDetail()" class="close-btn"></div>
+        <div style="clear:both"></div>
+        <div class="detail-scroll">
+          <ul>
+            <li ng-repeat="filename in filenames">{{filename}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="list-head">
+        <table>
+          <tr class="table-head">
+            <th style="width:82px">{{getMessage("key")}}</th>
+            <th style="width:132px">{{getMessage("expiration")}}</th>
+            <th style="width:165px">{{getMessage("name")}}</th>
+            <th style="width:73px">{{getMessage("size")}}</th>
+            <th style="width:18px"></th>
+          </tr>
+        </table>
+      </div>
+      <hr>
+      <div class="list-scroll">
+        <table class="">
+          <tr ng-show="uploads.length == 0">
+            <td colspan="5" style="width:465px;" valign="top">
+              <h5 class="text-center no-files">{{getMessage("no_files")}}</h5> </td>
+          </tr>
+          <tbody ng-repeat="item in uploads | orderBy:'-expiration_date'">
+            <tr ng-repeat="file in item.files" ng-switch on="$index" style="">
+              <!-- key -->
+              <td ng-hide="$index > 0" style="width:82px;padding-right:10px" valign="top"><span class="list-key" ng-click="copyToClipboard(item.key)" title="{{getMessage('copy_key')}}">
+                {{item.key}}
+                </span> </td>
+              <!-- exp -->
+              <td ng-hide="$index > 0" class="exp_time" style="width:132px;padding-right:7px" valign="top"><span>{{computedExp(item.expiration_date)}}</span></td>
+              <!-- filename -->
+              <td ng-hide="$index > 0" style="width:165px;" valign="top"><span class="list-filename">{{file.name}}</span><span ng-show="item.files.length > 1" class="more-num" ng-mouseover="showDetail($event, uploads, item.key)" ng-mouseleave="closeDetail()">+{{item.files.length - 1}} {{$event}}</span></td>
+              <!-- filesize -->
+              <td ng-hide="$index > 0" style="width:73px;padding-right:5px" valign="top">{{getFileSize(sumFileSize(uploads, item.key))}}</td>
+              <!-- delete btn -->
+              <td ng-hide="$index > 0" style="width:18px;" valign="top"> <i class="material-icons" ng-click="clickDelete(item)" style="cursor: pointer;">delete</i> </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+$font-size: 14px;
+$large-font-size: 42px;
+$larger-font-size: 18px;
+$smaller-font-size: 12px;
+
+$regular-font: Roboto, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$light-font: Roboto, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+$sidebar-width: 278px;
+$sidebar-mini-width: 68px;
+
+$mobile-max-width: 950px;
+
+$tile-spacing: 20px;
+$minimum-tile-width: 300px;
+$minimum-1-tile-width: $sidebar-mini-width + $tile-spacing + $minimum-tile-width + $tile-spacing;
+$minimum-2-tile-width: $minimum-1-tile-width + $minimum-tile-width + $tile-spacing;
+$minimum-3-tile-width: $minimum-2-tile-width + $minimum-tile-width + $tile-spacing;
+$minimum-4-tile-width: $minimum-3-tile-width + $minimum-tile-width + $tile-spacing;
+$minimum-5-tile-width: $minimum-4-tile-width + $minimum-tile-width + $tile-spacing;

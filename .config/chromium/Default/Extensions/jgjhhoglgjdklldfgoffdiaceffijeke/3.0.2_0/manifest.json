@@ -1,0 +1,29 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "img/logo.png",
+      "default_popup": "popup.html",
+      "default_title": "Font Changer"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "js/cs.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "Change the font on Facebook, Twitter, Google, Youtube or any other site. Test Google Web Fonts™.",
+   "icons": {
+      "128": "img/logo.png",
+      "48": "img/logo48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC5ZYbsr6ep/2ofkCblxZX7M4WhZQ1daYrmHSoiEbvpFvnuqgVBGk3yqwF0xCrqy6kueUAHRY696qJGSKW5Uxudj3e4CmVwZMbQivP7VzpoUlzLTBaKkZgavGuR9GSAzkUvY/xl8JHzt7dIKIq3CUEMGpDAoBfzX4o4a37JA+hfPQIDAQAB",
+   "manifest_version": 2,
+   "name": "Font Changer with Google Web Fonts™",
+   "permissions": [ "storage", "unlimitedStorage", "notifications", "webRequest", "webRequestBlocking", "tabs", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.0.2",
+   "web_accessible_resources": [ "js/custom_fonts.js", "img/logo48.png" ]
+}

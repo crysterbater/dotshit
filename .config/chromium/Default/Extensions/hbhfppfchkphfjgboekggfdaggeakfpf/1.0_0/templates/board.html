@@ -1,0 +1,44 @@
+<div class="board-tile-container">
+    <div class="board-tile-background"></div>
+    <div class="board-tile">
+        <% img = _.first(board.get('images')) %>
+        <% if (!_.isUndefined(img)) { %>
+            <div class="board-tile-image-container" style="background: <%= _.escape(img.color) %>; padding-top: <%= (100 * _.escape(img.height) / _.escape(img.width)) %>%;">
+                <img class="board-tile-image" src="<%= _.escape(img['image']) %>">
+            </div>
+        <% } else { %>
+            <div class="board-tile-image-container" style="padding-top: 50%;">
+                <div class="board-tile-image no-logo">
+                    <span class="board-tile-image-icon"></span>
+                </div>
+            </div>
+        <% } %>
+        <% images = board.get('images').slice(1, 6) %>
+        <% if (!_.isEmpty(images)) { %>
+            <div class="board-tile-images-container">
+                <div class="board-tile-images">
+                    <% _.each(images, function(img) { %>
+                        <div class="board-tile-images-item-container" style="background: <%= _.escape(img.color) %>">
+                            <div class="board-tile-images-item" style="background-image: url('<%= _.escape(img['image']) %>');"></div>
+                        </div>
+                    <% }); %>
+                </div>
+            </div>
+        <% } %>
+        <div class="board-tile-view">
+            <div class="board-tile-controls-wrapper">
+                <a href="#" class="board-tile-controls-edit"><span class="board-tile-controls-edit-icon"></span></a>
+            </div>
+            <div class="board-tile-title"><%= board.escape('title') %></div>
+            <div class="board-tile-subtitle"><%= board.escape('feed_items_count') %> carts, Updated <%= board.formatDateUpdated() %></div>
+        </div>
+        <div class="board-tile-edit">
+            <div class="board-tile-controls-wrapper">
+                <a href="#" class="board-tile-controls-save"><span class="board-tile-controls-save-icon"></span></a>
+                <a href="#" class="board-tile-controls-cancel"><span class="board-tile-controls-cancel-icon"></span></a>
+            </div>
+            <label class="board-tile-label" for="board-<%= board.escape('id') %>-title-input">New name</label>
+            <input class="board-tile-input" name="title" value="<%= board.escape('title') %>" id="board-<%= board.escape('id') %>-title-input" placeholder="Add name to flat">
+        </div>
+    </div>
+</div>

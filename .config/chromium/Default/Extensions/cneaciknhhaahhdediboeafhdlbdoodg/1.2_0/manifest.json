@@ -1,0 +1,34 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "js/Readability.js", "js/JSDOMParser.js", "js/note-utils.js", "js/background.js", "js/context-menu.js", "js/sanitize.js", "vendor/javascripts/jquery.min.js", "vendor/javascripts/bootstrap.js", "vendor/javascripts/jquery.scrollTo.min.js", "vendor/javascripts/jquery.ui.widget.js", "vendor/javascripts/jquery-ui.min.js", "vendor/javascripts/jquery.fileupload.js", "vendor/javascripts/jquery.oembed.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "images/icon-128.png",
+         "19": "images/icon.png",
+         "38": "images/icon@2x.png"
+      }
+   },
+   "content_scripts": [ {
+      "js": [ "js/content-script.js", "js/Readability.js", "js/JSDOMParser.js", "js/html2canvas.js", "js/html2canvas.min.js", "js/sanitize.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self'; object-src 'self';",
+   "default_locale": "en",
+   "description": "Clear the clutter. Clip the web. Save to Notebook.",
+   "icons": {
+      "128": "images/icon-128.png",
+      "16": "images/icon-rightmenu.png",
+      "32": "images/icon-rightmenu@2x.png",
+      "48": "images/icon-128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgAPfCXKDaW9VPPXsCMsbuoQorPQj9lAXJlr4PBnkKtizR1r6SPpeA/18E2rPbp3yIe5Nx4d3fuOXiWHoBoQSgupCrkGwprd0uuXFCP8hJEabW5RHyZN5CvmGJviVlJ8ji9izedLwr0m1fr3/sgA+FpNtG1eU7e15999lkqDTjBG4ahV9f7Ut5k0SVh1pzvGhaxv76LV5nAI8SkmVfAhqngu3z4wS6G6D7vQOekyUzybRhMOQk5NXhN9prQU1kJsk5mbMma4UixJq/3SCOjyqDKPwDyK0KzoskTzjAgeaGwMS+/TU7NRvLTWP5VfbakwImAZed5oXTUXizJmVhqDywIDAQAB",
+   "manifest_version": 2,
+   "name": "Notebook Web Clipper",
+   "permissions": [ "tabs", "activeTab", "storage", "cookies", "http://*/*", "https://*/*", "file://*/*", "contextMenus", "geolocation", "notifications", "unlimitedStorage", "webRequest", "webRequestBlocking" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.2",
+   "web_accessible_resources": [ "html/*", "images/icn-success-clipping.png", "images/icn-close-popup.png", "images/*", "css/*", "js/*", "fonts/*" ]
+}

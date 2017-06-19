@@ -1,0 +1,28 @@
+{
+   "author": "Bruno Sabot",
+   "chrome_url_overrides": {
+      "newtab": "newtab.html"
+   },
+   "content_security_policy": "script-src https://*.google.com https://*.google-analytics.com 'unsafe-eval'; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_extDescription__",
+   "icons": {
+      "128": "image/icon128.png",
+      "16": "image/icon16.png",
+      "48": "image/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCVpHGicsYFmzd/5VdgkuytLiC6jtw3mV7lVp169Zpa92dRrJzYvImsZX/7MxwhqtJYS4EIUWyXawgud1yBMWghmqKF9YZRpEgD6K2qxnOQ+KZ4jph/l2oDK/+xXn7DFDcIrTjXVgK9HUEXmz3W5Ud+rVSL6cQAIhlc0JaUeR2zOwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_extname__",
+   "oauth2": {
+      "client_id": "442163827123-l8f08eairnrsng0ebjfaf9bp4hau2upk.apps.googleusercontent.com",
+      "scopes": [ "https://www.googleapis.com/auth/drive", "https://www.googleapis.com/auth/gmail.modify", "https://mail.google.com/" ]
+   },
+   "offline_enabled": true,
+   "optional_permissions": [ "bookmarks", "chrome://favicon/", "downloads", "history", "http://suggestqueries.google.com/", "https://news.google.com/", "management", "tabs", "topSites" ],
+   "options_page": "options.html",
+   "permissions": [ "geolocation", "identity" ],
+   "short_name": "__MSG_extname__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.1.0"
+}

@@ -1,0 +1,26 @@
+<?xml encoding="UTF-8" version="1.0"?>
+<actions>
+<action>
+	<icon></icon>
+	<name>copy current path</name>
+	<unique-id>1493630569322213-4</unique-id>
+	<command>echo -n %f | xclip -selection CLIPBOARD</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>ROOT</name>
+	<unique-id>1493630488337311-2</unique-id>
+	<command>pkexec thunar %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+</actions>

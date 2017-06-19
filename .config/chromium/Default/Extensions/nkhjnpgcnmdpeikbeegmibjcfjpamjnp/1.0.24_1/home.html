@@ -1,0 +1,857 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="Install Piktab, an awesome Chrome Extension for designers"/>
+    <meta name="description" content="Piktab will become your default home page where you can find and share exclusive freebies and all graphic resources that you need for your projects"/>
+    <meta name="keywords" content="chrome extension, designers extension, piktab, free graphic resources, freebies, web design ,vectors, free vectors, pictures, photos, images, free downloads,"/>
+    <meta name="lang" content="en" />
+    <meta property="og:title" content="Install Piktab, an awesome Chrome Extension for designers" />
+    <meta property="og:description" content="Piktab will become your default home page where you can find and share exclusive freebies and all graphic resources that you need for your projects" />
+    <meta property="og:image" content="https://media.piktab.com/img/Piktab-Facebook.png" />
+    <meta property="url" content="http://www.piktab.com/" />
+    <link rel="shortcut icon" href="https://media.piktab.com/img/icons/favicon.ico">
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/nkhjnpgcnmdpeikbeegmibjcfjpamjnp">
+
+    <meta name="google-signin-client_id" content="975878331813-pcvduv9a1b132ap45vfjq5bbtvo9qbdd.apps.googleusercontent.com">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Piktab - Discover the best graphic content from different website all under one single tab.  Piktab, an awesome Chrome Extension for designers and creative thinkers.</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="media/css/piktab.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <script src="media/js/analytics.js"></script>
+
+</head>
+<body>  
+    <header id="header" class="header">
+        <div class="container-fluid">
+            <div class="row mg-none">
+                <a href="chrome-extension://nkhjnpgcnmdpeikbeegmibjcfjpamjnp/home.html" class="button button--sm button--flat button--white button--main--hover button--icon button--icon--only mg-y-none-i">
+                    <svg class="icon icon--sm icon--mg-sm"><use xlink:href="/media/img/sprite-linear.svg#icon-home" /></svg>
+                </a>
+
+                <div class="popover popover--width-xs popover--bottom-left hide-phone">
+                    <button class="popover__trigger button button--sm button--icon button--icon--only button--flat button--white button--main--hover mg-none-i">
+                        <svg class="icon icon--sm icon--mg-sm"><use xlink:href="/media/img/sprite-project.svg#icon-apps" /></svg>
+                    </button>
+
+                    <div class="popover__container alignc">
+                        <ul id="chrome_apps" class="row font-xs">
+                            <li class="col__md--4">
+                                <a href="https://plus.google.com/u/0/">
+                                    <img src="https://www.gstatic.com/images/branding/product/1x/google_plus_64dp.png">
+                                    <span>Google Plus</span>
+                                </a>
+                            </li>
+                            <li class="col__md--4">
+                                <a href="https://www.youtube.com/">
+                                    <img src="https://www.gstatic.com/images/icons/material/product/1x/youtube_64dp.png">
+                                    <span>YouTube</span>
+                                </a>
+                            </li>
+                            <li class="col__md--4">
+                                <a href="https://www.google.es/maps/">
+                                    <img src="https://www.gstatic.com/images/branding/product/1x/maps_64dp.png">
+                                    <span>Google Maps</span>
+                                </a>
+                            </li>
+                            <li class="col__md--4">
+                                <a href="https://mail.google.com/">
+                                    <img src="https://www.gstatic.com/images/branding/product/1x/gmail_64dp.png">
+                                    <span>Gmail</span>
+                                </a>
+                            </li>
+                            <li class="col__md--4">
+                                <a href="https://docs.google.com/">
+                                    <img src="https://www.gstatic.com/images/branding/product/1x/docs_64dp.png">
+                                    <span>Google Docs</span>
+                                </a>
+                            </li>
+                            <li class="col__md--4">
+                                <a href="https://drive.google.com/">
+                                    <img src="https://www.gstatic.com/images/branding/product/1x/drive_64dp.png">
+                                    <span>Google Drive</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="button button--sm button--flat button--white more button--main--hover mg-none mg-left-lv1-i">More</button>
+                    </div>
+                </div>
+
+                <form action="." method="get" id="search">
+                    <div class="group group--sm mg-none overflow-visible">
+                        <div class="group__button">
+                            <div class="dropdown dropdown--sm dropdown--bottom-left">
+                                <select name="search-source" id="search-source">
+                                    <option value="google">Google</option>
+                                    <option value="piktab">Piktab</option>
+                                    <option value="freepik">Freepik</option>
+                                    <option value="flaticon">Flaticon</option>
+                                    <option value="graphicburger">Graphicburger</option>
+                                    <option value="pixabay">Pixabay</option>
+                                    <option value="pexels">Pexels</option>
+                                    <option value="vecteezy">Vecteezy</option>
+                                    <option value="iconfinder">Iconfinder</option>
+                                    <option value="iconstore">Iconstore</option>
+                                    <option value="freebiesbug">Freebiesbug</option>
+                                    <option value="thehungryjpeg">Thehungryjpeg</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <input type="text" name="q" placeholder="" />
+                        
+                        <button class="button button--sm button--flat button--icon button--icon-only button--main--hover">
+                            <svg class="icon icon--sm icon--mg-sm"><use xlink:href="/media/img/sprite-linear.svg#icon-search" /></svg>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="popover popover--width-xs popover--bottom-right hide-phone">
+                    <button class="popover__trigger button button--sm button--flat button--white button--main--hover mg-none font-sm text__general--text-secondary">Sources</button>
+
+                    <div class="popover__container pd-none-i">
+                        <div class="scrollable pd-lv2">
+                            <ul id="sources_filter" >
+
+                            </ul>                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popover popover--width-xs popover--bottom-right hide-phone">
+                    <button class="popover__trigger button button--sm button--flat button--white button--main--hover button--main--hover mg-none font-sm text__general--text-secondary">Tags</button>
+
+                    <div class="popover__container pd-none-i">
+                        <div class="scrollable pd-lv2">
+                            <ul id="tags_filter" >
+
+                            </ul>                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="push-right-i hide-phone">
+                    <button id="modal-collections-trigger" class="modal__trigger button button--sm button--flat button--white button--main--hover button--icon button--icon--only mg-none hide" data-modal="modal-collections">
+                        <svg class="icon icon--sm icon--mg-sm"><use xlink:href="/media/img/sprite-linear.svg#icon-folder" /></svg>
+                    </button>                   
+                </div>
+
+                <div class="popover popover--mobile-fullscreen popover--bottom-right popover--width-xs" id="popover_user">
+                    <a href="https://profile.piktab.com/login/plugin/nkhjnpgcnmdpeikbeegmibjcfjpamjnp">
+                       <button class="button button--sm button--flat button--white button--main--hover button--icon button--icon--only mg-none" data-modal="modal-collections">
+                        <svg class="icon icon--sm icon--mg-sm"><use xlink:href="/media/img/sprite-linear.svg#icon-user" /></svg>
+                    </button> 
+                </a>
+            </div>
+
+            <button class="trigger__button button button--sm button--flat button--white button--icon button--icon--only button--main--hover button--state mg-none" data-trigger="trigger-settings" data-lock-scroll="true">
+                <svg class="icon icon--sm icon--mg-sm state--inactive"><use xlink:href="/media/img/sprite-linear.svg#icon-menuburger" /></svg>
+                <svg class="icon icon--sm icon--mg-sm state--active"><use xlink:href="/media/img/sprite-linear.svg#icon-cross" /></svg>
+            </button>
+        </div>
+    </div>
+</header><!-- /header -->     
+
+<!-- <script src="https://media.freepik.com/min/g/auth_js"></script> --><aside id="trigger-settings" class="trigger">
+    <header class="text__general--text-inverted">
+        <div class="row mg-none">
+            <div class="mg-left-lv3 font-lg bold line-height-md">Piktab</div>
+
+            <button class="trigger__close button button--md button--icon button--icon--only push-right">
+                <svg class="icon--md icon--mg-md"><use xlink:href="/media/img/sprite-linear.svg#icon-next" /></svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="tabs tabs--no-border mg-none">
+        <div class="tabs__navigation text__general--text-inverted font-xs line-height-md bold">
+            <button class="tabs__link button--icon active pd-y-none-i" data-tab="settings">
+                <svg class="icon--sm icon--mg-md"><use xlink:href="/media/img/sprite-linear.svg#icon-settings" /></svg>
+                <span class="hide-tablet">Settings</span>
+            </button>
+            <button class="tabs__link button--icon pd-y-none-i" data-tab="sources">
+                <svg class="icon--sm icon--mg-md"><use xlink:href="/media/img/sprite-linear.svg#icon-globe" /></svg>
+                <span class="hide-tablet">Sources</span>
+            </button>
+            <button class="tabs__link button--icon pd-y-none-i" data-tab="tags">
+                <svg class="icon--sm icon--mg-md"><use xlink:href="/media/img/sprite-linear.svg#icon-tag" /></svg>
+                <span class="hide-tablet">Tags</span>
+            </button>
+            <button class="tabs__link button--icon pd-y-none-i" data-tab="contact">
+                <svg class="icon--sm icon--mg-md"><use xlink:href="/media/img/sprite-linear.svg#icon-comment" /></svg>
+                <span class="hide-tablet">Contact</span>
+            </button>
+            <button class="tabs__link button--icon pd-y-none-i" data-tab="privacy">
+                <svg class="icon--sm icon--mg-md"><use xlink:href="/media/img/sprite-linear.svg#icon-file" /></svg>
+                <span class="hide-tablet">Privacy Policy</span>
+            </button>
+            <button class="tabs__link button--icon pd-y-none-i" data-tab="faq">
+                <svg class="icon--sm icon--mg-md"><use xlink:href="/media/img/sprite-linear.svg#icon-interogation" /></svg>
+                <span class="hide-tablet">FAQ / How to</span>
+            </button>
+            <button class="tabs__link button--icon pd-y-none-i" data-tab="uninstall">
+                <svg class="icon--sm icon--mg-md"><use xlink:href="/media/img/sprite-linear.svg#icon-trash" /></svg>
+                <span class="hide-tablet">Uninstall</span>
+            </button>
+
+            <div class="copyright pd-lv2 font-xs alignc">
+                Piktab is a project by Freepik © 2016 Graphic Resources S.L. All rights reserved.
+
+                <div class="row row--horizontal-center pd-top-lv1">
+                    <a href="#" data-rrss="facebook" class="button button--sm button--flat button--icon button--icon--only button--facebook mg-right-lv1">
+                        <svg class="icon--sm icon--mg-sm"><use xlink:href="/media/img/sprite-linear.svg#icon-facebook"/></svg>
+                    </a>
+
+                    <a href="#" data-rrss="twitter" class="button button--sm button--flat button--icon button--icon--only button--twitter mg-right-lv1">
+                        <svg class="icon--sm icon--mg-sm"><use xlink:href="/media/img/sprite-linear.svg#icon-twitter"/></svg>
+                    </a>
+
+                    <a href="#" data-rrss="pinterest" class="button button--sm button--flat button--icon button--icon--only button--pinterest mg-right-lv1">
+                        <svg class="icon--sm icon--mg-sm"><use xlink:href="/media/img/sprite-linear.svg#icon-pinterest"/></svg>
+                    </a>
+
+                    <a href="#" data-rrss="google" class="button button--sm button--flat button--icon button--icon--only button--google">
+                        <svg class="icon--sm icon--mg-sm"><use xlink:href="/media/img/sprite-linear.svg#icon-google"/></svg>
+                    </a>
+                </div>
+            </div>           
+        </div>
+
+        <div class="tabs__container scrollable">
+            <button class="tabs__link tabs__link--heading active" data-tab="settings">Settings</button>
+            <div id="settings" class="tabs__content">
+                <h6 class="first uppercase bold">Settings</h6>
+
+                <h6 class="uppercase bold font-sm mg-none mg-bottom-lv1-i">Main preferences</h6>
+                <label class="switch switch--sm">
+                    <input type="checkbox" name="homepage" checked>
+                    <span class="switch__indicator"></span>
+                    <span class="switch__link">Make piktab your default homepage</span>
+
+                    <button class="button--xs button--icon button--icon--only tooltip floatr mg-none-i mg-left-lv1-i">
+                        <svg class="icon--sm icon--mg-xs"><use xlink:href="/media/img/sprite-linear.svg#icon-info" /></svg>
+
+                        <div class="tooltip__container tooltip__container--left">
+                            <div class="tooltip__content">When you install Piktab, it automatically becomes your default homepage. But now you can change this feature and choose if you want Piktab as your default homepage or not.</div>
+                        </div>
+                    </button>
+                </label>
+
+                <h6 class="uppercase bold font-sm mg-none mg-bottom-lv1-i">View preferences</h6>
+                <div>
+                    <label class="switch switch--sm mg-none hide">
+                        <input type="checkbox" name="piktab_view">
+                        <span class="switch__indicator"></span>
+                        <span class="switch__link">New Piktab design</span>
+
+                        <button class="button--xs button--icon button--icon--only tooltip floatr mg-none-i mg-left-lv1-i">
+                            <svg class="icon--sm icon--mg-xs"><use xlink:href="/media/img/sprite-linear.svg#icon-info" /></svg>
+
+                            <div class="tooltip__container tooltip__container--left">
+                                <div class="tooltip__content">New Piktab design is set as default. Once piktab is loaded in the new tab, it will automatically pass to the new design of the extension.</div>
+                            </div>
+                        </button>
+                    </label>                    
+                </div>
+                
+                <div>
+                    <label class="switch switch--sm">
+                        <input type="checkbox" name="most_visited">
+                        <span class="switch__indicator"></span>
+                        <span class="switch__link">View your most visited sites</span>
+
+                        <button class="button--xs button--icon button--icon--only tooltip floatr mg-none-i mg-left-lv1-i">
+                            <svg class="icon--sm icon--mg-xs"><use xlink:href="/media/img/sprite-linear.svg#icon-info" /></svg>
+
+                            <div class="tooltip__container tooltip__container--left">
+                                <div class="tooltip__content">If permissions are granted, you will be able to see your most visited sites.</div>
+                            </div>
+                        </button>
+                    </label>                    
+                </div>
+
+                <h6 class="inline-block uppercase bold font-sm mg-none mg-bottom-lv1-i">Search</h6>
+                <p class="font-xs">This feature allows you to switch your default search engine. With Piktab search engine, you will be able to find resources by keywords inside Piktab. Otherwise your search will be done on the target website, and you will be redirected to it.</p>
+
+                <div class="row sources">
+                    <div class="col__xs--12 col__sm--6 col__md--4">
+                        <div class="content pd-y-none-i">
+                            <label class="radio radio--sm radio--right">
+                                <input type="radio" name="selection" value="freepik">
+                                <span class="radio__indicator"></span>
+
+                                <span class="radio__link font-sm">Freepik</span>                    
+                            </label>                            
+                        </div>
+                    </div>
+
+                    <div class="col__xs--12 col__sm--6 col__md--4">
+                        <div class="content pd-y-none-i">
+                            <label class="radio radio--sm radio--right">
+                                <input type="radio" name="selection" value="flaticon">
+                                <span class="radio__indicator"></span>
+
+                                <span class="radio__link font-sm">Flaticon</span>                   
+                            </label>                            
+                        </div>
+                    </div>
+
+                    <div class="col__xs--12 col__sm--6 col__md--4">
+                        <div class="content pd-y-none-i">
+                            <label class="radio radio--sm radio--right">
+                                <input type="radio" name="selection"  value="piktab">
+                                <span class="radio__indicator"></span>
+
+                                <span class="radio__link font-sm">Piktab</span>                 
+                            </label>                            
+                        </div>
+                    </div>
+
+                    <div class="col__xs--12 col__sm--6 col__md--4">
+                        <div class="content pd-y-none-i">
+                            <label class="radio radio--sm radio--right">
+                                <input type="radio" name="selection" value="google">
+                                <span class="radio__indicator"></span>
+
+                                <span class="radio__link font-sm">Google</span>                 
+                            </label>                            
+                        </div>
+                    </div>
+
+                    <div class="col__xs--12 col__sm--6 col__md--4">
+                        <div class="content pd-y-none-i">
+                            <label class="radio radio--sm radio--right">
+                                <input type="radio" name="selection" value="graphicburger">
+                                <span class="radio__indicator"></span>
+
+                                <span class="radio__link font-sm">Graphicburger</span>                  
+                            </label>                            
+                        </div>
+                    </div>
+
+                    <div class="col__xs--12 col__sm--6 col__md--4">
+                        <div class="content pd-y-none-i">
+                            <label class="radio radio--sm radio--right">
+                                <input type="radio" name="selection" value="pixabay">
+                                <span class="radio__indicator"></span>
+
+                                <span class="radio__link font-sm">Pixabay</span>                    
+                            </label>                            
+                        </div>
+                    </div>
+
+                    <div class="col__xs--12 col__sm--6 col__md--4">
+                        <div class="content pd-y-none-i">
+                            <label class="radio radio--sm radio--right">
+                                <input type="radio" name="selection" value="pexels">
+                                <span class="radio__indicator"></span>
+
+                                <span class="radio__link font-sm">Pexels</span>                 
+                            </label>                            
+                        </div>
+                    </div>
+
+                    <div class="col__xs--12 col__sm--6 col__md--4">
+                        <div class="content pd-y-none-i">
+                            <label class="radio radio--sm radio--right">
+                                <input type="radio" name="selection" value="vecteezy">
+                                <span class="radio__indicator"></span>
+
+                                <span class="radio__link font-sm">Vecteezy</span>                   
+                            </label>                            
+                        </div>
+                    </div>
+
+                    <div class="col__xs--12 col__sm--6 col__md--4">
+                        <div class="content pd-y-none-i">
+                            <label class="radio radio--sm radio--right">
+                                <input type="radio" name="selection" value="iconfinder">
+                                <span class="radio__indicator"></span>
+
+                                <span class="radio__link font-sm">Iconfinder</span>                 
+                            </label>                            
+                        </div>
+                    </div>
+
+                    <div class="col__xs--12 col__sm--6 col__md--4">
+                        <div class="content pd-y-none-i">
+                            <label class="radio radio--sm radio--right">
+                                <input type="radio" name="selection" value="iconstore">
+                                <span class="radio__indicator"></span>
+
+                                <span class="radio__link font-sm">Iconstore</span>                  
+                            </label>                            
+                        </div>
+                    </div>
+
+                    <div class="col__xs--12 col__sm--6 col__md--4">
+                        <div class="content pd-y-none-i">
+                            <label class="radio radio--sm radio--right">
+                                <input type="radio" name="selection" value="freebiesbug">
+                                <span class="radio__indicator"></span>
+
+                                <span class="radio__link font-sm">Freebiesbug</span>                    
+                            </label>                            
+                        </div>
+                    </div>
+
+                    <div class="col__xs--12 col__sm--6 col__md--4">
+                        <div class="content pd-y-none-i">
+                            <label class="radio radio--sm radio--right">
+                                <input type="radio" name="selection" value="thehungyjpeg">
+                                <span class="radio__indicator"></span>
+
+                                <span class="radio__link font-sm">Thehungyjpeg</span>                   
+                            </label>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="tabs__link tabs__link--heading" data-tab="sources">Sources</button>
+            <div id="sources" class="tabs__content">
+                <div class="row row--vertical-center mg-none-i mg-bottom-lv3-i">
+                    <h6 class="uppercase bold mg-none">Sources</h6>
+
+                    <button class="button button--sm button--flat button--gray button--main--hover mg-none mg-left-lv1-i push-right-i toggle_all select_all">Select all</button>
+                    <button class="button button--sm button--flat button--gray button--main--hover mg-none mg-left-lv1-i toggle_all unselect_all">Unselect all</button>
+                    <button class="button button--sm button--flat button--icon button--main--hover mg-none mg-left-lv1-i apply_preferences" id="apply_sources">
+                        <svg class="icon--xs icon--mg-sm"><use xlink:href="/media/img/sprite-linear.svg#icon-save" /></svg>
+                        <span>Apply</span>
+                    </button>
+                </div>
+
+                <div class="row sources"></div>
+            </div>
+
+            <button class="tabs__link tabs__link--heading" data-tab="tags">Tags</button>
+            <div id="tags" class="tabs__content">
+                <div class="row row--vertical-center mg-none-i mg-bottom-lv3-i">
+                    <h6 class="uppercase bold mg-none">View preferences</h6>
+
+                    <button class="button button--sm button--flat button--gray button--main--hover mg-none mg-left-lv1-i push-right-i toggle_all select_all">Select all</button>
+                    <button class="button button--sm button--flat button--gray button--main--hover mg-none mg-left-lv1-i toggle_all unselect_all">Unselect all</button>
+                    <button class="button button--sm button--flat button--icon button--main--hover mg-none mg-left-lv1-i apply_preferences" id="apply_tags">
+                        <svg class="icon--xs icon--mg-sm"><use xlink:href="/media/img/sprite-linear.svg#icon-save" /></svg>
+                        <span>Apply</span>
+                    </button>
+                </div>
+
+                <div class="row tags">
+                
+                </div>
+            </div>
+
+            <button class="tabs__link tabs__link--heading" data-tab="contact">Contact</button>
+            <div id="contact" class="tabs__content">
+                <h6 class="first uppercase bold">Contact</h6>
+                <p class="font-sm">Fill the form, select a subject and send us a message. If you prefer the traditional way, write us to <a href="mailto: info@piktab.com">info@piktab.com</a>.</p>
+                
+                <form class="clearfix" action="." method="get" accept-charset="utf-8">
+                    <div class="row">
+                        <div class="col__sm--6">
+                            <label class="label">
+                                <span>Email</span>
+                                <input type="email" name="" placeholder="example@example.com" required>
+                            </label>
+                        </div>
+                        <div class="col__sm--6">
+                            <label class="label">
+                                <span>Subject</span>
+                                <div class="dropdown dropdown--bottom-left">
+                                    <select name="contact-subject" class="contact-subject" id="contact-subject">
+                                        <option class="suggest" selected>Suggest a source</option>
+                                        <option class="feedback">Feedback</option>
+                                        <option class="advertise">Advertise</option>
+                                    </select>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="col__xs--12">
+                            <label class="label">
+                                <span>Comment</span>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Write your message" required></textarea>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="button button--md button--flat button--main--hover floatr" type="submit">Send</button>
+                </form>
+            </div>
+
+            <button class="tabs__link tabs__link--heading" data-tab="privacy">Privacy Policy</button>
+            <div id="privacy" class="tabs__content font-sm">
+                <h6 class="first uppercase bold">Privacy Policy</h6>
+
+                <h6 class="uppercase bold font-sm mg-none mg-bottom-lv1-i">January 2015</h6>
+
+                <p>The website located at the addresses http://www.FreePik.com and http://www.FreePik.es, including any of their sub-domains or sections (henceforth referred to as 'the Website') is operated by Graphic Resources S.L. (henceforth referred to as 'FreePik'); having its place of business located at Molina Lario 13 street, 5th floor, 29015 Málaga, España.
+                    This Privacy Policy and Cookies regulates how the personal data of the Website users (henceforth referred to as 'User' or 'Users') will be treated by FreePik in the Website, in the framework of the services provided by the Website (henceforth referred to as 'the Services').
+                    The access to and the use of the Website imply that the User has read and accepts entirely the Privacy Policy and Cookies. The date at the beginning of this Privacy Policy and Cookies corresponds to the date of their latest revision, valid since the date of its publication. Thus, FreePik recommends to check them regularly.
+                    Specific privacy policies may apply to some of the services provided by the Website that must be accepted before using it. These policies will complement; or, if they are in conflict with this Privacy and Cookies Policy, substitute this Privacy and Cookies Policy.
+                    Likewise, the Conditions apply to the access, use and Services of the Website.</p>
+
+                <h6 class="uppercase bold font-sm mg-none mg-bottom-lv1-i">HOW FREEPIK USES PERSONAL INFORMATION</h6>
+
+                <p>Generally, the User may browse the Website without providing any personal information.</p>
+
+                <p>If the User registers on the Website, the data gathered will be incorporated to a file in FreePik in order to manage the Website, provide its Services, offer certain functionalities associated to the status of User (the list of downloads, for instance), and send information to the User about the Services of FreePik or its sponsors through newsletters (the subscription of which can be cancelled by Users at any moment from their account).</p>
+
+                <p>FreePik doesn't gather information about the age or date of birth of their Users when they register. Consequently, there isn't a particular treatment aimed to underage Users. FreePik is only aimed to full age Users.</p>
+
+                <p>Any information received by FreePik through Contact forms, Broken Link? forms, satisfaction surveys available on the Website, or through the email addresses info@freepik.com or info.freepik@gmail.com, will be incorporated to a FreePik file and will only be used with the intention of answering the questions, suggestions or complaints sent by the Users of the Website.</p>
+
+                <p>Any information received by FreePik through the Work With Us form available on the Website will be incorporated to a FreePik file and will only be used with the purpose of managing the selection process of FreePik personnel.</p>
+
+
+                <p>The Website includes plugins that allow to perform some actions in social networks belonging to third parties such as Facebook, Twitter, Pinterest or Google+ like sending a publication or show support to the Website, for instance. These plugins are displayed with the logo of their associated social network. If those plugins are accepted, the corresponding content will be sent to the adequate social network. The User may find information about how those plugins work and in what way the personal data is used in the privacy policies of these social networks. If the User doesn't wish these social networks to collect these personal data, the plugin shouldn't be accepted and the account should be abandoned before browsing the Website.</p>
+
+                <h6 class="uppercase bold font-sm mg-none mg-bottom-lv1-i">2. USER’S RIGHTS TO THE ACCESS, MODIFICATION, CANCELLATION OR OPPOSITION</h6>
+
+                <p>FreePik guarantees the User’s entitlement to exercise his or her right of access, modification, cancellation or opposition according to Spanish Law (Ley Orgánica 15/1999, de Protección de Datos de Carácter Personal).</p>
+
+                <p>As written before, Users can access and modify their data directly in the section 'My Account'.</p>
+
+                <p>Furthermore, anyone interested in carrying out any of the rights mentioned above can do it through the address previously indicated in this Privacy Policy or through the following e-mail address: info@Freepik.com, making sure that the right meant to be asserted is clearly indicated in the subject of the message.</p>
+
+                <p>According to what is stated in Real Decreto 1720/2007, the adequate procedure to assert these rights is the following:</p>
+
+                <p>The message will contain:</p>
+
+                <p>Name and surname (or surnames) of the applicant; photocopy of the ID card, passport or any other valid document for the identification of the person and the person who represents them (if any), as well as a document valid to accredit the representation.</p>
+                <p>Request in which the petition consists.</p>
+                <p>Address in order to receive notifications, date and signature of the petitioner.</p>
+                <p>Documents that accredit the petition, if any.</p>
+
+                <p>Every petition will be replied by FreePik, without minding whether any data of the petitioner does exist in FreePik files. If the petition meets all the requirements stated above, FreePik will request them to be corrected.</p>
+
+                <h6 class="uppercase bold font-sm mg-none mg-bottom-lv1-i">3. COOKIES POLICY</h6>
+
+                <p>In order to customize and make the User's browsing easier, FreePik cookies as well as third-party cookies are used within the Website.</p>
+
+                <p>A cookie is a piece of information or file that is placed on the Users' device when they visit a Website with the purpose of storing and recovering information about their use of the Website.</p>
+
+                <p>FreePik cookies help to improve User experience, make browsing more efficient, interact with third-party Websites, enable some additional features and help FreePik to analyse how Users use the site. For instance, the Website could insert a cookie in the browser to save the User the need to remember and write their password more than once during their visit to the Website.</p>
+
+                <p>FreePik Cookies have the following functions:</p>
+
+                <ul class="list">
+                    <li>Functionality Cookies: they allow the User to browse the Website and use the diverse options or Services available.</li>
+                    <li>Customization Cookies: they enable the User to access the Services with some general characteristics predefined according to determined criteria.</li>
+                    <li>Analysis Cookies: they are used to record and analyse the behaviour of the Users while using the Website. The information gathered through this kind of cookies is used to track the activity of the Website and to elaborate users navigation profiles, with the aim of improving the Website.</li>
+                    <li>Advertising Cookies: they make it possible to manage in the most efficient way the advertising spaces within the Website, according to criteria such as edited contents or frequency in which ads are shown.</li>
+                    <li>Behavioral advertising cookies: they enable the advertisement spaces to be managed in the most efficient way possible. These cookies store information about users behaviour obtained by monitoring their navigation habits, in order to offer advertising according to such data.</li>
+                </ul>
+
+                <p>In most browsers, the User may find a 'Help' section in the tool bar.</p>
+                <p>For more information about cookies in Internet Explorer click on Internet Explorer.</p>
+                <p>For more information about cookies in Firefox click on Firefox.</p>
+                <p>For more information about cookies in Chrome click on Chrome.</p>
+                <p>For more information about cookies in Safari click on Safari.</p>
+
+
+                <p>FreePik refers back to these sections to obtain more information about how to deactivate or delete cookies.</p>
+                <p>FreePik recommends Users not to deactivate cookies because they help to make the most of some of the functionalities.</p>
+                <p>This Website has also access to the IP address from which Users visit it. The Users IP address may be different each time they visit the Website. In addition, several Users may share the same IP address. Although FreePik does not and will never perform any inquiry to link a certain IP address with a certain person, the access to IP addresses may be considered as personal information as they can potentially be associated to a real person (a possibility more theoretical than real), so according to Spanish personal data protection laws, this law applies to IP addresses as well.</p>
+                <p>Third-parties who advertise in the Website or those to which the User gets connected through plugins might use cookies or 'web beacons' that FreePik doesn't control, so FreePik would not be responsible and they would not be covered by this Privacy and Cookies Policy, thus, it is the responsibility of the Users to configure their browser to make sure that cookies are only used according to their preferences.</p>
+                <p><strong>IMPORTANT NOTICE: THIS AGREEMENT IS A TRANSLATION OF AN ORIGINAL LEGAL TEXT WRITTEN IN SPANISH. PLEASE READ THE ORIGINAL DOCUMENT, IN SPANISH, <a href="http://www.freepik.es/privacy_policy">AVAILABLE HERE</a>.</strong></p>
+            </div>
+
+            <button class="tabs__link tabs__link--heading" data-tab="faq">FAQ / How to</button>
+            <div id="faq" class="tabs__content font-sm">
+                <h6 class="uppercase font-sm bold mg-none mg-bottom-lv2-i">FAQ</h6>
+
+                <ul class="accordion">
+                    <li class="accordion__container">
+                        <a href="#" class="accordion__link">1. What do you need the permissions for?</a>
+                        <div class="accordion__content font-sm">
+                            <p>We want to make things easy for you. Piktab is designed to be your home page, we want to give you useful information and allow you to go to your favourites apps directly from Piktab. We believe that your personal information have to be only yours. That is why we do not track your actions in Piktab. The permissions we ask for are:</p>
+
+                            <ul class="list">
+                                <li>Give you direct access to your chrome apps.</li>
+                                <li>Set Piktab as your default homepage.</li>
+                                <li>Show your most visited sites (only if special permissions are granted by you).</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="accordion__container">
+                        <a href="#" class="accordion__link">2. Can I get everything in Piktab for free always?</a>
+                        <div class="accordion__content font-sm">
+                            <p>Piktab is a tool that shows you the best graphic resources in the web. We show resources from differents websites, but we do not own the licences of those resources. Therefore, if the owner of a resource changes the conditions of the graphic design without letting us know, we will not be able to change this resource, or remove it from Piktab. However, if you find something that is not right, please contact us.</p>
+                        </div>
+                    </li>
+                    <li class="accordion__container">
+                        <a href="#" class="accordion__link">3. Some images are not working!</a>
+                        <div class="accordion__content font-sm">
+                            <p>Oops! We try to anticipate to this type of problems, but if something is not working, probably is because the main website where the resource is published, might be broken, or has changed without us noticing it. If you see this kind of behavior please contact us. We are here to help you anytime.</p>
+                        </div>
+                    </li>
+                    <li class="accordion__container">
+                        <a href="#" class="accordion__link">4. What do I need an account for?</a>
+                        <div class="accordion__content font-sm">
+                            <p>Piktab is growing every day! We have a great team of <strong style="text-decoration:line-through;">monkeys</strong> web developers improving Piktab `s features. Our next move is to offer you the chance to save your favourites resources! And if you wish, save your preferences in system, this way, everytime you log iinto Piktab, you will automatically have your preferences ready to use.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <h6 class="uppercase font-sm bold mg-none mg-bottom-lv2-i">How to</h6>
+
+                <ul class="accordion">
+                    <li class="accordion__container">
+                        <a href="#" class="accordion__link" data-how="1">1. How to change the default search engine?</a>
+                        <div class="accordion__content font-sm">
+                            <p>
+                                If you need to change your search engine temporarly, click on the button next to the search box. You will access a drop down list with all the avaliable search engines!
+                            </p>
+                            <p>
+                                By default, you will have the internal search activated. This means that when using Piktab search bar, by default it will search the content in Piktab.  But if you wish, your "external search" to be another website ( only those in the list of external search are available), go to: 
+                                Settings  &gt; Search
+                                And change your search engine by clicking one of the boxes.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="accordion__container">
+                        <a href="#" class="accordion__link" data-how="2">2. How to search in Piktab?</a>
+                        <div class="accordion__content font-sm">
+                            <p>
+                                One of the most useful tools that we provide is the search bar. Remember, that you can change your preferences to set up an external search, or configure it to search inside Piktab by default.
+                                You will be able to search in Piktab if after typing your search argument, you click on the Piktab logo inside the search bar.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="accordion__container">
+                        <a href="#" class="accordion__link" data-how="3">3. When searching, how to filter by sources/tags?</a>
+                        <div class="accordion__content font-sm">
+                            <p>
+                                When you are searching using Piktab search engine, you can filter your search by your favourites sources, or tags.
+                                To do so, click in "sources" or "tags" to expand the correspondent list.
+                                Once the list is expanded, you can select or unselect your filters from the lists. By doing this, you will apply different filters to your search. We call it active filters.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="accordion__container">
+                        <a href="#" class="accordion__link" data-how="4">4. How to change my preferences? (sources/tags)</a>
+                        <div class="accordion__content font-sm">
+                            <p>
+                                To change the preferences of your sources, go to "sources" at the lateral menu.
+                                Inside, you will find a list with different sources. Select and unselect as you prefer. After that, apply your changes by clicking on the Apply button at the top of the page.To change the preferences of your tag, go to "tags" and repeat the same procedure.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="accordion__container">
+                        <a href="#" class="accordion__link" data-how="5">5. How to unset piktab as default homepage?</a>
+                        <div class="accordion__content font-sm">
+                            <p>
+                                By default, Piktab will become your homepage. But if you do not want to use this feature, go to Settings, and change it in Main Preferences. By doing this, you will have Piktab accessible by clicking at the nav icon, but it will not override your default homepage.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="accordion__container">
+                        <a href="#" class="accordion__link" data-how="6">6. How can I save my favourites resources?</a>
+                        <div class="accordion__content font-sm">
+                            <p>
+                                Now you can save your favourites resources by adding them to a collection. If you have a Piktab account, log in and click on the "add to collection" icon. Remember that you need to create at least one collection in order to add items to your collections.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="accordion__container">
+                        <a href="#" class="accordion__link" data-how="7">7. How can I contact Piktab support?</a>
+                        <div class="accordion__content font-sm">
+                            <p>
+                                Any doubts, any suggestions, any crazy idea! We love hearing from you because you are the most important part of Piktab!
+                            </p>
+                            <p>
+                                To contact us, you can go to Preferences &gt; Contact or email us at <a href="mailto: info@piktab.com">info@piktab.com</a>.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="accordion__container">
+                        <a href="#" class="accordion__link" data-how="8">7. How can I see my most visited sites?</a>
+                        <div class="accordion__content font-sm">
+                            <p>
+                                If you want to see your favourites sites, activate this feature on Preferences  &gt; Settings  &gt; Show most visited sites.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="tabs__link tabs__link--heading" data-tab="uninstall">Uninstall</button>
+            <div id="uninstall" class="tabs__content font-sm alignc">
+                <h2 class="mg-none mg-bottom-lv2-i">Before you leave...</h2>
+
+                <p>If you are uninstalling Piktab because you do not wish to have it as your default homepage, we have the perfect solution for that!</p>
+                <p>We don't want to lose you. You have the option of Piktab not being your default homepage <b>and therefore it will not override your default tab</b> and Piktab will continue being accessible by clicking the icon:</p>
+
+                <button class="settings__link button button--md button--flat button--main--hover mg-bottom-lv2" data-name="homepage" data-value="false" data-checked="false">Try it now!</button>
+
+                <p class="mg-none"><a class="bold" href="" id="uninstall_trigger">No thanks, I want to remove Piktab completely</a> or cancel and go back.</p>
+            </div>
+        </div>
+    </div>
+</aside>
+    <main id="main" class="home">
+        <aside id="aside">
+            <div class="container-fluid">
+                <div class="row row--vertical-center mg-none-i">
+                    <div id="related" class="related col mg-none-i mg-right-lv2-i pd-none-i overflow-ellipsis hide"></div>
+                    <div id="most-visited" class="most-visited list--horizontal push-right-i hide"></div>
+                    <hr class="full-width mg-top-lv2 mg-bottom-lv2">
+                </div>
+            </div>
+        </aside>
+
+        <div class="header-tags mg-bottom-lv2 hide">
+            <div class="container-fluid">
+                <ul class="tags tags--sm" id="actives_filters">
+                    <li class="tag--remove">
+                        <div class="floatl">
+                            <span class="floatl">Remove all filters</span>                            
+                        </div>
+                        <button class="button--sm  button--flat button--red button--icon button--icon--only button--red--hover remove" data-type="remove_all_filters">
+                            <svg class="icon icon--xs icon--mg-sm"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="media/img/sprite-linear.svg#icon-cross"></use></svg>
+                        </button>
+                    </li>              
+                </ul>
+            </div>
+        </div>
+        <div id="showcase-main" class="showcase">
+            <div class="container-fluid">
+                <div class="row row--horizontal-center">
+                </div>
+                <div class="loader loader--main full-width alignc pd-lv4 hide"></div>
+
+            </div>
+        </div>
+    </main><!-- /main -->
+
+    <div id="modals">
+        <div id="modal-collections" class="modal modal--full-screen" data-multilayer="true">
+    <div class="modal__container scrollable">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row mg-none">
+                    <!-- <button class="button button--sm button--ghost button--icon button--icon--only mg-none hide">
+                        <svg class="icon--sm icon--mg-sm"><use xlink:href="/media/img/sprite-linear.svg#icon-prev" /></svg>
+                    </button> -->
+
+                    <form action="." method="get" id="collection-search" class="pd-none-i">
+                        <div class="group group--sm mg-none">                           
+                            <div class="group__input">
+                                <input type="text" name="q" placeholder="Search in your collections" />
+                            </div>
+
+                            <div class="group__button">
+                                <button class="button button--sm button--flat button--icon button--icon-only">
+                                    <svg class="icon icon--sm icon--mg-sm"><use xlink:href="/media/img/sprite-linear.svg#icon-search" /></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <button class="modal__close button button--sm button--ghost button--icon button--icon--only button--main--hover nostyle mg-none push-right-i">
+                        <svg class="icon icon--sm icon--mg-sm icon--close"><use xlink:href="/media/img/sprite-linear.svg#icon-cross"></use></svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div id="collections-section" class="container-fluid"></div>
+        </section>          
+    </div>
+</div>        <div id="modal-video" class="modal overflow-hidden">
+    <button class="modal__close button button--icon button--icon--only button--outline button--main--hover button--sm">
+        <svg class="icon icon--sm icon--mg-sm icon--close"><use xlink:href="/media/img/sprite-linear.svg#icon-cross"></use></svg>
+    </button>
+
+    <div class="modal__container">
+        <div class="content pd-none-i mg-lv2-i">
+            <div id="video" class="video-wrapper"></div>
+        </div>
+    </div>
+</div>        <div id="modal-add-collection" class="modal modal--md scrollable">
+    <button class="modal__close button button--icon button--icon--only button--outline button--main--hover button--sm">
+        <svg class="icon icon--sm icon--mg-sm icon--close"><use xlink:href="/media/img/sprite-linear.svg#icon-cross"></use></svg>
+    </button>
+
+    <div class="modal__container">
+        <div class="content">
+            
+        </div>
+    </div>
+</div>        <div id="modal-move-collection" class="modal modal--md scrollable">
+    <button class="modal__close button button--icon button--icon--only button--outline button--main--hover button--sm">
+        <svg class="icon icon--sm icon--mg-sm icon--close"><use xlink:href="/media/img/sprite-linear.svg#icon-cross"></use></svg>
+    </button>
+
+    <div class="modal__container">
+        <div class="content">
+            
+        </div>
+    </div>
+</div>        <div id="modal-setup" class="modal scrollable">
+    <button id="setup__skip" class="button button--sm button--icon button--ghost button--main--hover">
+        <span>Skip</span>
+        <svg class="icon--xs icon--mg-sm"><use xlink:href="/media/img/sprite-linear.svg#icon-cross"></use></svg>
+    </button>
+
+    <div class="modal__container">
+        <div class="content">
+            
+        </div>
+    </div>
+</div>        <div id="modal-nochrome" class="modal modal--md scrollable">
+    <button class="modal__close button button--icon button--icon--only button--outline button--main--hover button--sm">
+        <svg class="icon icon--sm icon--mg-sm icon--close"><use xlink:href="/media/img/sprite-linear.svg#icon-cross"></use></svg>
+    </button>
+
+    <div class="modal__container">
+        <div class="content">
+            <div class="modal-wrapper">
+                <div class="modal-content text-center">
+                    <label for="modal-nochrome" class="modal-close"></label>
+
+                    <h2>Piktab in your browser</h2>
+
+                    <p class="contact_form_text">Tell us your email and we'll tell you if we launch Piktab for your browser</p>
+
+                    <form id="form_contact_browser" class="clearfix contact_form_text" action="test.php" method="post">
+                        <label for="contact-email">
+                            <span class="label">Email</span>
+                            <input type="email" name="contact-email" placeholder="email@example.com" id="contact-email" required/>
+                        </label>
+
+                        <label for="browser">
+                            <span class="label">Subject</span>
+                            <select name="contact-subject" class="contact-subject" id="contact-subject">
+                                <option class="firefox">Firefox</option>
+                                <option class="opera">Opera</option>
+                                <option class="explorer">Internet Explorer</option>
+                                <option class="yandex">Yandex</option>
+                            </select>
+                        </label>
+
+                        <label for="contact-message">
+                            <span class="label">Message</span>
+                            <textarea name="contact-message" id="contact-message" placeholder="Write your message" required></textarea>
+                        </label>
+
+                        <button class="button button--md button--flat button--main--hover mg-left-lv1 floatr" type="submit">Submit</button>
+                        <label class="button button--md button--ghost button--red--hover floatr" for="modal-feedback">Cancel</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    </div>
+
+    <script async src="media/js/main.js"></script>
+</body>
+</html>

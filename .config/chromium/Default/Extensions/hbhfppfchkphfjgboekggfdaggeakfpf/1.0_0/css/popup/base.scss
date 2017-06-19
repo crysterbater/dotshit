@@ -1,0 +1,47 @@
+@import "globals";
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include linear-gradient(to bottom, $background-from-color, $background-to-color);
+  background-color: $background-from-color;
+  color: $white-color;
+  font-family: $regular-font;
+  font-size: 14px;
+  width: 368px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  &::-webkit-scrollbar { width: 0; }
+}
+
+.content {
+  position: relative;
+  left: 0;
+  margin-right: $sidebar-mini-width;
+}
+
+.loading-spinner {
+  display: none;
+  stroke: $spinner-color;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  margin-top: -45px;
+  margin-left: -45px;
+}
+
+@import "sidebar";
+@import "tiles";

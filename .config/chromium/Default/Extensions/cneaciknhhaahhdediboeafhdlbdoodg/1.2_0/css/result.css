@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+.result-div {
+    text-align: center;
+    font-family: 'open sans', sans-serif;
+}
+
+.content-head {
+    margin: 4px 0 4px;
+}
+
+.content-body {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+}
+
+.offline-img {
+    height: 27px;
+    width: 30px;
+    margin: 0;
+    background: url(../images/icn-alert.png) no-repeat;
+    background-size: 30px 27px;
+    float: left;
+    /*padding: 3px 0 0 2px;*/
+}
+
+.offline-div, .failure-div {
+    /*text-align: center;*/
+    font-family: Roboto;
+    font-size: 12.38px;
+}
+
+.failure-msg {
+    font-size: 13px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+.offline-msg {
+    margin: 0px 0 10px 40px;
+}
+
+.offline-title, .failure-title {
+    margin: 8px 0px 2px 40px;
+    font-weight: 600;
+}
+
+.close-btn {
+    top: 8px;
+    right: 8px;
+    position: absolute;
+    float: right;
+    cursor: pointer;
+    content: url(../images/icn-close-popup.png);
+}
+
+.loader-content {
+    text-align: center;
+}
+
+.loader-body {
+    background-color: #FFF;
+}
+
+.loader-img {
+    float: left;
+}
+
+.clipping-msg {
+    font-family: 'open sans', sans-serif;
+}
+
+.title-msg {
+    margin: 8px 0px 2px 44px;
+    font-weight: 600;
+    text-overflow: ellipsis; 
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.loader-msg {
+    margin: 0px 0 10px 44px;
+}
+
+.success-img {
+    display: none;
+    float: left;
+    margin: 3px 0 0 3px;
+    background: url(../images/icn-success-clipping.png) no-repeat;
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+}
+
+.alert-img {
+    display: none;
+    float: left;
+    height: 27px;
+    width: 30px;
+    margin: 3px 0 0 5px;
+    background: url(../images/icn-alert.png) no-repeat left top;
+    background-size: 30px 27px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+    .offline-img, .alert-img {
+        background: url(../images/icn-alert@2x.png) no-repeat;
+        background-size: 30px 27px;
+    }
+    .success-img {
+        background: url(../images/icn-success-clipping@2x.png) no-repeat;
+        background-size: 32px 32px;
+    }
+}
+

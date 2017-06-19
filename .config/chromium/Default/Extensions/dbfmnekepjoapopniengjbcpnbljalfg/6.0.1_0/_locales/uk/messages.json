@@ -1,0 +1,797 @@
+{
+   "AddSearchEngine": {
+      "message": "Додати пошукову систему"
+   },
+   "Added": {
+      "message": "Додано"
+   },
+   "AdditionalSearchEngine": {
+      "message": "Додаткова пошукова система"
+   },
+   "Amazon": {
+      "message": "Магазин Amazon"
+   },
+   "AmazonUrl": {
+      "message": "http://www.amazon.com/"
+   },
+   "Answers": {
+      "message": "Відповіді"
+   },
+   "Apps": {
+      "message": "Додатки"
+   },
+   "AppsAndExtensions": {
+      "message": "Додатки і розширення"
+   },
+   "AutomaticallyChangeWallpaper": {
+      "message": "Автоматична зміна шпалер"
+   },
+   "Baidu": {
+      "message": "Baidu"
+   },
+   "BingBg": {
+      "message": "Bing шпалери"
+   },
+   "BlurWallpaper": {
+      "message": "Різкість"
+   },
+   "BookmarkChanged": {
+      "message": "Панель закладок змінилась"
+   },
+   "Bookmarks": {
+      "message": "З​акладки"
+   },
+   "Bookmarksbar": {
+      "message": "З​акладки"
+   },
+   "BrowsingHistoryHasBeenCleared": {
+      "message": "Історія переглядів очищена"
+   },
+   "CanNotBeEmpty": {
+      "message": "Назва і URL не повинні бути пусті"
+   },
+   "Cancel": {
+      "message": "Відмінити"
+   },
+   "CategoryAppTools": {
+      "message": "Додатки і інструменти"
+   },
+   "CategoryCareerEdu": {
+      "message": "Технології"
+   },
+   "CategoryComputerTech": {
+      "message": " Економіка"
+   },
+   "CategoryFinanceBiz": {
+      "message": "Література"
+   },
+   "CategoryGames": {
+      "message": "Робота і освіта"
+   },
+   "CategoryLife": {
+      "message": "Розваги"
+   },
+   "CategoryMusicVideo": {
+      "message": "Музика і відео"
+   },
+   "CategoryNews": {
+      "message": "Інше"
+   },
+   "CategoryOther": {
+      "message": "Більше"
+   },
+   "CategoryPhoto": {
+      "message": "Фотографії"
+   },
+   "CategoryPopular": {
+      "message": "Популярне"
+   },
+   "CategoryShopping": {
+      "message": "Покупка товарів"
+   },
+   "CategorySocialBlog": {
+      "message": "Соціальні мережі і блоги"
+   },
+   "CategorySportsTravel": {
+      "message": "Спорт і подорожі"
+   },
+   "Celsius": {
+      "message": "Цельсій"
+   },
+   "Change": {
+      "message": "Зміни"
+   },
+   "ChangePassword": {
+      "message": "Змінити пароль"
+   },
+   "ChromeStore": {
+      "message": "Магазин Chrome"
+   },
+   "CityName": {
+      "message": "Назва міста"
+   },
+   "ClearAllBrowsingHistory": {
+      "message": "Очистити історію переглядів"
+   },
+   "ClearAllDones": {
+      "message": "Видалити закінчені справи"
+   },
+   "CloudBackup": {
+      "message": "Хмарне резервне копіювання"
+   },
+   "ContactUs": {
+      "message": "Contact Us"
+   },
+   "CurrentLocation": {
+      "message": "Поточне місцезнаходження:"
+   },
+   "DefaultWallpaper": {
+      "message": "Відновити значення по замовчюванню"
+   },
+   "Disable": {
+      "message": "Відключити"
+   },
+   "Download": {
+      "message": "Завантажити"
+   },
+   "DownloadWP": {
+      "message": "Завантажити"
+   },
+   "DownloadWallpaper": {
+      "message": "Завантажити поточні шпалери"
+   },
+   "Edit": {
+      "message": "Редагувати"
+   },
+   "EmailToUs": {
+      "message": "Відправити на Email"
+   },
+   "Enable": {
+      "message": "Увімкнути"
+   },
+   "EnableBookmarksBar": {
+      "message": "Увімкнути панель закладок"
+   },
+   "EnableMostVisited": {
+      "message": "Увімкнути часто відвідувальні"
+   },
+   "EnableSearchBox": {
+      "message": "Пошукове вікно"
+   },
+   "EnableSearchType": {
+      "message": "Типи пошуку"
+   },
+   "Extensions": {
+      "message": "Розширення"
+   },
+   "Fahrenheit": {
+      "message": "Фаренгейт"
+   },
+   "Find": {
+      "message": "Шукати"
+   },
+   "FindYourAccount": {
+      "message": "Знайти ваш акаунт"
+   },
+   "Friday": {
+      "message": "П'ятниця"
+   },
+   "Generate": {
+      "message": "Створити"
+   },
+   "GenerateBackupFile": {
+      "message": "Створити резервний файл"
+   },
+   "GmailNotifications": {
+      "message": "Сповіщення Gmail"
+   },
+   "HasBeenDeleted": {
+      "message": "Був видалений"
+   },
+   "HasBeenDisabled": {
+      "message": "Була вимкнена"
+   },
+   "HasBeenEnabled": {
+      "message": "Був увікнутий"
+   },
+   "HasBeenUninstalled": {
+      "message": "Був видалений"
+   },
+   "HasBeenUpdated": {
+      "message": "Був оновлений"
+   },
+   "History": {
+      "message": "Історія"
+   },
+   "Humidity": {
+      "message": "Вологість"
+   },
+   "IconFillet": {
+      "message": "Скруглення"
+   },
+   "IconOpacity": {
+      "message": "Прозорість значків"
+   },
+   "ImageSizeLimit": {
+      "message": "Розмір зображення не повинен бути більший 3 Мб"
+   },
+   "Images": {
+      "message": "Kартинки"
+   },
+   "InfinityBg": {
+      "message": "Infinity шпалери"
+   },
+   "InfinityBgblur": {
+      "message": "Infinity шпалери розмитого стиля"
+   },
+   "LastBackupAt": {
+      "message": "Останнє резервне копіювання було"
+   },
+   "LocalWallpaper": {
+      "message": "Свої шпалери"
+   },
+   "Locating": {
+      "message": "Розташування..."
+   },
+   "LogOffConfirm": {
+      "message": "Підтверджуєте вихід?"
+   },
+   "LoginMenuFontSize": {
+      "message": "-20px"
+   },
+   "LoginSuccess": {
+      "message": "Логін вірний"
+   },
+   "Logout": {
+      "message": "Вийти"
+   },
+   "MainSearchEngine": {
+      "message": "Основна пошукова система"
+   },
+   "Maps": {
+      "message": "Мапа"
+   },
+   "Monday": {
+      "message": "Понеділок"
+   },
+   "MostVisitedMoved": {
+      "message": "Часто читаємі переміщенні на початок"
+   },
+   "Musics": {
+      "message": "Музика"
+   },
+   "NETWORKERROR": {
+      "message": "Помилка мережі"
+   },
+   "NewNote": {
+      "message": "Нова замітка"
+   },
+   "NewPassword": {
+      "message": "Новий пароль"
+   },
+   "News": {
+      "message": "Новини"
+   },
+   "NoSpace": {
+      "message": "Немає місця"
+   },
+   "NotesAndIdeas": {
+      "message": "Замітки і ідеї"
+   },
+   "Notfoundcity": {
+      "message": "Місто не знайдено"
+   },
+   "NotificationSound": {
+      "message": "Звук сповіщення"
+   },
+   "NumberOfItems": {
+      "message": "Кількість елементів"
+   },
+   "OFF": {
+      "message": "OFF"
+   },
+   "OFFleft": {
+      "message": "28px"
+   },
+   "ON": {
+      "message": "ON"
+   },
+   "ONleft": {
+      "message": "28px"
+   },
+   "OldPassword": {
+      "message": "Старий пароль"
+   },
+   "OpenBookmarkIn": {
+      "message": "Відкрити закладки в новій вкладці"
+   },
+   "OpenLinksInNewtab": {
+      "message": "Відкрити посилання в новій вкладці"
+   },
+   "OurOfficialWebsite": {
+      "message": "Наш офіційний веб-сайт"
+   },
+   "Password": {
+      "message": "Пароль"
+   },
+   "PleaseEnableIt": {
+      "message": "Спочатку увімкніть даний додаток"
+   },
+   "PressEnterToQuery": {
+      "message": "Натиснути «Enter» для пошуку"
+   },
+   "Pressure": {
+      "message": "Тиск"
+   },
+   "PrivacyPolicy": {
+      "message": "Privacy Policy"
+   },
+   "Query": {
+      "message": "Відбувається запит..."
+   },
+   "Read": {
+      "message": "Читати"
+   },
+   "Recovery": {
+      "message": "Відновити"
+   },
+   "RecoveryDataFailed": {
+      "message": "Невдача відновлення даних"
+   },
+   "RecoveryDataSuccess": {
+      "message": "Успішне відновлення даних"
+   },
+   "RecoveryFromCloud": {
+      "message": "Відновити з хмари"
+   },
+   "RecoveryFromFile": {
+      "message": "Відновити з файлу"
+   },
+   "Register": {
+      "message": "Реєстрація"
+   },
+   "RegisterButton": {
+      "message": "Реєстрація"
+   },
+   "RegisterSuccessAndAutoLogin": {
+      "message": "Реєстрація успішна, вы увійшли в"
+   },
+   "RegistrationFailed": {
+      "message": "Реєстрація не вдалась"
+   },
+   "RestoreWallpaper": {
+      "message": "Відновлення"
+   },
+   "Saturday": {
+      "message": "Субота"
+   },
+   "SearchInNewtab": {
+      "message": "Пошук в новій вкладці"
+   },
+   "SelectImageFontSize": {
+      "message": "14px"
+   },
+   "ShareIconToOther": {
+      "message": "Поділитися значком з іншими"
+   },
+   "ShareToYourFriends": {
+      "message": "Поділитися з вашими друзями"
+   },
+   "SignAndIn": {
+      "message": "Логін"
+   },
+   "SignIn": {
+      "message": "Логін"
+   },
+   "SignInOrRegister": {
+      "message": "Вхід чи реєстрація"
+   },
+   "SignInToUseTheFeature": {
+      "message": "Увійдіть для використанняданої функції"
+   },
+   "Sogou": {
+      "message": "Sogou"
+   },
+   "Sports": {
+      "message": "Спортивний"
+   },
+   "StartAnimation": {
+      "message": "Використовувати анімацію"
+   },
+   "Submit": {
+      "message": "Відправити"
+   },
+   "Sunday": {
+      "message": "Неділя"
+   },
+   "TemperatureUnit": {
+      "message": "Одиниця температури"
+   },
+   "TermsOfUse": {
+      "message": "Умови використання"
+   },
+   "TermsofUse": {
+      "message": "Terms of Use"
+   },
+   "Thursday": {
+      "message": "Четвер"
+   },
+   "Todo": {
+      "message": "Поточні справи"
+   },
+   "Todos": {
+      "message": "Поточні справи"
+   },
+   "TodotypeMarginLeft": {
+      "message": "45px"
+   },
+   "Tomorrow": {
+      "message": "Завтра"
+   },
+   "Tuesday": {
+      "message": "Вівторок"
+   },
+   "UploadLocalWallpaper": {
+      "message": "Вивантажити поточні шпалери"
+   },
+   "UserName": {
+      "message": "Email"
+   },
+   "UsernameAlreadyExists": {
+      "message": "Дана електронна адреса вже зареєстрована"
+   },
+   "UsernameDoesNotExist": {
+      "message": "Email не зареєстрований"
+   },
+   "UsernameOrPasswordWrong": {
+      "message": "Невірне ім'я користувача чи пароль"
+   },
+   "VerifyCode": {
+      "message": "Код підтвердження"
+   },
+   "VerifyCodeError": {
+      "message": "Перевірочний код помилки"
+   },
+   "Videos": {
+      "message": "Відео"
+   },
+   "WeChat": {
+      "message": "WeChat"
+   },
+   "Weather": {
+      "message": "Погода"
+   },
+   "WeatherLocation": {
+      "message": "Місцезнаходження погоди"
+   },
+   "WeatherLocationHasBeenSettedTo": {
+      "message": "Місцезнаходження погоди було змінено на"
+   },
+   "Web": {
+      "message": "Пошук"
+   },
+   "Website": {
+      "message": "Веб-сайт:"
+   },
+   "Wednesday": {
+      "message": "Середа"
+   },
+   "Wind": {
+      "message": "Вітер"
+   },
+   "Yes": {
+      "message": "Вихід"
+   },
+   "adName": {
+      "message": "Amazon"
+   },
+   "addCustomItem": {
+      "message": "Додати"
+   },
+   "addMenuMarginLeft": {
+      "message": "-14px"
+   },
+   "addMenuSize": {
+      "message": "16px"
+   },
+   "addSearchName": {
+      "message": "Назва пошукової системи"
+   },
+   "addSearchUrl": {
+      "message": "Адреса пошукової системи"
+   },
+   "addTitle": {
+      "message": "Заголовок"
+   },
+   "addUrl": {
+      "message": "Веб-адреса"
+   },
+   "addmenuPaddingLeft": {
+      "message": "20px"
+   },
+   "application": {
+      "message": "Додатки і розширення"
+   },
+   "background": {
+      "message": "Шпалери"
+   },
+   "backupToCloud": {
+      "message": "Створення резервої копії в хмару"
+   },
+   "bingNot": {
+      "message": "Браузер не підтримує Bing шпалери"
+   },
+   "bookmark_manage": {
+      "message": "Управління закладками"
+   },
+   "buttonFontSize": {
+      "message": "16px !important"
+   },
+   "customItem": {
+      "message": "Свій"
+   },
+   "deSearch": {
+      "message": "Google"
+   },
+   "default": {
+      "message": "По замовчуванню"
+   },
+   "defaultBottomSearch": {
+      "message": "http://en.wikipedia.org/wiki/"
+   },
+   "defaultSearchName": {
+      "message": "Wikipedia"
+   },
+   "displayIntop": {
+      "message": "Своя строка"
+   },
+   "donate": {
+      "message": "Пожертвувати"
+   },
+   "donateDesc": {
+      "message": "Пожертвувати трохи грошей"
+   },
+   "donateShow": {
+      "message": "block"
+   },
+   "donateShowAlipay": {
+      "message": "none"
+   },
+   "emailCodenotEmpty": {
+      "message": "Email і перевірочний код не можуть бути пустими"
+   },
+   "emailError": {
+      "message": "Невірна адреса електронної пошти"
+   },
+   "emailInvalid": {
+      "message": "Невірна адреса електронної пошти"
+   },
+   "emailOrName": {
+      "message": "Email чи нік"
+   },
+   "emp": {
+      "message": "Пусто"
+   },
+   "extdesc": {
+      "message": "Нова вкладка Infinity"
+   },
+   "extensionItemAbleFontSize": {
+      "message": "14px"
+   },
+   "extensionItemAbleLineHeight": {
+      "message": "2.6"
+   },
+   "extname": {
+      "message": "Нова вкладка Infinity"
+   },
+   "feedback": {
+      "message": "Зворотній зв'язок"
+   },
+   "feedbackOnline": {
+      "message": "Залишити відгук"
+   },
+   "fontColor": {
+      "message": "Колір шрифта"
+   },
+   "fontsize": {
+      "message": "12px"
+   },
+   "forgotPassword": {
+      "message": "Забули пароль?"
+   },
+   "general": {
+      "message": "Загальні"
+   },
+   "getLocalWallpaperMarginTop": {
+      "message": "10px"
+   },
+   "gplus": {
+      "message": "Google+"
+   },
+   "gplusIco": {
+      "message": "0"
+   },
+   "gplusUrl": {
+      "message": "https://plus.google.com"
+   },
+   "help": {
+      "message": "Довідка"
+   },
+   "help1": {
+      "message": "1.Search for any word in the search engine,\u003Cbr>such as search \"infinity\" in Wikipedia,then we can get the search url:\u003Cbr>\"https://en.wikipedia.org/wiki/\u003Cspan style=\"color:#1ABC9C;\">Infinity\u003C/span>\""
+   },
+   "help2": {
+      "message": "2.Replace the search parameter with %s:\u003Cbr>\"https://en.wikipedia.org/wiki/\u003Cspan style=\"color:#1ABC9C\">%s\u003C/span>\""
+   },
+   "help3": {
+      "message": "3.Input the url and click \"Add Search Engine\":"
+   },
+   "help4": {
+      "message": "Additional Search Engine"
+   },
+   "help5": {
+      "message": "Add Search Engine"
+   },
+   "help6": {
+      "message": "4.When you search for something:"
+   },
+   "hideAds": {
+      "message": "Click to make it disappeared three days"
+   },
+   "howToAdd": {
+      "message": "Як додати пошукову систему?"
+   },
+   "howtodelete": {
+      "message": "Як я можу покращити свій проект?"
+   },
+   "hpa": {
+      "message": "block"
+   },
+   "imageSize": {
+      "message": "Розмір зображення"
+   },
+   "lang": {
+      "message": "uk"
+   },
+   "letterSpacing": {
+      "message": "none"
+   },
+   "loginFailed": {
+      "message": "Увійти не вдалося"
+   },
+   "loginNoNull": {
+      "message": "Email і пароль не можуть бути пустими"
+   },
+   "menuItemFontSize": {
+      "message": "18px"
+   },
+   "menuItemMarginRight": {
+      "message": "25px"
+   },
+   "miniMode": {
+      "message": "Мінімалістичний режим"
+   },
+   "mostVisited": {
+      "message": "Топ-сторінки"
+   },
+   "newtworkError": {
+      "message": "Помилка мережі"
+   },
+   "nextWallpaper": {
+      "message": "Зміни вступлять в силу на наступних шпалерах"
+   },
+   "noTitle": {
+      "message": "Без назви"
+   },
+   "orderBy": {
+      "message": "Упорядкований"
+   },
+   "pointColor": {
+      "message": "rgba(231, 76, 60, 0.5)"
+   },
+   "qqqun": {
+      "message": "none"
+   },
+   "randomWallpaper": {
+      "message": "Отримати випадкові шпалери"
+   },
+   "recommended": {
+      "message": "Рекомендовані"
+   },
+   "registerNotNull": {
+      "message": "Електронна пошта, пароль і перевірочний код не можуть бути пустими"
+   },
+   "registrationInformationWrong": {
+      "message": "Неправильна інформація з реєстру"
+   },
+   "removeImage": {
+      "message": "Видалити зображення"
+   },
+   "saySomething": {
+      "message": "Щось написати..."
+   },
+   "search": {
+      "message": "Пошук"
+   },
+   "searchBookmarks": {
+      "message": "Пошук закладки"
+   },
+   "searchBy": {
+      "message": "Пошук по"
+   },
+   "searchIni": {
+      "message": "Google"
+   },
+   "searchItem": {
+      "message": "Пошук"
+   },
+   "searchOptionsMarginRight": {
+      "message": "22px"
+   },
+   "searchhistory": {
+      "message": "Історія пошуку"
+   },
+   "settingMenuFontSize": {
+      "message": "18px"
+   },
+   "settingMenuMarginRight": {
+      "message": "45px"
+   },
+   "settingMenuPaddingLeft": {
+      "message": "44px"
+   },
+   "settings": {
+      "message": "Налаштування"
+   },
+   "shareIcon": {
+      "message": "Поділитися іконкою з іншими"
+   },
+   "showPageAction": {
+      "message": "Кнопка в адресній строчці"
+   },
+   "signIn": {
+      "message": "Логін"
+   },
+   "simpleTheme": {
+      "message": "Простий"
+   },
+   "supportFile": {
+      "message": "Підтримувати резервні файли"
+   },
+   "thankFeedback": {
+      "message": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Большое спасибо! \u003Cbr> Наш менеджер по продукции уже получил Ваши отзывы, при необходимости мы связываемся с Вами по вашему контакту!"
+   },
+   "todoDone": {
+      "message": "Завершити"
+   },
+   "topMenuFontSize": {
+      "message": "22px"
+   },
+   "tutorial": {
+      "message": "Шлях додавання додаткових пошукових систем"
+   },
+   "uninstall": {
+      "message": "Видалення"
+   },
+   "updateItem": {
+      "message": "Оновити елемент"
+   },
+   "upload": {
+      "message": "Завантажити фото"
+   },
+   "wallpaperIconFailed": {
+      "message": "Відсутне підключення до мережі"
+   },
+   "wallpaperLoadFailed": {
+      "message": "Помилка при завантажені шпалер"
+   },
+   "wallpaperUploadFailed": {
+      "message": "Помилка при вивантажені шпалер"
+   },
+   "whatNext": {
+      "message": "Що далі?"
+   },
+   "yourWallpaper": {
+      "message": "Шпалери будуть синхронізовані з хмарою"
+   }
+}
